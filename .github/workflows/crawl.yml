@@ -11,6 +11,12 @@ jobs:
     timeout-minutes: 20
 
     environment: crawl
+    concurrency:
+      group: crawl
+
+    permissions:
+      contents: "read"
+      id-token: "write"
     steps:
       - name: Checkout current repository
         uses: actions/checkout@v3
