@@ -1,0 +1,14 @@
+{
+  "name": "roles/networksecurity.mirroringEndpointViewer",
+  "title": "Mirroring Endpoint Viewer",
+  "description": "Enables read-only access to mirroring resources on the Consumer's side.",
+  "included_permissions": [
+    "networksecurity.mirroringEndpointGroupAssociations.get",
+    "networksecurity.mirroringEndpointGroupAssociations.list",
+    "networksecurity.mirroringEndpointGroups.get",
+    "networksecurity.mirroringEndpointGroups.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "BETA"
+}

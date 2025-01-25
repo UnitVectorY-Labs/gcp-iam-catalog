@@ -1,0 +1,13 @@
+{
+  "name": "roles/cloudkms.expertRawPKCS1",
+  "title": "Cloud KMS Expert Raw PKCS#1 Key Manager",
+  "description": "Enables raw PKCS#1 keys management.",
+  "included_permissions": [
+    "cloudkms.cryptoKeyVersions.manageRawPKCS1Keys",
+    "cloudkms.locations.get",
+    "cloudkms.locations.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

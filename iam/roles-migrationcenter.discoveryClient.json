@@ -1,0 +1,11 @@
+{
+  "name": "roles/migrationcenter.discoveryClient",
+  "title": "Migration Center Discovery Client",
+  "description": "Migration Center Discover Client role",
+  "included_permissions": [
+    "migrationcenter.assets.reportFrames",
+    "migrationcenter.discoveryClients.get",
+    "migrationcenter.discoveryClients.sendHeartbeat"
+  ],
+  "stage": "BETA"
+}

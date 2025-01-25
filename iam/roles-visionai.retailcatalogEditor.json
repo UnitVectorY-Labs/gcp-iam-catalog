@@ -1,0 +1,7 @@
+{
+  "name": "roles/visionai.retailcatalogEditor",
+  "title": "Vision AI RetailCatalog Editor",
+  "description": "Access to read and write Vision AI RetailCatalogs.",
+  "included_permissions": null,
+  "stage": "BETA"
+}

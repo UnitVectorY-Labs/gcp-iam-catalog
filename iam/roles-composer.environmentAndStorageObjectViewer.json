@@ -1,0 +1,32 @@
+{
+  "name": "roles/composer.environmentAndStorageObjectViewer",
+  "title": "Environment and Storage Object Viewer",
+  "description": "Read access to Cloud Composer environments and Cloud Storage objects.",
+  "included_permissions": [
+    "composer.dags.execute",
+    "composer.dags.get",
+    "composer.dags.getSourceCode",
+    "composer.dags.list",
+    "composer.environments.get",
+    "composer.environments.list",
+    "composer.imageversions.list",
+    "composer.operations.get",
+    "composer.operations.list",
+    "composer.userworkloadsconfigmaps.get",
+    "composer.userworkloadsconfigmaps.list",
+    "composer.userworkloadssecrets.get",
+    "composer.userworkloadssecrets.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list",
+    "serviceusage.quotas.get",
+    "serviceusage.services.get",
+    "serviceusage.services.list",
+    "storage.folders.get",
+    "storage.folders.list",
+    "storage.managedFolders.get",
+    "storage.managedFolders.list",
+    "storage.objects.get",
+    "storage.objects.list"
+  ],
+  "stage": "GA"
+}

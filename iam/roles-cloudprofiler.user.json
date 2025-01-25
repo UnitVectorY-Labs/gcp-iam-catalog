@@ -1,0 +1,14 @@
+{
+  "name": "roles/cloudprofiler.user",
+  "title": "Cloud Profiler User",
+  "description": "Cloud Profiler users are allowed to query and view the profiling data.",
+  "included_permissions": [
+    "cloudprofiler.profiles.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list",
+    "serviceusage.quotas.get",
+    "serviceusage.services.get",
+    "serviceusage.services.list"
+  ],
+  "stage": "GA"
+}

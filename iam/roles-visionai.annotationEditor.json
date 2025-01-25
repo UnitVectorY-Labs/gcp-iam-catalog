@@ -1,0 +1,13 @@
+{
+  "name": "roles/visionai.annotationEditor",
+  "title": "VisionAI Warehouse Annotation Editor",
+  "description": "Grants access to edit media asset annotations into the Warehouse.",
+  "included_permissions": [
+    "visionai.annotations.create",
+    "visionai.annotations.delete",
+    "visionai.annotations.get",
+    "visionai.annotations.list",
+    "visionai.annotations.update"
+  ],
+  "stage": "BETA"
+}

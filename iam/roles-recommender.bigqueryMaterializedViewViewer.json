@@ -1,0 +1,16 @@
+{
+  "name": "roles/recommender.bigqueryMaterializedViewViewer",
+  "title": "BigQuery Materialized View Recommender Viewer",
+  "description": "Viewer of BigQuery Materialized View Insights and Recommendations.",
+  "included_permissions": [
+    "recommender.bigqueryMaterializedViewInsights.get",
+    "recommender.bigqueryMaterializedViewInsights.list",
+    "recommender.bigqueryMaterializedViewRecommendations.get",
+    "recommender.bigqueryMaterializedViewRecommendations.list",
+    "recommender.locations.get",
+    "recommender.locations.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

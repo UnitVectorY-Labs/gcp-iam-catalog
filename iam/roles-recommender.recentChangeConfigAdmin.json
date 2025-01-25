@@ -1,0 +1,14 @@
+{
+  "name": "roles/recommender.recentChangeConfigAdmin",
+  "title": "RecentChange RecommenderConfig Admin",
+  "description": "Admin of RecentChange RecommenderConfigs.",
+  "included_permissions": [
+    "recommender.cloudRecentChangeRecommenderConfig.get",
+    "recommender.cloudRecentChangeRecommenderConfig.update",
+    "recommender.locations.get",
+    "recommender.locations.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

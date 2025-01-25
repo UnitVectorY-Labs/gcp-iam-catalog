@@ -1,0 +1,11 @@
+{
+  "name": "roles/policyanalyzer.activityAnalysisViewer",
+  "title": "Activity Analysis Viewer",
+  "description": "Viewer user that can read all activity analysis.",
+  "included_permissions": [
+    "policyanalyzer.resourceAuthorizationActivities.query",
+    "policyanalyzer.serviceAccountKeyLastAuthenticationActivities.query",
+    "policyanalyzer.serviceAccountLastAuthenticationActivities.query"
+  ],
+  "stage": "BETA"
+}

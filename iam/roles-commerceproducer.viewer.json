@@ -1,0 +1,11 @@
+{
+  "name": "roles/commerceproducer.viewer",
+  "title": "Commerce Producer Viewer",
+  "description": "Grants read access to all resources in Cloud Commerce Producer API.",
+  "included_permissions": [
+    "commercebusinessenablement.partnerInfo.get",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "BETA"
+}

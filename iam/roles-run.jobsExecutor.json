@@ -1,0 +1,10 @@
+{
+  "name": "roles/run.jobsExecutor",
+  "title": "Cloud Run Jobs Executor",
+  "description": "Can execute and cancel Cloud Run jobs.",
+  "included_permissions": [
+    "run.executions.cancel",
+    "run.jobs.run"
+  ],
+  "stage": "GA"
+}

@@ -1,0 +1,13 @@
+{
+  "name": "roles/dialogflow.integrationManager",
+  "title": "Dialogflow Integration Manager",
+  "description": "Can add, remove, enable and disable Dialogflow integrations.",
+  "included_permissions": [
+    "dialogflow.integrations.create",
+    "dialogflow.integrations.delete",
+    "dialogflow.integrations.get",
+    "dialogflow.integrations.list",
+    "dialogflow.integrations.update"
+  ],
+  "stage": "GA"
+}

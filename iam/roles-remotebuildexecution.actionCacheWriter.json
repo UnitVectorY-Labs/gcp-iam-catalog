@@ -1,0 +1,10 @@
+{
+  "name": "roles/remotebuildexecution.actionCacheWriter",
+  "title": "Remote Build Execution Action Cache Writer",
+  "description": "Remote Build Execution Action Cache Writer",
+  "included_permissions": [
+    "remotebuildexecution.actions.set",
+    "remotebuildexecution.blobs.create"
+  ],
+  "stage": "BETA"
+}

@@ -1,0 +1,12 @@
+{
+  "name": "roles/lifesciences.editor",
+  "title": "Cloud Life Sciences Editor",
+  "description": "Access to read and edit Cloud Life Sciences resources.",
+  "included_permissions": [
+    "lifesciences.operations.cancel",
+    "lifesciences.operations.get",
+    "lifesciences.operations.list",
+    "lifesciences.workflows.run"
+  ],
+  "stage": "BETA"
+}

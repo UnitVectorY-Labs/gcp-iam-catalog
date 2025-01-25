@@ -1,0 +1,16 @@
+{
+  "name": "roles/analyticshub.viewer",
+  "title": "Analytics Hub Viewer",
+  "description": "Can browse Data Exchanges and Listings",
+  "included_permissions": [
+    "analyticshub.dataExchanges.get",
+    "analyticshub.dataExchanges.getIamPolicy",
+    "analyticshub.dataExchanges.list",
+    "analyticshub.listings.get",
+    "analyticshub.listings.getIamPolicy",
+    "analyticshub.listings.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

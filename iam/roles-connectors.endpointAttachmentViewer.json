@@ -1,0 +1,13 @@
+{
+  "name": "roles/connectors.endpointAttachmentViewer",
+  "title": "Connectors Endpoint Attachment Viewer",
+  "description": "Endpoint Attachment is a regional resource which creates PSC connection endpoint for the given PSC Service Attachment. This role grants Read-only access to Connectors Endpoint Attachment resources",
+  "included_permissions": [
+    "connectors.endpointAttachments.get",
+    "connectors.endpointAttachments.getIamPolicy",
+    "connectors.endpointAttachments.list",
+    "connectors.locations.get",
+    "connectors.locations.list"
+  ],
+  "stage": "GA"
+}

@@ -1,0 +1,21 @@
+{
+  "name": "roles/visionai.seriesEditor",
+  "title": "Vision AI Series Editor",
+  "description": "Access to read and write Vision AI Series.",
+  "included_permissions": [
+    "visionai.clusters.watch",
+    "visionai.series.acquireLease",
+    "visionai.series.create",
+    "visionai.series.delete",
+    "visionai.series.get",
+    "visionai.series.list",
+    "visionai.series.receive",
+    "visionai.series.releaseLease",
+    "visionai.series.renewLease",
+    "visionai.series.send",
+    "visionai.series.update",
+    "visionai.streams.receive",
+    "visionai.streams.send"
+  ],
+  "stage": "BETA"
+}

@@ -1,0 +1,10 @@
+{
+  "name": "roles/visionai.seriesViewer",
+  "title": "Vision AI Series Viewer",
+  "description": "Access to read Vision AI Series.",
+  "included_permissions": [
+    "visionai.series.get",
+    "visionai.series.list"
+  ],
+  "stage": "BETA"
+}

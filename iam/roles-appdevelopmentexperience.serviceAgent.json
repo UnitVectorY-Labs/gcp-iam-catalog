@@ -1,0 +1,21 @@
+{
+  "name": "roles/appdevelopmentexperience.serviceAgent",
+  "title": "App Development Experience Service Agent",
+  "description": "Give the App Development Experience service agent access toCloud Platform resources.",
+  "included_permissions": [
+    "container.clusters.get",
+    "container.clusters.update",
+    "gkehub.features.get",
+    "gkehub.gateway.delete",
+    "gkehub.gateway.generateCredentials",
+    "gkehub.gateway.get",
+    "gkehub.gateway.patch",
+    "gkehub.gateway.post",
+    "gkehub.gateway.put",
+    "gkehub.locations.get",
+    "gkehub.locations.list",
+    "gkehub.memberships.get",
+    "gkehub.memberships.list"
+  ],
+  "stage": "GA"
+}

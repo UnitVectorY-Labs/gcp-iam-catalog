@@ -1,0 +1,11 @@
+{
+  "name": "roles/privilegedaccessmanager.projectServiceAgent",
+  "title": "Privileged Access Manager Project Service Agent",
+  "description": "Gives privileged access manager service account access to modify IAM policies on GCP projects",
+  "included_permissions": [
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.getIamPolicy",
+    "resourcemanager.projects.setIamPolicy"
+  ],
+  "stage": "GA"
+}

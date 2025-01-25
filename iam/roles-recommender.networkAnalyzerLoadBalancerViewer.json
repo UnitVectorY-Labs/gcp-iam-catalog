@@ -1,0 +1,14 @@
+{
+  "name": "roles/recommender.networkAnalyzerLoadBalancerViewer",
+  "title": "Network Analyzer Load Balancer Recommender Viewer",
+  "description": "Viewer of Network Analyzer Load Balancer Insights and Recommendations.",
+  "included_permissions": [
+    "recommender.locations.get",
+    "recommender.locations.list",
+    "recommender.networkAnalyzerLoadBalancerInsights.get",
+    "recommender.networkAnalyzerLoadBalancerInsights.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

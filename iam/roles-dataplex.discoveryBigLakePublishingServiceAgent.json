@@ -1,0 +1,10 @@
+{
+  "name": "roles/dataplex.discoveryBigLakePublishingServiceAgent",
+  "title": "Dataplex Discovery BigLake Publishing Service Agent",
+  "description": "Gives the Dataplex Discovery Service Agent permissions to use bigquery connection.",
+  "included_permissions": [
+    "bigquery.connections.delegate",
+    "bigquery.connections.use"
+  ],
+  "stage": "GA"
+}

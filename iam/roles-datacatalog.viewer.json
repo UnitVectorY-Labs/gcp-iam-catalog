@@ -1,0 +1,28 @@
+{
+  "name": "roles/datacatalog.viewer",
+  "title": "Data Catalog Viewer",
+  "description": "Grants metadata read permissions to cataloged GCP assets (BigQuery, Pub/Sub etc)",
+  "included_permissions": [
+    "bigquery.connections.get",
+    "bigquery.datasets.get",
+    "bigquery.models.getMetadata",
+    "bigquery.routines.get",
+    "bigquery.tables.get",
+    "datacatalog.entries.get",
+    "datacatalog.entries.list",
+    "datacatalog.entryGroups.get",
+    "datacatalog.entryGroups.list",
+    "datacatalog.migrationConfig.get",
+    "datacatalog.operations.list",
+    "datacatalog.relationships.list",
+    "datacatalog.tagTemplates.get",
+    "datacatalog.tagTemplates.getTag",
+    "datacatalog.taxonomies.get",
+    "datacatalog.taxonomies.list",
+    "dataplex.projects.search",
+    "pubsub.topics.get",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

@@ -1,0 +1,14 @@
+{
+  "name": "roles/integrations.sfdcInstanceViewer",
+  "title": "Application Integration SFDC Instance Viewer",
+  "description": "A developer that can list and view SFDC instances.",
+  "included_permissions": [
+    "integrations.sfdcChannels.get",
+    "integrations.sfdcChannels.list",
+    "integrations.sfdcInstances.get",
+    "integrations.sfdcInstances.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

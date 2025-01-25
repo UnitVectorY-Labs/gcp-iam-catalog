@@ -1,0 +1,12 @@
+{
+  "name": "roles/iam.workspacePoolAdmin",
+  "title": "Workspace Pool IAM Admin",
+  "description": "IAM workspace pool admin able to bind IAM policies to Dasher accounts.",
+  "included_permissions": [
+    "iam.googleapis.com/workspacePools.createPolicyBinding",
+    "iam.googleapis.com/workspacePools.deletePolicyBinding",
+    "iam.googleapis.com/workspacePools.searchPolicyBindings",
+    "iam.googleapis.com/workspacePools.updatePolicyBinding"
+  ],
+  "stage": "BETA"
+}

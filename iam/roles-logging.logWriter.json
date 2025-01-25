@@ -1,0 +1,10 @@
+{
+  "name": "roles/logging.logWriter",
+  "title": "Logs Writer",
+  "description": "Access to write logs.",
+  "included_permissions": [
+    "logging.logEntries.create",
+    "logging.logEntries.route"
+  ],
+  "stage": "GA"
+}

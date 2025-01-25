@@ -1,0 +1,16 @@
+{
+  "name": "roles/auditmanager.ccfViewer",
+  "title": "Custom Compliance Framework Viewer",
+  "description": "Allows viewing Custom Compliance Framework resources.",
+  "included_permissions": [
+    "auditmanager.billingSettings.get",
+    "auditmanager.customComplianceFrameworks.get",
+    "auditmanager.customComplianceFrameworks.list",
+    "auditmanager.locations.get",
+    "auditmanager.locations.list",
+    "auditmanager.operations.get",
+    "auditmanager.operations.list",
+    "resourcemanager.organizations.get"
+  ],
+  "stage": "BETA"
+}

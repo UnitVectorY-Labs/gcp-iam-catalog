@@ -1,0 +1,14 @@
+{
+  "name": "roles/networksecurity.interceptDeploymentViewer",
+  "title": "Intercept Deployment Viewer",
+  "description": "Enables read-only access to intercept resources on the Producer's side.",
+  "included_permissions": [
+    "networksecurity.interceptDeploymentGroups.get",
+    "networksecurity.interceptDeploymentGroups.list",
+    "networksecurity.interceptDeployments.get",
+    "networksecurity.interceptDeployments.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "BETA"
+}

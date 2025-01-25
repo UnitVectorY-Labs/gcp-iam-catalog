@@ -1,0 +1,10 @@
+{
+  "name": "roles/dlp.jobsReader",
+  "title": "DLP Jobs Reader",
+  "description": "Read jobs",
+  "included_permissions": [
+    "dlp.jobs.get",
+    "dlp.jobs.list"
+  ],
+  "stage": "GA"
+}

@@ -1,0 +1,12 @@
+{
+  "name": "roles/fleetengine.consumerSdkUser",
+  "title": "Fleet Engine Consumer SDK User",
+  "description": "Limited read access to Fleet Engine resources",
+  "included_permissions": [
+    "fleetengine.trips.get",
+    "fleetengine.vehicles.get",
+    "fleetengine.vehicles.search",
+    "fleetengine.vehicles.searchFuzzed"
+  ],
+  "stage": "GA"
+}

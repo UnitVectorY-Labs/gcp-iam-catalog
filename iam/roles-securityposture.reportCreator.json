@@ -1,0 +1,12 @@
+{
+  "name": "roles/securityposture.reportCreator",
+  "title": "Security Posture Shift-Left Validator",
+  "description": "Create access for Reports, e.g. IaC Validation Report.",
+  "included_permissions": [
+    "securityposture.operations.get",
+    "securityposture.reports.create",
+    "securityposture.reports.get",
+    "securityposture.reports.list"
+  ],
+  "stage": "GA"
+}

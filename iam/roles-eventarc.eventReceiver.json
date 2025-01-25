@@ -1,0 +1,10 @@
+{
+  "name": "roles/eventarc.eventReceiver",
+  "title": "Eventarc Event Receiver",
+  "description": "Can receive events from all event providers.",
+  "included_permissions": [
+    "eventarc.events.receiveAuditLogWritten",
+    "eventarc.events.receiveEvent"
+  ],
+  "stage": "GA"
+}

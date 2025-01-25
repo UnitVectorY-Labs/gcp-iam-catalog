@@ -1,0 +1,16 @@
+{
+  "name": "roles/recommender.firestoredatabasereliabilityViewer",
+  "title": "Firestore Database Reliability Recommender Viewer",
+  "description": "Viewer of Firestore Database Reliability Insights and Recommendations.",
+  "included_permissions": [
+    "recommender.firestoreDatabaseReliabilityInsights.get",
+    "recommender.firestoreDatabaseReliabilityInsights.list",
+    "recommender.firestoreDatabaseReliabilityRecommendations.get",
+    "recommender.firestoreDatabaseReliabilityRecommendations.list",
+    "recommender.locations.get",
+    "recommender.locations.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

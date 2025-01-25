@@ -1,0 +1,16 @@
+{
+  "name": "roles/parallelstore.viewer",
+  "title": "Parallelstore Viewer",
+  "description": "Readonly access to Parallelstore resources.",
+  "included_permissions": [
+    "parallelstore.instances.get",
+    "parallelstore.instances.list",
+    "parallelstore.locations.get",
+    "parallelstore.locations.list",
+    "parallelstore.operations.get",
+    "parallelstore.operations.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

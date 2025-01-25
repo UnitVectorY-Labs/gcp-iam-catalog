@@ -1,0 +1,14 @@
+{
+  "name": "roles/networkconnectivity.regionalEndpointAdmin",
+  "title": "Regional Endpoint Admin",
+  "description": "Full access to all Regional Endpoint resources.",
+  "included_permissions": [
+    "networkconnectivity.regionalEndpoints.create",
+    "networkconnectivity.regionalEndpoints.delete",
+    "networkconnectivity.regionalEndpoints.get",
+    "networkconnectivity.regionalEndpoints.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

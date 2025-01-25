@@ -1,0 +1,16 @@
+{
+  "name": "roles/eventarc.messageBusAdmin",
+  "title": "Eventarc Message Bus Admin",
+  "description": "Full control over Message Buses resources.",
+  "included_permissions": [
+    "eventarc.messageBuses.create",
+    "eventarc.messageBuses.delete",
+    "eventarc.messageBuses.get",
+    "eventarc.messageBuses.getIamPolicy",
+    "eventarc.messageBuses.list",
+    "eventarc.messageBuses.publish",
+    "eventarc.messageBuses.update",
+    "eventarc.messageBuses.use"
+  ],
+  "stage": "BETA"
+}

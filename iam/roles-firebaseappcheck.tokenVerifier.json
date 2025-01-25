@@ -1,0 +1,9 @@
+{
+  "name": "roles/firebaseappcheck.tokenVerifier",
+  "title": "Firebase App Check Token Verifier",
+  "description": "Access to token verification capabilities for Firebase App Check.",
+  "included_permissions": [
+    "firebaseappcheck.appCheckTokens.verify"
+  ],
+  "stage": "GA"
+}

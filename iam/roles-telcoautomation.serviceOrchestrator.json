@@ -1,0 +1,24 @@
+{
+  "name": "roles/telcoautomation.serviceOrchestrator",
+  "title": "Telco Automation Service Orchestrator",
+  "description": "Ability to manage deployments",
+  "included_permissions": [
+    "telcoautomation.blueprints.get",
+    "telcoautomation.blueprints.list",
+    "telcoautomation.deployments.apply",
+    "telcoautomation.deployments.computeStatus",
+    "telcoautomation.deployments.create",
+    "telcoautomation.deployments.delete",
+    "telcoautomation.deployments.get",
+    "telcoautomation.deployments.list",
+    "telcoautomation.deployments.rollback",
+    "telcoautomation.deployments.update",
+    "telcoautomation.hydratedDeployments.apply",
+    "telcoautomation.hydratedDeployments.get",
+    "telcoautomation.hydratedDeployments.list",
+    "telcoautomation.hydratedDeployments.update",
+    "telcoautomation.orchestrationClusters.get",
+    "telcoautomation.orchestrationClusters.list"
+  ],
+  "stage": "BETA"
+}

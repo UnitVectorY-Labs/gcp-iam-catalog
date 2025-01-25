@@ -1,0 +1,12 @@
+{
+  "name": "roles/cloudtasks.taskRunner",
+  "title": "Cloud Tasks Task Runner",
+  "description": "Access to run tasks.",
+  "included_permissions": [
+    "cloudtasks.tasks.fullView",
+    "cloudtasks.tasks.run",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "BETA"
+}

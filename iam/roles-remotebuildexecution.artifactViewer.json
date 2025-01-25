@@ -1,0 +1,11 @@
+{
+  "name": "roles/remotebuildexecution.artifactViewer",
+  "title": "Remote Build Execution Artifact Viewer",
+  "description": "Remote Build Execution Artifact Viewer",
+  "included_permissions": [
+    "remotebuildexecution.actions.get",
+    "remotebuildexecution.blobs.get",
+    "remotebuildexecution.logstreams.get"
+  ],
+  "stage": "BETA"
+}

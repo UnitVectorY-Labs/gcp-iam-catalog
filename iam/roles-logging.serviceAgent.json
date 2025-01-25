@@ -1,0 +1,11 @@
+{
+  "name": "roles/logging.serviceAgent",
+  "title": "Cloud Logging Service Agent",
+  "description": "Grants a Cloud Logging Service Account the ability to create and link datasets.",
+  "included_permissions": [
+    "bigquery.datasets.create",
+    "bigquery.datasets.get",
+    "bigquery.datasets.link"
+  ],
+  "stage": "GA"
+}

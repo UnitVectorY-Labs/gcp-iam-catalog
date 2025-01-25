@@ -1,0 +1,17 @@
+{
+  "name": "roles/gkehub.gatewayAdmin",
+  "title": "Connect Gateway Admin",
+  "description": "Full access to Connect Gateway.",
+  "included_permissions": [
+    "gkehub.gateway.delete",
+    "gkehub.gateway.generateCredentials",
+    "gkehub.gateway.get",
+    "gkehub.gateway.patch",
+    "gkehub.gateway.post",
+    "gkehub.gateway.put",
+    "gkehub.gateway.stream",
+    "gkehub.memberships.get",
+    "serviceusage.services.get"
+  ],
+  "stage": "GA"
+}

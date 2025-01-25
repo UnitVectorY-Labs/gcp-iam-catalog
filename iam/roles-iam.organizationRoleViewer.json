@@ -1,0 +1,15 @@
+{
+  "name": "roles/iam.organizationRoleViewer",
+  "title": "Organization Role Viewer",
+  "description": "Read access to all custom roles in the organization and the projects below it.",
+  "included_permissions": [
+    "iam.roles.get",
+    "iam.roles.list",
+    "resourcemanager.organizations.get",
+    "resourcemanager.organizations.getIamPolicy",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.getIamPolicy",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

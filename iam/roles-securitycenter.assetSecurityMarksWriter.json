@@ -1,0 +1,10 @@
+{
+  "name": "roles/securitycenter.assetSecurityMarksWriter",
+  "title": "Security Center Asset Security Marks Writer",
+  "description": "Write access to asset security marks",
+  "included_permissions": [
+    "securitycenter.assetsecuritymarks.update",
+    "securitycenter.userinterfacemetadata.get"
+  ],
+  "stage": "GA"
+}

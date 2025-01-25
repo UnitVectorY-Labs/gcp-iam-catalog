@@ -1,0 +1,12 @@
+{
+  "name": "roles/recommender.cloudAssetInsightsViewer",
+  "title": "Cloud Asset Insights Viewer",
+  "description": "Viewer of all Cloud Asset insights.",
+  "included_permissions": [
+    "recommender.cloudAssetInsights.get",
+    "recommender.cloudAssetInsights.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

@@ -1,0 +1,15 @@
+{
+  "name": "roles/dataplex.entryTypeUser",
+  "title": "Dataplex Entry Type User",
+  "description": "Grants access to use Entry Types to create/modify Entries of those types.",
+  "included_permissions": [
+    "datacatalog.migrationConfig.get",
+    "dataplex.entryTypes.get",
+    "dataplex.entryTypes.list",
+    "dataplex.entryTypes.use",
+    "dataplex.projects.search",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

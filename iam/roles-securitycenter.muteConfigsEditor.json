@@ -1,0 +1,13 @@
+{
+  "name": "roles/securitycenter.muteConfigsEditor",
+  "title": "Security Center Mute Configurations Editor",
+  "description": "Read-Write access to security center mute configurations",
+  "included_permissions": [
+    "securitycenter.muteconfigs.create",
+    "securitycenter.muteconfigs.delete",
+    "securitycenter.muteconfigs.get",
+    "securitycenter.muteconfigs.list",
+    "securitycenter.muteconfigs.update"
+  ],
+  "stage": "GA"
+}

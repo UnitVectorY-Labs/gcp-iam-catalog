@@ -1,0 +1,28 @@
+{
+  "name": "roles/workloadmanager.evaluationAdmin",
+  "title": "Workload Manager Evaluation Admin",
+  "description": "Full access to Workload Manager evaluation resources.",
+  "included_permissions": [
+    "orgpolicy.policy.get",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list",
+    "workloadmanager.evaluations.create",
+    "workloadmanager.evaluations.delete",
+    "workloadmanager.evaluations.get",
+    "workloadmanager.evaluations.list",
+    "workloadmanager.evaluations.run",
+    "workloadmanager.evaluations.update",
+    "workloadmanager.executions.delete",
+    "workloadmanager.executions.get",
+    "workloadmanager.executions.list",
+    "workloadmanager.locations.get",
+    "workloadmanager.locations.list",
+    "workloadmanager.operations.cancel",
+    "workloadmanager.operations.delete",
+    "workloadmanager.operations.get",
+    "workloadmanager.operations.list",
+    "workloadmanager.results.list",
+    "workloadmanager.rules.list"
+  ],
+  "stage": "BETA"
+}

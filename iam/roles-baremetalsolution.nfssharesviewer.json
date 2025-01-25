@@ -1,0 +1,11 @@
+{
+  "name": "roles/baremetalsolution.nfssharesviewer",
+  "title": "NFS Shares Viewer",
+  "description": "Viewer of Bare Metal Solution NFS Share resources",
+  "included_permissions": [
+    "baremetalsolution.nfsshares.get",
+    "baremetalsolution.nfsshares.list",
+    "baremetalsolution.operations.get"
+  ],
+  "stage": "GA"
+}

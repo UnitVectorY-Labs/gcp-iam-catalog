@@ -1,0 +1,17 @@
+{
+  "name": "roles/cloudsql.studioUser",
+  "title": "Cloud SQL Studio User",
+  "description": "Role allowing access to Cloud SQL Studio",
+  "included_permissions": [
+    "cloudaicompanion.companions.generateChat",
+    "cloudaicompanion.companions.generateCode",
+    "cloudaicompanion.instances.completeCode",
+    "cloudaicompanion.instances.generateCode",
+    "cloudsql.databases.list",
+    "cloudsql.instances.executeSql",
+    "cloudsql.instances.get",
+    "cloudsql.instances.login",
+    "cloudsql.users.list"
+  ],
+  "stage": "GA"
+}

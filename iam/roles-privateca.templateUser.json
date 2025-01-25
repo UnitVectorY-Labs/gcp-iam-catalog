@@ -1,0 +1,11 @@
+{
+  "name": "roles/privateca.templateUser",
+  "title": "CA Service Certificate Template User",
+  "description": "Read, list and use certificate templates.",
+  "included_permissions": [
+    "privateca.certificateTemplates.get",
+    "privateca.certificateTemplates.list",
+    "privateca.certificateTemplates.use"
+  ],
+  "stage": "GA"
+}

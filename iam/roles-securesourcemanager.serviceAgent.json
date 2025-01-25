@@ -1,0 +1,11 @@
+{
+  "name": "roles/securesourcemanager.serviceAgent",
+  "title": "Secure Source Manager Service Agent",
+  "description": "Gives Secure Source Manager service account access to managed resources.",
+  "included_permissions": [
+    "iam.serviceAccounts.signJwt",
+    "securesourcemanager.instances.access",
+    "serviceusage.services.use"
+  ],
+  "stage": "GA"
+}

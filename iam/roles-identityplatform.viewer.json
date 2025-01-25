@@ -1,0 +1,13 @@
+{
+  "name": "roles/identityplatform.viewer",
+  "title": "Identity Platform Viewer",
+  "description": "Read access to Identity Platform resources.",
+  "included_permissions": [
+    "firebaseauth.configs.get",
+    "firebaseauth.users.get",
+    "identitytoolkit.tenants.get",
+    "identitytoolkit.tenants.getIamPolicy",
+    "identitytoolkit.tenants.list"
+  ],
+  "stage": "BETA"
+}

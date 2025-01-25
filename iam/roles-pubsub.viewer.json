@@ -1,0 +1,22 @@
+{
+  "name": "roles/pubsub.viewer",
+  "title": "Pub/Sub Viewer",
+  "description": "View topics, subscriptions, and snapshots.",
+  "included_permissions": [
+    "pubsub.schemas.get",
+    "pubsub.schemas.list",
+    "pubsub.schemas.listRevisions",
+    "pubsub.schemas.validate",
+    "pubsub.snapshots.get",
+    "pubsub.snapshots.list",
+    "pubsub.subscriptions.get",
+    "pubsub.subscriptions.list",
+    "pubsub.topics.get",
+    "pubsub.topics.list",
+    "resourcemanager.projects.get",
+    "serviceusage.quotas.get",
+    "serviceusage.services.get",
+    "serviceusage.services.list"
+  ],
+  "stage": "GA"
+}

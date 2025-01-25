@@ -1,0 +1,21 @@
+{
+  "name": "roles/securitycentermanagement.etdCustomModulesEditor",
+  "title": "Security Center Management Custom ETD Modules Editor",
+  "description": "Full access to manage Cloud Security Command Center ETD custom modules.",
+  "included_permissions": [
+    "resourcemanager.organizations.get",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list",
+    "securitycentermanagement.effectiveEventThreatDetectionCustomModules.get",
+    "securitycentermanagement.effectiveEventThreatDetectionCustomModules.list",
+    "securitycentermanagement.eventThreatDetectionCustomModules.create",
+    "securitycentermanagement.eventThreatDetectionCustomModules.delete",
+    "securitycentermanagement.eventThreatDetectionCustomModules.get",
+    "securitycentermanagement.eventThreatDetectionCustomModules.list",
+    "securitycentermanagement.eventThreatDetectionCustomModules.update",
+    "securitycentermanagement.eventThreatDetectionCustomModules.validate",
+    "securitycentermanagement.locations.get",
+    "securitycentermanagement.locations.list"
+  ],
+  "stage": "GA"
+}

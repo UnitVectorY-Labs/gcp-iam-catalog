@@ -1,0 +1,15 @@
+{
+  "name": "roles/dataplex.metadataJobOwner",
+  "title": "Dataplex Metadata Job Owner",
+  "description": "Grants access to creating and managing Metadata Jobs. Does not give the right to create/modify Entry Groups.",
+  "included_permissions": [
+    "dataplex.metadataJobs.cancel",
+    "dataplex.metadataJobs.create",
+    "dataplex.metadataJobs.get",
+    "dataplex.metadataJobs.list",
+    "dataplex.operations.get",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

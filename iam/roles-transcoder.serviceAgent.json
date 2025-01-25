@@ -1,0 +1,13 @@
+{
+  "name": "roles/transcoder.serviceAgent",
+  "title": "Transcoder Service Agent",
+  "description": "Downloads and uploads media files from and to customer GCS buckets. Publishes status updates to customer Pub/Sub.",
+  "included_permissions": [
+    "pubsub.topics.publish",
+    "storage.objects.create",
+    "storage.objects.delete",
+    "storage.objects.get",
+    "transcoder.jobs.delete"
+  ],
+  "stage": "GA"
+}

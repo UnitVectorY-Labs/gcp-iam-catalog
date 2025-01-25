@@ -1,0 +1,13 @@
+{
+  "name": "roles/eventarc.connectionPublisher",
+  "title": "Eventarc Connection Publisher",
+  "description": "Can publish events to Eventarc Channel Connections.",
+  "included_permissions": [
+    "eventarc.channelConnections.get",
+    "eventarc.channelConnections.list",
+    "eventarc.channelConnections.publish",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "BETA"
+}

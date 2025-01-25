@@ -1,0 +1,14 @@
+{
+  "name": "roles/cloudconfig.viewer",
+  "title": "Firebase Remote Config Viewer",
+  "description": "Read access to Firebase Remote Config resources.",
+  "included_permissions": [
+    "cloudconfig.configs.get",
+    "firebase.clients.get",
+    "firebase.clients.list",
+    "firebase.projects.get",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

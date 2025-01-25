@@ -1,0 +1,10 @@
+{
+  "name": "roles/cloudsql.client",
+  "title": "Cloud SQL Client",
+  "description": "Connectivity access to Cloud SQL instances.",
+  "included_permissions": [
+    "cloudsql.instances.connect",
+    "cloudsql.instances.get"
+  ],
+  "stage": "GA"
+}

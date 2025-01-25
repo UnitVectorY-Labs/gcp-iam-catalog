@@ -1,0 +1,19 @@
+{
+  "name": "roles/domains.viewer",
+  "title": "Cloud Domains Viewer",
+  "description": "Read-only access to Cloud Domains Registrations and related resources.",
+  "included_permissions": [
+    "domains.locations.get",
+    "domains.locations.list",
+    "domains.operations.get",
+    "domains.operations.list",
+    "domains.registrations.get",
+    "domains.registrations.getIamPolicy",
+    "domains.registrations.list",
+    "domains.registrations.listEffectiveTags",
+    "domains.registrations.listTagBindings",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

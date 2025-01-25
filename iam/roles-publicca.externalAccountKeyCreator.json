@@ -1,0 +1,11 @@
+{
+  "name": "roles/publicca.externalAccountKeyCreator",
+  "title": "External Account Key Creator",
+  "description": "This role can create a new externalAccountKey resource.",
+  "included_permissions": [
+    "publicca.externalAccountKeys.create",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "BETA"
+}

@@ -1,0 +1,15 @@
+{
+  "name": "roles/securesourcemanager.instanceAccessor",
+  "title": "Secure Source Manager Instance Accessor",
+  "description": "An instance accessor can access an instance, but not necessarily create resources in the instance.",
+  "included_permissions": [
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list",
+    "securesourcemanager.instances.access",
+    "securesourcemanager.sshkeys.create",
+    "securesourcemanager.sshkeys.delete",
+    "securesourcemanager.sshkeys.get",
+    "securesourcemanager.sshkeys.list"
+  ],
+  "stage": "BETA"
+}

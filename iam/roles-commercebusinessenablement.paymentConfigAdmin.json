@@ -1,0 +1,13 @@
+{
+  "name": "roles/commercebusinessenablement.paymentConfigAdmin",
+  "title": "Commerce Business Enablement PaymentConfig Admin",
+  "description": "Administration of Payment Configuration resource",
+  "included_permissions": [
+    "commercebusinessenablement.partnerInfo.get",
+    "commercebusinessenablement.paymentConfig.get",
+    "commercebusinessenablement.paymentConfig.update",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "BETA"
+}

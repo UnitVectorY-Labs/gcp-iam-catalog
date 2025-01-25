@@ -1,0 +1,9 @@
+{
+  "name": "roles/baremetalsolution.osimagesviewer",
+  "title": "OS Images Viewer",
+  "description": "Viewer of Bare Metal Solution OS images resources",
+  "included_permissions": [
+    "baremetalsolution.osimages.list"
+  ],
+  "stage": "GA"
+}

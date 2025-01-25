@@ -1,0 +1,22 @@
+{
+  "name": "roles/recommender.gmpViewer",
+  "title": "Google Maps Platform Insights/Recommendations Viewer",
+  "description": "Viewer of all Google Maps Platform insights and recommendations.",
+  "included_permissions": [
+    "recommender.gmpGuidedExperienceInsights.get",
+    "recommender.gmpGuidedExperienceInsights.list",
+    "recommender.gmpGuidedExperienceRecommendations.get",
+    "recommender.gmpGuidedExperienceRecommendations.list",
+    "recommender.gmpProjectManagementInsights.get",
+    "recommender.gmpProjectManagementInsights.list",
+    "recommender.gmpProjectManagementRecommendations.get",
+    "recommender.gmpProjectManagementRecommendations.list",
+    "recommender.gmpProjectProductSuggestionsInsights.get",
+    "recommender.gmpProjectProductSuggestionsInsights.list",
+    "recommender.gmpProjectProductSuggestionsRecommendations.get",
+    "recommender.gmpProjectProductSuggestionsRecommendations.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

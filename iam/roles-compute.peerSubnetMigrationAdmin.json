@@ -1,0 +1,28 @@
+{
+  "name": "roles/compute.peerSubnetMigrationAdmin",
+  "title": "Compute Peer Subnet Migration Admin",
+  "description": "Use subnetwork whose PURPOSE is \"PEER_MIGRATION\"",
+  "included_permissions": [
+    "compute.addresses.createInternal",
+    "compute.addresses.deleteInternal",
+    "compute.addresses.get",
+    "compute.addresses.use",
+    "compute.forwardingRules.create",
+    "compute.forwardingRules.delete",
+    "compute.forwardingRules.get",
+    "compute.forwardingRules.list",
+    "compute.forwardingRules.pscCreate",
+    "compute.forwardingRules.pscDelete",
+    "compute.forwardingRules.pscUpdate",
+    "compute.forwardingRules.update",
+    "compute.networks.use",
+    "compute.regionOperations.get",
+    "compute.regions.list",
+    "compute.subnetworks.use",
+    "compute.subnetworks.usePeerMigration",
+    "servicedirectory.namespaces.create",
+    "servicedirectory.services.create",
+    "servicedirectory.services.delete"
+  ],
+  "stage": "GA"
+}

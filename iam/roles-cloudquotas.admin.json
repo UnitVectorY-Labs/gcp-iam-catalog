@@ -1,0 +1,13 @@
+{
+  "name": "roles/cloudquotas.admin",
+  "title": "Cloud Quotas Admin",
+  "description": "Full access to Cloud Quotas resources.",
+  "included_permissions": [
+    "cloudquotas.quotas.get",
+    "cloudquotas.quotas.update",
+    "monitoring.timeSeries.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "BETA"
+}

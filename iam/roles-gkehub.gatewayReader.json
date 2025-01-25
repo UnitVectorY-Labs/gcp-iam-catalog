@@ -1,0 +1,12 @@
+{
+  "name": "roles/gkehub.gatewayReader",
+  "title": "Connect Gateway Reader",
+  "description": "Read-only access to Connect Gateway.",
+  "included_permissions": [
+    "gkehub.gateway.generateCredentials",
+    "gkehub.gateway.get",
+    "gkehub.memberships.get",
+    "serviceusage.services.get"
+  ],
+  "stage": "GA"
+}

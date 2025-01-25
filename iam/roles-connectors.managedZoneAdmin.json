@@ -1,0 +1,17 @@
+{
+  "name": "roles/connectors.managedZoneAdmin",
+  "title": "Connectors Managed Zone Admin",
+  "description": "Managed Zone is a global resource which creates Cloud DNS Peering Zone with the given target project. This role grants Admin access to Connectors Managed Zone resources",
+  "included_permissions": [
+    "connectors.locations.get",
+    "connectors.locations.list",
+    "connectors.managedZones.create",
+    "connectors.managedZones.delete",
+    "connectors.managedZones.get",
+    "connectors.managedZones.getIamPolicy",
+    "connectors.managedZones.list",
+    "connectors.managedZones.setIamPolicy",
+    "connectors.managedZones.update"
+  ],
+  "stage": "GA"
+}

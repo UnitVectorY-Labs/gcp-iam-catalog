@@ -1,0 +1,10 @@
+{
+  "name": "roles/securitycenter.attackPathsViewer",
+  "title": "Security Center Attack Paths Reader",
+  "description": "Read access to security center attack paths",
+  "included_permissions": [
+    "securitycenter.attackpaths.list",
+    "securitycenter.exposurepathexplan.get"
+  ],
+  "stage": "GA"
+}

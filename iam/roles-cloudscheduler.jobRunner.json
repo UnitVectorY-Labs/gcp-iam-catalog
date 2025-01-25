@@ -1,0 +1,15 @@
+{
+  "name": "roles/cloudscheduler.jobRunner",
+  "title": "Cloud Scheduler Job Runner",
+  "description": "Access to run jobs.",
+  "included_permissions": [
+    "appengine.applications.get",
+    "cloudscheduler.jobs.fullView",
+    "cloudscheduler.jobs.run",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list",
+    "serviceusage.services.get",
+    "serviceusage.services.list"
+  ],
+  "stage": "GA"
+}

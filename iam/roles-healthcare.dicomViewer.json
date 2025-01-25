@@ -1,0 +1,19 @@
+{
+  "name": "roles/healthcare.dicomViewer",
+  "title": "Healthcare DICOM Viewer",
+  "description": "Retrieve DICOM images from a DICOM store.",
+  "included_permissions": [
+    "healthcare.datasets.get",
+    "healthcare.datasets.list",
+    "healthcare.dicomStores.dicomWebRead",
+    "healthcare.dicomStores.export",
+    "healthcare.dicomStores.get",
+    "healthcare.dicomStores.list",
+    "healthcare.locations.get",
+    "healthcare.locations.list",
+    "healthcare.operations.get",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

@@ -1,0 +1,10 @@
+{
+  "name": "roles/composer.ServiceAgentV2Ext",
+  "title": "Cloud Composer v2 API Service Agent Extension",
+  "description": "Cloud Composer v2 API Service Agent Extension is a supplementary role required to manage Composer v2 environments.",
+  "included_permissions": [
+    "iam.serviceAccounts.getIamPolicy",
+    "iam.serviceAccounts.setIamPolicy"
+  ],
+  "stage": "GA"
+}

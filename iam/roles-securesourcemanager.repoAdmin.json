@@ -1,0 +1,29 @@
+{
+  "name": "roles/securesourcemanager.repoAdmin",
+  "title": "Secure Source Manager Repository Admin",
+  "description": "A repoAdmin has the ability to CRUD a repository and its children as well as assign users to a repository. They can also set, get, or check IAM policies on the repository.",
+  "included_permissions": [
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list",
+    "securesourcemanager.branchRules.create",
+    "securesourcemanager.branchRules.delete",
+    "securesourcemanager.branchRules.get",
+    "securesourcemanager.branchRules.list",
+    "securesourcemanager.branchRules.update",
+    "securesourcemanager.repositories.approvePullRequests",
+    "securesourcemanager.repositories.create",
+    "securesourcemanager.repositories.delete",
+    "securesourcemanager.repositories.fetch",
+    "securesourcemanager.repositories.get",
+    "securesourcemanager.repositories.getIamPolicy",
+    "securesourcemanager.repositories.list",
+    "securesourcemanager.repositories.push",
+    "securesourcemanager.repositories.readIssues",
+    "securesourcemanager.repositories.readPullRequests",
+    "securesourcemanager.repositories.setIamPolicy",
+    "securesourcemanager.repositories.update",
+    "securesourcemanager.repositories.writeIssues",
+    "securesourcemanager.repositories.writePullRequests"
+  ],
+  "stage": "BETA"
+}

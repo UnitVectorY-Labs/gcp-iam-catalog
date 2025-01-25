@@ -1,0 +1,9 @@
+{
+  "name": "roles/recommender.exporter",
+  "title": "Recommendations Exporter",
+  "description": "Exporter of Recommendations",
+  "included_permissions": [
+    "recommender.resources.export"
+  ],
+  "stage": "GA"
+}

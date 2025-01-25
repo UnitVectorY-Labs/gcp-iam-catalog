@@ -1,0 +1,10 @@
+{
+  "name": "roles/spanner.fineGrainedAccessUser",
+  "title": "Cloud Spanner Fine-grained Access User",
+  "description": "Grants permissions to use Spanner's fine-grained access control framework. To grant access to specific database roles, also add the Cloud Spanner Database Role User IAM role and its necessary conditions.",
+  "included_permissions": [
+    "spanner.databaseRoles.list",
+    "spanner.databases.useRoleBasedAccess"
+  ],
+  "stage": "GA"
+}

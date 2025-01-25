@@ -1,0 +1,14 @@
+{
+  "name": "roles/securesourcemanager.sshKeyUser",
+  "title": "Secure Source Manager SSH Key User",
+  "description": "An sshKeyUser can create SSH keys for themselves and list/delete SSH keys they own.",
+  "included_permissions": [
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list",
+    "securesourcemanager.sshkeys.create",
+    "securesourcemanager.sshkeys.delete",
+    "securesourcemanager.sshkeys.get",
+    "securesourcemanager.sshkeys.list"
+  ],
+  "stage": "BETA"
+}

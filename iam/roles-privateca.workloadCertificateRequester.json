@@ -1,0 +1,9 @@
+{
+  "name": "roles/privateca.workloadCertificateRequester",
+  "title": "CA Service Workload Certificate Requester",
+  "description": "Request certificates from CA Service with caller's identity.",
+  "included_permissions": [
+    "privateca.certificates.createForSelf"
+  ],
+  "stage": "GA"
+}

@@ -1,0 +1,14 @@
+{
+  "name": "roles/alloydb.client",
+  "title": "Cloud AlloyDB Client",
+  "description": "Connectivity access to Cloud AlloyDB instances.",
+  "included_permissions": [
+    "alloydb.clusters.generateClientCertificate",
+    "alloydb.clusters.get",
+    "alloydb.instances.connect",
+    "alloydb.instances.get",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "BETA"
+}

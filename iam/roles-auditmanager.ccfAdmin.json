@@ -1,0 +1,19 @@
+{
+  "name": "roles/auditmanager.ccfAdmin",
+  "title": "Custom Compliance Framework Admin",
+  "description": "Full access to Custom Compliance Framework resources.",
+  "included_permissions": [
+    "auditmanager.billingSettings.get",
+    "auditmanager.customComplianceFrameworks.create",
+    "auditmanager.customComplianceFrameworks.delete",
+    "auditmanager.customComplianceFrameworks.get",
+    "auditmanager.customComplianceFrameworks.list",
+    "auditmanager.customComplianceFrameworks.update",
+    "auditmanager.locations.get",
+    "auditmanager.locations.list",
+    "auditmanager.operations.get",
+    "auditmanager.operations.list",
+    "resourcemanager.organizations.get"
+  ],
+  "stage": "BETA"
+}

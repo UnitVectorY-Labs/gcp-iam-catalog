@@ -1,0 +1,15 @@
+{
+  "name": "roles/healthcare.datasetViewer",
+  "title": "Healthcare Dataset Viewer",
+  "description": "List the Healthcare Datasets in a project.",
+  "included_permissions": [
+    "healthcare.datasets.get",
+    "healthcare.datasets.list",
+    "healthcare.locations.get",
+    "healthcare.locations.list",
+    "healthcare.operations.get",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

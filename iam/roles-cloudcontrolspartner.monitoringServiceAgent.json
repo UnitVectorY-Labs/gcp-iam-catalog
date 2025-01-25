@@ -1,0 +1,10 @@
+{
+  "name": "roles/cloudcontrolspartner.monitoringServiceAgent",
+  "title": "Cloud Controls Partner Monitoring Service Agent",
+  "description": "Gives Cloud Controls Partner monitoring service agent permission to view and list Assured Workload violations. The role is assigned to enable partner monitoring capability.",
+  "included_permissions": [
+    "assuredworkloads.violations.get",
+    "assuredworkloads.violations.list"
+  ],
+  "stage": "GA"
+}

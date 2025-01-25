@@ -1,0 +1,17 @@
+{
+  "name": "roles/baremetalsolution.networksadmin",
+  "title": "Networks Admin",
+  "description": "Admin of Bare Metal Solution networks resources",
+  "included_permissions": [
+    "baremetalsolution.networkquotas.list",
+    "baremetalsolution.networks.create",
+    "baremetalsolution.networks.delete",
+    "baremetalsolution.networks.get",
+    "baremetalsolution.networks.list",
+    "baremetalsolution.networks.rename",
+    "baremetalsolution.networks.update",
+    "baremetalsolution.operations.get",
+    "baremetalsolution.pods.list"
+  ],
+  "stage": "GA"
+}

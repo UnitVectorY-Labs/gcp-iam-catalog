@@ -1,0 +1,18 @@
+{
+  "name": "roles/managedidentities.backupViewer",
+  "title": "Google Cloud Managed Identities Backup Viewer",
+  "description": "Read-only access to Google Cloud Managed Identities Backup and related resources.",
+  "included_permissions": [
+    "managedidentities.backups.get",
+    "managedidentities.backups.getIamPolicy",
+    "managedidentities.backups.list",
+    "managedidentities.domains.get",
+    "managedidentities.locations.get",
+    "managedidentities.locations.list",
+    "managedidentities.operations.get",
+    "managedidentities.operations.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

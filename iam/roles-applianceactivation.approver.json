@@ -1,0 +1,12 @@
+{
+  "name": "roles/applianceactivation.approver",
+  "title": "Appliance troubleshooting commands approver",
+  "description": "Grants access to approve commands to run on appliances",
+  "included_permissions": [
+    "applianceactivation.rttCommands.approve",
+    "applianceactivation.rttCommands.get",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "BETA"
+}

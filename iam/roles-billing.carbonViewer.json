@@ -1,0 +1,11 @@
+{
+  "name": "roles/billing.carbonViewer",
+  "title": "Carbon Footprint Viewer",
+  "description": "",
+  "included_permissions": [
+    "billing.accounts.get",
+    "billing.accounts.getCarbonInformation",
+    "billing.accounts.list"
+  ],
+  "stage": "GA"
+}

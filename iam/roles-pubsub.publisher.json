@@ -1,0 +1,9 @@
+{
+  "name": "roles/pubsub.publisher",
+  "title": "Pub/Sub Publisher",
+  "description": "Publish messages to a topic.",
+  "included_permissions": [
+    "pubsub.topics.publish"
+  ],
+  "stage": "GA"
+}

@@ -1,0 +1,10 @@
+{
+  "name": "roles/visionai.annotationViewer",
+  "title": "VisionAI Warehouse Annotation Viewer",
+  "description": "Grants access to view media asset annotations into the Warehouse.",
+  "included_permissions": [
+    "visionai.annotations.get",
+    "visionai.annotations.list"
+  ],
+  "stage": "BETA"
+}

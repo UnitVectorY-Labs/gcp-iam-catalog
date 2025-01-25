@@ -1,0 +1,16 @@
+{
+  "name": "roles/metastore.metadataViewer",
+  "title": "Dataproc Metastore Metadata Viewer",
+  "description": "Access to read the metadata of databases and tables under those databases",
+  "included_permissions": [
+    "metastore.databases.get",
+    "metastore.databases.getIamPolicy",
+    "metastore.databases.list",
+    "metastore.services.get",
+    "metastore.services.use",
+    "metastore.tables.get",
+    "metastore.tables.getIamPolicy",
+    "metastore.tables.list"
+  ],
+  "stage": "GA"
+}

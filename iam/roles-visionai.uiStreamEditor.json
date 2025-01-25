@@ -1,0 +1,13 @@
+{
+  "name": "roles/visionai.uiStreamEditor",
+  "title": "Vision AI UI Stream Editor",
+  "description": "Access to read \u0026 write Vision AI UI Streams.",
+  "included_permissions": [
+    "visionai.uistreams.create",
+    "visionai.uistreams.delete",
+    "visionai.uistreams.generateStreamThumbnails",
+    "visionai.uistreams.get",
+    "visionai.uistreams.list"
+  ],
+  "stage": "BETA"
+}

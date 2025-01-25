@@ -1,0 +1,15 @@
+{
+  "name": "roles/datastore.backupSchedulesAdmin",
+  "title": "Cloud Datastore Backup Schedules Admin",
+  "description": "Manage backup schedules in Cloud Datastore.",
+  "included_permissions": [
+    "datastore.backupSchedules.create",
+    "datastore.backupSchedules.delete",
+    "datastore.backupSchedules.get",
+    "datastore.backupSchedules.list",
+    "datastore.backupSchedules.update",
+    "datastore.databases.getMetadata",
+    "datastore.databases.list"
+  ],
+  "stage": "GA"
+}

@@ -1,0 +1,11 @@
+{
+  "name": "roles/privilegedaccessmanager.organizationServiceAgent",
+  "title": "Privileged Access Manager Organization Service Agent",
+  "description": "Gives privileged access manager service account access to modify IAM policies on GCP organizations",
+  "included_permissions": [
+    "resourcemanager.organizations.get",
+    "resourcemanager.organizations.getIamPolicy",
+    "resourcemanager.organizations.setIamPolicy"
+  ],
+  "stage": "GA"
+}

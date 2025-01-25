@@ -1,0 +1,10 @@
+{
+  "name": "roles/containeranalysis.notes.attacher",
+  "title": "Container Analysis Notes Attacher",
+  "description": "Can attach Container Analysis Occurrences to Notes.",
+  "included_permissions": [
+    "containeranalysis.notes.attachOccurrence",
+    "containeranalysis.notes.get"
+  ],
+  "stage": "GA"
+}

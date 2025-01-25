@@ -1,0 +1,14 @@
+{
+  "name": "roles/cloudcontrolspartner.monitoringReader",
+  "title": "Cloud Controls Partner Monitoring Reader",
+  "description": "Readonly access to Cloud Controls Partner monitoring resources.",
+  "included_permissions": [
+    "cloudcontrolspartner.customers.get",
+    "cloudcontrolspartner.customers.list",
+    "cloudcontrolspartner.violations.get",
+    "cloudcontrolspartner.violations.list",
+    "cloudcontrolspartner.workloads.get",
+    "cloudcontrolspartner.workloads.list"
+  ],
+  "stage": "GA"
+}

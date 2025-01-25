@@ -1,0 +1,13 @@
+{
+  "name": "roles/timeseriesinsights.datasetsViewer",
+  "title": "Timeseries Insights DataSet Viewer",
+  "description": "Read-only access (List and Query) to DataSets.",
+  "included_permissions": [
+    "timeseriesinsights.datasets.evaluate",
+    "timeseriesinsights.datasets.list",
+    "timeseriesinsights.datasets.query",
+    "timeseriesinsights.locations.get",
+    "timeseriesinsights.locations.list"
+  ],
+  "stage": "BETA"
+}

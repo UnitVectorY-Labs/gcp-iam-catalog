@@ -1,0 +1,18 @@
+{
+  "name": "roles/rma.runner",
+  "title": "Rapid Migration Assessment Runner",
+  "description": "Update and Read access to Rapid Migration Assessment all resources.",
+  "included_permissions": [
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list",
+    "rma.annotations.get",
+    "rma.collectors.get",
+    "rma.collectors.list",
+    "rma.collectors.update",
+    "rma.locations.get",
+    "rma.locations.list",
+    "rma.operations.get",
+    "rma.operations.list"
+  ],
+  "stage": "GA"
+}

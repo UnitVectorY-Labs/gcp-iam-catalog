@@ -1,0 +1,19 @@
+{
+  "name": "roles/speakerid.admin",
+  "title": "Speaker ID Admin",
+  "description": "Grants full access to all Speaker ID resources, including project settings.",
+  "included_permissions": [
+    "speakerid.phrases.create",
+    "speakerid.phrases.delete",
+    "speakerid.phrases.get",
+    "speakerid.phrases.list",
+    "speakerid.settings.get",
+    "speakerid.settings.update",
+    "speakerid.speakers.create",
+    "speakerid.speakers.delete",
+    "speakerid.speakers.get",
+    "speakerid.speakers.list",
+    "speakerid.speakers.verify"
+  ],
+  "stage": "GA"
+}

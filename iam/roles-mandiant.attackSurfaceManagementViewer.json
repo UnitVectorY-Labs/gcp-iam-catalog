@@ -1,0 +1,12 @@
+{
+  "name": "roles/mandiant.attackSurfaceManagementViewer",
+  "title": "Mandiant Attack Surface Management Viewer",
+  "description": "Access to read Attack Surface Management",
+  "included_permissions": [
+    "mandiant.genericAttackSurfaceManagements.get",
+    "mandiant.genericPlatforms.get",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "BETA"
+}

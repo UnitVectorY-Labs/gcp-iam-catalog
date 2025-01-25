@@ -1,0 +1,10 @@
+{
+  "name": "roles/visionai.streamViewer",
+  "title": "Vision AI Stream Viewer",
+  "description": "Access to read Vision AI Streams.",
+  "included_permissions": [
+    "visionai.streams.get",
+    "visionai.streams.list"
+  ],
+  "stage": "BETA"
+}

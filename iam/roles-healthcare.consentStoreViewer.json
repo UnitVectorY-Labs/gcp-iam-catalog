@@ -1,0 +1,20 @@
+{
+  "name": "roles/healthcare.consentStoreViewer",
+  "title": "Healthcare Consent Store Viewer",
+  "description": "List Consent Stores in a dataset.",
+  "included_permissions": [
+    "healthcare.consentStores.checkDataAccess",
+    "healthcare.consentStores.evaluateUserConsents",
+    "healthcare.consentStores.get",
+    "healthcare.consentStores.list",
+    "healthcare.consentStores.queryAccessibleData",
+    "healthcare.datasets.get",
+    "healthcare.datasets.list",
+    "healthcare.locations.get",
+    "healthcare.locations.list",
+    "healthcare.operations.get",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

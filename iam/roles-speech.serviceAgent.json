@@ -1,0 +1,14 @@
+{
+  "name": "roles/speech.serviceAgent",
+  "title": "Cloud Speech-to-Text Service Agent",
+  "description": "Gives Speech-to-Text service account access to GCS resources.",
+  "included_permissions": [
+    "storage.buckets.get",
+    "storage.buckets.list",
+    "storage.objects.create",
+    "storage.objects.get",
+    "storage.objects.list",
+    "storage.objects.update"
+  ],
+  "stage": "GA"
+}

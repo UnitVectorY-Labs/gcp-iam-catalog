@@ -1,0 +1,11 @@
+{
+  "name": "roles/firebaseappcheck.serviceAgent",
+  "title": "Firebase App Check Service Agent",
+  "description": "Grants Firebase App Check Service Account access to consumer app attestation resources, such as reCAPTCHA Enterprise and Play Integrity API.",
+  "included_permissions": [
+    "recaptchaenterprise.assessments.annotate",
+    "recaptchaenterprise.assessments.create",
+    "serviceusage.services.use"
+  ],
+  "stage": "GA"
+}

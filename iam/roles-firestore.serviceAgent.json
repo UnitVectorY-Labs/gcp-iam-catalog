@@ -1,0 +1,13 @@
+{
+  "name": "roles/firestore.serviceAgent",
+  "title": "Firestore Service Agent",
+  "description": "Gives Firestore service account access to managed resources.",
+  "included_permissions": [
+    "storage.buckets.get",
+    "storage.objects.create",
+    "storage.objects.delete",
+    "storage.objects.get",
+    "storage.objects.list"
+  ],
+  "stage": "GA"
+}

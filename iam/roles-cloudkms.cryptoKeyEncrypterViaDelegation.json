@@ -1,0 +1,13 @@
+{
+  "name": "roles/cloudkms.cryptoKeyEncrypterViaDelegation",
+  "title": "Cloud KMS CryptoKey Encrypter Via Delegation",
+  "description": "Enables Encrypt operations via other GCP services",
+  "included_permissions": [
+    "cloudkms.cryptoKeyVersions.useToEncryptViaDelegation",
+    "cloudkms.locations.get",
+    "cloudkms.locations.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

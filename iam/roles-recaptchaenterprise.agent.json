@@ -1,0 +1,15 @@
+{
+  "name": "roles/recaptchaenterprise.agent",
+  "title": "reCAPTCHA Enterprise Agent",
+  "description": "Access to create and annotate reCAPTCHA Enterprise assessments",
+  "included_permissions": [
+    "recaptchaenterprise.assessments.annotate",
+    "recaptchaenterprise.assessments.create",
+    "recaptchaenterprise.firewallpolicies.list",
+    "recaptchaenterprise.relatedaccountgroupmemberships.list",
+    "recaptchaenterprise.relatedaccountgroups.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "BETA"
+}

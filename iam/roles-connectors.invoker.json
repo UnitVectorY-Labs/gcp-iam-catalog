@@ -1,0 +1,19 @@
+{
+  "name": "roles/connectors.invoker",
+  "title": "Connector Invoker",
+  "description": "Full Access to invoke all operations on Connections.",
+  "included_permissions": [
+    "connectors.actions.execute",
+    "connectors.actions.list",
+    "connectors.connections.executeSqlQuery",
+    "connectors.entities.create",
+    "connectors.entities.delete",
+    "connectors.entities.deleteEntitiesWithConditions",
+    "connectors.entities.get",
+    "connectors.entities.list",
+    "connectors.entities.update",
+    "connectors.entities.updateEntitiesWithConditions",
+    "connectors.entityTypes.list"
+  ],
+  "stage": "GA"
+}

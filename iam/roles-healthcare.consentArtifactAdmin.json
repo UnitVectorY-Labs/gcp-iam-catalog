@@ -1,0 +1,24 @@
+{
+  "name": "roles/healthcare.consentArtifactAdmin",
+  "title": "Healthcare Consent Artifact Administrator",
+  "description": "Administer ConsentArtifact objects.",
+  "included_permissions": [
+    "healthcare.consentArtifacts.create",
+    "healthcare.consentArtifacts.delete",
+    "healthcare.consentArtifacts.get",
+    "healthcare.consentArtifacts.list",
+    "healthcare.consentStores.checkDataAccess",
+    "healthcare.consentStores.evaluateUserConsents",
+    "healthcare.consentStores.get",
+    "healthcare.consentStores.list",
+    "healthcare.consentStores.queryAccessibleData",
+    "healthcare.datasets.get",
+    "healthcare.datasets.list",
+    "healthcare.locations.get",
+    "healthcare.locations.list",
+    "healthcare.operations.get",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

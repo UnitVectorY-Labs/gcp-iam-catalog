@@ -1,0 +1,10 @@
+{
+  "name": "roles/baremetalsolution.maintenanceeventsviewer",
+  "title": "Maintenance Events Viewer",
+  "description": "Viewer of Bare Metal Solution maintenance events resources",
+  "included_permissions": [
+    "baremetalsolution.maintenanceevents.get",
+    "baremetalsolution.maintenanceevents.list"
+  ],
+  "stage": "GA"
+}

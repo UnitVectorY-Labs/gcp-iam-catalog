@@ -1,0 +1,9 @@
+{
+  "name": "roles/paymentsresellersubscription.userSessionEditor",
+  "title": "Payments Partner UserSessions Editor",
+  "description": "Editor of UserSessions for a Payments Partner",
+  "included_permissions": [
+    "paymentsresellersubscription.userSessions.generate"
+  ],
+  "stage": "BETA"
+}

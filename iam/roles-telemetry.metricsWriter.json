@@ -1,0 +1,9 @@
+{
+  "name": "roles/telemetry.metricsWriter",
+  "title": "Cloud Telemetry Metrics Writer",
+  "description": "Access to write metrics.",
+  "included_permissions": [
+    "telemetry.metrics.write"
+  ],
+  "stage": "BETA"
+}

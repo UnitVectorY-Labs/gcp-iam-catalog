@@ -1,0 +1,17 @@
+{
+  "name": "roles/dlp.dataProfilesReader",
+  "title": "DLP Data Profiles Reader",
+  "description": "Read DLP profiles.",
+  "included_permissions": [
+    "dlp.charts.get",
+    "dlp.columnDataProfiles.get",
+    "dlp.columnDataProfiles.list",
+    "dlp.fileStoreProfiles.get",
+    "dlp.fileStoreProfiles.list",
+    "dlp.projectDataProfiles.get",
+    "dlp.projectDataProfiles.list",
+    "dlp.tableDataProfiles.get",
+    "dlp.tableDataProfiles.list"
+  ],
+  "stage": "GA"
+}

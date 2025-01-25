@@ -1,0 +1,17 @@
+{
+  "name": "roles/discoveryengine.user",
+  "title": "Discovery Engine User",
+  "description": "Grants user-level access to Discovery Engine resources.",
+  "included_permissions": [
+    "discoveryengine.answers.get",
+    "discoveryengine.completionConfigs.completeQuery",
+    "discoveryengine.servingConfigs.answer",
+    "discoveryengine.servingConfigs.search",
+    "discoveryengine.sessions.delete",
+    "discoveryengine.sessions.get",
+    "discoveryengine.sessions.list",
+    "discoveryengine.sessions.update",
+    "discoveryengine.widgetConfigs.get"
+  ],
+  "stage": "BETA"
+}

@@ -1,0 +1,10 @@
+{
+  "name": "roles/securitycenter.complianceSnapshotsViewer",
+  "title": "Security Center Compliance Snapshots Viewer",
+  "description": "Read access to security center compliance snapshots",
+  "included_permissions": [
+    "securitycenter.complianceReports.aggregate",
+    "securitycenter.compliancesnapshots.list"
+  ],
+  "stage": "BETA"
+}

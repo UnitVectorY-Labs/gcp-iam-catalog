@@ -1,0 +1,10 @@
+{
+  "name": "roles/servicemanagement.configEditor",
+  "title": "Service Config Editor",
+  "description": "Access to update the service config and create rollouts.",
+  "included_permissions": [
+    "servicemanagement.services.get",
+    "servicemanagement.services.update"
+  ],
+  "stage": "GA"
+}

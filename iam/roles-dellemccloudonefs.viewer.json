@@ -1,0 +1,14 @@
+{
+  "name": "roles/dellemccloudonefs.viewer",
+  "title": "Dell EMC Cloud OneFS Viewer",
+  "description": "This role is managed by Dell EMC, not Google.",
+  "included_permissions": [
+    "cloudonefs.isiloncloud.com/clusters.get",
+    "cloudonefs.isiloncloud.com/clusters.list",
+    "cloudonefs.isiloncloud.com/fileshares.get",
+    "cloudonefs.isiloncloud.com/fileshares.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "BETA"
+}

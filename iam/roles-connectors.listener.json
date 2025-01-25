@@ -1,0 +1,9 @@
+{
+  "name": "roles/connectors.listener",
+  "title": "Connector Event Listener",
+  "description": "Full Access to listen events by connections.",
+  "included_permissions": [
+    "connectors.connections.listenEvent"
+  ],
+  "stage": "GA"
+}

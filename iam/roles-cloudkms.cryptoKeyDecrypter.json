@@ -1,0 +1,12 @@
+{
+  "name": "roles/cloudkms.cryptoKeyDecrypter",
+  "title": "Cloud KMS CryptoKey Decrypter",
+  "description": "Enables Decrypt operations",
+  "included_permissions": [
+    "cloudkms.cryptoKeyVersions.useToDecrypt",
+    "cloudkms.locations.get",
+    "cloudkms.locations.list",
+    "resourcemanager.projects.get"
+  ],
+  "stage": "GA"
+}

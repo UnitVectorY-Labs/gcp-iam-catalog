@@ -1,0 +1,26 @@
+{
+  "name": "roles/managedkafka.clusterEditor",
+  "title": "Managed Kafka Cluster Editor",
+  "description": "Provides read and write access to Kafka clusters. Intended for, e.g., IT Departments that provision Kafka clusters, but need not be able to read or modify topics or consumer groups.",
+  "included_permissions": [
+    "managedkafka.clusters.create",
+    "managedkafka.clusters.delete",
+    "managedkafka.clusters.get",
+    "managedkafka.clusters.list",
+    "managedkafka.clusters.update",
+    "managedkafka.consumerGroups.get",
+    "managedkafka.consumerGroups.list",
+    "managedkafka.locations.get",
+    "managedkafka.locations.list",
+    "managedkafka.operations.get",
+    "managedkafka.operations.list",
+    "managedkafka.topics.get",
+    "managedkafka.topics.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list",
+    "serviceusage.quotas.get",
+    "serviceusage.services.get",
+    "serviceusage.services.list"
+  ],
+  "stage": "BETA"
+}

@@ -1,0 +1,16 @@
+{
+  "name": "roles/visionai.indexEndpointAdmin",
+  "title": "VisionAI Warehouse IndexEndpoint Administrator",
+  "description": "Full control of all Media Warehouse resources and permissions.",
+  "included_permissions": [
+    "visionai.indexEndpoints.create",
+    "visionai.indexEndpoints.delete",
+    "visionai.indexEndpoints.deploy",
+    "visionai.indexEndpoints.get",
+    "visionai.indexEndpoints.list",
+    "visionai.indexEndpoints.search",
+    "visionai.indexEndpoints.undeploy",
+    "visionai.indexEndpoints.update"
+  ],
+  "stage": "BETA"
+}

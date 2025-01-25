@@ -1,0 +1,9 @@
+{
+  "name": "roles/opsconfigmonitoring.resourceMetadata.viewer",
+  "title": "Ops Config Monitoring Resource Metadata Viewer",
+  "description": "Read-only access to resource metadata.",
+  "included_permissions": [
+    "opsconfigmonitoring.resourceMetadata.list"
+  ],
+  "stage": "BETA"
+}

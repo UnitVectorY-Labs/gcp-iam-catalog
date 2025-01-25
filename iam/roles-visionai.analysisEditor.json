@@ -1,0 +1,13 @@
+{
+  "name": "roles/visionai.analysisEditor",
+  "title": "Vision AI Analysis Editor",
+  "description": "Access to read and write Vision AI Analyses.",
+  "included_permissions": [
+    "visionai.analyses.create",
+    "visionai.analyses.delete",
+    "visionai.analyses.get",
+    "visionai.analyses.list",
+    "visionai.analyses.update"
+  ],
+  "stage": "BETA"
+}

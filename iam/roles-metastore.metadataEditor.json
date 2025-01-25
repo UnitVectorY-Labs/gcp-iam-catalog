@@ -1,0 +1,22 @@
+{
+  "name": "roles/metastore.metadataEditor",
+  "title": "Dataproc Metastore Metadata Editor",
+  "description": "Access to read and modify the metadata of databases and tables under those databases.",
+  "included_permissions": [
+    "metastore.databases.create",
+    "metastore.databases.delete",
+    "metastore.databases.get",
+    "metastore.databases.getIamPolicy",
+    "metastore.databases.list",
+    "metastore.databases.update",
+    "metastore.services.get",
+    "metastore.services.use",
+    "metastore.tables.create",
+    "metastore.tables.delete",
+    "metastore.tables.get",
+    "metastore.tables.getIamPolicy",
+    "metastore.tables.list",
+    "metastore.tables.update"
+  ],
+  "stage": "GA"
+}

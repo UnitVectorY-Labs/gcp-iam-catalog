@@ -1,0 +1,14 @@
+{
+  "name": "roles/recommender.networkAnalyzerIpAddressViewer",
+  "title": "Network Analyzer IP Address Recommender Viewer",
+  "description": "Viewer of Network Analyzer IP Address Insights and Recommendations.",
+  "included_permissions": [
+    "recommender.locations.get",
+    "recommender.locations.list",
+    "recommender.networkAnalyzerIpAddressInsights.get",
+    "recommender.networkAnalyzerIpAddressInsights.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

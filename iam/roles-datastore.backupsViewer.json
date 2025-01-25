@@ -1,0 +1,10 @@
+{
+  "name": "roles/datastore.backupsViewer",
+  "title": "Cloud Datastore Backups Viewer",
+  "description": "Read access to metadata about backups in Cloud Datastore.",
+  "included_permissions": [
+    "datastore.backups.get",
+    "datastore.backups.list"
+  ],
+  "stage": "GA"
+}

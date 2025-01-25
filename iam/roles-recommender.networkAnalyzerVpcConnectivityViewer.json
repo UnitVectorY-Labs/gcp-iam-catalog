@@ -1,0 +1,14 @@
+{
+  "name": "roles/recommender.networkAnalyzerVpcConnectivityViewer",
+  "title": "Network Analyzer VPC Connectivity Recommender Viewer",
+  "description": "Viewer of Network Analyzer VPC Connectivity Insights and Recommendations.",
+  "included_permissions": [
+    "recommender.locations.get",
+    "recommender.locations.list",
+    "recommender.networkAnalyzerVpcConnectivityInsights.get",
+    "recommender.networkAnalyzerVpcConnectivityInsights.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

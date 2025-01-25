@@ -1,0 +1,17 @@
+{
+  "name": "roles/cloudaicompanion.codeRepositoryIndexesViewer",
+  "title": "Code Repository Indexes Viewer",
+  "description": "Grants readonly access to Code Repository Indexes resources.",
+  "included_permissions": [
+    "cloudaicompanion.codeRepositoryIndexes.get",
+    "cloudaicompanion.codeRepositoryIndexes.list",
+    "cloudaicompanion.operations.get",
+    "cloudaicompanion.operations.list",
+    "cloudaicompanion.repositoryGroups.get",
+    "cloudaicompanion.repositoryGroups.getIamPolicy",
+    "cloudaicompanion.repositoryGroups.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "BETA"
+}

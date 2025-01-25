@@ -1,0 +1,10 @@
+{
+  "name": "roles/cloudcontrolspartner.accessApprovalServiceAgent",
+  "title": "Cloud Controls Partner Access Approval Service Agent",
+  "description": "Gives the Partner Console service account access to read Access Approval Requests for workloads associated with a partner.",
+  "included_permissions": [
+    "accessapproval.requests.get",
+    "accessapproval.requests.list"
+  ],
+  "stage": "GA"
+}

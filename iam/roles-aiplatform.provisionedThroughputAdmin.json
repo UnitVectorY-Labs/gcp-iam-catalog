@@ -1,0 +1,10 @@
+{
+  "name": "roles/aiplatform.provisionedThroughputAdmin",
+  "title": "Vertex AI Platform Provisioned Throughput Admin",
+  "description": "Grants access to use all resources related to Vertex AI Provisioned Throughput",
+  "included_permissions": [
+    "aiplatform.provisionedThroughputs.create",
+    "aiplatform.provisionedThroughputs.list"
+  ],
+  "stage": "BETA"
+}

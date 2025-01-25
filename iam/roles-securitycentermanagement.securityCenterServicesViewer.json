@@ -1,0 +1,10 @@
+{
+  "name": "roles/securitycentermanagement.securityCenterServicesViewer",
+  "title": "Security Center Management Services Viewer",
+  "description": "Readonly access to Cloud Security Command Center services configuration.",
+  "included_permissions": [
+    "securitycentermanagement.securityCenterServices.get",
+    "securitycentermanagement.securityCenterServices.list"
+  ],
+  "stage": "GA"
+}

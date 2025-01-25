@@ -1,0 +1,14 @@
+{
+  "name": "roles/networksecurity.interceptEndpointViewer",
+  "title": "Intercept Endpoint Viewer",
+  "description": "Enables read-only access to intercept resources on the Consumer's side.",
+  "included_permissions": [
+    "networksecurity.interceptEndpointGroupAssociations.get",
+    "networksecurity.interceptEndpointGroupAssociations.list",
+    "networksecurity.interceptEndpointGroups.get",
+    "networksecurity.interceptEndpointGroups.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "BETA"
+}

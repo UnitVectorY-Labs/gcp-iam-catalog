@@ -1,0 +1,11 @@
+{
+  "name": "roles/securitycenter.notificationConfigViewer",
+  "title": "Security Center Notification Configurations Viewer",
+  "description": "Read access to notification configurations",
+  "included_permissions": [
+    "securitycenter.notificationconfig.get",
+    "securitycenter.notificationconfig.list",
+    "securitycenter.userinterfacemetadata.get"
+  ],
+  "stage": "GA"
+}

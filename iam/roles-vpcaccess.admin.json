@@ -1,0 +1,19 @@
+{
+  "name": "roles/vpcaccess.admin",
+  "title": "Serverless VPC Access Admin",
+  "description": "Full access to all Serverless VPC Access resources",
+  "included_permissions": [
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list",
+    "vpcaccess.connectors.create",
+    "vpcaccess.connectors.delete",
+    "vpcaccess.connectors.get",
+    "vpcaccess.connectors.list",
+    "vpcaccess.connectors.update",
+    "vpcaccess.connectors.use",
+    "vpcaccess.locations.list",
+    "vpcaccess.operations.get",
+    "vpcaccess.operations.list"
+  ],
+  "stage": "GA"
+}

@@ -1,0 +1,16 @@
+{
+  "name": "roles/remotebuildexecution.artifactAdmin",
+  "title": "Remote Build Execution Artifact Admin",
+  "description": "Remote Build Execution Artifact Admin",
+  "included_permissions": [
+    "remotebuildexecution.actions.create",
+    "remotebuildexecution.actions.delete",
+    "remotebuildexecution.actions.get",
+    "remotebuildexecution.blobs.create",
+    "remotebuildexecution.blobs.get",
+    "remotebuildexecution.logstreams.create",
+    "remotebuildexecution.logstreams.get",
+    "remotebuildexecution.logstreams.update"
+  ],
+  "stage": "BETA"
+}

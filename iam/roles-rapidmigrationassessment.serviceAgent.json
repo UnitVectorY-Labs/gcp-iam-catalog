@@ -1,0 +1,25 @@
+{
+  "name": "roles/rapidmigrationassessment.serviceAgent",
+  "title": "RMA Service Agent",
+  "description": "Gives RMA service account access to MC resources.",
+  "included_permissions": [
+    "autoscaling.sites.writeMetrics",
+    "cloudasset.assets.exportResource",
+    "cloudasset.feeds.create",
+    "logging.logEntries.create",
+    "migrationcenter.assets.list",
+    "migrationcenter.assets.reportFrames",
+    "migrationcenter.importJobs.get",
+    "migrationcenter.importJobs.list",
+    "migrationcenter.sources.create",
+    "migrationcenter.sources.delete",
+    "migrationcenter.sources.get",
+    "migrationcenter.sources.list",
+    "migrationcenter.sources.update",
+    "monitoring.metricDescriptors.create",
+    "monitoring.metricDescriptors.list",
+    "monitoring.timeSeries.create",
+    "resourcemanager.projects.get"
+  ],
+  "stage": "GA"
+}

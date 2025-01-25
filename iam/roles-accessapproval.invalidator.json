@@ -1,0 +1,13 @@
+{
+  "name": "roles/accessapproval.invalidator",
+  "title": "Access Approval Invalidator",
+  "description": "Ability to invalidate existing approved approval requests",
+  "included_permissions": [
+    "accessapproval.requests.invalidate",
+    "accessapproval.serviceAccounts.get",
+    "accessapproval.settings.get",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

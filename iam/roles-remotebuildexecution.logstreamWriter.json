@@ -1,0 +1,10 @@
+{
+  "name": "roles/remotebuildexecution.logstreamWriter",
+  "title": "Remote Build Execution Logstream Writer",
+  "description": "Remote Build Execution Logstream Writer",
+  "included_permissions": [
+    "remotebuildexecution.logstreams.create",
+    "remotebuildexecution.logstreams.update"
+  ],
+  "stage": "BETA"
+}

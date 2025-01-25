@@ -1,0 +1,11 @@
+{
+  "name": "roles/storageinsights.serviceAgent",
+  "title": "StorageInsights Service Agent",
+  "description": "Permissions for Insights to write reports into customer project",
+  "included_permissions": [
+    "bigquery.datasets.create",
+    "serviceusage.services.use",
+    "storageinsights.reportDetails.list"
+  ],
+  "stage": "GA"
+}

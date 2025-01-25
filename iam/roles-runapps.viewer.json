@@ -1,0 +1,19 @@
+{
+  "name": "roles/runapps.viewer",
+  "title": "Serverless Integrations Viewer",
+  "description": "Readonly access to Serverless Integrations resources.",
+  "included_permissions": [
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list",
+    "runapps.applications.get",
+    "runapps.applications.getStatus",
+    "runapps.applications.list",
+    "runapps.deployments.get",
+    "runapps.deployments.list",
+    "runapps.locations.get",
+    "runapps.locations.list",
+    "runapps.operations.get",
+    "runapps.operations.list"
+  ],
+  "stage": "BETA"
+}

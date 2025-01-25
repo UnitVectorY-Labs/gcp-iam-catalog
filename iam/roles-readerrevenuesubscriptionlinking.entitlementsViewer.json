@@ -1,0 +1,9 @@
+{
+  "name": "roles/readerrevenuesubscriptionlinking.entitlementsViewer",
+  "title": "Subscription Linking Entitlements Viewer",
+  "description": "This role can view all publication reader entitlements",
+  "included_permissions": [
+    "readerrevenuesubscriptionlinking.readerEntitlements.get"
+  ],
+  "stage": "GA"
+}

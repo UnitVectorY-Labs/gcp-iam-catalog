@@ -1,0 +1,10 @@
+{
+  "name": "roles/cloudoptimization.admin",
+  "title": "Cloud Optimization AI Admin",
+  "description": "Administrator of Cloud Optimization AI resources",
+  "included_permissions": [
+    "cloudoptimization.operations.create",
+    "cloudoptimization.operations.get"
+  ],
+  "stage": "GA"
+}

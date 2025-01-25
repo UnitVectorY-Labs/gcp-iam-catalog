@@ -1,0 +1,12 @@
+{
+  "name": "roles/cloudaicompanion.repositoryGroupsUser",
+  "title": "Repository Groups User",
+  "description": "Grants Read/Use access to the Code Repository Indexes Repository Group.",
+  "included_permissions": [
+    "cloudaicompanion.codeRepositoryIndexes.get",
+    "cloudaicompanion.repositoryGroups.get",
+    "cloudaicompanion.repositoryGroups.getIamPolicy",
+    "cloudaicompanion.repositoryGroups.use"
+  ],
+  "stage": "BETA"
+}

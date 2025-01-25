@@ -1,0 +1,10 @@
+{
+  "name": "roles/accesscontextmanager.gcpAccessReader",
+  "title": "Cloud Access Binding Reader",
+  "description": "Read access to Cloud access bindings.",
+  "included_permissions": [
+    "accesscontextmanager.gcpUserAccessBindings.get",
+    "accesscontextmanager.gcpUserAccessBindings.list"
+  ],
+  "stage": "GA"
+}

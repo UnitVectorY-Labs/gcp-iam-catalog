@@ -1,0 +1,17 @@
+{
+  "name": "roles/firebaseextensionspublisher.extensionsAdmin",
+  "title": "Firebase Extensions Publisher - Extensions Admin",
+  "description": "Fully manage Firebase Extensions",
+  "included_permissions": [
+    "firebase.clients.get",
+    "firebase.clients.list",
+    "firebase.projects.get",
+    "firebaseextensionspublisher.extensions.create",
+    "firebaseextensionspublisher.extensions.delete",
+    "firebaseextensionspublisher.extensions.get",
+    "firebaseextensionspublisher.extensions.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "BETA"
+}

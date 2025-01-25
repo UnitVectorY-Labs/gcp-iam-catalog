@@ -1,0 +1,28 @@
+{
+  "name": "roles/integrations.integrationInvoker",
+  "title": "Application Integration Invoker",
+  "description": "A role that can invoke integrations.",
+  "included_permissions": [
+    "integrations.apigeeExecutions.list",
+    "integrations.apigeeIntegrationVers.get",
+    "integrations.apigeeIntegrationVers.list",
+    "integrations.apigeeIntegrations.invoke",
+    "integrations.apigeeIntegrations.list",
+    "integrations.executions.cancel",
+    "integrations.executions.get",
+    "integrations.executions.list",
+    "integrations.executions.replay",
+    "integrations.integrationVersions.get",
+    "integrations.integrationVersions.invoke",
+    "integrations.integrationVersions.list",
+    "integrations.integrations.get",
+    "integrations.integrations.invoke",
+    "integrations.integrations.list",
+    "integrations.testCases.get",
+    "integrations.testCases.invoke",
+    "integrations.testCases.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

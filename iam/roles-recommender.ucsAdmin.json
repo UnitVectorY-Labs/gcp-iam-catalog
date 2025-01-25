@@ -1,0 +1,20 @@
+{
+  "name": "roles/recommender.ucsAdmin",
+  "title": "Spend Based Commitment Recommender Admin",
+  "description": "Admin of Spend Based Commitment Recommender.",
+  "included_permissions": [
+    "billing.accounts.get",
+    "billing.accounts.list",
+    "recommender.locations.get",
+    "recommender.locations.list",
+    "recommender.spendBasedCommitmentInsights.get",
+    "recommender.spendBasedCommitmentInsights.list",
+    "recommender.spendBasedCommitmentInsights.update",
+    "recommender.spendBasedCommitmentRecommendations.get",
+    "recommender.spendBasedCommitmentRecommendations.list",
+    "recommender.spendBasedCommitmentRecommendations.update",
+    "recommender.spendBasedCommitmentRecommenderConfig.get",
+    "recommender.spendBasedCommitmentRecommenderConfig.update"
+  ],
+  "stage": "BETA"
+}

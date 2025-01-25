@@ -1,0 +1,11 @@
+{
+  "name": "roles/servicedirectory.pscAuthorizedService",
+  "title": "Private Service Connect Authorized Service",
+  "description": "Gives access to VPC Networks via Service Directory",
+  "included_permissions": [
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list",
+    "servicedirectory.networks.access"
+  ],
+  "stage": "GA"
+}

@@ -1,0 +1,12 @@
+{
+  "name": "roles/dataplex.dataScanCreator",
+  "title": "Dataplex DataScan Creator",
+  "description": "Access to create new DataScan resources.",
+  "included_permissions": [
+    "dataplex.datascans.create",
+    "dataplex.datascans.get",
+    "dataplex.datascans.list",
+    "dataplex.operations.get"
+  ],
+  "stage": "GA"
+}

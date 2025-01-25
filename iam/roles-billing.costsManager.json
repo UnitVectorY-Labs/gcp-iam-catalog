@@ -1,0 +1,27 @@
+{
+  "name": "roles/billing.costsManager",
+  "title": "Billing Account Costs Manager",
+  "description": "Can view and export cost information of billing accounts.",
+  "included_permissions": [
+    "billing.accounts.get",
+    "billing.accounts.getIamPolicy",
+    "billing.accounts.getSpendingInformation",
+    "billing.accounts.getUsageExportSpec",
+    "billing.accounts.list",
+    "billing.accounts.updateUsageExportSpec",
+    "billing.anomalies.get",
+    "billing.anomalies.list",
+    "billing.anomaliesConfigs.get",
+    "billing.anomaliesConfigs.update",
+    "billing.budgets.create",
+    "billing.budgets.delete",
+    "billing.budgets.get",
+    "billing.budgets.list",
+    "billing.budgets.update",
+    "billing.resourceAssociations.list",
+    "recommender.costInsights.get",
+    "recommender.costInsights.list",
+    "recommender.costInsights.update"
+  ],
+  "stage": "GA"
+}

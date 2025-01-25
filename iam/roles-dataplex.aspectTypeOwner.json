@@ -1,0 +1,21 @@
+{
+  "name": "roles/dataplex.aspectTypeOwner",
+  "title": "Dataplex Aspect Type Owner",
+  "description": "Grants access to creating and managing Aspect Types. Does not give the right to create/modify Entries.",
+  "included_permissions": [
+    "datacatalog.migrationConfig.get",
+    "dataplex.aspectTypes.create",
+    "dataplex.aspectTypes.delete",
+    "dataplex.aspectTypes.get",
+    "dataplex.aspectTypes.getIamPolicy",
+    "dataplex.aspectTypes.list",
+    "dataplex.aspectTypes.setIamPolicy",
+    "dataplex.aspectTypes.update",
+    "dataplex.aspectTypes.use",
+    "dataplex.operations.get",
+    "dataplex.projects.search",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

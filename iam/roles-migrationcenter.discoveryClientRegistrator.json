@@ -1,0 +1,16 @@
+{
+  "name": "roles/migrationcenter.discoveryClientRegistrator",
+  "title": "Migration Center Discovery Client Registrator",
+  "description": "Registrator of Migration Center Discover Clients",
+  "included_permissions": [
+    "migrationcenter.discoveryClients.create",
+    "migrationcenter.discoveryClients.delete",
+    "migrationcenter.discoveryClients.update",
+    "migrationcenter.operations.get",
+    "migrationcenter.sources.create",
+    "migrationcenter.sources.delete",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "BETA"
+}

@@ -1,0 +1,13 @@
+{
+  "name": "roles/speakerid.verifier",
+  "title": "Speaker ID Verifier",
+  "description": "Grants read access to all Speaker ID resources, and allows verification.",
+  "included_permissions": [
+    "speakerid.phrases.get",
+    "speakerid.phrases.list",
+    "speakerid.speakers.get",
+    "speakerid.speakers.list",
+    "speakerid.speakers.verify"
+  ],
+  "stage": "GA"
+}

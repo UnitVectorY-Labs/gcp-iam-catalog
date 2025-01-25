@@ -1,0 +1,22 @@
+{
+  "name": "roles/resourcemanager.folderEditor",
+  "title": "Folder Editor",
+  "description": "Edit, delete, and undelete a folder and all of its child resources.",
+  "included_permissions": [
+    "essentialcontacts.contacts.get",
+    "essentialcontacts.contacts.list",
+    "orgpolicy.constraints.list",
+    "orgpolicy.policies.list",
+    "orgpolicy.policy.get",
+    "resourcemanager.folders.delete",
+    "resourcemanager.folders.get",
+    "resourcemanager.folders.getIamPolicy",
+    "resourcemanager.folders.list",
+    "resourcemanager.folders.searchPolicyBindings",
+    "resourcemanager.folders.undelete",
+    "resourcemanager.folders.update",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

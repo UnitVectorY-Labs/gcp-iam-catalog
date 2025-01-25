@@ -1,0 +1,18 @@
+{
+  "name": "roles/recommender.containerDiagnosisAdmin",
+  "title": "GKE Diagnosis Recommender Admin",
+  "description": "Admin of GKE Diagnosis Insights and Recommendations.",
+  "included_permissions": [
+    "recommender.containerDiagnosisInsights.get",
+    "recommender.containerDiagnosisInsights.list",
+    "recommender.containerDiagnosisInsights.update",
+    "recommender.containerDiagnosisRecommendations.get",
+    "recommender.containerDiagnosisRecommendations.list",
+    "recommender.containerDiagnosisRecommendations.update",
+    "recommender.locations.get",
+    "recommender.locations.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

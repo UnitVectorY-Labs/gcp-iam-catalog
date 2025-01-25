@@ -1,0 +1,31 @@
+{
+  "name": "roles/analyticshub.admin",
+  "title": "Analytics Hub Admin",
+  "description": "Administer Data Exchanges and Listings",
+  "included_permissions": [
+    "analyticshub.dataExchanges.create",
+    "analyticshub.dataExchanges.delete",
+    "analyticshub.dataExchanges.get",
+    "analyticshub.dataExchanges.getIamPolicy",
+    "analyticshub.dataExchanges.list",
+    "analyticshub.dataExchanges.setIamPolicy",
+    "analyticshub.dataExchanges.update",
+    "analyticshub.dataExchanges.viewSubscriptions",
+    "analyticshub.listings.create",
+    "analyticshub.listings.delete",
+    "analyticshub.listings.get",
+    "analyticshub.listings.getIamPolicy",
+    "analyticshub.listings.list",
+    "analyticshub.listings.setIamPolicy",
+    "analyticshub.listings.update",
+    "analyticshub.listings.viewSubscriptions",
+    "analyticshub.subscriptions.create",
+    "analyticshub.subscriptions.delete",
+    "analyticshub.subscriptions.get",
+    "analyticshub.subscriptions.list",
+    "analyticshub.subscriptions.update",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

@@ -1,0 +1,12 @@
+{
+  "name": "roles/identitytoolkit.serviceAgent",
+  "title": "Identity Platform Service Agent",
+  "description": "Gives Identity Platform service account access to customer project resources.",
+  "included_permissions": [
+    "recaptchaenterprise.assessments.create",
+    "recaptchaenterprise.keys.create",
+    "recaptchaenterprise.keys.delete",
+    "recaptchaenterprise.keys.get"
+  ],
+  "stage": "GA"
+}

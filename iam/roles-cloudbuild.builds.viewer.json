@@ -1,0 +1,15 @@
+{
+  "name": "roles/cloudbuild.builds.viewer",
+  "title": "Cloud Build Viewer",
+  "description": "Can view builds",
+  "included_permissions": [
+    "cloudbuild.builds.get",
+    "cloudbuild.builds.list",
+    "cloudbuild.operations.get",
+    "cloudbuild.operations.list",
+    "remotebuildexecution.blobs.get",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

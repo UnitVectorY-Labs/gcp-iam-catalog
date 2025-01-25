@@ -1,0 +1,17 @@
+{
+  "name": "roles/resourcemanager.projectIamAdmin",
+  "title": "Project IAM Admin",
+  "description": "Access and administer a project IAM policies.",
+  "included_permissions": [
+    "iam.policybindings.get",
+    "iam.policybindings.list",
+    "resourcemanager.projects.createPolicyBinding",
+    "resourcemanager.projects.deletePolicyBinding",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.getIamPolicy",
+    "resourcemanager.projects.searchPolicyBindings",
+    "resourcemanager.projects.setIamPolicy",
+    "resourcemanager.projects.updatePolicyBinding"
+  ],
+  "stage": "GA"
+}

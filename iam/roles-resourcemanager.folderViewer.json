@@ -1,0 +1,17 @@
+{
+  "name": "roles/resourcemanager.folderViewer",
+  "title": "Folder Viewer",
+  "description": "Access to view a folder and all of its child resources.",
+  "included_permissions": [
+    "essentialcontacts.contacts.get",
+    "essentialcontacts.contacts.list",
+    "orgpolicy.constraints.list",
+    "orgpolicy.policies.list",
+    "orgpolicy.policy.get",
+    "resourcemanager.folders.get",
+    "resourcemanager.folders.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

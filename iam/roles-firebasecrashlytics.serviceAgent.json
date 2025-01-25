@@ -1,0 +1,16 @@
+{
+  "name": "roles/firebasecrashlytics.serviceAgent",
+  "title": "Firebase Crashlytics Service Agent",
+  "description": "Access to BigQuery export for Crashlytics",
+  "included_permissions": [
+    "bigquery.datasets.create",
+    "bigquery.datasets.get",
+    "bigquery.tables.create",
+    "bigquery.tables.get",
+    "bigquery.tables.getData",
+    "bigquery.tables.update",
+    "bigquery.tables.updateData",
+    "serviceusage.services.use"
+  ],
+  "stage": "GA"
+}

@@ -1,0 +1,18 @@
+{
+  "name": "roles/developerconnect.viewer",
+  "title": "Developer Connect Viewer",
+  "description": "Readonly access to Developer Connect resources.",
+  "included_permissions": [
+    "developerconnect.connections.get",
+    "developerconnect.connections.list",
+    "developerconnect.gitRepositoryLinks.get",
+    "developerconnect.gitRepositoryLinks.list",
+    "developerconnect.locations.get",
+    "developerconnect.locations.list",
+    "developerconnect.operations.get",
+    "developerconnect.operations.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "BETA"
+}

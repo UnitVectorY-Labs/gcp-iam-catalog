@@ -1,0 +1,22 @@
+{
+  "name": "roles/earthengine.viewer",
+  "title": "Earth Engine Resource Viewer",
+  "description": "Viewer of all Earth Engine resources",
+  "included_permissions": [
+    "earthengine.assets.get",
+    "earthengine.assets.getIamPolicy",
+    "earthengine.assets.list",
+    "earthengine.computations.create",
+    "earthengine.config.get",
+    "earthengine.filmstripthumbnails.get",
+    "earthengine.maps.get",
+    "earthengine.operations.get",
+    "earthengine.operations.list",
+    "earthengine.tables.get",
+    "earthengine.thumbnails.get",
+    "earthengine.videothumbnails.get",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "BETA"
+}

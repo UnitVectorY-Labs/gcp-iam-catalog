@@ -1,0 +1,29 @@
+{
+  "name": "roles/compute.loadBalancerServiceUser",
+  "title": "Compute Load Balancer Services User",
+  "description": "Permissions to use services from a load balancer in other projects.",
+  "included_permissions": [
+    "compute.backendBuckets.get",
+    "compute.backendBuckets.list",
+    "compute.backendBuckets.listEffectiveTags",
+    "compute.backendBuckets.listTagBindings",
+    "compute.backendBuckets.use",
+    "compute.backendServices.get",
+    "compute.backendServices.list",
+    "compute.backendServices.listEffectiveTags",
+    "compute.backendServices.listTagBindings",
+    "compute.backendServices.use",
+    "compute.projects.get",
+    "compute.regionBackendServices.get",
+    "compute.regionBackendServices.list",
+    "compute.regionBackendServices.listEffectiveTags",
+    "compute.regionBackendServices.listTagBindings",
+    "compute.regionBackendServices.use",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list",
+    "serviceusage.quotas.get",
+    "serviceusage.services.get",
+    "serviceusage.services.list"
+  ],
+  "stage": "GA"
+}

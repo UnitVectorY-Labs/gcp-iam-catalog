@@ -1,0 +1,9 @@
+{
+  "name": "roles/gkehub.connect",
+  "title": "GKE Connect Agent",
+  "description": "Ability to set up GKE Connect between external clusters and Google.",
+  "included_permissions": [
+    "gkehub.endpoints.connect"
+  ],
+  "stage": "GA"
+}

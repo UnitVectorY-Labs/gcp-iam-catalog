@@ -1,0 +1,12 @@
+{
+  "name": "roles/serviceusage.serviceUsageViewer",
+  "title": "Service Usage Viewer",
+  "description": "Ability to inspect service states and operations for a consumer project.",
+  "included_permissions": [
+    "monitoring.timeSeries.list",
+    "serviceusage.quotas.get",
+    "serviceusage.services.get",
+    "serviceusage.services.list"
+  ],
+  "stage": "GA"
+}

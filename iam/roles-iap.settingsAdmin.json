@@ -1,0 +1,18 @@
+{
+  "name": "roles/iap.settingsAdmin",
+  "title": "IAP Settings Admin",
+  "description": "Administrator of IAP Settings.",
+  "included_permissions": [
+    "iap.projects.getSettings",
+    "iap.projects.updateSettings",
+    "iap.web.getSettings",
+    "iap.web.updateSettings",
+    "iap.webServiceVersions.getSettings",
+    "iap.webServiceVersions.updateSettings",
+    "iap.webServices.getSettings",
+    "iap.webServices.updateSettings",
+    "iap.webTypes.getSettings",
+    "iap.webTypes.updateSettings"
+  ],
+  "stage": "GA"
+}

@@ -1,0 +1,14 @@
+{
+  "name": "roles/recommender.billingAccountCudViewer",
+  "title": "Billing Account Usage Commitment Recommender Viewer",
+  "description": "Viewer of Billing Account Usage Commitment Recommender.",
+  "included_permissions": [
+    "billing.accounts.get",
+    "billing.accounts.list",
+    "recommender.commitmentUtilizationInsights.get",
+    "recommender.commitmentUtilizationInsights.list",
+    "recommender.usageCommitmentRecommendations.get",
+    "recommender.usageCommitmentRecommendations.list"
+  ],
+  "stage": "BETA"
+}

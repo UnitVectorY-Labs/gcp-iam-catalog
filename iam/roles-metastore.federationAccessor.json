@@ -1,0 +1,9 @@
+{
+  "name": "roles/metastore.federationAccessor",
+  "title": "Metastore Federation Accessor",
+  "description": "Access to the Metastore Federation resource.",
+  "included_permissions": [
+    "metastore.federations.use"
+  ],
+  "stage": "GA"
+}

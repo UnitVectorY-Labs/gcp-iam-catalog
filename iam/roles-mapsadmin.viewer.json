@@ -1,0 +1,17 @@
+{
+  "name": "roles/mapsadmin.viewer",
+  "title": "Maps API Viewer",
+  "description": "Grants permission to read everything",
+  "included_permissions": [
+    "mapsadmin.clientMaps.get",
+    "mapsadmin.clientMaps.list",
+    "mapsadmin.clientStyleSheetSnapshots.list",
+    "mapsadmin.clientStyles.get",
+    "mapsadmin.clientStyles.list",
+    "mapsadmin.styleEditorConfigs.get",
+    "mapsadmin.styleSnapshots.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

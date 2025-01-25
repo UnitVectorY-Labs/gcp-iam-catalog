@@ -1,0 +1,11 @@
+{
+  "name": "roles/paymentsresellersubscription.subscriptionViewer",
+  "title": "Payments Reseller Subscriptions Viewer",
+  "description": "Read access to Payments Reseller Subscription resource",
+  "included_permissions": [
+    "paymentsresellersubscription.subscriptions.get",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "BETA"
+}

@@ -1,0 +1,19 @@
+{
+  "name": "roles/riskmanager.viewer",
+  "title": "Risk Manager Viewer",
+  "description": "Access to view Risk Manager resources",
+  "included_permissions": [
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list",
+    "riskmanager.controlScoreBreakdowns.get",
+    "riskmanager.controlScoreBreakdowns.list",
+    "riskmanager.operations.get",
+    "riskmanager.operations.list",
+    "riskmanager.policies.get",
+    "riskmanager.policies.list",
+    "riskmanager.reports.get",
+    "riskmanager.reports.list",
+    "riskmanager.settings.get"
+  ],
+  "stage": "BETA"
+}

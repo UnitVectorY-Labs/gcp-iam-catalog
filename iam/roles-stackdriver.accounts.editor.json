@@ -1,0 +1,14 @@
+{
+  "name": "roles/stackdriver.accounts.editor",
+  "title": "Stackdriver Accounts Editor",
+  "description": "Read/write access to manage Stackdriver account structure.",
+  "included_permissions": [
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list",
+    "serviceusage.services.enable",
+    "serviceusage.services.get",
+    "stackdriver.projects.edit",
+    "stackdriver.projects.get"
+  ],
+  "stage": "GA"
+}

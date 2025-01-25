@@ -1,0 +1,10 @@
+{
+  "name": "roles/logging.sqlAlertWriter",
+  "title": "SQL Alert Writer",
+  "description": "Ability to write SQL Alerts.",
+  "included_permissions": [
+    "logging.sqlAlerts.create",
+    "logging.sqlAlerts.update"
+  ],
+  "stage": "BETA"
+}

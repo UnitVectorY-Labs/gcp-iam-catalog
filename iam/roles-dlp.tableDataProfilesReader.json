@@ -1,0 +1,10 @@
+{
+  "name": "roles/dlp.tableDataProfilesReader",
+  "title": "DLP Table Data Profiles Reader",
+  "description": "Read DLP table profiles.",
+  "included_permissions": [
+    "dlp.tableDataProfiles.get",
+    "dlp.tableDataProfiles.list"
+  ],
+  "stage": "GA"
+}

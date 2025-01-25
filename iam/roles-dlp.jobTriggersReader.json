@@ -1,0 +1,10 @@
+{
+  "name": "roles/dlp.jobTriggersReader",
+  "title": "DLP Job Triggers Reader",
+  "description": "Read job triggers.",
+  "included_permissions": [
+    "dlp.jobTriggers.get",
+    "dlp.jobTriggers.list"
+  ],
+  "stage": "GA"
+}

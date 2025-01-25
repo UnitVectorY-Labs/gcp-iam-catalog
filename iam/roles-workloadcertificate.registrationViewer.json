@@ -1,0 +1,16 @@
+{
+  "name": "roles/workloadcertificate.registrationViewer",
+  "title": "Workload Certificate Registration Viewer",
+  "description": "Read-only access to WorkloadRegistration resources.",
+  "included_permissions": [
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list",
+    "workloadcertificate.locations.get",
+    "workloadcertificate.locations.list",
+    "workloadcertificate.operations.get",
+    "workloadcertificate.operations.list",
+    "workloadcertificate.workloadRegistrations.get",
+    "workloadcertificate.workloadRegistrations.list"
+  ],
+  "stage": "BETA"
+}

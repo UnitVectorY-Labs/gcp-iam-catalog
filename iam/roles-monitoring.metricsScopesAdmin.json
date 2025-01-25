@@ -1,0 +1,11 @@
+{
+  "name": "roles/monitoring.metricsScopesAdmin",
+  "title": "Monitoring Metrics Scopes Admin",
+  "description": "Access to add and remove monitored projects from metrics scopes.",
+  "included_permissions": [
+    "monitoring.metricsScopes.link",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "BETA"
+}

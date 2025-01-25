@@ -1,0 +1,16 @@
+{
+  "name": "roles/recommender.cloudReliabilityRecommendationViewer",
+  "title": "Cloud Reliability General Recommendations Recommender Viewer",
+  "description": "Viewer of Cloud Reliability General Recommendations Insights and Recommendations.",
+  "included_permissions": [
+    "recommender.cloudReliabilityGeneralInsights.get",
+    "recommender.cloudReliabilityGeneralInsights.list",
+    "recommender.cloudReliabilityGeneralRecommendations.get",
+    "recommender.cloudReliabilityGeneralRecommendations.list",
+    "recommender.locations.get",
+    "recommender.locations.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "BETA"
+}

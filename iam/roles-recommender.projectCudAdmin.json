@@ -1,0 +1,19 @@
+{
+  "name": "roles/recommender.projectCudAdmin",
+  "title": "Project Usage Commitment Recommender Admin",
+  "description": "Admin of Project Usage Commitment Recommender.",
+  "included_permissions": [
+    "recommender.commitmentUtilizationInsights.get",
+    "recommender.commitmentUtilizationInsights.list",
+    "recommender.commitmentUtilizationInsights.update",
+    "recommender.locations.get",
+    "recommender.locations.list",
+    "recommender.spendBasedCommitmentRecommenderConfig.get",
+    "recommender.usageCommitmentRecommendations.get",
+    "recommender.usageCommitmentRecommendations.list",
+    "recommender.usageCommitmentRecommendations.update",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "BETA"
+}

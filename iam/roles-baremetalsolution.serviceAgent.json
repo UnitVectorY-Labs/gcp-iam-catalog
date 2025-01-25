@@ -1,0 +1,16 @@
+{
+  "name": "roles/baremetalsolution.serviceAgent",
+  "title": "Bare Metal Solution Service Agent",
+  "description": "Gives permission to manage network resources such as interconnect pairing keys, required for Bare Metal Solution.",
+  "included_permissions": [
+    "compute.interconnectAttachments.get",
+    "compute.interconnectAttachments.list",
+    "compute.interconnects.get",
+    "compute.interconnects.list",
+    "compute.networks.get",
+    "compute.networks.list",
+    "compute.projects.get",
+    "resourcemanager.projects.get"
+  ],
+  "stage": "GA"
+}

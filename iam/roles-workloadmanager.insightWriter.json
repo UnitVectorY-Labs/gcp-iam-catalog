@@ -1,0 +1,9 @@
+{
+  "name": "roles/workloadmanager.insightWriter",
+  "title": "Workload Manager Insights Writer",
+  "description": "The role used to write data to WLM data warehouse.",
+  "included_permissions": [
+    "workloadmanager.insights.write"
+  ],
+  "stage": "BETA"
+}

@@ -1,0 +1,21 @@
+{
+  "name": "roles/speech.client",
+  "title": "Cloud Speech Client",
+  "description": "Grants access to the recognition APIs.",
+  "included_permissions": [
+    "speech.adaptations.execute",
+    "speech.customClasses.get",
+    "speech.customClasses.list",
+    "speech.locations.get",
+    "speech.locations.list",
+    "speech.operations.get",
+    "speech.operations.list",
+    "speech.operations.wait",
+    "speech.phraseSets.get",
+    "speech.phraseSets.list",
+    "speech.recognizers.get",
+    "speech.recognizers.list",
+    "speech.recognizers.recognize"
+  ],
+  "stage": "GA"
+}

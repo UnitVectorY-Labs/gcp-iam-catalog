@@ -1,0 +1,9 @@
+{
+  "name": "roles/compute.osLoginExternalUser",
+  "title": "Compute OS Login External User",
+  "description": "Access for an external user to set OS Login information associated with this organization. This role does not grant access to instances. External users must be granted one of the required OS Login IAM roles (https://cloud.google.com/compute/docs/instances/managing-instance-access#configure_users) in order to allow access to instances using SSH.",
+  "included_permissions": [
+    "compute.oslogin.updateExternalUser"
+  ],
+  "stage": "GA"
+}

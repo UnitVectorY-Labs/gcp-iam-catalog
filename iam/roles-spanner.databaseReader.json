@@ -1,0 +1,21 @@
+{
+  "name": "roles/spanner.databaseReader",
+  "title": "Cloud Spanner Database Reader",
+  "description": "Access to read and/or query a Cloud Spanner database.",
+  "included_permissions": [
+    "monitoring.timeSeries.create",
+    "spanner.databases.beginReadOnlyTransaction",
+    "spanner.databases.getDdl",
+    "spanner.databases.partitionQuery",
+    "spanner.databases.partitionRead",
+    "spanner.databases.read",
+    "spanner.databases.select",
+    "spanner.instancePartitions.get",
+    "spanner.instances.get",
+    "spanner.sessions.create",
+    "spanner.sessions.delete",
+    "spanner.sessions.get",
+    "spanner.sessions.list"
+  ],
+  "stage": "GA"
+}

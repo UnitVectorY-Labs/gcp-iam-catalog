@@ -1,0 +1,11 @@
+{
+  "name": "roles/appengine.appCreator",
+  "title": "App Engine Creator",
+  "description": "Ability to create the App Engine resource for the project.",
+  "included_permissions": [
+    "appengine.applications.create",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

@@ -1,0 +1,14 @@
+{
+  "name": "roles/mandiant.digitalThreatMonitoringEditor",
+  "title": "Mandiant Digital Threat Monitoring Editor",
+  "description": "Access to write Digital Threat Monitoring",
+  "included_permissions": [
+    "mandiant.genericDigitalThreatMonitorings.create",
+    "mandiant.genericDigitalThreatMonitorings.update",
+    "mandiant.genericPlatforms.create",
+    "mandiant.genericPlatforms.update",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "BETA"
+}

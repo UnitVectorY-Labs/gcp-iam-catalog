@@ -1,0 +1,12 @@
+{
+  "name": "roles/cloudbuild.integrationsViewer",
+  "title": "Cloud Build Integrations Viewer",
+  "description": "Can view Integrations",
+  "included_permissions": [
+    "cloudbuild.integrations.get",
+    "cloudbuild.integrations.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

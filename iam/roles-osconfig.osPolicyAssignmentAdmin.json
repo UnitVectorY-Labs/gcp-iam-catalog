@@ -1,0 +1,16 @@
+{
+  "name": "roles/osconfig.osPolicyAssignmentAdmin",
+  "title": "OSPolicyAssignment Admin",
+  "description": "Full admin access to OS Policy Assignments",
+  "included_permissions": [
+    "osconfig.osPolicyAssignments.create",
+    "osconfig.osPolicyAssignments.delete",
+    "osconfig.osPolicyAssignments.get",
+    "osconfig.osPolicyAssignments.list",
+    "osconfig.osPolicyAssignments.searchPolicies",
+    "osconfig.osPolicyAssignments.update",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

@@ -1,0 +1,10 @@
+{
+  "name": "roles/securitycenter.findingsWorkflowStateSetter",
+  "title": "Security Center Findings Workflow State Setter",
+  "description": "Set workflow state access to findings",
+  "included_permissions": [
+    "securitycenter.findings.setWorkflowState",
+    "securitycenter.userinterfacemetadata.get"
+  ],
+  "stage": "BETA"
+}

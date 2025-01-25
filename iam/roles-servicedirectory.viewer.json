@@ -1,0 +1,22 @@
+{
+  "name": "roles/servicedirectory.viewer",
+  "title": "Service Directory Viewer",
+  "description": "View Service Directory resources.",
+  "included_permissions": [
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list",
+    "servicedirectory.endpoints.get",
+    "servicedirectory.endpoints.getIamPolicy",
+    "servicedirectory.endpoints.list",
+    "servicedirectory.locations.get",
+    "servicedirectory.locations.list",
+    "servicedirectory.namespaces.get",
+    "servicedirectory.namespaces.getIamPolicy",
+    "servicedirectory.namespaces.list",
+    "servicedirectory.services.get",
+    "servicedirectory.services.getIamPolicy",
+    "servicedirectory.services.list",
+    "servicedirectory.services.resolve"
+  ],
+  "stage": "GA"
+}

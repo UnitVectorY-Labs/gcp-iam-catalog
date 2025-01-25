@@ -1,0 +1,27 @@
+{
+  "name": "roles/backupdr.user",
+  "title": "Backup and DR User",
+  "description": "Provides access to management console. Granular Backup and DR permissions depend on ACL configuration provided by Backup and DR admin within the management console.",
+  "included_permissions": [
+    "backupdr.backupPlanAssociations.createForComputeInstance",
+    "backupdr.backupPlanAssociations.deleteForComputeInstance",
+    "backupdr.managementServers.access",
+    "backupdr.managementServers.backupAccess",
+    "backupdr.managementServers.get",
+    "backupdr.managementServers.getDynamicProtection",
+    "backupdr.managementServers.getIamPolicy",
+    "backupdr.managementServers.list",
+    "backupdr.managementServers.listDynamicProtection",
+    "backupdr.managementServers.viewBackupPlans",
+    "backupdr.managementServers.viewBackupServers",
+    "backupdr.managementServers.viewReports",
+    "backupdr.managementServers.viewStorage",
+    "backupdr.managementServers.viewSystem",
+    "backupdr.managementServers.viewWorkflows",
+    "backupdr.operations.get",
+    "backupdr.operations.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

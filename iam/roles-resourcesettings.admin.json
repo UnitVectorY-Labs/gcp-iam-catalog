@@ -1,0 +1,11 @@
+{
+  "name": "roles/resourcesettings.admin",
+  "title": "Resource Settings Administrator",
+  "description": "Provides admin capabilities to set Resource Setting Values on resources.",
+  "included_permissions": [
+    "resourcesettings.settings.get",
+    "resourcesettings.settings.list",
+    "resourcesettings.settings.update"
+  ],
+  "stage": "GA"
+}

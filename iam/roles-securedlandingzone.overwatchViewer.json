@@ -1,0 +1,13 @@
+{
+  "name": "roles/securedlandingzone.overwatchViewer",
+  "title": "Overwatch Viewer",
+  "description": "This role can view all properties of Overwatches",
+  "included_permissions": [
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list",
+    "securedlandingzone.operations.get",
+    "securedlandingzone.overwatches.get",
+    "securedlandingzone.overwatches.list"
+  ],
+  "stage": "BETA"
+}

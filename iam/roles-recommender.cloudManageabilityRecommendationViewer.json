@@ -1,0 +1,16 @@
+{
+  "name": "roles/recommender.cloudManageabilityRecommendationViewer",
+  "title": "Cloud Manageability General Recommendations Recommender Viewer",
+  "description": "Viewer of Cloud Manageability General Recommendations Insights and Recommendations.",
+  "included_permissions": [
+    "recommender.cloudManageabilityGeneralInsights.get",
+    "recommender.cloudManageabilityGeneralInsights.list",
+    "recommender.cloudManageabilityGeneralRecommendations.get",
+    "recommender.cloudManageabilityGeneralRecommendations.list",
+    "recommender.locations.get",
+    "recommender.locations.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "BETA"
+}

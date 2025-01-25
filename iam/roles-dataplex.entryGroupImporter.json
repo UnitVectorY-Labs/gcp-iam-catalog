@@ -1,0 +1,12 @@
+{
+  "name": "roles/dataplex.entryGroupImporter",
+  "title": "Dataplex Entry Group Importer",
+  "description": "Grants access to import this entry group for Metadata Job processing.",
+  "included_permissions": [
+    "dataplex.entryGroups.get",
+    "dataplex.entryGroups.import",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

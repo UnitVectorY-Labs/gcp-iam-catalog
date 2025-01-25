@@ -1,0 +1,20 @@
+{
+  "name": "roles/anthosconfigmanagement.serviceAgent",
+  "title": "Anthos Config Management Service Agent",
+  "description": "Gives the Anthos Config Management service agent access toCloud Platform resources.",
+  "included_permissions": [
+    "container.clusters.get",
+    "gkehub.features.get",
+    "gkehub.gateway.delete",
+    "gkehub.gateway.generateCredentials",
+    "gkehub.gateway.get",
+    "gkehub.gateway.patch",
+    "gkehub.gateway.post",
+    "gkehub.gateway.put",
+    "gkehub.locations.get",
+    "gkehub.locations.list",
+    "gkehub.memberships.get",
+    "gkehub.memberships.list"
+  ],
+  "stage": "GA"
+}

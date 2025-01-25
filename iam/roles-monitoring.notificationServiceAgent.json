@@ -1,0 +1,21 @@
+{
+  "name": "roles/monitoring.notificationServiceAgent",
+  "title": "Monitoring Service Agent",
+  "description": "Grants Cloud Monitoring and Cloud Alerting permission to access consumer resources and track usage.",
+  "included_permissions": [
+    "bigquery.jobs.create",
+    "cloudfunctions.functions.get",
+    "cloudtrace.traces.patch",
+    "logging.links.list",
+    "monitoring.metricDescriptors.get",
+    "monitoring.metricDescriptors.list",
+    "monitoring.monitoredResourceDescriptors.get",
+    "monitoring.monitoredResourceDescriptors.list",
+    "monitoring.timeSeries.list",
+    "run.routes.invoke",
+    "servicedirectory.networks.access",
+    "servicedirectory.services.resolve",
+    "serviceusage.services.use"
+  ],
+  "stage": "GA"
+}

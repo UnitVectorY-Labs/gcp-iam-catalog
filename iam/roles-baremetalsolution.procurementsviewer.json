@@ -1,0 +1,11 @@
+{
+  "name": "roles/baremetalsolution.procurementsviewer",
+  "title": "Bare Metal Solution Procurements Viewer",
+  "description": "Viewer of Bare Metal Solution Procurements",
+  "included_permissions": [
+    "baremetalsolution.procurements.get",
+    "baremetalsolution.procurements.list",
+    "baremetalsolution.skus.list"
+  ],
+  "stage": "GA"
+}

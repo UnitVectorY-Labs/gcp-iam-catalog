@@ -1,0 +1,19 @@
+{
+  "name": "roles/serviceusage.apiKeysAdmin",
+  "title": "API Keys Admin",
+  "description": "Ability to create, delete, update, get and list API keys for a project.",
+  "included_permissions": [
+    "apikeys.keys.create",
+    "apikeys.keys.delete",
+    "apikeys.keys.get",
+    "apikeys.keys.getKeyString",
+    "apikeys.keys.list",
+    "apikeys.keys.lookup",
+    "apikeys.keys.undelete",
+    "apikeys.keys.update",
+    "orgpolicy.policy.get",
+    "serviceusage.apiKeys.regenerate",
+    "serviceusage.apiKeys.revert"
+  ],
+  "stage": "GA"
+}

@@ -1,0 +1,16 @@
+{
+  "name": "roles/recommender.firewallViewer",
+  "title": "Firewall Recommender Viewer",
+  "description": "Viewer of Firewall insights and recommendations.",
+  "included_permissions": [
+    "monitoring.timeSeries.list",
+    "recommender.computeFirewallInsightTypeConfigs.get",
+    "recommender.computeFirewallInsights.get",
+    "recommender.computeFirewallInsights.list",
+    "recommender.locations.get",
+    "recommender.locations.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

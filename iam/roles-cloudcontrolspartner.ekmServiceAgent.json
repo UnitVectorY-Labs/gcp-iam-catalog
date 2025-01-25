@@ -1,0 +1,12 @@
+{
+  "name": "roles/cloudcontrolspartner.ekmServiceAgent",
+  "title": "Cloud Controls Partner EKM Service Agent",
+  "description": "Gives Cloud Controls Partner service agent permission to list EKM connections, get EKM connection status, and provide EKM diagnostic information.",
+  "included_permissions": [
+    "cloudkms.ekmConnections.get",
+    "cloudkms.ekmConnections.getIamPolicy",
+    "cloudkms.ekmConnections.list",
+    "cloudkms.ekmConnections.verifyConnectivity"
+  ],
+  "stage": "GA"
+}

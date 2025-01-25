@@ -1,0 +1,15 @@
+{
+  "name": "roles/observability.admin",
+  "title": "Observability Admin",
+  "description": "Full access to Observability resources.",
+  "included_permissions": [
+    "observability.analyticsViews.create",
+    "observability.analyticsViews.delete",
+    "observability.analyticsViews.get",
+    "observability.analyticsViews.list",
+    "observability.analyticsViews.update",
+    "observability.scopes.get",
+    "observability.scopes.update"
+  ],
+  "stage": "BETA"
+}

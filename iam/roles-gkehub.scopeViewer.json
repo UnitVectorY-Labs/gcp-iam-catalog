@@ -1,0 +1,15 @@
+{
+  "name": "roles/gkehub.scopeViewer",
+  "title": "Fleet Scope Viewer",
+  "description": "Viewer of Fleet Scopes and associated resources.",
+  "included_permissions": [
+    "gkehub.namespaces.get",
+    "gkehub.namespaces.list",
+    "gkehub.rbacrolebindings.get",
+    "gkehub.rbacrolebindings.list",
+    "gkehub.scopes.get",
+    "gkehub.scopes.getIamPolicy",
+    "gkehub.scopes.listBoundMemberships"
+  ],
+  "stage": "GA"
+}

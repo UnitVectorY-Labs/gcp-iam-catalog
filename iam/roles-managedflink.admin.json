@@ -1,0 +1,31 @@
+{
+  "name": "roles/managedflink.admin",
+  "title": "Managed Flink Admin",
+  "description": "Full access to Managed Flink resources.",
+  "included_permissions": [
+    "managedflink.deployments.create",
+    "managedflink.deployments.delete",
+    "managedflink.deployments.get",
+    "managedflink.deployments.list",
+    "managedflink.deployments.update",
+    "managedflink.jobs.create",
+    "managedflink.jobs.delete",
+    "managedflink.jobs.get",
+    "managedflink.jobs.list",
+    "managedflink.jobs.update",
+    "managedflink.locations.get",
+    "managedflink.locations.list",
+    "managedflink.operations.cancel",
+    "managedflink.operations.delete",
+    "managedflink.operations.get",
+    "managedflink.operations.list",
+    "managedflink.sessions.create",
+    "managedflink.sessions.delete",
+    "managedflink.sessions.get",
+    "managedflink.sessions.list",
+    "managedflink.sessions.update",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "BETA"
+}

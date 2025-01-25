@@ -1,0 +1,11 @@
+{
+  "name": "roles/securedlandingzone.bqdwOrgRemediator",
+  "title": "SLZ BQDW Blueprint Organization Level Remediator",
+  "description": "Access to modify (remediate) resources in SLZ BQDW Blueprint at Organization.",
+  "included_permissions": [
+    "accesscontextmanager.servicePerimeters.get",
+    "accesscontextmanager.servicePerimeters.list",
+    "accesscontextmanager.servicePerimeters.update"
+  ],
+  "stage": "BETA"
+}

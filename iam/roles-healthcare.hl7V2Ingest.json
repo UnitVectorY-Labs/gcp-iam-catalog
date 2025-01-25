@@ -1,0 +1,18 @@
+{
+  "name": "roles/healthcare.hl7V2Ingest",
+  "title": "Healthcare HL7v2 Message Ingest",
+  "description": "Ingest HL7v2 messages received from a source network.",
+  "included_permissions": [
+    "healthcare.datasets.get",
+    "healthcare.datasets.list",
+    "healthcare.hl7V2Messages.ingest",
+    "healthcare.hl7V2Stores.get",
+    "healthcare.hl7V2Stores.list",
+    "healthcare.locations.get",
+    "healthcare.locations.list",
+    "healthcare.operations.get",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

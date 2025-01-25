@@ -1,0 +1,14 @@
+{
+  "name": "roles/documentai.apiUser",
+  "title": "Document AI API User",
+  "description": "Grants access to process documents in Document AI",
+  "included_permissions": [
+    "documentai.humanReviewConfigs.review",
+    "documentai.operations.getLegacy",
+    "documentai.processorVersions.processBatch",
+    "documentai.processorVersions.processOnline",
+    "documentai.processors.processBatch",
+    "documentai.processors.processOnline"
+  ],
+  "stage": "BETA"
+}

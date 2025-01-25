@@ -1,0 +1,20 @@
+{
+  "name": "roles/securesourcemanager.repoWriter",
+  "title": "Secure Source Manager Repository Writer",
+  "description": "A repoWriter has read/write access to a particular repository, including its child components. They cannot create repositories, and do not manage IAM policies on the repository.",
+  "included_permissions": [
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list",
+    "securesourcemanager.branchRules.get",
+    "securesourcemanager.branchRules.list",
+    "securesourcemanager.repositories.fetch",
+    "securesourcemanager.repositories.get",
+    "securesourcemanager.repositories.list",
+    "securesourcemanager.repositories.push",
+    "securesourcemanager.repositories.readIssues",
+    "securesourcemanager.repositories.readPullRequests",
+    "securesourcemanager.repositories.writeIssues",
+    "securesourcemanager.repositories.writePullRequests"
+  ],
+  "stage": "BETA"
+}

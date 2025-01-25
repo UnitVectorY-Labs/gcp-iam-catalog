@@ -1,0 +1,12 @@
+{
+  "name": "roles/looker.instanceUser",
+  "title": "Looker Instance User",
+  "description": "Access to log in to a Looker instance.",
+  "included_permissions": [
+    "looker.instances.get",
+    "looker.instances.login",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

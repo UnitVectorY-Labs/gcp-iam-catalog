@@ -1,0 +1,17 @@
+{
+  "name": "roles/datalineage.viewer",
+  "title": "Data Lineage Viewer",
+  "description": "Grants read access to all resources in Data Lineage API",
+  "included_permissions": [
+    "datalineage.events.get",
+    "datalineage.events.list",
+    "datalineage.locations.searchLinks",
+    "datalineage.processes.get",
+    "datalineage.processes.list",
+    "datalineage.runs.get",
+    "datalineage.runs.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

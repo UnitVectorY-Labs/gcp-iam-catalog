@@ -1,0 +1,17 @@
+{
+  "name": "roles/proximitybeacon.attachmentEditor",
+  "title": "Beacon Attachment Editor",
+  "description": "Can create and delete attachments; can list and get a project's beacons; can list a project's namespaces.",
+  "included_permissions": [
+    "proximitybeacon.attachments.create",
+    "proximitybeacon.attachments.delete",
+    "proximitybeacon.attachments.get",
+    "proximitybeacon.attachments.list",
+    "proximitybeacon.beacons.get",
+    "proximitybeacon.beacons.list",
+    "proximitybeacon.namespaces.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

@@ -1,0 +1,12 @@
+{
+  "name": "roles/developerconnect.tokenAccessor",
+  "title": "Developer Connect Token Accessor",
+  "description": "Grants access to Read/Write and Read-Only tokens (both PAT and short-lived). Also grants access to view the git repository link.",
+  "included_permissions": [
+    "developerconnect.connections.get",
+    "developerconnect.gitRepositoryLinks.fetchReadToken",
+    "developerconnect.gitRepositoryLinks.fetchReadWriteToken",
+    "developerconnect.gitRepositoryLinks.get"
+  ],
+  "stage": "BETA"
+}

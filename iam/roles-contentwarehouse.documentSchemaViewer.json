@@ -1,0 +1,13 @@
+{
+  "name": "roles/contentwarehouse.documentSchemaViewer",
+  "title": "Content Warehouse document schema viewer",
+  "description": "Grants access to view the document schemas in Content Warehouse",
+  "included_permissions": [
+    "contentwarehouse.documentSchemas.get",
+    "contentwarehouse.documentSchemas.list",
+    "contentwarehouse.locations.getStatus",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

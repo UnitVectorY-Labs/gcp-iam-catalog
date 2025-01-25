@@ -1,0 +1,13 @@
+{
+  "name": "roles/cloudkms.verifier",
+  "title": "Cloud KMS CryptoKey Verifier",
+  "description": "Enables Verify and GetPublicKey operations",
+  "included_permissions": [
+    "cloudkms.cryptoKeyVersions.useToVerify",
+    "cloudkms.cryptoKeyVersions.viewPublicKey",
+    "cloudkms.locations.get",
+    "cloudkms.locations.list",
+    "resourcemanager.projects.get"
+  ],
+  "stage": "GA"
+}

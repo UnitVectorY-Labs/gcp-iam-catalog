@@ -1,0 +1,9 @@
+{
+  "name": "roles/bigquerycontinuousquery.serviceAgent",
+  "title": "BigQuery Continuous Query Service Agent",
+  "description": "Gives BigQuery Continuous Query access to the service accounts in the user project.",
+  "included_permissions": [
+    "iam.serviceAccounts.getAccessToken"
+  ],
+  "stage": "GA"
+}

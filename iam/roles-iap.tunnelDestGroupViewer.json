@@ -1,0 +1,10 @@
+{
+  "name": "roles/iap.tunnelDestGroupViewer",
+  "title": "IAP-secured Tunnel Destination Group Viewer",
+  "description": "View Tunnel Destination Group resources which use Identity-Aware Proxy",
+  "included_permissions": [
+    "iap.tunnelDestGroups.get",
+    "iap.tunnelDestGroups.list"
+  ],
+  "stage": "GA"
+}

@@ -1,0 +1,12 @@
+{
+  "name": "roles/cloudkms.cryptoKeyEncrypter",
+  "title": "Cloud KMS CryptoKey Encrypter",
+  "description": "Enables Encrypt operations",
+  "included_permissions": [
+    "cloudkms.cryptoKeyVersions.useToEncrypt",
+    "cloudkms.locations.get",
+    "cloudkms.locations.list",
+    "resourcemanager.projects.get"
+  ],
+  "stage": "GA"
+}

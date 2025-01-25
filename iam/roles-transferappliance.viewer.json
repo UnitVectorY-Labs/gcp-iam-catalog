@@ -1,0 +1,20 @@
+{
+  "name": "roles/transferappliance.viewer",
+  "title": "Transfer Appliance Viewer",
+  "description": "Read-only access to Transfer Appliance all resources.",
+  "included_permissions": [
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list",
+    "transferappliance.appliances.get",
+    "transferappliance.appliances.list",
+    "transferappliance.locations.get",
+    "transferappliance.locations.list",
+    "transferappliance.operations.get",
+    "transferappliance.operations.list",
+    "transferappliance.orders.get",
+    "transferappliance.orders.list",
+    "transferappliance.savedAddresses.get",
+    "transferappliance.savedAddresses.list"
+  ],
+  "stage": "BETA"
+}

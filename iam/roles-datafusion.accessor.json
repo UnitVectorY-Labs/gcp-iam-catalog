@@ -1,0 +1,15 @@
+{
+  "name": "roles/datafusion.accessor",
+  "title": "Cloud Data Fusion Accessor",
+  "description": "Read-only access to Cloud Data Fusion Instances. Use it on instance level along with the namespace grants to provide access to the specific namespace.",
+  "included_permissions": [
+    "datafusion.instances.get",
+    "datafusion.instances.getIamPolicy",
+    "datafusion.instances.list",
+    "datafusion.instances.listEffectiveTags",
+    "datafusion.instances.listTagBindings",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "BETA"
+}

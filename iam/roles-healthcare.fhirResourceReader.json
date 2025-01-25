@@ -1,0 +1,21 @@
+{
+  "name": "roles/healthcare.fhirResourceReader",
+  "title": "Healthcare FHIR Resource Reader",
+  "description": "Read and search FHIR resources.",
+  "included_permissions": [
+    "healthcare.datasets.get",
+    "healthcare.datasets.list",
+    "healthcare.fhirResources.get",
+    "healthcare.fhirResources.translateConceptMap",
+    "healthcare.fhirStores.executeBundle",
+    "healthcare.fhirStores.get",
+    "healthcare.fhirStores.list",
+    "healthcare.fhirStores.searchResources",
+    "healthcare.locations.get",
+    "healthcare.locations.list",
+    "healthcare.operations.get",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

@@ -1,0 +1,25 @@
+{
+  "name": "roles/dataplex.developer",
+  "title": "Dataplex Developer",
+  "description": "Allows running data analytics workloads in a lake.",
+  "included_permissions": [
+    "dataplex.content.create",
+    "dataplex.content.delete",
+    "dataplex.content.get",
+    "dataplex.content.getIamPolicy",
+    "dataplex.content.list",
+    "dataplex.content.setIamPolicy",
+    "dataplex.content.update",
+    "dataplex.environments.execute",
+    "dataplex.environments.get",
+    "dataplex.environments.list",
+    "dataplex.tasks.cancel",
+    "dataplex.tasks.create",
+    "dataplex.tasks.delete",
+    "dataplex.tasks.get",
+    "dataplex.tasks.list",
+    "dataplex.tasks.run",
+    "dataplex.tasks.update"
+  ],
+  "stage": "GA"
+}

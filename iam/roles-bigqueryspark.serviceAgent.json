@@ -1,0 +1,9 @@
+{
+  "name": "roles/bigqueryspark.serviceAgent",
+  "title": "BigQuery Spark Service Agent",
+  "description": "Gives BigQuery Spark access to the service accounts in the user project.",
+  "included_permissions": [
+    "iam.serviceAccounts.getAccessToken"
+  ],
+  "stage": "GA"
+}

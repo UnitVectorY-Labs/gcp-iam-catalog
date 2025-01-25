@@ -1,0 +1,20 @@
+{
+  "name": "roles/consumerprocurement.entitlementViewer",
+  "title": "Consumer Procurement Entitlement Viewer",
+  "description": "Allows inspecting entitlements and service states for a consumer project",
+  "included_permissions": [
+    "commerceoffercatalog.offers.get",
+    "consumerprocurement.consents.check",
+    "consumerprocurement.consents.list",
+    "consumerprocurement.entitlements.get",
+    "consumerprocurement.entitlements.list",
+    "consumerprocurement.freeTrials.get",
+    "consumerprocurement.freeTrials.list",
+    "orgpolicy.policy.get",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list",
+    "serviceusage.services.get",
+    "serviceusage.services.list"
+  ],
+  "stage": "GA"
+}

@@ -1,0 +1,22 @@
+{
+  "name": "roles/spanner.backupWriter",
+  "title": "Cloud Spanner Backup Writer",
+  "description": "Role with limited permissions to create and manage Cloud Spanner backups. Does not have permission to modify backups.",
+  "included_permissions": [
+    "spanner.backupOperations.get",
+    "spanner.backupOperations.list",
+    "spanner.backupSchedules.create",
+    "spanner.backupSchedules.get",
+    "spanner.backupSchedules.list",
+    "spanner.backups.copy",
+    "spanner.backups.create",
+    "spanner.backups.get",
+    "spanner.backups.list",
+    "spanner.databases.createBackup",
+    "spanner.databases.get",
+    "spanner.databases.list",
+    "spanner.instancePartitions.get",
+    "spanner.instances.get"
+  ],
+  "stage": "GA"
+}

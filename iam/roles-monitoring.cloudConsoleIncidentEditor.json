@@ -1,0 +1,7 @@
+{
+  "name": "roles/monitoring.cloudConsoleIncidentEditor",
+  "title": "Monitoring Cloud Console Incident Editor",
+  "description": "Read/write access to incidents from Cloud Console.",
+  "included_permissions": null,
+  "stage": "BETA"
+}

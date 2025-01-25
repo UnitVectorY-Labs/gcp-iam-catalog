@@ -1,0 +1,26 @@
+{
+  "name": "roles/metastore.metadataOwner",
+  "title": "Dataproc Metastore Data Owner",
+  "description": "Full access to the metadata of databases and tables under those databases.",
+  "included_permissions": [
+    "metastore.databases.create",
+    "metastore.databases.delete",
+    "metastore.databases.get",
+    "metastore.databases.getIamPolicy",
+    "metastore.databases.list",
+    "metastore.databases.setIamPolicy",
+    "metastore.databases.update",
+    "metastore.services.get",
+    "metastore.services.getIamPolicy",
+    "metastore.services.list",
+    "metastore.services.use",
+    "metastore.tables.create",
+    "metastore.tables.delete",
+    "metastore.tables.get",
+    "metastore.tables.getIamPolicy",
+    "metastore.tables.list",
+    "metastore.tables.setIamPolicy",
+    "metastore.tables.update"
+  ],
+  "stage": "GA"
+}

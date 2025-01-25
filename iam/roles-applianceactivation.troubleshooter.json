@@ -1,0 +1,13 @@
+{
+  "name": "roles/applianceactivation.troubleshooter",
+  "title": "Appliance troubleshooter",
+  "description": "Grants access to send new commands to run on appliances and view the outputs",
+  "included_permissions": [
+    "applianceactivation.rttCommands.create",
+    "applianceactivation.rttCommands.get",
+    "applianceactivation.rttCommands.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "BETA"
+}

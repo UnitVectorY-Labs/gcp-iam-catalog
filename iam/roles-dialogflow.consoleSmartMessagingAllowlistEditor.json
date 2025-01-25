@@ -1,0 +1,22 @@
+{
+  "name": "roles/dialogflow.consoleSmartMessagingAllowlistEditor",
+  "title": "Dialogflow Console Smart Messaging Allowlist Editor",
+  "description": "Can edit allowlist for smart messaging associated with conversation model in the agent assist console",
+  "included_permissions": [
+    "dialogflow.conversationDatasets.get",
+    "dialogflow.conversationDatasets.list",
+    "dialogflow.conversationModels.get",
+    "dialogflow.conversationModels.list",
+    "dialogflow.conversationProfiles.list",
+    "dialogflow.documents.get",
+    "dialogflow.documents.list",
+    "dialogflow.operations.get",
+    "dialogflow.smartMessagingEntries.create",
+    "dialogflow.smartMessagingEntries.delete",
+    "dialogflow.smartMessagingEntries.get",
+    "dialogflow.smartMessagingEntries.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

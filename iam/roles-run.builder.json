@@ -1,0 +1,14 @@
+{
+  "name": "roles/run.builder",
+  "title": "Cloud Run Builder",
+  "description": "Can build Cloud Run functions and source deployed services.",
+  "included_permissions": [
+    "artifactregistry.repositories.deleteArtifacts",
+    "artifactregistry.repositories.downloadArtifacts",
+    "artifactregistry.repositories.uploadArtifacts",
+    "logging.logEntries.create",
+    "source.repos.get",
+    "storage.objects.get"
+  ],
+  "stage": "BETA"
+}

@@ -1,0 +1,14 @@
+{
+  "name": "roles/securitycenter.notificationConfigEditor",
+  "title": "Security Center Notification Configurations Editor",
+  "description": "Write access to notification configurations",
+  "included_permissions": [
+    "securitycenter.notificationconfig.create",
+    "securitycenter.notificationconfig.delete",
+    "securitycenter.notificationconfig.get",
+    "securitycenter.notificationconfig.list",
+    "securitycenter.notificationconfig.update",
+    "securitycenter.userinterfacemetadata.get"
+  ],
+  "stage": "GA"
+}

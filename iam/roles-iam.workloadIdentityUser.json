@@ -1,0 +1,12 @@
+{
+  "name": "roles/iam.workloadIdentityUser",
+  "title": "Workload Identity User",
+  "description": "Impersonate service accounts from federated workloads.",
+  "included_permissions": [
+    "iam.serviceAccounts.get",
+    "iam.serviceAccounts.getAccessToken",
+    "iam.serviceAccounts.getOpenIdToken",
+    "iam.serviceAccounts.list"
+  ],
+  "stage": "GA"
+}

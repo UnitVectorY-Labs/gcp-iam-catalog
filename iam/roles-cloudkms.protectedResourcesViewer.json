@@ -1,0 +1,9 @@
+{
+  "name": "roles/cloudkms.protectedResourcesViewer",
+  "title": "Cloud KMS Protected Resources Viewer",
+  "description": "Enables viewing protected resources.",
+  "included_permissions": [
+    "cloudkms.protectedResources.search"
+  ],
+  "stage": "GA"
+}

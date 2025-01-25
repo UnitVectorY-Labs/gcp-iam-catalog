@@ -1,0 +1,14 @@
+{
+  "name": "roles/apihub.runtimeProjectServiceAgent",
+  "title": "API-Hub Runtime Project Service Agent",
+  "description": "Gives API-Hub Service Account access to runtime project resources.",
+  "included_permissions": [
+    "apigee.deployments.list",
+    "apigee.envgroupattachments.list",
+    "apigee.envgroups.list",
+    "apigee.environments.get",
+    "apigee.organizations.get",
+    "apigee.proxyrevisions.get"
+  ],
+  "stage": "GA"
+}

@@ -1,0 +1,32 @@
+{
+  "name": "roles/cloudaicompanion.serviceAgent",
+  "title": "Gemini for Google Cloud Service Agent",
+  "description": "Gives Gemini for Google Cloud components the proper permissions to function.",
+  "included_permissions": [
+    "cloudaicompanion.codeRepositoryIndexes.get",
+    "cloudaicompanion.codeRepositoryIndexes.list",
+    "cloudaicompanion.repositoryGroups.get",
+    "cloudaicompanion.repositoryGroups.getIamPolicy",
+    "cloudaicompanion.repositoryGroups.list",
+    "cloudbuild.connections.get",
+    "cloudbuild.repositories.accessReadToken",
+    "cloudbuild.repositories.fetchGitRefs",
+    "cloudbuild.repositories.get",
+    "cloudbuild.repositories.list",
+    "developerconnect.connections.get",
+    "developerconnect.gitRepositoryLinks.fetchGitRefs",
+    "developerconnect.gitRepositoryLinks.fetchReadToken",
+    "developerconnect.gitRepositoryLinks.get",
+    "developerconnect.gitRepositoryLinks.list",
+    "logging.logEntries.create",
+    "logging.logEntries.route",
+    "monitoring.metricDescriptors.create",
+    "monitoring.metricDescriptors.get",
+    "monitoring.metricDescriptors.list",
+    "monitoring.monitoredResourceDescriptors.get",
+    "monitoring.monitoredResourceDescriptors.list",
+    "monitoring.timeSeries.create",
+    "serviceusage.services.use"
+  ],
+  "stage": "GA"
+}

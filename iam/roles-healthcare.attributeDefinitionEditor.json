@@ -1,0 +1,25 @@
+{
+  "name": "roles/healthcare.attributeDefinitionEditor",
+  "title": "Healthcare Attribute Definition Editor",
+  "description": "Edit AttributeDefinition objects.",
+  "included_permissions": [
+    "healthcare.attributeDefinitions.create",
+    "healthcare.attributeDefinitions.delete",
+    "healthcare.attributeDefinitions.get",
+    "healthcare.attributeDefinitions.list",
+    "healthcare.attributeDefinitions.update",
+    "healthcare.consentStores.checkDataAccess",
+    "healthcare.consentStores.evaluateUserConsents",
+    "healthcare.consentStores.get",
+    "healthcare.consentStores.list",
+    "healthcare.consentStores.queryAccessibleData",
+    "healthcare.datasets.get",
+    "healthcare.datasets.list",
+    "healthcare.locations.get",
+    "healthcare.locations.list",
+    "healthcare.operations.get",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

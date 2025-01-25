@@ -1,0 +1,13 @@
+{
+  "name": "roles/proximitybeacon.attachmentPublisher",
+  "title": "Beacon Attachment Publisher",
+  "description": "Grants necessary permissions to use beacons to create attachments in namespaces not owned by this project.",
+  "included_permissions": [
+    "proximitybeacon.beacons.attach",
+    "proximitybeacon.beacons.get",
+    "proximitybeacon.beacons.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

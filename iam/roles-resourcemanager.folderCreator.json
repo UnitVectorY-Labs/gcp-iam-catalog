@@ -1,0 +1,18 @@
+{
+  "name": "roles/resourcemanager.folderCreator",
+  "title": "Folder Creator",
+  "description": "Create folder and view all of its sub-resources.",
+  "included_permissions": [
+    "essentialcontacts.contacts.get",
+    "essentialcontacts.contacts.list",
+    "orgpolicy.constraints.list",
+    "orgpolicy.policies.list",
+    "orgpolicy.policy.get",
+    "resourcemanager.folders.create",
+    "resourcemanager.folders.get",
+    "resourcemanager.folders.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

@@ -1,0 +1,15 @@
+{
+  "name": "roles/fleetengine.deliveryTrustedDriver",
+  "title": "Fleet Engine Delivery Trusted Driver User",
+  "description": "Read and write access to Fleet Engine Delivery resources",
+  "included_permissions": [
+    "fleetengine.deliveryvehicles.create",
+    "fleetengine.deliveryvehicles.get",
+    "fleetengine.deliveryvehicles.update",
+    "fleetengine.deliveryvehicles.updateLocation",
+    "fleetengine.deliveryvehicles.updateVehicleStops",
+    "fleetengine.tasks.create",
+    "fleetengine.tasks.update"
+  ],
+  "stage": "GA"
+}

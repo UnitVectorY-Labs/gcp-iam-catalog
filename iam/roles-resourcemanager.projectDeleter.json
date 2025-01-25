@@ -1,0 +1,9 @@
+{
+  "name": "roles/resourcemanager.projectDeleter",
+  "title": "Project Deleter",
+  "description": "Access to delete GCP projects.",
+  "included_permissions": [
+    "resourcemanager.projects.delete"
+  ],
+  "stage": "GA"
+}

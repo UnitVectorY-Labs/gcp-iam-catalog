@@ -1,0 +1,9 @@
+{
+  "name": "roles/firebaseml.serviceAgent",
+  "title": "Firebase Machine Learning Service Agent",
+  "description": "Access to Cloud ML and AI resources used by Firebase ML",
+  "included_permissions": [
+    "aiplatform.endpoints.predict"
+  ],
+  "stage": "GA"
+}

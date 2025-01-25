@@ -1,0 +1,16 @@
+{
+  "name": "roles/containeranalysis.notes.editor",
+  "title": "Container Analysis Notes Editor",
+  "description": "Can edit Container Analysis Notes.",
+  "included_permissions": [
+    "containeranalysis.notes.attachOccurrence",
+    "containeranalysis.notes.create",
+    "containeranalysis.notes.delete",
+    "containeranalysis.notes.get",
+    "containeranalysis.notes.list",
+    "containeranalysis.notes.update",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

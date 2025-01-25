@@ -1,0 +1,9 @@
+{
+  "name": "roles/firebaserules.firestoreServiceAgent",
+  "title": "Firebase Rules Firestore Service Agent",
+  "description": "Grants Firebase Security Rules access to Firestore for providing cross-service Rules.",
+  "included_permissions": [
+    "datastore.entities.get"
+  ],
+  "stage": "GA"
+}

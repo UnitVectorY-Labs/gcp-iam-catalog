@@ -1,0 +1,22 @@
+{
+  "name": "roles/appengine.debugger",
+  "title": "App Engine Managed VM Debug Access",
+  "description": "Ability to read or manage v2 instances.",
+  "included_permissions": [
+    "appengine.applications.get",
+    "appengine.applications.listRuntimes",
+    "appengine.instances.delete",
+    "appengine.instances.enableDebug",
+    "appengine.instances.get",
+    "appengine.instances.list",
+    "appengine.operations.get",
+    "appengine.operations.list",
+    "appengine.services.get",
+    "appengine.services.list",
+    "appengine.versions.get",
+    "appengine.versions.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

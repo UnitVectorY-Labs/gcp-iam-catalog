@@ -1,0 +1,18 @@
+{
+  "name": "roles/datacatalog.dataSteward",
+  "title": "DataCatalog Data Steward",
+  "description": "Can update overview and data steward fields",
+  "included_permissions": [
+    "datacatalog.entries.get",
+    "datacatalog.entries.list",
+    "datacatalog.entries.updateContacts",
+    "datacatalog.entries.updateOverview",
+    "datacatalog.entryGroups.get",
+    "datacatalog.migrationConfig.get",
+    "datacatalog.relationships.list",
+    "dataplex.projects.search",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "BETA"
+}

@@ -1,0 +1,16 @@
+{
+  "name": "roles/recommender.cloudCostRecommendationViewer",
+  "title": "Cloud Cost General Recommendations Recommender Viewer",
+  "description": "Viewer of Cloud Cost General Recommendations Insights and Recommendations.",
+  "included_permissions": [
+    "recommender.cloudCostGeneralInsights.get",
+    "recommender.cloudCostGeneralInsights.list",
+    "recommender.cloudCostGeneralRecommendations.get",
+    "recommender.cloudCostGeneralRecommendations.list",
+    "recommender.locations.get",
+    "recommender.locations.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "BETA"
+}

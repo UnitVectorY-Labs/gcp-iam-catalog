@@ -1,0 +1,10 @@
+{
+  "name": "roles/dlp.analyzeRiskTemplatesReader",
+  "title": "DLP Analyze Risk Templates Reader",
+  "description": "Read DLP analyze risk templates.",
+  "included_permissions": [
+    "dlp.analyzeRiskTemplates.get",
+    "dlp.analyzeRiskTemplates.list"
+  ],
+  "stage": "GA"
+}

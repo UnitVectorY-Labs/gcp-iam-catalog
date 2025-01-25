@@ -1,0 +1,14 @@
+{
+  "name": "roles/browser",
+  "title": "Browser",
+  "description": "Access to browse GCP resources.",
+  "included_permissions": [
+    "resourcemanager.folders.get",
+    "resourcemanager.folders.list",
+    "resourcemanager.organizations.get",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.getIamPolicy",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

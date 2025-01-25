@@ -1,0 +1,16 @@
+{
+  "name": "roles/timeseriesinsights.datasetsEditor",
+  "title": "Timeseries Insights DataSet Editor",
+  "description": "Edit access to DataSets.",
+  "included_permissions": [
+    "timeseriesinsights.datasets.create",
+    "timeseriesinsights.datasets.delete",
+    "timeseriesinsights.datasets.evaluate",
+    "timeseriesinsights.datasets.list",
+    "timeseriesinsights.datasets.query",
+    "timeseriesinsights.datasets.update",
+    "timeseriesinsights.locations.get",
+    "timeseriesinsights.locations.list"
+  ],
+  "stage": "BETA"
+}

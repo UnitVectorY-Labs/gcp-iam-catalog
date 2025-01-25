@@ -1,0 +1,13 @@
+{
+  "name": "roles/commerceoffercatalog.offersViewer",
+  "title": "Commerce Offer Catalog Offers Viewer",
+  "description": "Allows viewing offers",
+  "included_permissions": [
+    "commerceoffercatalog.agreements.get",
+    "commerceoffercatalog.agreements.list",
+    "commerceoffercatalog.documents.get",
+    "commerceoffercatalog.documents.list",
+    "commerceoffercatalog.offers.get"
+  ],
+  "stage": "BETA"
+}

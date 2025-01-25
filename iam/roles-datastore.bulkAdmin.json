@@ -1,0 +1,15 @@
+{
+  "name": "roles/datastore.bulkAdmin",
+  "title": "Cloud Datastore Bulk Admin",
+  "description": "Full access to manage bulk operations.",
+  "included_permissions": [
+    "datastore.databases.bulkDelete",
+    "datastore.databases.getMetadata",
+    "datastore.operations.cancel",
+    "datastore.operations.get",
+    "datastore.operations.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

@@ -1,0 +1,13 @@
+{
+  "name": "roles/cloudbuild.workerPoolEditor",
+  "title": "Cloud Build WorkerPool Editor",
+  "description": "Can update and view WorkerPools",
+  "included_permissions": [
+    "cloudbuild.workerpools.get",
+    "cloudbuild.workerpools.list",
+    "cloudbuild.workerpools.update",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

@@ -1,0 +1,33 @@
+{
+  "name": "roles/securityposture.postureDeployer",
+  "title": "Security Posture Deployer",
+  "description": "Mutate and read permissions to the Posture Deployment resource.",
+  "included_permissions": [
+    "orgpolicy.constraints.list",
+    "orgpolicy.customConstraints.create",
+    "orgpolicy.customConstraints.delete",
+    "orgpolicy.customConstraints.get",
+    "orgpolicy.customConstraints.list",
+    "orgpolicy.customConstraints.update",
+    "orgpolicy.policies.create",
+    "orgpolicy.policies.delete",
+    "orgpolicy.policies.list",
+    "orgpolicy.policies.update",
+    "orgpolicy.policy.get",
+    "orgpolicy.policy.set",
+    "resourcemanager.organizations.get",
+    "securitycenter.securityhealthanalyticssettings.calculate",
+    "securitycenter.securityhealthanalyticssettings.get",
+    "securitycenter.securityhealthanalyticssettings.update",
+    "securitycentermanagement.securityHealthAnalyticsCustomModules.create",
+    "securitycentermanagement.securityHealthAnalyticsCustomModules.delete",
+    "securitycentermanagement.securityHealthAnalyticsCustomModules.update",
+    "securityposture.operations.get",
+    "securityposture.postureDeployments.create",
+    "securityposture.postureDeployments.delete",
+    "securityposture.postureDeployments.get",
+    "securityposture.postureDeployments.list",
+    "securityposture.postureDeployments.update"
+  ],
+  "stage": "GA"
+}

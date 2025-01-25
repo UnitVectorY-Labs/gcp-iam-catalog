@@ -1,0 +1,14 @@
+{
+  "name": "roles/iam.oauthClientViewer",
+  "title": "IAM OAuth Client Viewer",
+  "description": "Read access to a particular instance of an OAuth client.",
+  "included_permissions": [
+    "iam.googleapis.com/oauthClientCredentials.get",
+    "iam.googleapis.com/oauthClientCredentials.list",
+    "iam.googleapis.com/oauthClients.get",
+    "iam.googleapis.com/oauthClients.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "BETA"
+}

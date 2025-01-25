@@ -1,0 +1,13 @@
+{
+  "name": "roles/securitycenter.attackSurfaceManagementScannerServiceAgent",
+  "title": "Attack Surface Management Scanner Service Agent",
+  "description": "Gives Mandiant Attack Surface Management the ability to scan Cloud Platform resources.",
+  "included_permissions": [
+    "apigateway.apiconfigs.get",
+    "cloudasset.assets.listResource",
+    "dns.managedZones.list",
+    "dns.resourceRecordSets.list",
+    "resourcemanager.projects.get"
+  ],
+  "stage": "GA"
+}

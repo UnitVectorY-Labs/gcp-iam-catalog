@@ -1,0 +1,13 @@
+{
+  "name": "roles/monitoring.uptimeCheckConfigEditor",
+  "title": "Monitoring Uptime Check Configuration Editor",
+  "description": "Read/write access to uptime check configurations.",
+  "included_permissions": [
+    "monitoring.uptimeCheckConfigs.create",
+    "monitoring.uptimeCheckConfigs.delete",
+    "monitoring.uptimeCheckConfigs.get",
+    "monitoring.uptimeCheckConfigs.list",
+    "monitoring.uptimeCheckConfigs.update"
+  ],
+  "stage": "BETA"
+}

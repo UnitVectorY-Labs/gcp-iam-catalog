@@ -1,0 +1,23 @@
+{
+  "name": "roles/telcoautomation.blueprintDesigner",
+  "title": "Telco Automation Blueprint Designer",
+  "description": "Ability to manage blueprints",
+  "included_permissions": [
+    "telcoautomation.blueprints.create",
+    "telcoautomation.blueprints.delete",
+    "telcoautomation.blueprints.get",
+    "telcoautomation.blueprints.list",
+    "telcoautomation.blueprints.propose",
+    "telcoautomation.blueprints.update",
+    "telcoautomation.deployments.computeStatus",
+    "telcoautomation.deployments.get",
+    "telcoautomation.deployments.list",
+    "telcoautomation.hydratedDeployments.get",
+    "telcoautomation.hydratedDeployments.list",
+    "telcoautomation.orchestrationClusters.get",
+    "telcoautomation.orchestrationClusters.list",
+    "telcoautomation.publicBlueprints.get",
+    "telcoautomation.publicBlueprints.list"
+  ],
+  "stage": "BETA"
+}

@@ -1,0 +1,26 @@
+{
+  "name": "roles/commercebusinessenablement.resellerDiscountAdmin",
+  "title": "Commerce Business Enablement Reseller Discount Admin",
+  "description": "Provides admin access to reseller discount offers",
+  "included_permissions": [
+    "commercebusinessenablement.partnerAccounts.get",
+    "commercebusinessenablement.partnerAccounts.list",
+    "commercebusinessenablement.partnerInfo.get",
+    "commercebusinessenablement.resellerConfig.get",
+    "commercebusinessenablement.resellerDiscountConfig.get",
+    "commercebusinessenablement.resellerDiscountOffers.cancel",
+    "commercebusinessenablement.resellerDiscountOffers.create",
+    "commercebusinessenablement.resellerDiscountOffers.list",
+    "commercebusinessenablement.resellerPrivateOfferPlans.cancel",
+    "commercebusinessenablement.resellerPrivateOfferPlans.create",
+    "commercebusinessenablement.resellerPrivateOfferPlans.delete",
+    "commercebusinessenablement.resellerPrivateOfferPlans.get",
+    "commercebusinessenablement.resellerPrivateOfferPlans.list",
+    "commercebusinessenablement.resellerPrivateOfferPlans.publish",
+    "commercebusinessenablement.resellerPrivateOfferPlans.update",
+    "resourcemanager.organizations.get",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "BETA"
+}

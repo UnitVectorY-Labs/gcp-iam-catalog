@@ -1,0 +1,18 @@
+{
+  "name": "roles/iam.principalAccessBoundaryAdmin",
+  "title": "Principal Access Boundary Policy Admin",
+  "description": "Principal Access Boundary admin role, with permissions to read and modify principal access boundary policies, and to bind and unbind principal access boundary policies to targets. Also includes permissions to read principal authorization activities analysis and permissions to list assets from Cloud Asset Inventory",
+  "included_permissions": [
+    "cloudasset.assets.listResource",
+    "cloudasset.assets.searchAllResources",
+    "iam.principalaccessboundarypolicies.bind",
+    "iam.principalaccessboundarypolicies.create",
+    "iam.principalaccessboundarypolicies.delete",
+    "iam.principalaccessboundarypolicies.get",
+    "iam.principalaccessboundarypolicies.list",
+    "iam.principalaccessboundarypolicies.searchPolicyBindings",
+    "iam.principalaccessboundarypolicies.unbind",
+    "iam.principalaccessboundarypolicies.update"
+  ],
+  "stage": "BETA"
+}

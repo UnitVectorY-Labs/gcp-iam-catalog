@@ -1,0 +1,21 @@
+{
+  "name": "roles/oracledatabase.autonomousDatabaseViewer",
+  "title": "Oracle Database@Google Cloud Autonomous Database Viewer",
+  "description": "Grants read access to see all Autonomous Database resources.",
+  "included_permissions": [
+    "oracledatabase.autonomousDatabaseBackups.get",
+    "oracledatabase.autonomousDatabaseBackups.list",
+    "oracledatabase.autonomousDatabaseCharacterSets.list",
+    "oracledatabase.autonomousDatabases.get",
+    "oracledatabase.autonomousDatabases.list",
+    "oracledatabase.autonomousDbVersions.list",
+    "oracledatabase.entitlements.list",
+    "oracledatabase.locations.get",
+    "oracledatabase.locations.list",
+    "oracledatabase.operations.get",
+    "oracledatabase.operations.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

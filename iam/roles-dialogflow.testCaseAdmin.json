@@ -1,0 +1,17 @@
+{
+  "name": "roles/dialogflow.testCaseAdmin",
+  "title": "Dialogflow Test Case Admin",
+  "description": "Can read \u0026 write test cases.",
+  "included_permissions": [
+    "dialogflow.testcases.calculateCoverage",
+    "dialogflow.testcases.create",
+    "dialogflow.testcases.delete",
+    "dialogflow.testcases.export",
+    "dialogflow.testcases.get",
+    "dialogflow.testcases.import",
+    "dialogflow.testcases.list",
+    "dialogflow.testcases.run",
+    "dialogflow.testcases.update"
+  ],
+  "stage": "GA"
+}

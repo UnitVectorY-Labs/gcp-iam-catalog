@@ -1,0 +1,32 @@
+{
+  "name": "roles/beyondcorp.viewer",
+  "title": "Cloud BeyondCorp Viewer",
+  "description": "Read-only access to all Cloud BeyondCorp resources.",
+  "included_permissions": [
+    "beyondcorp.appConnections.get",
+    "beyondcorp.appConnections.getIamPolicy",
+    "beyondcorp.appConnections.list",
+    "beyondcorp.appConnectors.get",
+    "beyondcorp.appConnectors.getIamPolicy",
+    "beyondcorp.appConnectors.list",
+    "beyondcorp.appGateways.get",
+    "beyondcorp.appGateways.getIamPolicy",
+    "beyondcorp.appGateways.list",
+    "beyondcorp.clientConnectorServices.get",
+    "beyondcorp.clientConnectorServices.getIamPolicy",
+    "beyondcorp.clientConnectorServices.list",
+    "beyondcorp.clientGateways.get",
+    "beyondcorp.clientGateways.getIamPolicy",
+    "beyondcorp.clientGateways.list",
+    "beyondcorp.locations.get",
+    "beyondcorp.locations.list",
+    "beyondcorp.operations.get",
+    "beyondcorp.operations.list",
+    "beyondcorp.subscriptions.get",
+    "beyondcorp.subscriptions.list",
+    "resourcemanager.organizations.get",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "BETA"
+}

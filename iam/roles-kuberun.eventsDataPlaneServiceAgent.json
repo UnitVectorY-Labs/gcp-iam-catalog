@@ -1,0 +1,15 @@
+{
+  "name": "roles/kuberun.eventsDataPlaneServiceAgent",
+  "title": "KubeRun Events Data Plane Service Agent",
+  "description": "Service account role used to setup authentication for the data plane used by KubeRun Events.",
+  "included_permissions": [
+    "cloudtrace.traces.patch",
+    "monitoring.timeSeries.create",
+    "pubsub.subscriptions.consume",
+    "pubsub.subscriptions.get",
+    "pubsub.topics.get",
+    "pubsub.topics.publish",
+    "resourcemanager.projects.get"
+  ],
+  "stage": "GA"
+}

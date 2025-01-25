@@ -1,0 +1,20 @@
+{
+  "name": "roles/gkehub.scopeEditorProjectLevel",
+  "title": "Fleet Project-level Scope Editor",
+  "description": "Role for project-level permissions for editor of Fleet Scopes.",
+  "included_permissions": [
+    "gkehub.gateway.delete",
+    "gkehub.gateway.generateCredentials",
+    "gkehub.gateway.get",
+    "gkehub.gateway.patch",
+    "gkehub.gateway.post",
+    "gkehub.gateway.put",
+    "gkehub.memberships.get",
+    "gkehub.operations.get",
+    "monitoring.timeSeries.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list",
+    "serviceusage.services.get"
+  ],
+  "stage": "GA"
+}

@@ -1,0 +1,7 @@
+{
+  "name": "roles/visionai.retailendpointViewer",
+  "title": "Vision AI RetailEndpoint Viewer",
+  "description": "Access to read Vision AI RetailEndpoints.",
+  "included_permissions": null,
+  "stage": "BETA"
+}

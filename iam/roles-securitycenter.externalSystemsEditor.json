@@ -1,0 +1,9 @@
+{
+  "name": "roles/securitycenter.externalSystemsEditor",
+  "title": "Security Center External Systems Editor",
+  "description": "Write access to security center external systems",
+  "included_permissions": [
+    "securitycenter.findingexternalsystems.update"
+  ],
+  "stage": "GA"
+}

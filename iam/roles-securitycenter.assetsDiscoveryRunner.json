@@ -1,0 +1,10 @@
+{
+  "name": "roles/securitycenter.assetsDiscoveryRunner",
+  "title": "Security Center Assets Discovery Runner",
+  "description": "Run asset discovery access to assets",
+  "included_permissions": [
+    "securitycenter.assets.runDiscovery",
+    "securitycenter.userinterfacemetadata.get"
+  ],
+  "stage": "GA"
+}

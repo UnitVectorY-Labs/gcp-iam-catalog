@@ -1,0 +1,10 @@
+{
+  "name": "roles/iam.denyReviewer",
+  "title": "Deny Reviewer",
+  "description": "Deny Reviewer role, with permissions to read deny policies",
+  "included_permissions": [
+    "iam.denypolicies.get",
+    "iam.denypolicies.list"
+  ],
+  "stage": "GA"
+}

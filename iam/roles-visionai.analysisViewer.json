@@ -1,0 +1,10 @@
+{
+  "name": "roles/visionai.analysisViewer",
+  "title": "Vision AI Analysis Viewer",
+  "description": "Access to read Vision AI Analyses.",
+  "included_permissions": [
+    "visionai.analyses.get",
+    "visionai.analyses.list"
+  ],
+  "stage": "BETA"
+}

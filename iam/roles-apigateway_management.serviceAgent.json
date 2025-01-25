@@ -1,0 +1,15 @@
+{
+  "name": "roles/apigateway_management.serviceAgent",
+  "title": "Cloud API Gateway Management Service Agent",
+  "description": "Gives Cloud API Gateway service account access to retrieve aService configuration.",
+  "included_permissions": [
+    "iam.serviceAccounts.get",
+    "servicemanagement.services.create",
+    "servicemanagement.services.delete",
+    "servicemanagement.services.get",
+    "servicemanagement.services.list",
+    "servicemanagement.services.update",
+    "serviceusage.services.get"
+  ],
+  "stage": "GA"
+}

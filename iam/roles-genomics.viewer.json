@@ -1,0 +1,12 @@
+{
+  "name": "roles/genomics.viewer",
+  "title": "Genomics Viewer",
+  "description": "Access to view genomics datasets and operations.",
+  "included_permissions": [
+    "genomics.datasets.get",
+    "genomics.datasets.list",
+    "genomics.operations.get",
+    "genomics.operations.list"
+  ],
+  "stage": "GA"
+}

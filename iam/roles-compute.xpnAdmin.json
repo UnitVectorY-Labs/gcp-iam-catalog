@@ -1,0 +1,21 @@
+{
+  "name": "roles/compute.xpnAdmin",
+  "title": "Compute Shared VPC Admin",
+  "description": "Can administer shared VPC network (XPN).",
+  "included_permissions": [
+    "compute.globalOperations.get",
+    "compute.globalOperations.list",
+    "compute.organizations.disableXpnHost",
+    "compute.organizations.disableXpnResource",
+    "compute.organizations.enableXpnHost",
+    "compute.organizations.enableXpnResource",
+    "compute.projects.get",
+    "compute.subnetworks.getIamPolicy",
+    "compute.subnetworks.setIamPolicy",
+    "resourcemanager.organizations.get",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.getIamPolicy",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

@@ -1,0 +1,20 @@
+{
+  "name": "roles/analyticshub.listingAdmin",
+  "title": "Analytics Hub Listing Admin",
+  "description": "Grants full control over the Listing, including updating, deleting and setting ACLs",
+  "included_permissions": [
+    "analyticshub.dataExchanges.get",
+    "analyticshub.dataExchanges.getIamPolicy",
+    "analyticshub.dataExchanges.list",
+    "analyticshub.listings.delete",
+    "analyticshub.listings.get",
+    "analyticshub.listings.getIamPolicy",
+    "analyticshub.listings.list",
+    "analyticshub.listings.setIamPolicy",
+    "analyticshub.listings.update",
+    "analyticshub.listings.viewSubscriptions",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

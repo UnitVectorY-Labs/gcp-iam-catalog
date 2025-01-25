@@ -1,0 +1,15 @@
+{
+  "name": "roles/firebaseinappmessaging.viewer",
+  "title": "Firebase In-App Messaging Viewer",
+  "description": "Read-only access to Firebase In-App Messaging resources.",
+  "included_permissions": [
+    "firebase.clients.get",
+    "firebase.clients.list",
+    "firebase.projects.get",
+    "firebaseinappmessaging.campaigns.get",
+    "firebaseinappmessaging.campaigns.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "BETA"
+}

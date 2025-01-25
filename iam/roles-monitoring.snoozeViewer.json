@@ -1,0 +1,10 @@
+{
+  "name": "roles/monitoring.snoozeViewer",
+  "title": "Monitoring Snooze Viewer",
+  "description": "",
+  "included_permissions": [
+    "monitoring.snoozes.get",
+    "monitoring.snoozes.list"
+  ],
+  "stage": "GA"
+}

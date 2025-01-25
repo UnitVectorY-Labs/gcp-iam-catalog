@@ -1,0 +1,16 @@
+{
+  "name": "roles/recommender.orgPolicyViewer",
+  "title": "Org Policy Recommender Viewer",
+  "description": "Viewer of Org Policy Insights and Recommendations.",
+  "included_permissions": [
+    "recommender.locations.get",
+    "recommender.locations.list",
+    "recommender.orgPolicyInsights.get",
+    "recommender.orgPolicyInsights.list",
+    "recommender.orgPolicyRecommendations.get",
+    "recommender.orgPolicyRecommendations.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "BETA"
+}

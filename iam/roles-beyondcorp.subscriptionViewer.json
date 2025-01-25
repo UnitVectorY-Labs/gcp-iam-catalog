@@ -1,0 +1,11 @@
+{
+  "name": "roles/beyondcorp.subscriptionViewer",
+  "title": "Cloud BeyondCorp Subscription Viewer",
+  "description": "Read-only access to all BeyondCorp Subscription resources.",
+  "included_permissions": [
+    "beyondcorp.subscriptions.get",
+    "beyondcorp.subscriptions.list",
+    "resourcemanager.organizations.get"
+  ],
+  "stage": "BETA"
+}

@@ -1,0 +1,10 @@
+{
+  "name": "roles/securitycenter.findingsStateSetter",
+  "title": "Security Center Findings State Setter",
+  "description": "Set state access to findings",
+  "included_permissions": [
+    "securitycenter.findings.setState",
+    "securitycenter.userinterfacemetadata.get"
+  ],
+  "stage": "GA"
+}

@@ -1,0 +1,13 @@
+{
+  "name": "roles/mapsanalytics.viewer",
+  "title": "Maps Analytics Viewer",
+  "description": "Grants read-only access to all of the Maps Analytics resources.",
+  "included_permissions": [
+    "mapsanalytics.metricData.query",
+    "mapsanalytics.metricMetadata.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list",
+    "serviceusage.services.list"
+  ],
+  "stage": "BETA"
+}

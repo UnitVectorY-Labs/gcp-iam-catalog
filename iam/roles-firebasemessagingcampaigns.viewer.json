@@ -1,0 +1,10 @@
+{
+  "name": "roles/firebasemessagingcampaigns.viewer",
+  "title": "Firebase Messaging Campaigns Viewer",
+  "description": "Read-only access for Firebase Messaging Campaigns.",
+  "included_permissions": [
+    "firebasemessagingcampaigns.campaigns.get",
+    "firebasemessagingcampaigns.campaigns.list"
+  ],
+  "stage": "BETA"
+}

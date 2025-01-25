@@ -1,0 +1,13 @@
+{
+  "name": "roles/baremetalsolution.procurementseditor",
+  "title": "Bare Metal Solution Procurements Editor",
+  "description": "Editor of Bare Metal Solution Procurements",
+  "included_permissions": [
+    "baremetalsolution.pods.list",
+    "baremetalsolution.procurements.create",
+    "baremetalsolution.procurements.get",
+    "baremetalsolution.procurements.list",
+    "baremetalsolution.skus.list"
+  ],
+  "stage": "GA"
+}

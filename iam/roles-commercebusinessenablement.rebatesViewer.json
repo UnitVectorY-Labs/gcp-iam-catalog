@@ -1,0 +1,13 @@
+{
+  "name": "roles/commercebusinessenablement.rebatesViewer",
+  "title": "Commerce Business Enablement Rebates Viewer",
+  "description": "Provides read-only access to rebates",
+  "included_permissions": [
+    "commercebusinessenablement.operations.get",
+    "commercebusinessenablement.operations.list",
+    "commercebusinessenablement.partnerInfo.get",
+    "commercebusinessenablement.refunds.get",
+    "commercebusinessenablement.refunds.list"
+  ],
+  "stage": "BETA"
+}

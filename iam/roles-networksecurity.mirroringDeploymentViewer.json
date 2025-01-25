@@ -1,0 +1,14 @@
+{
+  "name": "roles/networksecurity.mirroringDeploymentViewer",
+  "title": "Mirroring Deployment Viewer",
+  "description": "Enables read-only access to mirroring resources on the Producer's side.",
+  "included_permissions": [
+    "networksecurity.mirroringDeploymentGroups.get",
+    "networksecurity.mirroringDeploymentGroups.list",
+    "networksecurity.mirroringDeployments.get",
+    "networksecurity.mirroringDeployments.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "BETA"
+}

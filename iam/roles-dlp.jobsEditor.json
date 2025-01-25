@@ -1,0 +1,15 @@
+{
+  "name": "roles/dlp.jobsEditor",
+  "title": "DLP Jobs Editor",
+  "description": "Edit and create jobs",
+  "included_permissions": [
+    "dlp.jobs.cancel",
+    "dlp.jobs.create",
+    "dlp.jobs.delete",
+    "dlp.jobs.get",
+    "dlp.jobs.hybridInspect",
+    "dlp.jobs.list",
+    "dlp.kms.encrypt"
+  ],
+  "stage": "GA"
+}

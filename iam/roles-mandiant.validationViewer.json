@@ -1,0 +1,12 @@
+{
+  "name": "roles/mandiant.validationViewer",
+  "title": "Mandiant Validation Viewer",
+  "description": "Access to read Validation",
+  "included_permissions": [
+    "mandiant.genericPlatforms.get",
+    "mandiant.genericValidations.get",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "BETA"
+}

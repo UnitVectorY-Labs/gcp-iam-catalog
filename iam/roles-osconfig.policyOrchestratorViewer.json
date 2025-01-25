@@ -1,0 +1,13 @@
+{
+  "name": "roles/osconfig.policyOrchestratorViewer",
+  "title": "PolicyOrchestrator Viewer",
+  "description": "Viewer of PolicyOrchestrator resources",
+  "included_permissions": [
+    "osconfig.locations.get",
+    "osconfig.locations.list",
+    "osconfig.operations.get",
+    "osconfig.policyOrchestrators.get",
+    "osconfig.policyOrchestrators.list"
+  ],
+  "stage": "BETA"
+}

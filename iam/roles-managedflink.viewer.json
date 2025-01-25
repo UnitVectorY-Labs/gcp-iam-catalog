@@ -1,0 +1,20 @@
+{
+  "name": "roles/managedflink.viewer",
+  "title": "Managed Flink Viewer",
+  "description": "Readonly access to Managed Flink resources.",
+  "included_permissions": [
+    "managedflink.deployments.get",
+    "managedflink.deployments.list",
+    "managedflink.jobs.get",
+    "managedflink.jobs.list",
+    "managedflink.locations.get",
+    "managedflink.locations.list",
+    "managedflink.operations.get",
+    "managedflink.operations.list",
+    "managedflink.sessions.get",
+    "managedflink.sessions.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "BETA"
+}

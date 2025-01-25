@@ -1,0 +1,12 @@
+{
+  "name": "roles/securityposture.postureDeploymentsViewer",
+  "title": "Security Posture Deployments Viewer",
+  "description": "Read only access to the Posture Deployment resource.",
+  "included_permissions": [
+    "resourcemanager.organizations.get",
+    "securityposture.operations.get",
+    "securityposture.postureDeployments.get",
+    "securityposture.postureDeployments.list"
+  ],
+  "stage": "GA"
+}

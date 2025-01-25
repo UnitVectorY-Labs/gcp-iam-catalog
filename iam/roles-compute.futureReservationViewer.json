@@ -1,0 +1,15 @@
+{
+  "name": "roles/compute.futureReservationViewer",
+  "title": "Compute Future Reservation Viewer",
+  "description": "",
+  "included_permissions": [
+    "compute.acceleratorTypes.list",
+    "compute.futureReservations.get",
+    "compute.futureReservations.list",
+    "compute.instanceTemplates.list",
+    "compute.machineTypes.list",
+    "compute.regions.list",
+    "compute.zones.list"
+  ],
+  "stage": "BETA"
+}

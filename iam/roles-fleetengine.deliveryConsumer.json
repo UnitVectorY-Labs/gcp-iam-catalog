@@ -1,0 +1,10 @@
+{
+  "name": "roles/fleetengine.deliveryConsumer",
+  "title": "Fleet Engine Delivery Consumer User",
+  "description": "Limited read access to Fleet Engine Delivery resources",
+  "included_permissions": [
+    "fleetengine.tasks.searchWithTrackingId",
+    "fleetengine.tasktrackinginfo.get"
+  ],
+  "stage": "GA"
+}

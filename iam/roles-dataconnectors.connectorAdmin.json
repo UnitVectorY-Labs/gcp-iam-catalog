@@ -1,0 +1,24 @@
+{
+  "name": "roles/dataconnectors.connectorAdmin",
+  "title": "Connector Admin",
+  "description": "Full access to Data Connectors.",
+  "included_permissions": [
+    "dataconnectors.connectors.create",
+    "dataconnectors.connectors.delete",
+    "dataconnectors.connectors.get",
+    "dataconnectors.connectors.getIamPolicy",
+    "dataconnectors.connectors.list",
+    "dataconnectors.connectors.setIamPolicy",
+    "dataconnectors.connectors.update",
+    "dataconnectors.connectors.use",
+    "dataconnectors.locations.get",
+    "dataconnectors.locations.list",
+    "dataconnectors.operations.cancel",
+    "dataconnectors.operations.delete",
+    "dataconnectors.operations.get",
+    "dataconnectors.operations.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "BETA"
+}

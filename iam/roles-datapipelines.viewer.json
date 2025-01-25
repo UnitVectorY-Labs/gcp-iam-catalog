@@ -1,0 +1,13 @@
+{
+  "name": "roles/datapipelines.viewer",
+  "title": "Data pipelines Viewer",
+  "description": "Viewer of Data pipelines resources",
+  "included_permissions": [
+    "datapipelines.jobs.list",
+    "datapipelines.pipelines.get",
+    "datapipelines.pipelines.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

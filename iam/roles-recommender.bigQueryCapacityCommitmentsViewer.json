@@ -1,0 +1,16 @@
+{
+  "name": "roles/recommender.bigQueryCapacityCommitmentsViewer",
+  "title": "BigQuery Slot Recommender Viewer",
+  "description": "Viewer of BigQuery Capacity Commitments insights and recommendations.",
+  "included_permissions": [
+    "recommender.bigqueryCapacityCommitmentsInsights.get",
+    "recommender.bigqueryCapacityCommitmentsInsights.list",
+    "recommender.bigqueryCapacityCommitmentsRecommendations.get",
+    "recommender.bigqueryCapacityCommitmentsRecommendations.list",
+    "recommender.locations.get",
+    "recommender.locations.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "BETA"
+}

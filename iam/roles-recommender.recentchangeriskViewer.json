@@ -1,0 +1,16 @@
+{
+  "name": "roles/recommender.recentchangeriskViewer",
+  "title": "Recent Change Risk Recommender Viewer",
+  "description": "Viewer of Recent Change Risk Insights and Recommendations.",
+  "included_permissions": [
+    "recommender.cloudRecentChangeInsights.get",
+    "recommender.cloudRecentChangeInsights.list",
+    "recommender.cloudRecentChangeRecommendations.get",
+    "recommender.cloudRecentChangeRecommendations.list",
+    "recommender.locations.get",
+    "recommender.locations.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

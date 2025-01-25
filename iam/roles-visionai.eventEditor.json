@@ -1,0 +1,13 @@
+{
+  "name": "roles/visionai.eventEditor",
+  "title": "Vision AI Event Editor",
+  "description": "Access to read and write Vision AI Events.",
+  "included_permissions": [
+    "visionai.events.create",
+    "visionai.events.delete",
+    "visionai.events.get",
+    "visionai.events.list",
+    "visionai.events.update"
+  ],
+  "stage": "BETA"
+}

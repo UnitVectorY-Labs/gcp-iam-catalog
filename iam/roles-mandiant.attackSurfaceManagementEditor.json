@@ -1,0 +1,16 @@
+{
+  "name": "roles/mandiant.attackSurfaceManagementEditor",
+  "title": "Mandiant Attack Surface Management Editor",
+  "description": "Access to write Attack Surface Management",
+  "included_permissions": [
+    "mandiant.genericAttackSurfaceManagements.create",
+    "mandiant.genericAttackSurfaceManagements.delete",
+    "mandiant.genericAttackSurfaceManagements.update",
+    "mandiant.genericPlatforms.create",
+    "mandiant.genericPlatforms.delete",
+    "mandiant.genericPlatforms.update",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "BETA"
+}

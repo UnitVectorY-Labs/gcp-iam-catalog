@@ -1,0 +1,17 @@
+{
+  "name": "roles/analyticshub.publisher",
+  "title": "Analytics Hub Publisher",
+  "description": "Can publish to Data Exchanges thus creating Listings",
+  "included_permissions": [
+    "analyticshub.dataExchanges.get",
+    "analyticshub.dataExchanges.getIamPolicy",
+    "analyticshub.dataExchanges.list",
+    "analyticshub.listings.create",
+    "analyticshub.listings.get",
+    "analyticshub.listings.getIamPolicy",
+    "analyticshub.listings.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

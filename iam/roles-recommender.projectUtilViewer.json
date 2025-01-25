@@ -1,0 +1,16 @@
+{
+  "name": "roles/recommender.projectUtilViewer",
+  "title": "Project Utilization Recommender Viewer",
+  "description": "Viewer of Project Utilization insights and recommendations.",
+  "included_permissions": [
+    "recommender.resourcemanagerProjectUtilizationInsightTypeConfigs.get",
+    "recommender.resourcemanagerProjectUtilizationInsights.get",
+    "recommender.resourcemanagerProjectUtilizationInsights.list",
+    "recommender.resourcemanagerProjectUtilizationRecommendations.get",
+    "recommender.resourcemanagerProjectUtilizationRecommendations.list",
+    "recommender.resourcemanagerProjectUtilizationRecommenderConfigs.get",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

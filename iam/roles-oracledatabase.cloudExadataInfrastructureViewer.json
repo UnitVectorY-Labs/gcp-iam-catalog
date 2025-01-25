@@ -1,0 +1,20 @@
+{
+  "name": "roles/oracledatabase.cloudExadataInfrastructureViewer",
+  "title": "Oracle Database@Google Cloud Exadata Infrastructure Viewer",
+  "description": "Grants read access to see all Exadata Infrastructure resources.",
+  "included_permissions": [
+    "oracledatabase.cloudExadataInfrastructures.get",
+    "oracledatabase.cloudExadataInfrastructures.list",
+    "oracledatabase.dbServers.list",
+    "oracledatabase.dbSystemShapes.list",
+    "oracledatabase.entitlements.list",
+    "oracledatabase.giVersions.list",
+    "oracledatabase.locations.get",
+    "oracledatabase.locations.list",
+    "oracledatabase.operations.get",
+    "oracledatabase.operations.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

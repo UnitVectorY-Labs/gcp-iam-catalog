@@ -1,0 +1,11 @@
+{
+  "name": "roles/networksecurity.mirroringEndpointUser",
+  "title": "Mirroring Endpoint User",
+  "description": "Allows a consumer to connect their networks to a mirroringEndpointGroup.",
+  "included_permissions": [
+    "networksecurity.mirroringEndpointGroups.get",
+    "networksecurity.mirroringEndpointGroups.list",
+    "networksecurity.mirroringEndpointGroups.use"
+  ],
+  "stage": "BETA"
+}

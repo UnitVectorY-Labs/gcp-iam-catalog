@@ -1,0 +1,20 @@
+{
+  "name": "roles/networkmanagement.viewer",
+  "title": "Network Management Viewer",
+  "description": "Read-only access to Network Management resources.",
+  "included_permissions": [
+    "networkmanagement.connectivitytests.get",
+    "networkmanagement.connectivitytests.getIamPolicy",
+    "networkmanagement.connectivitytests.list",
+    "networkmanagement.locations.get",
+    "networkmanagement.locations.list",
+    "networkmanagement.operations.get",
+    "networkmanagement.operations.list",
+    "networkmanagement.vpcflowlogsconfigs.get",
+    "networkmanagement.vpcflowlogsconfigs.list",
+    "resourcemanager.organizations.get",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

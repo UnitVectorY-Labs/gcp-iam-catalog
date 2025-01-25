@@ -1,0 +1,10 @@
+{
+  "name": "roles/dlp.columnDataProfilesReader",
+  "title": "DLP Column Data Profiles Reader",
+  "description": "Read DLP column profiles.",
+  "included_permissions": [
+    "dlp.columnDataProfiles.get",
+    "dlp.columnDataProfiles.list"
+  ],
+  "stage": "GA"
+}

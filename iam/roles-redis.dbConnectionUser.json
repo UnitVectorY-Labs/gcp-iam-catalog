@@ -1,0 +1,9 @@
+{
+  "name": "roles/redis.dbConnectionUser",
+  "title": "Cloud Memorystore Redis Db Connection User",
+  "description": "Access to connecting to Redis Server db.",
+  "included_permissions": [
+    "redis.clusters.connect"
+  ],
+  "stage": "BETA"
+}

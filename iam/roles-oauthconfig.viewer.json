@@ -1,0 +1,15 @@
+{
+  "name": "roles/oauthconfig.viewer",
+  "title": "OAuth Config Viewer",
+  "description": "Read-only access to OAuth config resources",
+  "included_permissions": [
+    "clientauthconfig.brands.get",
+    "clientauthconfig.brands.list",
+    "clientauthconfig.clients.get",
+    "clientauthconfig.clients.list",
+    "oauthconfig.clientpolicy.get",
+    "oauthconfig.testusers.get",
+    "oauthconfig.verification.get"
+  ],
+  "stage": "BETA"
+}

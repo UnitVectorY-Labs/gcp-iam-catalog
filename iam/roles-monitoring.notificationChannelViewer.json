@@ -1,0 +1,12 @@
+{
+  "name": "roles/monitoring.notificationChannelViewer",
+  "title": "Monitoring NotificationChannel Viewer",
+  "description": "Read-only access to notification channels.",
+  "included_permissions": [
+    "monitoring.notificationChannelDescriptors.get",
+    "monitoring.notificationChannelDescriptors.list",
+    "monitoring.notificationChannels.get",
+    "monitoring.notificationChannels.list"
+  ],
+  "stage": "BETA"
+}

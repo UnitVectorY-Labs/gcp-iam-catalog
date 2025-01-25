@@ -1,0 +1,11 @@
+{
+  "name": "roles/securitycenter.integrationExecutorServiceAgent",
+  "title": "Security Center Integration Executor Service Agent",
+  "description": "Gives Security Center access to execute Integrations.",
+  "included_permissions": [
+    "integrations.securityExecutions.cancel",
+    "integrations.securityExecutions.list",
+    "integrations.securityIntegrations.invoke"
+  ],
+  "stage": "GA"
+}

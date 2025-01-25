@@ -1,0 +1,13 @@
+{
+  "name": "roles/clouddebugger.user",
+  "title": "Cloud Debugger User",
+  "description": "User Access to Cloud Debugger.  Can create, delete and view snapshots and logpoints.",
+  "included_permissions": [
+    "clouddebugger.breakpoints.create",
+    "clouddebugger.breakpoints.delete",
+    "clouddebugger.breakpoints.get",
+    "clouddebugger.breakpoints.list",
+    "clouddebugger.debuggees.list"
+  ],
+  "stage": "BETA"
+}

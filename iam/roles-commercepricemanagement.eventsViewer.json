@@ -1,0 +1,12 @@
+{
+  "name": "roles/commercepricemanagement.eventsViewer",
+  "title": "Commerce Price Management Events Viewer",
+  "description": "Allows viewing key events for an offer",
+  "included_permissions": [
+    "commerceprice.events.get",
+    "commerceprice.events.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "BETA"
+}

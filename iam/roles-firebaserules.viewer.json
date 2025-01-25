@@ -1,0 +1,14 @@
+{
+  "name": "roles/firebaserules.viewer",
+  "title": "Firebase Rules Viewer",
+  "description": "Read-only access on all resources with the ability to test Rulesets.",
+  "included_permissions": [
+    "firebaserules.releases.get",
+    "firebaserules.releases.list",
+    "firebaserules.rulesets.get",
+    "firebaserules.rulesets.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

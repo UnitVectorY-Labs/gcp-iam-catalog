@@ -1,0 +1,12 @@
+{
+  "name": "roles/baremetalsolution.maintenanceeventseditor",
+  "title": "Maintenance Events Editor",
+  "description": "Editor of Bare Metal Solution maintenance events resources",
+  "included_permissions": [
+    "baremetalsolution.maintenanceevents.addProposal",
+    "baremetalsolution.maintenanceevents.approve",
+    "baremetalsolution.maintenanceevents.get",
+    "baremetalsolution.maintenanceevents.list"
+  ],
+  "stage": "GA"
+}

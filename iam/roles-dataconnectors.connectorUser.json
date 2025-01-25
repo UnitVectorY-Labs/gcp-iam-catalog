@@ -1,0 +1,12 @@
+{
+  "name": "roles/dataconnectors.connectorUser",
+  "title": "Connector User",
+  "description": "Access to use Data Connectors.",
+  "included_permissions": [
+    "dataconnectors.connectors.get",
+    "dataconnectors.connectors.getIamPolicy",
+    "dataconnectors.connectors.list",
+    "dataconnectors.connectors.use"
+  ],
+  "stage": "BETA"
+}

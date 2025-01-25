@@ -1,0 +1,10 @@
+{
+  "name": "roles/dlp.subscriptionsReader",
+  "title": "DLP Subscription Viewer",
+  "description": "View DLP subscriptions.",
+  "included_permissions": [
+    "dlp.subscriptions.get",
+    "dlp.subscriptions.list"
+  ],
+  "stage": "GA"
+}

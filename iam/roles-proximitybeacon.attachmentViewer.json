@@ -1,0 +1,12 @@
+{
+  "name": "roles/proximitybeacon.attachmentViewer",
+  "title": "Beacon Attachment Viewer",
+  "description": "Can view all attachments under a namespace; no beacon or namespace permissions.",
+  "included_permissions": [
+    "proximitybeacon.attachments.get",
+    "proximitybeacon.attachments.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

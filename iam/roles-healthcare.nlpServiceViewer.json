@@ -1,0 +1,13 @@
+{
+  "name": "roles/healthcare.nlpServiceViewer",
+  "title": "Healthcare NLP Service Viewer",
+  "description": "Extract and analyze medical entities from a given text.",
+  "included_permissions": [
+    "healthcare.locations.get",
+    "healthcare.locations.list",
+    "healthcare.nlpservice.analyzeEntities",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "BETA"
+}

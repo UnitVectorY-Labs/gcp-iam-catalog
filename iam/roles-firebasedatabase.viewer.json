@@ -1,0 +1,15 @@
+{
+  "name": "roles/firebasedatabase.viewer",
+  "title": "Firebase Realtime Database Viewer",
+  "description": "Read-only access to Firebase Realtime Database resources.",
+  "included_permissions": [
+    "firebase.clients.get",
+    "firebase.clients.list",
+    "firebase.projects.get",
+    "firebasedatabase.instances.get",
+    "firebasedatabase.instances.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

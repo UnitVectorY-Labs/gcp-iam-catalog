@@ -1,0 +1,11 @@
+{
+  "name": "roles/subscribewithgoogledeveloper.developer",
+  "title": "Subscribe with Google Developer",
+  "description": "Access DevTools for Subscribe with Google",
+  "included_permissions": [
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list",
+    "subscribewithgoogledeveloper.tools.get"
+  ],
+  "stage": "BETA"
+}

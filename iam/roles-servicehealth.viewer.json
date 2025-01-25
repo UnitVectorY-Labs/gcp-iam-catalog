@@ -1,0 +1,20 @@
+{
+  "name": "roles/servicehealth.viewer",
+  "title": "Personalized Service Health Viewer",
+  "description": "Readonly access to Personalized Service Health resources.",
+  "included_permissions": [
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list",
+    "servicehealth.artifacts.get",
+    "servicehealth.events.get",
+    "servicehealth.events.list",
+    "servicehealth.locations.get",
+    "servicehealth.locations.list",
+    "servicehealth.organizationEvents.get",
+    "servicehealth.organizationEvents.list",
+    "servicehealth.organizationImpacts.get",
+    "servicehealth.organizationImpacts.list",
+    "servicehealth.statuses.get"
+  ],
+  "stage": "GA"
+}

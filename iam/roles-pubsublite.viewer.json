@@ -1,0 +1,20 @@
+{
+  "name": "roles/pubsublite.viewer",
+  "title": "Pub/Sub Lite Viewer",
+  "description": "View topics, subscriptions and reservations.",
+  "included_permissions": [
+    "pubsublite.operations.get",
+    "pubsublite.operations.list",
+    "pubsublite.reservations.get",
+    "pubsublite.reservations.list",
+    "pubsublite.reservations.listTopics",
+    "pubsublite.subscriptions.get",
+    "pubsublite.subscriptions.getCursor",
+    "pubsublite.subscriptions.list",
+    "pubsublite.topics.get",
+    "pubsublite.topics.getPartitions",
+    "pubsublite.topics.list",
+    "pubsublite.topics.listSubscriptions"
+  ],
+  "stage": "GA"
+}

@@ -1,0 +1,11 @@
+{
+  "name": "roles/run.jobsExecutorWithOverrides",
+  "title": "Cloud Run Jobs Executor With Overrides",
+  "description": "Can execute and cancel Cloud Run jobs with overrides.",
+  "included_permissions": [
+    "run.executions.cancel",
+    "run.jobs.run",
+    "run.jobs.runWithOverrides"
+  ],
+  "stage": "GA"
+}

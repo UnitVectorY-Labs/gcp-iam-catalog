@@ -1,0 +1,17 @@
+{
+  "name": "roles/policysimulator.admin",
+  "title": "Simulator Admin",
+  "description": "Admin user that can run and access replays.",
+  "included_permissions": [
+    "policysimulator.accessPolicySimulationResults.list",
+    "policysimulator.accessPolicySimulations.create",
+    "policysimulator.accessPolicySimulations.get",
+    "policysimulator.accessPolicySimulations.list",
+    "policysimulator.replayResults.list",
+    "policysimulator.replays.create",
+    "policysimulator.replays.get",
+    "policysimulator.replays.list",
+    "policysimulator.replays.run"
+  ],
+  "stage": "BETA"
+}

@@ -1,0 +1,14 @@
+{
+  "name": "roles/storage.legacyObjectOwner",
+  "title": "Storage Legacy Object Owner",
+  "description": "Grants permission to view and edit objects and their metadata, including ACLs.",
+  "included_permissions": [
+    "storage.objects.get",
+    "storage.objects.getIamPolicy",
+    "storage.objects.overrideUnlockedRetention",
+    "storage.objects.setIamPolicy",
+    "storage.objects.setRetention",
+    "storage.objects.update"
+  ],
+  "stage": "GA"
+}

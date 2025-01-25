@@ -1,0 +1,14 @@
+{
+  "name": "roles/beyondcorp.subscriptionAdmin",
+  "title": "Cloud BeyondCorp Subscription Admin",
+  "description": "Full access to all BeyondCorp Subscription resources.",
+  "included_permissions": [
+    "beyondcorp.subscriptions.create",
+    "beyondcorp.subscriptions.get",
+    "beyondcorp.subscriptions.list",
+    "beyondcorp.subscriptions.terminate",
+    "beyondcorp.subscriptions.update",
+    "resourcemanager.organizations.get"
+  ],
+  "stage": "BETA"
+}

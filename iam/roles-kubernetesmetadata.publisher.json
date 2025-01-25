@@ -1,0 +1,11 @@
+{
+  "name": "roles/kubernetesmetadata.publisher",
+  "title": "Metadata Publisher",
+  "description": "Publisher of Kubernetes clusters metadata",
+  "included_permissions": [
+    "kubernetesmetadata.metadata.config",
+    "kubernetesmetadata.metadata.publish",
+    "kubernetesmetadata.metadata.snapshot"
+  ],
+  "stage": "BETA"
+}

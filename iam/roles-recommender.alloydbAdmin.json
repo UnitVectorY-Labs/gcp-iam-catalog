@@ -1,0 +1,28 @@
+{
+  "name": "roles/recommender.alloydbAdmin",
+  "title": "AlloyDB Recommender Admin",
+  "description": "Admin of AlloyDB insights and recommendations.",
+  "included_permissions": [
+    "recommender.alloydbClusterPerformanceInsights.get",
+    "recommender.alloydbClusterPerformanceInsights.list",
+    "recommender.alloydbClusterPerformanceInsights.update",
+    "recommender.alloydbClusterPerformanceRecommendations.get",
+    "recommender.alloydbClusterPerformanceRecommendations.list",
+    "recommender.alloydbClusterPerformanceRecommendations.update",
+    "recommender.alloydbClusterReliabilityInsights.get",
+    "recommender.alloydbClusterReliabilityInsights.list",
+    "recommender.alloydbClusterReliabilityInsights.update",
+    "recommender.alloydbClusterReliabilityRecommendations.get",
+    "recommender.alloydbClusterReliabilityRecommendations.list",
+    "recommender.alloydbClusterReliabilityRecommendations.update",
+    "recommender.alloydbInstanceSecurityInsights.get",
+    "recommender.alloydbInstanceSecurityInsights.list",
+    "recommender.alloydbInstanceSecurityInsights.update",
+    "recommender.alloydbInstanceSecurityRecommendations.get",
+    "recommender.alloydbInstanceSecurityRecommendations.list",
+    "recommender.alloydbInstanceSecurityRecommendations.update",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "BETA"
+}

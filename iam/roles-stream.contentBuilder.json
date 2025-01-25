@@ -1,0 +1,13 @@
+{
+  "name": "roles/stream.contentBuilder",
+  "title": "Stream Content Builder",
+  "description": "Read and build access to StreamContent resources.",
+  "included_permissions": [
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list",
+    "stream.streamContents.build",
+    "stream.streamContents.get",
+    "stream.streamContents.list"
+  ],
+  "stage": "GA"
+}

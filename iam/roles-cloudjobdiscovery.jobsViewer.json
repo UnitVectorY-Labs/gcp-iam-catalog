@@ -1,0 +1,15 @@
+{
+  "name": "roles/cloudjobdiscovery.jobsViewer",
+  "title": "Cloud Talent Solution Job Viewer",
+  "description": "Read access to all job data in Cloud Talent Solution.",
+  "included_permissions": [
+    "cloudjobdiscovery.companies.get",
+    "cloudjobdiscovery.companies.list",
+    "cloudjobdiscovery.jobs.get",
+    "cloudjobdiscovery.jobs.search",
+    "cloudjobdiscovery.tenants.get",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

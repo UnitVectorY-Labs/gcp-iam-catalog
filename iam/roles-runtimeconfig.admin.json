@@ -1,0 +1,32 @@
+{
+  "name": "roles/runtimeconfig.admin",
+  "title": "Cloud RuntimeConfig Admin",
+  "description": "Full access to RuntimeConfig resources.",
+  "included_permissions": [
+    "runtimeconfig.configs.create",
+    "runtimeconfig.configs.delete",
+    "runtimeconfig.configs.get",
+    "runtimeconfig.configs.getIamPolicy",
+    "runtimeconfig.configs.list",
+    "runtimeconfig.configs.setIamPolicy",
+    "runtimeconfig.configs.update",
+    "runtimeconfig.operations.get",
+    "runtimeconfig.operations.list",
+    "runtimeconfig.variables.create",
+    "runtimeconfig.variables.delete",
+    "runtimeconfig.variables.get",
+    "runtimeconfig.variables.getIamPolicy",
+    "runtimeconfig.variables.list",
+    "runtimeconfig.variables.setIamPolicy",
+    "runtimeconfig.variables.update",
+    "runtimeconfig.variables.watch",
+    "runtimeconfig.waiters.create",
+    "runtimeconfig.waiters.delete",
+    "runtimeconfig.waiters.get",
+    "runtimeconfig.waiters.getIamPolicy",
+    "runtimeconfig.waiters.list",
+    "runtimeconfig.waiters.setIamPolicy",
+    "runtimeconfig.waiters.update"
+  ],
+  "stage": "GA"
+}

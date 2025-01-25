@@ -1,0 +1,19 @@
+{
+  "name": "roles/commercebusinessenablement.resellerDiscountViewer",
+  "title": "Commerce Business Enablement Reseller Discount Viewer",
+  "description": "Provides read-only access to reseller discount offers",
+  "included_permissions": [
+    "commercebusinessenablement.partnerAccounts.get",
+    "commercebusinessenablement.partnerAccounts.list",
+    "commercebusinessenablement.partnerInfo.get",
+    "commercebusinessenablement.resellerConfig.get",
+    "commercebusinessenablement.resellerDiscountConfig.get",
+    "commercebusinessenablement.resellerDiscountOffers.list",
+    "commercebusinessenablement.resellerPrivateOfferPlans.get",
+    "commercebusinessenablement.resellerPrivateOfferPlans.list",
+    "resourcemanager.organizations.get",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "BETA"
+}

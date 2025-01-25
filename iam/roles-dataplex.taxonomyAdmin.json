@@ -1,0 +1,23 @@
+{
+  "name": "roles/dataplex.taxonomyAdmin",
+  "title": "Dataplex Taxonomy Administrator",
+  "description": "Full access to DataTaxonomy, DataAttribute resources.",
+  "included_permissions": [
+    "dataplex.dataAttributes.bind",
+    "dataplex.dataAttributes.create",
+    "dataplex.dataAttributes.delete",
+    "dataplex.dataAttributes.get",
+    "dataplex.dataAttributes.getIamPolicy",
+    "dataplex.dataAttributes.list",
+    "dataplex.dataAttributes.setIamPolicy",
+    "dataplex.dataAttributes.update",
+    "dataplex.dataTaxonomies.create",
+    "dataplex.dataTaxonomies.delete",
+    "dataplex.dataTaxonomies.get",
+    "dataplex.dataTaxonomies.getIamPolicy",
+    "dataplex.dataTaxonomies.list",
+    "dataplex.dataTaxonomies.setIamPolicy",
+    "dataplex.dataTaxonomies.update"
+  ],
+  "stage": "GA"
+}

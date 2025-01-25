@@ -1,0 +1,21 @@
+{
+  "name": "roles/meshdataplane.serviceAgent",
+  "title": "Mesh Data Plane Service Agent",
+  "description": "Run user-space Istio components",
+  "included_permissions": [
+    "cloudtrace.traces.patch",
+    "compute.forwardingRules.get",
+    "compute.globalForwardingRules.get",
+    "logging.logEntries.create",
+    "logging.logEntries.route",
+    "monitoring.metricDescriptors.create",
+    "monitoring.metricDescriptors.get",
+    "monitoring.metricDescriptors.list",
+    "monitoring.monitoredResourceDescriptors.get",
+    "monitoring.monitoredResourceDescriptors.list",
+    "monitoring.timeSeries.create",
+    "serviceusage.services.use",
+    "telemetry.traces.write"
+  ],
+  "stage": "GA"
+}

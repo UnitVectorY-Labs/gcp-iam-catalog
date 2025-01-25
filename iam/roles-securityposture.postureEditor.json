@@ -1,0 +1,15 @@
+{
+  "name": "roles/securityposture.postureEditor",
+  "title": "Security Posture Resource Editor",
+  "description": "Mutate and read permissions to the Posture resource.",
+  "included_permissions": [
+    "securityposture.operations.get",
+    "securityposture.postures.create",
+    "securityposture.postures.delete",
+    "securityposture.postures.extract",
+    "securityposture.postures.get",
+    "securityposture.postures.list",
+    "securityposture.postures.update"
+  ],
+  "stage": "GA"
+}

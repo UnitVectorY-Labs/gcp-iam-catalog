@@ -1,0 +1,17 @@
+{
+  "name": "roles/datastore.importExportAdmin",
+  "title": "Cloud Datastore Import Export Admin",
+  "description": "Full access to manage imports and exports.",
+  "included_permissions": [
+    "appengine.applications.get",
+    "datastore.databases.export",
+    "datastore.databases.getMetadata",
+    "datastore.databases.import",
+    "datastore.operations.cancel",
+    "datastore.operations.get",
+    "datastore.operations.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

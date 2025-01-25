@@ -1,0 +1,12 @@
+{
+  "name": "roles/cloudcontrolspartner.inspectabilityReader",
+  "title": "Cloud Controls Partner Inspectability Reader",
+  "description": "Readonly access to Cloud Controls Partner inspectability resources.",
+  "included_permissions": [
+    "cloudcontrolspartner.customers.get",
+    "cloudcontrolspartner.customers.list",
+    "cloudcontrolspartner.inspectabilityevents.get",
+    "cloudcontrolspartner.platformcontrols.get"
+  ],
+  "stage": "GA"
+}

@@ -1,0 +1,13 @@
+{
+  "name": "roles/spanner.serviceAgent",
+  "title": "Cloud Spanner API Service Agent",
+  "description": "Cloud Spanner API Service Agent",
+  "included_permissions": [
+    "aiplatform.endpoints.get",
+    "aiplatform.endpoints.list",
+    "aiplatform.endpoints.predict",
+    "aiplatform.models.get",
+    "aiplatform.models.list"
+  ],
+  "stage": "GA"
+}

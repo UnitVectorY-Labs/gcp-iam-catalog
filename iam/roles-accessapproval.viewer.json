@@ -1,0 +1,14 @@
+{
+  "name": "roles/accessapproval.viewer",
+  "title": "Access Approval Viewer",
+  "description": "Ability to view access approval requests and configuration",
+  "included_permissions": [
+    "accessapproval.requests.get",
+    "accessapproval.requests.list",
+    "accessapproval.serviceAccounts.get",
+    "accessapproval.settings.get",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

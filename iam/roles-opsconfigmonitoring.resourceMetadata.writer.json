@@ -1,0 +1,9 @@
+{
+  "name": "roles/opsconfigmonitoring.resourceMetadata.writer",
+  "title": "Ops Config Monitoring Resource Metadata Writer",
+  "description": "Write-only access to resource metadata. This provides exactly the permissions needed by the Ops Config Monitoring metadata agent and other systems that send metadata.",
+  "included_permissions": [
+    "opsconfigmonitoring.resourceMetadata.write"
+  ],
+  "stage": "BETA"
+}

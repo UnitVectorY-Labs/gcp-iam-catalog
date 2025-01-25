@@ -1,0 +1,13 @@
+{
+  "name": "roles/policyremediatormanager.policyRemediatorReader",
+  "title": "Policy Remediator Reader",
+  "description": "Grants the ability to read/view the state of the policy remediator for the organization",
+  "included_permissions": [
+    "policyremediatormanager.locations.get",
+    "policyremediatormanager.locations.list",
+    "policyremediatormanager.operations.get",
+    "policyremediatormanager.operations.list",
+    "policyremediatormanager.remediatorServices.get"
+  ],
+  "stage": "BETA"
+}

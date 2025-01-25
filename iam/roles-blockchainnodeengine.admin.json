@@ -1,0 +1,21 @@
+{
+  "name": "roles/blockchainnodeengine.admin",
+  "title": "Blockchain Node Engine Admin",
+  "description": "Full access to Blockchain Node Engine resources.",
+  "included_permissions": [
+    "blockchainnodeengine.blockchainNodes.create",
+    "blockchainnodeengine.blockchainNodes.delete",
+    "blockchainnodeengine.blockchainNodes.get",
+    "blockchainnodeengine.blockchainNodes.list",
+    "blockchainnodeengine.blockchainNodes.update",
+    "blockchainnodeengine.locations.get",
+    "blockchainnodeengine.locations.list",
+    "blockchainnodeengine.operations.cancel",
+    "blockchainnodeengine.operations.delete",
+    "blockchainnodeengine.operations.get",
+    "blockchainnodeengine.operations.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

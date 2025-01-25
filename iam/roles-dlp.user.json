@@ -1,0 +1,12 @@
+{
+  "name": "roles/dlp.user",
+  "title": "DLP User",
+  "description": "Inspect, Redact, and De-identify Content",
+  "included_permissions": [
+    "dlp.kms.encrypt",
+    "dlp.locations.get",
+    "dlp.locations.list",
+    "serviceusage.services.use"
+  ],
+  "stage": "GA"
+}

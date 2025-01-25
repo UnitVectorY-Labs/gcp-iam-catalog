@@ -1,0 +1,15 @@
+{
+  "name": "roles/osconfig.guestPolicyAdmin",
+  "title": "GuestPolicy Admin",
+  "description": "Full admin access to GuestPolicies",
+  "included_permissions": [
+    "osconfig.guestPolicies.create",
+    "osconfig.guestPolicies.delete",
+    "osconfig.guestPolicies.get",
+    "osconfig.guestPolicies.list",
+    "osconfig.guestPolicies.update",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "BETA"
+}

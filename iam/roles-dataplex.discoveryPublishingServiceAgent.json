@@ -1,0 +1,10 @@
+{
+  "name": "roles/dataplex.discoveryPublishingServiceAgent",
+  "title": "Dataplex Discovery Publishing Service Agent",
+  "description": "Gives the Dataplex Discovery Service Agent dataset create and get permissions.",
+  "included_permissions": [
+    "bigquery.datasets.create",
+    "bigquery.datasets.get"
+  ],
+  "stage": "GA"
+}

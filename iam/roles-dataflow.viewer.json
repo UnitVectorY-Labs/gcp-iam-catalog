@@ -1,0 +1,18 @@
+{
+  "name": "roles/dataflow.viewer",
+  "title": "Dataflow Viewer",
+  "description": "Read only access to Dataflow jobs.",
+  "included_permissions": [
+    "dataflow.jobs.get",
+    "dataflow.jobs.list",
+    "dataflow.messages.list",
+    "dataflow.metrics.get",
+    "dataflow.snapshots.get",
+    "dataflow.snapshots.list",
+    "recommender.dataflowDiagnosticsInsights.get",
+    "recommender.dataflowDiagnosticsInsights.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

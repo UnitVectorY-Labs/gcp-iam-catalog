@@ -1,0 +1,11 @@
+{
+  "name": "roles/baremetalsolution.lunsadmin",
+  "title": "Luns Admin",
+  "description": "Administrator of Bare Metal Solution Lun resources",
+  "included_permissions": [
+    "baremetalsolution.luns.get",
+    "baremetalsolution.luns.list",
+    "baremetalsolution.operations.get"
+  ],
+  "stage": "GA"
+}

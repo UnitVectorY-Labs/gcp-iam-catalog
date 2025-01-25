@@ -1,0 +1,11 @@
+{
+  "name": "roles/ml.operationOwner",
+  "title": "AI Platform Operation Owner",
+  "description": "Full access to the operation.",
+  "included_permissions": [
+    "ml.operations.cancel",
+    "ml.operations.get",
+    "ml.operations.list"
+  ],
+  "stage": "GA"
+}

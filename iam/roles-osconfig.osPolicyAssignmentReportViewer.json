@@ -1,0 +1,13 @@
+{
+  "name": "roles/osconfig.osPolicyAssignmentReportViewer",
+  "title": "OSPolicyAssignmentReport Viewer",
+  "description": "Viewer of OS policy assignment reports for VM instances",
+  "included_permissions": [
+    "osconfig.osPolicyAssignmentReports.get",
+    "osconfig.osPolicyAssignmentReports.list",
+    "osconfig.osPolicyAssignmentReports.searchSummaries",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

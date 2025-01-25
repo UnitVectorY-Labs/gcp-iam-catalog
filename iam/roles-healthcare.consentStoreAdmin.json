@@ -1,0 +1,25 @@
+{
+  "name": "roles/healthcare.consentStoreAdmin",
+  "title": "Healthcare Consent Store Administrator",
+  "description": "Administer Consent stores.",
+  "included_permissions": [
+    "healthcare.consentStores.checkDataAccess",
+    "healthcare.consentStores.create",
+    "healthcare.consentStores.delete",
+    "healthcare.consentStores.evaluateUserConsents",
+    "healthcare.consentStores.get",
+    "healthcare.consentStores.getIamPolicy",
+    "healthcare.consentStores.list",
+    "healthcare.consentStores.queryAccessibleData",
+    "healthcare.consentStores.setIamPolicy",
+    "healthcare.consentStores.update",
+    "healthcare.datasets.get",
+    "healthcare.datasets.list",
+    "healthcare.locations.get",
+    "healthcare.locations.list",
+    "healthcare.operations.get",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

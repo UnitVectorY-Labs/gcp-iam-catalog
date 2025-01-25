@@ -1,0 +1,22 @@
+{
+  "name": "roles/assuredworkloads.reader",
+  "title": "Assured Workloads Reader",
+  "description": "Grants read access to all Assured Workloads resources and CRM resources - project/folder",
+  "included_permissions": [
+    "assuredworkloads.operations.get",
+    "assuredworkloads.operations.list",
+    "assuredworkloads.updates.list",
+    "assuredworkloads.violations.get",
+    "assuredworkloads.violations.list",
+    "assuredworkloads.workload.get",
+    "assuredworkloads.workload.list",
+    "orgpolicy.policies.list",
+    "orgpolicy.policy.get",
+    "resourcemanager.folders.get",
+    "resourcemanager.folders.list",
+    "resourcemanager.organizations.get",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

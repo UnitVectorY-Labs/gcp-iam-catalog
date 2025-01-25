@@ -1,0 +1,33 @@
+{
+  "name": "roles/healthcare.fhirStoreAdmin",
+  "title": "Healthcare FHIR Store Administrator",
+  "description": "Administer FHIR resource stores.",
+  "included_permissions": [
+    "healthcare.datasets.get",
+    "healthcare.datasets.list",
+    "healthcare.fhirResources.purge",
+    "healthcare.fhirStores.applyConsents",
+    "healthcare.fhirStores.configureSearch",
+    "healthcare.fhirStores.create",
+    "healthcare.fhirStores.deidentify",
+    "healthcare.fhirStores.delete",
+    "healthcare.fhirStores.deleteFhirOperation",
+    "healthcare.fhirStores.explainDataAccess",
+    "healthcare.fhirStores.export",
+    "healthcare.fhirStores.get",
+    "healthcare.fhirStores.getFhirOperation",
+    "healthcare.fhirStores.getIamPolicy",
+    "healthcare.fhirStores.import",
+    "healthcare.fhirStores.list",
+    "healthcare.fhirStores.rollback",
+    "healthcare.fhirStores.setIamPolicy",
+    "healthcare.fhirStores.update",
+    "healthcare.locations.get",
+    "healthcare.locations.list",
+    "healthcare.operations.cancel",
+    "healthcare.operations.get",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

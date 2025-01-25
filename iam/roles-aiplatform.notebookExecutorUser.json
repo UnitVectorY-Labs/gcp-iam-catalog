@@ -1,0 +1,19 @@
+{
+  "name": "roles/aiplatform.notebookExecutorUser",
+  "title": "Notebook Executor User",
+  "description": "Grants users full access to schedules and notebook execution jobs.",
+  "included_permissions": [
+    "aiplatform.notebookExecutionJobs.create",
+    "aiplatform.notebookExecutionJobs.delete",
+    "aiplatform.notebookExecutionJobs.get",
+    "aiplatform.notebookExecutionJobs.list",
+    "aiplatform.operations.list",
+    "aiplatform.pipelineJobs.create",
+    "aiplatform.schedules.create",
+    "aiplatform.schedules.delete",
+    "aiplatform.schedules.get",
+    "aiplatform.schedules.list",
+    "aiplatform.schedules.update"
+  ],
+  "stage": "BETA"
+}

@@ -1,0 +1,22 @@
+{
+  "name": "roles/runapps.operator",
+  "title": "Serverless Integrations Operator",
+  "description": "Access to deploy Serverless Integrations.",
+  "included_permissions": [
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list",
+    "runapps.applications.get",
+    "runapps.applications.getStatus",
+    "runapps.applications.list",
+    "runapps.deployments.create",
+    "runapps.deployments.get",
+    "runapps.deployments.list",
+    "runapps.locations.get",
+    "runapps.locations.list",
+    "runapps.operations.cancel",
+    "runapps.operations.delete",
+    "runapps.operations.get",
+    "runapps.operations.list"
+  ],
+  "stage": "BETA"
+}

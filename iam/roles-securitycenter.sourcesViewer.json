@@ -1,0 +1,12 @@
+{
+  "name": "roles/securitycenter.sourcesViewer",
+  "title": "Security Center Sources Viewer",
+  "description": "Read access to sources",
+  "included_permissions": [
+    "resourcemanager.organizations.get",
+    "securitycenter.sources.get",
+    "securitycenter.sources.list",
+    "securitycenter.userinterfacemetadata.get"
+  ],
+  "stage": "GA"
+}

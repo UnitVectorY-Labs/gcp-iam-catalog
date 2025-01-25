@@ -1,0 +1,15 @@
+{
+  "name": "roles/vpcaccess.viewer",
+  "title": "Serverless VPC Access Viewer",
+  "description": "Viewer of all Serverless VPC Access resources",
+  "included_permissions": [
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list",
+    "vpcaccess.connectors.get",
+    "vpcaccess.connectors.list",
+    "vpcaccess.locations.list",
+    "vpcaccess.operations.get",
+    "vpcaccess.operations.list"
+  ],
+  "stage": "GA"
+}

@@ -1,0 +1,20 @@
+{
+  "name": "roles/accesscontextmanager.policyReader",
+  "title": "Access Context Manager Reader",
+  "description": "Read access to policies, access levels, access zones and authorized orgs descs.",
+  "included_permissions": [
+    "accesscontextmanager.accessLevels.get",
+    "accesscontextmanager.accessLevels.list",
+    "accesscontextmanager.authorizedOrgsDescs.get",
+    "accesscontextmanager.authorizedOrgsDescs.list",
+    "accesscontextmanager.policies.get",
+    "accesscontextmanager.policies.getIamPolicy",
+    "accesscontextmanager.policies.list",
+    "accesscontextmanager.servicePerimeters.get",
+    "accesscontextmanager.servicePerimeters.list",
+    "resourcemanager.organizations.get",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

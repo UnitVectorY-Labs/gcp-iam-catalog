@@ -1,0 +1,19 @@
+{
+  "name": "roles/datacatalog.tagTemplateOwner",
+  "title": "Data Catalog TagTemplate Owner",
+  "description": "Full acess to tag templates",
+  "included_permissions": [
+    "datacatalog.tagTemplates.create",
+    "datacatalog.tagTemplates.delete",
+    "datacatalog.tagTemplates.get",
+    "datacatalog.tagTemplates.getIamPolicy",
+    "datacatalog.tagTemplates.getTag",
+    "datacatalog.tagTemplates.setIamPolicy",
+    "datacatalog.tagTemplates.update",
+    "datacatalog.tagTemplates.use",
+    "dataplex.projects.search",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

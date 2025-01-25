@@ -1,0 +1,11 @@
+{
+  "name": "roles/cloudkmskacls.serviceAgent",
+  "title": "Cloud KMS KACLS Service Agent",
+  "description": "Grants Cloud KMS KACLS Service Agent access to KMS resource permissions to perform DEK encryption/decryption.",
+  "included_permissions": [
+    "cloudkms.cryptoKeyVersions.useToDecrypt",
+    "cloudkms.cryptoKeyVersions.useToEncrypt",
+    "cloudkms.cryptoKeys.get"
+  ],
+  "stage": "GA"
+}

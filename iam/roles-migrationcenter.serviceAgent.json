@@ -1,0 +1,10 @@
+{
+  "name": "roles/migrationcenter.serviceAgent",
+  "title": "Migration Center Service Agent",
+  "description": "Gives Migration Center Service Account access to objects storedin object store and Cloud Migration products.",
+  "included_permissions": [
+    "storage.objects.get",
+    "vmmigration.migratingVms.create"
+  ],
+  "stage": "GA"
+}

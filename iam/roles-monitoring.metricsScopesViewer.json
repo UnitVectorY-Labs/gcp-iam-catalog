@@ -1,0 +1,10 @@
+{
+  "name": "roles/monitoring.metricsScopesViewer",
+  "title": "Monitoring Metrics Scopes Viewer",
+  "description": "Read-only access to metrics scopes and their monitored projects.",
+  "included_permissions": [
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "BETA"
+}

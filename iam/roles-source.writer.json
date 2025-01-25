@@ -1,0 +1,11 @@
+{
+  "name": "roles/source.writer",
+  "title": "Source Repository Writer",
+  "description": "Read / Write access to repositories",
+  "included_permissions": [
+    "source.repos.get",
+    "source.repos.list",
+    "source.repos.update"
+  ],
+  "stage": "GA"
+}

@@ -1,0 +1,10 @@
+{
+  "name": "roles/connectors.eventSubscriptionViewer",
+  "title": "Connectors Event Subscriptions Viewer",
+  "description": "Event Subscription is a regional resource which creates subscriptions on events for a given connection within the given target project. This role grants Read-only access to Event Subscription resources.",
+  "included_permissions": [
+    "connectors.eventSubscriptions.get",
+    "connectors.eventSubscriptions.list"
+  ],
+  "stage": "GA"
+}

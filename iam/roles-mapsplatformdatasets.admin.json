@@ -1,0 +1,22 @@
+{
+  "name": "roles/mapsplatformdatasets.admin",
+  "title": "Maps Platform Datasets Admin",
+  "description": "Grants read and write access to all the Maps Platform Datasets API resources",
+  "included_permissions": [
+    "mapsadmin.clientStyles.create",
+    "mapsadmin.clientStyles.delete",
+    "mapsadmin.clientStyles.get",
+    "mapsadmin.clientStyles.list",
+    "mapsadmin.clientStyles.update",
+    "mapsplatformdatasets.datasets.create",
+    "mapsplatformdatasets.datasets.delete",
+    "mapsplatformdatasets.datasets.export",
+    "mapsplatformdatasets.datasets.get",
+    "mapsplatformdatasets.datasets.import",
+    "mapsplatformdatasets.datasets.list",
+    "mapsplatformdatasets.datasets.update",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "BETA"
+}

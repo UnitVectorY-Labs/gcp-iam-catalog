@@ -1,0 +1,15 @@
+{
+  "name": "roles/recommender.networkAnalyzerGkeIpAddressAdmin",
+  "title": "Network Analyzer GKE IP Address Recommender Admin",
+  "description": "Admin of Network Analyzer GKE IP Address Insights and Recommendations.",
+  "included_permissions": [
+    "recommender.locations.get",
+    "recommender.locations.list",
+    "recommender.networkAnalyzerGkeIpAddressInsights.get",
+    "recommender.networkAnalyzerGkeIpAddressInsights.list",
+    "recommender.networkAnalyzerGkeIpAddressInsights.update",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

@@ -1,0 +1,24 @@
+{
+  "name": "roles/workflows.viewer",
+  "title": "Workflows Viewer",
+  "description": "Read-only access to workflows and related resources.",
+  "included_permissions": [
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list",
+    "workflows.callbacks.list",
+    "workflows.executions.get",
+    "workflows.executions.list",
+    "workflows.locations.get",
+    "workflows.locations.list",
+    "workflows.operations.get",
+    "workflows.operations.list",
+    "workflows.stepEntries.get",
+    "workflows.stepEntries.list",
+    "workflows.workflows.get",
+    "workflows.workflows.list",
+    "workflows.workflows.listEffectiveTags",
+    "workflows.workflows.listRevision",
+    "workflows.workflows.listTagBindings"
+  ],
+  "stage": "GA"
+}

@@ -1,0 +1,14 @@
+{
+  "name": "roles/visionai.packetReceiver",
+  "title": "Vision AI Packet Receiver",
+  "description": "Access to read Vision AI Series.",
+  "included_permissions": [
+    "visionai.clusters.watch",
+    "visionai.series.acquireLease",
+    "visionai.series.receive",
+    "visionai.series.releaseLease",
+    "visionai.series.renewLease",
+    "visionai.streams.receive"
+  ],
+  "stage": "BETA"
+}

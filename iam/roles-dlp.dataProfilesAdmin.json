@@ -1,0 +1,19 @@
+{
+  "name": "roles/dlp.dataProfilesAdmin",
+  "title": "DLP Data Profiles Admin",
+  "description": "Manage DLP profiles.",
+  "included_permissions": [
+    "dlp.charts.get",
+    "dlp.columnDataProfiles.get",
+    "dlp.columnDataProfiles.list",
+    "dlp.fileStoreProfiles.delete",
+    "dlp.fileStoreProfiles.get",
+    "dlp.fileStoreProfiles.list",
+    "dlp.projectDataProfiles.get",
+    "dlp.projectDataProfiles.list",
+    "dlp.tableDataProfiles.delete",
+    "dlp.tableDataProfiles.get",
+    "dlp.tableDataProfiles.list"
+  ],
+  "stage": "GA"
+}

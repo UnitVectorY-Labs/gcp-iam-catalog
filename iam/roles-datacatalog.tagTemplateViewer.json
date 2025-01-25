@@ -1,0 +1,13 @@
+{
+  "name": "roles/datacatalog.tagTemplateViewer",
+  "title": "Data Catalog TagTemplate Viewer",
+  "description": "Read access to templates and tags created using the templates",
+  "included_permissions": [
+    "datacatalog.tagTemplates.get",
+    "datacatalog.tagTemplates.getTag",
+    "dataplex.projects.search",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

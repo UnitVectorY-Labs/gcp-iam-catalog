@@ -1,0 +1,13 @@
+{
+  "name": "roles/routeoptimization.serviceAgent",
+  "title": "Route Optimization Service Agent",
+  "description": "Grants Route Optimization Service Account access to read and write GCS objects in the host project.",
+  "included_permissions": [
+    "storage.buckets.get",
+    "storage.objects.create",
+    "storage.objects.get",
+    "storage.objects.list",
+    "storage.objects.update"
+  ],
+  "stage": "GA"
+}

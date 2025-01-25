@@ -1,0 +1,15 @@
+{
+  "name": "roles/cloudkms.importer",
+  "title": "Cloud KMS Importer",
+  "description": "Enables ImportCryptoKeyVersion, CreateImportJob, ListImportJobs, and GetImportJob operations",
+  "included_permissions": [
+    "cloudkms.importJobs.create",
+    "cloudkms.importJobs.get",
+    "cloudkms.importJobs.list",
+    "cloudkms.importJobs.useToImport",
+    "cloudkms.locations.get",
+    "cloudkms.locations.list",
+    "resourcemanager.projects.get"
+  ],
+  "stage": "GA"
+}

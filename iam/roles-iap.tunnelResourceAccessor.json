@@ -1,0 +1,10 @@
+{
+  "name": "roles/iap.tunnelResourceAccessor",
+  "title": "IAP-secured Tunnel User",
+  "description": "Access Tunnel resources which use Identity-Aware Proxy",
+  "included_permissions": [
+    "iap.tunnelDestGroups.accessViaIAP",
+    "iap.tunnelInstances.accessViaIAP"
+  ],
+  "stage": "GA"
+}

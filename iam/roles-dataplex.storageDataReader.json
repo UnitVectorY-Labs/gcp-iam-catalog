@@ -1,0 +1,22 @@
+{
+  "name": "roles/dataplex.storageDataReader",
+  "title": "Dataplex Storage Data Reader",
+  "description": "Read only access to data. Should not be used directly. This role is granted by Dataplex to managed resources like GCS buckets, BigQuery datasets etc.",
+  "included_permissions": [
+    "bigquery.datasets.get",
+    "bigquery.models.export",
+    "bigquery.models.getData",
+    "bigquery.models.getMetadata",
+    "bigquery.models.list",
+    "bigquery.routines.get",
+    "bigquery.routines.list",
+    "bigquery.tables.export",
+    "bigquery.tables.get",
+    "bigquery.tables.getData",
+    "bigquery.tables.list",
+    "storage.buckets.get",
+    "storage.objects.get",
+    "storage.objects.list"
+  ],
+  "stage": "GA"
+}

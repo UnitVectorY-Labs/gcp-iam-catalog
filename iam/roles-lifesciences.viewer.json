@@ -1,0 +1,12 @@
+{
+  "name": "roles/lifesciences.viewer",
+  "title": "Cloud Life Sciences Viewer",
+  "description": "Access to read Cloud Life Sciences resources.",
+  "included_permissions": [
+    "lifesciences.operations.get",
+    "lifesciences.operations.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "BETA"
+}

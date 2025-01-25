@@ -1,0 +1,15 @@
+{
+  "name": "roles/firebasedataconnect.serviceAgent",
+  "title": "Firebase Data Connect Service Agent",
+  "description": "Gives Firebase Data Connect access to administer Cloud SQL instances.",
+  "included_permissions": [
+    "cloudsql.databases.create",
+    "cloudsql.databases.get",
+    "cloudsql.instances.connect",
+    "cloudsql.instances.get",
+    "cloudsql.instances.login",
+    "cloudsql.users.create",
+    "cloudsql.users.get"
+  ],
+  "stage": "GA"
+}

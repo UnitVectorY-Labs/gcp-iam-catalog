@@ -1,0 +1,20 @@
+{
+  "name": "roles/storageinsights.viewer",
+  "title": "Storage Insights Viewer",
+  "description": "Readonly access to Storage Insights resources.",
+  "included_permissions": [
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list",
+    "storageinsights.datasetConfigs.get",
+    "storageinsights.datasetConfigs.list",
+    "storageinsights.locations.get",
+    "storageinsights.locations.list",
+    "storageinsights.operations.get",
+    "storageinsights.operations.list",
+    "storageinsights.reportConfigs.get",
+    "storageinsights.reportConfigs.list",
+    "storageinsights.reportDetails.get",
+    "storageinsights.reportDetails.list"
+  ],
+  "stage": "GA"
+}

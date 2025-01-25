@@ -1,0 +1,11 @@
+{
+  "name": "roles/resourcemanager.tagHoldAdmin",
+  "title": "Tag Hold Administrator",
+  "description": "Access to create, delete and list TagHolds under a TagValue",
+  "included_permissions": [
+    "resourcemanager.tagHolds.create",
+    "resourcemanager.tagHolds.delete",
+    "resourcemanager.tagHolds.list"
+  ],
+  "stage": "GA"
+}

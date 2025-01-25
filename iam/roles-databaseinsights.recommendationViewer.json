@@ -1,0 +1,15 @@
+{
+  "name": "roles/databaseinsights.recommendationViewer",
+  "title": "Database Insights recommendation viewer",
+  "description": "Viewer role for Database Insights recommendation data",
+  "included_permissions": [
+    "databaseinsights.locations.get",
+    "databaseinsights.locations.list",
+    "databaseinsights.recommendations.query",
+    "databaseinsights.resourceRecommendations.query",
+    "databaseinsights.workloadRecommendations.fetch",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "BETA"
+}

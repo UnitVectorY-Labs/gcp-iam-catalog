@@ -1,0 +1,12 @@
+{
+  "name": "roles/mandiant.threatIntelViewer",
+  "title": "Mandiant Threat Intel Viewer",
+  "description": "Access to read Threat Intel",
+  "included_permissions": [
+    "mandiant.genericPlatforms.get",
+    "mandiant.genericThreatIntels.get",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "BETA"
+}

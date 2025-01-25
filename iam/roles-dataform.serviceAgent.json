@@ -1,0 +1,12 @@
+{
+  "name": "roles/dataform.serviceAgent",
+  "title": "Dataform Service Agent",
+  "description": "Gives permission for the Dataform API to access a secret from Secret Manager",
+  "included_permissions": [
+    "dataform.compilationResults.create",
+    "dataform.workflowInvocations.create",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

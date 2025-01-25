@@ -1,0 +1,27 @@
+{
+  "name": "roles/cloudtrace.admin",
+  "title": "Cloud Trace Admin",
+  "description": "Admin access to Cloud Trace.",
+  "included_permissions": [
+    "cloudtrace.insights.get",
+    "cloudtrace.insights.list",
+    "cloudtrace.stats.get",
+    "cloudtrace.tasks.create",
+    "cloudtrace.tasks.delete",
+    "cloudtrace.tasks.get",
+    "cloudtrace.tasks.list",
+    "cloudtrace.traceScopes.create",
+    "cloudtrace.traceScopes.delete",
+    "cloudtrace.traceScopes.get",
+    "cloudtrace.traceScopes.list",
+    "cloudtrace.traceScopes.update",
+    "cloudtrace.traces.get",
+    "cloudtrace.traces.list",
+    "cloudtrace.traces.patch",
+    "observability.scopes.get",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list",
+    "telemetry.traces.write"
+  ],
+  "stage": "GA"
+}

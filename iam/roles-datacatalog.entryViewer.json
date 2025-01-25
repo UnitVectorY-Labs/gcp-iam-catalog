@@ -1,0 +1,16 @@
+{
+  "name": "roles/datacatalog.entryViewer",
+  "title": "DataCatalog Entry Viewer",
+  "description": "Read access to entries",
+  "included_permissions": [
+    "datacatalog.entries.get",
+    "datacatalog.entries.list",
+    "datacatalog.entryGroups.get",
+    "datacatalog.migrationConfig.get",
+    "datacatalog.relationships.list",
+    "dataplex.projects.search",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

@@ -1,0 +1,16 @@
+{
+  "name": "roles/contactcenteraiplatform.viewer",
+  "title": "Contact Center AI Platform Viewer",
+  "description": "Readonly access to Contact Center AI Platform resources.",
+  "included_permissions": [
+    "contactcenteraiplatform.contactCenters.get",
+    "contactcenteraiplatform.contactCenters.list",
+    "contactcenteraiplatform.locations.get",
+    "contactcenteraiplatform.locations.list",
+    "contactcenteraiplatform.operations.get",
+    "contactcenteraiplatform.operations.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "roles/cloudkms.serviceAgent",
+  "title": "Cloud KMS Service Agent",
+  "description": "Gives Cloud KMS service account access to managed resources.",
+  "included_permissions": [
+    "cloudasset.assets.listCloudkmsCryptoKeys"
+  ],
+  "stage": "GA"
+}

@@ -1,0 +1,15 @@
+{
+  "name": "roles/firebaseauth.viewer",
+  "title": "Firebase Authentication Viewer",
+  "description": "Read-only access to Firebase Authentication resources.",
+  "included_permissions": [
+    "firebase.clients.get",
+    "firebase.clients.list",
+    "firebase.projects.get",
+    "firebaseauth.configs.get",
+    "firebaseauth.users.get",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

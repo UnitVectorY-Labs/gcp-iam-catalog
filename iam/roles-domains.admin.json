@@ -1,0 +1,29 @@
+{
+  "name": "roles/domains.admin",
+  "title": "Cloud Domains Admin",
+  "description": "Full access to Cloud Domains Registrations and related resources.",
+  "included_permissions": [
+    "domains.locations.get",
+    "domains.locations.list",
+    "domains.operations.cancel",
+    "domains.operations.get",
+    "domains.operations.list",
+    "domains.registrations.configureContact",
+    "domains.registrations.configureDns",
+    "domains.registrations.configureManagement",
+    "domains.registrations.create",
+    "domains.registrations.createTagBinding",
+    "domains.registrations.delete",
+    "domains.registrations.deleteTagBinding",
+    "domains.registrations.get",
+    "domains.registrations.getIamPolicy",
+    "domains.registrations.list",
+    "domains.registrations.listEffectiveTags",
+    "domains.registrations.listTagBindings",
+    "domains.registrations.setIamPolicy",
+    "domains.registrations.update",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

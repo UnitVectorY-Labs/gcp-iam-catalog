@@ -1,0 +1,14 @@
+{
+  "name": "roles/issuerswitch.accountManagerTransactionsAdmin",
+  "title": "Issuerswitch Account Manager Transactions Admin",
+  "description": "This role can perform all account manager transactions related operations",
+  "included_permissions": [
+    "issuerswitch.accountManagerTransactions.list",
+    "issuerswitch.accountManagerTransactions.update",
+    "issuerswitch.operations.get",
+    "issuerswitch.operations.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "BETA"
+}

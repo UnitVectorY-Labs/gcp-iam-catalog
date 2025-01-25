@@ -1,0 +1,23 @@
+{
+  "name": "roles/beyondcorp.clientConnectorAdmin",
+  "title": "Cloud BeyondCorp Client Connector Admin",
+  "description": "Full access to all BeyondCorp Client Connector resources.",
+  "included_permissions": [
+    "beyondcorp.clientConnectorServices.create",
+    "beyondcorp.clientConnectorServices.delete",
+    "beyondcorp.clientConnectorServices.get",
+    "beyondcorp.clientConnectorServices.getIamPolicy",
+    "beyondcorp.clientConnectorServices.list",
+    "beyondcorp.clientConnectorServices.setIamPolicy",
+    "beyondcorp.clientConnectorServices.update",
+    "beyondcorp.clientGateways.create",
+    "beyondcorp.clientGateways.delete",
+    "beyondcorp.clientGateways.get",
+    "beyondcorp.clientGateways.getIamPolicy",
+    "beyondcorp.clientGateways.list",
+    "beyondcorp.clientGateways.setIamPolicy",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "BETA"
+}

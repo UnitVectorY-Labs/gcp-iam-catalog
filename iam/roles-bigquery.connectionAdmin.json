@@ -1,0 +1,18 @@
+{
+  "name": "roles/bigquery.connectionAdmin",
+  "title": "BigQuery Connection Admin",
+  "description": "",
+  "included_permissions": [
+    "bigquery.connections.create",
+    "bigquery.connections.delegate",
+    "bigquery.connections.delete",
+    "bigquery.connections.get",
+    "bigquery.connections.getIamPolicy",
+    "bigquery.connections.list",
+    "bigquery.connections.setIamPolicy",
+    "bigquery.connections.update",
+    "bigquery.connections.updateTag",
+    "bigquery.connections.use"
+  ],
+  "stage": "GA"
+}

@@ -1,0 +1,16 @@
+{
+  "name": "roles/dialogflow.entityTypeAdmin",
+  "title": "Dialogflow Entity Type Admin",
+  "description": "Can read \u0026 write entity types.",
+  "included_permissions": [
+    "dialogflow.entityTypes.create",
+    "dialogflow.entityTypes.createEntity",
+    "dialogflow.entityTypes.delete",
+    "dialogflow.entityTypes.deleteEntity",
+    "dialogflow.entityTypes.get",
+    "dialogflow.entityTypes.list",
+    "dialogflow.entityTypes.update",
+    "dialogflow.entityTypes.updateEntity"
+  ],
+  "stage": "GA"
+}

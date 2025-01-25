@@ -1,0 +1,10 @@
+{
+  "name": "roles/dataplex.securityAdmin",
+  "title": "Dataplex Security Administrator",
+  "description": "Permissions configure ResourceAccess and DataAccess Specs on Data Attributes.",
+  "included_permissions": [
+    "dataplex.dataTaxonomies.configureDataAccess",
+    "dataplex.dataTaxonomies.configureResourceAccess"
+  ],
+  "stage": "GA"
+}

@@ -1,0 +1,13 @@
+{
+  "name": "roles/consumerprocurement.licensePoolEditor",
+  "title": "Consumer Procurement License Pool Editor",
+  "description": "Allows managing license pools and license assignments.",
+  "included_permissions": [
+    "consumerprocurement.licensePools.assign",
+    "consumerprocurement.licensePools.enumerateLicensedUsers",
+    "consumerprocurement.licensePools.get",
+    "consumerprocurement.licensePools.unassign",
+    "consumerprocurement.licensePools.update"
+  ],
+  "stage": "GA"
+}

@@ -1,0 +1,25 @@
+{
+  "name": "roles/securitycenter.assetsViewer",
+  "title": "Security Center Assets Viewer",
+  "description": "Read access to assets",
+  "included_permissions": [
+    "cloudasset.assets.exportIamPolicy",
+    "cloudasset.assets.exportOSInventories",
+    "cloudasset.assets.exportResource",
+    "cloudasset.assets.queryAccessPolicy",
+    "cloudasset.assets.queryIamPolicy",
+    "cloudasset.assets.queryOSInventories",
+    "cloudasset.assets.queryResource",
+    "cloudasset.assets.searchAllIamPolicies",
+    "cloudasset.assets.searchAllResources",
+    "cloudasset.assets.searchEnrichmentResourceOwners",
+    "resourcemanager.folders.get",
+    "resourcemanager.organizations.get",
+    "resourcemanager.projects.get",
+    "securitycenter.assets.group",
+    "securitycenter.assets.list",
+    "securitycenter.assets.listAssetPropertyNames",
+    "securitycenter.userinterfacemetadata.get"
+  ],
+  "stage": "GA"
+}

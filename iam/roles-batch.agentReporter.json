@@ -1,0 +1,9 @@
+{
+  "name": "roles/batch.agentReporter",
+  "title": "Batch Agent Reporter",
+  "description": "Reporter of Batch agent states.",
+  "included_permissions": [
+    "batch.states.report"
+  ],
+  "stage": "GA"
+}

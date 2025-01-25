@@ -1,0 +1,19 @@
+{
+  "name": "roles/apigee.portalAdmin",
+  "title": "Apigee Portal Admin",
+  "description": "Portal admin for an Apigee Organization",
+  "included_permissions": [
+    "apigee.entitlements.get",
+    "apigee.organizations.get",
+    "apigee.organizations.list",
+    "apigee.portals.create",
+    "apigee.portals.delete",
+    "apigee.portals.get",
+    "apigee.portals.list",
+    "apigee.portals.update",
+    "apigee.projectorganizations.get",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

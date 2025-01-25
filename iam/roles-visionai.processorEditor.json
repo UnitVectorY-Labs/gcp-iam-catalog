@@ -1,0 +1,14 @@
+{
+  "name": "roles/visionai.processorEditor",
+  "title": "Vision AI Processor Editor",
+  "description": "Access to read and write Vision AI Processors.",
+  "included_permissions": [
+    "visionai.processors.create",
+    "visionai.processors.delete",
+    "visionai.processors.get",
+    "visionai.processors.list",
+    "visionai.processors.listPrebuilt",
+    "visionai.processors.update"
+  ],
+  "stage": "BETA"
+}

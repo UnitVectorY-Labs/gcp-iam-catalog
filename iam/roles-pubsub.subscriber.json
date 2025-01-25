@@ -1,0 +1,11 @@
+{
+  "name": "roles/pubsub.subscriber",
+  "title": "Pub/Sub Subscriber",
+  "description": "Consume messages from a subscription, attach subscriptions to a topic, and seek to a snapshot.",
+  "included_permissions": [
+    "pubsub.snapshots.seek",
+    "pubsub.subscriptions.consume",
+    "pubsub.topics.attachSubscription"
+  ],
+  "stage": "GA"
+}

@@ -1,0 +1,17 @@
+{
+  "name": "roles/gkebackup.delegatedBackupAdmin",
+  "title": "Backup for GKE Delegated Backup Admin",
+  "description": "Allows administrators to manage Backup resources for specific BackupPlans",
+  "included_permissions": [
+    "gkebackup.backupPlans.get",
+    "gkebackup.backups.create",
+    "gkebackup.backups.delete",
+    "gkebackup.backups.get",
+    "gkebackup.backups.getBackupIndex",
+    "gkebackup.backups.list",
+    "gkebackup.backups.update",
+    "gkebackup.volumeBackups.get",
+    "gkebackup.volumeBackups.list"
+  ],
+  "stage": "GA"
+}

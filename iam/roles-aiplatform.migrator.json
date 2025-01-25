@@ -1,0 +1,10 @@
+{
+  "name": "roles/aiplatform.migrator",
+  "title": "Vertex AI Migration Service User",
+  "description": "Grants access to use migration service in Vertex AI",
+  "included_permissions": [
+    "aiplatform.migratableResources.migrate",
+    "aiplatform.migratableResources.search"
+  ],
+  "stage": "GA"
+}

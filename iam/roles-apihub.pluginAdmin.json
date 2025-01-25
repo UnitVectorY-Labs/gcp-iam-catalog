@@ -1,0 +1,17 @@
+{
+  "name": "roles/apihub.pluginAdmin",
+  "title": "Cloud API hub Plugins Admin",
+  "description": "Full access to all Cloud API hub plugin's resources.",
+  "included_permissions": [
+    "apihub.plugins.disable",
+    "apihub.plugins.enable",
+    "apihub.plugins.get",
+    "apihub.plugins.list",
+    "apihub.specs.lint",
+    "apihub.styleGuides.get",
+    "apihub.styleGuides.update",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "BETA"
+}

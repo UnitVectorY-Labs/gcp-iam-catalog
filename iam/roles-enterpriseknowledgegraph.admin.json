@@ -1,0 +1,19 @@
+{
+  "name": "roles/enterpriseknowledgegraph.admin",
+  "title": "Enterprise Knowledge Graph Admin",
+  "description": "Administrator of Enterprise Knowledge Graph resources",
+  "included_permissions": [
+    "enterpriseknowledgegraph.cloudKnowledgeGraphEntities.lookup",
+    "enterpriseknowledgegraph.cloudKnowledgeGraphEntities.search",
+    "enterpriseknowledgegraph.entityReconciliationJobs.cancel",
+    "enterpriseknowledgegraph.entityReconciliationJobs.create",
+    "enterpriseknowledgegraph.entityReconciliationJobs.delete",
+    "enterpriseknowledgegraph.entityReconciliationJobs.get",
+    "enterpriseknowledgegraph.entityReconciliationJobs.list",
+    "enterpriseknowledgegraph.publicKnowledgeGraphEntities.lookup",
+    "enterpriseknowledgegraph.publicKnowledgeGraphEntities.search",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "BETA"
+}

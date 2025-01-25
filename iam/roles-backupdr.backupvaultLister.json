@@ -1,0 +1,9 @@
+{
+  "name": "roles/backupdr.backupvaultLister",
+  "title": "Backup and DR Backup Vault Lister",
+  "description": "Allows the Backup Appliance permission to list backup vaults in a given project.",
+  "included_permissions": [
+    "backupdr.backupVaults.list"
+  ],
+  "stage": "GA"
+}

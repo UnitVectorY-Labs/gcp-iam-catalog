@@ -1,0 +1,13 @@
+{
+  "name": "roles/securitycenter.sourcesEditor",
+  "title": "Security Center Sources Editor",
+  "description": "Read-write access to sources",
+  "included_permissions": [
+    "resourcemanager.organizations.get",
+    "securitycenter.sources.get",
+    "securitycenter.sources.list",
+    "securitycenter.sources.update",
+    "securitycenter.userinterfacemetadata.get"
+  ],
+  "stage": "GA"
+}

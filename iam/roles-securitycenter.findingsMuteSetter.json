@@ -1,0 +1,9 @@
+{
+  "name": "roles/securitycenter.findingsMuteSetter",
+  "title": "Security Center Findings Mute Setter",
+  "description": "Set mute access to findings",
+  "included_permissions": [
+    "securitycenter.findings.setMute"
+  ],
+  "stage": "GA"
+}

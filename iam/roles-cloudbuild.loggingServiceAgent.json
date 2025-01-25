@@ -1,0 +1,9 @@
+{
+  "name": "roles/cloudbuild.loggingServiceAgent",
+  "title": "Cloud Build Logging Service Agent",
+  "description": "Gives the Cloud Build logging-specific service account access to write logs.",
+  "included_permissions": [
+    "logging.buckets.write"
+  ],
+  "stage": "GA"
+}

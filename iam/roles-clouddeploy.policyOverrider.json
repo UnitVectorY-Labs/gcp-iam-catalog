@@ -1,0 +1,19 @@
+{
+  "name": "roles/clouddeploy.policyOverrider",
+  "title": "Cloud Deploy Policy Overrider",
+  "description": "Permission to override Deploy Policies.",
+  "included_permissions": [
+    "clouddeploy.deployPolicies.get",
+    "clouddeploy.deployPolicies.list",
+    "clouddeploy.deployPolicies.override",
+    "clouddeploy.locations.get",
+    "clouddeploy.locations.list",
+    "clouddeploy.operations.cancel",
+    "clouddeploy.operations.delete",
+    "clouddeploy.operations.get",
+    "clouddeploy.operations.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "BETA"
+}

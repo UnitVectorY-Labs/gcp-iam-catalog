@@ -1,0 +1,11 @@
+{
+  "name": "roles/firebasecrash.symbolMappingsAdmin",
+  "title": "Firebase Crash Symbol Uploader",
+  "description": "Full read/write access to symbol mapping file resources for Firebase Crash Reporting.",
+  "included_permissions": [
+    "firebase.clients.get",
+    "firebase.clients.list",
+    "resourcemanager.projects.get"
+  ],
+  "stage": "GA"
+}

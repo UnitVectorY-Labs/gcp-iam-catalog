@@ -1,0 +1,16 @@
+{
+  "name": "roles/recommender.cloudDeprecationRecommendationViewer",
+  "title": "Cloud Deprecation General Recommender Viewer",
+  "description": "Viewer of Cloud Deprecation General Recommender Insights and Recommendations.",
+  "included_permissions": [
+    "recommender.cloudDeprecationGeneralInsights.get",
+    "recommender.cloudDeprecationGeneralInsights.list",
+    "recommender.cloudDeprecationGeneralRecommendations.get",
+    "recommender.cloudDeprecationGeneralRecommendations.list",
+    "recommender.locations.get",
+    "recommender.locations.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "BETA"
+}

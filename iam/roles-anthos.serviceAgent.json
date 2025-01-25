@@ -1,0 +1,15 @@
+{
+  "name": "roles/anthos.serviceAgent",
+  "title": "Anthos Service Agent",
+  "description": "Gives the Anthos service agent access to Cloud Platformresources.",
+  "included_permissions": [
+    "gkehub.features.get",
+    "gkehub.locations.get",
+    "gkehub.locations.list",
+    "gkehub.memberships.get",
+    "gkehub.memberships.list",
+    "serviceusage.services.get",
+    "serviceusage.services.list"
+  ],
+  "stage": "GA"
+}

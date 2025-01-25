@@ -1,0 +1,27 @@
+{
+  "name": "roles/consumerprocurement.orderViewer",
+  "title": "Consumer Procurement Order Viewer",
+  "description": "Allows inspecting purchases",
+  "included_permissions": [
+    "billing.accounts.get",
+    "billing.accounts.getIamPolicy",
+    "billing.accounts.list",
+    "billing.credits.list",
+    "commerceoffercatalog.agreements.get",
+    "commerceoffercatalog.agreements.list",
+    "commerceoffercatalog.documents.get",
+    "commerceoffercatalog.documents.list",
+    "commerceoffercatalog.offers.get",
+    "consumerprocurement.accounts.get",
+    "consumerprocurement.accounts.list",
+    "consumerprocurement.consents.check",
+    "consumerprocurement.consents.list",
+    "consumerprocurement.licensePools.enumerateLicensedUsers",
+    "consumerprocurement.licensePools.get",
+    "consumerprocurement.orderAttributions.get",
+    "consumerprocurement.orderAttributions.list",
+    "consumerprocurement.orders.get",
+    "consumerprocurement.orders.list"
+  ],
+  "stage": "GA"
+}

@@ -1,0 +1,11 @@
+{
+  "name": "roles/datastore.backupsAdmin",
+  "title": "Cloud Datastore Backups Admin",
+  "description": "Read/Write access to metadata about backups in Cloud Datastore but restore is not allowed.",
+  "included_permissions": [
+    "datastore.backups.delete",
+    "datastore.backups.get",
+    "datastore.backups.list"
+  ],
+  "stage": "GA"
+}

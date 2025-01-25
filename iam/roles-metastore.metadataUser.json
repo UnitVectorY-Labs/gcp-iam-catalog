@@ -1,0 +1,12 @@
+{
+  "name": "roles/metastore.metadataUser",
+  "title": "Dataproc Metastore Metadata User",
+  "description": "Access to the Dataproc Metastore gRPC endpoint",
+  "included_permissions": [
+    "metastore.databases.get",
+    "metastore.databases.list",
+    "metastore.services.get",
+    "metastore.services.use"
+  ],
+  "stage": "GA"
+}

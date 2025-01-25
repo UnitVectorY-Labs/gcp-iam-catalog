@@ -1,0 +1,10 @@
+{
+  "name": "roles/dlp.projectDataProfilesReader",
+  "title": "DLP Project Data Profiles Reader",
+  "description": "Read DLP project profiles.",
+  "included_permissions": [
+    "dlp.projectDataProfiles.get",
+    "dlp.projectDataProfiles.list"
+  ],
+  "stage": "GA"
+}

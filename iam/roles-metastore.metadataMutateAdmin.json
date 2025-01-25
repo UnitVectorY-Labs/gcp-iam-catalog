@@ -1,0 +1,9 @@
+{
+  "name": "roles/metastore.metadataMutateAdmin",
+  "title": "Dataproc Metastore Metadata Mutate Admin",
+  "description": "Access to mutate metadata from a Dataproc Metastore service's underlying metadata store.",
+  "included_permissions": [
+    "metastore.services.mutateMetadata"
+  ],
+  "stage": "GA"
+}

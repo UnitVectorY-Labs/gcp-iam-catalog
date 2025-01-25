@@ -1,0 +1,19 @@
+{
+  "name": "roles/compute.futureReservationUser",
+  "title": "Compute Future Reservation User",
+  "description": "",
+  "included_permissions": [
+    "compute.acceleratorTypes.list",
+    "compute.futureReservations.create",
+    "compute.futureReservations.delete",
+    "compute.futureReservations.get",
+    "compute.futureReservations.list",
+    "compute.futureReservations.update",
+    "compute.instanceTemplates.list",
+    "compute.machineTypes.list",
+    "compute.regions.list",
+    "compute.reservations.create",
+    "compute.zones.list"
+  ],
+  "stage": "BETA"
+}

@@ -1,0 +1,11 @@
+{
+  "name": "roles/securesourcemanager.repoCreator",
+  "title": "Secure Source Manager Repository Creator",
+  "description": "A repoCreator has access to create repostiory in a project, the creator will then become the repoAdmin on this repository.",
+  "included_permissions": [
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list",
+    "securesourcemanager.repositories.create"
+  ],
+  "stage": "BETA"
+}

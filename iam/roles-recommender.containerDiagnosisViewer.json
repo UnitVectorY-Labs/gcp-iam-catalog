@@ -1,0 +1,16 @@
+{
+  "name": "roles/recommender.containerDiagnosisViewer",
+  "title": "GKE Diagnosis Recommender Viewer",
+  "description": "Viewer of GKE Diagnosis Insights and Recommendations.",
+  "included_permissions": [
+    "recommender.containerDiagnosisInsights.get",
+    "recommender.containerDiagnosisInsights.list",
+    "recommender.containerDiagnosisRecommendations.get",
+    "recommender.containerDiagnosisRecommendations.list",
+    "recommender.locations.get",
+    "recommender.locations.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

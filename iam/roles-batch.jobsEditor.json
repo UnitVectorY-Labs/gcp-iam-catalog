@@ -1,0 +1,20 @@
+{
+  "name": "roles/batch.jobsEditor",
+  "title": "Batch Job Editor",
+  "description": "Editor of Batch Jobs",
+  "included_permissions": [
+    "batch.jobs.create",
+    "batch.jobs.delete",
+    "batch.jobs.get",
+    "batch.jobs.list",
+    "batch.locations.get",
+    "batch.locations.list",
+    "batch.operations.get",
+    "batch.operations.list",
+    "batch.tasks.get",
+    "batch.tasks.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

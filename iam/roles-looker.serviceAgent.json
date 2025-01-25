@@ -1,0 +1,25 @@
+{
+  "name": "roles/looker.serviceAgent",
+  "title": "Looker Service Agent",
+  "description": "Gives the Looker service account permission to manage customer resources",
+  "included_permissions": [
+    "bigquery.config.get",
+    "bigquery.datasets.get",
+    "bigquery.jobs.create",
+    "bigquery.models.export",
+    "bigquery.models.getData",
+    "bigquery.models.getMetadata",
+    "bigquery.models.list",
+    "bigquery.tables.create",
+    "bigquery.tables.createSnapshot",
+    "bigquery.tables.export",
+    "bigquery.tables.get",
+    "bigquery.tables.getData",
+    "bigquery.tables.list",
+    "compute.globalAddresses.get",
+    "looker.backups.create",
+    "resourcemanager.projects.get",
+    "serviceusage.services.use"
+  ],
+  "stage": "GA"
+}

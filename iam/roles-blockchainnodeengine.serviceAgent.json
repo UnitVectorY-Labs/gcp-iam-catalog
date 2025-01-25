@@ -1,0 +1,9 @@
+{
+  "name": "roles/blockchainnodeengine.serviceAgent",
+  "title": "Blockchain Node Engine Service Agent",
+  "description": "Grants Blockchain Node Engine access to metrics in user project",
+  "included_permissions": [
+    "monitoring.timeSeries.list"
+  ],
+  "stage": "GA"
+}

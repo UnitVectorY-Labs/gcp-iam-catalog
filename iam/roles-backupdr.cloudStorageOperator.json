@@ -1,0 +1,14 @@
+{
+  "name": "roles/backupdr.cloudStorageOperator",
+  "title": "Backup and DR Cloud Storage Operator",
+  "description": "Allows a Backup and DR service account to store and manage data (backups or metadata) in Cloud Storage.",
+  "included_permissions": [
+    "storage.buckets.create",
+    "storage.buckets.get",
+    "storage.objects.create",
+    "storage.objects.delete",
+    "storage.objects.get",
+    "storage.objects.list"
+  ],
+  "stage": "GA"
+}

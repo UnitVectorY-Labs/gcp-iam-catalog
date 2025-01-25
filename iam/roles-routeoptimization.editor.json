@@ -1,0 +1,13 @@
+{
+  "name": "roles/routeoptimization.editor",
+  "title": "Route Optimization Editor",
+  "description": "This role can create long-running operations via BatchOptimizeTours.",
+  "included_permissions": [
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list",
+    "routeoptimization.locations.use",
+    "routeoptimization.operations.create",
+    "routeoptimization.operations.get"
+  ],
+  "stage": "GA"
+}

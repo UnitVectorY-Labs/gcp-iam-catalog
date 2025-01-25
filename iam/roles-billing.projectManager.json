@@ -1,0 +1,10 @@
+{
+  "name": "roles/billing.projectManager",
+  "title": "Project Billing Manager",
+  "description": "Can assign a project's billing account or disable its billing.",
+  "included_permissions": [
+    "resourcemanager.projects.createBillingAssignment",
+    "resourcemanager.projects.deleteBillingAssignment"
+  ],
+  "stage": "GA"
+}

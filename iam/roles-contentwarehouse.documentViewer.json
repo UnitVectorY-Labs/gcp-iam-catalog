@@ -1,0 +1,16 @@
+{
+  "name": "roles/contentwarehouse.documentViewer",
+  "title": "Content Warehouse Viewer",
+  "description": "Grants access to view all the resources in Content Warehouse",
+  "included_permissions": [
+    "contentwarehouse.documentSchemas.get",
+    "contentwarehouse.documents.get",
+    "contentwarehouse.documents.getIamPolicy",
+    "contentwarehouse.links.get",
+    "contentwarehouse.locations.getStatus",
+    "contentwarehouse.rawDocuments.download",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

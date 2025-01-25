@@ -1,0 +1,33 @@
+{
+  "name": "roles/workflows.editor",
+  "title": "Workflows Editor",
+  "description": "Read and write access to workflows and related resources, including development and debugging of workflows.",
+  "included_permissions": [
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list",
+    "workflows.callbacks.list",
+    "workflows.callbacks.send",
+    "workflows.executions.cancel",
+    "workflows.executions.create",
+    "workflows.executions.get",
+    "workflows.executions.list",
+    "workflows.locations.get",
+    "workflows.locations.list",
+    "workflows.operations.cancel",
+    "workflows.operations.get",
+    "workflows.operations.list",
+    "workflows.stepEntries.get",
+    "workflows.stepEntries.list",
+    "workflows.workflows.create",
+    "workflows.workflows.createTagBinding",
+    "workflows.workflows.delete",
+    "workflows.workflows.deleteTagBinding",
+    "workflows.workflows.get",
+    "workflows.workflows.list",
+    "workflows.workflows.listEffectiveTags",
+    "workflows.workflows.listRevision",
+    "workflows.workflows.listTagBindings",
+    "workflows.workflows.update"
+  ],
+  "stage": "GA"
+}

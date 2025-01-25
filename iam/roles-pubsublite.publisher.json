@@ -1,0 +1,11 @@
+{
+  "name": "roles/pubsublite.publisher",
+  "title": "Pub/Sub Lite Publisher",
+  "description": "Publish messages to a topic.",
+  "included_permissions": [
+    "pubsublite.locations.openKafkaStream",
+    "pubsublite.topics.getPartitions",
+    "pubsublite.topics.publish"
+  ],
+  "stage": "GA"
+}

@@ -1,0 +1,15 @@
+{
+  "name": "roles/firebaseextensionspublisher.extensionsViewer",
+  "title": "Firebase Extensions Publisher - Extensions Viewer",
+  "description": "View Firebase Extensions",
+  "included_permissions": [
+    "firebase.clients.get",
+    "firebase.clients.list",
+    "firebase.projects.get",
+    "firebaseextensionspublisher.extensions.get",
+    "firebaseextensionspublisher.extensions.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "BETA"
+}

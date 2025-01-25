@@ -1,0 +1,18 @@
+{
+  "name": "roles/securitycentermanagement.etdCustomModulesViewer",
+  "title": "Security Center Management ETD Custom Modules Viewer",
+  "description": "Readonly access to Cloud Security Command Center ETD custom modules.",
+  "included_permissions": [
+    "resourcemanager.organizations.get",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list",
+    "securitycentermanagement.effectiveEventThreatDetectionCustomModules.get",
+    "securitycentermanagement.effectiveEventThreatDetectionCustomModules.list",
+    "securitycentermanagement.eventThreatDetectionCustomModules.get",
+    "securitycentermanagement.eventThreatDetectionCustomModules.list",
+    "securitycentermanagement.eventThreatDetectionCustomModules.validate",
+    "securitycentermanagement.locations.get",
+    "securitycentermanagement.locations.list"
+  ],
+  "stage": "GA"
+}

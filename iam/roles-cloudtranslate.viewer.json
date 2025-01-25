@@ -1,0 +1,30 @@
+{
+  "name": "roles/cloudtranslate.viewer",
+  "title": "Cloud Translation API Viewer",
+  "description": "Viewer of all Translation resources",
+  "included_permissions": [
+    "automl.models.get",
+    "cloudtranslate.adaptiveMtDatasets.get",
+    "cloudtranslate.adaptiveMtDatasets.list",
+    "cloudtranslate.adaptiveMtFiles.get",
+    "cloudtranslate.adaptiveMtFiles.list",
+    "cloudtranslate.adaptiveMtSentences.list",
+    "cloudtranslate.customModels.get",
+    "cloudtranslate.customModels.list",
+    "cloudtranslate.datasets.get",
+    "cloudtranslate.datasets.list",
+    "cloudtranslate.generalModels.get",
+    "cloudtranslate.glossaries.get",
+    "cloudtranslate.glossaries.list",
+    "cloudtranslate.glossaryentries.get",
+    "cloudtranslate.glossaryentries.list",
+    "cloudtranslate.locations.get",
+    "cloudtranslate.locations.list",
+    "cloudtranslate.operations.get",
+    "cloudtranslate.operations.list",
+    "cloudtranslate.operations.wait",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

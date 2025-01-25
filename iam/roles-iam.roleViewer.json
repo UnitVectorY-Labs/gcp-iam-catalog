@@ -1,0 +1,12 @@
+{
+  "name": "roles/iam.roleViewer",
+  "title": "Role Viewer",
+  "description": "Read access to all custom roles in the project.",
+  "included_permissions": [
+    "iam.roles.get",
+    "iam.roles.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.getIamPolicy"
+  ],
+  "stage": "GA"
+}

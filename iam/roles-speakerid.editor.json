@@ -1,0 +1,17 @@
+{
+  "name": "roles/speakerid.editor",
+  "title": "Speaker ID Editor",
+  "description": "Grants access to read and write all Speaker ID resources.",
+  "included_permissions": [
+    "speakerid.phrases.create",
+    "speakerid.phrases.delete",
+    "speakerid.phrases.get",
+    "speakerid.phrases.list",
+    "speakerid.speakers.create",
+    "speakerid.speakers.delete",
+    "speakerid.speakers.get",
+    "speakerid.speakers.list",
+    "speakerid.speakers.verify"
+  ],
+  "stage": "GA"
+}

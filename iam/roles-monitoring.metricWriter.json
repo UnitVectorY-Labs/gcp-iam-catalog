@@ -1,0 +1,14 @@
+{
+  "name": "roles/monitoring.metricWriter",
+  "title": "Monitoring Metric Writer",
+  "description": "Write-only access to metrics.  This provides exactly the permissions needed by the Stackdriver agent and other systems that send metrics.",
+  "included_permissions": [
+    "monitoring.metricDescriptors.create",
+    "monitoring.metricDescriptors.get",
+    "monitoring.metricDescriptors.list",
+    "monitoring.monitoredResourceDescriptors.get",
+    "monitoring.monitoredResourceDescriptors.list",
+    "monitoring.timeSeries.create"
+  ],
+  "stage": "GA"
+}

@@ -1,0 +1,13 @@
+{
+  "name": "roles/cloudmigration.storageaccess",
+  "title": "Velostrata Storage Access",
+  "description": "Ability to access migration storage",
+  "included_permissions": [
+    "storage.objects.create",
+    "storage.objects.delete",
+    "storage.objects.get",
+    "storage.objects.list",
+    "storage.objects.update"
+  ],
+  "stage": "BETA"
+}

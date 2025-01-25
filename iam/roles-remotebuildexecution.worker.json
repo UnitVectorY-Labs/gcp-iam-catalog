@@ -1,0 +1,15 @@
+{
+  "name": "roles/remotebuildexecution.worker",
+  "title": "Remote Build Execution Worker",
+  "description": "Remote Build Execution Worker",
+  "included_permissions": [
+    "remotebuildexecution.actions.update",
+    "remotebuildexecution.blobs.create",
+    "remotebuildexecution.blobs.get",
+    "remotebuildexecution.botsessions.create",
+    "remotebuildexecution.botsessions.update",
+    "remotebuildexecution.logstreams.create",
+    "remotebuildexecution.logstreams.update"
+  ],
+  "stage": "BETA"
+}

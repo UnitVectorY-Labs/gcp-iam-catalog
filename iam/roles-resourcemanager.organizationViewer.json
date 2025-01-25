@@ -1,0 +1,9 @@
+{
+  "name": "roles/resourcemanager.organizationViewer",
+  "title": "Organization Viewer",
+  "description": "Access only to view an Organization.",
+  "included_permissions": [
+    "resourcemanager.organizations.get"
+  ],
+  "stage": "GA"
+}

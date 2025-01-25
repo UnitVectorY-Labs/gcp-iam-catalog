@@ -1,0 +1,17 @@
+{
+  "name": "roles/firebaseappcheck.viewer",
+  "title": "Firebase App Check Viewer",
+  "description": "Read-only access for Firebase App Check.",
+  "included_permissions": [
+    "firebaseappcheck.appAttestConfig.get",
+    "firebaseappcheck.debugTokens.get",
+    "firebaseappcheck.deviceCheckConfig.get",
+    "firebaseappcheck.playIntegrityConfig.get",
+    "firebaseappcheck.recaptchaEnterpriseConfig.get",
+    "firebaseappcheck.recaptchaV3Config.get",
+    "firebaseappcheck.resourcePolicies.get",
+    "firebaseappcheck.safetyNetConfig.get",
+    "firebaseappcheck.services.get"
+  ],
+  "stage": "GA"
+}

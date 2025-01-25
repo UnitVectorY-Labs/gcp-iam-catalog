@@ -1,0 +1,9 @@
+{
+  "name": "roles/workstations.operationViewer",
+  "title": "Cloud Workstations Operation Viewer",
+  "description": "Grants ability to view Cloud Workstations API operations.",
+  "included_permissions": [
+    "workstations.operations.get"
+  ],
+  "stage": "GA"
+}

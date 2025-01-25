@@ -1,0 +1,16 @@
+{
+  "name": "roles/ondemandscanning.admin",
+  "title": "On-Demand Scanning Admin",
+  "description": "All permissions for On-Demand Scanning",
+  "included_permissions": [
+    "ondemandscanning.operations.cancel",
+    "ondemandscanning.operations.delete",
+    "ondemandscanning.operations.get",
+    "ondemandscanning.operations.list",
+    "ondemandscanning.operations.wait",
+    "ondemandscanning.scans.analyzePackages",
+    "ondemandscanning.scans.listVulnerabilities",
+    "ondemandscanning.scans.scan"
+  ],
+  "stage": "BETA"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "roles/resourcemanager.lienModifier",
+  "title": "Project Lien Modifier",
+  "description": "Access to modify Liens on projects.",
+  "included_permissions": [
+    "resourcemanager.projects.updateLiens"
+  ],
+  "stage": "GA"
+}

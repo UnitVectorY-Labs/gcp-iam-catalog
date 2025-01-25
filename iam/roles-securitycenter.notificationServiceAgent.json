@@ -1,0 +1,9 @@
+{
+  "name": "roles/securitycenter.notificationServiceAgent",
+  "title": "Security Center Notification Service Agent",
+  "description": "Security Center service agent can publish notifications to Pub/Sub topics.",
+  "included_permissions": [
+    "pubsub.topics.publish"
+  ],
+  "stage": "GA"
+}

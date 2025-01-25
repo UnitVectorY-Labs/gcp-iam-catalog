@@ -1,0 +1,21 @@
+{
+  "name": "roles/blockchainvalidatormanager.admin",
+  "title": "Blockchain Validator Manager Admin",
+  "description": "Full access to Blockchain Validator Manager resources.",
+  "included_permissions": [
+    "blockchainvalidatormanager.blockchainValidatorConfigs.create",
+    "blockchainvalidatormanager.blockchainValidatorConfigs.delete",
+    "blockchainvalidatormanager.blockchainValidatorConfigs.get",
+    "blockchainvalidatormanager.blockchainValidatorConfigs.list",
+    "blockchainvalidatormanager.blockchainValidatorConfigs.update",
+    "blockchainvalidatormanager.locations.get",
+    "blockchainvalidatormanager.locations.list",
+    "blockchainvalidatormanager.operations.cancel",
+    "blockchainvalidatormanager.operations.delete",
+    "blockchainvalidatormanager.operations.get",
+    "blockchainvalidatormanager.operations.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "BETA"
+}

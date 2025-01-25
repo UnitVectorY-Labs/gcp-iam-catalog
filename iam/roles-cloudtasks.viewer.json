@@ -1,0 +1,19 @@
+{
+  "name": "roles/cloudtasks.viewer",
+  "title": "Cloud Tasks Viewer",
+  "description": "Get and list access to tasks, queues, and locations.",
+  "included_permissions": [
+    "cloudtasks.cmekConfig.get",
+    "cloudtasks.locations.get",
+    "cloudtasks.locations.list",
+    "cloudtasks.queues.get",
+    "cloudtasks.queues.list",
+    "cloudtasks.tasks.fullView",
+    "cloudtasks.tasks.get",
+    "cloudtasks.tasks.list",
+    "monitoring.timeSeries.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "BETA"
+}

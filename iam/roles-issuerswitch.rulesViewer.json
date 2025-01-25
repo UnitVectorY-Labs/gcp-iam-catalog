@@ -1,0 +1,13 @@
+{
+  "name": "roles/issuerswitch.rulesViewer",
+  "title": "Issuerswitch Rules Viewer",
+  "description": "This role can view rules and related metadata.",
+  "included_permissions": [
+    "issuerswitch.ruleMetadata.list",
+    "issuerswitch.ruleMetadataValues.list",
+    "issuerswitch.rules.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "BETA"
+}

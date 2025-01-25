@@ -1,0 +1,13 @@
+{
+  "name": "roles/serviceconsumermanagement.tenancyUnitsAdmin",
+  "title": "Admin of Tenancy Units",
+  "description": "Administrate tenancy units",
+  "included_permissions": [
+    "serviceconsumermanagement.tenancyu.addResource",
+    "serviceconsumermanagement.tenancyu.create",
+    "serviceconsumermanagement.tenancyu.delete",
+    "serviceconsumermanagement.tenancyu.list",
+    "serviceconsumermanagement.tenancyu.removeResource"
+  ],
+  "stage": "BETA"
+}

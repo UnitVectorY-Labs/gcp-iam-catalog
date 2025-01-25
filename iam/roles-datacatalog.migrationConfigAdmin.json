@@ -1,0 +1,13 @@
+{
+  "name": "roles/datacatalog.migrationConfigAdmin",
+  "title": "DataCatalog Migration Config Admin",
+  "description": "Full access to Migration Config",
+  "included_permissions": [
+    "datacatalog.migrationConfig.get",
+    "datacatalog.migrationConfig.set",
+    "resourcemanager.organizations.get",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "BETA"
+}

@@ -1,0 +1,24 @@
+{
+  "name": "roles/fleetengine.serviceSuperUser",
+  "title": "Fleet Engine Service Super User",
+  "description": "Full access to all Fleet Engine resources.",
+  "included_permissions": [
+    "fleetengine.trips.create",
+    "fleetengine.trips.delete",
+    "fleetengine.trips.get",
+    "fleetengine.trips.search",
+    "fleetengine.trips.update",
+    "fleetengine.trips.updateState",
+    "fleetengine.vehicles.create",
+    "fleetengine.vehicles.delete",
+    "fleetengine.vehicles.get",
+    "fleetengine.vehicles.list",
+    "fleetengine.vehicles.search",
+    "fleetengine.vehicles.searchFuzzed",
+    "fleetengine.vehicles.update",
+    "fleetengine.vehicles.updateLocation",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

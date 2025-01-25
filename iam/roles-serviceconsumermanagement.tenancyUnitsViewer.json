@@ -1,0 +1,9 @@
+{
+  "name": "roles/serviceconsumermanagement.tenancyUnitsViewer",
+  "title": "Viewer of Tenancy Units",
+  "description": "View tenancy units",
+  "included_permissions": [
+    "serviceconsumermanagement.tenancyu.list"
+  ],
+  "stage": "BETA"
+}

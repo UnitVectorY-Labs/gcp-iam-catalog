@@ -1,0 +1,12 @@
+{
+  "name": "roles/servicemanagement.serviceController",
+  "title": "Service Controller",
+  "description": "Can check preconditions and report usage of a service during runtime.",
+  "included_permissions": [
+    "servicemanagement.services.check",
+    "servicemanagement.services.get",
+    "servicemanagement.services.quota",
+    "servicemanagement.services.report"
+  ],
+  "stage": "GA"
+}

@@ -1,0 +1,18 @@
+{
+  "name": "roles/oracledatabase.cloudVmClusterViewer",
+  "title": "Oracle Database@Google Cloud VM Cluster Viewer",
+  "description": "Grants read access to see all VM Cluster resources.",
+  "included_permissions": [
+    "oracledatabase.cloudVmClusters.get",
+    "oracledatabase.cloudVmClusters.list",
+    "oracledatabase.dbNodes.list",
+    "oracledatabase.entitlements.list",
+    "oracledatabase.locations.get",
+    "oracledatabase.locations.list",
+    "oracledatabase.operations.get",
+    "oracledatabase.operations.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

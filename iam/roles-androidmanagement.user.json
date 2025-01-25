@@ -1,0 +1,12 @@
+{
+  "name": "roles/androidmanagement.user",
+  "title": "Android Management User",
+  "description": "Full access to manage devices.",
+  "included_permissions": [
+    "androidmanagement.enterprises.manage",
+    "serviceusage.quotas.get",
+    "serviceusage.services.get",
+    "serviceusage.services.list"
+  ],
+  "stage": "GA"
+}

@@ -1,0 +1,25 @@
+{
+  "name": "roles/securitycenter.findingsEditor",
+  "title": "Security Center Findings Editor",
+  "description": "Read-write access to findings",
+  "included_permissions": [
+    "resourcemanager.folders.get",
+    "resourcemanager.organizations.get",
+    "resourcemanager.projects.get",
+    "securitycenter.complianceReports.aggregate",
+    "securitycenter.compliancesnapshots.list",
+    "securitycenter.findingexplanations.get",
+    "securitycenter.findings.bulkMuteUpdate",
+    "securitycenter.findings.group",
+    "securitycenter.findings.list",
+    "securitycenter.findings.listFindingPropertyNames",
+    "securitycenter.findings.setMute",
+    "securitycenter.findings.setState",
+    "securitycenter.findings.update",
+    "securitycenter.sources.get",
+    "securitycenter.sources.list",
+    "securitycenter.userinterfacemetadata.get",
+    "securitycenter.vulnerabilitysnapshots.list"
+  ],
+  "stage": "GA"
+}

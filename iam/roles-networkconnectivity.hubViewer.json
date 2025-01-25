@@ -1,0 +1,29 @@
+{
+  "name": "roles/networkconnectivity.hubViewer",
+  "title": "Hub \u0026 Spoke Viewer",
+  "description": "Enables read-only access to hub and spoke resources",
+  "included_permissions": [
+    "networkconnectivity.groups.get",
+    "networkconnectivity.groups.getIamPolicy",
+    "networkconnectivity.groups.list",
+    "networkconnectivity.hubRouteTables.get",
+    "networkconnectivity.hubRouteTables.getIamPolicy",
+    "networkconnectivity.hubRouteTables.list",
+    "networkconnectivity.hubRoutes.get",
+    "networkconnectivity.hubRoutes.getIamPolicy",
+    "networkconnectivity.hubRoutes.list",
+    "networkconnectivity.hubs.get",
+    "networkconnectivity.hubs.getIamPolicy",
+    "networkconnectivity.hubs.list",
+    "networkconnectivity.hubs.listSpokes",
+    "networkconnectivity.hubs.queryStatus",
+    "networkconnectivity.locations.get",
+    "networkconnectivity.locations.list",
+    "networkconnectivity.spokes.get",
+    "networkconnectivity.spokes.getIamPolicy",
+    "networkconnectivity.spokes.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

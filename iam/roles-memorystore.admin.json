@@ -1,0 +1,22 @@
+{
+  "name": "roles/memorystore.admin",
+  "title": "Memorystore Admin",
+  "description": "Full access to Memorystore resources.",
+  "included_permissions": [
+    "memorystore.instances.connect",
+    "memorystore.instances.create",
+    "memorystore.instances.delete",
+    "memorystore.instances.get",
+    "memorystore.instances.list",
+    "memorystore.instances.update",
+    "memorystore.locations.get",
+    "memorystore.locations.list",
+    "memorystore.operations.cancel",
+    "memorystore.operations.delete",
+    "memorystore.operations.get",
+    "memorystore.operations.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

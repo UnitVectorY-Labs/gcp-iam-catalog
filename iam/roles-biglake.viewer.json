@@ -1,0 +1,17 @@
+{
+  "name": "roles/biglake.viewer",
+  "title": "BigLake Viewer",
+  "description": "Provides read-only access to all BigLake resources.",
+  "included_permissions": [
+    "biglake.catalogs.get",
+    "biglake.catalogs.list",
+    "biglake.databases.get",
+    "biglake.databases.list",
+    "biglake.locks.list",
+    "biglake.tables.get",
+    "biglake.tables.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

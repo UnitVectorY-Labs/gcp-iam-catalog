@@ -1,0 +1,13 @@
+{
+  "name": "roles/paymentsresellersubscription.partnerViewer",
+  "title": "Payments Reseller Viewer",
+  "description": "Read access to all Payments Reseller resources, including subscriptions, products and promotions",
+  "included_permissions": [
+    "paymentsresellersubscription.products.list",
+    "paymentsresellersubscription.promotions.list",
+    "paymentsresellersubscription.subscriptions.get",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "BETA"
+}

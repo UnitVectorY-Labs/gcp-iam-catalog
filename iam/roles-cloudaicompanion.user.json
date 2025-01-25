@@ -1,0 +1,18 @@
+{
+  "name": "roles/cloudaicompanion.user",
+  "title": "Gemini for Google Cloud User",
+  "description": "A user who can use Gemini for Google Cloud",
+  "included_permissions": [
+    "cloudaicompanion.companions.generateChat",
+    "cloudaicompanion.companions.generateCode",
+    "cloudaicompanion.entitlements.get",
+    "cloudaicompanion.instances.completeCode",
+    "cloudaicompanion.instances.completeTask",
+    "cloudaicompanion.instances.generateCode",
+    "cloudaicompanion.instances.generateText",
+    "cloudaicompanion.licenses.selfAssign",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "BETA"
+}

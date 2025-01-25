@@ -1,0 +1,17 @@
+{
+  "name": "roles/recommender.projectCudViewer",
+  "title": "Project Usage Commitment Recommender Viewer",
+  "description": "Viewer of Project Usage Commitment Recommender.",
+  "included_permissions": [
+    "recommender.commitmentUtilizationInsights.get",
+    "recommender.commitmentUtilizationInsights.list",
+    "recommender.locations.get",
+    "recommender.locations.list",
+    "recommender.spendBasedCommitmentRecommenderConfig.get",
+    "recommender.usageCommitmentRecommendations.get",
+    "recommender.usageCommitmentRecommendations.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "BETA"
+}

@@ -1,0 +1,27 @@
+{
+  "name": "roles/fleetengine.ondemandAdmin",
+  "title": "Fleet Engine On-Demand Admin",
+  "description": "Full access to Vehicle and Trip resources.",
+  "included_permissions": [
+    "fleetengine.trips.allowAllActions",
+    "fleetengine.trips.create",
+    "fleetengine.trips.delete",
+    "fleetengine.trips.get",
+    "fleetengine.trips.search",
+    "fleetengine.trips.update",
+    "fleetengine.trips.updateState",
+    "fleetengine.vehicles.allowAllActions",
+    "fleetengine.vehicles.create",
+    "fleetengine.vehicles.delete",
+    "fleetengine.vehicles.get",
+    "fleetengine.vehicles.list",
+    "fleetengine.vehicles.search",
+    "fleetengine.vehicles.searchFuzzed",
+    "fleetengine.vehicles.update",
+    "fleetengine.vehicles.updateLocation",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list",
+    "serviceusage.services.use"
+  ],
+  "stage": "GA"
+}

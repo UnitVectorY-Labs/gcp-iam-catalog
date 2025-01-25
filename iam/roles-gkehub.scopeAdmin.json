@@ -1,0 +1,21 @@
+{
+  "name": "roles/gkehub.scopeAdmin",
+  "title": "Fleet Scope Admin",
+  "description": "Admin access to Fleet Scopes to set IAM Bindings and RBACRoleBindings.",
+  "included_permissions": [
+    "gkehub.namespaces.create",
+    "gkehub.namespaces.delete",
+    "gkehub.namespaces.get",
+    "gkehub.namespaces.list",
+    "gkehub.rbacrolebindings.create",
+    "gkehub.rbacrolebindings.delete",
+    "gkehub.rbacrolebindings.get",
+    "gkehub.rbacrolebindings.list",
+    "gkehub.rbacrolebindings.update",
+    "gkehub.scopes.get",
+    "gkehub.scopes.getIamPolicy",
+    "gkehub.scopes.listBoundMemberships",
+    "gkehub.scopes.setIamPolicy"
+  ],
+  "stage": "GA"
+}

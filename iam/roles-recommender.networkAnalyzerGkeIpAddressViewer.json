@@ -1,0 +1,14 @@
+{
+  "name": "roles/recommender.networkAnalyzerGkeIpAddressViewer",
+  "title": "Network Analyzer GKE IP Address Recommender Viewer",
+  "description": "Viewer of Network Analyzer GKE IP Address Insights and Recommendations.",
+  "included_permissions": [
+    "recommender.locations.get",
+    "recommender.locations.list",
+    "recommender.networkAnalyzerGkeIpAddressInsights.get",
+    "recommender.networkAnalyzerGkeIpAddressInsights.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

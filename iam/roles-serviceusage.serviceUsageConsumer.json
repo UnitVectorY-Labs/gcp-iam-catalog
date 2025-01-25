@@ -1,0 +1,13 @@
+{
+  "name": "roles/serviceusage.serviceUsageConsumer",
+  "title": "Service Usage Consumer",
+  "description": "Ability to inspect service states and operations, and consume quota and billing for a consumer project.",
+  "included_permissions": [
+    "monitoring.timeSeries.list",
+    "serviceusage.quotas.get",
+    "serviceusage.services.get",
+    "serviceusage.services.list",
+    "serviceusage.services.use"
+  ],
+  "stage": "GA"
+}

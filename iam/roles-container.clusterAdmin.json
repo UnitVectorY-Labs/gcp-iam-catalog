@@ -1,0 +1,17 @@
+{
+  "name": "roles/container.clusterAdmin",
+  "title": "Kubernetes Engine Cluster Admin",
+  "description": "Management of Kubernetes Clusters.",
+  "included_permissions": [
+    "container.clusters.create",
+    "container.clusters.delete",
+    "container.clusters.get",
+    "container.clusters.list",
+    "container.clusters.update",
+    "container.operations.get",
+    "container.operations.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

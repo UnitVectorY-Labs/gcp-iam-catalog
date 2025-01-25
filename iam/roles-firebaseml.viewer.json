@@ -1,0 +1,17 @@
+{
+  "name": "roles/firebaseml.viewer",
+  "title": "Firebase ML Kit Viewer",
+  "description": "Read-only access to Firebase ML Kit resources.",
+  "included_permissions": [
+    "firebase.clients.get",
+    "firebase.clients.list",
+    "firebase.projects.get",
+    "firebaseml.models.get",
+    "firebaseml.models.list",
+    "firebaseml.modelversions.get",
+    "firebaseml.modelversions.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "BETA"
+}

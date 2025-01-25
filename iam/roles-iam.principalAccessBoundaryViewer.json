@@ -1,0 +1,11 @@
+{
+  "name": "roles/iam.principalAccessBoundaryViewer",
+  "title": "Principal Access Boundary Policy Viewer",
+  "description": "Principal Access Boundary Reviewer role, with permissions to read principal access boundary policies and view associated policy bindings",
+  "included_permissions": [
+    "iam.principalaccessboundarypolicies.get",
+    "iam.principalaccessboundarypolicies.list",
+    "iam.principalaccessboundarypolicies.searchPolicyBindings"
+  ],
+  "stage": "BETA"
+}

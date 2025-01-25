@@ -1,0 +1,9 @@
+{
+  "name": "roles/datastudio.serviceAgent",
+  "title": "Data Studio Service Agent",
+  "description": "Grants Data Studio Service Account access to manage resources.",
+  "included_permissions": [
+    "bigquery.jobs.create"
+  ],
+  "stage": "GA"
+}

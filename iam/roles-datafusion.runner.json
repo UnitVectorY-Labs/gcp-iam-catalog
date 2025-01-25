@@ -1,0 +1,9 @@
+{
+  "name": "roles/datafusion.runner",
+  "title": "Cloud Data Fusion Runner",
+  "description": "Access to Cloud Data Fusion runtime resources.",
+  "included_permissions": [
+    "datafusion.instances.runtime"
+  ],
+  "stage": "GA"
+}

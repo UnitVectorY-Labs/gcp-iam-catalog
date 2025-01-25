@@ -1,0 +1,31 @@
+{
+  "name": "roles/iam.workloadIdentityPoolAdmin",
+  "title": "IAM Workload Identity Pool Admin",
+  "description": "Full rights to create and manage workload identity pools.",
+  "included_permissions": [
+    "iam.googleapis.com/workloadIdentityPoolProviderKeys.create",
+    "iam.googleapis.com/workloadIdentityPoolProviderKeys.delete",
+    "iam.googleapis.com/workloadIdentityPoolProviderKeys.get",
+    "iam.googleapis.com/workloadIdentityPoolProviderKeys.list",
+    "iam.googleapis.com/workloadIdentityPoolProviderKeys.undelete",
+    "iam.googleapis.com/workloadIdentityPoolProviders.create",
+    "iam.googleapis.com/workloadIdentityPoolProviders.delete",
+    "iam.googleapis.com/workloadIdentityPoolProviders.get",
+    "iam.googleapis.com/workloadIdentityPoolProviders.list",
+    "iam.googleapis.com/workloadIdentityPoolProviders.undelete",
+    "iam.googleapis.com/workloadIdentityPoolProviders.update",
+    "iam.googleapis.com/workloadIdentityPools.create",
+    "iam.googleapis.com/workloadIdentityPools.delete",
+    "iam.googleapis.com/workloadIdentityPools.get",
+    "iam.googleapis.com/workloadIdentityPools.list",
+    "iam.googleapis.com/workloadIdentityPools.undelete",
+    "iam.googleapis.com/workloadIdentityPools.update",
+    "iam.workloadIdentityPools.createPolicyBinding",
+    "iam.workloadIdentityPools.deletePolicyBinding",
+    "iam.workloadIdentityPools.searchPolicyBindings",
+    "iam.workloadIdentityPools.updatePolicyBinding",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "BETA"
+}

@@ -1,0 +1,28 @@
+{
+  "name": "roles/edgecontainer.viewer",
+  "title": "Edge Container Viewer",
+  "description": "Read-only access to Edge Container all resources.",
+  "included_permissions": [
+    "edgecontainer.clusters.generateAccessToken",
+    "edgecontainer.clusters.get",
+    "edgecontainer.clusters.getIamPolicy",
+    "edgecontainer.clusters.list",
+    "edgecontainer.locations.get",
+    "edgecontainer.locations.list",
+    "edgecontainer.machines.get",
+    "edgecontainer.machines.getIamPolicy",
+    "edgecontainer.machines.list",
+    "edgecontainer.nodePools.get",
+    "edgecontainer.nodePools.getIamPolicy",
+    "edgecontainer.nodePools.list",
+    "edgecontainer.operations.get",
+    "edgecontainer.operations.list",
+    "edgecontainer.serverconfig.get",
+    "edgecontainer.vpnConnections.get",
+    "edgecontainer.vpnConnections.getIamPolicy",
+    "edgecontainer.vpnConnections.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

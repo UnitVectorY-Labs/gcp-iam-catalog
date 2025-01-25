@@ -1,0 +1,9 @@
+{
+  "name": "roles/securitycenter.valuedResourcesViewer",
+  "title": "Security Center Valued Resources Reader",
+  "description": "Read access to security center valued resources",
+  "included_permissions": [
+    "securitycenter.valuedresources.list"
+  ],
+  "stage": "GA"
+}

@@ -1,0 +1,20 @@
+{
+  "name": "roles/spanner.viewer",
+  "title": "Cloud Spanner Viewer",
+  "description": "Viewer access to Cloud Spanner resources.",
+  "included_permissions": [
+    "monitoring.timeSeries.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list",
+    "spanner.databases.list",
+    "spanner.instanceConfigs.get",
+    "spanner.instanceConfigs.list",
+    "spanner.instancePartitions.get",
+    "spanner.instancePartitions.list",
+    "spanner.instances.get",
+    "spanner.instances.list",
+    "spanner.instances.listEffectiveTags",
+    "spanner.instances.listTagBindings"
+  ],
+  "stage": "GA"
+}

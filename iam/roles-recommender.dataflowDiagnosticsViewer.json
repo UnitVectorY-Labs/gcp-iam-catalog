@@ -1,0 +1,14 @@
+{
+  "name": "roles/recommender.dataflowDiagnosticsViewer",
+  "title": "Dataflow Diagnostics Viewer",
+  "description": "Viewer of Diagnostics recommendations.",
+  "included_permissions": [
+    "recommender.dataflowDiagnosticsInsights.get",
+    "recommender.dataflowDiagnosticsInsights.list",
+    "recommender.locations.get",
+    "recommender.locations.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

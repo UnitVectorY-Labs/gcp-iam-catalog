@@ -1,0 +1,13 @@
+{
+  "name": "roles/anthosaudit.serviceAgent",
+  "title": "Anthos Audit Service Agent",
+  "description": "Gives the Anthos Audit service agent access toCloud Platform resources.",
+  "included_permissions": [
+    "gkehub.features.get",
+    "gkehub.locations.get",
+    "gkehub.locations.list",
+    "gkehub.memberships.get",
+    "gkehub.memberships.list"
+  ],
+  "stage": "GA"
+}

@@ -1,0 +1,12 @@
+{
+  "name": "roles/containeranalysis.occurrences.viewer",
+  "title": "Container Analysis Occurrences Viewer",
+  "description": "Can view Container Analysis Occurrences.",
+  "included_permissions": [
+    "containeranalysis.occurrences.get",
+    "containeranalysis.occurrences.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

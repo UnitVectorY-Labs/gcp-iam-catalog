@@ -1,0 +1,11 @@
+{
+  "name": "roles/bigquerymigration.worker",
+  "title": "Task Worker",
+  "description": "Worker that executes EDW migration subtasks.",
+  "included_permissions": [
+    "storage.objects.create",
+    "storage.objects.get",
+    "storage.objects.list"
+  ],
+  "stage": "GA"
+}

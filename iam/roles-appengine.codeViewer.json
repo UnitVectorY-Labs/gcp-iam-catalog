@@ -1,0 +1,22 @@
+{
+  "name": "roles/appengine.codeViewer",
+  "title": "App Engine Code Viewer",
+  "description": "Ability to view App Engine app status and deployed source code.",
+  "included_permissions": [
+    "appengine.applications.get",
+    "appengine.applications.listRuntimes",
+    "appengine.instances.get",
+    "appengine.instances.list",
+    "appengine.operations.get",
+    "appengine.operations.list",
+    "appengine.services.get",
+    "appengine.services.list",
+    "appengine.versions.get",
+    "appengine.versions.getFileContents",
+    "appengine.versions.list",
+    "artifactregistry.projectsettings.get",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

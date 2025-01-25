@@ -1,0 +1,10 @@
+{
+  "name": "roles/cloudtrace.agent",
+  "title": "Cloud Trace Agent",
+  "description": "Agent access to Cloud Trace. Can write trace data.",
+  "included_permissions": [
+    "cloudtrace.traces.patch",
+    "telemetry.traces.write"
+  ],
+  "stage": "GA"
+}

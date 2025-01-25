@@ -1,0 +1,29 @@
+{
+  "name": "roles/oracledatabase.viewer",
+  "title": "Oracle Database@Google Cloud viewer",
+  "description": "Grants view access to all Oracle Database resources.",
+  "included_permissions": [
+    "oracledatabase.autonomousDatabaseBackups.get",
+    "oracledatabase.autonomousDatabaseBackups.list",
+    "oracledatabase.autonomousDatabaseCharacterSets.list",
+    "oracledatabase.autonomousDatabases.get",
+    "oracledatabase.autonomousDatabases.list",
+    "oracledatabase.autonomousDbVersions.list",
+    "oracledatabase.cloudExadataInfrastructures.get",
+    "oracledatabase.cloudExadataInfrastructures.list",
+    "oracledatabase.cloudVmClusters.get",
+    "oracledatabase.cloudVmClusters.list",
+    "oracledatabase.dbNodes.list",
+    "oracledatabase.dbServers.list",
+    "oracledatabase.dbSystemShapes.list",
+    "oracledatabase.entitlements.list",
+    "oracledatabase.giVersions.list",
+    "oracledatabase.locations.get",
+    "oracledatabase.locations.list",
+    "oracledatabase.operations.get",
+    "oracledatabase.operations.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

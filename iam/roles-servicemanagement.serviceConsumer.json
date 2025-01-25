@@ -1,0 +1,9 @@
+{
+  "name": "roles/servicemanagement.serviceConsumer",
+  "title": "Service Consumer",
+  "description": "Can enable the service.",
+  "included_permissions": [
+    "servicemanagement.services.bind"
+  ],
+  "stage": "GA"
+}

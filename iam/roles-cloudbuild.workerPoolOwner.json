@@ -1,0 +1,15 @@
+{
+  "name": "roles/cloudbuild.workerPoolOwner",
+  "title": "Cloud Build WorkerPool Owner",
+  "description": "Can create, delete, update, and view WorkerPools",
+  "included_permissions": [
+    "cloudbuild.workerpools.create",
+    "cloudbuild.workerpools.delete",
+    "cloudbuild.workerpools.get",
+    "cloudbuild.workerpools.list",
+    "cloudbuild.workerpools.update",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

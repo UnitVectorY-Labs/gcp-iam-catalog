@@ -1,0 +1,12 @@
+{
+  "name": "roles/serviceusage.apiKeysViewer",
+  "title": "API Keys Viewer",
+  "description": "Ability to get and list API keys for a project.",
+  "included_permissions": [
+    "apikeys.keys.get",
+    "apikeys.keys.getKeyString",
+    "apikeys.keys.list",
+    "apikeys.keys.lookup"
+  ],
+  "stage": "GA"
+}

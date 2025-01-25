@@ -1,0 +1,21 @@
+{
+  "name": "roles/securitycenter.findingsViewer",
+  "title": "Security Center Findings Viewer",
+  "description": "Read access to findings",
+  "included_permissions": [
+    "resourcemanager.folders.get",
+    "resourcemanager.organizations.get",
+    "resourcemanager.projects.get",
+    "securitycenter.complianceReports.aggregate",
+    "securitycenter.compliancesnapshots.list",
+    "securitycenter.findingexplanations.get",
+    "securitycenter.findings.group",
+    "securitycenter.findings.list",
+    "securitycenter.findings.listFindingPropertyNames",
+    "securitycenter.sources.get",
+    "securitycenter.sources.list",
+    "securitycenter.userinterfacemetadata.get",
+    "securitycenter.vulnerabilitysnapshots.list"
+  ],
+  "stage": "GA"
+}

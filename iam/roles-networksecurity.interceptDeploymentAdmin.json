@@ -1,0 +1,21 @@
+{
+  "name": "roles/networksecurity.interceptDeploymentAdmin",
+  "title": "Intercept Deployment Admin",
+  "description": "Enables full access to intercept resources on the Producer's side.",
+  "included_permissions": [
+    "networksecurity.interceptDeploymentGroups.create",
+    "networksecurity.interceptDeploymentGroups.delete",
+    "networksecurity.interceptDeploymentGroups.get",
+    "networksecurity.interceptDeploymentGroups.list",
+    "networksecurity.interceptDeploymentGroups.update",
+    "networksecurity.interceptDeploymentGroups.use",
+    "networksecurity.interceptDeployments.create",
+    "networksecurity.interceptDeployments.delete",
+    "networksecurity.interceptDeployments.get",
+    "networksecurity.interceptDeployments.list",
+    "networksecurity.interceptDeployments.update",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "BETA"
+}

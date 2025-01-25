@@ -1,0 +1,14 @@
+{
+  "name": "roles/proximitybeacon.beaconEditor",
+  "title": "Beacon Editor",
+  "description": "Necessary access to register, modify, and view beacons; no attachment or namespace permissions.",
+  "included_permissions": [
+    "proximitybeacon.beacons.create",
+    "proximitybeacon.beacons.get",
+    "proximitybeacon.beacons.list",
+    "proximitybeacon.beacons.update",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

@@ -1,0 +1,26 @@
+{
+  "name": "roles/healthcare.userDataMappingEditor",
+  "title": "Healthcare User Data Mapping Editor",
+  "description": "Edit UserDataMapping objects.",
+  "included_permissions": [
+    "healthcare.consentStores.checkDataAccess",
+    "healthcare.consentStores.evaluateUserConsents",
+    "healthcare.consentStores.get",
+    "healthcare.consentStores.list",
+    "healthcare.consentStores.queryAccessibleData",
+    "healthcare.datasets.get",
+    "healthcare.datasets.list",
+    "healthcare.locations.get",
+    "healthcare.locations.list",
+    "healthcare.operations.get",
+    "healthcare.userDataMappings.archive",
+    "healthcare.userDataMappings.create",
+    "healthcare.userDataMappings.delete",
+    "healthcare.userDataMappings.get",
+    "healthcare.userDataMappings.list",
+    "healthcare.userDataMappings.update",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

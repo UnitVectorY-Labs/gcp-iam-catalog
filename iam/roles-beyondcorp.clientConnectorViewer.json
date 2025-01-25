@@ -1,0 +1,16 @@
+{
+  "name": "roles/beyondcorp.clientConnectorViewer",
+  "title": "Cloud BeyondCorp Client Connector Viewer",
+  "description": "Read-only access to all BeyondCorp Client Connector resources.",
+  "included_permissions": [
+    "beyondcorp.clientConnectorServices.get",
+    "beyondcorp.clientConnectorServices.getIamPolicy",
+    "beyondcorp.clientConnectorServices.list",
+    "beyondcorp.clientGateways.get",
+    "beyondcorp.clientGateways.getIamPolicy",
+    "beyondcorp.clientGateways.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "BETA"
+}

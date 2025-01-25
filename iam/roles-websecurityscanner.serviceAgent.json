@@ -1,0 +1,18 @@
+{
+  "name": "roles/websecurityscanner.serviceAgent",
+  "title": "Cloud Web Security Scanner Service Agent",
+  "description": "Gives the Cloud Web Security Scanner service account access to compute engine details and app engine details.",
+  "included_permissions": [
+    "appengine.applications.get",
+    "cloudasset.assets.listResource",
+    "compute.addresses.list",
+    "compute.backendServices.get",
+    "compute.forwardingRules.get",
+    "compute.globalForwardingRules.get",
+    "compute.sslCertificates.list",
+    "compute.targetHttpProxies.get",
+    "compute.targetHttpsProxies.get",
+    "compute.urlMaps.get"
+  ],
+  "stage": "GA"
+}

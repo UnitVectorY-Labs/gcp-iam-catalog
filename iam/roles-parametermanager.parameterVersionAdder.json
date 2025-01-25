@@ -1,0 +1,15 @@
+{
+  "name": "roles/parametermanager.parameterVersionAdder",
+  "title": "Parameter Manager Parameter Version Adder",
+  "description": "Grants create access to Parameter Manager ParameterVersion resources. Intended for users \u0026 applications that need to perform create operations on ParameterVersions only.",
+  "included_permissions": [
+    "parametermanager.locations.get",
+    "parametermanager.locations.list",
+    "parametermanager.parameterVersions.create",
+    "parametermanager.parameters.get",
+    "parametermanager.parameters.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "BETA"
+}

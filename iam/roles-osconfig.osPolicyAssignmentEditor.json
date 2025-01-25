@@ -1,0 +1,14 @@
+{
+  "name": "roles/osconfig.osPolicyAssignmentEditor",
+  "title": "OSPolicyAssignment Editor",
+  "description": "Editor of OS Policy Assignments",
+  "included_permissions": [
+    "osconfig.osPolicyAssignments.get",
+    "osconfig.osPolicyAssignments.list",
+    "osconfig.osPolicyAssignments.searchPolicies",
+    "osconfig.osPolicyAssignments.update",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

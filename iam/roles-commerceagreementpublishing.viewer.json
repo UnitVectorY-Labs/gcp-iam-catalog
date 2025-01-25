@@ -1,0 +1,14 @@
+{
+  "name": "roles/commerceagreementpublishing.viewer",
+  "title": "Commerce Agreement Publishing Viewer",
+  "description": "Viewer of Commerce Agreement Publishing service",
+  "included_permissions": [
+    "commerceagreementpublishing.agreements.get",
+    "commerceagreementpublishing.agreements.list",
+    "commerceagreementpublishing.documents.get",
+    "commerceagreementpublishing.documents.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "BETA"
+}

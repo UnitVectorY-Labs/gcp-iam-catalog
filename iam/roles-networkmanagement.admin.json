@@ -1,0 +1,30 @@
+{
+  "name": "roles/networkmanagement.admin",
+  "title": "Network Management Admin",
+  "description": "Full access to Network Management resources.",
+  "included_permissions": [
+    "networkmanagement.connectivitytests.create",
+    "networkmanagement.connectivitytests.delete",
+    "networkmanagement.connectivitytests.get",
+    "networkmanagement.connectivitytests.getIamPolicy",
+    "networkmanagement.connectivitytests.list",
+    "networkmanagement.connectivitytests.rerun",
+    "networkmanagement.connectivitytests.setIamPolicy",
+    "networkmanagement.connectivitytests.update",
+    "networkmanagement.locations.get",
+    "networkmanagement.locations.list",
+    "networkmanagement.operations.cancel",
+    "networkmanagement.operations.delete",
+    "networkmanagement.operations.get",
+    "networkmanagement.operations.list",
+    "networkmanagement.vpcflowlogsconfigs.create",
+    "networkmanagement.vpcflowlogsconfigs.delete",
+    "networkmanagement.vpcflowlogsconfigs.get",
+    "networkmanagement.vpcflowlogsconfigs.list",
+    "networkmanagement.vpcflowlogsconfigs.update",
+    "resourcemanager.organizations.get",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

@@ -1,0 +1,33 @@
+{
+  "name": "roles/backupdr.mountUser",
+  "title": "Backup and DR Mount User",
+  "description": "Allows the user to mount from a backup. This role cannot create a backup plan or restore from a backup.",
+  "included_permissions": [
+    "backupdr.locations.get",
+    "backupdr.locations.list",
+    "backupdr.managementServers.access",
+    "backupdr.managementServers.get",
+    "backupdr.managementServers.getDynamicProtection",
+    "backupdr.managementServers.list",
+    "backupdr.managementServers.listDynamicProtection",
+    "backupdr.managementServers.manageApplications",
+    "backupdr.managementServers.manageClones",
+    "backupdr.managementServers.manageHosts",
+    "backupdr.managementServers.manageLiveClones",
+    "backupdr.managementServers.manageMirroring",
+    "backupdr.managementServers.manageMounts",
+    "backupdr.managementServers.manageWorkflows",
+    "backupdr.managementServers.refreshWorkflows",
+    "backupdr.managementServers.runWorkflows",
+    "backupdr.managementServers.viewBackupPlans",
+    "backupdr.managementServers.viewReports",
+    "backupdr.managementServers.viewStorage",
+    "backupdr.managementServers.viewSystem",
+    "backupdr.managementServers.viewWorkflows",
+    "backupdr.operations.get",
+    "backupdr.operations.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

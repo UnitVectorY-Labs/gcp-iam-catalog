@@ -1,0 +1,19 @@
+{
+  "name": "roles/dataplex.dataScanAdmin",
+  "title": "Dataplex DataScan Administrator",
+  "description": "Full access to DataScan resources.",
+  "included_permissions": [
+    "dataplex.datascans.create",
+    "dataplex.datascans.delete",
+    "dataplex.datascans.get",
+    "dataplex.datascans.getData",
+    "dataplex.datascans.getIamPolicy",
+    "dataplex.datascans.list",
+    "dataplex.datascans.run",
+    "dataplex.datascans.setIamPolicy",
+    "dataplex.datascans.update",
+    "dataplex.operations.get",
+    "dataplex.operations.list"
+  ],
+  "stage": "GA"
+}

@@ -1,0 +1,10 @@
+{
+  "name": "roles/bigquerydatapolicy.viewer",
+  "title": "BigQuery Data Policy Viewer",
+  "description": "Role for viewing Data Policies in BigQuery",
+  "included_permissions": [
+    "bigquery.dataPolicies.get",
+    "bigquery.dataPolicies.list"
+  ],
+  "stage": "GA"
+}

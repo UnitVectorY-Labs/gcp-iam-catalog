@@ -1,0 +1,9 @@
+{
+  "name": "roles/telemetry.tracesWriter",
+  "title": "Cloud Telemetry Traces Writer",
+  "description": "Access to write trace spans.",
+  "included_permissions": [
+    "telemetry.traces.write"
+  ],
+  "stage": "BETA"
+}

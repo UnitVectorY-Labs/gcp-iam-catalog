@@ -1,0 +1,26 @@
+{
+  "name": "roles/aiplatform.notebookRuntimeAdmin",
+  "title": "Notebook Runtime Admin",
+  "description": "Grants full access to all runtime templates and runtimes in Notebook Service.",
+  "included_permissions": [
+    "aiplatform.notebookRuntimeTemplates.apply",
+    "aiplatform.notebookRuntimeTemplates.create",
+    "aiplatform.notebookRuntimeTemplates.delete",
+    "aiplatform.notebookRuntimeTemplates.get",
+    "aiplatform.notebookRuntimeTemplates.getIamPolicy",
+    "aiplatform.notebookRuntimeTemplates.list",
+    "aiplatform.notebookRuntimeTemplates.setIamPolicy",
+    "aiplatform.notebookRuntimeTemplates.update",
+    "aiplatform.notebookRuntimes.assign",
+    "aiplatform.notebookRuntimes.delete",
+    "aiplatform.notebookRuntimes.get",
+    "aiplatform.notebookRuntimes.list",
+    "aiplatform.notebookRuntimes.start",
+    "aiplatform.notebookRuntimes.update",
+    "aiplatform.notebookRuntimes.upgrade",
+    "aiplatform.operations.list",
+    "compute.reservations.get",
+    "compute.reservations.list"
+  ],
+  "stage": "GA"
+}

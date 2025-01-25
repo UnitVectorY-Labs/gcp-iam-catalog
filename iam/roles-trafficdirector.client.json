@@ -1,0 +1,10 @@
+{
+  "name": "roles/trafficdirector.client",
+  "title": "Traffic Director Client",
+  "description": "Traffic Director Client to fetch service configurations and report metrics",
+  "included_permissions": [
+    "trafficdirector.networks.getConfigs",
+    "trafficdirector.networks.reportMetrics"
+  ],
+  "stage": "BETA"
+}

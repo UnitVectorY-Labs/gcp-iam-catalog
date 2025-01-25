@@ -1,0 +1,12 @@
+{
+  "name": "roles/visionai.indexEndpointWriter",
+  "title": "VisionAI Warehouse IndexEndpoint Writer",
+  "description": "Grants access to perform update, delete, deploy and undeploy operations on the index endpoint.\n",
+  "included_permissions": [
+    "visionai.indexEndpoints.delete",
+    "visionai.indexEndpoints.deploy",
+    "visionai.indexEndpoints.undeploy",
+    "visionai.indexEndpoints.update"
+  ],
+  "stage": "BETA"
+}

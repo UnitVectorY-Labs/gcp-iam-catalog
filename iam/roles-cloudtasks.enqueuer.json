@@ -1,0 +1,12 @@
+{
+  "name": "roles/cloudtasks.enqueuer",
+  "title": "Cloud Tasks Enqueuer",
+  "description": "Access to create tasks.",
+  "included_permissions": [
+    "cloudtasks.tasks.create",
+    "cloudtasks.tasks.fullView",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "BETA"
+}

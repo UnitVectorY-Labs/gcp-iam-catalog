@@ -1,0 +1,14 @@
+{
+  "name": "roles/datacatalog.entryGroupCreator",
+  "title": "DataCatalog EntryGroup Creator",
+  "description": "Can create new entryGroups",
+  "included_permissions": [
+    "datacatalog.entryGroups.create",
+    "datacatalog.entryGroups.get",
+    "datacatalog.entryGroups.list",
+    "dataplex.projects.search",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

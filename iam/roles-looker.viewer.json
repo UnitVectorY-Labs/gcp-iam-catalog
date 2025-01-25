@@ -1,0 +1,19 @@
+{
+  "name": "roles/looker.viewer",
+  "title": "Looker Viewer",
+  "description": "Read-only access to all Looker resources.",
+  "included_permissions": [
+    "looker.backups.get",
+    "looker.backups.list",
+    "looker.instances.get",
+    "looker.instances.list",
+    "looker.instances.login",
+    "looker.locations.get",
+    "looker.locations.list",
+    "looker.operations.get",
+    "looker.operations.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

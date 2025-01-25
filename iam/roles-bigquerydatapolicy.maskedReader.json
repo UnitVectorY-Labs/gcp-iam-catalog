@@ -1,0 +1,9 @@
+{
+  "name": "roles/bigquerydatapolicy.maskedReader",
+  "title": "Masked Reader",
+  "description": "Masked read access to sub-resources tagged by the policy tag associated with a data policy, for example, BigQuery columns",
+  "included_permissions": [
+    "bigquery.dataPolicies.maskedGet"
+  ],
+  "stage": "GA"
+}

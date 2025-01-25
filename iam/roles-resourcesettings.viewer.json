@@ -1,0 +1,10 @@
+{
+  "name": "roles/resourcesettings.viewer",
+  "title": "Resource Settings Viewer",
+  "description": "Provides capabilities to view Resource Settings and Resource Setting Values on resources.",
+  "included_permissions": [
+    "resourcesettings.settings.get",
+    "resourcesettings.settings.list"
+  ],
+  "stage": "GA"
+}

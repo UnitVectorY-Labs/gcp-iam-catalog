@@ -1,0 +1,30 @@
+{
+  "name": "roles/commerceorggovernance.admin",
+  "title": "Commerce Organization Governance Admin",
+  "description": "Full access to Organization Governance APIs",
+  "included_permissions": [
+    "commerceorggovernance.collectionRequestApprovals.list",
+    "commerceorggovernance.collectionRequestApprovals.review",
+    "commerceorggovernance.collections.create",
+    "commerceorggovernance.collections.delete",
+    "commerceorggovernance.collections.get",
+    "commerceorggovernance.collections.list",
+    "commerceorggovernance.collections.update",
+    "commerceorggovernance.consumerSharingPolicies.get",
+    "commerceorggovernance.consumerSharingPolicies.update",
+    "commerceorggovernance.organizationSettings.get",
+    "commerceorggovernance.organizationSettings.update",
+    "commerceorggovernance.populateCollectionJobs.create",
+    "commerceorggovernance.populateCollectionJobs.list",
+    "commerceorggovernance.populateCollectionJobs.run",
+    "commerceorggovernance.populateCollectionJobs.update",
+    "commerceorggovernance.services.get",
+    "commerceorggovernance.services.list",
+    "commerceorggovernance.services.request",
+    "consumerprocurement.entitlements.get",
+    "consumerprocurement.entitlements.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "BETA"
+}

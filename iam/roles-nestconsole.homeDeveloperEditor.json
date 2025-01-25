@@ -1,0 +1,16 @@
+{
+  "name": "roles/nestconsole.homeDeveloperEditor",
+  "title": "Google Home Developer Console Editor",
+  "description": "Read-Write access to Google Home Developer Console resources",
+  "included_permissions": [
+    "nestconsole.smarthomePreviews.update",
+    "nestconsole.smarthomeProjects.get",
+    "nestconsole.smarthomeProjects.update",
+    "nestconsole.smarthomeVersions.create",
+    "nestconsole.smarthomeVersions.get",
+    "nestconsole.smarthomeVersions.submit",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

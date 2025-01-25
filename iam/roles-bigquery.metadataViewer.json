@@ -1,0 +1,20 @@
+{
+  "name": "roles/bigquery.metadataViewer",
+  "title": "BigQuery Metadata Viewer",
+  "description": "Access to view table and dataset metadata",
+  "included_permissions": [
+    "bigquery.datasets.get",
+    "bigquery.datasets.getIamPolicy",
+    "bigquery.models.getMetadata",
+    "bigquery.models.list",
+    "bigquery.routines.get",
+    "bigquery.routines.list",
+    "bigquery.tables.get",
+    "bigquery.tables.getIamPolicy",
+    "bigquery.tables.list",
+    "dataplex.projects.search",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

@@ -1,0 +1,14 @@
+{
+  "name": "roles/advisorynotifications.admin",
+  "title": "Advisory Notifications Admin",
+  "description": "Grants write access to settings in Advisory Notifications",
+  "included_permissions": [
+    "advisorynotifications.notifications.get",
+    "advisorynotifications.notifications.list",
+    "advisorynotifications.settings.get",
+    "advisorynotifications.settings.update",
+    "resourcemanager.organizations.get",
+    "resourcemanager.projects.get"
+  ],
+  "stage": "GA"
+}

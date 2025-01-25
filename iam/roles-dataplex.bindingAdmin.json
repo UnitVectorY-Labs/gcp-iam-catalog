@@ -1,0 +1,15 @@
+{
+  "name": "roles/dataplex.bindingAdmin",
+  "title": "Dataplex Binding Administrator",
+  "description": "Full access on DataAttribute Bindig resources.",
+  "included_permissions": [
+    "dataplex.dataAttributeBindings.create",
+    "dataplex.dataAttributeBindings.delete",
+    "dataplex.dataAttributeBindings.get",
+    "dataplex.dataAttributeBindings.getIamPolicy",
+    "dataplex.dataAttributeBindings.list",
+    "dataplex.dataAttributeBindings.setIamPolicy",
+    "dataplex.dataAttributeBindings.update"
+  ],
+  "stage": "GA"
+}

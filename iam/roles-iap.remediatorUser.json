@@ -1,0 +1,11 @@
+{
+  "name": "roles/iap.remediatorUser",
+  "title": "IAP-secured Resource Remediator User",
+  "description": "Remediate IAP resource",
+  "included_permissions": [
+    "iap.tunnelDestGroups.remediate",
+    "iap.tunnelinstances.remediate",
+    "iap.webServiceVersions.remediate"
+  ],
+  "stage": "BETA"
+}

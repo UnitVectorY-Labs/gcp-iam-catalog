@@ -1,0 +1,9 @@
+{
+  "name": "roles/progressiverollout.serviceAgent",
+  "title": "Progressive Rollout Service Agent",
+  "description": "Gives Progressive Rollout the ability to roll out a customer change.",
+  "included_permissions": [
+    "cloudasset.assets.searchAllResources"
+  ],
+  "stage": "GA"
+}

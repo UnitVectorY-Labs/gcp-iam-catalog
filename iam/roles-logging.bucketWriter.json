@@ -1,0 +1,9 @@
+{
+  "name": "roles/logging.bucketWriter",
+  "title": "Logs Bucket Writer",
+  "description": "Ability to write logs to a log bucket.",
+  "included_permissions": [
+    "logging.buckets.write"
+  ],
+  "stage": "GA"
+}

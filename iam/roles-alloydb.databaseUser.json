@@ -1,0 +1,14 @@
+{
+  "name": "roles/alloydb.databaseUser",
+  "title": "Cloud AlloyDB Database User",
+  "description": "Role allowing access to login as a database user.",
+  "included_permissions": [
+    "alloydb.clusters.get",
+    "alloydb.instances.executeSql",
+    "alloydb.instances.get",
+    "alloydb.users.login",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "BETA"
+}

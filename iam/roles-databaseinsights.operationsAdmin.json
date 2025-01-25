@@ -1,0 +1,9 @@
+{
+  "name": "roles/databaseinsights.operationsAdmin",
+  "title": "Database Insights performing operations",
+  "description": "Admin role for performing Database Insights operations",
+  "included_permissions": [
+    "databaseinsights.activeQuery.terminate"
+  ],
+  "stage": "BETA"
+}

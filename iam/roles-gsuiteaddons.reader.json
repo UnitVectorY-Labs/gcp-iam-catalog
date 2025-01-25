@@ -1,0 +1,13 @@
+{
+  "name": "roles/gsuiteaddons.reader",
+  "title": "Google Workspace Add-ons Reader",
+  "description": "Read-only access to Google Workspace Add-ons resources",
+  "included_permissions": [
+    "gsuiteaddons.authorizations.get",
+    "gsuiteaddons.deployments.get",
+    "gsuiteaddons.deployments.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

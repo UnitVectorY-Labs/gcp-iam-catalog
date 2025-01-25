@@ -1,0 +1,12 @@
+{
+  "name": "roles/securedlandingzone.overwatchActivator",
+  "title": "Overwatch Activator",
+  "description": "This role can activate or suspend Overwatches",
+  "included_permissions": [
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list",
+    "securedlandingzone.overwatches.activate",
+    "securedlandingzone.overwatches.suspend"
+  ],
+  "stage": "BETA"
+}

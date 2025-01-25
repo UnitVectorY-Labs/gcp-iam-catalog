@@ -1,0 +1,15 @@
+{
+  "name": "roles/datastudio.workspaceViewer",
+  "title": "Data Studio Workspace Viewer",
+  "description": "Viewer of a Data Studio Workspace",
+  "included_permissions": [
+    "datastudio.datasources.get",
+    "datastudio.datasources.search",
+    "datastudio.reports.get",
+    "datastudio.reports.search",
+    "datastudio.workspaces.get",
+    "datastudio.workspaces.search",
+    "resourcemanager.projects.get"
+  ],
+  "stage": "BETA"
+}

@@ -1,0 +1,20 @@
+{
+  "name": "roles/cloudcontrolspartner.admin",
+  "title": "Cloud Controls Partner Admin",
+  "description": "Full access to Cloud Controls Partner resources.",
+  "included_permissions": [
+    "cloudcontrolspartner.accessapprovalrequests.list",
+    "cloudcontrolspartner.customers.create",
+    "cloudcontrolspartner.customers.delete",
+    "cloudcontrolspartner.customers.get",
+    "cloudcontrolspartner.customers.list",
+    "cloudcontrolspartner.ekmconnections.get",
+    "cloudcontrolspartner.inspectabilityevents.get",
+    "cloudcontrolspartner.partnerpermissions.get",
+    "cloudcontrolspartner.partners.get",
+    "cloudcontrolspartner.platformcontrols.get",
+    "cloudcontrolspartner.violations.list",
+    "cloudcontrolspartner.workloads.list"
+  ],
+  "stage": "GA"
+}

@@ -1,0 +1,21 @@
+{
+  "name": "roles/actions.Admin",
+  "title": "Actions Admin",
+  "description": "Access to edit and deploy an action",
+  "included_permissions": [
+    "actions.agent.claimContentProvider",
+    "actions.agent.get",
+    "actions.agent.update",
+    "actions.agentVersions.create",
+    "actions.agentVersions.delete",
+    "actions.agentVersions.deploy",
+    "actions.agentVersions.get",
+    "actions.agentVersions.list",
+    "firebase.projects.get",
+    "firebase.projects.update",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list",
+    "serviceusage.services.use"
+  ],
+  "stage": "GA"
+}

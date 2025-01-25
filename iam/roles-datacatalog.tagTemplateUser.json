@@ -1,0 +1,14 @@
+{
+  "name": "roles/datacatalog.tagTemplateUser",
+  "title": "Data Catalog TagTemplate User",
+  "description": "Access to use templates to tag resources",
+  "included_permissions": [
+    "datacatalog.tagTemplates.get",
+    "datacatalog.tagTemplates.getTag",
+    "datacatalog.tagTemplates.use",
+    "dataplex.projects.search",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

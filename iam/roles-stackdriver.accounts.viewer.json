@@ -1,0 +1,11 @@
+{
+  "name": "roles/stackdriver.accounts.viewer",
+  "title": "Stackdriver Accounts Viewer",
+  "description": "Read-only access to get and list information about Stackdriver account structure.",
+  "included_permissions": [
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list",
+    "stackdriver.projects.get"
+  ],
+  "stage": "GA"
+}

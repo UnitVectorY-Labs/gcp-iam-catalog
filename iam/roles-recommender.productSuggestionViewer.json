@@ -1,0 +1,20 @@
+{
+  "name": "roles/recommender.productSuggestionViewer",
+  "title": "Product Suggestion Recommenders Viewer",
+  "description": "Viewer of all Product Suggestion insights and recommendations.",
+  "included_permissions": [
+    "recommender.locations.get",
+    "recommender.locations.list",
+    "recommender.loggingProductSuggestionContainerInsights.get",
+    "recommender.loggingProductSuggestionContainerInsights.list",
+    "recommender.loggingProductSuggestionContainerRecommendations.get",
+    "recommender.loggingProductSuggestionContainerRecommendations.list",
+    "recommender.monitoringProductSuggestionComputeInsights.get",
+    "recommender.monitoringProductSuggestionComputeInsights.list",
+    "recommender.monitoringProductSuggestionComputeRecommendations.get",
+    "recommender.monitoringProductSuggestionComputeRecommendations.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "BETA"
+}

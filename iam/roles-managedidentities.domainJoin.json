@@ -1,0 +1,10 @@
+{
+  "name": "roles/managedidentities.domainJoin",
+  "title": "Google Cloud Managed Identities Domain Join",
+  "description": "Access to domain join VMs with Cloud AD",
+  "included_permissions": [
+    "managedidentities.domains.domainJoinMachine",
+    "managedidentities.domains.get"
+  ],
+  "stage": "BETA"
+}

@@ -1,0 +1,11 @@
+{
+  "name": "roles/cloudkms.autokeyAdmin",
+  "title": "Cloud KMS Autokey Admin",
+  "description": "Enables management of AutokeyConfig.",
+  "included_permissions": [
+    "cloudkms.autokeyConfigs.get",
+    "cloudkms.autokeyConfigs.update",
+    "cloudkms.projects.showEffectiveAutokeyConfig"
+  ],
+  "stage": "GA"
+}

@@ -1,0 +1,16 @@
+{
+  "name": "roles/firebaseappdistro.viewer",
+  "title": "Firebase App Distribution Viewer",
+  "description": "Read-only access to Firebase App Distribution resources.",
+  "included_permissions": [
+    "firebase.clients.get",
+    "firebase.clients.list",
+    "firebase.projects.get",
+    "firebaseappdistro.groups.list",
+    "firebaseappdistro.releases.list",
+    "firebaseappdistro.testers.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

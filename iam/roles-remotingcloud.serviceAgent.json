@@ -1,0 +1,9 @@
+{
+  "name": "roles/remotingcloud.serviceAgent",
+  "title": "Remoting Cloud Service Agent",
+  "description": "Grants Chrome Remote Desktop Service Agent access to Google Compute Engine metadata.",
+  "included_permissions": [
+    "compute.projects.get"
+  ],
+  "stage": "GA"
+}

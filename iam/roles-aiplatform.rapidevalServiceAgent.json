@@ -1,0 +1,9 @@
+{
+  "name": "roles/aiplatform.rapidevalServiceAgent",
+  "title": "Vertex AI Rapid Eval Service Agent",
+  "description": "Vertex AI Service Agent used by GenAI Rapid Evaluation Service to access publisher model endpoints in the user project",
+  "included_permissions": [
+    "aiplatform.endpoints.predict"
+  ],
+  "stage": "GA"
+}

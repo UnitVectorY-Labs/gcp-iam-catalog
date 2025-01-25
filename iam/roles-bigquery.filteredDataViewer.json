@@ -1,0 +1,9 @@
+{
+  "name": "roles/bigquery.filteredDataViewer",
+  "title": "BigQuery Filtered Data Viewer",
+  "description": "Access to view filtered table data defined by a row access policy",
+  "included_permissions": [
+    "bigquery.rowAccessPolicies.getFilteredData"
+  ],
+  "stage": "GA"
+}

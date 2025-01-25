@@ -1,0 +1,25 @@
+{
+  "name": "roles/oracledatabase.cloudExadataInfrastructureAdmin",
+  "title": "Oracle Database@Google Cloud Exadata Infrastructure Admin",
+  "description": "Grants full access to manage all Exadata Infrastructure resources.",
+  "included_permissions": [
+    "oracledatabase.cloudExadataInfrastructures.create",
+    "oracledatabase.cloudExadataInfrastructures.delete",
+    "oracledatabase.cloudExadataInfrastructures.get",
+    "oracledatabase.cloudExadataInfrastructures.list",
+    "oracledatabase.cloudExadataInfrastructures.update",
+    "oracledatabase.dbServers.list",
+    "oracledatabase.dbSystemShapes.list",
+    "oracledatabase.entitlements.list",
+    "oracledatabase.giVersions.list",
+    "oracledatabase.locations.get",
+    "oracledatabase.locations.list",
+    "oracledatabase.operations.cancel",
+    "oracledatabase.operations.delete",
+    "oracledatabase.operations.get",
+    "oracledatabase.operations.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

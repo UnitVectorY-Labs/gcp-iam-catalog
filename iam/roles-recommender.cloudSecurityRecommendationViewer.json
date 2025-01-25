@@ -1,0 +1,16 @@
+{
+  "name": "roles/recommender.cloudSecurityRecommendationViewer",
+  "title": "Cloud Security General Recommendations Recommender Viewer",
+  "description": "Viewer of Cloud Security General Recommendations Insights and Recommendations.",
+  "included_permissions": [
+    "recommender.cloudSecurityGeneralInsights.get",
+    "recommender.cloudSecurityGeneralInsights.list",
+    "recommender.cloudSecurityGeneralRecommendations.get",
+    "recommender.cloudSecurityGeneralRecommendations.list",
+    "recommender.locations.get",
+    "recommender.locations.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "BETA"
+}

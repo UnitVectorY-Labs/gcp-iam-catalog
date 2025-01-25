@@ -1,0 +1,14 @@
+{
+  "name": "roles/visionai.clusterEditor",
+  "title": "Vision AI Cluster Editor",
+  "description": "Access to read and write Vision AI Cluster.",
+  "included_permissions": [
+    "visionai.clusters.create",
+    "visionai.clusters.delete",
+    "visionai.clusters.get",
+    "visionai.clusters.list",
+    "visionai.clusters.update",
+    "visionai.clusters.watch"
+  ],
+  "stage": "BETA"
+}

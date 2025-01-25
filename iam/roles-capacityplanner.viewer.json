@@ -1,0 +1,23 @@
+{
+  "name": "roles/capacityplanner.viewer",
+  "title": "Capacity Planner Usage Viewer",
+  "description": "Read-only access to Capacity Planner usage resources",
+  "included_permissions": [
+    "capacityplanner.forecasts.list",
+    "capacityplanner.usageHistories.list",
+    "capacityplanner.usageHistories.summarize",
+    "cloudquotas.quotas.get",
+    "compute.futureReservations.get",
+    "compute.futureReservations.list",
+    "compute.reservations.get",
+    "compute.reservations.list",
+    "monitoring.timeSeries.list",
+    "resourcemanager.folders.get",
+    "resourcemanager.organizations.get",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list",
+    "serviceusage.quotas.get",
+    "serviceusage.services.get"
+  ],
+  "stage": "BETA"
+}

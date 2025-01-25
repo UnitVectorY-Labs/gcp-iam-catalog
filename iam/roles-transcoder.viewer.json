@@ -1,0 +1,14 @@
+{
+  "name": "roles/transcoder.viewer",
+  "title": "Transcoder Viewer",
+  "description": "Viewer of all transcoder resources.",
+  "included_permissions": [
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list",
+    "transcoder.jobTemplates.get",
+    "transcoder.jobTemplates.list",
+    "transcoder.jobs.get",
+    "transcoder.jobs.list"
+  ],
+  "stage": "GA"
+}

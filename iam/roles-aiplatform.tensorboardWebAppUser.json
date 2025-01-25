@@ -1,0 +1,9 @@
+{
+  "name": "roles/aiplatform.tensorboardWebAppUser",
+  "title": "Vertex AI Tensorboard Web App User",
+  "description": "Grants access to the Vertex AI Tensorboard web app. Using the web app will incur charges.",
+  "included_permissions": [
+    "aiplatform.tensorboards.recordAccess"
+  ],
+  "stage": "BETA"
+}

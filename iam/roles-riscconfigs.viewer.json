@@ -1,0 +1,10 @@
+{
+  "name": "roles/riscconfigs.viewer",
+  "title": "RISC Configuration Viewer",
+  "description": "Read-only access to RISC config resources.",
+  "included_permissions": [
+    "clientauthconfig.clients.list",
+    "riscconfigurationservice.riscconfigs.get"
+  ],
+  "stage": "BETA"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "roles/bigquerydatapolicy.rawDataReader",
+  "title": "Raw Data Reader",
+  "description": "Raw read access to sub-resources associated with a data policy, for example, BigQuery columns",
+  "included_permissions": [
+    "bigquery.dataPolicies.getRawData"
+  ],
+  "stage": "BETA"
+}

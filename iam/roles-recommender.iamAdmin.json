@@ -1,0 +1,26 @@
+{
+  "name": "roles/recommender.iamAdmin",
+  "title": "IAM Recommender Admin",
+  "description": "Admin of IAM recommendations.",
+  "included_permissions": [
+    "recommender.iamPolicyInsights.get",
+    "recommender.iamPolicyInsights.list",
+    "recommender.iamPolicyInsights.update",
+    "recommender.iamPolicyLateralMovementInsights.get",
+    "recommender.iamPolicyLateralMovementInsights.list",
+    "recommender.iamPolicyLateralMovementInsights.update",
+    "recommender.iamPolicyRecommendations.get",
+    "recommender.iamPolicyRecommendations.list",
+    "recommender.iamPolicyRecommendations.update",
+    "recommender.iamPolicyRecommenderConfig.get",
+    "recommender.iamPolicyRecommenderConfig.update",
+    "recommender.iamServiceAccountInsights.get",
+    "recommender.iamServiceAccountInsights.list",
+    "recommender.iamServiceAccountInsights.update",
+    "recommender.locations.get",
+    "recommender.locations.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

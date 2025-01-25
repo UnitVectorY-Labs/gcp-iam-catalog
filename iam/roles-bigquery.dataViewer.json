@@ -1,0 +1,25 @@
+{
+  "name": "roles/bigquery.dataViewer",
+  "title": "BigQuery Data Viewer",
+  "description": "Access to view datasets and all of their contents",
+  "included_permissions": [
+    "bigquery.datasets.get",
+    "bigquery.datasets.getIamPolicy",
+    "bigquery.models.export",
+    "bigquery.models.getData",
+    "bigquery.models.getMetadata",
+    "bigquery.models.list",
+    "bigquery.routines.get",
+    "bigquery.routines.list",
+    "bigquery.tables.createSnapshot",
+    "bigquery.tables.export",
+    "bigquery.tables.get",
+    "bigquery.tables.getData",
+    "bigquery.tables.getIamPolicy",
+    "bigquery.tables.list",
+    "bigquery.tables.replicateData",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

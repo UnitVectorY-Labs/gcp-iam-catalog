@@ -1,0 +1,13 @@
+{
+  "name": "roles/livestream.serviceAgent",
+  "title": "Live Stream Service Agent",
+  "description": "Uploads media files to customer GCS buckets.",
+  "included_permissions": [
+    "storage.objects.create",
+    "storage.objects.delete",
+    "storage.objects.get",
+    "storage.objects.list",
+    "storage.objects.update"
+  ],
+  "stage": "GA"
+}

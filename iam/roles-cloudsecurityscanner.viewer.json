@@ -1,0 +1,19 @@
+{
+  "name": "roles/cloudsecurityscanner.viewer",
+  "title": "Web Security Scanner Viewer",
+  "description": "Read access to all Web Security Scanner resources",
+  "included_permissions": [
+    "cloudsecurityscanner.crawledurls.list",
+    "cloudsecurityscanner.results.get",
+    "cloudsecurityscanner.results.list",
+    "cloudsecurityscanner.scanruns.get",
+    "cloudsecurityscanner.scanruns.getSummary",
+    "cloudsecurityscanner.scanruns.list",
+    "cloudsecurityscanner.scans.get",
+    "cloudsecurityscanner.scans.list",
+    "serviceusage.quotas.get",
+    "serviceusage.services.get",
+    "serviceusage.services.list"
+  ],
+  "stage": "GA"
+}

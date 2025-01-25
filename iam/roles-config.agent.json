@@ -1,0 +1,31 @@
+{
+  "name": "roles/config.agent",
+  "title": "Cloud Infrastructure Manager Agent",
+  "description": "Required permissions to make Cloud Infrastructure Manager work with the user-specified service account",
+  "included_permissions": [
+    "cloudbuild.connections.list",
+    "cloudbuild.repositories.accessReadToken",
+    "cloudbuild.repositories.list",
+    "cloudquotas.quotas.get",
+    "config.artifacts.import",
+    "config.deployments.deleteState",
+    "config.deployments.getLock",
+    "config.deployments.getState",
+    "config.deployments.updateState",
+    "config.previews.upload",
+    "config.revisions.getState",
+    "logging.logEntries.create",
+    "monitoring.timeSeries.list",
+    "storage.buckets.create",
+    "storage.buckets.delete",
+    "storage.buckets.get",
+    "storage.buckets.list",
+    "storage.buckets.update",
+    "storage.objects.create",
+    "storage.objects.delete",
+    "storage.objects.get",
+    "storage.objects.list",
+    "storage.objects.update"
+  ],
+  "stage": "BETA"
+}

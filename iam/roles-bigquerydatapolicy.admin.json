@@ -1,0 +1,15 @@
+{
+  "name": "roles/bigquerydatapolicy.admin",
+  "title": "BigQuery Data Policy Admin",
+  "description": "Role for managing Data Policies in BigQuery",
+  "included_permissions": [
+    "bigquery.dataPolicies.create",
+    "bigquery.dataPolicies.delete",
+    "bigquery.dataPolicies.get",
+    "bigquery.dataPolicies.getIamPolicy",
+    "bigquery.dataPolicies.list",
+    "bigquery.dataPolicies.setIamPolicy",
+    "bigquery.dataPolicies.update"
+  ],
+  "stage": "GA"
+}

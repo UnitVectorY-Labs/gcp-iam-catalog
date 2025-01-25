@@ -1,0 +1,10 @@
+{
+  "name": "roles/visionai.clusterViewer",
+  "title": "Vision AI Cluster Viewer",
+  "description": "Access to read Vision AI Clusters.",
+  "included_permissions": [
+    "visionai.clusters.get",
+    "visionai.clusters.list"
+  ],
+  "stage": "BETA"
+}

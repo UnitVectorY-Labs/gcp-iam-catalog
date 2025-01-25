@@ -1,0 +1,12 @@
+{
+  "name": "roles/cloudjobdiscovery.admin",
+  "title": "Cloud Talent Solution Admin",
+  "description": "Access to Cloud Talent Solution Self-Service Tools.",
+  "included_permissions": [
+    "cloudjobdiscovery.tools.access",
+    "iam.serviceAccounts.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

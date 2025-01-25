@@ -1,0 +1,13 @@
+{
+  "name": "roles/axt.admin",
+  "title": "Access Transparency Admin",
+  "description": "Enable Access Transparency for Organization",
+  "included_permissions": [
+    "axt.labels.get",
+    "axt.labels.set",
+    "resourcemanager.organizations.get",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

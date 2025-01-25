@@ -1,0 +1,10 @@
+{
+  "name": "roles/consumerprocurement.licensePoolViewer",
+  "title": "Consumer Procurement License Pool Viewer",
+  "description": "Allows viewing license pools and license assignments.",
+  "included_permissions": [
+    "consumerprocurement.licensePools.enumerateLicensedUsers",
+    "consumerprocurement.licensePools.get"
+  ],
+  "stage": "GA"
+}

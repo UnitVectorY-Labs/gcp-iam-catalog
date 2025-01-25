@@ -1,0 +1,25 @@
+{
+  "name": "roles/resourcemanager.tagAdmin",
+  "title": "Tag Administrator",
+  "description": "Access to create, delete, update, and manage access to Tags",
+  "included_permissions": [
+    "resourcemanager.tagHolds.create",
+    "resourcemanager.tagHolds.delete",
+    "resourcemanager.tagHolds.list",
+    "resourcemanager.tagKeys.create",
+    "resourcemanager.tagKeys.delete",
+    "resourcemanager.tagKeys.get",
+    "resourcemanager.tagKeys.getIamPolicy",
+    "resourcemanager.tagKeys.list",
+    "resourcemanager.tagKeys.setIamPolicy",
+    "resourcemanager.tagKeys.update",
+    "resourcemanager.tagValues.create",
+    "resourcemanager.tagValues.delete",
+    "resourcemanager.tagValues.get",
+    "resourcemanager.tagValues.getIamPolicy",
+    "resourcemanager.tagValues.list",
+    "resourcemanager.tagValues.setIamPolicy",
+    "resourcemanager.tagValues.update"
+  ],
+  "stage": "GA"
+}

@@ -1,0 +1,17 @@
+{
+  "name": "roles/securesourcemanager.repoReader",
+  "title": "Secure Source Manager Repository Reader",
+  "description": "A repoReader has read access to a particular repository, including its child components. They cannot create repositories, and do not manage IAM policies on the repository.",
+  "included_permissions": [
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list",
+    "securesourcemanager.branchRules.get",
+    "securesourcemanager.branchRules.list",
+    "securesourcemanager.repositories.fetch",
+    "securesourcemanager.repositories.get",
+    "securesourcemanager.repositories.list",
+    "securesourcemanager.repositories.readIssues",
+    "securesourcemanager.repositories.readPullRequests"
+  ],
+  "stage": "BETA"
+}

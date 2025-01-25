@@ -1,0 +1,18 @@
+{
+  "name": "roles/firebasecrashlytics.viewer",
+  "title": "Firebase Crashlytics Viewer",
+  "description": "Read-only access to Firebase Crashlytics resources.",
+  "included_permissions": [
+    "firebase.clients.get",
+    "firebase.clients.list",
+    "firebase.projects.get",
+    "firebasecrashlytics.config.get",
+    "firebasecrashlytics.data.get",
+    "firebasecrashlytics.issues.get",
+    "firebasecrashlytics.issues.list",
+    "firebasecrashlytics.sessions.get",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

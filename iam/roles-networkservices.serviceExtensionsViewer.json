@@ -1,0 +1,18 @@
+{
+  "name": "roles/networkservices.serviceExtensionsViewer",
+  "title": "Service Extensions Viewer",
+  "description": "Provides read-only access to Service Extensions resources.",
+  "included_permissions": [
+    "networkservices.authzExtensions.get",
+    "networkservices.authzExtensions.list",
+    "networkservices.lbRouteExtensions.get",
+    "networkservices.lbRouteExtensions.list",
+    "networkservices.lbTrafficExtensions.get",
+    "networkservices.lbTrafficExtensions.list",
+    "networkservices.wasmPlugins.get",
+    "networkservices.wasmPlugins.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "BETA"
+}

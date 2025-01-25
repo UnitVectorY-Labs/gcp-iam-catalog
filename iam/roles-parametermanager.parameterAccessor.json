@@ -1,0 +1,13 @@
+{
+  "name": "roles/parametermanager.parameterAccessor",
+  "title": "Parameter Manager Parameter Accessor",
+  "description": "Grants read access to ParameterManager ParameterVersion resources. Intended for users \u0026 applications that need to perform read operations on ParameterVersion only.",
+  "included_permissions": [
+    "parametermanager.locations.get",
+    "parametermanager.locations.list",
+    "parametermanager.parameterVersions.render",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "BETA"
+}

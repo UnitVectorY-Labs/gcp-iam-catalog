@@ -1,0 +1,9 @@
+{
+  "name": "roles/chronicle.restrictedDataAccess",
+  "title": "Chronicle API Restricted Data Access",
+  "description": "Grants access to data controlled by Data Access Scopes. Intended to be refined by IAM Conditions.",
+  "included_permissions": [
+    "chronicle.dataAccessScopes.permit"
+  ],
+  "stage": "BETA"
+}

@@ -1,0 +1,12 @@
+{
+  "name": "roles/firebasecloudmessaging.admin",
+  "title": "Firebase Cloud Messaging API Admin",
+  "description": "Full read/write access to Firebase Cloud Messaging API resources.",
+  "included_permissions": [
+    "cloudmessaging.messages.create",
+    "fcmdata.deliverydata.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "BETA"
+}

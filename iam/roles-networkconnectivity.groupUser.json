@@ -1,0 +1,9 @@
+{
+  "name": "roles/networkconnectivity.groupUser",
+  "title": "Group User",
+  "description": "Enables use access on group resources",
+  "included_permissions": [
+    "networkconnectivity.groups.use"
+  ],
+  "stage": "GA"
+}

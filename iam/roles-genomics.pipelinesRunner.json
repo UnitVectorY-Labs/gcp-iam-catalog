@@ -1,0 +1,12 @@
+{
+  "name": "roles/genomics.pipelinesRunner",
+  "title": "Genomics Pipelines Runner",
+  "description": "Full access to operate on genomics pipelines.",
+  "included_permissions": [
+    "genomics.operations.cancel",
+    "genomics.operations.create",
+    "genomics.operations.get",
+    "genomics.operations.list"
+  ],
+  "stage": "GA"
+}

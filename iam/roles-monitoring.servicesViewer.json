@@ -1,0 +1,12 @@
+{
+  "name": "roles/monitoring.servicesViewer",
+  "title": "Monitoring Services Viewer",
+  "description": "Read-only access to services.",
+  "included_permissions": [
+    "monitoring.services.get",
+    "monitoring.services.list",
+    "monitoring.slos.get",
+    "monitoring.slos.list"
+  ],
+  "stage": "GA"
+}

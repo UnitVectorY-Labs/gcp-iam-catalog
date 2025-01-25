@@ -1,0 +1,18 @@
+{
+  "name": "roles/osconfig.patchDeploymentAdmin",
+  "title": "PatchDeployment Admin",
+  "description": "Full admin access to PatchDeployments",
+  "included_permissions": [
+    "osconfig.patchDeployments.create",
+    "osconfig.patchDeployments.delete",
+    "osconfig.patchDeployments.execute",
+    "osconfig.patchDeployments.get",
+    "osconfig.patchDeployments.list",
+    "osconfig.patchDeployments.pause",
+    "osconfig.patchDeployments.resume",
+    "osconfig.patchDeployments.update",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "roles/certificatemanager.serviceAgent",
+  "title": "Certificate Manager Service Agent",
+  "description": "Grants Certificate Manager access to services and APIs in the user project.",
+  "included_permissions": [
+    "certificatemanager.locations.get"
+  ],
+  "stage": "GA"
+}

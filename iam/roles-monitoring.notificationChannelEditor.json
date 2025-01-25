@@ -1,0 +1,17 @@
+{
+  "name": "roles/monitoring.notificationChannelEditor",
+  "title": "Monitoring NotificationChannel Editor",
+  "description": "Read/write access to notification channels.",
+  "included_permissions": [
+    "monitoring.notificationChannelDescriptors.get",
+    "monitoring.notificationChannelDescriptors.list",
+    "monitoring.notificationChannels.create",
+    "monitoring.notificationChannels.delete",
+    "monitoring.notificationChannels.get",
+    "monitoring.notificationChannels.list",
+    "monitoring.notificationChannels.sendVerificationCode",
+    "monitoring.notificationChannels.update",
+    "monitoring.notificationChannels.verify"
+  ],
+  "stage": "BETA"
+}

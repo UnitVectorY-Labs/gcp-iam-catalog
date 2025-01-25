@@ -1,0 +1,24 @@
+{
+  "name": "roles/securitycentermanagement.customModulesViewer",
+  "title": "Security Center Management Custom Modules Viewer",
+  "description": "Readonly access to Cloud Security Command Center custom modules.",
+  "included_permissions": [
+    "resourcemanager.organizations.get",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list",
+    "securitycentermanagement.effectiveEventThreatDetectionCustomModules.get",
+    "securitycentermanagement.effectiveEventThreatDetectionCustomModules.list",
+    "securitycentermanagement.effectiveSecurityHealthAnalyticsCustomModules.get",
+    "securitycentermanagement.effectiveSecurityHealthAnalyticsCustomModules.list",
+    "securitycentermanagement.eventThreatDetectionCustomModules.get",
+    "securitycentermanagement.eventThreatDetectionCustomModules.list",
+    "securitycentermanagement.eventThreatDetectionCustomModules.validate",
+    "securitycentermanagement.locations.get",
+    "securitycentermanagement.locations.list",
+    "securitycentermanagement.securityHealthAnalyticsCustomModules.get",
+    "securitycentermanagement.securityHealthAnalyticsCustomModules.list",
+    "securitycentermanagement.securityHealthAnalyticsCustomModules.simulate",
+    "securitycentermanagement.securityHealthAnalyticsCustomModules.test"
+  ],
+  "stage": "GA"
+}

@@ -1,0 +1,16 @@
+{
+  "name": "roles/memorystore.viewer",
+  "title": "Memorystore Viewer",
+  "description": "Readonly access to Memorystore resources.",
+  "included_permissions": [
+    "memorystore.instances.get",
+    "memorystore.instances.list",
+    "memorystore.locations.get",
+    "memorystore.locations.list",
+    "memorystore.operations.get",
+    "memorystore.operations.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

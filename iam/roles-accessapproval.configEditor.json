@@ -1,0 +1,14 @@
+{
+  "name": "roles/accessapproval.configEditor",
+  "title": "Access Approval Config Editor",
+  "description": "Ability to update the Access Approval configuration",
+  "included_permissions": [
+    "accessapproval.serviceAccounts.get",
+    "accessapproval.settings.delete",
+    "accessapproval.settings.get",
+    "accessapproval.settings.update",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

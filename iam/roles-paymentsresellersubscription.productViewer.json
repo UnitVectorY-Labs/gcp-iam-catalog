@@ -1,0 +1,11 @@
+{
+  "name": "roles/paymentsresellersubscription.productViewer",
+  "title": "Payments Reseller Products Viewer",
+  "description": "Read access to Payments Reseller Product resource",
+  "included_permissions": [
+    "paymentsresellersubscription.products.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "BETA"
+}

@@ -1,0 +1,12 @@
+{
+  "name": "roles/binaryauthorization.attestorsViewer",
+  "title": "Binary Authorization Attestor Viewer",
+  "description": "Viewer of Binary Authorization Attestors",
+  "included_permissions": [
+    "binaryauthorization.attestors.get",
+    "binaryauthorization.attestors.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

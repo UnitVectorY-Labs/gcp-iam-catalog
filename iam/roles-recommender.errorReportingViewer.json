@@ -1,0 +1,16 @@
+{
+  "name": "roles/recommender.errorReportingViewer",
+  "title": "Error Reporting Recommender Viewer",
+  "description": "Viewer of Error Reporting Insights and Recommendations.",
+  "included_permissions": [
+    "recommender.errorReportingInsights.get",
+    "recommender.errorReportingInsights.list",
+    "recommender.errorReportingRecommendations.get",
+    "recommender.errorReportingRecommendations.list",
+    "recommender.locations.get",
+    "recommender.locations.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "roles/backupdr.managementServerAccessor",
+  "title": "Backup and DR Management Server Accessor",
+  "description": "Grants the Backup and DR management server access role to Backup Appliances.",
+  "included_permissions": [
+    "backupdr.managementServers.createConnection"
+  ],
+  "stage": "GA"
+}

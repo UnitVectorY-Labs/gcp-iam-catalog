@@ -1,0 +1,12 @@
+{
+  "name": "roles/speakerid.viewer",
+  "title": "Speaker ID Viewer",
+  "description": "Grants read access to all Speaker ID resources.",
+  "included_permissions": [
+    "speakerid.phrases.get",
+    "speakerid.phrases.list",
+    "speakerid.speakers.get",
+    "speakerid.speakers.list"
+  ],
+  "stage": "GA"
+}

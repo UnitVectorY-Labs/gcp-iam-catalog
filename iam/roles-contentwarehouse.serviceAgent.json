@@ -1,0 +1,21 @@
+{
+  "name": "roles/contentwarehouse.serviceAgent",
+  "title": "Content Warehouse Service Agent",
+  "description": "Gives the Content Warehouse service account to manage customer resources",
+  "included_permissions": [
+    "cloudfunctions.functions.invoke",
+    "documentai.datasets.createDocuments",
+    "documentai.processors.get",
+    "documentai.processors.processBatch",
+    "pubsub.topics.publish",
+    "pubsublite.topics.publish",
+    "storage.buckets.get",
+    "storage.buckets.list",
+    "storage.objects.create",
+    "storage.objects.delete",
+    "storage.objects.get",
+    "storage.objects.list",
+    "storage.objects.update"
+  ],
+  "stage": "GA"
+}

@@ -1,0 +1,23 @@
+{
+  "name": "roles/cloudbuild.integrationsOwner",
+  "title": "Cloud Build Integrations Owner",
+  "description": "Can create/delete Integrations",
+  "included_permissions": [
+    "cloudbuild.integrations.create",
+    "cloudbuild.integrations.delete",
+    "cloudbuild.integrations.get",
+    "cloudbuild.integrations.list",
+    "cloudbuild.integrations.update",
+    "compute.firewalls.create",
+    "compute.firewalls.get",
+    "compute.firewalls.list",
+    "compute.networks.get",
+    "compute.networks.updatePolicy",
+    "compute.regions.get",
+    "compute.subnetworks.get",
+    "compute.subnetworks.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

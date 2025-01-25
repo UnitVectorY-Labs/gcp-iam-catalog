@@ -1,0 +1,13 @@
+{
+  "name": "roles/dlp.deidentifyTemplatesEditor",
+  "title": "DLP De-identify Templates Editor",
+  "description": "Edit DLP de-identify templates.",
+  "included_permissions": [
+    "dlp.deidentifyTemplates.create",
+    "dlp.deidentifyTemplates.delete",
+    "dlp.deidentifyTemplates.get",
+    "dlp.deidentifyTemplates.list",
+    "dlp.deidentifyTemplates.update"
+  ],
+  "stage": "GA"
+}

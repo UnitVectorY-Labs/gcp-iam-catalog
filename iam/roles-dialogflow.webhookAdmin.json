@@ -1,0 +1,13 @@
+{
+  "name": "roles/dialogflow.webhookAdmin",
+  "title": "Dialogflow Webhook Admin",
+  "description": "Can read \u0026 write webhooks.",
+  "included_permissions": [
+    "dialogflow.webhooks.create",
+    "dialogflow.webhooks.delete",
+    "dialogflow.webhooks.get",
+    "dialogflow.webhooks.list",
+    "dialogflow.webhooks.update"
+  ],
+  "stage": "GA"
+}

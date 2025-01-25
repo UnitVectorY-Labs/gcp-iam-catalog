@@ -1,0 +1,12 @@
+{
+  "name": "roles/gkemulticloud.nodePoolMachineServiceAgent",
+  "title": "Anthos Multi-Cloud Node Pool Machine Service Agent",
+  "description": "Grants the Anthos Multi-Cloud Node Pool Machine Service Account access to manage resources.",
+  "included_permissions": [
+    "artifactregistry.dockerimages.get",
+    "artifactregistry.repositories.downloadArtifacts",
+    "artifactregistry.repositories.get",
+    "serviceusage.services.use"
+  ],
+  "stage": "GA"
+}

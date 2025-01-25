@@ -1,0 +1,13 @@
+{
+  "name": "roles/apigateway.serviceAgent",
+  "title": "Cloud API Gateway Service Agent",
+  "description": "Gives Cloud API Gateway service account access to Service Management check and reports as well as impersonation on user-specified service accounts.",
+  "included_permissions": [
+    "iam.serviceAccounts.getAccessToken",
+    "iam.serviceAccounts.getOpenIdToken",
+    "servicemanagement.services.check",
+    "servicemanagement.services.quota",
+    "servicemanagement.services.report"
+  ],
+  "stage": "GA"
+}

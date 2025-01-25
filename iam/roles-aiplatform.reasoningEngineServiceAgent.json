@@ -1,0 +1,31 @@
+{
+  "name": "roles/aiplatform.reasoningEngineServiceAgent",
+  "title": "Vertex AI Reasoning Engine Service Agent",
+  "description": "Gives Vertex AI Reasoning Engine the proper permissions to function.",
+  "included_permissions": [
+    "aiplatform.endpoints.create",
+    "aiplatform.endpoints.delete",
+    "aiplatform.endpoints.deploy",
+    "aiplatform.endpoints.explain",
+    "aiplatform.endpoints.get",
+    "aiplatform.endpoints.list",
+    "aiplatform.endpoints.predict",
+    "aiplatform.endpoints.undeploy",
+    "aiplatform.endpoints.update",
+    "cloudtrace.traces.patch",
+    "logging.logEntries.create",
+    "logging.logEntries.route",
+    "monitoring.metricDescriptors.create",
+    "monitoring.metricDescriptors.get",
+    "monitoring.metricDescriptors.list",
+    "monitoring.monitoredResourceDescriptors.get",
+    "monitoring.monitoredResourceDescriptors.list",
+    "monitoring.timeSeries.create",
+    "serviceusage.services.use",
+    "storage.buckets.get",
+    "storage.buckets.list",
+    "storage.objects.get",
+    "storage.objects.list"
+  ],
+  "stage": "GA"
+}

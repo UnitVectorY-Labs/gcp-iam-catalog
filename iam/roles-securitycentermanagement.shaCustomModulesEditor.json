@@ -1,0 +1,22 @@
+{
+  "name": "roles/securitycentermanagement.shaCustomModulesEditor",
+  "title": "Security Center Management SHA Custom Modules Editor",
+  "description": "Full access to manage Cloud Security Command Center SHA custom modules.",
+  "included_permissions": [
+    "resourcemanager.organizations.get",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list",
+    "securitycentermanagement.effectiveSecurityHealthAnalyticsCustomModules.get",
+    "securitycentermanagement.effectiveSecurityHealthAnalyticsCustomModules.list",
+    "securitycentermanagement.locations.get",
+    "securitycentermanagement.locations.list",
+    "securitycentermanagement.securityHealthAnalyticsCustomModules.create",
+    "securitycentermanagement.securityHealthAnalyticsCustomModules.delete",
+    "securitycentermanagement.securityHealthAnalyticsCustomModules.get",
+    "securitycentermanagement.securityHealthAnalyticsCustomModules.list",
+    "securitycentermanagement.securityHealthAnalyticsCustomModules.simulate",
+    "securitycentermanagement.securityHealthAnalyticsCustomModules.test",
+    "securitycentermanagement.securityHealthAnalyticsCustomModules.update"
+  ],
+  "stage": "GA"
+}

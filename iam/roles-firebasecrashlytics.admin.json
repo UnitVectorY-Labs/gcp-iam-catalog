@@ -1,0 +1,20 @@
+{
+  "name": "roles/firebasecrashlytics.admin",
+  "title": "Firebase Crashlytics Admin",
+  "description": "Full read/write access to Firebase Crashlytics resources.",
+  "included_permissions": [
+    "firebase.clients.get",
+    "firebase.clients.list",
+    "firebase.projects.get",
+    "firebasecrashlytics.config.get",
+    "firebasecrashlytics.config.update",
+    "firebasecrashlytics.data.get",
+    "firebasecrashlytics.issues.get",
+    "firebasecrashlytics.issues.list",
+    "firebasecrashlytics.issues.update",
+    "firebasecrashlytics.sessions.get",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

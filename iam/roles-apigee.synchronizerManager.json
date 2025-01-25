@@ -1,0 +1,11 @@
+{
+  "name": "roles/apigee.synchronizerManager",
+  "title": "Apigee Synchronizer Manager",
+  "description": "Curated set of permissions for a Synchronizer to manage environments in an Apigee Organization",
+  "included_permissions": [
+    "apigee.environments.get",
+    "apigee.environments.manageRuntime",
+    "apigee.ingressconfigs.get"
+  ],
+  "stage": "GA"
+}

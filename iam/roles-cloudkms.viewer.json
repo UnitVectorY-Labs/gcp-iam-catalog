@@ -1,0 +1,26 @@
+{
+  "name": "roles/cloudkms.viewer",
+  "title": "Cloud KMS Viewer",
+  "description": "Enables Get and List operations.",
+  "included_permissions": [
+    "cloudkms.autokeyConfigs.get",
+    "cloudkms.cryptoKeyVersions.get",
+    "cloudkms.cryptoKeyVersions.list",
+    "cloudkms.cryptoKeys.get",
+    "cloudkms.cryptoKeys.list",
+    "cloudkms.ekmConfigs.get",
+    "cloudkms.ekmConnections.get",
+    "cloudkms.ekmConnections.list",
+    "cloudkms.importJobs.get",
+    "cloudkms.importJobs.list",
+    "cloudkms.keyHandles.get",
+    "cloudkms.keyHandles.list",
+    "cloudkms.keyRings.get",
+    "cloudkms.keyRings.list",
+    "cloudkms.locations.get",
+    "cloudkms.locations.list",
+    "cloudkms.operations.get",
+    "resourcemanager.projects.get"
+  ],
+  "stage": "GA"
+}

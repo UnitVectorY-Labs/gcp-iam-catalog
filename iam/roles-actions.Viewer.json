@@ -1,0 +1,15 @@
+{
+  "name": "roles/actions.Viewer",
+  "title": "Actions Viewer",
+  "description": "Access to view an action",
+  "included_permissions": [
+    "actions.agent.get",
+    "actions.agentVersions.get",
+    "actions.agentVersions.list",
+    "firebase.projects.get",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list",
+    "serviceusage.services.use"
+  ],
+  "stage": "GA"
+}

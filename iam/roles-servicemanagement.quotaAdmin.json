@@ -1,0 +1,25 @@
+{
+  "name": "roles/servicemanagement.quotaAdmin",
+  "title": "Quota Administrator",
+  "description": "Access to administer service quotas.",
+  "included_permissions": [
+    "cloudquotas.quotas.get",
+    "cloudquotas.quotas.update",
+    "monitoring.alertPolicies.create",
+    "monitoring.alertPolicies.delete",
+    "monitoring.alertPolicies.get",
+    "monitoring.alertPolicies.list",
+    "monitoring.alertPolicies.update",
+    "monitoring.timeSeries.list",
+    "resourcemanager.organizations.get",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list",
+    "serviceusage.quotas.get",
+    "serviceusage.quotas.update",
+    "serviceusage.services.disable",
+    "serviceusage.services.enable",
+    "serviceusage.services.get",
+    "serviceusage.services.list"
+  ],
+  "stage": "BETA"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "roles/chronicle.globalDataAccess",
+  "title": "Chronicle API Global Data Access",
+  "description": "Grants global access to data i.e. all data can be accessed.",
+  "included_permissions": [
+    "chronicle.globalDataAccessScopes.permit"
+  ],
+  "stage": "BETA"
+}

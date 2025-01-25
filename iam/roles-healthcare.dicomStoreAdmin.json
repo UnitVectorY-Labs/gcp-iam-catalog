@@ -1,0 +1,25 @@
+{
+  "name": "roles/healthcare.dicomStoreAdmin",
+  "title": "Healthcare DICOM Store Administrator",
+  "description": "Administer DICOM stores.",
+  "included_permissions": [
+    "healthcare.datasets.get",
+    "healthcare.datasets.list",
+    "healthcare.dicomStores.create",
+    "healthcare.dicomStores.deidentify",
+    "healthcare.dicomStores.delete",
+    "healthcare.dicomStores.dicomWebDelete",
+    "healthcare.dicomStores.get",
+    "healthcare.dicomStores.getIamPolicy",
+    "healthcare.dicomStores.list",
+    "healthcare.dicomStores.setIamPolicy",
+    "healthcare.dicomStores.update",
+    "healthcare.locations.get",
+    "healthcare.locations.list",
+    "healthcare.operations.cancel",
+    "healthcare.operations.get",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

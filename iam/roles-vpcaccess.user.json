@@ -1,0 +1,17 @@
+{
+  "name": "roles/vpcaccess.user",
+  "title": "Serverless VPC Access User",
+  "description": "User of Serverless VPC Access connectors",
+  "included_permissions": [
+    "compute.networks.access",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list",
+    "vpcaccess.connectors.get",
+    "vpcaccess.connectors.list",
+    "vpcaccess.connectors.use",
+    "vpcaccess.locations.list",
+    "vpcaccess.operations.get",
+    "vpcaccess.operations.list"
+  ],
+  "stage": "GA"
+}

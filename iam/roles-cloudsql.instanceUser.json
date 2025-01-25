@@ -1,0 +1,10 @@
+{
+  "name": "roles/cloudsql.instanceUser",
+  "title": "Cloud SQL Instance User",
+  "description": "Role allowing access to a Cloud SQL instance",
+  "included_permissions": [
+    "cloudsql.instances.get",
+    "cloudsql.instances.login"
+  ],
+  "stage": "GA"
+}

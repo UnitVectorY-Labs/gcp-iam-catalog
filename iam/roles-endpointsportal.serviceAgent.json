@@ -1,0 +1,11 @@
+{
+  "name": "roles/endpointsportal.serviceAgent",
+  "title": "Endpoints Portal Service Agent",
+  "description": "Can access information about Endpoints services for consumer portal management, and can read Source Repositories for consumer portal custom content.",
+  "included_permissions": [
+    "servicemanagement.services.get",
+    "servicemanagement.services.list",
+    "source.repos.get"
+  ],
+  "stage": "GA"
+}

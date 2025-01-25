@@ -1,0 +1,26 @@
+{
+  "name": "roles/certificatemanager.viewer",
+  "title": "Certificate Manager Viewer",
+  "description": "Read-only access to Certificate Manager all resources.",
+  "included_permissions": [
+    "certificatemanager.certissuanceconfigs.get",
+    "certificatemanager.certissuanceconfigs.list",
+    "certificatemanager.certmapentries.get",
+    "certificatemanager.certmapentries.list",
+    "certificatemanager.certmaps.get",
+    "certificatemanager.certmaps.list",
+    "certificatemanager.certs.get",
+    "certificatemanager.certs.list",
+    "certificatemanager.dnsauthorizations.get",
+    "certificatemanager.dnsauthorizations.list",
+    "certificatemanager.locations.get",
+    "certificatemanager.locations.list",
+    "certificatemanager.operations.get",
+    "certificatemanager.operations.list",
+    "certificatemanager.trustconfigs.get",
+    "certificatemanager.trustconfigs.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

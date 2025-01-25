@@ -1,0 +1,16 @@
+{
+  "name": "roles/compute.soleTenantViewer",
+  "title": "Compute Sole Tenant Viewer",
+  "description": "Permissions to view sole tenancy node groups",
+  "included_permissions": [
+    "compute.nodeGroups.get",
+    "compute.nodeGroups.getIamPolicy",
+    "compute.nodeGroups.list",
+    "compute.nodeTemplates.get",
+    "compute.nodeTemplates.getIamPolicy",
+    "compute.nodeTemplates.list",
+    "compute.nodeTypes.get",
+    "compute.nodeTypes.list"
+  ],
+  "stage": "GA"
+}

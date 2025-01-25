@@ -1,0 +1,13 @@
+{
+  "name": "roles/cloudscheduler.serviceAgent",
+  "title": "Cloud Scheduler Service Agent",
+  "description": "Grants Cloud Scheduler Service Account access to manage resources.",
+  "included_permissions": [
+    "iam.serviceAccounts.getAccessToken",
+    "iam.serviceAccounts.getOpenIdToken",
+    "logging.logEntries.create",
+    "logging.logEntries.route",
+    "pubsub.topics.publish"
+  ],
+  "stage": "GA"
+}

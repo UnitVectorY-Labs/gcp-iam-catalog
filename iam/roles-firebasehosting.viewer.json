@@ -1,0 +1,15 @@
+{
+  "name": "roles/firebasehosting.viewer",
+  "title": "Firebase Hosting Viewer",
+  "description": "Read-only access to Firebase Hosting resources.",
+  "included_permissions": [
+    "firebase.clients.get",
+    "firebase.clients.list",
+    "firebase.projects.get",
+    "firebasehosting.sites.get",
+    "firebasehosting.sites.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

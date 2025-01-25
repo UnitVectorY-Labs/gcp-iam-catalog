@@ -1,0 +1,13 @@
+{
+  "name": "roles/cloudkms.autokeyUser",
+  "title": "Cloud KMS Autokey User",
+  "description": "Grants ability to use KeyHandle resources.",
+  "included_permissions": [
+    "cloudkms.keyHandles.create",
+    "cloudkms.keyHandles.get",
+    "cloudkms.keyHandles.list",
+    "cloudkms.operations.get",
+    "cloudkms.projects.showEffectiveAutokeyConfig"
+  ],
+  "stage": "GA"
+}

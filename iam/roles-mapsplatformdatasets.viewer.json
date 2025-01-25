@@ -1,0 +1,15 @@
+{
+  "name": "roles/mapsplatformdatasets.viewer",
+  "title": "Maps Platform Datasets Viewer",
+  "description": "Grants readonly access to all the Maps Platform Datasets API resources",
+  "included_permissions": [
+    "mapsadmin.clientStyles.get",
+    "mapsadmin.clientStyles.list",
+    "mapsplatformdatasets.datasets.export",
+    "mapsplatformdatasets.datasets.get",
+    "mapsplatformdatasets.datasets.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "BETA"
+}

@@ -1,0 +1,18 @@
+{
+  "name": "roles/recommender.serviceaccntchangeriskAdmin",
+  "title": "Service Account Change Risk Recommender Admin",
+  "description": "Admin of Service Account Change Risk Insights and Recommendations.",
+  "included_permissions": [
+    "recommender.iamServiceAccountChangeRiskInsights.get",
+    "recommender.iamServiceAccountChangeRiskInsights.list",
+    "recommender.iamServiceAccountChangeRiskInsights.update",
+    "recommender.iamServiceAccountChangeRiskRecommendations.get",
+    "recommender.iamServiceAccountChangeRiskRecommendations.list",
+    "recommender.iamServiceAccountChangeRiskRecommendations.update",
+    "recommender.locations.get",
+    "recommender.locations.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "BETA"
+}

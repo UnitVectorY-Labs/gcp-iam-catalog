@@ -1,0 +1,15 @@
+{
+  "name": "roles/commerceorggovernance.user",
+  "title": "Governed Marketplace User",
+  "description": "Full access to Governed Marketplace features.",
+  "included_permissions": [
+    "commerceorggovernance.services.get",
+    "commerceorggovernance.services.list",
+    "commerceorggovernance.services.request",
+    "consumerprocurement.entitlements.get",
+    "consumerprocurement.entitlements.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "BETA"
+}

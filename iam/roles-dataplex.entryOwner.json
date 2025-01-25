@@ -1,0 +1,29 @@
+{
+  "name": "roles/dataplex.entryOwner",
+  "title": "Dataplex Entry Owner",
+  "description": "Owns Metadata Entries.",
+  "included_permissions": [
+    "datacatalog.migrationConfig.get",
+    "dataplex.aspectTypes.get",
+    "dataplex.aspectTypes.list",
+    "dataplex.aspectTypes.use",
+    "dataplex.entries.create",
+    "dataplex.entries.delete",
+    "dataplex.entries.get",
+    "dataplex.entries.list",
+    "dataplex.entries.update",
+    "dataplex.entryGroups.get",
+    "dataplex.entryGroups.useContactsAspect",
+    "dataplex.entryGroups.useGenericAspect",
+    "dataplex.entryGroups.useGenericEntry",
+    "dataplex.entryGroups.useOverviewAspect",
+    "dataplex.entryGroups.useSchemaAspect",
+    "dataplex.entryTypes.get",
+    "dataplex.entryTypes.list",
+    "dataplex.entryTypes.use",
+    "dataplex.projects.search",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

@@ -1,0 +1,21 @@
+{
+  "name": "roles/recommender.iamViewer",
+  "title": "IAM Recommender Viewer",
+  "description": "Viewer of IAM recommendations.",
+  "included_permissions": [
+    "recommender.iamPolicyInsights.get",
+    "recommender.iamPolicyInsights.list",
+    "recommender.iamPolicyLateralMovementInsights.get",
+    "recommender.iamPolicyLateralMovementInsights.list",
+    "recommender.iamPolicyRecommendations.get",
+    "recommender.iamPolicyRecommendations.list",
+    "recommender.iamPolicyRecommenderConfig.get",
+    "recommender.iamServiceAccountInsights.get",
+    "recommender.iamServiceAccountInsights.list",
+    "recommender.locations.get",
+    "recommender.locations.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

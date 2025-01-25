@@ -1,0 +1,10 @@
+{
+  "name": "roles/dlp.inspectTemplatesReader",
+  "title": "DLP Inspect Templates Reader",
+  "description": "Read DLP inspect templates.",
+  "included_permissions": [
+    "dlp.inspectTemplates.get",
+    "dlp.inspectTemplates.list"
+  ],
+  "stage": "GA"
+}

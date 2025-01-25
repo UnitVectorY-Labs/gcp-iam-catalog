@@ -1,0 +1,9 @@
+{
+  "name": "roles/apigeeconnect.Admin",
+  "title": "Apigee Connect Admin",
+  "description": "Admin of Apigee Connect",
+  "included_permissions": [
+    "apigeeconnect.connections.list"
+  ],
+  "stage": "GA"
+}

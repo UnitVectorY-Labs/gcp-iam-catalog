@@ -1,0 +1,17 @@
+{
+  "name": "roles/databaseinsights.monitoringViewer",
+  "title": "Database Insights monitoring viewer",
+  "description": "Viewer role for Database Insights monitoring data",
+  "included_permissions": [
+    "databaseinsights.activeQueries.fetch",
+    "databaseinsights.activitySummary.fetch",
+    "databaseinsights.aggregatedStats.query",
+    "databaseinsights.locations.get",
+    "databaseinsights.locations.list",
+    "databaseinsights.timeSeries.query",
+    "databaseinsights.workloadRecommendations.fetch",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "BETA"
+}

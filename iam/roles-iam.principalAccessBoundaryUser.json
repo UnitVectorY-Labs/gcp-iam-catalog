@@ -1,0 +1,12 @@
+{
+  "name": "roles/iam.principalAccessBoundaryUser",
+  "title": "Principal Access Boundary Policy User",
+  "description": "Principal Access Boundary Policies user role, with permissions to view principal access boundary policies, and to bind and unbind principal access boundary policies to targets",
+  "included_permissions": [
+    "iam.principalaccessboundarypolicies.bind",
+    "iam.principalaccessboundarypolicies.get",
+    "iam.principalaccessboundarypolicies.list",
+    "iam.principalaccessboundarypolicies.unbind"
+  ],
+  "stage": "BETA"
+}

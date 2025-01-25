@@ -1,0 +1,11 @@
+{
+  "name": "roles/integrations.certificateViewer",
+  "title": "Certificate Viewer",
+  "description": "A developer that can list and view Certificates.",
+  "included_permissions": [
+    "integrations.certificates.get",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

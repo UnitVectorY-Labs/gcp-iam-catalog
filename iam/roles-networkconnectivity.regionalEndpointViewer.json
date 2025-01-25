@@ -1,0 +1,12 @@
+{
+  "name": "roles/networkconnectivity.regionalEndpointViewer",
+  "title": "Regional Endpoint Viewer",
+  "description": "Read-only access to all Regional Endpoint resources.",
+  "included_permissions": [
+    "networkconnectivity.regionalEndpoints.get",
+    "networkconnectivity.regionalEndpoints.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

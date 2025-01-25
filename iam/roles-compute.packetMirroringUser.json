@@ -1,0 +1,23 @@
+{
+  "name": "roles/compute.packetMirroringUser",
+  "title": "Compute packet mirroring user",
+  "description": "Use Compute Engine packet mirrorings.",
+  "included_permissions": [
+    "compute.packetMirrorings.create",
+    "compute.packetMirrorings.createTagBinding",
+    "compute.packetMirrorings.delete",
+    "compute.packetMirrorings.deleteTagBinding",
+    "compute.packetMirrorings.get",
+    "compute.packetMirrorings.list",
+    "compute.packetMirrorings.listEffectiveTags",
+    "compute.packetMirrorings.listTagBindings",
+    "compute.packetMirrorings.update",
+    "compute.projects.get",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list",
+    "serviceusage.quotas.get",
+    "serviceusage.services.get",
+    "serviceusage.services.list"
+  ],
+  "stage": "GA"
+}

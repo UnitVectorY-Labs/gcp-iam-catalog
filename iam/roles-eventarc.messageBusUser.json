@@ -1,0 +1,12 @@
+{
+  "name": "roles/eventarc.messageBusUser",
+  "title": "Eventarc Message Bus User",
+  "description": "Access to publish to or bind to a Message Bus.",
+  "included_permissions": [
+    "eventarc.messageBuses.get",
+    "eventarc.messageBuses.list",
+    "eventarc.messageBuses.publish",
+    "eventarc.messageBuses.use"
+  ],
+  "stage": "BETA"
+}

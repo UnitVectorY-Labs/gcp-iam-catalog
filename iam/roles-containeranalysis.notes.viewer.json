@@ -1,0 +1,12 @@
+{
+  "name": "roles/containeranalysis.notes.viewer",
+  "title": "Container Analysis Notes Viewer",
+  "description": "Can view Container Analysis Notes.",
+  "included_permissions": [
+    "containeranalysis.notes.get",
+    "containeranalysis.notes.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

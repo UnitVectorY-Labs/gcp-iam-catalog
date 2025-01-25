@@ -1,0 +1,11 @@
+{
+  "name": "roles/cloudbuild.readTokenAccessor",
+  "title": "Cloud Build Read Only Token Accessor",
+  "description": "Can view the connection and access its read-only token.",
+  "included_permissions": [
+    "cloudbuild.connections.get",
+    "cloudbuild.repositories.accessReadToken",
+    "cloudbuild.repositories.get"
+  ],
+  "stage": "GA"
+}

@@ -1,0 +1,15 @@
+{
+  "name": "roles/securitycenter.bigQueryExportsViewer",
+  "title": "Security Center BigQuery Exports Viewer",
+  "description": "Read access to security center BigQuery Exports",
+  "included_permissions": [
+    "resourcemanager.folders.get",
+    "resourcemanager.folders.list",
+    "resourcemanager.organizations.get",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list",
+    "securitycenter.bigQueryExports.get",
+    "securitycenter.bigQueryExports.list"
+  ],
+  "stage": "GA"
+}

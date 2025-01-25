@@ -1,0 +1,14 @@
+{
+  "name": "roles/billing.user",
+  "title": "Billing Account User",
+  "description": "Can associate projects with billing accounts",
+  "included_permissions": [
+    "billing.accounts.get",
+    "billing.accounts.getIamPolicy",
+    "billing.accounts.list",
+    "billing.accounts.redeemPromotion",
+    "billing.credits.list",
+    "billing.resourceAssociations.create"
+  ],
+  "stage": "GA"
+}

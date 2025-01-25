@@ -1,0 +1,12 @@
+{
+  "name": "roles/remotebuildexecution.configurationViewer",
+  "title": "Remote Build Execution Configuration Viewer",
+  "description": "Remote Build Execution Configuration Viewer",
+  "included_permissions": [
+    "remotebuildexecution.instances.get",
+    "remotebuildexecution.instances.list",
+    "remotebuildexecution.workerpools.get",
+    "remotebuildexecution.workerpools.list"
+  ],
+  "stage": "BETA"
+}

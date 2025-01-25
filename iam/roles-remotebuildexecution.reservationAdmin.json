@@ -1,0 +1,11 @@
+{
+  "name": "roles/remotebuildexecution.reservationAdmin",
+  "title": "Remote Build Execution Reservation Admin",
+  "description": "Remote Build Execution Reservation Admin",
+  "included_permissions": [
+    "remotebuildexecution.actions.create",
+    "remotebuildexecution.actions.delete",
+    "remotebuildexecution.actions.get"
+  ],
+  "stage": "BETA"
+}

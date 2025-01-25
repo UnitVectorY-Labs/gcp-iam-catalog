@@ -1,0 +1,17 @@
+{
+  "name": "roles/gkemulticloud.telemetryWriter",
+  "title": "Anthos Multi-cloud Telemetry Writer",
+  "description": "Grant access to write cluster telemetry data such as logs, metrics, and resource metadata.",
+  "included_permissions": [
+    "logging.logEntries.create",
+    "logging.logEntries.route",
+    "monitoring.metricDescriptors.create",
+    "monitoring.metricDescriptors.get",
+    "monitoring.metricDescriptors.list",
+    "monitoring.monitoredResourceDescriptors.get",
+    "monitoring.monitoredResourceDescriptors.list",
+    "monitoring.timeSeries.create",
+    "opsconfigmonitoring.resourceMetadata.write"
+  ],
+  "stage": "GA"
+}

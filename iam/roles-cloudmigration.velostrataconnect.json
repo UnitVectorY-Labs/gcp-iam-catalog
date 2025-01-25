@@ -1,0 +1,10 @@
+{
+  "name": "roles/cloudmigration.velostrataconnect",
+  "title": "Velostrata Manager Connection Agent",
+  "description": "Ability to set up connection between Velostrata Manager and Google",
+  "included_permissions": [
+    "cloudmigration.velostrataendpoints.connect",
+    "gkehub.endpoints.connect"
+  ],
+  "stage": "BETA"
+}

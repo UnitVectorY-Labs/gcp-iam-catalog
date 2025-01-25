@@ -1,0 +1,11 @@
+{
+  "name": "roles/resourcemanager.projectMover",
+  "title": "Project Mover",
+  "description": "Access to update and move a project",
+  "included_permissions": [
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.move",
+    "resourcemanager.projects.update"
+  ],
+  "stage": "GA"
+}

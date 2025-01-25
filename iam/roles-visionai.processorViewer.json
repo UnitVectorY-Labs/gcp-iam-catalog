@@ -1,0 +1,11 @@
+{
+  "name": "roles/visionai.processorViewer",
+  "title": "Vision AI Processor Viewer",
+  "description": "Access to read Vision AI Processors.",
+  "included_permissions": [
+    "visionai.processors.get",
+    "visionai.processors.list",
+    "visionai.processors.listPrebuilt"
+  ],
+  "stage": "BETA"
+}

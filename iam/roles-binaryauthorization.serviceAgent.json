@@ -1,0 +1,28 @@
+{
+  "name": "roles/binaryauthorization.serviceAgent",
+  "title": "Binary Authorization Service Agent",
+  "description": "Can read Notes and Occurrences from the Container Analysis Service to find and verify signatures.",
+  "included_permissions": [
+    "artifactregistry.dockerimages.get",
+    "artifactregistry.repositories.downloadArtifacts",
+    "binaryauthorization.attestors.get",
+    "binaryauthorization.attestors.list",
+    "binaryauthorization.attestors.verifyImageAttested",
+    "binaryauthorization.platformPolicies.evaluatePolicy",
+    "binaryauthorization.policy.evaluatePolicy",
+    "cloudasset.assets.exportResource",
+    "cloudasset.feeds.create",
+    "cloudasset.feeds.delete",
+    "cloudasset.feeds.get",
+    "cloudasset.feeds.update",
+    "containeranalysis.notes.get",
+    "containeranalysis.notes.list",
+    "containeranalysis.notes.listOccurrences",
+    "containeranalysis.occurrences.get",
+    "containeranalysis.occurrences.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list",
+    "storage.objects.list"
+  ],
+  "stage": "GA"
+}

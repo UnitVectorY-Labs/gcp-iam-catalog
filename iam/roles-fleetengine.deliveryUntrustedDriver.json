@@ -1,0 +1,10 @@
+{
+  "name": "roles/fleetengine.deliveryUntrustedDriver",
+  "title": "Fleet Engine Delivery Untrusted Driver User",
+  "description": "Limited write access to Fleet Engine Delivery Vehicle resources",
+  "included_permissions": [
+    "fleetengine.deliveryvehicles.get",
+    "fleetengine.deliveryvehicles.updateLocation"
+  ],
+  "stage": "GA"
+}

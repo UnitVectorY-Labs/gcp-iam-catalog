@@ -1,0 +1,12 @@
+{
+  "name": "roles/nestconsole.homeDeveloperViewer",
+  "title": "Google Home Developer Console Reader",
+  "description": "Read-only access to Google Home Developer Console resources",
+  "included_permissions": [
+    "nestconsole.smarthomeProjects.get",
+    "nestconsole.smarthomeVersions.get",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

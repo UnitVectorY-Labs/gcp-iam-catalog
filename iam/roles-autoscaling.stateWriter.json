@@ -1,0 +1,9 @@
+{
+  "name": "roles/autoscaling.stateWriter",
+  "title": "Autoscaling State Writer",
+  "description": "Access to write state for autoscaling site",
+  "included_permissions": [
+    "autoscaling.sites.writeState"
+  ],
+  "stage": "BETA"
+}

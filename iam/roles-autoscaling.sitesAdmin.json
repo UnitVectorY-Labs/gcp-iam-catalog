@@ -1,0 +1,15 @@
+{
+  "name": "roles/autoscaling.sitesAdmin",
+  "title": "Autoscaling Site Admin",
+  "description": "Full access to all autoscaling site features",
+  "included_permissions": [
+    "autoscaling.sites.getIamPolicy",
+    "autoscaling.sites.readRecommendations",
+    "autoscaling.sites.setIamPolicy",
+    "autoscaling.sites.writeMetrics",
+    "autoscaling.sites.writeState",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "BETA"
+}

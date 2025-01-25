@@ -1,0 +1,15 @@
+{
+  "name": "roles/gkehub.scopeViewerProjectLevel",
+  "title": "Fleet Project-level Scope Viewer",
+  "description": "Role for project-level permissions for viewer of Fleet Scopes.",
+  "included_permissions": [
+    "gkehub.gateway.generateCredentials",
+    "gkehub.gateway.get",
+    "gkehub.memberships.get",
+    "monitoring.timeSeries.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list",
+    "serviceusage.services.get"
+  ],
+  "stage": "GA"
+}

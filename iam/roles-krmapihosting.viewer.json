@@ -1,0 +1,17 @@
+{
+  "name": "roles/krmapihosting.viewer",
+  "title": "Config Controller Viewer",
+  "description": "Read-only access to all Config Controller resources.",
+  "included_permissions": [
+    "krmapihosting.krmApiHosts.get",
+    "krmapihosting.krmApiHosts.getIamPolicy",
+    "krmapihosting.krmApiHosts.list",
+    "krmapihosting.locations.get",
+    "krmapihosting.locations.list",
+    "krmapihosting.operations.get",
+    "krmapihosting.operations.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

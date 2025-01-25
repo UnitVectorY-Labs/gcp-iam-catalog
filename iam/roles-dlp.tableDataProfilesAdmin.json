@@ -1,0 +1,11 @@
+{
+  "name": "roles/dlp.tableDataProfilesAdmin",
+  "title": "DLP Table Data Profiles Admin",
+  "description": "Manage DLP table profiles.",
+  "included_permissions": [
+    "dlp.tableDataProfiles.delete",
+    "dlp.tableDataProfiles.get",
+    "dlp.tableDataProfiles.list"
+  ],
+  "stage": "GA"
+}

@@ -1,0 +1,14 @@
+{
+  "name": "roles/recommender.networkAnalyzerCloudSqlViewer",
+  "title": "Network Analyzer Cloud SQL Recommender Viewer",
+  "description": "Viewer of Network Analyzer Cloud SQL Insights and Recommendations.",
+  "included_permissions": [
+    "recommender.locations.get",
+    "recommender.locations.list",
+    "recommender.networkAnalyzerCloudSqlInsights.get",
+    "recommender.networkAnalyzerCloudSqlInsights.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

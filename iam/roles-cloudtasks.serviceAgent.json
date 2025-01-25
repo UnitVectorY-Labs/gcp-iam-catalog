@@ -1,0 +1,11 @@
+{
+  "name": "roles/cloudtasks.serviceAgent",
+  "title": "Cloud Tasks Service Agent",
+  "description": "Grants Cloud Tasks Service Account access to manage resources.",
+  "included_permissions": [
+    "iam.serviceAccounts.getAccessToken",
+    "iam.serviceAccounts.getOpenIdToken",
+    "logging.logEntries.create"
+  ],
+  "stage": "GA"
+}

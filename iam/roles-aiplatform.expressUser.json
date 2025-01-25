@@ -1,0 +1,9 @@
+{
+  "name": "roles/aiplatform.expressUser",
+  "title": "Vertex AI Platform Express User",
+  "description": "Grants user access to Vertex AI Express",
+  "included_permissions": [
+    "aiplatform.endpoints.predict"
+  ],
+  "stage": "BETA"
+}

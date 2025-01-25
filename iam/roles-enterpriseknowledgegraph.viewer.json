@@ -1,0 +1,16 @@
+{
+  "name": "roles/enterpriseknowledgegraph.viewer",
+  "title": "Enterprise Knowledge Graph Viewer",
+  "description": "Viewer of Enterprise Knowledge Graph resources",
+  "included_permissions": [
+    "enterpriseknowledgegraph.cloudKnowledgeGraphEntities.lookup",
+    "enterpriseknowledgegraph.cloudKnowledgeGraphEntities.search",
+    "enterpriseknowledgegraph.entityReconciliationJobs.get",
+    "enterpriseknowledgegraph.entityReconciliationJobs.list",
+    "enterpriseknowledgegraph.publicKnowledgeGraphEntities.lookup",
+    "enterpriseknowledgegraph.publicKnowledgeGraphEntities.search",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "BETA"
+}

@@ -1,0 +1,15 @@
+{
+  "name": "roles/cloudconfig.admin",
+  "title": "Firebase Remote Config Admin",
+  "description": "Full access to Firebase Remote Config resources.",
+  "included_permissions": [
+    "cloudconfig.configs.get",
+    "cloudconfig.configs.update",
+    "firebase.clients.get",
+    "firebase.clients.list",
+    "firebase.projects.get",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

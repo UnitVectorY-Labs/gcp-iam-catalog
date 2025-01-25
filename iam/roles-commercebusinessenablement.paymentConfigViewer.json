@@ -1,0 +1,12 @@
+{
+  "name": "roles/commercebusinessenablement.paymentConfigViewer",
+  "title": "Commerce Business Enablement PaymentConfig Viewer",
+  "description": "Viewer of Payment Configuration resource",
+  "included_permissions": [
+    "commercebusinessenablement.partnerInfo.get",
+    "commercebusinessenablement.paymentConfig.get",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "BETA"
+}

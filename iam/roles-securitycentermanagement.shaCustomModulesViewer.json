@@ -1,0 +1,19 @@
+{
+  "name": "roles/securitycentermanagement.shaCustomModulesViewer",
+  "title": "Security Center Management SHA Custom Modules Viewer",
+  "description": "Readonly access to Cloud Security Command Center SHA custom modules.",
+  "included_permissions": [
+    "resourcemanager.organizations.get",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list",
+    "securitycentermanagement.effectiveSecurityHealthAnalyticsCustomModules.get",
+    "securitycentermanagement.effectiveSecurityHealthAnalyticsCustomModules.list",
+    "securitycentermanagement.locations.get",
+    "securitycentermanagement.locations.list",
+    "securitycentermanagement.securityHealthAnalyticsCustomModules.get",
+    "securitycentermanagement.securityHealthAnalyticsCustomModules.list",
+    "securitycentermanagement.securityHealthAnalyticsCustomModules.simulate",
+    "securitycentermanagement.securityHealthAnalyticsCustomModules.test"
+  ],
+  "stage": "GA"
+}

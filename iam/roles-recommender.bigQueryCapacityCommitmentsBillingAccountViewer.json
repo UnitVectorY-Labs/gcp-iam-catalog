@@ -1,0 +1,14 @@
+{
+  "name": "roles/recommender.bigQueryCapacityCommitmentsBillingAccountViewer",
+  "title": "BigQuery Recommender Billing Account Viewer",
+  "description": "Billing Account Viewer of BigQuery Capacity Commitments insights and recommendations.",
+  "included_permissions": [
+    "billing.accounts.get",
+    "billing.accounts.list",
+    "recommender.bigqueryCapacityCommitmentsInsights.get",
+    "recommender.bigqueryCapacityCommitmentsInsights.list",
+    "recommender.bigqueryCapacityCommitmentsRecommendations.get",
+    "recommender.bigqueryCapacityCommitmentsRecommendations.list"
+  ],
+  "stage": "BETA"
+}

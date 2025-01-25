@@ -1,0 +1,12 @@
+{
+  "name": "roles/lookerstudio.proManager",
+  "title": "Looker Studio Pro Manager",
+  "description": "Looker Studio Pro Manager",
+  "included_permissions": [
+    "lookerstudio.pro.manage",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list",
+    "resourcemanager.projects.updateLiens"
+  ],
+  "stage": "BETA"
+}

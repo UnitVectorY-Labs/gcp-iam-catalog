@@ -1,0 +1,11 @@
+{
+  "name": "roles/databaseinsights.eventsViewer",
+  "title": "Events Service viewer",
+  "description": "Viewer role for Events Service data",
+  "included_permissions": [
+    "databaseinsights.aggregatedEvents.query",
+    "databaseinsights.clusterEvents.query",
+    "databaseinsights.instanceEvents.query"
+  ],
+  "stage": "BETA"
+}

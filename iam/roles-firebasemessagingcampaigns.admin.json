@@ -1,0 +1,15 @@
+{
+  "name": "roles/firebasemessagingcampaigns.admin",
+  "title": "Firebase Messaging Campaigns Admin",
+  "description": "Full management of Firebase Messaging Campaigns.",
+  "included_permissions": [
+    "firebasemessagingcampaigns.campaigns.create",
+    "firebasemessagingcampaigns.campaigns.delete",
+    "firebasemessagingcampaigns.campaigns.get",
+    "firebasemessagingcampaigns.campaigns.list",
+    "firebasemessagingcampaigns.campaigns.start",
+    "firebasemessagingcampaigns.campaigns.stop",
+    "firebasemessagingcampaigns.campaigns.update"
+  ],
+  "stage": "BETA"
+}

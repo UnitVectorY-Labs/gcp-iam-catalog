@@ -1,0 +1,9 @@
+{
+  "name": "roles/privateca.poolReader",
+  "title": "CA Service Pool Reader",
+  "description": "Read CA Pools in CA Service.",
+  "included_permissions": [
+    "privateca.caPools.get"
+  ],
+  "stage": "GA"
+}

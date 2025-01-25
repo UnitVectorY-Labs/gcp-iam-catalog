@@ -1,0 +1,9 @@
+{
+  "name": "roles/chat.reader",
+  "title": "Chat Apps Viewer",
+  "description": "Can view app configurations",
+  "included_permissions": [
+    "chat.bots.get"
+  ],
+  "stage": "GA"
+}

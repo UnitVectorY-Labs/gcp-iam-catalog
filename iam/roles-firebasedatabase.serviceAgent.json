@@ -1,0 +1,10 @@
+{
+  "name": "roles/firebasedatabase.serviceAgent",
+  "title": "Firebase Realtime Database Service Agent",
+  "description": "Access to publish triggers",
+  "included_permissions": [
+    "pubsub.topics.publish",
+    "serviceusage.services.use"
+  ],
+  "stage": "GA"
+}

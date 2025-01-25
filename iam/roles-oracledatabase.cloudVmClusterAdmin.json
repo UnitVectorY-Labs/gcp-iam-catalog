@@ -1,0 +1,27 @@
+{
+  "name": "roles/oracledatabase.cloudVmClusterAdmin",
+  "title": "Oracle Database@Google Cloud VM Cluster Admin",
+  "description": "Grants full access to manage all VM Cluster resources.",
+  "included_permissions": [
+    "oracledatabase.cloudExadataInfrastructures.list",
+    "oracledatabase.cloudExadataInfrastructures.use",
+    "oracledatabase.cloudVmClusters.create",
+    "oracledatabase.cloudVmClusters.delete",
+    "oracledatabase.cloudVmClusters.get",
+    "oracledatabase.cloudVmClusters.list",
+    "oracledatabase.cloudVmClusters.update",
+    "oracledatabase.dbNodes.list",
+    "oracledatabase.dbServers.list",
+    "oracledatabase.entitlements.list",
+    "oracledatabase.giVersions.list",
+    "oracledatabase.locations.get",
+    "oracledatabase.locations.list",
+    "oracledatabase.operations.cancel",
+    "oracledatabase.operations.delete",
+    "oracledatabase.operations.get",
+    "oracledatabase.operations.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

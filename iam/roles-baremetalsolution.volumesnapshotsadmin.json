@@ -1,0 +1,14 @@
+{
+  "name": "roles/baremetalsolution.volumesnapshotsadmin",
+  "title": "Snapshots Admin",
+  "description": "Administrator of Bare Metal Solution snapshots resources",
+  "included_permissions": [
+    "baremetalsolution.operations.get",
+    "baremetalsolution.volumesnapshots.create",
+    "baremetalsolution.volumesnapshots.delete",
+    "baremetalsolution.volumesnapshots.get",
+    "baremetalsolution.volumesnapshots.list",
+    "baremetalsolution.volumesnapshots.restore"
+  ],
+  "stage": "GA"
+}

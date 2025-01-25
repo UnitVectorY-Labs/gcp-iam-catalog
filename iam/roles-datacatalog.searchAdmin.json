@@ -1,0 +1,13 @@
+{
+  "name": "roles/datacatalog.searchAdmin",
+  "title": "DataCatalog Search Admin",
+  "description": "Can search all metadata for a project/org in DataCatalog",
+  "included_permissions": [
+    "datacatalog.catalogs.searchAll",
+    "dataplex.projects.search",
+    "resourcemanager.organizations.get",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "BETA"
+}

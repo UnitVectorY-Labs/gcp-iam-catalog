@@ -1,0 +1,15 @@
+{
+  "name": "roles/recommender.dataflowDiagnosticsAdmin",
+  "title": "Dataflow Diagnostics Admin",
+  "description": "Admin of Diagnostics recommendations.",
+  "included_permissions": [
+    "recommender.dataflowDiagnosticsInsights.get",
+    "recommender.dataflowDiagnosticsInsights.list",
+    "recommender.dataflowDiagnosticsInsights.update",
+    "recommender.locations.get",
+    "recommender.locations.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

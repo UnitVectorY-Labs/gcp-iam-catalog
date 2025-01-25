@@ -1,0 +1,22 @@
+{
+  "name": "roles/storageinsights.analyst",
+  "title": "Storage Insights Analyst",
+  "description": "Data access to Storage Insights.",
+  "included_permissions": [
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list",
+    "storageinsights.datasetConfigs.get",
+    "storageinsights.datasetConfigs.linkDataset",
+    "storageinsights.datasetConfigs.list",
+    "storageinsights.datasetConfigs.unlinkDataset",
+    "storageinsights.locations.get",
+    "storageinsights.locations.list",
+    "storageinsights.operations.get",
+    "storageinsights.operations.list",
+    "storageinsights.reportConfigs.get",
+    "storageinsights.reportConfigs.list",
+    "storageinsights.reportDetails.get",
+    "storageinsights.reportDetails.list"
+  ],
+  "stage": "GA"
+}

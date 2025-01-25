@@ -1,0 +1,9 @@
+{
+  "name": "roles/bigquerymigration.translationUser",
+  "title": "Migration Translation User",
+  "description": "User of EDW migration interactive SQL translation service.",
+  "included_permissions": [
+    "bigquerymigration.translation.translate"
+  ],
+  "stage": "GA"
+}

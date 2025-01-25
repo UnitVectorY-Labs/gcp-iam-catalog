@@ -1,0 +1,9 @@
+{
+  "name": "roles/servicemanagement.reporter",
+  "title": "Service Reporter",
+  "description": "Can report usage of a service during runtime.",
+  "included_permissions": [
+    "servicemanagement.services.report"
+  ],
+  "stage": "GA"
+}

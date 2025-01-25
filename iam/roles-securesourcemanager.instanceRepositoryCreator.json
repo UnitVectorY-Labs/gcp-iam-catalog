@@ -1,0 +1,16 @@
+{
+  "name": "roles/securesourcemanager.instanceRepositoryCreator",
+  "title": "Secure Source Manager Instance Repository Creator",
+  "description": "An instance repository creator can connect to a Cloud Git instance via IAP (HTTPS) and create repositories in the instance.",
+  "included_permissions": [
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list",
+    "securesourcemanager.instances.access",
+    "securesourcemanager.instances.createRepository",
+    "securesourcemanager.sshkeys.create",
+    "securesourcemanager.sshkeys.delete",
+    "securesourcemanager.sshkeys.get",
+    "securesourcemanager.sshkeys.list"
+  ],
+  "stage": "BETA"
+}

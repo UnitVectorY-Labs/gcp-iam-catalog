@@ -1,0 +1,13 @@
+{
+  "name": "roles/logging.viewAccessor",
+  "title": "Logs View Accessor",
+  "description": "Ability to read logs in a view.",
+  "included_permissions": [
+    "logging.logEntries.download",
+    "logging.views.access",
+    "logging.views.listLogs",
+    "logging.views.listResourceKeys",
+    "logging.views.listResourceValues"
+  ],
+  "stage": "GA"
+}

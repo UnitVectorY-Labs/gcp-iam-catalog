@@ -1,0 +1,20 @@
+{
+  "name": "roles/firebasestorage.admin",
+  "title": "Cloud Storage for Firebase Admin",
+  "description": "Full management of Cloud Storage for Firebase.",
+  "included_permissions": [
+    "firebase.clients.get",
+    "firebase.clients.list",
+    "firebase.projects.get",
+    "firebasestorage.buckets.addFirebase",
+    "firebasestorage.buckets.get",
+    "firebasestorage.buckets.list",
+    "firebasestorage.buckets.removeFirebase",
+    "firebasestorage.defaultBucket.create",
+    "firebasestorage.defaultBucket.delete",
+    "firebasestorage.defaultBucket.get",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "BETA"
+}

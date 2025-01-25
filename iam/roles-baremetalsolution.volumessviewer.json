@@ -1,0 +1,11 @@
+{
+  "name": "roles/baremetalsolution.volumessviewer",
+  "title": "Volumes Viewer",
+  "description": "Viewer of Bare Metal Solution volumes resources",
+  "included_permissions": [
+    "baremetalsolution.operations.get",
+    "baremetalsolution.volumes.get",
+    "baremetalsolution.volumes.list"
+  ],
+  "stage": "GA"
+}

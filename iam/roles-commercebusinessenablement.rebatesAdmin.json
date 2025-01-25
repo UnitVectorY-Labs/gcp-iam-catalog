@@ -1,0 +1,20 @@
+{
+  "name": "roles/commercebusinessenablement.rebatesAdmin",
+  "title": "Commerce Business Enablement Rebates Admin",
+  "description": "Provides admin access to rebates",
+  "included_permissions": [
+    "commercebusinessenablement.operations.cancel",
+    "commercebusinessenablement.operations.delete",
+    "commercebusinessenablement.operations.get",
+    "commercebusinessenablement.operations.list",
+    "commercebusinessenablement.partnerInfo.get",
+    "commercebusinessenablement.refunds.cancel",
+    "commercebusinessenablement.refunds.create",
+    "commercebusinessenablement.refunds.delete",
+    "commercebusinessenablement.refunds.get",
+    "commercebusinessenablement.refunds.list",
+    "commercebusinessenablement.refunds.start",
+    "commercebusinessenablement.refunds.update"
+  ],
+  "stage": "BETA"
+}

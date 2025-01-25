@@ -1,0 +1,21 @@
+{
+  "name": "roles/appengine.appViewer",
+  "title": "App Engine Viewer",
+  "description": "Ability to view App Engine app status.",
+  "included_permissions": [
+    "appengine.applications.get",
+    "appengine.applications.listRuntimes",
+    "appengine.instances.get",
+    "appengine.instances.list",
+    "appengine.operations.get",
+    "appengine.operations.list",
+    "appengine.services.get",
+    "appengine.services.list",
+    "appengine.versions.get",
+    "appengine.versions.list",
+    "artifactregistry.projectsettings.get",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

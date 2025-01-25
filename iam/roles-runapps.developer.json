@@ -1,0 +1,24 @@
+{
+  "name": "roles/runapps.developer",
+  "title": "Serverless Integrations Developer",
+  "description": "Access to create and change Serverless Integrations and their configuration.",
+  "included_permissions": [
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list",
+    "runapps.applications.create",
+    "runapps.applications.delete",
+    "runapps.applications.get",
+    "runapps.applications.getStatus",
+    "runapps.applications.list",
+    "runapps.applications.update",
+    "runapps.deployments.get",
+    "runapps.deployments.list",
+    "runapps.locations.get",
+    "runapps.locations.list",
+    "runapps.operations.cancel",
+    "runapps.operations.delete",
+    "runapps.operations.get",
+    "runapps.operations.list"
+  ],
+  "stage": "BETA"
+}

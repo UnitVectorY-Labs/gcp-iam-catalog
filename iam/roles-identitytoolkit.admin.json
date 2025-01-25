@@ -1,0 +1,26 @@
+{
+  "name": "roles/identitytoolkit.admin",
+  "title": "Identity Toolkit Admin",
+  "description": "Full access to Identity Toolkit resources.",
+  "included_permissions": [
+    "firebaseauth.configs.create",
+    "firebaseauth.configs.get",
+    "firebaseauth.configs.getHashConfig",
+    "firebaseauth.configs.getSecret",
+    "firebaseauth.configs.update",
+    "firebaseauth.users.create",
+    "firebaseauth.users.createSession",
+    "firebaseauth.users.delete",
+    "firebaseauth.users.get",
+    "firebaseauth.users.sendEmail",
+    "firebaseauth.users.update",
+    "identitytoolkit.tenants.create",
+    "identitytoolkit.tenants.delete",
+    "identitytoolkit.tenants.get",
+    "identitytoolkit.tenants.getIamPolicy",
+    "identitytoolkit.tenants.list",
+    "identitytoolkit.tenants.setIamPolicy",
+    "identitytoolkit.tenants.update"
+  ],
+  "stage": "GA"
+}

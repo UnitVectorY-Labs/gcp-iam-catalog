@@ -1,0 +1,11 @@
+{
+  "name": "roles/osconfig.rolloutServiceAgent",
+  "title": "Cloud OS Config Rollout Service Agent",
+  "description": "Grants OS Config Rollout Service Account access to zonal OS Config resources.",
+  "included_permissions": [
+    "osconfig.osPolicyAssignments.delete",
+    "osconfig.osPolicyAssignments.get",
+    "osconfig.osPolicyAssignments.update"
+  ],
+  "stage": "GA"
+}

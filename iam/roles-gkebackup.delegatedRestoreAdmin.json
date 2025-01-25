@@ -1,0 +1,16 @@
+{
+  "name": "roles/gkebackup.delegatedRestoreAdmin",
+  "title": "Backup for GKE Delegated Restore Admin",
+  "description": "Allows administrators to manage Restore resources for specific RestorePlans",
+  "included_permissions": [
+    "gkebackup.restorePlans.get",
+    "gkebackup.restores.create",
+    "gkebackup.restores.delete",
+    "gkebackup.restores.get",
+    "gkebackup.restores.list",
+    "gkebackup.restores.update",
+    "gkebackup.volumeRestores.get",
+    "gkebackup.volumeRestores.list"
+  ],
+  "stage": "GA"
+}

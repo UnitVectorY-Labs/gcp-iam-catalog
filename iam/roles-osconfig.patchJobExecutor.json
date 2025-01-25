@@ -1,0 +1,13 @@
+{
+  "name": "roles/osconfig.patchJobExecutor",
+  "title": "Patch Job Executor",
+  "description": "Access to execute Patch Jobs.",
+  "included_permissions": [
+    "osconfig.patchJobs.exec",
+    "osconfig.patchJobs.get",
+    "osconfig.patchJobs.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

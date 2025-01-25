@@ -1,0 +1,10 @@
+{
+  "name": "roles/sourcerepo.serviceAgent",
+  "title": "Cloud Source Repositories Service Agent",
+  "description": "Allow Cloud Source Repositories to integrate with other Cloud services.",
+  "included_permissions": [
+    "iam.serviceAccounts.getAccessToken",
+    "pubsub.topics.publish"
+  ],
+  "stage": "GA"
+}

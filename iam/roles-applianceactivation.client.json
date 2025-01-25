@@ -1,0 +1,10 @@
+{
+  "name": "roles/applianceactivation.client",
+  "title": "On-appliance troubleshooting client",
+  "description": "Grants access to read commands for an appliance and send its result.",
+  "included_permissions": [
+    "applianceactivation.rttCommands.get",
+    "applianceactivation.rttCommands.sendResult"
+  ],
+  "stage": "BETA"
+}

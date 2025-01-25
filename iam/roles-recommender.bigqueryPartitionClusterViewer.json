@@ -1,0 +1,14 @@
+{
+  "name": "roles/recommender.bigqueryPartitionClusterViewer",
+  "title": "BigQuery Partitioning Clustering Recommender Viewer",
+  "description": "Viewer of BigQuery Partitioning Clustering recommendations.",
+  "included_permissions": [
+    "recommender.bigqueryPartitionClusterRecommendations.get",
+    "recommender.bigqueryPartitionClusterRecommendations.list",
+    "recommender.bigqueryTableStatsInsights.get",
+    "recommender.bigqueryTableStatsInsights.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "BETA"
+}

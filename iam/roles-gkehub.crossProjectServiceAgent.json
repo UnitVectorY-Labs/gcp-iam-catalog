@@ -1,0 +1,10 @@
+{
+  "name": "roles/gkehub.crossProjectServiceAgent",
+  "title": "GKE Hub Cross Project Service Agent",
+  "description": "Gives the GKE Hub service agent permission to manage the project for cross-project fleet registration.",
+  "included_permissions": [
+    "resourcemanager.projects.getIamPolicy",
+    "resourcemanager.projects.setIamPolicy"
+  ],
+  "stage": "GA"
+}

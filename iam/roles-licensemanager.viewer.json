@@ -1,0 +1,20 @@
+{
+  "name": "roles/licensemanager.viewer",
+  "title": "Cloud License Manager Viewer",
+  "description": "Readonly access to Cloud License Manager resources.",
+  "included_permissions": [
+    "licensemanager.configurations.get",
+    "licensemanager.configurations.list",
+    "licensemanager.instances.get",
+    "licensemanager.instances.list",
+    "licensemanager.locations.get",
+    "licensemanager.locations.list",
+    "licensemanager.operations.get",
+    "licensemanager.operations.list",
+    "licensemanager.products.get",
+    "licensemanager.products.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

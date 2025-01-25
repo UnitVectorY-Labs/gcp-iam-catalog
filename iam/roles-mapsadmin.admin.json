@@ -1,0 +1,26 @@
+{
+  "name": "roles/mapsadmin.admin",
+  "title": "Maps API Admin",
+  "description": "Grants permission to read and write everything",
+  "included_permissions": [
+    "mapsadmin.clientMaps.create",
+    "mapsadmin.clientMaps.delete",
+    "mapsadmin.clientMaps.get",
+    "mapsadmin.clientMaps.list",
+    "mapsadmin.clientMaps.update",
+    "mapsadmin.clientStyleActivationRules.update",
+    "mapsadmin.clientStyleSheetSnapshots.list",
+    "mapsadmin.clientStyleSheetSnapshots.update",
+    "mapsadmin.clientStyles.create",
+    "mapsadmin.clientStyles.delete",
+    "mapsadmin.clientStyles.get",
+    "mapsadmin.clientStyles.list",
+    "mapsadmin.clientStyles.update",
+    "mapsadmin.styleEditorConfigs.get",
+    "mapsadmin.styleSnapshots.list",
+    "mapsadmin.styleSnapshots.update",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

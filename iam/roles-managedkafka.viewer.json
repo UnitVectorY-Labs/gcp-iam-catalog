@@ -1,0 +1,23 @@
+{
+  "name": "roles/managedkafka.viewer",
+  "title": "Managed Kafka Viewer",
+  "description": "Readonly access to Managed Kafka resources.",
+  "included_permissions": [
+    "managedkafka.clusters.get",
+    "managedkafka.clusters.list",
+    "managedkafka.consumerGroups.get",
+    "managedkafka.consumerGroups.list",
+    "managedkafka.locations.get",
+    "managedkafka.locations.list",
+    "managedkafka.operations.get",
+    "managedkafka.operations.list",
+    "managedkafka.topics.get",
+    "managedkafka.topics.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list",
+    "serviceusage.quotas.get",
+    "serviceusage.services.get",
+    "serviceusage.services.list"
+  ],
+  "stage": "BETA"
+}
