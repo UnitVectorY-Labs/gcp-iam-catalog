@@ -15,7 +15,7 @@ jobs:
       group: crawl
 
     permissions:
-      contents: "read"
+      contents: "write"
       id-token: "write"
     steps:
       - name: Checkout current repository
@@ -39,7 +39,31 @@ jobs:
           service_account: ${{ secrets.SERVICE_ACCOUNT_USER }}
           access_token_lifetime: "1200s"
 
+      - name: Delete db folder
+        run: |
+          rm -rf iam
+
       - name: Run gcp-iam-catalog with crawl parameter
         run: |
           export GOOGLE_APPLICATION_CREDENTIALS=${{steps.auth.outputs.credentials_file_path}}
           ./gcp-iam-catalog -crawl
+
+      - name: Configure Git
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Commit changes
+        run: |
+          cd self
+          git add db
+          git commit -m "Updated IAM on $(date '+%Y-%m-%d %H:%M:%S')" || echo "No changes to commit"
+
+      - name: Push changes
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          # Update the remote URL to include the token for authentication
+          git remote set-url origin https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }}.git
+          # Push the changes to the branch that tr
+          git push origin HEAD:${{ github.ref }}
