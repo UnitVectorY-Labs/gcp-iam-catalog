@@ -73,11 +73,11 @@ func crawlRoles() error {
 		return fmt.Errorf("failed to list roles: %v", err)
 	}
 
-	// Ensure the output directory exists
-	outputDir := "output"
-	err = os.MkdirAll(outputDir, os.ModePerm)
+	// Ensure the iam directory exists
+	iamDir := "iam"
+	err = os.MkdirAll(iamDir, os.ModePerm)
 	if err != nil {
-		return fmt.Errorf("failed to create output directory: %v", err)
+		return fmt.Errorf("failed to create iam directory: %v", err)
 	}
 
 	// Iterate over each role to fetch detailed information
@@ -94,7 +94,7 @@ func crawlRoles() error {
 
 		// Replace "/" with "-" in role name for filename
 		filename := strings.ReplaceAll(detailedRole.Name, "/", "-") + ".json"
-		filePath := filepath.Join(outputDir, filename)
+		filePath := filepath.Join(iamDir, filename)
 
 		// Marshal role details to JSON
 		jsonData, err := json.MarshalIndent(detailedRole, "", "  ")
@@ -113,13 +113,13 @@ func crawlRoles() error {
 		log.Printf("Successfully saved role %s to %s", detailedRole.Name, filePath)
 	}
 
-	fmt.Printf("Crawl completed. Check the '%s' directory for detailed JSON files.\n", outputDir)
+	fmt.Printf("Crawl completed. Check the '%s' directory for detailed JSON files.\n", iamDir)
 	return nil
 }
 
 // generateHTML handles the -generate command
 func generateHTML() error {
-	outputDir := "output"
+	iamDir := "iam"
 	htmlDir := "html"
 
 	// Create necessary directories
@@ -134,14 +134,14 @@ func generateHTML() error {
 		return fmt.Errorf("failed to create permissions HTML directory: %v", err)
 	}
 
-	// Read all JSON files from the output directory
-	roleFiles, err := filepath.Glob(filepath.Join(outputDir, "*.json"))
+	// Read all JSON files from the iam directory
+	roleFiles, err := filepath.Glob(filepath.Join(iamDir, "*.json"))
 	if err != nil {
 		return fmt.Errorf("failed to read JSON files: %v", err)
 	}
 
 	if len(roleFiles) == 0 {
-		return fmt.Errorf("no JSON files found in '%s' directory. Please run -crawl first", outputDir)
+		return fmt.Errorf("no JSON files found in '%s' directory. Please run -crawl first", iamDir)
 	}
 
 	var roles []Role
