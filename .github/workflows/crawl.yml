@@ -23,3 +23,17 @@ jobs:
       - name: Build gcp-iam-catalog
         run: |
           go build -o gcp-iam-catalog main.go
+
+      - id: auth
+        uses: google-github-actions/auth@v2
+        with:
+          token_format: "access_token"
+          create_credentials_file: true
+          workload_identity_provider: ${{ secrets.WORKLOAD_IDENTITY_PROVIDER_ID }}
+          service_account: ${{ secrets.SERVICE_ACCOUNT_USER }}
+          access_token_lifetime: "1200s"
+
+      - name: Run gcp-iam-catalog with crawl parameter
+        run: |
+          export GOOGLE_APPLICATION_CREDENTIALS=${{steps.auth.outputs.credentials_file_path}}
+          ./gcp-iam-catalog -crawl
