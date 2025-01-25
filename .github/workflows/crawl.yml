@@ -1,0 +1,25 @@
+name: gcp-iam-catalog crawl
+
+# Triggered manually via the "Run workflow" button
+on:
+  workflow_dispatch:
+
+jobs:
+  crawl:
+    runs-on: ubuntu-latest
+
+    timeout-minutes: 20
+
+    environment: crawl
+    steps:
+      - name: Checkout current repository
+        uses: actions/checkout@v3
+
+      - name: Set up Go
+        uses: actions/setup-go@v4
+        with:
+          go-version: '1.23.5' 
+
+      - name: Build gcp-iam-catalog
+        run: |
+          go build -o gcp-iam-catalog main.go
