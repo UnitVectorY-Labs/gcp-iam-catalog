@@ -39,7 +39,7 @@ jobs:
           service_account: ${{ secrets.SERVICE_ACCOUNT_USER }}
           access_token_lifetime: "1200s"
 
-      - name: Delete db folder
+      - name: Delete iam folder
         run: |
           rm -rf iam
 
@@ -55,8 +55,7 @@ jobs:
 
       - name: Commit changes
         run: |
-          cd self
-          git add db
+          git add iam
           git commit -m "Updated IAM on $(date '+%Y-%m-%d %H:%M:%S')" || echo "No changes to commit"
 
       - name: Push changes
