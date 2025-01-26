@@ -10,15 +10,23 @@
     <div class="navbar">
         <a href="../index.html">gcp-iam-catalog</a>
         <a href="../roles.html">Roles</a>
-        <a href="../permissions.html">Permissions</a>
+        <a href="../permissions.html" class="active">Permissions</a>
     </div>
 
-    <h1>Permission: {{.Permission}}</h1>
-    <h2>Roles with this Permission</h2>
-    <ul>
-        {{range .Roles}}
-            <li><a href="../{{.}}.html">{{.}}</a></li>
-        {{end}}
-    </ul>
+    <main>
+        <section class="permission-detail">
+            <h1>{{.Permission}}</h1>
+            <h2>Roles with this Permission:</h2>
+            <ul class="item-list">
+                {{range .Roles}}
+                    <li><a href="../{{.}}.html">{{.}}</a></li>
+                {{end}}
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p><a href="https://github.com/UnitVectorY-Labs/gcp-iam-catalog"><b>gcp-iam-catalog</b> on GitHub</a></p>
+    </footer>
 </body>
 </html>

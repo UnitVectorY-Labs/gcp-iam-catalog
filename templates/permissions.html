@@ -4,20 +4,49 @@
     <meta charset="UTF-8">
     <title>gcp-iam-catalog Permissions</title>
     <link rel="stylesheet" href="./style.css">
+    <script>
+        function filterList() {
+            const input = document.getElementById('searchInput');
+            const filter = input.value.toLowerCase();
+            const list = document.getElementById('permissionsList');
+            const items = list.getElementsByTagName('li');
+
+            for (let i = 0; i < items.length; i++) {
+                const a = items[i].getElementsByTagName('a')[0];
+                const txtValue = a.textContent || a.innerText;
+                if (txtValue.toLowerCase().indexOf(filter) > -1) {
+                    items[i].style.display = "";
+                } else {
+                    items[i].style.display = "none";
+                }
+            }
+        }
+    </script>
 </head>
 <body>
     <!-- Navigation Bar -->
     <div class="navbar">
         <a href="index.html">gcp-iam-catalog</a>
         <a href="roles.html">Roles</a>
-        <a href="permissions.html">Permissions</a>
+        <a href="permissions.html" class="active">Permissions</a>
     </div>
 
-    <h1>GCP Permissions</h1>
-    <ul>
-        {{range .Items}}
-            <li><a href="permissions/{{.Permission}}.html">{{.Permission}}</a></li>
-        {{end}}
-    </ul>
+    <main>
+        <section class="permissions">
+            <h1>GCP Permissions</h1>
+            <div class="search-container">
+                <input type="text" id="searchInput" onkeyup="filterList()" placeholder="Search for permissions...">
+            </div>
+            <ul id="permissionsList" class="item-list">
+                {{range .Items}}
+                    <li><a href="permissions/{{.Permission}}.html">{{.Permission}}</a></li>
+                {{end}}
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p><a href="https://github.com/UnitVectorY-Labs/gcp-iam-catalog"><b>gcp-iam-catalog</b> on GitHub</a></p>
+    </footer>
 </body>
 </html>

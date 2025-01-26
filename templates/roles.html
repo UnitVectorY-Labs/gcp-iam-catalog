@@ -4,20 +4,49 @@
     <meta charset="UTF-8">
     <title>gcp-iam-catalog Roles</title>
     <link rel="stylesheet" href="./style.css">
+    <script>
+        function filterList() {
+            const input = document.getElementById('searchInput');
+            const filter = input.value.toLowerCase();
+            const list = document.getElementById('rolesList');
+            const items = list.getElementsByTagName('li');
+
+            for (let i = 0; i < items.length; i++) {
+                const a = items[i].getElementsByTagName('a')[0];
+                const txtValue = a.textContent || a.innerText;
+                if (txtValue.toLowerCase().indexOf(filter) > -1) {
+                    items[i].style.display = "";
+                } else {
+                    items[i].style.display = "none";
+                }
+            }
+        }
+    </script>
 </head>
 <body>
     <!-- Navigation Bar -->
     <div class="navbar">
         <a href="index.html">gcp-iam-catalog</a>
-        <a href="roles.html">Roles</a>
+        <a href="roles.html" class="active">Roles</a>
         <a href="permissions.html">Permissions</a>
     </div>
 
-    <h1>GCP Roles</h1>
-    <ul>
-        {{range .Items}}
-            <li><a href="{{.Name}}.html">{{.Name}}</a></li>
-        {{end}}
-    </ul>
+    <main>
+        <section class="roles">
+            <h1>GCP Roles</h1>
+            <div class="search-container">
+                <input type="text" id="searchInput" onkeyup="filterList()" placeholder="Search for roles...">
+            </div>
+            <ul id="rolesList" class="item-list">
+                {{range .Items}}
+                    <li><a href="{{.Name}}.html">{{.Name}}</a></li>
+                {{end}}
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p><a href="https://github.com/UnitVectorY-Labs/gcp-iam-catalog"><b>gcp-iam-catalog</b> on GitHub</a></p>
+    </footer>
 </body>
 </html>
