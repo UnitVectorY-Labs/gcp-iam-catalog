@@ -24,6 +24,7 @@ type Role struct {
 	Description         string   `json:"description"`
 	IncludedPermissions []string `json:"included_permissions"`
 	Stage               string   `json:"stage"`
+	PermissionCount     int
 }
 
 // PermissionIndex maps permissions to roles
@@ -208,6 +209,9 @@ func generateHTML() error {
 			continue
 		}
 
+		// Set the permission count
+		role.PermissionCount = len(role.IncludedPermissions)
+
 		// Execute the "role.html" template
 		err = tmpl.ExecuteTemplate(f, "role.html", role)
 		if err != nil {
@@ -227,9 +231,11 @@ func generateHTML() error {
 		filePath := filepath.Join(permissionsHTMLDir, filename)
 
 		data := struct {
+			RoleCount  int
 			Permission string
 			Roles      []string
 		}{
+			RoleCount:  len(rolesWithPerm),
 			Permission: perm,
 			Roles:      rolesWithPerm,
 		}

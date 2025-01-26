@@ -21,7 +21,7 @@
             <p><strong>Description:</strong> {{.Description}}</p>
             <p><strong>Stage:</strong> {{.Stage}}</p>
             
-            <h2>Included Permissions:</h2>
+            <h2>{{.PermissionCount}} Assigned Permissions:</h2>
             <ul class="item-list">
                 {{range .IncludedPermissions}}
                     <li><a href="../permissions/{{.}}.html" class="permission-name">{{.}}</a></li>

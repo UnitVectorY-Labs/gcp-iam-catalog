@@ -17,7 +17,7 @@
     <main>
         <section class="permission-detail">
             <h1 class="permission-name">{{.Permission}}</h1>
-            <h2>Roles with this Permission:</h2>
+            <h2>{{.RoleCount}} Roles Assign this Permission:</h2>
             <ul class="item-list">
                 {{range .Roles}}
                     <li><a href="../{{.}}.html" class="role-name">{{.}}</a></li>
