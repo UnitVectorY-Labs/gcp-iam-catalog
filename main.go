@@ -312,7 +312,13 @@ func generateHTML() error {
 	}
 	defer fHomeIndex.Close()
 
-	homeData := struct{}{}
+	homeData := struct {
+		RoleCount       int
+		PermissionCount int
+	}{
+		RoleCount:       len(roles),
+		PermissionCount: len(permissionIndex),
+	}
 
 	// Execute the "index.html" template
 	err = tmpl.ExecuteTemplate(fHomeIndex, "index.html", homeData)
