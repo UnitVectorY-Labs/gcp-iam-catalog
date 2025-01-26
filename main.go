@@ -153,6 +153,12 @@ func generateHTML() error {
 	var roles []Role
 	permissionIndex := make(PermissionIndex)
 
+	// Parse all templates including footer.html
+	tmpl, err := template.ParseGlob("templates/*.html")
+	if err != nil {
+		return fmt.Errorf("failed to parse templates: %v", err)
+	}
+
 	// Parse each role JSON file
 	for _, file := range roleFiles {
 		log.Printf("Processing file: %s", file)
@@ -191,32 +197,6 @@ func generateHTML() error {
 		permissionIndex[perm] = rolesWithPerm
 	}
 
-	// Load HTML templates
-	homeTpl, err := template.ParseFiles("templates/index.html")
-	if err != nil {
-		return fmt.Errorf("failed to parse index template: %v", err)
-	}
-
-	permissionTemplate, err := template.ParseFiles("templates/permission.html")
-	if err != nil {
-		return fmt.Errorf("failed to parse permission template: %v", err)
-	}
-
-	permissionsTemplate, err := template.ParseFiles("templates/permissions.html")
-	if err != nil {
-		return fmt.Errorf("failed to parse permissions template: %v", err)
-	}
-
-	roleTemplate, err := template.ParseFiles("templates/role.html")
-	if err != nil {
-		return fmt.Errorf("failed to parse role template: %v", err)
-	}
-
-	rolesTemplate, err := template.ParseFiles("templates/roles.html")
-	if err != nil {
-		return fmt.Errorf("failed to parse roles template: %v", err)
-	}
-
 	// Generate Role Pages
 	for _, role := range roles {
 		filename := strings.ReplaceAll(role.Name, "roles/", "") + ".html"
@@ -228,7 +208,8 @@ func generateHTML() error {
 			continue
 		}
 
-		err = roleTemplate.Execute(f, role)
+		// Execute the "role.html" template
+		err = tmpl.ExecuteTemplate(f, "role.html", role)
 		if err != nil {
 			log.Printf("Failed to execute template for role %s: %v", role.Name, err)
 			f.Close()
@@ -259,7 +240,8 @@ func generateHTML() error {
 			continue
 		}
 
-		err = permissionTemplate.Execute(f, data)
+		// Execute the "permission.html" template
+		err = tmpl.ExecuteTemplate(f, "permission.html", data)
 		if err != nil {
 			log.Printf("Failed to execute template for permission %s: %v", perm, err)
 			f.Close()
@@ -278,7 +260,7 @@ func generateHTML() error {
 	}
 	defer fRolesIndex.Close()
 
-	err = rolesTemplate.Execute(fRolesIndex, struct {
+	err = tmpl.ExecuteTemplate(fRolesIndex, "roles.html", struct {
 		Items []Role
 	}{
 		Items: roles,
@@ -310,7 +292,7 @@ func generateHTML() error {
 	}
 	defer fPermissionsIndex.Close()
 
-	err = permissionsTemplate.Execute(fPermissionsIndex, struct {
+	err = tmpl.ExecuteTemplate(fPermissionsIndex, "permissions.html", struct {
 		Items []struct {
 			Permission string
 		}
@@ -332,8 +314,8 @@ func generateHTML() error {
 
 	homeData := struct{}{}
 
-	// Generate Home Index Page using the parsed homeTpl
-	err = homeTpl.Execute(fHomeIndex, homeData)
+	// Execute the "index.html" template
+	err = tmpl.ExecuteTemplate(fHomeIndex, "index.html", homeData)
 	if err != nil {
 		return fmt.Errorf("failed to execute home template: %v", err)
 	}
