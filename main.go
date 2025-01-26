@@ -6,6 +6,7 @@ import (
 	"flag"
 	"fmt"
 	"html/template"
+	"io"
 	"log"
 	"os"
 	"path/filepath"
@@ -134,6 +135,11 @@ func generateHTML() error {
 		return fmt.Errorf("failed to create permissions HTML directory: %v", err)
 	}
 
+	// Copy style.css to the output directory
+	if err := copyFile("assets/style.css", filepath.Join(htmlDir, "style.css")); err != nil {
+		log.Fatalf("Error copying style.css: %v", err)
+	}
+
 	// Read all JSON files from the iam directory
 	roleFiles, err := filepath.Glob(filepath.Join(iamDir, "*.json"))
 	if err != nil {
@@ -185,36 +191,35 @@ func generateHTML() error {
 		permissionIndex[perm] = rolesWithPerm
 	}
 
-	// Define template functions
-	funcMap := template.FuncMap{
-		"safeFilename": safeFilename,
-	}
-
-	// Generate HTML templates with function map
-	roleTemplate, err := template.New("role").Funcs(funcMap).Parse(roleHTMLTemplate)
-	if err != nil {
-		return fmt.Errorf("failed to parse role template: %v", err)
-	}
-
-	permissionTemplate, err := template.New("permission").Funcs(funcMap).Parse(permissionHTMLTemplate)
-	if err != nil {
-		return fmt.Errorf("failed to parse permission template: %v", err)
-	}
-
-	indexTemplate, err := template.New("index").Funcs(funcMap).Parse(indexHTMLTemplate)
+	// Load HTML templates
+	homeTpl, err := template.ParseFiles("templates/index.html")
 	if err != nil {
 		return fmt.Errorf("failed to parse index template: %v", err)
 	}
 
-	// Parse homeTemplate into a template.Template
-	homeTpl, err := template.New("home").Funcs(funcMap).Parse(homeTemplate)
+	permissionTemplate, err := template.ParseFiles("templates/permission.html")
 	if err != nil {
-		return fmt.Errorf("failed to parse home template: %v", err)
+		return fmt.Errorf("failed to parse permission template: %v", err)
+	}
+
+	permissionsTemplate, err := template.ParseFiles("templates/permissions.html")
+	if err != nil {
+		return fmt.Errorf("failed to parse permissions template: %v", err)
+	}
+
+	roleTemplate, err := template.ParseFiles("templates/role.html")
+	if err != nil {
+		return fmt.Errorf("failed to parse role template: %v", err)
+	}
+
+	rolesTemplate, err := template.ParseFiles("templates/roles.html")
+	if err != nil {
+		return fmt.Errorf("failed to parse roles template: %v", err)
 	}
 
 	// Generate Role Pages
 	for _, role := range roles {
-		filename := strings.ReplaceAll(role.Name, "/", "-") + ".html"
+		filename := strings.ReplaceAll(role.Name, "roles/", "") + ".html"
 		filePath := filepath.Join(rolesHTMLDir, filename)
 
 		f, err := os.Create(filePath)
@@ -237,7 +242,7 @@ func generateHTML() error {
 	// Generate Permission Pages
 	for perm, rolesWithPerm := range permissionIndex {
 		// Replace "/" with "-" for filename
-		filename := "permission-" + strings.ReplaceAll(perm, "/", "-") + ".html"
+		filename := strings.ReplaceAll(perm, "/", "-") + ".html"
 		filePath := filepath.Join(permissionsHTMLDir, filename)
 
 		data := struct {
@@ -273,14 +278,10 @@ func generateHTML() error {
 	}
 	defer fRolesIndex.Close()
 
-	err = indexTemplate.Execute(fRolesIndex, struct {
-		Title string
+	err = rolesTemplate.Execute(fRolesIndex, struct {
 		Items []Role
-		Path  string
 	}{
-		Title: "Roles",
 		Items: roles,
-		Path:  "roles",
 	})
 	if err != nil {
 		return fmt.Errorf("failed to execute roles index template: %v", err)
@@ -309,16 +310,12 @@ func generateHTML() error {
 	}
 	defer fPermissionsIndex.Close()
 
-	err = indexTemplate.Execute(fPermissionsIndex, struct {
-		Title string
+	err = permissionsTemplate.Execute(fPermissionsIndex, struct {
 		Items []struct {
 			Permission string
 		}
-		Path string
 	}{
-		Title: "Permissions",
 		Items: permissionsList,
-		Path:  "permissions",
 	})
 	if err != nil {
 		return fmt.Errorf("failed to execute permissions index template: %v", err)
@@ -333,11 +330,7 @@ func generateHTML() error {
 	}
 	defer fHomeIndex.Close()
 
-	homeData := struct {
-		Title string
-	}{
-		Title: "GCP IAM Catalog",
-	}
+	homeData := struct{}{}
 
 	// Generate Home Index Page using the parsed homeTpl
 	err = homeTpl.Execute(fHomeIndex, homeData)
@@ -408,256 +401,20 @@ func getRoleDetails(ctx context.Context, iamService *iam.Service, roleName strin
 	return detailedRole, nil
 }
 
-// safeFilename replaces "/" with "-" to ensure valid filenames
-func safeFilename(s string) string {
-	return strings.ReplaceAll(s, "/", "-")
+// copyFile copies a file from source to destination.
+func copyFile(source, destination string) error {
+	srcFile, err := os.Open(source)
+	if err != nil {
+		return err
+	}
+	defer srcFile.Close()
+
+	destFile, err := os.Create(destination)
+	if err != nil {
+		return err
+	}
+	defer destFile.Close()
+
+	_, err = io.Copy(destFile, srcFile)
+	return err
 }
-
-// HTML Templates
-
-const roleHTMLTemplate = `
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <title>{{.Title}} ({{.Name}})</title>
-    <style>
-        /* Basic styling for navigation */
-        .navbar {
-            overflow: hidden;
-            background-color: #333;
-            margin-bottom: 20px;
-        }
-
-        .navbar a {
-            float: left;
-            display: block;
-            color: #f2f2f2;
-            text-align: center;
-            padding: 14px 20px;
-            text-decoration: none;
-        }
-
-        .navbar a:hover {
-            background-color: #ddd;
-            color: black;
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-        }
-
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        li {
-            margin: 5px 0;
-        }
-    </style>
-</head>
-<body>
-    <!-- Navigation Bar -->
-    <div class="navbar">
-        <a href="../index.html">Home</a>
-        <a href="../roles.html">Roles</a>
-        <a href="../permissions.html">Permissions</a>
-    </div>
-
-    <h1>{{.Title}} ({{.Name}})</h1>
-    <p><strong>Description:</strong> {{.Description}}</p>
-    <p><strong>Stage:</strong> {{.Stage}}</p>
-    <h2>Included Permissions</h2>
-    <ul>
-        {{range .IncludedPermissions}}
-            <li><a href="../permissions/permission-{{. | safeFilename}}.html">{{.}}</a></li>
-        {{end}}
-    </ul>
-</body>
-</html>
-`
-
-const permissionHTMLTemplate = `
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <title>Permission: {{.Permission}}</title>
-    <style>
-        /* Basic styling for navigation */
-        .navbar {
-            overflow: hidden;
-            background-color: #333;
-            margin-bottom: 20px;
-        }
-
-        .navbar a {
-            float: left;
-            display: block;
-            color: #f2f2f2;
-            text-align: center;
-            padding: 14px 20px;
-            text-decoration: none;
-        }
-
-        .navbar a:hover {
-            background-color: #ddd;
-            color: black;
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-        }
-
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        li {
-            margin: 5px 0;
-        }
-    </style>
-</head>
-<body>
-    <!-- Navigation Bar -->
-    <div class="navbar">
-        <a href="../index.html">Home</a>
-        <a href="../roles.html">Roles</a>
-        <a href="../permissions.html">Permissions</a>
-    </div>
-
-    <h1>Permission: {{.Permission}}</h1>
-    <h2>Roles with this Permission</h2>
-    <ul>
-        {{range .Roles}}
-            <li><a href="../roles/{{. | safeFilename}}.html">{{.}}</a></li>
-        {{end}}
-    </ul>
-</body>
-</html>
-`
-
-const indexHTMLTemplate = `
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <title>{{.Title}} Index</title>
-    <style>
-        /* Basic styling for navigation */
-        .navbar {
-            overflow: hidden;
-            background-color: #333;
-            margin-bottom: 20px;
-        }
-
-        .navbar a {
-            float: left;
-            display: block;
-            color: #f2f2f2;
-            text-align: center;
-            padding: 14px 20px;
-            text-decoration: none;
-        }
-
-        .navbar a:hover {
-            background-color: #ddd;
-            color: black;
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-        }
-
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        li {
-            margin: 5px 0;
-        }
-    </style>
-</head>
-<body>
-    <!-- Navigation Bar -->
-    <div class="navbar">
-        <a href="index.html">Home</a>
-        <a href="roles.html">Roles</a>
-        <a href="permissions.html">Permissions</a>
-    </div>
-
-    <h1>{{.Title}} Index</h1>
-    <ul>
-        {{range .Items}}
-            {{if eq $.Path "roles"}}
-                <li><a href="{{$.Path}}/{{.Name | safeFilename}}.html">{{.Title}} ({{.Name}})</a></li>
-            {{else if eq $.Path "permissions"}}
-                <li><a href="{{$.Path}}/permission-{{.Permission | safeFilename}}.html">{{.Permission}}</a></li>
-            {{end}}
-        {{end}}
-    </ul>
-</body>
-</html>
-`
-
-const homeTemplate = `
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <title>{{.Title}}</title>
-    <style>
-        /* Basic styling for navigation */
-        .navbar {
-            overflow: hidden;
-            background-color: #333;
-            margin-bottom: 20px;
-        }
-
-        .navbar a {
-            float: left;
-            display: block;
-            color: #f2f2f2;
-            text-align: center;
-            padding: 14px 20px;
-            text-decoration: none;
-        }
-
-        .navbar a:hover {
-            background-color: #ddd;
-            color: black;
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-        }
-
-        h1 {
-            color: #333;
-        }
-
-        p {
-            font-size: 1.1em;
-        }
-    </style>
-</head>
-<body>
-    <!-- Navigation Bar -->
-    <div class="navbar">
-        <a href="index.html">Home</a>
-        <a href="roles.html">Roles</a>
-        <a href="permissions.html">Permissions</a>
-    </div>
-
-    <h1>Welcome to the {{.Title}}</h1>
-    <p>This catalog provides a comprehensive overview of Google Cloud Platform (GCP) IAM roles and permissions. Use the navigation links above to explore Roles and Permissions in detail.</p>
-</body>
-</html>
-`

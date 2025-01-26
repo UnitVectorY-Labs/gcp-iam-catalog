@@ -1,0 +1,43 @@
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    margin-bottom: 20px;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+a {
+    display: block;
+    color: #3b82f6;
+    text-decoration: none;
+    transition: background-color 0.2s;
+}
+
+a:hover {
+    color: #1e40af;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+h1 {
+    color: #333;
+}
+
+p {
+    font-size: 1.1em;
+}

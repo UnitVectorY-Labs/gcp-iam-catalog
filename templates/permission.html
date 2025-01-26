@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Permission: {{.Permission}}</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <a href="../index.html">gcp-iam-catalog</a>
+        <a href="../roles.html">Roles</a>
+        <a href="../permissions.html">Permissions</a>
+    </div>
+
+    <h1>Permission: {{.Permission}}</h1>
+    <h2>Roles with this Permission</h2>
+    <ul>
+        {{range .Roles}}
+            <li><a href="../{{.}}.html">{{.}}</a></li>
+        {{end}}
+    </ul>
+</body>
+</html>
