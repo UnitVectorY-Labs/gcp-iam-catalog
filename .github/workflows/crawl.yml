@@ -2,6 +2,8 @@ name: gcp-iam-catalog crawl
 
 # Triggered manually via the "Run workflow" button
 on:
+  schedule:
+    - cron: 0 11 * * 1
   workflow_dispatch:
 
 jobs:
