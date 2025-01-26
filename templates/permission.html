@@ -16,7 +16,11 @@
 
     <main>
         <section class="permission-detail">
-            <h1 class="permission-name">{{.Permission}}</h1>
+            <h1 class="permission-name">
+                <span id="permission-id">{{.Permission}}</span>
+                <button class="copy-button" onclick="copyPermission()" aria-label="Copy Permission">📋 Copy</button>
+            </h1>
+
             <h2>{{.RoleCount}} Roles Assign this Permission:</h2>
             <ul class="item-list">
                 {{range .Roles}}
@@ -27,5 +31,16 @@
     </main>
 
     {{template "footer"}}
+
+                
+    <script>
+        function copyPermission() {
+            const permission = document.getElementById('permission-id').textContent.trim();
+            navigator.clipboard.writeText(permission)
+                .catch(err => {
+                    console.error('Error copying text: ', err);
+                });
+        }
+    </script>
 </body>
 </html>

@@ -16,7 +16,10 @@
 
     <main>
         <section class="role-detail">
-            <h1 class="role-name">{{.Name}}</h1>
+            <h1 class="role-name">
+                <span id="role-id">{{.Name}}</span>
+                <button class="copy-button" onclick="copyRole()" aria-label="Copy Role">📋 Copy</button>
+            </h1>
             <p><strong>Title:</strong> {{.Title}}</p>
             <p><strong>Description:</strong> {{.Description}}</p>
             <p><strong>Stage:</strong> {{.Stage}}</p>
@@ -31,5 +34,15 @@
     </main>
 
     {{template "footer"}}
+
+    <script>
+        function copyRole() {
+            const permission = document.getElementById('role-id').textContent.trim();
+            navigator.clipboard.writeText(permission)
+                .catch(err => {
+                    console.error('Error copying text: ', err);
+                });
+        }
+    </script>
 </body>
 </html>
