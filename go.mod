@@ -1,4 +1,4 @@
-module gcp-iam-catalog
+module github.com/UnitVectorY-Labs/gcp-iam-catalog
 
 go 1.23.5
 
