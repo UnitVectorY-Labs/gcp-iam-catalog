@@ -15,7 +15,7 @@
 
     <main>
         <section class="role-detail">
-            <h1>{{.Name}}</h1>
+            <h1 class="role-name">{{.Name}}</h1>
             <p><strong>Title:</strong> {{.Title}}</p>
             <p><strong>Description:</strong> {{.Description}}</p>
             <p><strong>Stage:</strong> {{.Stage}}</p>
@@ -23,7 +23,7 @@
             <h2>Included Permissions:</h2>
             <ul class="item-list">
                 {{range .IncludedPermissions}}
-                    <li><a href="../permissions/{{.}}.html">{{.}}</a></li>
+                    <li><a href="../permissions/{{.}}.html" class="permission-name">{{.}}</a></li>
                 {{end}}
             </ul>
         </section>

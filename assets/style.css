@@ -51,23 +51,6 @@ a:hover {
     background-color: rgba(255, 255, 255, 0.3);
 }
 
-/* Breadcrumbs */
-.breadcrumb {
-    background-color: #e9ecef;
-    padding: 10px 20px;
-    margin: 10px 20px;
-    border-radius: 4px;
-    font-size: 0.9em;
-}
-
-.breadcrumb a {
-    color: #1a73e8;
-}
-
-.breadcrumb span {
-    color: #6c757d;
-}
-
 /* Main Content */
 main {
     flex: 1;
@@ -153,6 +136,11 @@ ul.item-list li a:hover {
     font-weight: bold;
 }
 
+.role-name, .permission-name {
+    word-break: break-word;
+    overflow-wrap: break-word;
+}
+
 /* Footer */
 footer {
     background-color: #1a73e8;
@@ -169,27 +157,4 @@ footer a {
 
 footer a:hover {
     text-decoration: underline; /* Optional: Adds underline on hover for footer links */
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .navbar {
-        flex-direction: row; /* Changed from column to row to keep links side-by-side */
-        justify-content: flex-start; /* Ensure alignment remains left */
-    }
-
-    .navbar a {
-        margin-left: 0; /* Remove any left margin */
-        margin-right: 20px; /* Maintain right margin for spacing */
-        margin-top: 0; /* Remove top margin */
-    }
-
-    .breadcrumb {
-        margin: 10px;
-        padding: 8px 15px;
-    }
-
-    section {
-        padding: 20px;
-    }
 }
