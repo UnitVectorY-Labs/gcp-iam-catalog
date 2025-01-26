@@ -1,7 +1,6 @@
 # Created by https://www.toptal.com/developers/gitignore/api/macos,eclipse,windows,intellij,visualstudiocode,go
 # Edit at https://www.toptal.com/developers/gitignore?templates=macos,eclipse,windows,intellij,visualstudiocode,go
 
-output
 html
 
 ### Eclipse ###

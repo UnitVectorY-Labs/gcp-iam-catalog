@@ -206,6 +206,12 @@ func generateHTML() error {
 		return fmt.Errorf("failed to parse index template: %v", err)
 	}
 
+	// Parse homeTemplate into a template.Template
+	homeTpl, err := template.New("home").Funcs(funcMap).Parse(homeTemplate)
+	if err != nil {
+		return fmt.Errorf("failed to parse home template: %v", err)
+	}
+
 	// Generate Role Pages
 	for _, role := range roles {
 		filename := strings.ReplaceAll(role.Name, "/", "-") + ".html"
@@ -319,6 +325,27 @@ func generateHTML() error {
 	}
 	log.Printf("Generated Permissions Index at %s", permissionsIndexPath)
 
+	// Generate Home Index Page
+	homeIndexPath := filepath.Join(htmlDir, "index.html")
+	fHomeIndex, err := os.Create(homeIndexPath)
+	if err != nil {
+		return fmt.Errorf("failed to create home index HTML file: %v", err)
+	}
+	defer fHomeIndex.Close()
+
+	homeData := struct {
+		Title string
+	}{
+		Title: "GCP IAM Catalog",
+	}
+
+	// Generate Home Index Page using the parsed homeTpl
+	err = homeTpl.Execute(fHomeIndex, homeData)
+	if err != nil {
+		return fmt.Errorf("failed to execute home template: %v", err)
+	}
+	log.Printf("Generated Home Index at %s", homeIndexPath)
+
 	fmt.Printf("HTML generation completed. Check the '%s' directory for generated HTML files.\n", htmlDir)
 	return nil
 }
@@ -394,8 +421,51 @@ const roleHTMLTemplate = `
 <head>
     <meta charset="UTF-8">
     <title>{{.Title}} ({{.Name}})</title>
+    <style>
+        /* Basic styling for navigation */
+        .navbar {
+            overflow: hidden;
+            background-color: #333;
+            margin-bottom: 20px;
+        }
+
+        .navbar a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin: 5px 0;
+        }
+    </style>
 </head>
 <body>
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <a href="../index.html">Home</a>
+        <a href="../roles.html">Roles</a>
+        <a href="../permissions.html">Permissions</a>
+    </div>
+
     <h1>{{.Title}} ({{.Name}})</h1>
     <p><strong>Description:</strong> {{.Description}}</p>
     <p><strong>Stage:</strong> {{.Stage}}</p>
@@ -405,8 +475,6 @@ const roleHTMLTemplate = `
             <li><a href="../permissions/permission-{{. | safeFilename}}.html">{{.}}</a></li>
         {{end}}
     </ul>
-    <p><a href="../roles.html">Back to Roles Index</a></p>
-    <p><a href="../permissions.html">View Permissions Index</a></p>
 </body>
 </html>
 `
@@ -417,8 +485,51 @@ const permissionHTMLTemplate = `
 <head>
     <meta charset="UTF-8">
     <title>Permission: {{.Permission}}</title>
+    <style>
+        /* Basic styling for navigation */
+        .navbar {
+            overflow: hidden;
+            background-color: #333;
+            margin-bottom: 20px;
+        }
+
+        .navbar a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin: 5px 0;
+        }
+    </style>
 </head>
 <body>
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <a href="../index.html">Home</a>
+        <a href="../roles.html">Roles</a>
+        <a href="../permissions.html">Permissions</a>
+    </div>
+
     <h1>Permission: {{.Permission}}</h1>
     <h2>Roles with this Permission</h2>
     <ul>
@@ -426,8 +537,6 @@ const permissionHTMLTemplate = `
             <li><a href="../roles/{{. | safeFilename}}.html">{{.}}</a></li>
         {{end}}
     </ul>
-    <p><a href="../permissions.html">Back to Permissions Index</a></p>
-    <p><a href="../roles.html">View Roles Index</a></p>
 </body>
 </html>
 `
@@ -438,8 +547,51 @@ const indexHTMLTemplate = `
 <head>
     <meta charset="UTF-8">
     <title>{{.Title}} Index</title>
+    <style>
+        /* Basic styling for navigation */
+        .navbar {
+            overflow: hidden;
+            background-color: #333;
+            margin-bottom: 20px;
+        }
+
+        .navbar a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin: 5px 0;
+        }
+    </style>
 </head>
 <body>
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="roles.html">Roles</a>
+        <a href="permissions.html">Permissions</a>
+    </div>
+
     <h1>{{.Title}} Index</h1>
     <ul>
         {{range .Items}}
@@ -450,8 +602,62 @@ const indexHTMLTemplate = `
             {{end}}
         {{end}}
     </ul>
-    <p><a href="roles.html">View Roles Index</a></p>
-    <p><a href="permissions.html">View Permissions Index</a></p>
+</body>
+</html>
+`
+
+const homeTemplate = `
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>{{.Title}}</title>
+    <style>
+        /* Basic styling for navigation */
+        .navbar {
+            overflow: hidden;
+            background-color: #333;
+            margin-bottom: 20px;
+        }
+
+        .navbar a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        p {
+            font-size: 1.1em;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="roles.html">Roles</a>
+        <a href="permissions.html">Permissions</a>
+    </div>
+
+    <h1>Welcome to the {{.Title}}</h1>
+    <p>This catalog provides a comprehensive overview of Google Cloud Platform (GCP) IAM roles and permissions. Use the navigation links above to explore Roles and Permissions in detail.</p>
 </body>
 </html>
 `
