@@ -32,5 +32,4 @@ This application is written in Go for both the data collection and site generati
 - **Role-to-Permission Mapping:** Easily view all permissions associated with each IAM role.
 - **Permission-to-Role Mapping:** Identify all roles that grant a specific permission.
 - **Automated Updates:** The catalog is updated weekly with the latest data from GCP.
-- **Search Functionality:** Quickly search for roles or permissions within the catalog.
-- **Hosted on GitHub Pages:** Accessible anytime without the need to run any application locally.
+- **Search Functionality:** Quickly search for roles or permissions.
