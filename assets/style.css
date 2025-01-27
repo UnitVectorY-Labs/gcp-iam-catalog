@@ -15,7 +15,7 @@ body {
 }
 
 a {
-    color: #1a73e8;
+    color: #3b82f6;
     text-decoration: none;
 }
 
@@ -24,7 +24,7 @@ a:hover {
 }
 
 .navbar {
-    background-color: #1a73e8;
+    background-color: #3b82f6;
     color: #fff;
     padding: 15px 20px;
     display: flex;
@@ -110,7 +110,7 @@ ul.item-list li a:hover {
 }
 
 .search-container input[type="text"]:focus {
-    border-color: #1a73e8;
+    border-color: #3b82f6;
 }
 
 .home .features, .home .getting-started {
@@ -127,7 +127,7 @@ ul.item-list li a:hover {
 }
 
 .home .getting-started a {
-    color: #1a73e8;
+    color: #3b82f6;
     font-weight: bold;
 }
 
@@ -160,18 +160,20 @@ copy-button:focus {
 }
 
 footer {
-    background-color: #1a73e8;
-    color: #fff;
+    background-color: #2c3e50; 
+    color: #ecf0f1;
+    font-size: 0.8em;
+    padding: 1rem;
+    border-top: 1px solid #e5e7eb;
     text-align: center;
-    padding: 20px;
     margin-top: auto;
-    font-size: 0.9em;
 }
 
 footer a {
-    color: #fff;
+    color: #9ca3af;
+    text-decoration: none;
 }
 
 footer a:hover {
-    text-decoration: underline;
+    text-decoration: none;
 }
