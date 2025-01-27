@@ -12,6 +12,5 @@
     "securityposture.postures.get",
     "securityposture.postures.list"
   ],
-  "stage": "GA",
-  "PermissionCount": 0
+  "stage": "GA"
 }

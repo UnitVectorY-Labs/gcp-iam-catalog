@@ -13,6 +13,5 @@
     "riskmanager.reports.list",
     "riskmanager.reports.review"
   ],
-  "stage": "BETA",
-  "PermissionCount": 0
+  "stage": "BETA"
 }

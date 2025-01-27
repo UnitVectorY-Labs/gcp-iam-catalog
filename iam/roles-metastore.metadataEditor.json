@@ -18,6 +18,5 @@
     "metastore.tables.list",
     "metastore.tables.update"
   ],
-  "stage": "GA",
-  "PermissionCount": 0
+  "stage": "GA"
 }

@@ -6,6 +6,5 @@
     "logging.logEntries.create",
     "logging.logEntries.route"
   ],
-  "stage": "GA",
-  "PermissionCount": 0
+  "stage": "GA"
 }

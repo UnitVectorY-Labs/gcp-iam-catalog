@@ -6,6 +6,5 @@
     "cloudprofiler.profiles.create",
     "cloudprofiler.profiles.update"
   ],
-  "stage": "GA",
-  "PermissionCount": 0
+  "stage": "GA"
 }

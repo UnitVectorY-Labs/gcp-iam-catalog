@@ -7,6 +7,5 @@
     "policyanalyzer.serviceAccountKeyLastAuthenticationActivities.query",
     "policyanalyzer.serviceAccountLastAuthenticationActivities.query"
   ],
-  "stage": "BETA",
-  "PermissionCount": 0
+  "stage": "BETA"
 }

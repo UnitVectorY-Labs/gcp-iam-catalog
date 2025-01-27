@@ -43,6 +43,5 @@
     "ml.versions.update",
     "resourcemanager.projects.get"
   ],
-  "stage": "GA",
-  "PermissionCount": 0
+  "stage": "GA"
 }

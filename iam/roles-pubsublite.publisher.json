@@ -7,6 +7,5 @@
     "pubsublite.topics.getPartitions",
     "pubsublite.topics.publish"
   ],
-  "stage": "GA",
-  "PermissionCount": 0
+  "stage": "GA"
 }

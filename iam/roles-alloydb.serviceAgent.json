@@ -5,6 +5,5 @@
   "included_permissions": [
     "alloydb.clusters.list"
   ],
-  "stage": "GA",
-  "PermissionCount": 0
+  "stage": "GA"
 }

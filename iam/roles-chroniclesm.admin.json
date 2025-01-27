@@ -12,6 +12,5 @@
     "chroniclesm.gcpSettings.get",
     "chroniclesm.gcpSettings.update"
   ],
-  "stage": "GA",
-  "PermissionCount": 0
+  "stage": "GA"
 }

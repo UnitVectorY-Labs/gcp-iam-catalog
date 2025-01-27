@@ -9,6 +9,5 @@
     "dialogflow.integrations.list",
     "dialogflow.integrations.update"
   ],
-  "stage": "GA",
-  "PermissionCount": 0
+  "stage": "GA"
 }

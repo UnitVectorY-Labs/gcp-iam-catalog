@@ -5,6 +5,5 @@
   "included_permissions": [
     "privateca.caPools.get"
   ],
-  "stage": "GA",
-  "PermissionCount": 0
+  "stage": "GA"
 }

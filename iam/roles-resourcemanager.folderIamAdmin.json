@@ -13,6 +13,5 @@
     "resourcemanager.folders.setIamPolicy",
     "resourcemanager.folders.updatePolicyBinding"
   ],
-  "stage": "GA",
-  "PermissionCount": 0
+  "stage": "GA"
 }

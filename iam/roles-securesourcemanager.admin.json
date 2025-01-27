@@ -46,6 +46,5 @@
     "securesourcemanager.sshkeys.list",
     "securesourcemanager.sshkeys.listAny"
   ],
-  "stage": "BETA",
-  "PermissionCount": 0
+  "stage": "BETA"
 }

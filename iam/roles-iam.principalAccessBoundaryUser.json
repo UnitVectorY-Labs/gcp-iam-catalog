@@ -8,6 +8,5 @@
     "iam.principalaccessboundarypolicies.list",
     "iam.principalaccessboundarypolicies.unbind"
   ],
-  "stage": "BETA",
-  "PermissionCount": 0
+  "stage": "BETA"
 }

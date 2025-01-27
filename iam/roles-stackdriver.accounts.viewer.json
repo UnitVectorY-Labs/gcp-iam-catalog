@@ -7,6 +7,5 @@
     "resourcemanager.projects.list",
     "stackdriver.projects.get"
   ],
-  "stage": "GA",
-  "PermissionCount": 0
+  "stage": "GA"
 }

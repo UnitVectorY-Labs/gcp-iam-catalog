@@ -7,6 +7,5 @@
     "networksecurity.mirroringEndpointGroups.list",
     "networksecurity.mirroringEndpointGroups.use"
   ],
-  "stage": "BETA",
-  "PermissionCount": 0
+  "stage": "BETA"
 }

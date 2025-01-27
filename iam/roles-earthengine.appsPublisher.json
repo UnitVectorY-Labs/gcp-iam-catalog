@@ -12,6 +12,5 @@
     "resourcemanager.projects.get",
     "serviceusage.services.get"
   ],
-  "stage": "BETA",
-  "PermissionCount": 0
+  "stage": "BETA"
 }

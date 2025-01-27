@@ -11,6 +11,5 @@
     "workstations.workstationConfigs.get",
     "workstations.workstations.create"
   ],
-  "stage": "GA",
-  "PermissionCount": 0
+  "stage": "GA"
 }

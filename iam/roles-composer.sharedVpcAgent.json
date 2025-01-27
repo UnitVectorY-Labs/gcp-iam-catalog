@@ -29,6 +29,5 @@
     "dns.managedZones.list",
     "dns.networks.targetWithPeeringZone"
   ],
-  "stage": "GA",
-  "PermissionCount": 0
+  "stage": "GA"
 }

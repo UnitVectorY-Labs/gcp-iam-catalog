@@ -5,6 +5,5 @@
   "included_permissions": [
     "gkehub.endpoints.connect"
   ],
-  "stage": "GA",
-  "PermissionCount": 0
+  "stage": "GA"
 }

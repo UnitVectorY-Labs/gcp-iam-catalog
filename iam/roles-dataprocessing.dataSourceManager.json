@@ -6,6 +6,5 @@
     "dataprocessing.datasources.list",
     "dataprocessing.datasources.update"
   ],
-  "stage": "GA",
-  "PermissionCount": 0
+  "stage": "GA"
 }

@@ -9,6 +9,5 @@
     "storage.objects.list",
     "storage.objects.update"
   ],
-  "stage": "BETA",
-  "PermissionCount": 0
+  "stage": "BETA"
 }

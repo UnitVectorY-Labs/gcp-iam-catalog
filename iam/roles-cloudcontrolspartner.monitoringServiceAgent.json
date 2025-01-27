@@ -6,6 +6,5 @@
     "assuredworkloads.violations.get",
     "assuredworkloads.violations.list"
   ],
-  "stage": "GA",
-  "PermissionCount": 0
+  "stage": "GA"
 }

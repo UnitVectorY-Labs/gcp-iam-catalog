@@ -112,6 +112,5 @@
     "compute.zoneOperations.get",
     "iam.serviceAccounts.actAs"
   ],
-  "stage": "GA",
-  "PermissionCount": 0
+  "stage": "GA"
 }

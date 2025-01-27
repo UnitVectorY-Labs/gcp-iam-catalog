@@ -6,6 +6,5 @@
     "securitycenter.complianceReports.aggregate",
     "securitycenter.compliancesnapshots.list"
   ],
-  "stage": "BETA",
-  "PermissionCount": 0
+  "stage": "BETA"
 }

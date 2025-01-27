@@ -5,6 +5,5 @@
   "included_permissions": [
     "telemetry.traces.write"
   ],
-  "stage": "BETA",
-  "PermissionCount": 0
+  "stage": "BETA"
 }

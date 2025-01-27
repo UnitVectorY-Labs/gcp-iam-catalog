@@ -12,6 +12,5 @@
     "gkebackup.volumeRestores.get",
     "gkebackup.volumeRestores.list"
   ],
-  "stage": "GA",
-  "PermissionCount": 0
+  "stage": "GA"
 }

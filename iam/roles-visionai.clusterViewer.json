@@ -6,6 +6,5 @@
     "visionai.clusters.get",
     "visionai.clusters.list"
   ],
-  "stage": "BETA",
-  "PermissionCount": 0
+  "stage": "BETA"
 }

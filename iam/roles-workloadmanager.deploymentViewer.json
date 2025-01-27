@@ -10,6 +10,5 @@
     "workloadmanager.deployments.get",
     "workloadmanager.deployments.list"
   ],
-  "stage": "BETA",
-  "PermissionCount": 0
+  "stage": "BETA"
 }

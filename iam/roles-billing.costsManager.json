@@ -23,6 +23,5 @@
     "recommender.costInsights.list",
     "recommender.costInsights.update"
   ],
-  "stage": "GA",
-  "PermissionCount": 0
+  "stage": "GA"
 }

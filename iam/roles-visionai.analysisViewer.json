@@ -6,6 +6,5 @@
     "visionai.analyses.get",
     "visionai.analyses.list"
   ],
-  "stage": "BETA",
-  "PermissionCount": 0
+  "stage": "BETA"
 }

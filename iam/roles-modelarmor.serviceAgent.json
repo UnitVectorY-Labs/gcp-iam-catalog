@@ -21,6 +21,5 @@
     "dlp.storedInfoTypes.list",
     "serviceusage.services.use"
   ],
-  "stage": "GA",
-  "PermissionCount": 0
+  "stage": "GA"
 }

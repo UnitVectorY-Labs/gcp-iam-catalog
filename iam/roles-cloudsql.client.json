@@ -6,6 +6,5 @@
     "cloudsql.instances.connect",
     "cloudsql.instances.get"
   ],
-  "stage": "GA",
-  "PermissionCount": 0
+  "stage": "GA"
 }

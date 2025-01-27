@@ -10,6 +10,5 @@
     "visionai.clusters.update",
     "visionai.clusters.watch"
   ],
-  "stage": "BETA",
-  "PermissionCount": 0
+  "stage": "BETA"
 }

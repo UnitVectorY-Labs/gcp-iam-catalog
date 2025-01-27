@@ -5,6 +5,5 @@
   "included_permissions": [
     "datastore.entities.get"
   ],
-  "stage": "GA",
-  "PermissionCount": 0
+  "stage": "GA"
 }

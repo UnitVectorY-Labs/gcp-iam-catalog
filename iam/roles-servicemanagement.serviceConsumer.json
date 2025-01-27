@@ -5,6 +5,5 @@
   "included_permissions": [
     "servicemanagement.services.bind"
   ],
-  "stage": "GA",
-  "PermissionCount": 0
+  "stage": "GA"
 }

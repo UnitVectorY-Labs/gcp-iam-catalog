@@ -7,6 +7,5 @@
     "pubsub.subscriptions.consume",
     "pubsub.topics.attachSubscription"
   ],
-  "stage": "GA",
-  "PermissionCount": 0
+  "stage": "GA"
 }

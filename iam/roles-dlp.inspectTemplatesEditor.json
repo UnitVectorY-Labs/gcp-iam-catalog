@@ -9,6 +9,5 @@
     "dlp.inspectTemplates.list",
     "dlp.inspectTemplates.update"
   ],
-  "stage": "GA",
-  "PermissionCount": 0
+  "stage": "GA"
 }

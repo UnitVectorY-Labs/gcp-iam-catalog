@@ -5,6 +5,5 @@
   "included_permissions": [
     "cloudsql.schemas.view"
   ],
-  "stage": "GA",
-  "PermissionCount": 0
+  "stage": "GA"
 }

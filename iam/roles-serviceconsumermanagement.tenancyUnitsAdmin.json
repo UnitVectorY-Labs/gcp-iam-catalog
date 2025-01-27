@@ -9,6 +9,5 @@
     "serviceconsumermanagement.tenancyu.list",
     "serviceconsumermanagement.tenancyu.removeResource"
   ],
-  "stage": "BETA",
-  "PermissionCount": 0
+  "stage": "BETA"
 }

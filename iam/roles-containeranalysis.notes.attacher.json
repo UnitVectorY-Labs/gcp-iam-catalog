@@ -6,6 +6,5 @@
     "containeranalysis.notes.attachOccurrence",
     "containeranalysis.notes.get"
   ],
-  "stage": "GA",
-  "PermissionCount": 0
+  "stage": "GA"
 }

@@ -5,6 +5,5 @@
   "included_permissions": [
     "chat.bots.get"
   ],
-  "stage": "GA",
-  "PermissionCount": 0
+  "stage": "GA"
 }

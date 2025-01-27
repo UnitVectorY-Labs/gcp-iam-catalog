@@ -6,6 +6,5 @@
     "cloudmigration.velostrataendpoints.connect",
     "gkehub.endpoints.connect"
   ],
-  "stage": "BETA",
-  "PermissionCount": 0
+  "stage": "BETA"
 }

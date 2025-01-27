@@ -5,6 +5,5 @@
   "included_permissions": [
     "firebasedataconnect.services.executeGraphqlRead"
   ],
-  "stage": "BETA",
-  "PermissionCount": 0
+  "stage": "BETA"
 }

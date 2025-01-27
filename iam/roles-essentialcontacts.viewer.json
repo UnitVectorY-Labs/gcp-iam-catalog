@@ -6,6 +6,5 @@
     "essentialcontacts.contacts.get",
     "essentialcontacts.contacts.list"
   ],
-  "stage": "GA",
-  "PermissionCount": 0
+  "stage": "GA"
 }

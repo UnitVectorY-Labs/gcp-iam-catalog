@@ -10,6 +10,5 @@
     "securitycenter.resourcevalueconfigs.list",
     "securitycenter.resourcevalueconfigs.update"
   ],
-  "stage": "GA",
-  "PermissionCount": 0
+  "stage": "GA"
 }

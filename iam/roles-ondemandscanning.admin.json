@@ -12,6 +12,5 @@
     "ondemandscanning.scans.listVulnerabilities",
     "ondemandscanning.scans.scan"
   ],
-  "stage": "BETA",
-  "PermissionCount": 0
+  "stage": "BETA"
 }

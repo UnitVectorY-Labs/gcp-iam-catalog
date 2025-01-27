@@ -46,6 +46,5 @@
     "notebooks.instances.delete",
     "notebooks.instances.get"
   ],
-  "stage": "GA",
-  "PermissionCount": 0
+  "stage": "GA"
 }

@@ -5,6 +5,5 @@
   "included_permissions": [
     "meshconfig.projects.init"
   ],
-  "stage": "BETA",
-  "PermissionCount": 0
+  "stage": "BETA"
 }

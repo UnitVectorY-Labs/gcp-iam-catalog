@@ -6,6 +6,5 @@
     "bigquery.dataPolicies.get",
     "bigquery.dataPolicies.list"
   ],
-  "stage": "GA",
-  "PermissionCount": 0
+  "stage": "GA"
 }

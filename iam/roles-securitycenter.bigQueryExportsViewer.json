@@ -11,6 +11,5 @@
     "securitycenter.bigQueryExports.get",
     "securitycenter.bigQueryExports.list"
   ],
-  "stage": "GA",
-  "PermissionCount": 0
+  "stage": "GA"
 }

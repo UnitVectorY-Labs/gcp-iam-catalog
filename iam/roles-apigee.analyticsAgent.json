@@ -7,6 +7,5 @@
     "apigee.environments.getDataLocation",
     "apigee.runtimeconfigs.get"
   ],
-  "stage": "GA",
-  "PermissionCount": 0
+  "stage": "GA"
 }

@@ -26,6 +26,5 @@
     "securitycenter.sources.update",
     "serviceusage.services.use"
   ],
-  "stage": "GA",
-  "PermissionCount": 0
+  "stage": "GA"
 }

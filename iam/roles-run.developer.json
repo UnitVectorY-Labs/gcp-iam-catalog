@@ -68,6 +68,5 @@
     "run.tasks.get",
     "run.tasks.list"
   ],
-  "stage": "GA",
-  "PermissionCount": 0
+  "stage": "GA"
 }

@@ -6,6 +6,5 @@
     "monitoring.alertPolicies.get",
     "monitoring.alertPolicies.list"
   ],
-  "stage": "GA",
-  "PermissionCount": 0
+  "stage": "GA"
 }

@@ -11,6 +11,5 @@
     "cloudsql.users.create",
     "cloudsql.users.get"
   ],
-  "stage": "GA",
-  "PermissionCount": 0
+  "stage": "GA"
 }

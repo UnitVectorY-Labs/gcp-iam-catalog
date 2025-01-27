@@ -7,6 +7,5 @@
     "observability.analyticsViews.list",
     "observability.scopes.get"
   ],
-  "stage": "BETA",
-  "PermissionCount": 0
+  "stage": "BETA"
 }

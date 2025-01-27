@@ -23,6 +23,5 @@
     "resourcemanager.projects.list",
     "telemetry.traces.write"
   ],
-  "stage": "GA",
-  "PermissionCount": 0
+  "stage": "GA"
 }

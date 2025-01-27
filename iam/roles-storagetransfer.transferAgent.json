@@ -18,6 +18,5 @@
     "storagetransfer.operations.get",
     "storagetransfer.operations.report"
   ],
-  "stage": "GA",
-  "PermissionCount": 0
+  "stage": "GA"
 }

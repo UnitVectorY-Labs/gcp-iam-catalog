@@ -8,6 +8,5 @@
     "monitoring.snoozes.list",
     "monitoring.snoozes.update"
   ],
-  "stage": "GA",
-  "PermissionCount": 0
+  "stage": "GA"
 }

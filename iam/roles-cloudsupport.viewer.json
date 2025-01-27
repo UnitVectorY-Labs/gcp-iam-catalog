@@ -8,6 +8,5 @@
     "cloudsupport.accounts.list",
     "cloudsupport.properties.get"
   ],
-  "stage": "GA",
-  "PermissionCount": 0
+  "stage": "GA"
 }

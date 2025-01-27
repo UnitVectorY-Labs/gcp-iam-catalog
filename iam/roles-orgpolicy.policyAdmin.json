@@ -30,6 +30,5 @@
     "recommender.orgPolicyRecommendations.list",
     "recommender.orgPolicyRecommendations.update"
   ],
-  "stage": "GA",
-  "PermissionCount": 0
+  "stage": "GA"
 }

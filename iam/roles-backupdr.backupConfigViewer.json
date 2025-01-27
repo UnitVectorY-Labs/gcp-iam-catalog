@@ -6,6 +6,5 @@
     "backupdr.resourceBackupConfigs.get",
     "backupdr.resourceBackupConfigs.list"
   ],
-  "stage": "BETA",
-  "PermissionCount": 0
+  "stage": "BETA"
 }

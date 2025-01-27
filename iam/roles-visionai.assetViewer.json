@@ -7,6 +7,5 @@
     "visionai.assets.list",
     "visionai.assets.search"
   ],
-  "stage": "BETA",
-  "PermissionCount": 0
+  "stage": "BETA"
 }

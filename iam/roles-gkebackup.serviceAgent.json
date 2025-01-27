@@ -406,6 +406,5 @@
     "resourcemanager.projects.list",
     "resourcemanager.projects.updateLiens"
   ],
-  "stage": "GA",
-  "PermissionCount": 0
+  "stage": "GA"
 }

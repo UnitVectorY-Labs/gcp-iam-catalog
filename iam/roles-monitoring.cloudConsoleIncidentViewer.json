@@ -3,6 +3,5 @@
   "title": "Monitoring Cloud Console Incident Viewer",
   "description": "Read access to incidents from Cloud Console.",
   "included_permissions": null,
-  "stage": "BETA",
-  "PermissionCount": 0
+  "stage": "BETA"
 }

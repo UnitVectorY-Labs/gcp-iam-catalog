@@ -37,6 +37,5 @@
     "visionai.searchConfigs.delete",
     "visionai.searchConfigs.update"
   ],
-  "stage": "BETA",
-  "PermissionCount": 0
+  "stage": "BETA"
 }

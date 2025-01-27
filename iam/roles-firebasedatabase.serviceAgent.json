@@ -6,6 +6,5 @@
     "pubsub.topics.publish",
     "serviceusage.services.use"
   ],
-  "stage": "GA",
-  "PermissionCount": 0
+  "stage": "GA"
 }

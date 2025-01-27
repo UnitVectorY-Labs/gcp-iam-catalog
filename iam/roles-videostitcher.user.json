@@ -10,6 +10,5 @@
     "videostitcher.vodSessions.create",
     "videostitcher.vodSessions.get"
   ],
-  "stage": "GA",
-  "PermissionCount": 0
+  "stage": "GA"
 }

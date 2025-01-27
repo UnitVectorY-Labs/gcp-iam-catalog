@@ -25,6 +25,5 @@
     "resourcemanager.projects.get",
     "resourcemanager.projects.getIamPolicy"
   ],
-  "stage": "BETA",
-  "PermissionCount": 0
+  "stage": "BETA"
 }

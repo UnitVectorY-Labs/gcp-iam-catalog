@@ -15,6 +15,5 @@
     "connectors.entities.updateEntitiesWithConditions",
     "connectors.entityTypes.list"
   ],
-  "stage": "GA",
-  "PermissionCount": 0
+  "stage": "GA"
 }

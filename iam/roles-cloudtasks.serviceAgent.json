@@ -7,6 +7,5 @@
     "iam.serviceAccounts.getOpenIdToken",
     "logging.logEntries.create"
   ],
-  "stage": "GA",
-  "PermissionCount": 0
+  "stage": "GA"
 }

@@ -8,6 +8,5 @@
     "resourcemanager.projects.get",
     "resourcemanager.projects.getIamPolicy"
   ],
-  "stage": "GA",
-  "PermissionCount": 0
+  "stage": "GA"
 }

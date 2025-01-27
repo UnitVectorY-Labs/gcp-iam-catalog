@@ -13,6 +13,5 @@
     "rma.operations.get",
     "rma.operations.list"
   ],
-  "stage": "GA",
-  "PermissionCount": 0
+  "stage": "GA"
 }

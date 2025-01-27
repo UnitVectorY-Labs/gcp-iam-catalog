@@ -7,6 +7,5 @@
     "cloudasset.assets.exportResource",
     "resourcemanager.organizations.get"
   ],
-  "stage": "GA",
-  "PermissionCount": 0
+  "stage": "GA"
 }

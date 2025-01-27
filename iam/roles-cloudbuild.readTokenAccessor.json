@@ -7,6 +7,5 @@
     "cloudbuild.repositories.accessReadToken",
     "cloudbuild.repositories.get"
   ],
-  "stage": "GA",
-  "PermissionCount": 0
+  "stage": "GA"
 }

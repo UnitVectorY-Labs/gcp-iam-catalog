@@ -5,6 +5,5 @@
   "included_permissions": [
     "bigquery.dataPolicies.maskedGet"
   ],
-  "stage": "GA",
-  "PermissionCount": 0
+  "stage": "GA"
 }

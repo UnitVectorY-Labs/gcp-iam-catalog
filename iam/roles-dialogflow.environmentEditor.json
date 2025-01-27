@@ -17,6 +17,5 @@
     "dialogflow.experiments.list",
     "dialogflow.experiments.update"
   ],
-  "stage": "GA",
-  "PermissionCount": 0
+  "stage": "GA"
 }

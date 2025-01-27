@@ -5,6 +5,5 @@
   "included_permissions": [
     "cloudkms.protectedResources.search"
   ],
-  "stage": "GA",
-  "PermissionCount": 0
+  "stage": "GA"
 }

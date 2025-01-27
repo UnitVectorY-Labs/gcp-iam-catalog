@@ -9,6 +9,5 @@
     "connectors.locations.get",
     "connectors.locations.list"
   ],
-  "stage": "GA",
-  "PermissionCount": 0
+  "stage": "GA"
 }

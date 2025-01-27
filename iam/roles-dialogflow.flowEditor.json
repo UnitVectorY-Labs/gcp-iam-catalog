@@ -25,6 +25,5 @@
     "dialogflow.versions.load",
     "dialogflow.versions.update"
   ],
-  "stage": "GA",
-  "PermissionCount": 0
+  "stage": "GA"
 }

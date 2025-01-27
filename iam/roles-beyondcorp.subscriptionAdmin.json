@@ -10,6 +10,5 @@
     "beyondcorp.subscriptions.update",
     "resourcemanager.organizations.get"
   ],
-  "stage": "BETA",
-  "PermissionCount": 0
+  "stage": "BETA"
 }

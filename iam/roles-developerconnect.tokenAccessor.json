@@ -8,6 +8,5 @@
     "developerconnect.gitRepositoryLinks.fetchReadWriteToken",
     "developerconnect.gitRepositoryLinks.get"
   ],
-  "stage": "BETA",
-  "PermissionCount": 0
+  "stage": "BETA"
 }

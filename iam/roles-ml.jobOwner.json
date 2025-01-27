@@ -11,6 +11,5 @@
     "ml.jobs.setIamPolicy",
     "ml.jobs.update"
   ],
-  "stage": "GA",
-  "PermissionCount": 0
+  "stage": "GA"
 }

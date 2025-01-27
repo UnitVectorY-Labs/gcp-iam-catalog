@@ -8,6 +8,5 @@
     "cloudkms.ekmConnections.list",
     "cloudkms.ekmConnections.verifyConnectivity"
   ],
-  "stage": "GA",
-  "PermissionCount": 0
+  "stage": "GA"
 }

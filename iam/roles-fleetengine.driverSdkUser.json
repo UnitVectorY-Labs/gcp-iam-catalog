@@ -9,6 +9,5 @@
     "fleetengine.vehicles.get",
     "fleetengine.vehicles.updateLocation"
   ],
-  "stage": "GA",
-  "PermissionCount": 0
+  "stage": "GA"
 }

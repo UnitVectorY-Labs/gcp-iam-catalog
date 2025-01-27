@@ -29,6 +29,5 @@
     "gkeonprem.vmwareNodePools.get",
     "gkeonprem.vmwareNodePools.unenroll"
   ],
-  "stage": "GA",
-  "PermissionCount": 0
+  "stage": "GA"
 }

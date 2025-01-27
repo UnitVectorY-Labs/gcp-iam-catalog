@@ -99,6 +99,5 @@
     "networkservices.httpfilters.list",
     "networkservices.httpfilters.update"
   ],
-  "stage": "GA",
-  "PermissionCount": 0
+  "stage": "GA"
 }

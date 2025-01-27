@@ -6,6 +6,5 @@
     "source.repos.get",
     "source.repos.list"
   ],
-  "stage": "GA",
-  "PermissionCount": 0
+  "stage": "GA"
 }

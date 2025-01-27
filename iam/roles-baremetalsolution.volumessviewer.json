@@ -7,6 +7,5 @@
     "baremetalsolution.volumes.get",
     "baremetalsolution.volumes.list"
   ],
-  "stage": "GA",
-  "PermissionCount": 0
+  "stage": "GA"
 }

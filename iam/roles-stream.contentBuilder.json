@@ -9,6 +9,5 @@
     "stream.streamContents.get",
     "stream.streamContents.list"
   ],
-  "stage": "GA",
-  "PermissionCount": 0
+  "stage": "GA"
 }

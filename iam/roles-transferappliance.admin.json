@@ -28,6 +28,5 @@
     "transferappliance.savedAddresses.list",
     "transferappliance.savedAddresses.update"
   ],
-  "stage": "BETA",
-  "PermissionCount": 0
+  "stage": "BETA"
 }

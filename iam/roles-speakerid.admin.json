@@ -15,6 +15,5 @@
     "speakerid.speakers.list",
     "speakerid.speakers.verify"
   ],
-  "stage": "GA",
-  "PermissionCount": 0
+  "stage": "GA"
 }

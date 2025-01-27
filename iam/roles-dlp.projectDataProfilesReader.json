@@ -6,6 +6,5 @@
     "dlp.projectDataProfiles.get",
     "dlp.projectDataProfiles.list"
   ],
-  "stage": "GA",
-  "PermissionCount": 0
+  "stage": "GA"
 }

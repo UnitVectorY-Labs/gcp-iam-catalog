@@ -76,6 +76,5 @@
     "dataplex.zones.list",
     "dataplex.zones.update"
   ],
-  "stage": "GA",
-  "PermissionCount": 0
+  "stage": "GA"
 }

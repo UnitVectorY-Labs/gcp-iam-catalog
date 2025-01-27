@@ -88,6 +88,5 @@
     "securitycentermanagement.securityHealthAnalyticsCustomModules.test",
     "securitycentermanagement.securityHealthAnalyticsCustomModules.update"
   ],
-  "stage": "GA",
-  "PermissionCount": 0
+  "stage": "GA"
 }

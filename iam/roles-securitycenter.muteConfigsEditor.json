@@ -9,6 +9,5 @@
     "securitycenter.muteconfigs.list",
     "securitycenter.muteconfigs.update"
   ],
-  "stage": "GA",
-  "PermissionCount": 0
+  "stage": "GA"
 }

@@ -8,6 +8,5 @@
     "lifesciences.operations.list",
     "lifesciences.workflows.run"
   ],
-  "stage": "BETA",
-  "PermissionCount": 0
+  "stage": "BETA"
 }

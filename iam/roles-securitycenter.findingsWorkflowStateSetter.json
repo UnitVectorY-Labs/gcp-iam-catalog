@@ -6,6 +6,5 @@
     "securitycenter.findings.setWorkflowState",
     "securitycenter.userinterfacemetadata.get"
   ],
-  "stage": "BETA",
-  "PermissionCount": 0
+  "stage": "BETA"
 }

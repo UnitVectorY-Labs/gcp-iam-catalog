@@ -102,6 +102,5 @@
     "storage.objects.get",
     "storage.objects.list"
   ],
-  "stage": "BETA",
-  "PermissionCount": 0
+  "stage": "BETA"
 }

@@ -7,6 +7,5 @@
     "osconfig.osPolicyAssignments.get",
     "osconfig.osPolicyAssignments.update"
   ],
-  "stage": "GA",
-  "PermissionCount": 0
+  "stage": "GA"
 }

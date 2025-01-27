@@ -9,6 +9,5 @@
     "monitoring.uptimeCheckConfigs.list",
     "monitoring.uptimeCheckConfigs.update"
   ],
-  "stage": "BETA",
-  "PermissionCount": 0
+  "stage": "BETA"
 }

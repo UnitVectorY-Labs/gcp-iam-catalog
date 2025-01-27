@@ -13,6 +13,5 @@
     "monitoring.timeSeries.create",
     "opsconfigmonitoring.resourceMetadata.write"
   ],
-  "stage": "GA",
-  "PermissionCount": 0
+  "stage": "GA"
 }

@@ -9,6 +9,5 @@
     "datastudio.reports.search",
     "resourcemanager.projects.get"
   ],
-  "stage": "BETA",
-  "PermissionCount": 0
+  "stage": "BETA"
 }

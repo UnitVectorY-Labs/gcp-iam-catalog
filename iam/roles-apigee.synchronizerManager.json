@@ -7,6 +7,5 @@
     "apigee.environments.manageRuntime",
     "apigee.ingressconfigs.get"
   ],
-  "stage": "GA",
-  "PermissionCount": 0
+  "stage": "GA"
 }

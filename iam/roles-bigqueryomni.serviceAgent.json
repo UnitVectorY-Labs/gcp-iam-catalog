@@ -6,6 +6,5 @@
     "bigquery.jobs.create",
     "bigquery.tables.updateData"
   ],
-  "stage": "GA",
-  "PermissionCount": 0
+  "stage": "GA"
 }

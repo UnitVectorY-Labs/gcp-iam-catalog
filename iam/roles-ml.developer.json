@@ -33,6 +33,5 @@
     "ml.versions.predict",
     "resourcemanager.projects.get"
   ],
-  "stage": "GA",
-  "PermissionCount": 0
+  "stage": "GA"
 }

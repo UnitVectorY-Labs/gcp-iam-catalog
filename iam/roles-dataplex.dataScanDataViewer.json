@@ -8,6 +8,5 @@
     "dataplex.datascans.getIamPolicy",
     "dataplex.datascans.list"
   ],
-  "stage": "GA",
-  "PermissionCount": 0
+  "stage": "GA"
 }

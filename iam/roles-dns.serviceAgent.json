@@ -11,6 +11,5 @@
     "compute.globalOperations.get",
     "compute.healthChecks.get"
   ],
-  "stage": "GA",
-  "PermissionCount": 0
+  "stage": "GA"
 }

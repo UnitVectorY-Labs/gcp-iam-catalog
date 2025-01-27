@@ -10420,6 +10420,5 @@
     "workstations.workstations.stop",
     "workstations.workstations.update"
   ],
-  "stage": "GA",
-  "PermissionCount": 0
+  "stage": "GA"
 }

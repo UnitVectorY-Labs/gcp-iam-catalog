@@ -13,6 +13,5 @@
     "gkehub.scopes.getIamPolicy",
     "gkehub.scopes.listBoundMemberships"
   ],
-  "stage": "GA",
-  "PermissionCount": 0
+  "stage": "GA"
 }

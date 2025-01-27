@@ -5,6 +5,5 @@
   "included_permissions": [
     "apigee.deployments.invoke"
   ],
-  "stage": "GA",
-  "PermissionCount": 0
+  "stage": "GA"
 }

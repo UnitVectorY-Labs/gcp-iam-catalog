@@ -48,6 +48,5 @@
     "telcoautomation.orchestrationClusters.get",
     "telcoautomation.orchestrationClusters.list"
   ],
-  "stage": "BETA",
-  "PermissionCount": 0
+  "stage": "BETA"
 }

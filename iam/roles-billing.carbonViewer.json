@@ -7,6 +7,5 @@
     "billing.accounts.getCarbonInformation",
     "billing.accounts.list"
   ],
-  "stage": "GA",
-  "PermissionCount": 0
+  "stage": "GA"
 }

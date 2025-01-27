@@ -21,6 +21,5 @@
     "monitoring.timeSeries.create",
     "resourcemanager.projects.get"
   ],
-  "stage": "GA",
-  "PermissionCount": 0
+  "stage": "GA"
 }

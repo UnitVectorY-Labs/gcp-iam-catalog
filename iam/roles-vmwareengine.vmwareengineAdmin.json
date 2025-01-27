@@ -94,6 +94,5 @@
     "vmwareengine.vmwareEngineNetworks.list",
     "vmwareengine.vmwareEngineNetworks.update"
   ],
-  "stage": "GA",
-  "PermissionCount": 0
+  "stage": "GA"
 }

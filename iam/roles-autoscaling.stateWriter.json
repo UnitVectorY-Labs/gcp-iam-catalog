@@ -5,6 +5,5 @@
   "included_permissions": [
     "autoscaling.sites.writeState"
   ],
-  "stage": "BETA",
-  "PermissionCount": 0
+  "stage": "BETA"
 }

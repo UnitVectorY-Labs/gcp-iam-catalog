@@ -10,6 +10,5 @@
     "documentai.processors.processBatch",
     "documentai.processors.processOnline"
   ],
-  "stage": "BETA",
-  "PermissionCount": 0
+  "stage": "BETA"
 }

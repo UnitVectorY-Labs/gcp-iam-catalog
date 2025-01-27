@@ -8,6 +8,5 @@
     "speakerid.speakers.get",
     "speakerid.speakers.list"
   ],
-  "stage": "GA",
-  "PermissionCount": 0
+  "stage": "GA"
 }

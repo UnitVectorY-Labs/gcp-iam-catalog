@@ -6,6 +6,5 @@
     "dlp.subscriptions.get",
     "dlp.subscriptions.list"
   ],
-  "stage": "GA",
-  "PermissionCount": 0
+  "stage": "GA"
 }

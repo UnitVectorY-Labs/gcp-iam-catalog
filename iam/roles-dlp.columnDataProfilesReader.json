@@ -6,6 +6,5 @@
     "dlp.columnDataProfiles.get",
     "dlp.columnDataProfiles.list"
   ],
-  "stage": "GA",
-  "PermissionCount": 0
+  "stage": "GA"
 }

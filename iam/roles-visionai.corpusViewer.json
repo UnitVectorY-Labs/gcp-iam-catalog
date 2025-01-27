@@ -24,6 +24,5 @@
     "visionai.searchConfigs.get",
     "visionai.searchConfigs.list"
   ],
-  "stage": "BETA",
-  "PermissionCount": 0
+  "stage": "BETA"
 }

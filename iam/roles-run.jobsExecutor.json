@@ -6,6 +6,5 @@
     "run.executions.cancel",
     "run.jobs.run"
   ],
-  "stage": "GA",
-  "PermissionCount": 0
+  "stage": "GA"
 }

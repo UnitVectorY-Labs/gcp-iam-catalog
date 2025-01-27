@@ -15,6 +15,5 @@
     "serviceusage.apiKeys.regenerate",
     "serviceusage.apiKeys.revert"
   ],
-  "stage": "GA",
-  "PermissionCount": 0
+  "stage": "GA"
 }

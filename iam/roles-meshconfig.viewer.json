@@ -3,6 +3,5 @@
   "title": "Mesh Config Viewer",
   "description": "Read access to mesh configuration",
   "included_permissions": null,
-  "stage": "BETA",
-  "PermissionCount": 0
+  "stage": "BETA"
 }

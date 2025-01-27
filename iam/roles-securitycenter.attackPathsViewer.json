@@ -6,6 +6,5 @@
     "securitycenter.attackpaths.list",
     "securitycenter.exposurepathexplan.get"
   ],
-  "stage": "GA",
-  "PermissionCount": 0
+  "stage": "GA"
 }

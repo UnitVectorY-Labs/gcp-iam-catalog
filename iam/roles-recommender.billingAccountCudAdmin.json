@@ -12,6 +12,5 @@
     "recommender.usageCommitmentRecommendations.list",
     "recommender.usageCommitmentRecommendations.update"
   ],
-  "stage": "BETA",
-  "PermissionCount": 0
+  "stage": "BETA"
 }

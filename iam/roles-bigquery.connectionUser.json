@@ -8,6 +8,5 @@
     "bigquery.connections.list",
     "bigquery.connections.use"
   ],
-  "stage": "GA",
-  "PermissionCount": 0
+  "stage": "GA"
 }

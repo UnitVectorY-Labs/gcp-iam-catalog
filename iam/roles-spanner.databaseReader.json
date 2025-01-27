@@ -17,6 +17,5 @@
     "spanner.sessions.get",
     "spanner.sessions.list"
   ],
-  "stage": "GA",
-  "PermissionCount": 0
+  "stage": "GA"
 }

@@ -24,6 +24,5 @@
     "videostitcher.vodStitchDetails.get",
     "videostitcher.vodStitchDetails.list"
   ],
-  "stage": "GA",
-  "PermissionCount": 0
+  "stage": "GA"
 }

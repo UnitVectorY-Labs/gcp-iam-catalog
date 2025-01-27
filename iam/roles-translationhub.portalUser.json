@@ -17,6 +17,5 @@
     "translationhub.portals.get",
     "translationhub.portals.list"
   ],
-  "stage": "BETA",
-  "PermissionCount": 0
+  "stage": "BETA"
 }

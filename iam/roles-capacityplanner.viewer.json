@@ -19,6 +19,5 @@
     "serviceusage.quotas.get",
     "serviceusage.services.get"
   ],
-  "stage": "BETA",
-  "PermissionCount": 0
+  "stage": "BETA"
 }

@@ -9,6 +9,5 @@
     "cloudkms.operations.get",
     "cloudkms.projects.showEffectiveAutokeyConfig"
   ],
-  "stage": "GA",
-  "PermissionCount": 0
+  "stage": "GA"
 }

@@ -64,6 +64,5 @@
     "serviceusage.services.get",
     "serviceusage.services.list"
   ],
-  "stage": "BETA",
-  "PermissionCount": 0
+  "stage": "BETA"
 }

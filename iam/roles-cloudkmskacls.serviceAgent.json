@@ -7,6 +7,5 @@
     "cloudkms.cryptoKeyVersions.useToEncrypt",
     "cloudkms.cryptoKeys.get"
   ],
-  "stage": "GA",
-  "PermissionCount": 0
+  "stage": "GA"
 }

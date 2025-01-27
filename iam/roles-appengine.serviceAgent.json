@@ -59,6 +59,5 @@
     "storage.buckets.create",
     "storage.buckets.get"
   ],
-  "stage": "GA",
-  "PermissionCount": 0
+  "stage": "GA"
 }

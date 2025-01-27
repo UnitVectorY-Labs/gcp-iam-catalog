@@ -48,6 +48,5 @@
     "vmwareengine.vmwareEngineNetworks.get",
     "vmwareengine.vmwareEngineNetworks.list"
   ],
-  "stage": "GA",
-  "PermissionCount": 0
+  "stage": "GA"
 }

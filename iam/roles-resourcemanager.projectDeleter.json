@@ -5,6 +5,5 @@
   "included_permissions": [
     "resourcemanager.projects.delete"
   ],
-  "stage": "GA",
-  "PermissionCount": 0
+  "stage": "GA"
 }

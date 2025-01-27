@@ -7,6 +7,5 @@
     "resourcemanager.folders.getIamPolicy",
     "resourcemanager.folders.setIamPolicy"
   ],
-  "stage": "GA",
-  "PermissionCount": 0
+  "stage": "GA"
 }

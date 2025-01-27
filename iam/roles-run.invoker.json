@@ -6,6 +6,5 @@
     "run.jobs.run",
     "run.routes.invoke"
   ],
-  "stage": "GA",
-  "PermissionCount": 0
+  "stage": "GA"
 }

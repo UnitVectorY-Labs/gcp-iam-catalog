@@ -6,6 +6,5 @@
     "iap.tunnelDestGroups.get",
     "iap.tunnelDestGroups.list"
   ],
-  "stage": "GA",
-  "PermissionCount": 0
+  "stage": "GA"
 }

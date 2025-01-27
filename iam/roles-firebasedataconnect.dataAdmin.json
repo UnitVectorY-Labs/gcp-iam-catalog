@@ -6,6 +6,5 @@
     "firebasedataconnect.services.executeGraphql",
     "firebasedataconnect.services.executeGraphqlRead"
   ],
-  "stage": "BETA",
-  "PermissionCount": 0
+  "stage": "BETA"
 }

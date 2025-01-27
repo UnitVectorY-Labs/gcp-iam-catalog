@@ -8,6 +8,5 @@
     "securitycenter.sources.list",
     "securitycenter.userinterfacemetadata.get"
   ],
-  "stage": "GA",
-  "PermissionCount": 0
+  "stage": "GA"
 }

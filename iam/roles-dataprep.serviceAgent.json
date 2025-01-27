@@ -452,6 +452,5 @@
     "storage.objects.setRetention",
     "storage.objects.update"
   ],
-  "stage": "GA",
-  "PermissionCount": 0
+  "stage": "GA"
 }

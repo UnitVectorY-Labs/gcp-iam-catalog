@@ -18,6 +18,5 @@
     "tpu.tensorflowversions.get",
     "tpu.tensorflowversions.list"
   ],
-  "stage": "GA",
-  "PermissionCount": 0
+  "stage": "GA"
 }

@@ -38,6 +38,5 @@
     "consumerprocurement.orders.modify",
     "consumerprocurement.orders.place"
   ],
-  "stage": "GA",
-  "PermissionCount": 0
+  "stage": "GA"
 }

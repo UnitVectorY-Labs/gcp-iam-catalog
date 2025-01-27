@@ -12,6 +12,5 @@
     "dialogflow.entityTypes.update",
     "dialogflow.entityTypes.updateEntity"
   ],
-  "stage": "GA",
-  "PermissionCount": 0
+  "stage": "GA"
 }

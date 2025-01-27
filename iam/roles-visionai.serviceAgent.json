@@ -173,6 +173,5 @@
     "visionai.uistreams.get",
     "visionai.uistreams.list"
   ],
-  "stage": "GA",
-  "PermissionCount": 0
+  "stage": "GA"
 }

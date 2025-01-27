@@ -11,6 +11,5 @@
     "storage.multipartUploads.list",
     "storage.objects.list"
   ],
-  "stage": "GA",
-  "PermissionCount": 0
+  "stage": "GA"
 }

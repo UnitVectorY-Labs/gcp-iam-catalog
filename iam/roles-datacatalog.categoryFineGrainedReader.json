@@ -5,6 +5,5 @@
   "included_permissions": [
     "datacatalog.categories.fineGrainedGet"
   ],
-  "stage": "GA",
-  "PermissionCount": 0
+  "stage": "GA"
 }

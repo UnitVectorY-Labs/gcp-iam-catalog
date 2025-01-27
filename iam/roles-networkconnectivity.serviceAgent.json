@@ -45,6 +45,5 @@
     "servicedirectory.services.create",
     "servicedirectory.services.delete"
   ],
-  "stage": "GA",
-  "PermissionCount": 0
+  "stage": "GA"
 }

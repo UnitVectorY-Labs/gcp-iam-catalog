@@ -53,6 +53,5 @@
     "datastream.streams.get",
     "datastream.streams.update"
   ],
-  "stage": "GA",
-  "PermissionCount": 0
+  "stage": "GA"
 }

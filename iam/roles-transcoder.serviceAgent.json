@@ -9,6 +9,5 @@
     "storage.objects.get",
     "transcoder.jobs.delete"
   ],
-  "stage": "GA",
-  "PermissionCount": 0
+  "stage": "GA"
 }

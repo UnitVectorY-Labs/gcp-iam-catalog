@@ -5,6 +5,5 @@
   "included_permissions": [
     "stackdriver.resourceMetadata.write"
   ],
-  "stage": "BETA",
-  "PermissionCount": 0
+  "stage": "BETA"
 }

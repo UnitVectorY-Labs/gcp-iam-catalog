@@ -5,6 +5,5 @@
   "included_permissions": [
     "bigquery.dataPolicies.getRawData"
   ],
-  "stage": "BETA",
-  "PermissionCount": 0
+  "stage": "BETA"
 }

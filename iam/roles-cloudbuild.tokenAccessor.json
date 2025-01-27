@@ -9,6 +9,5 @@
     "cloudbuild.repositories.get",
     "cloudbuild.repositories.list"
   ],
-  "stage": "GA",
-  "PermissionCount": 0
+  "stage": "GA"
 }

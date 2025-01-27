@@ -9,6 +9,5 @@
     "workloadmanager.discoveredprofiles.getHealth",
     "workloadmanager.discoveredprofiles.list"
   ],
-  "stage": "BETA",
-  "PermissionCount": 0
+  "stage": "BETA"
 }

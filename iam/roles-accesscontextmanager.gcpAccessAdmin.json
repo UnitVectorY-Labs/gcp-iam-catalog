@@ -9,6 +9,5 @@
     "accesscontextmanager.gcpUserAccessBindings.list",
     "accesscontextmanager.gcpUserAccessBindings.update"
   ],
-  "stage": "GA",
-  "PermissionCount": 0
+  "stage": "GA"
 }

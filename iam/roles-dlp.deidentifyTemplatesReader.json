@@ -6,6 +6,5 @@
     "dlp.deidentifyTemplates.get",
     "dlp.deidentifyTemplates.list"
   ],
-  "stage": "GA",
-  "PermissionCount": 0
+  "stage": "GA"
 }

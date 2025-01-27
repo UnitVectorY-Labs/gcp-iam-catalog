@@ -27,6 +27,5 @@
     "storage.buckets.setIamPolicy",
     "storage.buckets.update"
   ],
-  "stage": "BETA",
-  "PermissionCount": 0
+  "stage": "BETA"
 }

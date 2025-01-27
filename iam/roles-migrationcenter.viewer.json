@@ -41,6 +41,5 @@
     "rma.operations.list",
     "serviceusage.quotas.get"
   ],
-  "stage": "BETA",
-  "PermissionCount": 0
+  "stage": "BETA"
 }

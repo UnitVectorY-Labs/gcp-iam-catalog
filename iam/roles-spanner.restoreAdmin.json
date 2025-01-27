@@ -24,6 +24,5 @@
     "spanner.instances.listEffectiveTags",
     "spanner.instances.listTagBindings"
   ],
-  "stage": "GA",
-  "PermissionCount": 0
+  "stage": "GA"
 }

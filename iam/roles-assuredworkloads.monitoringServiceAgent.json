@@ -9,6 +9,5 @@
     "cloudasset.feeds.delete",
     "cloudasset.feeds.get"
   ],
-  "stage": "GA",
-  "PermissionCount": 0
+  "stage": "GA"
 }

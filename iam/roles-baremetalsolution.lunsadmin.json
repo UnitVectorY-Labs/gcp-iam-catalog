@@ -7,6 +7,5 @@
     "baremetalsolution.luns.list",
     "baremetalsolution.operations.get"
   ],
-  "stage": "GA",
-  "PermissionCount": 0
+  "stage": "GA"
 }

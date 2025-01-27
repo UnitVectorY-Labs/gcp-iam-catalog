@@ -6,6 +6,5 @@
     "servicemanagement.services.get",
     "servicemanagement.services.update"
   ],
-  "stage": "GA",
-  "PermissionCount": 0
+  "stage": "GA"
 }

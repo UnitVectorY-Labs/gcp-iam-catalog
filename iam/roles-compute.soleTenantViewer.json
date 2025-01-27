@@ -12,6 +12,5 @@
     "compute.nodeTypes.get",
     "compute.nodeTypes.list"
   ],
-  "stage": "GA",
-  "PermissionCount": 0
+  "stage": "GA"
 }

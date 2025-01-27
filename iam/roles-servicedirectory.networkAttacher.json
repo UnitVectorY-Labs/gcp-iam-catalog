@@ -7,6 +7,5 @@
     "resourcemanager.projects.list",
     "servicedirectory.networks.attach"
   ],
-  "stage": "GA",
-  "PermissionCount": 0
+  "stage": "GA"
 }

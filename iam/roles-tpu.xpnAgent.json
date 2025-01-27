@@ -26,6 +26,5 @@
     "compute.subnetworks.useExternalIp",
     "compute.zoneOperations.get"
   ],
-  "stage": "GA",
-  "PermissionCount": 0
+  "stage": "GA"
 }

@@ -77,6 +77,5 @@
     "telcoautomation.publicBlueprints.get",
     "telcoautomation.publicBlueprints.list"
   ],
-  "stage": "BETA",
-  "PermissionCount": 0
+  "stage": "BETA"
 }

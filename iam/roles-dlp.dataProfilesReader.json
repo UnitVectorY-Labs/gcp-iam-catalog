@@ -13,6 +13,5 @@
     "dlp.tableDataProfiles.get",
     "dlp.tableDataProfiles.list"
   ],
-  "stage": "GA",
-  "PermissionCount": 0
+  "stage": "GA"
 }

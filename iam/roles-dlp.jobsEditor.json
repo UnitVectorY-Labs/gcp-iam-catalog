@@ -11,6 +11,5 @@
     "dlp.jobs.list",
     "dlp.kms.encrypt"
   ],
-  "stage": "GA",
-  "PermissionCount": 0
+  "stage": "GA"
 }

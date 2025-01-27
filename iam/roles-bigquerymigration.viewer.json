@@ -8,6 +8,5 @@
     "bigquerymigration.workflows.get",
     "bigquerymigration.workflows.list"
   ],
-  "stage": "GA",
-  "PermissionCount": 0
+  "stage": "GA"
 }

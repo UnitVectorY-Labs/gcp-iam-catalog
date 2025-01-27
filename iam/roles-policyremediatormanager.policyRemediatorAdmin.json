@@ -13,6 +13,5 @@
     "policyremediatormanager.remediatorServices.enable",
     "policyremediatormanager.remediatorServices.get"
   ],
-  "stage": "BETA",
-  "PermissionCount": 0
+  "stage": "BETA"
 }

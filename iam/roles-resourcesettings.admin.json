@@ -7,6 +7,5 @@
     "resourcesettings.settings.list",
     "resourcesettings.settings.update"
   ],
-  "stage": "GA",
-  "PermissionCount": 0
+  "stage": "GA"
 }

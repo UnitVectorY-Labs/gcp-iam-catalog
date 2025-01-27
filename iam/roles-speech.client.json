@@ -17,6 +17,5 @@
     "speech.recognizers.list",
     "speech.recognizers.recognize"
   ],
-  "stage": "GA",
-  "PermissionCount": 0
+  "stage": "GA"
 }

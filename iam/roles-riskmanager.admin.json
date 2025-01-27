@@ -22,6 +22,5 @@
     "riskmanager.settings.get",
     "riskmanager.settings.update"
   ],
-  "stage": "BETA",
-  "PermissionCount": 0
+  "stage": "BETA"
 }

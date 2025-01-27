@@ -7,6 +7,5 @@
     "logging.logEntries.route",
     "pubsub.topics.publish"
   ],
-  "stage": "GA",
-  "PermissionCount": 0
+  "stage": "GA"
 }

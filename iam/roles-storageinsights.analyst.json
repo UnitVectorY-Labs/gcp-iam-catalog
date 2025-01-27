@@ -18,6 +18,5 @@
     "storageinsights.reportDetails.get",
     "storageinsights.reportDetails.list"
   ],
-  "stage": "GA",
-  "PermissionCount": 0
+  "stage": "GA"
 }

@@ -7,6 +7,5 @@
     "dataplex.assets.readData",
     "dataplex.assets.writeData"
   ],
-  "stage": "GA",
-  "PermissionCount": 0
+  "stage": "GA"
 }

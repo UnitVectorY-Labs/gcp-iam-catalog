@@ -8,6 +8,5 @@
     "dataconnectors.connectors.list",
     "dataconnectors.connectors.use"
   ],
-  "stage": "BETA",
-  "PermissionCount": 0
+  "stage": "BETA"
 }

@@ -9,6 +9,5 @@
     "commercebusinessenablement.refunds.get",
     "commercebusinessenablement.refunds.list"
   ],
-  "stage": "BETA",
-  "PermissionCount": 0
+  "stage": "BETA"
 }

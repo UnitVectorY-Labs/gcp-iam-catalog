@@ -6,6 +6,5 @@
     "applianceactivation.rttCommands.get",
     "applianceactivation.rttCommands.sendResult"
   ],
-  "stage": "BETA",
-  "PermissionCount": 0
+  "stage": "BETA"
 }

@@ -8,6 +8,5 @@
     "riscconfigurationservice.riscconfigs.delete",
     "riscconfigurationservice.riscconfigs.get"
   ],
-  "stage": "BETA",
-  "PermissionCount": 0
+  "stage": "BETA"
 }

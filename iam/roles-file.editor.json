@@ -39,6 +39,5 @@
     "file.snapshots.listTagBindings",
     "file.snapshots.update"
   ],
-  "stage": "BETA",
-  "PermissionCount": 0
+  "stage": "BETA"
 }

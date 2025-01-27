@@ -7,6 +7,5 @@
     "databaseinsights.clusterEvents.query",
     "databaseinsights.instanceEvents.query"
   ],
-  "stage": "BETA",
-  "PermissionCount": 0
+  "stage": "BETA"
 }

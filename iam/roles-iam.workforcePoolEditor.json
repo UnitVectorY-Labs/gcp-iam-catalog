@@ -15,6 +15,5 @@
     "iam.googleapis.com/workforcePools.list",
     "iam.googleapis.com/workforcePools.update"
   ],
-  "stage": "GA",
-  "PermissionCount": 0
+  "stage": "GA"
 }

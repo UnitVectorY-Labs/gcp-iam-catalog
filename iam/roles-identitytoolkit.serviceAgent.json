@@ -8,6 +8,5 @@
     "recaptchaenterprise.keys.delete",
     "recaptchaenterprise.keys.get"
   ],
-  "stage": "GA",
-  "PermissionCount": 0
+  "stage": "GA"
 }

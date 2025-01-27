@@ -5,6 +5,5 @@
   "included_permissions": [
     "securitycenter.complianceReports.aggregate"
   ],
-  "stage": "BETA",
-  "PermissionCount": 0
+  "stage": "BETA"
 }

@@ -12,6 +12,5 @@
     "metastore.tables.getIamPolicy",
     "metastore.tables.list"
   ],
-  "stage": "GA",
-  "PermissionCount": 0
+  "stage": "GA"
 }

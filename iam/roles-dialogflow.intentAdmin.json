@@ -9,6 +9,5 @@
     "dialogflow.intents.list",
     "dialogflow.intents.update"
   ],
-  "stage": "GA",
-  "PermissionCount": 0
+  "stage": "GA"
 }

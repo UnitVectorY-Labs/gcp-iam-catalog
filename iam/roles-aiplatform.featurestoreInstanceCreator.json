@@ -9,6 +9,5 @@
     "aiplatform.featurestores.list",
     "aiplatform.featurestores.update"
   ],
-  "stage": "GA",
-  "PermissionCount": 0
+  "stage": "GA"
 }

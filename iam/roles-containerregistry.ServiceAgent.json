@@ -8,6 +8,5 @@
     "storage.objects.getIamPolicy",
     "storage.objects.list"
   ],
-  "stage": "GA",
-  "PermissionCount": 0
+  "stage": "GA"
 }

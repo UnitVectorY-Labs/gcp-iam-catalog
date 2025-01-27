@@ -5,6 +5,5 @@
   "included_permissions": [
     "errorreporting.errorEvents.create"
   ],
-  "stage": "BETA",
-  "PermissionCount": 0
+  "stage": "BETA"
 }

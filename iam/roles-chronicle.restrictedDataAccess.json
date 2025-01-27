@@ -5,6 +5,5 @@
   "included_permissions": [
     "chronicle.dataAccessScopes.permit"
   ],
-  "stage": "BETA",
-  "PermissionCount": 0
+  "stage": "BETA"
 }

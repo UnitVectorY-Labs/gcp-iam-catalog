@@ -6,6 +6,5 @@
     "dlp.jobTriggers.get",
     "dlp.jobTriggers.list"
   ],
-  "stage": "GA",
-  "PermissionCount": 0
+  "stage": "GA"
 }

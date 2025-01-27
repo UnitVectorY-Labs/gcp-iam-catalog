@@ -7,6 +7,5 @@
     "datacatalog.tagTemplates.get",
     "dataplex.projects.search"
   ],
-  "stage": "GA",
-  "PermissionCount": 0
+  "stage": "GA"
 }

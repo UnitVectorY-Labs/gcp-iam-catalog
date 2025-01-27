@@ -9,6 +9,5 @@
     "commerceoffercatalog.documents.list",
     "commerceoffercatalog.offers.get"
   ],
-  "stage": "BETA",
-  "PermissionCount": 0
+  "stage": "BETA"
 }

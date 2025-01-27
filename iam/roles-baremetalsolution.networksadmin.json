@@ -13,6 +13,5 @@
     "baremetalsolution.operations.get",
     "baremetalsolution.pods.list"
   ],
-  "stage": "GA",
-  "PermissionCount": 0
+  "stage": "GA"
 }

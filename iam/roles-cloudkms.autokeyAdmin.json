@@ -7,6 +7,5 @@
     "cloudkms.autokeyConfigs.update",
     "cloudkms.projects.showEffectiveAutokeyConfig"
   ],
-  "stage": "GA",
-  "PermissionCount": 0
+  "stage": "GA"
 }

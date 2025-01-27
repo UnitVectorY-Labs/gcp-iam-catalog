@@ -6,6 +6,5 @@
     "bigquerymigration.workflows.orchestrateTask",
     "storage.objects.list"
   ],
-  "stage": "GA",
-  "PermissionCount": 0
+  "stage": "GA"
 }

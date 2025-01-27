@@ -82,6 +82,5 @@
     "resourcemanager.projects.list",
     "secretmanager.secrets.getIamPolicy"
   ],
-  "stage": "GA",
-  "PermissionCount": 0
+  "stage": "GA"
 }

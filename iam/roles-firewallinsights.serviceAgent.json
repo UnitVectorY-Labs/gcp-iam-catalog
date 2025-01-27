@@ -31,6 +31,5 @@
     "compute.vpnGateways.list",
     "compute.vpnTunnels.list"
   ],
-  "stage": "GA",
-  "PermissionCount": 0
+  "stage": "GA"
 }

@@ -6,6 +6,5 @@
     "logging.sqlAlerts.create",
     "logging.sqlAlerts.update"
   ],
-  "stage": "BETA",
-  "PermissionCount": 0
+  "stage": "BETA"
 }

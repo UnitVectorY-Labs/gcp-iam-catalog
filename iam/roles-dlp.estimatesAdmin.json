@@ -9,6 +9,5 @@
     "dlp.estimates.get",
     "dlp.estimates.list"
   ],
-  "stage": "GA",
-  "PermissionCount": 0
+  "stage": "GA"
 }

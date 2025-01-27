@@ -35,6 +35,5 @@
     "datacatalog.relationships.list",
     "dataplex.projects.search"
   ],
-  "stage": "BETA",
-  "PermissionCount": 0
+  "stage": "BETA"
 }

@@ -6,6 +6,5 @@
     "visionai.streams.get",
     "visionai.streams.list"
   ],
-  "stage": "BETA",
-  "PermissionCount": 0
+  "stage": "BETA"
 }

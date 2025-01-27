@@ -17,6 +17,5 @@
     "securitycentermanagement.locations.get",
     "securitycentermanagement.locations.list"
   ],
-  "stage": "GA",
-  "PermissionCount": 0
+  "stage": "GA"
 }

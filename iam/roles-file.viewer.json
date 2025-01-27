@@ -20,6 +20,5 @@
     "file.snapshots.listEffectiveTags",
     "file.snapshots.listTagBindings"
   ],
-  "stage": "BETA",
-  "PermissionCount": 0
+  "stage": "BETA"
 }

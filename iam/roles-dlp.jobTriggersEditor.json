@@ -10,6 +10,5 @@
     "dlp.jobTriggers.list",
     "dlp.jobTriggers.update"
   ],
-  "stage": "GA",
-  "PermissionCount": 0
+  "stage": "GA"
 }

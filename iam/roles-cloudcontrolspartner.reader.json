@@ -16,6 +16,5 @@
     "cloudcontrolspartner.workloads.get",
     "cloudcontrolspartner.workloads.list"
   ],
-  "stage": "GA",
-  "PermissionCount": 0
+  "stage": "GA"
 }

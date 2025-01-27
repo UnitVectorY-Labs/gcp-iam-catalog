@@ -6,6 +6,5 @@
     "chat.bots.get",
     "chat.bots.update"
   ],
-  "stage": "GA",
-  "PermissionCount": 0
+  "stage": "GA"
 }

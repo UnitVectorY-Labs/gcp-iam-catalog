@@ -95,6 +95,5 @@
     "retail.userEvents.purge",
     "retail.userEvents.rejoin"
   ],
-  "stage": "GA",
-  "PermissionCount": 0
+  "stage": "GA"
 }

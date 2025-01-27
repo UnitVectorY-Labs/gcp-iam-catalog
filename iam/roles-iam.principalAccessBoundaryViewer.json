@@ -7,6 +7,5 @@
     "iam.principalaccessboundarypolicies.list",
     "iam.principalaccessboundarypolicies.searchPolicyBindings"
   ],
-  "stage": "BETA",
-  "PermissionCount": 0
+  "stage": "BETA"
 }

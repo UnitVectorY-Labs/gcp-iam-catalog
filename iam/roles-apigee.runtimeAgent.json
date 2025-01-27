@@ -15,6 +15,5 @@
     "apigee.projectorganizations.get",
     "apigee.runtimeconfigs.get"
   ],
-  "stage": "GA",
-  "PermissionCount": 0
+  "stage": "GA"
 }

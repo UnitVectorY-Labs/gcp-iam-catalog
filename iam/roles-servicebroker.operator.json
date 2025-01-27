@@ -21,6 +21,5 @@
     "servicebroker.instances.list",
     "servicebroker.instances.update"
   ],
-  "stage": "DEPRECATED",
-  "PermissionCount": 0
+  "stage": "DEPRECATED"
 }

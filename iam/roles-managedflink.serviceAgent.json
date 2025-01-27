@@ -27,6 +27,5 @@
     "serviceusage.services.use",
     "storage.objects.get"
   ],
-  "stage": "GA",
-  "PermissionCount": 0
+  "stage": "GA"
 }

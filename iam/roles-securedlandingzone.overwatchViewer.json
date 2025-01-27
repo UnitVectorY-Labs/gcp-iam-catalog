@@ -9,6 +9,5 @@
     "securedlandingzone.overwatches.get",
     "securedlandingzone.overwatches.list"
   ],
-  "stage": "BETA",
-  "PermissionCount": 0
+  "stage": "BETA"
 }

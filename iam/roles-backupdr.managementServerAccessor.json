@@ -5,6 +5,5 @@
   "included_permissions": [
     "backupdr.managementServers.createConnection"
   ],
-  "stage": "GA",
-  "PermissionCount": 0
+  "stage": "GA"
 }

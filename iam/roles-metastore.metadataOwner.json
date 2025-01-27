@@ -22,6 +22,5 @@
     "metastore.tables.setIamPolicy",
     "metastore.tables.update"
   ],
-  "stage": "GA",
-  "PermissionCount": 0
+  "stage": "GA"
 }

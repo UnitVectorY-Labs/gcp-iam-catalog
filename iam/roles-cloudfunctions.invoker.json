@@ -5,6 +5,5 @@
   "included_permissions": [
     "cloudfunctions.functions.invoke"
   ],
-  "stage": "GA",
-  "PermissionCount": 0
+  "stage": "GA"
 }

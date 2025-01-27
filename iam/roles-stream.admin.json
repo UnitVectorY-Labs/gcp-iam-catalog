@@ -24,6 +24,5 @@
     "stream.streamInstances.rollout",
     "stream.streamInstances.update"
   ],
-  "stage": "GA",
-  "PermissionCount": 0
+  "stage": "GA"
 }

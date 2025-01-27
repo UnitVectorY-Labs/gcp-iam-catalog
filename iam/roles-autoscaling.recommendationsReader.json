@@ -5,6 +5,5 @@
   "included_permissions": [
     "autoscaling.sites.readRecommendations"
   ],
-  "stage": "BETA",
-  "PermissionCount": 0
+  "stage": "BETA"
 }

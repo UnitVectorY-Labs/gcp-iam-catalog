@@ -6,6 +6,5 @@
     "resourcemanager.projects.createBillingAssignment",
     "resourcemanager.projects.deleteBillingAssignment"
   ],
-  "stage": "GA",
-  "PermissionCount": 0
+  "stage": "GA"
 }

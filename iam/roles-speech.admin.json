@@ -33,6 +33,5 @@
     "speech.recognizers.undelete",
     "speech.recognizers.update"
   ],
-  "stage": "GA",
-  "PermissionCount": 0
+  "stage": "GA"
 }

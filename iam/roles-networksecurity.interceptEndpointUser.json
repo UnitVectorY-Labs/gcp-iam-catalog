@@ -7,6 +7,5 @@
     "networksecurity.interceptEndpointGroups.list",
     "networksecurity.interceptEndpointGroups.use"
   ],
-  "stage": "BETA",
-  "PermissionCount": 0
+  "stage": "BETA"
 }

@@ -5,6 +5,5 @@
   "included_permissions": [
     "workloadmanager.insights.write"
   ],
-  "stage": "BETA",
-  "PermissionCount": 0
+  "stage": "BETA"
 }

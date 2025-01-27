@@ -6,6 +6,5 @@
     "iap.tunnelDestGroups.accessViaIAP",
     "iap.tunnelInstances.accessViaIAP"
   ],
-  "stage": "GA",
-  "PermissionCount": 0
+  "stage": "GA"
 }

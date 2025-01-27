@@ -12,6 +12,5 @@
     "visionai.indexEndpoints.undeploy",
     "visionai.indexEndpoints.update"
   ],
-  "stage": "BETA",
-  "PermissionCount": 0
+  "stage": "BETA"
 }

@@ -6,6 +6,5 @@
     "trafficdirector.networks.getConfigs",
     "trafficdirector.networks.reportMetrics"
   ],
-  "stage": "BETA",
-  "PermissionCount": 0
+  "stage": "BETA"
 }

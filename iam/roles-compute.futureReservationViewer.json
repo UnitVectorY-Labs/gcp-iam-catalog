@@ -11,6 +11,5 @@
     "compute.regions.list",
     "compute.zones.list"
   ],
-  "stage": "BETA",
-  "PermissionCount": 0
+  "stage": "BETA"
 }

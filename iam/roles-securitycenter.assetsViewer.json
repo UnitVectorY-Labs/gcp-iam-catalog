@@ -21,6 +21,5 @@
     "securitycenter.assets.listAssetPropertyNames",
     "securitycenter.userinterfacemetadata.get"
   ],
-  "stage": "GA",
-  "PermissionCount": 0
+  "stage": "GA"
 }

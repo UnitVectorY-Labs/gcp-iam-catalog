@@ -7,6 +7,5 @@
     "migrationcenter.discoveryClients.get",
     "migrationcenter.discoveryClients.sendHeartbeat"
   ],
-  "stage": "BETA",
-  "PermissionCount": 0
+  "stage": "BETA"
 }

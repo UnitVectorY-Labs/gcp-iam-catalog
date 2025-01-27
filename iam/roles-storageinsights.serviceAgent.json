@@ -7,6 +7,5 @@
     "serviceusage.services.use",
     "storageinsights.reportDetails.list"
   ],
-  "stage": "GA",
-  "PermissionCount": 0
+  "stage": "GA"
 }

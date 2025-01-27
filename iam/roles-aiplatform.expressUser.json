@@ -5,6 +5,5 @@
   "included_permissions": [
     "aiplatform.endpoints.predict"
   ],
-  "stage": "BETA",
-  "PermissionCount": 0
+  "stage": "BETA"
 }

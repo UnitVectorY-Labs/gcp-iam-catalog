@@ -13,6 +13,5 @@
     "policysimulator.replays.list",
     "policysimulator.replays.run"
   ],
-  "stage": "BETA",
-  "PermissionCount": 0
+  "stage": "BETA"
 }

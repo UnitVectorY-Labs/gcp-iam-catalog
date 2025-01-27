@@ -9,6 +9,5 @@
     "baremetalsolution.procurements.list",
     "baremetalsolution.skus.list"
   ],
-  "stage": "GA",
-  "PermissionCount": 0
+  "stage": "GA"
 }

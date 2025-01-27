@@ -63,6 +63,5 @@
     "recommender.usageCommitmentRecommendations.get",
     "recommender.usageCommitmentRecommendations.list"
   ],
-  "stage": "GA",
-  "PermissionCount": 0
+  "stage": "GA"
 }

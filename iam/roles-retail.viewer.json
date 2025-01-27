@@ -43,6 +43,5 @@
     "retail.servingConfigs.predict",
     "retail.servingConfigs.search"
   ],
-  "stage": "GA",
-  "PermissionCount": 0
+  "stage": "GA"
 }

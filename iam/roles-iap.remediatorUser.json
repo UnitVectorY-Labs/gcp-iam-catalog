@@ -7,6 +7,5 @@
     "iap.tunnelinstances.remediate",
     "iap.webServiceVersions.remediate"
   ],
-  "stage": "BETA",
-  "PermissionCount": 0
+  "stage": "BETA"
 }

@@ -7,6 +7,5 @@
     "networksecurity.interceptDeploymentGroups.list",
     "networksecurity.interceptDeploymentGroups.use"
   ],
-  "stage": "BETA",
-  "PermissionCount": 0
+  "stage": "BETA"
 }

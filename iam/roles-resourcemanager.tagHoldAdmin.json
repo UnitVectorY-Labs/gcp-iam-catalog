@@ -7,6 +7,5 @@
     "resourcemanager.tagHolds.delete",
     "resourcemanager.tagHolds.list"
   ],
-  "stage": "GA",
-  "PermissionCount": 0
+  "stage": "GA"
 }

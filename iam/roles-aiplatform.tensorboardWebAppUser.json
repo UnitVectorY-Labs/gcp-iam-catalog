@@ -5,6 +5,5 @@
   "included_permissions": [
     "aiplatform.tensorboards.recordAccess"
   ],
-  "stage": "BETA",
-  "PermissionCount": 0
+  "stage": "BETA"
 }

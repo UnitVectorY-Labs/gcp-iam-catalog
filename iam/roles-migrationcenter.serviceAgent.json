@@ -6,6 +6,5 @@
     "storage.objects.get",
     "vmmigration.migratingVms.create"
   ],
-  "stage": "GA",
-  "PermissionCount": 0
+  "stage": "GA"
 }

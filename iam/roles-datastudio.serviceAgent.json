@@ -5,6 +5,5 @@
   "included_permissions": [
     "bigquery.jobs.create"
   ],
-  "stage": "GA",
-  "PermissionCount": 0
+  "stage": "GA"
 }

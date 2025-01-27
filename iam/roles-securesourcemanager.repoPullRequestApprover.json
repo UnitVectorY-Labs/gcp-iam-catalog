@@ -7,6 +7,5 @@
     "resourcemanager.projects.list",
     "securesourcemanager.repositories.approvePullRequests"
   ],
-  "stage": "BETA",
-  "PermissionCount": 0
+  "stage": "BETA"
 }

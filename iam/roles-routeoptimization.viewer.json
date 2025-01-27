@@ -7,6 +7,5 @@
     "resourcemanager.projects.list",
     "routeoptimization.operations.get"
   ],
-  "stage": "GA",
-  "PermissionCount": 0
+  "stage": "GA"
 }

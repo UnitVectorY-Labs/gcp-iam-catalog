@@ -6,6 +6,5 @@
     "accessapproval.requests.get",
     "accessapproval.requests.list"
   ],
-  "stage": "GA",
-  "PermissionCount": 0
+  "stage": "GA"
 }

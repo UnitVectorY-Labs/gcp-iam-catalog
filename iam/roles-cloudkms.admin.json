@@ -56,6 +56,5 @@
     "cloudkms.projects.showEffectiveAutokeyConfig",
     "resourcemanager.projects.get"
   ],
-  "stage": "GA",
-  "PermissionCount": 0
+  "stage": "GA"
 }

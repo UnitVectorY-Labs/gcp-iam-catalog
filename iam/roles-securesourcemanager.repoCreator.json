@@ -7,6 +7,5 @@
     "resourcemanager.projects.list",
     "securesourcemanager.repositories.create"
   ],
-  "stage": "BETA",
-  "PermissionCount": 0
+  "stage": "BETA"
 }

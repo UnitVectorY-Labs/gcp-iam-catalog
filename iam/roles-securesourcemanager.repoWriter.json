@@ -16,6 +16,5 @@
     "securesourcemanager.repositories.writeIssues",
     "securesourcemanager.repositories.writePullRequests"
   ],
-  "stage": "BETA",
-  "PermissionCount": 0
+  "stage": "BETA"
 }

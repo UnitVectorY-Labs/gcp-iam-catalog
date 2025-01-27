@@ -10,6 +10,5 @@
     "baremetalsolution.volumesnapshots.list",
     "baremetalsolution.volumesnapshots.restore"
   ],
-  "stage": "GA",
-  "PermissionCount": 0
+  "stage": "GA"
 }

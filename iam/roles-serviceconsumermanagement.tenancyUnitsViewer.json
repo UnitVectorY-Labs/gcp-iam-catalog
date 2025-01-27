@@ -5,6 +5,5 @@
   "included_permissions": [
     "serviceconsumermanagement.tenancyu.list"
   ],
-  "stage": "BETA",
-  "PermissionCount": 0
+  "stage": "BETA"
 }

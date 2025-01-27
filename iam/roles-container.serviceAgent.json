@@ -1651,6 +1651,5 @@
     "trafficdirector.networks.getConfigs",
     "trafficdirector.networks.reportMetrics"
   ],
-  "stage": "GA",
-  "PermissionCount": 0
+  "stage": "GA"
 }

@@ -7,6 +7,5 @@
     "kubernetesmetadata.metadata.publish",
     "kubernetesmetadata.metadata.snapshot"
   ],
-  "stage": "BETA",
-  "PermissionCount": 0
+  "stage": "BETA"
 }

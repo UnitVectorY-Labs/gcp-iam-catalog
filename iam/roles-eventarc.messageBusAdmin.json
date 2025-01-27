@@ -12,6 +12,5 @@
     "eventarc.messageBuses.update",
     "eventarc.messageBuses.use"
   ],
-  "stage": "BETA",
-  "PermissionCount": 0
+  "stage": "BETA"
 }

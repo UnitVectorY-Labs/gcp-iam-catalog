@@ -16,6 +16,5 @@
     "commercebusinessenablement.refunds.start",
     "commercebusinessenablement.refunds.update"
   ],
-  "stage": "BETA",
-  "PermissionCount": 0
+  "stage": "BETA"
 }

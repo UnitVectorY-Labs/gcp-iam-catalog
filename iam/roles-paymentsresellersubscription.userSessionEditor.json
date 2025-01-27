@@ -5,6 +5,5 @@
   "included_permissions": [
     "paymentsresellersubscription.userSessions.generate"
   ],
-  "stage": "BETA",
-  "PermissionCount": 0
+  "stage": "BETA"
 }

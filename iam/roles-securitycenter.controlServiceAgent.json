@@ -627,6 +627,5 @@
     "storage.buckets.getIamPolicy",
     "storage.buckets.list"
   ],
-  "stage": "GA",
-  "PermissionCount": 0
+  "stage": "GA"
 }
