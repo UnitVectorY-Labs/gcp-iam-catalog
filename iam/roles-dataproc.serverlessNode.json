@@ -12,5 +12,6 @@
     "dataprocrm.nodePools.list",
     "dataprocrm.nodePools.resize"
   ],
-  "stage": "GA"
+  "stage": "GA",
+  "PermissionCount": 0
 }

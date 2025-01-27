@@ -14,5 +14,6 @@
     "dataprocessing.groupcontrols.list",
     "dataprocessing.groupcontrols.update"
   ],
-  "stage": "GA"
+  "stage": "GA",
+  "PermissionCount": 0
 }

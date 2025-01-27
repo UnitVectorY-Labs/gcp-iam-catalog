@@ -6,5 +6,6 @@
     "visionai.assets.create",
     "visionai.assets.ingest"
   ],
-  "stage": "BETA"
+  "stage": "BETA",
+  "PermissionCount": 0
 }

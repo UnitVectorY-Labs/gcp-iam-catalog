@@ -9,5 +9,6 @@
     "clouddebugger.breakpoints.list",
     "clouddebugger.debuggees.list"
   ],
-  "stage": "BETA"
+  "stage": "BETA",
+  "PermissionCount": 0
 }

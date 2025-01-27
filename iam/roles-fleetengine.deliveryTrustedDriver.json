@@ -11,5 +11,6 @@
     "fleetengine.tasks.create",
     "fleetengine.tasks.update"
   ],
-  "stage": "GA"
+  "stage": "GA",
+  "PermissionCount": 0
 }

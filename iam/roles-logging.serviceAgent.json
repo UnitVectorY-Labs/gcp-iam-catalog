@@ -7,5 +7,6 @@
     "bigquery.datasets.get",
     "bigquery.datasets.link"
   ],
-  "stage": "GA"
+  "stage": "GA",
+  "PermissionCount": 0
 }

@@ -8,5 +8,6 @@
     "clouddebugger.breakpoints.update",
     "clouddebugger.debuggees.create"
   ],
-  "stage": "BETA"
+  "stage": "BETA",
+  "PermissionCount": 0
 }

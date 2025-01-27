@@ -6,5 +6,6 @@
     "aiplatform.migratableResources.migrate",
     "aiplatform.migratableResources.search"
   ],
-  "stage": "GA"
+  "stage": "GA",
+  "PermissionCount": 0
 }

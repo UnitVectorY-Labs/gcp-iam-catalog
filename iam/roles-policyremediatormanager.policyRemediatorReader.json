@@ -9,5 +9,6 @@
     "policyremediatormanager.operations.list",
     "policyremediatormanager.remediatorServices.get"
   ],
-  "stage": "BETA"
+  "stage": "BETA",
+  "PermissionCount": 0
 }

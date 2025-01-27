@@ -9,5 +9,6 @@
     "connectors.eventSubscriptions.list",
     "connectors.eventSubscriptions.update"
   ],
-  "stage": "GA"
+  "stage": "GA",
+  "PermissionCount": 0
 }

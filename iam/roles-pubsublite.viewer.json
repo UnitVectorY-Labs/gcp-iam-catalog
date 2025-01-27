@@ -16,5 +16,6 @@
     "pubsublite.topics.list",
     "pubsublite.topics.listSubscriptions"
   ],
-  "stage": "GA"
+  "stage": "GA",
+  "PermissionCount": 0
 }

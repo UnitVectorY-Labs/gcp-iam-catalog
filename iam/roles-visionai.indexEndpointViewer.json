@@ -7,5 +7,6 @@
     "visionai.indexEndpoints.list",
     "visionai.indexEndpoints.search"
   ],
-  "stage": "BETA"
+  "stage": "BETA",
+  "PermissionCount": 0
 }

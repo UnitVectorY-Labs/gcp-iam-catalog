@@ -11,5 +11,6 @@
     "remotebuildexecution.logstreams.get",
     "remotebuildexecution.logstreams.update"
   ],
-  "stage": "BETA"
+  "stage": "BETA",
+  "PermissionCount": 0
 }

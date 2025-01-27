@@ -45,5 +45,6 @@
     "artifactregistry.versions.list",
     "artifactregistry.yumartifacts.create"
   ],
-  "stage": "GA"
+  "stage": "GA",
+  "PermissionCount": 0
 }

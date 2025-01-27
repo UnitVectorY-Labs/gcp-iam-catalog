@@ -6,5 +6,6 @@
     "iam.serviceAccounts.getAccessToken",
     "pubsub.topics.publish"
   ],
-  "stage": "GA"
+  "stage": "GA",
+  "PermissionCount": 0
 }

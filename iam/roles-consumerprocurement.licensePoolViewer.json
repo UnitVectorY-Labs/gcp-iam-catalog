@@ -6,5 +6,6 @@
     "consumerprocurement.licensePools.enumerateLicensedUsers",
     "consumerprocurement.licensePools.get"
   ],
-  "stage": "GA"
+  "stage": "GA",
+  "PermissionCount": 0
 }

@@ -28,5 +28,6 @@
     "runtimeconfig.waiters.setIamPolicy",
     "runtimeconfig.waiters.update"
   ],
-  "stage": "GA"
+  "stage": "GA",
+  "PermissionCount": 0
 }

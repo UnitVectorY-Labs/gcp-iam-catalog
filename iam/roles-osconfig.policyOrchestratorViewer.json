@@ -9,5 +9,6 @@
     "osconfig.policyOrchestrators.get",
     "osconfig.policyOrchestrators.list"
   ],
-  "stage": "BETA"
+  "stage": "BETA",
+  "PermissionCount": 0
 }

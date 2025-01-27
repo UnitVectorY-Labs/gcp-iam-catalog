@@ -6,5 +6,6 @@
     "clientauthconfig.clients.list",
     "riscconfigurationservice.riscconfigs.get"
   ],
-  "stage": "BETA"
+  "stage": "BETA",
+  "PermissionCount": 0
 }

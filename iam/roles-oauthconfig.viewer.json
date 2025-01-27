@@ -11,5 +11,6 @@
     "oauthconfig.testusers.get",
     "oauthconfig.verification.get"
   ],
-  "stage": "BETA"
+  "stage": "BETA",
+  "PermissionCount": 0
 }

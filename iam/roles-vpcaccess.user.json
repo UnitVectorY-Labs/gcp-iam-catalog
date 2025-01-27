@@ -13,5 +13,6 @@
     "vpcaccess.operations.get",
     "vpcaccess.operations.list"
   ],
-  "stage": "GA"
+  "stage": "GA",
+  "PermissionCount": 0
 }

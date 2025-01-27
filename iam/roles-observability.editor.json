@@ -11,5 +11,6 @@
     "observability.scopes.get",
     "observability.scopes.update"
   ],
-  "stage": "BETA"
+  "stage": "BETA",
+  "PermissionCount": 0
 }

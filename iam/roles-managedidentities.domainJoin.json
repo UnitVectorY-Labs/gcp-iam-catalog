@@ -6,5 +6,6 @@
     "managedidentities.domains.domainJoinMachine",
     "managedidentities.domains.get"
   ],
-  "stage": "BETA"
+  "stage": "BETA",
+  "PermissionCount": 0
 }

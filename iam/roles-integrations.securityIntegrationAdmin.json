@@ -23,5 +23,6 @@
     "integrations.securityIntegrations.invoke",
     "integrations.securityIntegrations.list"
   ],
-  "stage": "BETA"
+  "stage": "BETA",
+  "PermissionCount": 0
 }

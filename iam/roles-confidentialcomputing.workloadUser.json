@@ -9,5 +9,6 @@
     "confidentialcomputing.locations.list",
     "logging.logEntries.create"
   ],
-  "stage": "GA"
+  "stage": "GA",
+  "PermissionCount": 0
 }

@@ -9,5 +9,6 @@
     "gkehub.memberships.get",
     "gkehub.memberships.list"
   ],
-  "stage": "GA"
+  "stage": "GA",
+  "PermissionCount": 0
 }

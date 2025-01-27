@@ -8,5 +8,6 @@
     "genomics.operations.get",
     "genomics.operations.list"
   ],
-  "stage": "GA"
+  "stage": "GA",
+  "PermissionCount": 0
 }

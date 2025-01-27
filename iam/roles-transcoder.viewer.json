@@ -10,5 +10,6 @@
     "transcoder.jobs.get",
     "transcoder.jobs.list"
   ],
-  "stage": "GA"
+  "stage": "GA",
+  "PermissionCount": 0
 }

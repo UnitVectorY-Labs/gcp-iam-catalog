@@ -10,5 +10,6 @@
     "firebaseappdistro.testers.list",
     "firebaseappdistro.testers.update"
   ],
-  "stage": "GA"
+  "stage": "GA",
+  "PermissionCount": 0
 }

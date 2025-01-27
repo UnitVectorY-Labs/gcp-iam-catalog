@@ -11,5 +11,6 @@
     "workstations.workstations.update",
     "workstations.workstations.use"
   ],
-  "stage": "GA"
+  "stage": "GA",
+  "PermissionCount": 0
 }

@@ -14,5 +14,6 @@
     "monitoring.slos.list",
     "monitoring.slos.update"
   ],
-  "stage": "GA"
+  "stage": "GA",
+  "PermissionCount": 0
 }

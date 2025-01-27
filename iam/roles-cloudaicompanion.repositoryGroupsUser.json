@@ -8,5 +8,6 @@
     "cloudaicompanion.repositoryGroups.getIamPolicy",
     "cloudaicompanion.repositoryGroups.use"
   ],
-  "stage": "BETA"
+  "stage": "BETA",
+  "PermissionCount": 0
 }

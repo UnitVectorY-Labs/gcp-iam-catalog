@@ -22,5 +22,6 @@
     "identitytoolkit.tenants.setIamPolicy",
     "identitytoolkit.tenants.update"
   ],
-  "stage": "GA"
+  "stage": "GA",
+  "PermissionCount": 0
 }

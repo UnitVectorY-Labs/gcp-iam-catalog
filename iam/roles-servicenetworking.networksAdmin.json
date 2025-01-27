@@ -25,5 +25,6 @@
     "servicenetworking.services.updateDnsRecordSet",
     "servicenetworking.services.use"
   ],
-  "stage": "BETA"
+  "stage": "BETA",
+  "PermissionCount": 0
 }

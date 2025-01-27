@@ -13,5 +13,6 @@
     "connectors.managedZones.setIamPolicy",
     "connectors.managedZones.update"
   ],
-  "stage": "GA"
+  "stage": "GA",
+  "PermissionCount": 0
 }

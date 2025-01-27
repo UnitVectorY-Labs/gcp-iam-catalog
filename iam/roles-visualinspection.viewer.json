@@ -30,5 +30,6 @@
     "visualinspection.solutions.get",
     "visualinspection.solutions.list"
   ],
-  "stage": "GA"
+  "stage": "GA",
+  "PermissionCount": 0
 }

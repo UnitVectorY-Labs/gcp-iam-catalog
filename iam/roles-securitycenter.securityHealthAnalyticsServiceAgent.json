@@ -592,5 +592,6 @@
     "serviceusage.services.list",
     "stackdriver.projects.get"
   ],
-  "stage": "GA"
+  "stage": "GA",
+  "PermissionCount": 0
 }

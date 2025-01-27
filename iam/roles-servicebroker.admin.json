@@ -28,5 +28,6 @@
     "servicebroker.instances.setIamPolicy",
     "servicebroker.instances.update"
   ],
-  "stage": "DEPRECATED"
+  "stage": "DEPRECATED",
+  "PermissionCount": 0
 }

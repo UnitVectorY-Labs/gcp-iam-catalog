@@ -17,5 +17,6 @@
     "visionai.assets.update",
     "visionai.assets.upload"
   ],
-  "stage": "BETA"
+  "stage": "BETA",
+  "PermissionCount": 0
 }

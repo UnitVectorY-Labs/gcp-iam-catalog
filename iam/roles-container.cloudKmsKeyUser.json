@@ -12,5 +12,6 @@
     "cloudkms.locations.list",
     "resourcemanager.projects.get"
   ],
-  "stage": "GA"
+  "stage": "GA",
+  "PermissionCount": 0
 }

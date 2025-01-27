@@ -9,5 +9,6 @@
     "servicemanagement.services.quota",
     "servicemanagement.services.report"
   ],
-  "stage": "GA"
+  "stage": "GA",
+  "PermissionCount": 0
 }

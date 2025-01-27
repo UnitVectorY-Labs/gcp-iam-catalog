@@ -52,5 +52,6 @@
     "storage.buckets.listEffectiveTags",
     "storage.buckets.listTagBindings"
   ],
-  "stage": "GA"
+  "stage": "GA",
+  "PermissionCount": 0
 }

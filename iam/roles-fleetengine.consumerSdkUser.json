@@ -8,5 +8,6 @@
     "fleetengine.vehicles.search",
     "fleetengine.vehicles.searchFuzzed"
   ],
-  "stage": "GA"
+  "stage": "GA",
+  "PermissionCount": 0
 }

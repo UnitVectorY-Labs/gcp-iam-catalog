@@ -6,5 +6,6 @@
     "remotebuildexecution.actions.set",
     "remotebuildexecution.blobs.create"
   ],
-  "stage": "BETA"
+  "stage": "BETA",
+  "PermissionCount": 0
 }

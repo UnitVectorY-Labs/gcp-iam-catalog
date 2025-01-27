@@ -66,5 +66,6 @@
     "stackdriver.resourceMetadata.list",
     "stackdriver.resourceMetadata.write"
   ],
-  "stage": "GA"
+  "stage": "GA",
+  "PermissionCount": 0
 }

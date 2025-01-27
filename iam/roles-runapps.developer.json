@@ -20,5 +20,6 @@
     "runapps.operations.get",
     "runapps.operations.list"
   ],
-  "stage": "BETA"
+  "stage": "BETA",
+  "PermissionCount": 0
 }

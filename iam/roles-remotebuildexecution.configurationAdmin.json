@@ -14,5 +14,6 @@
     "remotebuildexecution.workerpools.list",
     "remotebuildexecution.workerpools.update"
   ],
-  "stage": "BETA"
+  "stage": "BETA",
+  "PermissionCount": 0
 }

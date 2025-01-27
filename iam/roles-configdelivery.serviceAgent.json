@@ -46,5 +46,6 @@
     "gkehub.memberships.get",
     "iam.serviceAccounts.actAs"
   ],
-  "stage": "GA"
+  "stage": "GA",
+  "PermissionCount": 0
 }

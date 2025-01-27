@@ -54,5 +54,6 @@
     "vmmigration.utilizationReports.get",
     "vmmigration.utilizationReports.list"
   ],
-  "stage": "BETA"
+  "stage": "BETA",
+  "PermissionCount": 0
 }

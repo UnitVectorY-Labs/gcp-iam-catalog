@@ -17,5 +17,6 @@
     "visionai.streams.receive",
     "visionai.streams.send"
   ],
-  "stage": "BETA"
+  "stage": "BETA",
+  "PermissionCount": 0
 }

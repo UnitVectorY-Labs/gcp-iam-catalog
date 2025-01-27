@@ -5,5 +5,6 @@
   "included_permissions": [
     "iap.webServiceVersions.accessViaIAP"
   ],
-  "stage": "GA"
+  "stage": "GA",
+  "PermissionCount": 0
 }

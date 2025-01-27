@@ -6,5 +6,6 @@
     "dlp.storedInfoTypes.get",
     "dlp.storedInfoTypes.list"
   ],
-  "stage": "GA"
+  "stage": "GA",
+  "PermissionCount": 0
 }

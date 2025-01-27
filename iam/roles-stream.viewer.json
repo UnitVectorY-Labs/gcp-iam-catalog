@@ -14,5 +14,6 @@
     "stream.streamInstances.get",
     "stream.streamInstances.list"
   ],
-  "stage": "GA"
+  "stage": "GA",
+  "PermissionCount": 0
 }

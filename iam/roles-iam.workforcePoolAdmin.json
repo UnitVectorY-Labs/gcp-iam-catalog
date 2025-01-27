@@ -29,5 +29,6 @@
     "iam.googleapis.com/workforcePools.update",
     "iam.googleapis.com/workforcePools.updatePolicyBinding"
   ],
-  "stage": "GA"
+  "stage": "GA",
+  "PermissionCount": 0
 }

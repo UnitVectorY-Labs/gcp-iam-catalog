@@ -19,5 +19,6 @@
     "telcoautomation.publicBlueprints.get",
     "telcoautomation.publicBlueprints.list"
   ],
-  "stage": "BETA"
+  "stage": "BETA",
+  "PermissionCount": 0
 }

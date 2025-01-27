@@ -6,5 +6,6 @@
     "cloudoptimization.operations.create",
     "cloudoptimization.operations.get"
   ],
-  "stage": "GA"
+  "stage": "GA",
+  "PermissionCount": 0
 }

@@ -9,5 +9,6 @@
     "dialogflow.webhooks.list",
     "dialogflow.webhooks.update"
   ],
-  "stage": "GA"
+  "stage": "GA",
+  "PermissionCount": 0
 }

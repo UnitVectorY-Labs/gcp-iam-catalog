@@ -32,5 +32,6 @@
     "observability.scopes.get",
     "resourcemanager.projects.get"
   ],
-  "stage": "GA"
+  "stage": "GA",
+  "PermissionCount": 0
 }

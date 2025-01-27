@@ -12,5 +12,6 @@
     "datacatalog.entryGroups.updateTag",
     "pubsub.topics.updateTag"
   ],
-  "stage": "GA"
+  "stage": "GA",
+  "PermissionCount": 0
 }

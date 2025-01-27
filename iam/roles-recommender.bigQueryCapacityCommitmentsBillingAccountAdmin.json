@@ -12,5 +12,6 @@
     "recommender.bigqueryCapacityCommitmentsRecommendations.list",
     "recommender.bigqueryCapacityCommitmentsRecommendations.update"
   ],
-  "stage": "BETA"
+  "stage": "BETA",
+  "PermissionCount": 0
 }

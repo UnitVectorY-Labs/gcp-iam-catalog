@@ -5,5 +5,6 @@
   "included_permissions": [
     "securitycenter.valuedresources.list"
   ],
-  "stage": "GA"
+  "stage": "GA",
+  "PermissionCount": 0
 }

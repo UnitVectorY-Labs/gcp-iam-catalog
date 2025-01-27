@@ -9,5 +9,6 @@
     "resourcemanager.projects.list",
     "serviceusage.services.list"
   ],
-  "stage": "BETA"
+  "stage": "BETA",
+  "PermissionCount": 0
 }

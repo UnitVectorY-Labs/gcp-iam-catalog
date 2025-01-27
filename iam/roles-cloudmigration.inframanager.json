@@ -91,5 +91,6 @@
     "storage.buckets.list",
     "storage.buckets.update"
   ],
-  "stage": "BETA"
+  "stage": "BETA",
+  "PermissionCount": 0
 }

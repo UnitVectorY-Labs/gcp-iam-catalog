@@ -19,5 +19,6 @@
     "dns.responsePolicyRules.list",
     "dns.responsePolicyRules.update"
   ],
-  "stage": "GA"
+  "stage": "GA",
+  "PermissionCount": 0
 }

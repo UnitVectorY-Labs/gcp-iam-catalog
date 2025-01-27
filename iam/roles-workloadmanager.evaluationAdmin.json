@@ -24,5 +24,6 @@
     "workloadmanager.results.list",
     "workloadmanager.rules.list"
   ],
-  "stage": "BETA"
+  "stage": "BETA",
+  "PermissionCount": 0
 }

@@ -16,5 +16,6 @@
     "recommender.spendBasedCommitmentRecommenderConfig.get",
     "recommender.spendBasedCommitmentRecommenderConfig.update"
   ],
-  "stage": "BETA"
+  "stage": "BETA",
+  "PermissionCount": 0
 }

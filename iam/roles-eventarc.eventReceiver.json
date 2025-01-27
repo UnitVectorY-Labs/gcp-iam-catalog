@@ -6,5 +6,6 @@
     "eventarc.events.receiveAuditLogWritten",
     "eventarc.events.receiveEvent"
   ],
-  "stage": "GA"
+  "stage": "GA",
+  "PermissionCount": 0
 }

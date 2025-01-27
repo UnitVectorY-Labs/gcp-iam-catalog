@@ -6,5 +6,6 @@
     "visionai.events.get",
     "visionai.events.list"
   ],
-  "stage": "BETA"
+  "stage": "BETA",
+  "PermissionCount": 0
 }

@@ -11,5 +11,6 @@
     "cloudsecurityscanner.scans.list",
     "cloudsecurityscanner.scans.run"
   ],
-  "stage": "GA"
+  "stage": "GA",
+  "PermissionCount": 0
 }

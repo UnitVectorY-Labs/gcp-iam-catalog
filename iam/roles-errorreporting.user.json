@@ -19,5 +19,6 @@
     "resourcemanager.projects.list",
     "stackdriver.projects.get"
   ],
-  "stage": "BETA"
+  "stage": "BETA",
+  "PermissionCount": 0
 }

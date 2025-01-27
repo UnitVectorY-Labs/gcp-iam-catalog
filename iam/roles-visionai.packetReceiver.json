@@ -10,5 +10,6 @@
     "visionai.series.renewLease",
     "visionai.streams.receive"
   ],
-  "stage": "BETA"
+  "stage": "BETA",
+  "PermissionCount": 0
 }

@@ -29,5 +29,6 @@
     "securityposture.postureDeployments.list",
     "securityposture.postureDeployments.update"
   ],
-  "stage": "GA"
+  "stage": "GA",
+  "PermissionCount": 0
 }

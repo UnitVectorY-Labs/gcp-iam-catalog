@@ -5,5 +5,6 @@
   "included_permissions": [
     "opsconfigmonitoring.resourceMetadata.write"
   ],
-  "stage": "BETA"
+  "stage": "BETA",
+  "PermissionCount": 0
 }

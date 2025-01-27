@@ -11,5 +11,6 @@
     "firebasemessagingcampaigns.campaigns.stop",
     "firebasemessagingcampaigns.campaigns.update"
   ],
-  "stage": "BETA"
+  "stage": "BETA",
+  "PermissionCount": 0
 }

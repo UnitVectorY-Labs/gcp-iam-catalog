@@ -8,5 +8,6 @@
     "monitoring.notificationChannels.get",
     "monitoring.notificationChannels.list"
   ],
-  "stage": "BETA"
+  "stage": "BETA",
+  "PermissionCount": 0
 }

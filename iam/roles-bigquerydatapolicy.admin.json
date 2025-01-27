@@ -11,5 +11,6 @@
     "bigquery.dataPolicies.setIamPolicy",
     "bigquery.dataPolicies.update"
   ],
-  "stage": "GA"
+  "stage": "GA",
+  "PermissionCount": 0
 }

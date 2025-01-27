@@ -23,5 +23,6 @@
     "firebaseappcheck.services.get",
     "firebaseappcheck.services.update"
   ],
-  "stage": "GA"
+  "stage": "GA",
+  "PermissionCount": 0
 }

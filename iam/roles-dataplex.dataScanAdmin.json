@@ -15,5 +15,6 @@
     "dataplex.operations.get",
     "dataplex.operations.list"
   ],
-  "stage": "GA"
+  "stage": "GA",
+  "PermissionCount": 0
 }

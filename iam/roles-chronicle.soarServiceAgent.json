@@ -38,5 +38,6 @@
     "storage.buckets.list",
     "storage.buckets.update"
   ],
-  "stage": "GA"
+  "stage": "GA",
+  "PermissionCount": 0
 }

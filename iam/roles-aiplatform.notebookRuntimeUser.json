@@ -12,5 +12,6 @@
     "aiplatform.notebookRuntimes.list",
     "aiplatform.operations.list"
   ],
-  "stage": "GA"
+  "stage": "GA",
+  "PermissionCount": 0
 }

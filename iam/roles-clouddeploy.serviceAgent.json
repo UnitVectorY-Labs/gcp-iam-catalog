@@ -19,5 +19,6 @@
     "storage.buckets.get",
     "storage.objects.get"
   ],
-  "stage": "GA"
+  "stage": "GA",
+  "PermissionCount": 0
 }

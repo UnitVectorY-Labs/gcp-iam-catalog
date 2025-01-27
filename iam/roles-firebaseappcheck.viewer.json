@@ -13,5 +13,6 @@
     "firebaseappcheck.safetyNetConfig.get",
     "firebaseappcheck.services.get"
   ],
-  "stage": "GA"
+  "stage": "GA",
+  "PermissionCount": 0
 }

@@ -8,5 +8,6 @@
     "iam.serviceAccounts.getOpenIdToken",
     "serviceusage.services.use"
   ],
-  "stage": "GA"
+  "stage": "GA",
+  "PermissionCount": 0
 }

@@ -22,5 +22,6 @@
     "identitytoolkit.tenants.setIamPolicy",
     "identitytoolkit.tenants.update"
   ],
-  "stage": "BETA"
+  "stage": "BETA",
+  "PermissionCount": 0
 }

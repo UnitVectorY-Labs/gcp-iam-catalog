@@ -13,5 +13,6 @@
     "storage.hmacKeys.list",
     "storage.hmacKeys.update"
   ],
-  "stage": "GA"
+  "stage": "GA",
+  "PermissionCount": 0
 }

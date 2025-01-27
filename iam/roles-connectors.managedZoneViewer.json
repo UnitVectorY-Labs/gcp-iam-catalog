@@ -9,5 +9,6 @@
     "connectors.managedZones.getIamPolicy",
     "connectors.managedZones.list"
   ],
-  "stage": "GA"
+  "stage": "GA",
+  "PermissionCount": 0
 }

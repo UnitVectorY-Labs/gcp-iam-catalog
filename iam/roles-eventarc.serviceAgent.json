@@ -53,5 +53,6 @@
     "storage.buckets.update",
     "workflows.workflows.get"
   ],
-  "stage": "GA"
+  "stage": "GA",
+  "PermissionCount": 0
 }

@@ -6,5 +6,6 @@
     "telemetry.metrics.write",
     "telemetry.traces.write"
   ],
-  "stage": "BETA"
+  "stage": "BETA",
+  "PermissionCount": 0
 }

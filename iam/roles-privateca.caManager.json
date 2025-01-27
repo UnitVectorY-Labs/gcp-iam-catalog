@@ -43,5 +43,6 @@
     "resourcemanager.projects.list",
     "storage.buckets.create"
   ],
-  "stage": "GA"
+  "stage": "GA",
+  "PermissionCount": 0
 }

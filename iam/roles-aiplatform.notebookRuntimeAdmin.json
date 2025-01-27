@@ -22,5 +22,6 @@
     "compute.reservations.get",
     "compute.reservations.list"
   ],
-  "stage": "GA"
+  "stage": "GA",
+  "PermissionCount": 0
 }

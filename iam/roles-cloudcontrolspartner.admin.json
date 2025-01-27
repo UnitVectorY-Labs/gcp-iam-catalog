@@ -16,5 +16,6 @@
     "cloudcontrolspartner.violations.list",
     "cloudcontrolspartner.workloads.list"
   ],
-  "stage": "GA"
+  "stage": "GA",
+  "PermissionCount": 0
 }

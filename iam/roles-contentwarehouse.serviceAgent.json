@@ -17,5 +17,6 @@
     "storage.objects.list",
     "storage.objects.update"
   ],
-  "stage": "GA"
+  "stage": "GA",
+  "PermissionCount": 0
 }

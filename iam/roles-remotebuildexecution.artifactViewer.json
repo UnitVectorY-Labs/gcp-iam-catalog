@@ -7,5 +7,6 @@
     "remotebuildexecution.blobs.get",
     "remotebuildexecution.logstreams.get"
   ],
-  "stage": "BETA"
+  "stage": "BETA",
+  "PermissionCount": 0
 }

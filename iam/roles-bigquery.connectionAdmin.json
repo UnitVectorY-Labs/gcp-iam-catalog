@@ -14,5 +14,6 @@
     "bigquery.connections.updateTag",
     "bigquery.connections.use"
   ],
-  "stage": "GA"
+  "stage": "GA",
+  "PermissionCount": 0
 }

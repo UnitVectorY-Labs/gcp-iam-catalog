@@ -8,5 +8,6 @@
     "securedlandingzone.overwatches.activate",
     "securedlandingzone.overwatches.suspend"
   ],
-  "stage": "BETA"
+  "stage": "BETA",
+  "PermissionCount": 0
 }

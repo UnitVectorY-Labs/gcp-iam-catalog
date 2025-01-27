@@ -16,5 +16,6 @@
     "servicehealth.organizationImpacts.list",
     "servicehealth.statuses.get"
   ],
-  "stage": "GA"
+  "stage": "GA",
+  "PermissionCount": 0
 }

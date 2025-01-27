@@ -19,5 +19,6 @@
     "workloadcertificate.workloadRegistrations.list",
     "workloadcertificate.workloadRegistrations.update"
   ],
-  "stage": "BETA"
+  "stage": "BETA",
+  "PermissionCount": 0
 }

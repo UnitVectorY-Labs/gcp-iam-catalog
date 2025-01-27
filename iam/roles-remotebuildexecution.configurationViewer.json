@@ -8,5 +8,6 @@
     "remotebuildexecution.workerpools.get",
     "remotebuildexecution.workerpools.list"
   ],
-  "stage": "BETA"
+  "stage": "BETA",
+  "PermissionCount": 0
 }

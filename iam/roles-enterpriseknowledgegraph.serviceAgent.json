@@ -24,5 +24,6 @@
     "storage.objects.get",
     "storage.objects.list"
   ],
-  "stage": "GA"
+  "stage": "GA",
+  "PermissionCount": 0
 }

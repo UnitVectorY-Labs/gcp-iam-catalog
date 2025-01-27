@@ -14,5 +14,6 @@
     "workflows.stepEntries.get",
     "workflows.stepEntries.list"
   ],
-  "stage": "GA"
+  "stage": "GA",
+  "PermissionCount": 0
 }

@@ -8,5 +8,6 @@
     "eventarc.messageBuses.publish",
     "eventarc.messageBuses.use"
   ],
-  "stage": "BETA"
+  "stage": "BETA",
+  "PermissionCount": 0
 }

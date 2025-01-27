@@ -13,5 +13,6 @@
     "gkebackup.volumeBackups.get",
     "gkebackup.volumeBackups.list"
   ],
-  "stage": "GA"
+  "stage": "GA",
+  "PermissionCount": 0
 }

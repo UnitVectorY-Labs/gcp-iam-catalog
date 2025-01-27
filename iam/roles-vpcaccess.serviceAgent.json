@@ -98,5 +98,6 @@
     "logging.logMetrics.update",
     "resourcemanager.projects.get"
   ],
-  "stage": "GA"
+  "stage": "GA",
+  "PermissionCount": 0
 }

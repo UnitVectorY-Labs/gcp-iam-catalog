@@ -3,5 +3,6 @@
   "title": "Vision AI RetailCatalog Editor",
   "description": "Access to read and write Vision AI RetailCatalogs.",
   "included_permissions": null,
-  "stage": "BETA"
+  "stage": "BETA",
+  "PermissionCount": 0
 }

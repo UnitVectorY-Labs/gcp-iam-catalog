@@ -6,5 +6,6 @@
     "cloud.locations.get",
     "cloud.locations.list"
   ],
-  "stage": "BETA"
+  "stage": "BETA",
+  "PermissionCount": 0
 }

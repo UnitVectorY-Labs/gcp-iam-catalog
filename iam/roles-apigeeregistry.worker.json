@@ -23,5 +23,6 @@
     "resourcemanager.projects.get",
     "resourcemanager.projects.list"
   ],
-  "stage": "BETA"
+  "stage": "BETA",
+  "PermissionCount": 0
 }

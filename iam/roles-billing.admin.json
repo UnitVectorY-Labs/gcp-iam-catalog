@@ -142,5 +142,6 @@
     "resourcemanager.projects.get",
     "resourcemanager.projects.list"
   ],
-  "stage": "GA"
+  "stage": "GA",
+  "PermissionCount": 0
 }

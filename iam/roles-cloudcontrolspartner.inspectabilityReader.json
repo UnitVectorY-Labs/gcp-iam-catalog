@@ -8,5 +8,6 @@
     "cloudcontrolspartner.inspectabilityevents.get",
     "cloudcontrolspartner.platformcontrols.get"
   ],
-  "stage": "GA"
+  "stage": "GA",
+  "PermissionCount": 0
 }

@@ -11,5 +11,6 @@
     "datastudio.workspaces.search",
     "resourcemanager.projects.get"
   ],
-  "stage": "BETA"
+  "stage": "BETA",
+  "PermissionCount": 0
 }

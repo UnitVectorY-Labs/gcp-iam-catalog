@@ -16,5 +16,6 @@
     "aiplatform.endpoints.predict",
     "aiplatform.locations.evaluateInstances"
   ],
-  "stage": "BETA"
+  "stage": "BETA",
+  "PermissionCount": 0
 }

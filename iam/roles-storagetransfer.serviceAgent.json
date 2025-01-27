@@ -15,5 +15,6 @@
     "pubsub.topics.publish",
     "pubsub.topics.update"
   ],
-  "stage": "GA"
+  "stage": "GA",
+  "PermissionCount": 0
 }

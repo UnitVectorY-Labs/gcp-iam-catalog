@@ -38,5 +38,6 @@
     "resourcemanager.projects.setIamPolicy",
     "resourcemanager.projects.updatePolicyBinding"
   ],
-  "stage": "GA"
+  "stage": "GA",
+  "PermissionCount": 0
 }

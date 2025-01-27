@@ -8,5 +8,6 @@
     "storage.buckets.get",
     "storage.buckets.getObjectInsights"
   ],
-  "stage": "GA"
+  "stage": "GA",
+  "PermissionCount": 0
 }

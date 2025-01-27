@@ -7,5 +7,6 @@
     "resourcemanager.projects.list",
     "subscribewithgoogledeveloper.tools.get"
   ],
-  "stage": "BETA"
+  "stage": "BETA",
+  "PermissionCount": 0
 }

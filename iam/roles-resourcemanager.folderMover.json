@@ -6,5 +6,6 @@
     "resourcemanager.folders.move",
     "resourcemanager.projects.move"
   ],
-  "stage": "GA"
+  "stage": "GA",
+  "PermissionCount": 0
 }

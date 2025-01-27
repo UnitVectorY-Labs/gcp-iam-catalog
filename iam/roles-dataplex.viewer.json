@@ -40,5 +40,6 @@
     "dataplex.zones.getIamPolicy",
     "dataplex.zones.list"
   ],
-  "stage": "GA"
+  "stage": "GA",
+  "PermissionCount": 0
 }

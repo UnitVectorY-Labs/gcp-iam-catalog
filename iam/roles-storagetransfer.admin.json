@@ -26,5 +26,6 @@
     "storagetransfer.operations.resume",
     "storagetransfer.projects.getServiceAccount"
   ],
-  "stage": "GA"
+  "stage": "GA",
+  "PermissionCount": 0
 }

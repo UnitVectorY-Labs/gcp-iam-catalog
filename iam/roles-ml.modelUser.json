@@ -9,5 +9,6 @@
     "ml.versions.list",
     "ml.versions.predict"
   ],
-  "stage": "GA"
+  "stage": "GA",
+  "PermissionCount": 0
 }

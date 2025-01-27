@@ -7,5 +7,6 @@
     "baremetalsolution.nfsshares.list",
     "baremetalsolution.operations.get"
   ],
-  "stage": "GA"
+  "stage": "GA",
+  "PermissionCount": 0
 }

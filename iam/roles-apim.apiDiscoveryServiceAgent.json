@@ -31,5 +31,6 @@
     "networkservices.operations.get",
     "networkservices.operations.list"
   ],
-  "stage": "GA"
+  "stage": "GA",
+  "PermissionCount": 0
 }

@@ -22,5 +22,6 @@
     "iap.webTypes.getIamPolicy",
     "iap.webTypes.setIamPolicy"
   ],
-  "stage": "GA"
+  "stage": "GA",
+  "PermissionCount": 0
 }

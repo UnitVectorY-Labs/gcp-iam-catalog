@@ -6,5 +6,6 @@
     "spanner.databaseRoles.list",
     "spanner.databases.useRoleBasedAccess"
   ],
-  "stage": "GA"
+  "stage": "GA",
+  "PermissionCount": 0
 }

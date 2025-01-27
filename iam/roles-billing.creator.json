@@ -6,5 +6,6 @@
     "billing.accounts.create",
     "resourcemanager.organizations.get"
   ],
-  "stage": "GA"
+  "stage": "GA",
+  "PermissionCount": 0
 }

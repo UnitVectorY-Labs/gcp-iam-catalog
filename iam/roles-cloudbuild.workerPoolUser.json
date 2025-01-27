@@ -5,5 +5,6 @@
   "included_permissions": [
     "cloudbuild.workerpools.use"
   ],
-  "stage": "GA"
+  "stage": "GA",
+  "PermissionCount": 0
 }

@@ -5,5 +5,6 @@
   "included_permissions": [
     "iam.serviceAccounts.getAccessToken"
   ],
-  "stage": "GA"
+  "stage": "GA",
+  "PermissionCount": 0
 }

@@ -6,5 +6,6 @@
     "dlp.analyzeRiskTemplates.get",
     "dlp.analyzeRiskTemplates.list"
   ],
-  "stage": "GA"
+  "stage": "GA",
+  "PermissionCount": 0
 }

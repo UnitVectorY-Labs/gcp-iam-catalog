@@ -7,5 +7,6 @@
     "dlp.fileStoreProfiles.get",
     "dlp.fileStoreProfiles.list"
   ],
-  "stage": "GA"
+  "stage": "GA",
+  "PermissionCount": 0
 }

@@ -7,5 +7,6 @@
     "servicemanagement.services.list",
     "source.repos.get"
   ],
-  "stage": "GA"
+  "stage": "GA",
+  "PermissionCount": 0
 }

@@ -12,5 +12,6 @@
     "timeseriesinsights.locations.get",
     "timeseriesinsights.locations.list"
   ],
-  "stage": "BETA"
+  "stage": "BETA",
+  "PermissionCount": 0
 }

@@ -6,5 +6,6 @@
     "bigquery.connections.delegate",
     "bigquery.connections.use"
   ],
-  "stage": "GA"
+  "stage": "GA",
+  "PermissionCount": 0
 }

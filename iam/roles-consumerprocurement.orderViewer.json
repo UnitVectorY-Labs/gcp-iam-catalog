@@ -23,5 +23,6 @@
     "consumerprocurement.orders.get",
     "consumerprocurement.orders.list"
   ],
-  "stage": "GA"
+  "stage": "GA",
+  "PermissionCount": 0
 }

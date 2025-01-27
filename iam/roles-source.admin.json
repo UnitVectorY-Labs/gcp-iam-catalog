@@ -14,5 +14,6 @@
     "source.repos.updateProjectConfig",
     "source.repos.updateRepoConfig"
   ],
-  "stage": "GA"
+  "stage": "GA",
+  "PermissionCount": 0
 }

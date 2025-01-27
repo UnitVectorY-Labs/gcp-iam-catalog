@@ -6,5 +6,6 @@
     "iam.denypolicies.get",
     "iam.denypolicies.list"
   ],
-  "stage": "GA"
+  "stage": "GA",
+  "PermissionCount": 0
 }

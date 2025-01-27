@@ -8,5 +8,6 @@
     "monitoring.slos.get",
     "monitoring.slos.list"
   ],
-  "stage": "GA"
+  "stage": "GA",
+  "PermissionCount": 0
 }

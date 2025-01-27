@@ -9,5 +9,6 @@
     "identitytoolkit.tenants.getIamPolicy",
     "identitytoolkit.tenants.list"
   ],
-  "stage": "GA"
+  "stage": "GA",
+  "PermissionCount": 0
 }

@@ -3,5 +3,6 @@
   "title": "Vision AI RetailCatalog Viewer",
   "description": "Access to read Vision AI RetailCatalogs.",
   "included_permissions": null,
-  "stage": "BETA"
+  "stage": "BETA",
+  "PermissionCount": 0
 }

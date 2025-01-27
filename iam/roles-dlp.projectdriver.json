@@ -1247,5 +1247,6 @@
     "workstations.workstationClusters.listEffectiveTags",
     "workstations.workstationClusters.listTagBindings"
   ],
-  "stage": "GA"
+  "stage": "GA",
+  "PermissionCount": 0
 }

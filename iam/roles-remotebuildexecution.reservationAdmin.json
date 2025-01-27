@@ -7,5 +7,6 @@
     "remotebuildexecution.actions.delete",
     "remotebuildexecution.actions.get"
   ],
-  "stage": "BETA"
+  "stage": "BETA",
+  "PermissionCount": 0
 }

@@ -10,5 +10,6 @@
     "fleetengine.tasks.searchWithTrackingId",
     "fleetengine.tasktrackinginfo.get"
   ],
-  "stage": "GA"
+  "stage": "GA",
+  "PermissionCount": 0
 }

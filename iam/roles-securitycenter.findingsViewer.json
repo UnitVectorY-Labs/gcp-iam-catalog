@@ -17,5 +17,6 @@
     "securitycenter.userinterfacemetadata.get",
     "securitycenter.vulnerabilitysnapshots.list"
   ],
-  "stage": "GA"
+  "stage": "GA",
+  "PermissionCount": 0
 }

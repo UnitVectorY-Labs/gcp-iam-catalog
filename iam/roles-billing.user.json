@@ -10,5 +10,6 @@
     "billing.credits.list",
     "billing.resourceAssociations.create"
   ],
-  "stage": "GA"
+  "stage": "GA",
+  "PermissionCount": 0
 }

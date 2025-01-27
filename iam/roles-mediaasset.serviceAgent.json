@@ -12,5 +12,6 @@
     "transcoder.jobs.delete",
     "transcoder.jobs.get"
   ],
-  "stage": "GA"
+  "stage": "GA",
+  "PermissionCount": 0
 }

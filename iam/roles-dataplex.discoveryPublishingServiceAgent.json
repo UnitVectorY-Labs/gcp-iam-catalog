@@ -6,5 +6,6 @@
     "bigquery.datasets.create",
     "bigquery.datasets.get"
   ],
-  "stage": "GA"
+  "stage": "GA",
+  "PermissionCount": 0
 }

@@ -46,5 +46,6 @@
     "monitoring.timeSeries.create",
     "telemetry.traces.write"
   ],
-  "stage": "GA"
+  "stage": "GA",
+  "PermissionCount": 0
 }

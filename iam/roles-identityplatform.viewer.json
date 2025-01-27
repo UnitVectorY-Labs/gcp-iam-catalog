@@ -9,5 +9,6 @@
     "identitytoolkit.tenants.getIamPolicy",
     "identitytoolkit.tenants.list"
   ],
-  "stage": "BETA"
+  "stage": "BETA",
+  "PermissionCount": 0
 }

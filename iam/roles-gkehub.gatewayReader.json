@@ -8,5 +8,6 @@
     "gkehub.memberships.get",
     "serviceusage.services.get"
   ],
-  "stage": "GA"
+  "stage": "GA",
+  "PermissionCount": 0
 }

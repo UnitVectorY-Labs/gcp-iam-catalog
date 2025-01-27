@@ -15,5 +15,6 @@
     "riskmanager.reports.list",
     "riskmanager.settings.get"
   ],
-  "stage": "BETA"
+  "stage": "BETA",
+  "PermissionCount": 0
 }

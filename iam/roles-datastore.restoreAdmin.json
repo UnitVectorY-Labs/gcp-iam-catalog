@@ -12,5 +12,6 @@
     "datastore.operations.get",
     "datastore.operations.list"
   ],
-  "stage": "GA"
+  "stage": "GA",
+  "PermissionCount": 0
 }

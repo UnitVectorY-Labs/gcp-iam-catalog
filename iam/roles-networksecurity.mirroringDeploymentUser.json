@@ -7,5 +7,6 @@
     "networksecurity.mirroringDeploymentGroups.list",
     "networksecurity.mirroringDeploymentGroups.use"
   ],
-  "stage": "BETA"
+  "stage": "BETA",
+  "PermissionCount": 0
 }

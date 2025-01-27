@@ -9,5 +9,6 @@
     "artifactregistry.versions.delete",
     "pubsub.topics.publish"
   ],
-  "stage": "GA"
+  "stage": "GA",
+  "PermissionCount": 0
 }

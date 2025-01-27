@@ -6,5 +6,6 @@
     "workstations.workstations.getIamPolicy",
     "workstations.workstations.setIamPolicy"
   ],
-  "stage": "GA"
+  "stage": "GA",
+  "PermissionCount": 0
 }

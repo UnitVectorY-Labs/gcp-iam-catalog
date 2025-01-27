@@ -16,5 +16,6 @@
     "resourcemanager.projects.list",
     "serviceusage.services.enable"
   ],
-  "stage": "GA"
+  "stage": "GA",
+  "PermissionCount": 0
 }

@@ -9,5 +9,6 @@
     "resourcemanager.organizations.get",
     "resourcemanager.projects.get"
   ],
-  "stage": "GA"
+  "stage": "GA",
+  "PermissionCount": 0
 }

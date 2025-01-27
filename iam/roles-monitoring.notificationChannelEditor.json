@@ -13,5 +13,6 @@
     "monitoring.notificationChannels.update",
     "monitoring.notificationChannels.verify"
   ],
-  "stage": "BETA"
+  "stage": "BETA",
+  "PermissionCount": 0
 }

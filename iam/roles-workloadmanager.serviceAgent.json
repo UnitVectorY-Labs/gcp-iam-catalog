@@ -37,5 +37,6 @@
     "workloadmanager.insights.export",
     "workloadmanager.insights.listSapSystems"
   ],
-  "stage": "GA"
+  "stage": "GA",
+  "PermissionCount": 0
 }

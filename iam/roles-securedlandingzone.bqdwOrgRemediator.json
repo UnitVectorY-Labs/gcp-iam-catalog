@@ -7,5 +7,6 @@
     "accesscontextmanager.servicePerimeters.list",
     "accesscontextmanager.servicePerimeters.update"
   ],
-  "stage": "BETA"
+  "stage": "BETA",
+  "PermissionCount": 0
 }

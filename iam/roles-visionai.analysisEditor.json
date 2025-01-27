@@ -9,5 +9,6 @@
     "visionai.analyses.list",
     "visionai.analyses.update"
   ],
-  "stage": "BETA"
+  "stage": "BETA",
+  "PermissionCount": 0
 }

@@ -41,5 +41,6 @@
     "compute.zoneOperations.list",
     "compute.zones.list"
   ],
-  "stage": "GA"
+  "stage": "GA",
+  "PermissionCount": 0
 }

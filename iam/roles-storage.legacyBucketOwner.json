@@ -46,5 +46,6 @@
     "storage.objects.restore",
     "storage.objects.setRetention"
   ],
-  "stage": "GA"
+  "stage": "GA",
+  "PermissionCount": 0
 }

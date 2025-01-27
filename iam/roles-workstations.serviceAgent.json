@@ -74,5 +74,6 @@
     "servicedirectory.services.delete",
     "serviceusage.services.get"
   ],
-  "stage": "GA"
+  "stage": "GA",
+  "PermissionCount": 0
 }

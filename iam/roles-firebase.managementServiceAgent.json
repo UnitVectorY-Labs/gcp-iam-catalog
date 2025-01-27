@@ -63,5 +63,6 @@
     "storage.buckets.list",
     "storage.buckets.setIamPolicy"
   ],
-  "stage": "GA"
+  "stage": "GA",
+  "PermissionCount": 0
 }

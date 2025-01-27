@@ -6,5 +6,6 @@
     "cloudasset.assets.searchAllIamPolicies",
     "cloudasset.assets.searchAllResources"
   ],
-  "stage": "GA"
+  "stage": "GA",
+  "PermissionCount": 0
 }

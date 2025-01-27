@@ -8,5 +8,6 @@
     "storage.objects.delete",
     "storage.objects.update"
   ],
-  "stage": "GA"
+  "stage": "GA",
+  "PermissionCount": 0
 }

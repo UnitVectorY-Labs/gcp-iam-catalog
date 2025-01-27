@@ -18,5 +18,6 @@
     "visionai.instances.get",
     "visionai.instances.list"
   ],
-  "stage": "BETA"
+  "stage": "BETA",
+  "PermissionCount": 0
 }

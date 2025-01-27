@@ -12,5 +12,6 @@
     "serviceusage.services.list",
     "serviceusage.services.use"
   ],
-  "stage": "GA"
+  "stage": "GA",
+  "PermissionCount": 0
 }

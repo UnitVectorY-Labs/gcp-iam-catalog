@@ -10,5 +10,6 @@
     "iam.googleapis.com/workforcePools.get",
     "iam.googleapis.com/workforcePools.list"
   ],
-  "stage": "GA"
+  "stage": "GA",
+  "PermissionCount": 0
 }

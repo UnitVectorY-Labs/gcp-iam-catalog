@@ -7,5 +7,6 @@
     "securitycentermanagement.securityCenterServices.list",
     "securitycentermanagement.securityCenterServices.update"
   ],
-  "stage": "GA"
+  "stage": "GA",
+  "PermissionCount": 0
 }

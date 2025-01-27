@@ -7,5 +7,6 @@
     "integrations.securityExecutions.list",
     "integrations.securityIntegrations.invoke"
   ],
-  "stage": "GA"
+  "stage": "GA",
+  "PermissionCount": 0
 }

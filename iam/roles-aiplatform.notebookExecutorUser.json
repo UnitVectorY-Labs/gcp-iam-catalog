@@ -15,5 +15,6 @@
     "aiplatform.schedules.list",
     "aiplatform.schedules.update"
   ],
-  "stage": "BETA"
+  "stage": "BETA",
+  "PermissionCount": 0
 }

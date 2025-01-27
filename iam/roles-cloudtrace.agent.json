@@ -6,5 +6,6 @@
     "cloudtrace.traces.patch",
     "telemetry.traces.write"
   ],
-  "stage": "GA"
+  "stage": "GA",
+  "PermissionCount": 0
 }

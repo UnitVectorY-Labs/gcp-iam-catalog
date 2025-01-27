@@ -13,5 +13,6 @@
     "discoveryengine.sessions.update",
     "discoveryengine.widgetConfigs.get"
   ],
-  "stage": "BETA"
+  "stage": "BETA",
+  "PermissionCount": 0
 }

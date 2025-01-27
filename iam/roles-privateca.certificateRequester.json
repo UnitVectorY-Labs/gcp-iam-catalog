@@ -5,5 +5,6 @@
   "included_permissions": [
     "privateca.certificates.create"
   ],
-  "stage": "GA"
+  "stage": "GA",
+  "PermissionCount": 0
 }

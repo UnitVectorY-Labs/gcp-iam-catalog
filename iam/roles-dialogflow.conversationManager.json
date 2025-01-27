@@ -21,5 +21,6 @@
     "dialogflow.participants.suggest",
     "dialogflow.participants.update"
   ],
-  "stage": "GA"
+  "stage": "GA",
+  "PermissionCount": 0
 }

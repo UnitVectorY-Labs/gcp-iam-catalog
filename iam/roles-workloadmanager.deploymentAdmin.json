@@ -36,5 +36,6 @@
     "workloadmanager.operations.get",
     "workloadmanager.operations.list"
   ],
-  "stage": "BETA"
+  "stage": "BETA",
+  "PermissionCount": 0
 }

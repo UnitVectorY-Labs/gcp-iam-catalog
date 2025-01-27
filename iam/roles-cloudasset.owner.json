@@ -579,5 +579,6 @@
     "recommender.locations.get",
     "recommender.locations.list"
   ],
-  "stage": "GA"
+  "stage": "GA",
+  "PermissionCount": 0
 }

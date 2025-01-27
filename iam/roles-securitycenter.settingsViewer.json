@@ -54,5 +54,6 @@
     "securitycentermanagement.securityHealthAnalyticsCustomModules.simulate",
     "securitycentermanagement.securityHealthAnalyticsCustomModules.test"
   ],
-  "stage": "GA"
+  "stage": "GA",
+  "PermissionCount": 0
 }

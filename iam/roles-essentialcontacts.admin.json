@@ -10,5 +10,6 @@
     "essentialcontacts.contacts.send",
     "essentialcontacts.contacts.update"
   ],
-  "stage": "GA"
+  "stage": "GA",
+  "PermissionCount": 0
 }

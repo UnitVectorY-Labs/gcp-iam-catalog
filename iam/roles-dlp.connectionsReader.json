@@ -7,5 +7,6 @@
     "dlp.connections.list",
     "dlp.connections.search"
   ],
-  "stage": "GA"
+  "stage": "GA",
+  "PermissionCount": 0
 }

@@ -30,5 +30,6 @@
     "dialogflow.sessions.detectIntent",
     "dialogflow.sessions.streamingDetectIntent"
   ],
-  "stage": "GA"
+  "stage": "GA",
+  "PermissionCount": 0
 }

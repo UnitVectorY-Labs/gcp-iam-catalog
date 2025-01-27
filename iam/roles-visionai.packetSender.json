@@ -9,5 +9,6 @@
     "visionai.series.send",
     "visionai.streams.send"
   ],
-  "stage": "BETA"
+  "stage": "BETA",
+  "PermissionCount": 0
 }

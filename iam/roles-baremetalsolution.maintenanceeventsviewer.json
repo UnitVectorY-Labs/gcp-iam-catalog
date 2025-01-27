@@ -6,5 +6,6 @@
     "baremetalsolution.maintenanceevents.get",
     "baremetalsolution.maintenanceevents.list"
   ],
-  "stage": "GA"
+  "stage": "GA",
+  "PermissionCount": 0
 }

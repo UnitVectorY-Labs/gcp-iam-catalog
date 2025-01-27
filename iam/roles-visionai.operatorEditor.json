@@ -9,5 +9,6 @@
     "visionai.operators.list",
     "visionai.operators.update"
   ],
-  "stage": "BETA"
+  "stage": "BETA",
+  "PermissionCount": 0
 }

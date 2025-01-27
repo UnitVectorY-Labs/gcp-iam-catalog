@@ -12,5 +12,6 @@
     "servicesecurityinsights.workloadPolicies.list",
     "servicesecurityinsights.workloadSecurityInfo.get"
   ],
-  "stage": "BETA"
+  "stage": "BETA",
+  "PermissionCount": 0
 }

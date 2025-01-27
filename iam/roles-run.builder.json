@@ -10,5 +10,6 @@
     "source.repos.get",
     "storage.objects.get"
   ],
-  "stage": "BETA"
+  "stage": "BETA",
+  "PermissionCount": 0
 }

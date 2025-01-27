@@ -19,5 +19,6 @@
     "dataplex.dataTaxonomies.setIamPolicy",
     "dataplex.dataTaxonomies.update"
   ],
-  "stage": "GA"
+  "stage": "GA",
+  "PermissionCount": 0
 }

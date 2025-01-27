@@ -6,5 +6,6 @@
     "firebasemessagingcampaigns.campaigns.get",
     "firebasemessagingcampaigns.campaigns.list"
   ],
-  "stage": "BETA"
+  "stage": "BETA",
+  "PermissionCount": 0
 }

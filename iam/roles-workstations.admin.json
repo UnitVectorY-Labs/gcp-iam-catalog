@@ -44,5 +44,6 @@
     "workstations.workstations.stop",
     "workstations.workstations.update"
   ],
-  "stage": "GA"
+  "stage": "GA",
+  "PermissionCount": 0
 }

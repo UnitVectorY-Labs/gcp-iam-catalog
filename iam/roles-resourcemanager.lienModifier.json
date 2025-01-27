@@ -5,5 +5,6 @@
   "included_permissions": [
     "resourcemanager.projects.updateLiens"
   ],
-  "stage": "GA"
+  "stage": "GA",
+  "PermissionCount": 0
 }

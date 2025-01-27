@@ -24,5 +24,6 @@
     "oauthconfig.verification.submit",
     "oauthconfig.verification.update"
   ],
-  "stage": "BETA"
+  "stage": "BETA",
+  "PermissionCount": 0
 }

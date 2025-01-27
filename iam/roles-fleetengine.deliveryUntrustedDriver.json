@@ -6,5 +6,6 @@
     "fleetengine.deliveryvehicles.get",
     "fleetengine.deliveryvehicles.updateLocation"
   ],
-  "stage": "GA"
+  "stage": "GA",
+  "PermissionCount": 0
 }

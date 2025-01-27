@@ -70,5 +70,6 @@
     "vmwareengine.nodes.get",
     "vmwareengine.nodes.list"
   ],
-  "stage": "GA"
+  "stage": "GA",
+  "PermissionCount": 0
 }

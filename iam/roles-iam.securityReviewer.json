@@ -2028,5 +2028,6 @@
     "workstations.workstations.getIamPolicy",
     "workstations.workstations.list"
   ],
-  "stage": "GA"
+  "stage": "GA",
+  "PermissionCount": 0
 }

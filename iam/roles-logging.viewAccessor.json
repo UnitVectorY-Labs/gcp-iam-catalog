@@ -9,5 +9,6 @@
     "logging.views.listResourceKeys",
     "logging.views.listResourceValues"
   ],
-  "stage": "GA"
+  "stage": "GA",
+  "PermissionCount": 0
 }

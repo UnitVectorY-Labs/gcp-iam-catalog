@@ -7,5 +7,6 @@
     "visionai.processors.list",
     "visionai.processors.listPrebuilt"
   ],
-  "stage": "BETA"
+  "stage": "BETA",
+  "PermissionCount": 0
 }

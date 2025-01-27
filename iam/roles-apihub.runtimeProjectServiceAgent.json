@@ -10,5 +10,6 @@
     "apigee.organizations.get",
     "apigee.proxyrevisions.get"
   ],
-  "stage": "GA"
+  "stage": "GA",
+  "PermissionCount": 0
 }

@@ -13,5 +13,6 @@
     "discoveryengine.dataStores.list",
     "discoveryengine.servingConfigs.search"
   ],
-  "stage": "GA"
+  "stage": "GA",
+  "PermissionCount": 0
 }

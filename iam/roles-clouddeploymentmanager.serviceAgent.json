@@ -673,5 +673,6 @@
     "workflows.workflows.delete",
     "workflows.workflows.get"
   ],
-  "stage": "GA"
+  "stage": "GA",
+  "PermissionCount": 0
 }

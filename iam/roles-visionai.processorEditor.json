@@ -10,5 +10,6 @@
     "visionai.processors.listPrebuilt",
     "visionai.processors.update"
   ],
-  "stage": "BETA"
+  "stage": "BETA",
+  "PermissionCount": 0
 }

@@ -52,5 +52,6 @@
     "osconfig.vulnerabilityReports.get",
     "osconfig.vulnerabilityReports.list"
   ],
-  "stage": "BETA"
+  "stage": "BETA",
+  "PermissionCount": 0
 }

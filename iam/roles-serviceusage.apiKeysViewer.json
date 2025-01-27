@@ -8,5 +8,6 @@
     "apikeys.keys.list",
     "apikeys.keys.lookup"
   ],
-  "stage": "GA"
+  "stage": "GA",
+  "PermissionCount": 0
 }

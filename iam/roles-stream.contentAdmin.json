@@ -12,5 +12,6 @@
     "stream.streamContents.list",
     "stream.streamContents.update"
   ],
-  "stage": "GA"
+  "stage": "GA",
+  "PermissionCount": 0
 }

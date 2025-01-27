@@ -20,5 +20,6 @@
     "workflows.workflows.listRevision",
     "workflows.workflows.listTagBindings"
   ],
-  "stage": "GA"
+  "stage": "GA",
+  "PermissionCount": 0
 }

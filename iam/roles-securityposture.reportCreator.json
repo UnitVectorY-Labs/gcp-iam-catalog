@@ -8,5 +8,6 @@
     "securityposture.reports.get",
     "securityposture.reports.list"
   ],
-  "stage": "GA"
+  "stage": "GA",
+  "PermissionCount": 0
 }

@@ -39,5 +39,6 @@
     "monitoring.monitoredResourceDescriptors.list",
     "monitoring.timeSeries.create"
   ],
-  "stage": "GA"
+  "stage": "GA",
+  "PermissionCount": 0
 }

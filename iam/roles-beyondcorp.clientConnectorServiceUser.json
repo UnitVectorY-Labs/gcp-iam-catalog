@@ -5,5 +5,6 @@
   "included_permissions": [
     "beyondcorp.clientConnectorServices.access"
   ],
-  "stage": "BETA"
+  "stage": "BETA",
+  "PermissionCount": 0
 }

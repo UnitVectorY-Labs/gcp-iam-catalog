@@ -31,5 +31,6 @@
     "dialogflow.participants.update",
     "dialogflow.sessions.detectIntent"
   ],
-  "stage": "GA"
+  "stage": "GA",
+  "PermissionCount": 0
 }

@@ -13,5 +13,6 @@
     "securesourcemanager.repositories.readIssues",
     "securesourcemanager.repositories.readPullRequests"
   ],
-  "stage": "BETA"
+  "stage": "BETA",
+  "PermissionCount": 0
 }

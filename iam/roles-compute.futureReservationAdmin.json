@@ -17,5 +17,6 @@
     "compute.reservations.create",
     "compute.zones.list"
   ],
-  "stage": "BETA"
+  "stage": "BETA",
+  "PermissionCount": 0
 }

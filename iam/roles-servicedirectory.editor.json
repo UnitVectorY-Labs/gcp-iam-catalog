@@ -30,5 +30,6 @@
     "servicedirectory.services.resolve",
     "servicedirectory.services.update"
   ],
-  "stage": "GA"
+  "stage": "GA",
+  "PermissionCount": 0
 }

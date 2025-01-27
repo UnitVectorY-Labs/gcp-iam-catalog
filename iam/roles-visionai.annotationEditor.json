@@ -9,5 +9,6 @@
     "visionai.annotations.list",
     "visionai.annotations.update"
   ],
-  "stage": "BETA"
+  "stage": "BETA",
+  "PermissionCount": 0
 }

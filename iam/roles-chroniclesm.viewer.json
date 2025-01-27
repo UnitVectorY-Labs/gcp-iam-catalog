@@ -8,5 +8,6 @@
     "chroniclesm.gcpLogFlowFilters.get",
     "chroniclesm.gcpSettings.get"
   ],
-  "stage": "GA"
+  "stage": "GA",
+  "PermissionCount": 0
 }

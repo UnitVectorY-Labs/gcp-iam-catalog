@@ -133,5 +133,6 @@
     "visionai.uistreams.get",
     "visionai.uistreams.list"
   ],
-  "stage": "BETA"
+  "stage": "BETA",
+  "PermissionCount": 0
 }

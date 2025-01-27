@@ -14,5 +14,6 @@
     "compute.targetHttpsProxies.get",
     "compute.urlMaps.get"
   ],
-  "stage": "GA"
+  "stage": "GA",
+  "PermissionCount": 0
 }

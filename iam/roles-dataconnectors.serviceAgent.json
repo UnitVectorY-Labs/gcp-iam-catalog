@@ -8,5 +8,6 @@
     "vpcaccess.connectors.get",
     "vpcaccess.connectors.use"
   ],
-  "stage": "GA"
+  "stage": "GA",
+  "PermissionCount": 0
 }

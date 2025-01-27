@@ -34,5 +34,6 @@
     "artifactregistry.versions.get",
     "artifactregistry.versions.list"
   ],
-  "stage": "GA"
+  "stage": "GA",
+  "PermissionCount": 0
 }

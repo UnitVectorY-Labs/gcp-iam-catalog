@@ -6,5 +6,6 @@
     "aiplatform.provisionedThroughputs.create",
     "aiplatform.provisionedThroughputs.list"
   ],
-  "stage": "BETA"
+  "stage": "BETA",
+  "PermissionCount": 0
 }

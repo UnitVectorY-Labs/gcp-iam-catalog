@@ -33,5 +33,6 @@
     "stackdriver.projects.get",
     "stackdriver.resourceMetadata.list"
   ],
-  "stage": "GA"
+  "stage": "GA",
+  "PermissionCount": 0
 }

@@ -6,5 +6,6 @@
     "dataplex.dataTaxonomies.configureDataAccess",
     "dataplex.dataTaxonomies.configureResourceAccess"
   ],
-  "stage": "GA"
+  "stage": "GA",
+  "PermissionCount": 0
 }

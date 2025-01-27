@@ -9,5 +9,6 @@
     "monitoring.dashboards.list",
     "monitoring.dashboards.update"
   ],
-  "stage": "GA"
+  "stage": "GA",
+  "PermissionCount": 0
 }

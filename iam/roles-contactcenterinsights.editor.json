@@ -82,5 +82,6 @@
     "contactcenterinsights.views.list",
     "contactcenterinsights.views.update"
   ],
-  "stage": "GA"
+  "stage": "GA",
+  "PermissionCount": 0
 }

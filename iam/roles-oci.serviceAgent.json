@@ -97,5 +97,6 @@
     "resourcemanager.projects.get",
     "resourcemanager.projects.updateLiens"
   ],
-  "stage": "GA"
+  "stage": "GA",
+  "PermissionCount": 0
 }

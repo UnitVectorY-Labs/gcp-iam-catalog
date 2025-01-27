@@ -12,5 +12,6 @@
     "osconfig.policyOrchestrators.list",
     "osconfig.policyOrchestrators.update"
   ],
-  "stage": "BETA"
+  "stage": "BETA",
+  "PermissionCount": 0
 }

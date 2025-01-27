@@ -6,5 +6,6 @@
     "iam.serviceAccounts.getIamPolicy",
     "iam.serviceAccounts.setIamPolicy"
   ],
-  "stage": "GA"
+  "stage": "GA",
+  "PermissionCount": 0
 }

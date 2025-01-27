@@ -28,5 +28,6 @@
     "workloadcertificate.workloadCertificateFeature.get",
     "workloadcertificate.workloadRegistrations.list"
   ],
-  "stage": "GA"
+  "stage": "GA",
+  "PermissionCount": 0
 }

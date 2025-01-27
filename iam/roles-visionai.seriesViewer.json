@@ -6,5 +6,6 @@
     "visionai.series.get",
     "visionai.series.list"
   ],
-  "stage": "BETA"
+  "stage": "BETA",
+  "PermissionCount": 0
 }

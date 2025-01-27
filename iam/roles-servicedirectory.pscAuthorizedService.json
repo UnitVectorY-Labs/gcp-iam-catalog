@@ -7,5 +7,6 @@
     "resourcemanager.projects.list",
     "servicedirectory.networks.access"
   ],
-  "stage": "GA"
+  "stage": "GA",
+  "PermissionCount": 0
 }

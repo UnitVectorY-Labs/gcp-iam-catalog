@@ -11,5 +11,6 @@
     "datastore.databases.getMetadata",
     "datastore.databases.list"
   ],
-  "stage": "GA"
+  "stage": "GA",
+  "PermissionCount": 0
 }

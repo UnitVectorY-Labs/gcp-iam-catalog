@@ -10,5 +10,6 @@
     "securitycenter.notificationconfig.update",
     "securitycenter.userinterfacemetadata.get"
   ],
-  "stage": "GA"
+  "stage": "GA",
+  "PermissionCount": 0
 }

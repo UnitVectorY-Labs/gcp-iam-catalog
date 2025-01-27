@@ -35,5 +35,6 @@
     "pubsublite.topics.subscribe",
     "pubsublite.topics.update"
   ],
-  "stage": "GA"
+  "stage": "GA",
+  "PermissionCount": 0
 }

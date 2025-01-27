@@ -8,5 +8,6 @@
     "dataplex.datascans.list",
     "dataplex.operations.get"
   ],
-  "stage": "GA"
+  "stage": "GA",
+  "PermissionCount": 0
 }

@@ -9,5 +9,6 @@
     "routeoptimization.operations.create",
     "routeoptimization.operations.get"
   ],
-  "stage": "GA"
+  "stage": "GA",
+  "PermissionCount": 0
 }

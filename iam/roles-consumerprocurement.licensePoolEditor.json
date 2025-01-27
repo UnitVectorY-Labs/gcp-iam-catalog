@@ -9,5 +9,6 @@
     "consumerprocurement.licensePools.unassign",
     "consumerprocurement.licensePools.update"
   ],
-  "stage": "GA"
+  "stage": "GA",
+  "PermissionCount": 0
 }

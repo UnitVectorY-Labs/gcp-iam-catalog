@@ -17,5 +17,6 @@
     "cloudsupport.properties.get",
     "resourcemanager.organizations.get"
   ],
-  "stage": "GA"
+  "stage": "GA",
+  "PermissionCount": 0
 }
