@@ -33,3 +33,15 @@ This application is written in Go for both the data collection and site generati
 - **Permission-to-Role Mapping:** Identify all roles that grant a specific permission.
 - **Automated Updates:** The catalog is updated weekly with the latest data from GCP.
 - **Search Functionality:** Quickly search for roles or permissions.
+
+## Similar Tools and Resources
+
+The official Google Documetantion for Roles and Permissions:
+
+- [Understanding Roles](https://cloud.google.com/iam/docs/understanding-roles) lists all of the Roles with which permissions they include.  However, wildcards are used which shortens the list but makes it difficult to get an all inclusive list of permissions.
+- [Permissions Reference](https://cloud.google.com/iam/docs/permissions-reference) lists all of the permissions and each role that includes that permission.
+
+Other sites that provide a similar functionality include:
+
+- [Permissions Reference for Google Cloud IAM](https://gcp.permissions.cloud/) by [iann0036](https://github.com/iann0036) which is available on GitHub at [iann0036/gcp.permissions.cloud](https://github.com/iann0036/gcp.permissions.cloud) provides a searchable list of permissions and the roles that include them in addition to the APIs associated with each permission.
+- [Google Cloud ☁️ Identity and Access Management (IAM)](https://gcloud-iam.nkn-it.de/) by [Cyclenerd](https://github.com/Cyclenerd) which is available on GitHub under [Cyclenerd/google-cloud-iam](https://github.com/Cyclenerd/google-cloud-iam) provides a searchable table of GCP roles and permissions.
