@@ -24,7 +24,7 @@ type Role struct {
 	Description         string   `json:"description"`
 	IncludedPermissions []string `json:"included_permissions"`
 	Stage               string   `json:"stage"`
-	PermissionCount     int
+	PermissionCount     int      `json:"-"` // Not stored in JSON
 }
 
 // PermissionIndex maps permissions to roles
