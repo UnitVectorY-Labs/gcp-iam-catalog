@@ -14,8 +14,9 @@
 
             for (let i = 0; i < items.length; i++) {
                 const a = items[i].getElementsByTagName('a')[0];
-                const txtValue = a.textContent || a.innerText;
-                if (txtValue.toLowerCase().indexOf(filter) > -1) {
+                const name = (a.textContent || a.innerText).toLowerCase();
+                const title = (a.getAttribute('data-title') || '').toLowerCase();
+                if (name.includes(filter) || title.includes(filter)) {
                     items[i].style.display = "";
                 } else {
                     items[i].style.display = "none";
@@ -36,11 +37,16 @@
         <section class="roles">
             <h1>GCP Roles</h1>
             <div class="search-container">
-                <input type="text" id="searchInput" onkeyup="filterList()" placeholder="Search for roles...">
+                <input type="text" id="searchInput" onkeyup="filterList()" placeholder="Search for roles or titles...">
+                <span class="search-icon">&#128269;</span>
             </div>
             <ul id="rolesList" class="item-list">
                 {{range .Items}}
-                    <li><a href="{{.Name}}.html" class="role-name">{{.Name}}</a></li>
+                    <li>
+                        <a href="{{.Name}}.html" class="role-name" data-title="{{.Title}}">
+                            {{.Name}}
+                        </a>
+                    </li>
                 {{end}}
             </ul>
         </section>

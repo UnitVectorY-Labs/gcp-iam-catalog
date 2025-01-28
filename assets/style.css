@@ -97,20 +97,28 @@ ul.item-list li a:hover {
 }
 
 .search-container {
-    margin-bottom: 20px;
+    position: relative;
+    margin-bottom: 1rem;
 }
 
-.search-container input[type="text"] {
+/* Updated CSS Selector: Changed from .search-input to #searchInput */
+#searchInput {
     width: 100%;
-    padding: 12px 15px;
+    padding: 0.5rem 2.5rem 0.5rem 1rem; /* Increased right padding to accommodate the search icon */
     border: 1px solid #ccc;
     border-radius: 4px;
-    font-size: 1em;
-    transition: border-color 0.3s;
+    box-sizing: border-box;
+    font-size: 1rem; /* Ensures consistent font size */
 }
 
-.search-container input[type="text"]:focus {
-    border-color: #3b82f6;
+.search-icon {
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #888;
+    pointer-events: none;
+    font-size: 1rem;
 }
 
 .home .features, .home .getting-started {
@@ -154,7 +162,7 @@ ul.item-list li a:hover {
     background-color: #e0e0e0;
 }
 
-copy-button:focus {
+.copy-button:focus {
     outline: none;
     box-shadow: 0 0 0 2px rgba(153, 153, 153, 0.5);
 }
