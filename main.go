@@ -230,14 +230,37 @@ func generateHTML() error {
 		filename := strings.ReplaceAll(perm, "/", "-") + ".html"
 		filePath := filepath.Join(permissionsHTMLDir, filename)
 
+		// Populate Roles with Name and Title
+		var detailedRoles []struct {
+			Name  string
+			Title string
+		}
+		for _, roleName := range rolesWithPerm {
+			for _, role := range roles {
+				if role.Name == roleName {
+					detailedRoles = append(detailedRoles, struct {
+						Name  string
+						Title string
+					}{
+						Name:  role.Name,
+						Title: role.Title,
+					})
+					break
+				}
+			}
+		}
+
 		data := struct {
 			RoleCount  int
 			Permission string
-			Roles      []string
+			Roles      []struct {
+				Name  string
+				Title string
+			}
 		}{
-			RoleCount:  len(rolesWithPerm),
+			RoleCount:  len(detailedRoles),
 			Permission: perm,
-			Roles:      rolesWithPerm,
+			Roles:      detailedRoles,
 		}
 
 		f, err := os.Create(filePath)

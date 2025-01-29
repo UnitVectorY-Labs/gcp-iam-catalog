@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Role: {{.Name}}</title>
+    <title>Role: {{.Name}} - gcp-iam-catalog</title>
     <link rel="stylesheet" href="../style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -25,7 +25,11 @@
             <p><strong>Stage:</strong> {{.Stage}}</p>
             
             <h2>{{.PermissionCount}} Assigned Permissions:</h2>
-            <ul class="item-list">
+            <div class="search-container">
+                <input type="text" id="searchInput" onkeyup="filterList()" placeholder="Search permissions...">
+                <span class="search-icon">&#128269;</span>
+            </div>
+            <ul id="permissionsList" class="item-list">
                 {{range .IncludedPermissions}}
                     <li><a href="../permissions/{{.}}.html" class="permission-name">{{.}}</a></li>
                 {{end}}
@@ -42,6 +46,23 @@
                 .catch(err => {
                     console.error('Error copying text: ', err);
                 });
+        }
+
+        function filterList() {
+            const input = document.getElementById('searchInput');
+            const filter = input.value.toLowerCase();
+            const list = document.getElementById('permissionsList');
+            const items = list.getElementsByTagName('li');
+
+            for (let i = 0; i < items.length; i++) {
+                const a = items[i].getElementsByTagName('a')[0];
+                const txtValue = a.textContent || a.innerText;
+                if (txtValue.toLowerCase().indexOf(filter) > -1) {
+                    items[i].style.display = "";
+                } else {
+                    items[i].style.display = "none";
+                }
+            }
         }
     </script>
 </body>

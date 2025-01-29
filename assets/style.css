@@ -70,8 +70,12 @@ h1 {
 
 h2 {
     font-size: 1em;
-    color: #5a6a82;
+    color: #2c3e50;
     margin-bottom: 15px;
+}
+
+.muted-text {
+    color: #888;
 }
 
 ul.item-list {
