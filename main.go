@@ -3,6 +3,7 @@ package main
 import (
 	"context"
 	"encoding/json"
+	"encoding/xml"
 	"flag"
 	"fmt"
 	"html/template"
@@ -29,6 +30,27 @@ type Role struct {
 
 // PermissionIndex maps permissions to roles
 type PermissionIndex map[string][]string
+
+// SitemapURL represents a single URL entry in sitemap.xml
+type SitemapURL struct {
+	Loc        string `xml:"loc"`
+	LastMod    string `xml:"lastmod,omitempty"`
+	ChangeFreq string `xml:"changefreq,omitempty"`
+	Priority   string `xml:"priority,omitempty"`
+}
+
+// Sitemap represents the sitemap.xml structure
+type Sitemap struct {
+	XMLName xml.Name     `xml:"urlset"`
+	Xmlns   string       `xml:"xmlns,attr"`
+	URLs    []SitemapURL `xml:"url"`
+}
+
+// RobotsTxt represents the robots.txt content
+type RobotsTxt struct {
+	SitemapURL string
+	Disallow   []string
+}
 
 func main() {
 	// Define command-line flags
@@ -154,7 +176,7 @@ func generateHTML() error {
 	var roles []Role
 	permissionIndex := make(PermissionIndex)
 
-	// Parse all templates including footer.html
+	// Parse all templates including footer.html and robots.txt
 	tmpl, err := template.ParseGlob("templates/*.html")
 	if err != nil {
 		return fmt.Errorf("failed to parse templates: %v", err)
@@ -356,6 +378,16 @@ func generateHTML() error {
 	}
 	log.Printf("Generated Home Index at %s", homeIndexPath)
 
+	// Generate sitemap.xml
+	if err := generateSitemap(htmlDir); err != nil {
+		log.Fatalf("Error generating sitemap.xml: %v", err)
+	}
+
+	// Generate robots.txt
+	if err := generateRobotsTxt(htmlDir); err != nil {
+		log.Fatalf("Error generating robots.txt: %v", err)
+	}
+
 	fmt.Printf("HTML generation completed. Check the '%s' directory for generated HTML files.\n", htmlDir)
 	return nil
 }
@@ -434,4 +466,133 @@ func copyFile(source, destination string) error {
 
 	_, err = io.Copy(destFile, srcFile)
 	return err
+}
+
+// generateSitemap creates sitemap.xml based on the generated HTML files
+func generateSitemap(htmlDir string) error {
+	// Retrieve the WEBSITE environment variable
+	website := os.Getenv("WEBSITE")
+	if website == "" {
+		return fmt.Errorf("environment variable 'WEBSITE' is not set")
+	}
+
+	// Ensure the website URL does not have a trailing slash
+	website = strings.TrimRight(website, "/")
+
+	var sitemap Sitemap
+	sitemap.Xmlns = "http://www.sitemaps.org/schemas/sitemap/0.9"
+
+	// Collect all .html files in htmlDir excluding any subdirectories you want to exclude
+	err := filepath.Walk(htmlDir, func(path string, info os.FileInfo, err error) error {
+		if err != nil {
+			return err
+		}
+
+		// Skip directories
+		if info.IsDir() {
+			return nil
+		}
+
+		// Include only .html files
+		if filepath.Ext(info.Name()) == ".html" {
+			relPath, err := filepath.Rel(htmlDir, path)
+			if err != nil {
+				return err
+			}
+
+			// Construct the URL
+			urlPath := filepath.ToSlash(relPath) // Ensure URL uses forward slashes
+			if urlPath == "index.html" {
+				urlPath = ""
+			}
+			loc := fmt.Sprintf("%s/%s", website, urlPath)
+
+			// Set LastMod to file modification time in YYYY-MM-DD format
+			lastMod := info.ModTime().Format("2006-01-02")
+
+			// Create SitemapURL entry
+			sitemapURL := SitemapURL{
+				Loc:     loc,
+				LastMod: lastMod,
+			}
+
+			// Special case for home page
+			if relPath == "index.html" {
+				sitemapURL.Loc = website + "/"
+			}
+
+			sitemap.URLs = append(sitemap.URLs, sitemapURL)
+		}
+		return nil
+	})
+	if err != nil {
+		return fmt.Errorf("error walking the path %q: %v", htmlDir, err)
+	}
+
+	// Sort URLs alphabetically
+	sort.Slice(sitemap.URLs, func(i, j int) bool {
+		return sitemap.URLs[i].Loc < sitemap.URLs[j].Loc
+	})
+
+	// Create sitemap.xml file
+	sitemapFile := filepath.Join(htmlDir, "sitemap.xml")
+	sitemapOut, err := os.Create(sitemapFile)
+	if err != nil {
+		return fmt.Errorf("failed to create sitemap.xml: %v", err)
+	}
+	defer sitemapOut.Close()
+
+	// Marshal sitemap to XML with indentation
+	xmlData, err := xml.MarshalIndent(sitemap, "", "  ")
+	if err != nil {
+		return fmt.Errorf("failed to marshal sitemap XML: %v", err)
+	}
+
+	// Add XML header
+	finalSitemap := []byte(xml.Header + string(xmlData))
+	if _, err := sitemapOut.Write(finalSitemap); err != nil {
+		return fmt.Errorf("failed to write sitemap.xml: %v", err)
+	}
+
+	log.Println("sitemap.xml generated successfully.")
+	return nil
+}
+
+// generateRobotsTxt creates robots.txt based on the generated sitemap.xml
+func generateRobotsTxt(htmlDir string) error {
+	// Retrieve the WEBSITE environment variable
+	website := os.Getenv("WEBSITE")
+	if website == "" {
+		return fmt.Errorf("environment variable 'WEBSITE' is not set")
+	}
+
+	// Ensure the website URL does not have a trailing slash
+	website = strings.TrimRight(website, "/")
+
+	robots := RobotsTxt{
+		SitemapURL: fmt.Sprintf("%s/sitemap.xml", website),
+		Disallow:   []string{"/snippets/"},
+	}
+
+	// Parse robots.txt template from file
+	tmpl, err := template.ParseFiles("templates/robots.txt")
+	if err != nil {
+		return fmt.Errorf("failed to parse robots.txt template: %v", err)
+	}
+
+	// Create robots.txt file
+	robotsFile := filepath.Join(htmlDir, "robots.txt")
+	robotsOut, err := os.Create(robotsFile)
+	if err != nil {
+		return fmt.Errorf("failed to create robots.txt: %v", err)
+	}
+	defer robotsOut.Close()
+
+	// Execute template
+	if err := tmpl.Execute(robotsOut, robots); err != nil {
+		return fmt.Errorf("failed to execute robots.txt template: %v", err)
+	}
+
+	log.Println("robots.txt generated successfully.")
+	return nil
 }
