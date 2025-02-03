@@ -17,7 +17,7 @@ The rationale around providing this website is that the existing GCP documentati
 This application is written in Go for both the data collection and site generation processes. The workflow consists of the following steps:
 
 1. **Data Collection:**
-    - A GitHub Action [gcp-iam-catalog-crawl.yml](https://github.com/UnitVectorY-Labs/gcp-iam-catalog/blob/main/.github/workflows/gcp-iam-catalog-crawl.yml) runs weekly to crawl the GCP IAM API.
+    - A GitHub Action [gcp-iam-catalog-crawl.yml](https://github.com/UnitVectorY-Labs/gcp-iam-catalog/blob/main/.github/workflows/gcp-iam-catalog-crawl.yml) runs daily to crawl the GCP IAM API.
     - It fetches all IAM roles and their permissions, saving the data as JSON files in the repository under the [iam](https://github.com/UnitVectorY-Labs/gcp-iam-catalog/tree/main/iam) folder.
 2. **Site Generation:**
     - Another GitHub Action [gcp-iam-catalog-generate.yaml](https://github.com/UnitVectorY-Labs/gcp-iam-catalog/blob/main/.github/workflows/gcp-iam-catalog-generate.yaml) triggers upon updates to the `main` branch.
@@ -31,7 +31,7 @@ This application is written in Go for both the data collection and site generati
 
 - **Role-to-Permission Mapping:** Easily view all permissions associated with each IAM role.
 - **Permission-to-Role Mapping:** Identify all roles that grant a specific permission.
-- **Automated Updates:** The catalog is updated weekly with the latest data from GCP.
+- **Automated Updates:** The catalog is updated daily with the latest data from GCP.
 - **Search Functionality:** Quickly search for roles or permissions.
 
 ## Similar Tools and Resources
