@@ -1,0 +1,10 @@
+{
+  "name": "roles/discoveryengine.notebookLmUser",
+  "title": "Cloud NotebookLM User",
+  "description": "Grants user-level access to Cloud NotebookLM resources.",
+  "included_permissions": [
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "BETA"
+}

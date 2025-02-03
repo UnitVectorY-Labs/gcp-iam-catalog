@@ -3,6 +3,8 @@
   "title": "Security Center Control Service Agent",
   "description": "Security Center Control service agent can monitor and configure GCP resources and import security findings.",
   "included_permissions": [
+    "accesscontextmanager.gcpUserAccessBindings.get",
+    "accesscontextmanager.gcpUserAccessBindings.list",
     "bigquery.datasets.get",
     "binaryauthorization.policy.get",
     "cloudasset.assets.analyzeIamPolicy",

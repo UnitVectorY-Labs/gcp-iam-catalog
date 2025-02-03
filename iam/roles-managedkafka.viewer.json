@@ -3,6 +3,7 @@
   "title": "Managed Kafka Viewer",
   "description": "Readonly access to Managed Kafka resources.",
   "included_permissions": [
+    "cloudasset.assets.searchAllResources",
     "managedkafka.clusters.get",
     "managedkafka.clusters.list",
     "managedkafka.consumerGroups.get",

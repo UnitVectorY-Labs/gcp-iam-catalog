@@ -3,6 +3,7 @@
   "title": "Managed Kafka Consumer Group Editor",
   "description": "Provides read and write access to consumer group metadata. Intended for, e.g., developers who configure consumer groups.",
   "included_permissions": [
+    "cloudasset.assets.searchAllResources",
     "managedkafka.clusters.get",
     "managedkafka.clusters.list",
     "managedkafka.consumerGroups.delete",

@@ -1,0 +1,7 @@
+{
+  "name": "roles/discoveryengine.notebookViewer",
+  "title": "Cloud NotebookLM Notebook Viewer",
+  "description": "Grants read-only access to a Cloud NotebookLM Notebook.",
+  "included_permissions": null,
+  "stage": "BETA"
+}

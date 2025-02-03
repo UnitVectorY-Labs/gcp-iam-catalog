@@ -1,0 +1,14 @@
+{
+  "name": "roles/retail.merchantCreator",
+  "title": "Retail Merchant Creator",
+  "description": "Grants access to own MerchantControls in the merchant console.",
+  "included_permissions": [
+    "retail.merchantControls.creatorCreate",
+    "retail.merchantControls.creatorDelete",
+    "retail.merchantControls.creatorGet",
+    "retail.merchantControls.creatorList",
+    "retail.merchantControls.creatorSubmit",
+    "retail.merchantControls.creatorUpdate"
+  ],
+  "stage": "BETA"
+}

@@ -3,6 +3,8 @@
   "title": "Security Center Service Agent",
   "description": "Security Center service agent can scan GCP resources and import security scans.",
   "included_permissions": [
+    "accesscontextmanager.gcpUserAccessBindings.get",
+    "accesscontextmanager.gcpUserAccessBindings.list",
     "bigquery.datasets.get",
     "binaryauthorization.policy.get",
     "cloudasset.assets.analyzeIamPolicy",

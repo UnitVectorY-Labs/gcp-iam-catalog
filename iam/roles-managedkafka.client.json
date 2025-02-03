@@ -3,6 +3,7 @@
   "title": "Managed Kafka Client",
   "description": "Provides access to connect to the Kafka servers in a cluster, i.e. provides Kafka data plane access. Intended for, e.g., producers and consumers.",
   "included_permissions": [
+    "cloudasset.assets.searchAllResources",
     "managedkafka.clusters.connect",
     "managedkafka.clusters.get",
     "managedkafka.clusters.list",

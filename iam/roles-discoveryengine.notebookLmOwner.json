@@ -1,0 +1,12 @@
+{
+  "name": "roles/discoveryengine.notebookLmOwner",
+  "title": "Cloud NotebookLM Admin",
+  "description": "Grants full access to Cloud NotebookLM resources.",
+  "included_permissions": [
+    "discoveryengine.aclConfigs.get",
+    "discoveryengine.aclConfigs.update",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "BETA"
+}
