@@ -1,6 +1,6 @@
 {
   "name": "roles/container.nodeServiceAgent",
-  "title": "Kubernetes Engine Node Service Agent",
+  "title": "[Deprecated] Kubernetes Engine Node Service Agent",
   "description": "Minimal set of permission required by a GKE node to support standard capabilities such as logging and monitoring export, and image pulls.",
   "included_permissions": [
     "autoscaling.sites.writeMetrics",

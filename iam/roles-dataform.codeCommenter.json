@@ -2,6 +2,17 @@
   "name": "roles/dataform.codeCommenter",
   "title": "Code Commenter",
   "description": "Permissions to comment, at the repository level. Grants CRUD access over commentThread and comment resources.",
-  "included_permissions": null,
+  "included_permissions": [
+    "dataform.commentThreads.create",
+    "dataform.commentThreads.delete",
+    "dataform.commentThreads.get",
+    "dataform.commentThreads.list",
+    "dataform.commentThreads.update",
+    "dataform.comments.create",
+    "dataform.comments.delete",
+    "dataform.comments.get",
+    "dataform.comments.list",
+    "dataform.comments.update"
+  ],
   "stage": "BETA"
 }

@@ -4,7 +4,9 @@
   "description": "Read-only access to alerting policies.",
   "included_permissions": [
     "monitoring.alertPolicies.get",
-    "monitoring.alertPolicies.list"
+    "monitoring.alertPolicies.list",
+    "monitoring.alertPolicies.listEffectiveTags",
+    "monitoring.alertPolicies.listTagBindings"
   ],
   "stage": "GA"
 }

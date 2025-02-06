@@ -11,6 +11,7 @@
     "cloudaicompanion.instances.exportMetrics",
     "cloudaicompanion.instances.generateCode",
     "cloudaicompanion.instances.generateText",
+    "cloudaicompanion.instances.queryEffectiveSettingBindings",
     "cloudaicompanion.licenses.selfAssign",
     "resourcemanager.projects.get",
     "resourcemanager.projects.list"

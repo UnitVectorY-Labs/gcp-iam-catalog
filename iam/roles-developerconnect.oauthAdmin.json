@@ -1,0 +1,27 @@
+{
+  "name": "roles/developerconnect.oauthAdmin",
+  "title": "Developer Connect OAuth Admin",
+  "description": "Grants read and write access to AccountConnector resources.",
+  "included_permissions": [
+    "developerconnect.accountConnectors.create",
+    "developerconnect.accountConnectors.delete",
+    "developerconnect.accountConnectors.get",
+    "developerconnect.accountConnectors.list",
+    "developerconnect.accountConnectors.update",
+    "developerconnect.locations.get",
+    "developerconnect.locations.list",
+    "developerconnect.operations.get",
+    "developerconnect.operations.list",
+    "developerconnect.providers.list",
+    "developerconnect.users.delete",
+    "developerconnect.users.deleteSelf",
+    "developerconnect.users.fetchAccessToken",
+    "developerconnect.users.finishOAuth",
+    "developerconnect.users.getSelf",
+    "developerconnect.users.list",
+    "developerconnect.users.startOAuth",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "BETA"
+}
