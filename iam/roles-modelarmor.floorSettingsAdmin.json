@@ -1,0 +1,17 @@
+{
+  "name": "roles/modelarmor.floorSettingsAdmin",
+  "title": "Model Armor Floor Setting Admin",
+  "description": "Grants full access to all Model Armor Floor Setting resources. Intended for administrators \u0026 owners.",
+  "included_permissions": [
+    "modelarmor.floorSettings.get",
+    "modelarmor.floorSettings.update",
+    "modelarmor.locations.get",
+    "modelarmor.locations.list",
+    "resourcemanager.folders.get",
+    "resourcemanager.folders.list",
+    "resourcemanager.organizations.get",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

@@ -80,7 +80,8 @@
     "contactcenterinsights.views.delete",
     "contactcenterinsights.views.get",
     "contactcenterinsights.views.list",
-    "contactcenterinsights.views.update"
+    "contactcenterinsights.views.update",
+    "contactcenterinsights.visibilityLabels.list"
   ],
   "stage": "GA"
 }

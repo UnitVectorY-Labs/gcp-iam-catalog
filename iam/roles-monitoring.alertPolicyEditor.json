@@ -4,9 +4,13 @@
   "description": "Read/write access to alerting policies.",
   "included_permissions": [
     "monitoring.alertPolicies.create",
+    "monitoring.alertPolicies.createTagBinding",
     "monitoring.alertPolicies.delete",
+    "monitoring.alertPolicies.deleteTagBinding",
     "monitoring.alertPolicies.get",
     "monitoring.alertPolicies.list",
+    "monitoring.alertPolicies.listEffectiveTags",
+    "monitoring.alertPolicies.listTagBindings",
     "monitoring.alertPolicies.update"
   ],
   "stage": "GA"

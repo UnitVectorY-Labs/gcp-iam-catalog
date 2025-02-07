@@ -1,0 +1,14 @@
+{
+  "name": "roles/modelarmor.user",
+  "title": "Model Armor User",
+  "description": "Grants access to sanitize APIs for templates. Intended for users \u0026 applications which plan to use a template.",
+  "included_permissions": [
+    "modelarmor.locations.get",
+    "modelarmor.locations.list",
+    "modelarmor.templates.useToSanitizeModelResponse",
+    "modelarmor.templates.useToSanitizeUserPrompt",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

@@ -1,0 +1,15 @@
+{
+  "name": "roles/container.defaultNodeServiceAgent",
+  "title": "Kubernetes Engine Default Node Service Agent",
+  "description": "Minimal set of permissions required by a GKE node to support standard capabilities such as logging and monitoring. Replaces the container.nodeServiceAgent role with a reduced permission set.",
+  "included_permissions": [
+    "autoscaling.sites.writeMetrics",
+    "logging.logEntries.create",
+    "monitoring.metricDescriptors.create",
+    "monitoring.metricDescriptors.list",
+    "monitoring.timeSeries.create",
+    "monitoring.timeSeries.list",
+    "serviceusage.services.use"
+  ],
+  "stage": "GA"
+}

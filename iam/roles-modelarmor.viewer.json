@@ -1,0 +1,14 @@
+{
+  "name": "roles/modelarmor.viewer",
+  "title": "Model Armor Viewer",
+  "description": "Grants read access to all model armor resources. Intended for viewers.",
+  "included_permissions": [
+    "modelarmor.locations.get",
+    "modelarmor.locations.list",
+    "modelarmor.templates.get",
+    "modelarmor.templates.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

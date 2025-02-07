@@ -3,10 +3,6 @@
   "title": "Dataform Editor",
   "description": "Edit access to Workspaces and Read-only access to Repositories.",
   "included_permissions": [
-    "dataform.commentThreads.get",
-    "dataform.commentThreads.list",
-    "dataform.comments.get",
-    "dataform.comments.list",
     "dataform.compilationResults.create",
     "dataform.compilationResults.get",
     "dataform.compilationResults.list",
