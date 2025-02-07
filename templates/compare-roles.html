@@ -1,0 +1,125 @@
+{{define "compare-roles.html"}}
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Compare Roles - gcp-iam-catalog</title>
+  <link rel="stylesheet" href="./style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    // When a user types in either input, fetch the associated JSON files and do the comparison.
+    async function compareRoles() {
+      const leftRoleName = document.getElementById('leftRole').value.trim();
+      const rightRoleName = document.getElementById('rightRole').value.trim();
+      
+      // If either field is empty, clear the lists.
+      if (!leftRoleName || !rightRoleName) {
+        document.getElementById('onlyLeftList').innerHTML = '';
+        document.getElementById('commonList').innerHTML = '';
+        document.getElementById('onlyRightList').innerHTML = '';
+        return;
+      }
+      
+      // Generate the JSON filename for each role.
+      const leftJsonFile = generateJsonFilename(leftRoleName);
+      const rightJsonFile = generateJsonFilename(rightRoleName);
+      
+      try {
+        // Fetch both JSON files in parallel.
+        const [leftData, rightData] = await Promise.all([
+          fetch('rolesdata/' + leftJsonFile).then(resp => resp.json()),
+          fetch('rolesdata/' + rightJsonFile).then(resp => resp.json())
+        ]);
+        
+        // Get the sets of permissions.
+        const leftPerms = new Set(leftData.included_permissions || []);
+        const rightPerms = new Set(rightData.included_permissions || []);
+        
+        // Compute unique and common permissions.
+        const onlyLeft = Array.from(leftPerms).filter(p => !rightPerms.has(p)).sort();
+        const onlyRight = Array.from(rightPerms).filter(p => !leftPerms.has(p)).sort();
+        const common = Array.from(leftPerms).filter(p => rightPerms.has(p)).sort();
+        
+        // Update the result lists.
+        populateList('onlyLeftList', onlyLeft);
+        populateList('commonList', common);
+        populateList('onlyRightList', onlyRight);
+      } catch (error) {
+        console.error("Error fetching role data:", error);
+      }
+    }
+    
+    // Convert the role name (which may include slashes) into the filename used for JSON storage.
+    // Example: "roles/editor" becomes "roles-editor.json"
+    function generateJsonFilename(roleName) {
+      return roleName.replace(/\//g, '-') + '.json';
+    }
+    
+    // Populate the given <ul> element with list items. Each item becomes a clickable link.
+    function populateList(elementId, items) {
+      const ul = document.getElementById(elementId);
+      ul.innerHTML = '';
+      items.forEach(item => {
+        const li = document.createElement('li');
+        const a = document.createElement('a');
+        a.textContent = item;
+        // Create the permission page URL (replace "/" with "-" in the permission name).
+        a.href = "permissions/" + item.replace(/\//g, "-") + ".html";
+        li.appendChild(a);
+        ul.appendChild(li);
+      });
+    }
+  </script>
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <div class="navbar">
+    <a href="index.html">gcp-iam-catalog</a>
+    <a href="roles.html">Roles</a>
+    <a href="compare-roles.html" class="active">Compare Roles</a>
+    <a href="permissions.html">Permissions</a>
+    <a href="compare-permissions.html">Compare Permissions</a>
+  </div>
+  <main>
+    <section>
+      <h1>Compare Two Roles</h1>
+      <p>Select two predefined IAM roles to see which permissions they share and which ones are unique to each role.</p>
+      <br/>
+      
+      <!-- Role selection area using searchable input fields -->
+      <div class="compare-container">
+        <div class="compare-column">
+          <input type="text" id="leftRole" list="rolesList" placeholder="Search left role" oninput="compareRoles()">
+        </div>
+        <div class="compare-column">
+          <label>Common Permissions</label>
+        </div>
+        <div class="compare-column">
+          <input type="text" id="rightRole" list="rolesList" placeholder="Search right role" oninput="compareRoles()">
+        </div>
+      </div>
+      <!-- The datalist used by both input fields -->
+      <datalist id="rolesList">
+        {{range .Roles}}
+          <option value="{{.Name}}">
+        {{end}}
+      </datalist>
+      
+      <!-- Results area with three columns -->
+      <div class="results-container">
+        <div class="result-column">
+          <ul id="onlyLeftList" class="item-list"></ul>
+        </div>
+        <div class="result-column">
+          <ul id="commonList" class="item-list"></ul>
+        </div>
+        <div class="result-column">
+          <ul id="onlyRightList" class="item-list"></ul>
+        </div>
+      </div>
+    </section>
+  </main>
+  {{template "footer"}}
+</body>
+</html>
+{{end}}

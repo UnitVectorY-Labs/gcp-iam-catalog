@@ -189,3 +189,54 @@ footer a {
 footer a:hover {
     text-decoration: none;
 }
+
+.compare-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 20px;
+  }
+  .compare-container .compare-column {
+    flex: 1;
+    padding: 0 10px;
+  }
+  .compare-container .compare-column label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    text-align: center;
+  }
+  .compare-container .compare-column input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  .results-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  .results-container .result-column {
+    flex: 1;
+    padding: 0 10px;
+  }
+  .results-container .result-column h2 {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .results-container .result-column ul {
+    list-style: none;
+    padding: 0;
+  }
+  .results-container .result-column ul li {
+    padding: 5px;
+    border-bottom: 1px solid #ddd;
+  }
+  .results-container .result-column ul li a {
+    text-decoration: none;
+    color: #3b82f6;
+  }
+  .results-container .result-column ul li a:hover {
+    text-decoration: underline;
+  }
