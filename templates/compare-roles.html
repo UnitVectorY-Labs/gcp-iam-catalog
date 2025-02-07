@@ -7,45 +7,62 @@
   <link rel="stylesheet" href="./style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script>
-    // When a user types in either input, fetch the associated JSON files and do the comparison.
+    // Modified compareRoles function
     async function compareRoles() {
-      const leftRoleName = document.getElementById('leftRole').value.trim();
-      const rightRoleName = document.getElementById('rightRole').value.trim();
+      const leftInput = document.getElementById('leftRole');
+      const rightInput = document.getElementById('rightRole');
+      const leftName = leftInput.value.trim();
+      const rightName = rightInput.value.trim();
       
-      // If either field is empty, clear the lists.
-      if (!leftRoleName || !rightRoleName) {
+      if (leftName && rightName) { 
+        // Both roles provided: original behavior
+        try {
+          leftInput.classList.remove('input-error');
+          rightInput.classList.remove('input-error');
+          const [leftData, rightData] = await Promise.all([
+            fetch('rolesdata/' + generateJsonFilename(leftName)).then(resp => resp.json()),
+            fetch('rolesdata/' + generateJsonFilename(rightName)).then(resp => resp.json())
+          ]);
+          const leftPerms = new Set(leftData.included_permissions || []);
+          const rightPerms = new Set(rightData.included_permissions || []);
+          const onlyLeft = Array.from(leftPerms).filter(p => !rightPerms.has(p)).sort();
+          const onlyRight = Array.from(rightPerms).filter(p => !leftPerms.has(p)).sort();
+          const common = Array.from(leftPerms).filter(p => rightPerms.has(p)).sort();
+          populateList('onlyLeftList', onlyLeft);
+          populateList('commonList', common);
+          populateList('onlyRightList', onlyRight);
+        } catch (error) {
+          console.error("Error fetching role data:", error);
+        }
+      } else if (leftName) { 
+        // Only left role is provided
+        try {
+          leftInput.classList.remove('input-error');
+          const leftData = await fetch('rolesdata/' + generateJsonFilename(leftName)).then(resp => resp.json());
+          populateList('onlyLeftList', leftData.included_permissions || []);
+          document.getElementById('commonList').innerHTML = '';
+          document.getElementById('onlyRightList').innerHTML = '';
+        } catch (error) {
+          leftInput.classList.add('input-error');
+          document.getElementById('onlyLeftList').innerHTML = '';
+        }
+      } else if (rightName) { 
+        // Only right role is provided
+        try {
+          rightInput.classList.remove('input-error');
+          const rightData = await fetch('rolesdata/' + generateJsonFilename(rightName)).then(resp => resp.json());
+          populateList('onlyRightList', rightData.included_permissions || []);
+          document.getElementById('onlyLeftList').innerHTML = '';
+          document.getElementById('commonList').innerHTML = '';
+        } catch (error) {
+          rightInput.classList.add('input-error');
+          document.getElementById('onlyRightList').innerHTML = '';
+        }
+      } else { 
+        // Neither provided: clear all lists
         document.getElementById('onlyLeftList').innerHTML = '';
         document.getElementById('commonList').innerHTML = '';
         document.getElementById('onlyRightList').innerHTML = '';
-        return;
-      }
-      
-      // Generate the JSON filename for each role.
-      const leftJsonFile = generateJsonFilename(leftRoleName);
-      const rightJsonFile = generateJsonFilename(rightRoleName);
-      
-      try {
-        // Fetch both JSON files in parallel.
-        const [leftData, rightData] = await Promise.all([
-          fetch('rolesdata/' + leftJsonFile).then(resp => resp.json()),
-          fetch('rolesdata/' + rightJsonFile).then(resp => resp.json())
-        ]);
-        
-        // Get the sets of permissions.
-        const leftPerms = new Set(leftData.included_permissions || []);
-        const rightPerms = new Set(rightData.included_permissions || []);
-        
-        // Compute unique and common permissions.
-        const onlyLeft = Array.from(leftPerms).filter(p => !rightPerms.has(p)).sort();
-        const onlyRight = Array.from(rightPerms).filter(p => !leftPerms.has(p)).sort();
-        const common = Array.from(leftPerms).filter(p => rightPerms.has(p)).sort();
-        
-        // Update the result lists.
-        populateList('onlyLeftList', onlyLeft);
-        populateList('commonList', common);
-        populateList('onlyRightList', onlyRight);
-      } catch (error) {
-        console.error("Error fetching role data:", error);
       }
     }
     
@@ -63,6 +80,7 @@
         const li = document.createElement('li');
         const a = document.createElement('a');
         a.textContent = item;
+        a.className = "permission-name";
         // Create the permission page URL (replace "/" with "-" in the permission name).
         a.href = "permissions/" + item.replace(/\//g, "-") + ".html";
         li.appendChild(a);
@@ -82,8 +100,8 @@
   </div>
   <main>
     <section>
-      <h1>Compare Two Roles</h1>
-      <p>Select two predefined IAM roles to see which permissions they share and which ones are unique to each role.</p>
+      <h1>Compare Roles</h1>
+      <p>Select two predefined GCP IAM roles to see which permissions they share and which ones are unique to each role.</p>
       <br/>
       
       <!-- Role selection area using searchable input fields -->
