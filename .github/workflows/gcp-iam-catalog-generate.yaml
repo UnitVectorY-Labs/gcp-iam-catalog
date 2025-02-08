@@ -51,7 +51,7 @@ jobs:
   deploy:
     environment:
       name: github-pages
-      url: jwks-catalog.unitvectorylabs.com
+      url: gcp-iam-catalog.unitvectorylabs.com
     runs-on: ubuntu-latest
     needs: build
     steps:
