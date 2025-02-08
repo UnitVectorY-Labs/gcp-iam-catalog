@@ -33,6 +33,7 @@ This application is written in Go for both the data collection and site generati
 - **Permission-to-Role Mapping:** Identify all roles that grant a specific permission.
 - **Automated Updates:** The catalog is updated daily with the latest data from GCP.
 - **Search Functionality:** Quickly search for roles or permissions.
+- **Dynamic Comparison:** Compare two roles or permissions to highlight common and unique mappings.
 
 ## Similar Tools and Resources
 
