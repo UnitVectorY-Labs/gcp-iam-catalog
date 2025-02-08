@@ -1,0 +1,9 @@
+{
+  "name": "roles/developerconnect.gitProxyReader",
+  "title": "Developer Connect Git Proxy Reader",
+  "description": "Grants read-only access to repositories through the Git Proxy.",
+  "included_permissions": [
+    "developerconnect.gitRepositoryLinks.gitProxyRead"
+  ],
+  "stage": "BETA"
+}
