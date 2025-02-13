@@ -14,7 +14,6 @@
     "compute.disks.get",
     "compute.disks.setLabels",
     "compute.disks.use",
-    "compute.disks.useReadOnly",
     "compute.firewalls.list",
     "compute.globalOperations.get",
     "compute.images.create",
