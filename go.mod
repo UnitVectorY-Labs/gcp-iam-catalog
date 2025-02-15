@@ -1,6 +1,6 @@
 module github.com/UnitVectorY-Labs/gcp-iam-catalog
 
-go 1.23.6
+go 1.24.0
 
 require google.golang.org/api v0.221.0
 
