@@ -3,6 +3,7 @@
   "title": "Apigee Analytics Viewer",
   "description": "Analytics viewer for an Apigee Organization",
   "included_permissions": [
+    "apigee.addonsconfig.get",
     "apigee.datacollectors.get",
     "apigee.datacollectors.list",
     "apigee.datastores.get",

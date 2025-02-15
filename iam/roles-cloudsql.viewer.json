@@ -4,6 +4,7 @@
   "description": "Read-only access to Cloud SQL resources.",
   "included_permissions": [
     "cloudaicompanion.entitlements.get",
+    "cloudsql.backupRuns.export",
     "cloudsql.backupRuns.get",
     "cloudsql.backupRuns.list",
     "cloudsql.databases.get",

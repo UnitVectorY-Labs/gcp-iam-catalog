@@ -5,5 +5,5 @@
   "included_permissions": [
     "telemetry.metrics.write"
   ],
-  "stage": "BETA"
+  "stage": "GA"
 }
