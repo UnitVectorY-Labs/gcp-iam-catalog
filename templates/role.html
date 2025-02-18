@@ -26,6 +26,9 @@
             <p><strong>Title:</strong> {{.Title}}</p>
             <p><strong>Description:</strong> {{.Description}}</p>
             <p><strong>Stage:</strong> {{.Stage}}</p>
+            {{if contains .Name "ServiceAgent" "serviceagent"}}
+            <p><strong>Role Type:</strong> <a href="https://cloud.google.com/iam/docs/service-agents" target="_blank">Service Agent</a></p>
+            {{end}}
             
             <h2>{{.PermissionCount}} Assigned Permissions:</h2>
             <div class="search-container">

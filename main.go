@@ -176,8 +176,21 @@ func generateHTML() error {
 	var roles []Role
 	permissionIndex := make(PermissionIndex)
 
-	// Parse all templates including footer.html and robots.txt
-	tmpl, err := template.ParseGlob("templates/*.html")
+	// Create template with functions first
+	tmpl := template.New("base").Funcs(template.FuncMap{
+		"contains": func(s string, substrs ...string) bool {
+			sLower := strings.ToLower(s)
+			for _, sub := range substrs {
+				if strings.Contains(sLower, strings.ToLower(sub)) {
+					return true
+				}
+			}
+			return false
+		},
+	})
+
+	// Then parse all templates
+	tmpl, err = tmpl.ParseGlob("templates/*.html")
 	if err != nil {
 		return fmt.Errorf("failed to parse templates: %v", err)
 	}
