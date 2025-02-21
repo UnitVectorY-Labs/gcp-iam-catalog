@@ -1,0 +1,19 @@
+{
+  "name": "roles/commerceorggovernance.viewer",
+  "title": "Commerce Organization Governance Viewer",
+  "description": "Full access to Organization Governance read-only APIs.",
+  "included_permissions": [
+    "commerceorggovernance.collections.get",
+    "commerceorggovernance.collections.list",
+    "commerceorggovernance.consumerSharingPolicies.get",
+    "commerceorggovernance.organizationSettings.get",
+    "commerceorggovernance.populateCollectionJobs.list",
+    "commerceorggovernance.services.get",
+    "commerceorggovernance.services.list",
+    "consumerprocurement.entitlements.get",
+    "consumerprocurement.entitlements.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "BETA"
+}
