@@ -3,7 +3,6 @@
   "title": "Application Integration Service Agent",
   "description": "Service agent that grants access to execute an integration.",
   "included_permissions": [
-    "cloudfunctions.functions.invoke",
     "cloudscheduler.jobs.create",
     "cloudscheduler.jobs.delete",
     "cloudscheduler.jobs.enable",

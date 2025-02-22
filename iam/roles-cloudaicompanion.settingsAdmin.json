@@ -1,7 +1,7 @@
 {
   "name": "roles/cloudaicompanion.settingsAdmin",
-  "title": "Gemini for Google Cloud Settings Admin",
-  "description": "Grants read and write access to the Gemini for Cloud setting and their bindings.",
+  "title": "Settings Admin",
+  "description": "Grants read and write access to the setting and their bindings.",
   "included_permissions": [
     "cloudaicompanion.dataSharingWithGoogleSettings.create",
     "cloudaicompanion.dataSharingWithGoogleSettings.delete",
