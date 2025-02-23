@@ -3,6 +3,7 @@
   "title": "Content Warehouse Service Agent",
   "description": "Gives the Content Warehouse service account to manage customer resources",
   "included_permissions": [
+    "cloudfunctions.functions.invoke",
     "documentai.datasets.createDocuments",
     "documentai.processors.get",
     "documentai.processors.processBatch",
