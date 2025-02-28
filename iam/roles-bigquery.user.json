@@ -1,7 +1,7 @@
 {
   "name": "roles/bigquery.user",
   "title": "BigQuery User",
-  "description": "When applied to a project, access to run queries, create datasets, read dataset metadata, and list tables. When applied to a dataset, access to read dataset metadata and list tables within the dataset.",
+  "description": "When applied to a project, access to run queries, create datasets, read dataset metadata, and list tables, models and property graphs. When applied to a dataset, access to read dataset metadata and list tables, models, routines and property graphs within the dataset.",
   "included_permissions": [
     "bigquery.bireservations.get",
     "bigquery.capacityCommitments.get",

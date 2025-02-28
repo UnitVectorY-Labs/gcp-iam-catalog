@@ -1,7 +1,7 @@
 {
   "name": "roles/bigquery.metadataViewer",
   "title": "BigQuery Metadata Viewer",
-  "description": "Access to view table and dataset metadata",
+  "description": "Access to view metadata of dataset, table, model, routine, and property graph",
   "included_permissions": [
     "bigquery.datasets.get",
     "bigquery.datasets.getIamPolicy",

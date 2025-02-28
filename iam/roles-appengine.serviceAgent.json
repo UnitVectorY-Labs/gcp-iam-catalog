@@ -1,7 +1,7 @@
 {
   "name": "roles/appengine.serviceAgent",
   "title": "App Engine Standard Environment Service Agent",
-  "description": "Give App Engine Standard Enviroment service account access to managed resources. Includes access to service accounts.",
+  "description": "Give App Engine Standard Environment service account access to managed resources. Includes access to service accounts.",
   "included_permissions": [
     "appengine.versions.delete",
     "appengine.versions.get",

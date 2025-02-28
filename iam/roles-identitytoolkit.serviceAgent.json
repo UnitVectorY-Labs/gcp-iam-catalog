@@ -3,6 +3,7 @@
   "title": "Identity Platform Service Agent",
   "description": "Gives Identity Platform service account access to customer project resources.",
   "included_permissions": [
+    "cloudfunctions.functions.invoke",
     "recaptchaenterprise.assessments.create",
     "recaptchaenterprise.keys.create",
     "recaptchaenterprise.keys.delete",
