@@ -1,0 +1,20 @@
+{
+  "name": "roles/contactcenterinsights.authorizedViewer",
+  "title": "Contact Center AI Insights authorized viewer",
+  "description": "Grants read access to Authorized resources.",
+  "included_permissions": [
+    "contactcenterinsights.authorizedAnalyses.get",
+    "contactcenterinsights.authorizedAnalyses.list",
+    "contactcenterinsights.authorizedConversations.get",
+    "contactcenterinsights.authorizedConversations.list",
+    "contactcenterinsights.authorizedFeedbackLabels.get",
+    "contactcenterinsights.authorizedFeedbackLabels.list",
+    "contactcenterinsights.authorizedOperations.get",
+    "contactcenterinsights.authorizedOperations.list",
+    "contactcenterinsights.authorizedViewSets.get",
+    "contactcenterinsights.authorizedViewSets.list",
+    "contactcenterinsights.authorizedViews.get",
+    "contactcenterinsights.authorizedViews.list"
+  ],
+  "stage": "BETA"
+}
