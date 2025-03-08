@@ -14,7 +14,7 @@
         <a href="../roles.html">Roles</a>
         <a href="../compare-roles.html">Compare Roles</a>
         <a href="../permissions.html" class="active">Permissions</a>
-        <a href="compare-permissions.html">Compare Permissions</a>
+        <a href="../compare-permissions.html">Compare Permissions</a>
     </div>
 
     <main>
@@ -24,7 +24,7 @@
                 <button class="copy-button" onclick="copyPermission()" aria-label="Copy Permission">📋 Copy</button>
             </h1>
 
-            <h2>{{.RoleCount}} Roles Assign this Permission:</h2>
+            <h2>{{.RoleCount | formatNumber}} Roles Assign this Permission:</h2>
             <div class="search-container">
                 <input type="text" id="searchInput" onkeyup="filterList()" placeholder="Search for roles or titles...">
                 <span class="search-icon">&#128269;</span>

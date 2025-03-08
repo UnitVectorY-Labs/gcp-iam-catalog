@@ -14,6 +14,7 @@ import (
 	"sort"
 	"strings"
 
+	"github.com/dustin/go-humanize"
 	"google.golang.org/api/iam/v1"
 	"google.golang.org/api/option"
 )
@@ -186,6 +187,9 @@ func generateHTML() error {
 				}
 			}
 			return false
+		},
+		"formatNumber": func(n int) string {
+			return humanize.Comma(int64(n))
 		},
 	})
 

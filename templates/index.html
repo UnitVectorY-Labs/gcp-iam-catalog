@@ -31,10 +31,10 @@
                 </p>
                 <ul>
                     <li>
-                        <strong>Role-to-Permission Mapping:</strong> Easily view the permissions included in each IAM role across all GCP services which is available in the Google documentation under <i><a href="https://cloud.google.com/iam/docs/understanding-roles">Understanding Roles</a></i>.
+                        <strong>Role-to-Permission Mapping:</strong> Easily view the permissions included in each IAM role across all GCP services. <span class="muted-text">(Google documentation found at <i><a href="https://cloud.google.com/iam/docs/understanding-roles">Understanding Roles</a>)</span></i>.
                     </li>
                     <li>
-                        <strong>Permission-to-Role Mapping:</strong> Identify all roles that grant a specific permission which is available in the Google documentation under <i><a href="https://cloud.google.com/iam/docs/permissions-reference">Permissions Reference</a></i>.
+                        <strong>Permission-to-Role Mapping:</strong> Identify all roles that grant a specific permission. <span class="muted-text">(Google documentation found at <i><a href="https://cloud.google.com/iam/docs/permissions-reference">Permissions Reference</a>)</span></i>.
                     </li>
                     <li>
                         <strong>Dynamic Comparison:</strong> Select two roles or permissions to see what they have in common and what is unique to each.
@@ -45,7 +45,7 @@
             <div class="getting-started">
                 <h2>Get Started</h2>
                 <p>
-                    Explore the <b>{{.RoleCount}}</b> GCP <a href="roles.html">Roles</a> to see their permissions or browse the <b>{{.PermissionCount}}</b> GCP <a href="permissions.html">Permissions</a> to find roles that include specific permissions.
+                    Explore the <b>{{.RoleCount | formatNumber}}</b> GCP <a href="roles.html">Roles</a> to see their permissions or browse the <b>{{.PermissionCount | formatNumber}}</b> GCP <a href="permissions.html">Permissions</a> to find roles that include specific permissions.
                 </p>
             </div>
         </section>

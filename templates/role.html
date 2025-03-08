@@ -14,7 +14,7 @@
         <a href="../roles.html" class="active">Roles</a>
         <a href="../compare-roles.html">Compare Roles</a>
         <a href="../permissions.html">Permissions</a>
-        <a href="compare-permissions.html">Compare Permissions</a>
+        <a href="../compare-permissions.html">Compare Permissions</a>
     </div>
 
     <main>
@@ -30,7 +30,7 @@
             <p><strong>Role Type:</strong> <a href="https://cloud.google.com/iam/docs/service-agents" target="_blank">Service Agent</a></p>
             {{end}}
             
-            <h2>{{.PermissionCount}} Assigned Permissions:</h2>
+            <h2>{{.PermissionCount | formatNumber}} Assigned Permissions:</h2>
             <div class="search-container">
                 <input type="text" id="searchInput" onkeyup="filterList()" placeholder="Search permissions...">
                 <span class="search-icon">&#128269;</span>
