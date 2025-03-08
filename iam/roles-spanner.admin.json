@@ -3,6 +3,11 @@
   "title": "Cloud Spanner Admin",
   "description": "Full control of Cloud Spanner resources.",
   "included_permissions": [
+    "cloudkms.keyHandles.create",
+    "cloudkms.keyHandles.get",
+    "cloudkms.keyHandles.list",
+    "cloudkms.operations.get",
+    "cloudkms.projects.showEffectiveAutokeyConfig",
     "monitoring.timeSeries.create",
     "monitoring.timeSeries.list",
     "resourcemanager.projects.get",

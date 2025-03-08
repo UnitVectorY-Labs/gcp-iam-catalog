@@ -3,6 +3,11 @@
   "title": "Environment and Storage Object Administrator",
   "description": "Full control of Cloud Composer environments and Cloud Storage objects.",
   "included_permissions": [
+    "cloudkms.keyHandles.create",
+    "cloudkms.keyHandles.get",
+    "cloudkms.keyHandles.list",
+    "cloudkms.operations.get",
+    "cloudkms.projects.showEffectiveAutokeyConfig",
     "composer.dags.execute",
     "composer.dags.get",
     "composer.dags.getSourceCode",

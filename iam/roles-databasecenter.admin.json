@@ -1,6 +1,6 @@
 {
   "name": "roles/databasecenter.admin",
-  "title": "Database center admin",
+  "title": "Database Center Admin",
   "description": "Admin role for Database Center resource data",
   "included_permissions": [
     "cloudaicompanion.entitlements.get",

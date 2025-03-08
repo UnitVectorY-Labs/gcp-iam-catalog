@@ -3,6 +3,11 @@
   "title": "Compute Storage Admin",
   "description": "Full control of Compute Engine storage resources.",
   "included_permissions": [
+    "cloudkms.keyHandles.create",
+    "cloudkms.keyHandles.get",
+    "cloudkms.keyHandles.list",
+    "cloudkms.operations.get",
+    "cloudkms.projects.showEffectiveAutokeyConfig",
     "compute.diskTypes.get",
     "compute.diskTypes.list",
     "compute.disks.addResourcePolicies",
