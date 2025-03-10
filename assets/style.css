@@ -112,17 +112,17 @@ ul.item-list li a:hover {
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
-    font-size: 1rem; /* Ensures consistent font size */
 }
 
 .search-icon {
     position: absolute;
-    right: 1rem;
+    right: 2rem;
     top: 50%;
     transform: translateY(-50%);
     color: #888;
     pointer-events: none;
     font-size: 1rem;
+    opacity: 0.25;
 }
 
 .home .features, .home .getting-started {

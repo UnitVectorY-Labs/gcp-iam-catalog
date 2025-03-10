@@ -108,13 +108,19 @@
       <!-- Permission selection area using a <datalist> -->
       <div class="compare-container">
         <div class="compare-column">
-          <input type="text" id="leftPermission" list="permissionsList" placeholder="Search permission..." oninput="comparePermissions()">
+          <div class="search-container">
+            <input type="text" id="leftPermission" list="permissionsList" placeholder="Search permission..." oninput="comparePermissions()">
+            <span class="search-icon">&#128269;</span>
+          </div>
         </div>
         <div class="compare-column">
           <label>Common Roles</label>
         </div>
         <div class="compare-column">
-          <input type="text" id="rightPermission" list="permissionsList" placeholder="Search permission..." oninput="comparePermissions()">
+          <div class="search-container">
+            <input type="text" id="rightPermission" list="permissionsList" placeholder="Search permission..." oninput="comparePermissions()">
+            <span class="search-icon">&#128269;</span>
+          </div>
         </div>
       </div>
 

@@ -108,13 +108,19 @@
       <!-- Role selection area using searchable input fields -->
       <div class="compare-container">
         <div class="compare-column">
-          <input type="text" id="leftRole" list="rolesList" placeholder="Search role..." oninput="compareRoles()">
+          <div class="search-container">
+            <input type="text" id="leftRole" list="rolesList" placeholder="Search role..." oninput="compareRoles()">
+            <span class="search-icon">&#128269;</span>
+          </div>
         </div>
         <div class="compare-column">
           <label>Common Permissions</label>
         </div>
         <div class="compare-column">
-          <input type="text" id="rightRole" list="rolesList" placeholder="Search role..." oninput="compareRoles()">
+          <div class="search-container">
+            <input type="text" id="rightRole" list="rolesList" placeholder="Search role..." oninput="compareRoles()">
+            <span class="search-icon">&#128269;</span>
+          </div>
         </div>
       </div>
       <!-- The datalist used by both input fields -->
