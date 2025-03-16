@@ -4,9 +4,14 @@
   "description": "Provides access to connect to the Kafka servers in a cluster, i.e. provides Kafka data plane access. Intended for, e.g., producers and consumers.",
   "included_permissions": [
     "cloudasset.assets.searchAllResources",
+    "managedkafka.clusters.attachConnectCluster",
     "managedkafka.clusters.connect",
     "managedkafka.clusters.get",
     "managedkafka.clusters.list",
+    "managedkafka.connectClusters.get",
+    "managedkafka.connectClusters.list",
+    "managedkafka.connectors.get",
+    "managedkafka.connectors.list",
     "managedkafka.consumerGroups.delete",
     "managedkafka.consumerGroups.get",
     "managedkafka.consumerGroups.list",
@@ -26,5 +31,5 @@
     "serviceusage.services.get",
     "serviceusage.services.list"
   ],
-  "stage": "BETA"
+  "stage": "GA"
 }

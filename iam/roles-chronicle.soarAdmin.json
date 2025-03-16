@@ -3,6 +3,7 @@
   "title": "Chronicle SOAR Admin",
   "description": "Grants admin access to Chronicle SOAR.",
   "included_permissions": [
+    "chronicle.cases.countPriorities",
     "chronicle.instances.soarAdmin",
     "cloudasset.assets.exportResource",
     "cloudasset.assets.queryAccessPolicy",

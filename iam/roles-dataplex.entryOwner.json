@@ -1,7 +1,7 @@
 {
   "name": "roles/dataplex.entryOwner",
-  "title": "Dataplex Entry Owner",
-  "description": "Owns Metadata Entries.",
+  "title": "Dataplex Entry and EntryLink Owner",
+  "description": "Owns Metadata Entries and EntryLinks.",
   "included_permissions": [
     "datacatalog.migrationConfig.get",
     "dataplex.aspectTypes.get",
