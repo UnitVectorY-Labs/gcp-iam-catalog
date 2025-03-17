@@ -1,0 +1,9 @@
+{
+  "name": "roles/cloudaicompanion.topicReader",
+  "title": "Topic Reader",
+  "description": "Grants read-only access to topic resource.",
+  "included_permissions": [
+    "cloudaicompanion.topics.get"
+  ],
+  "stage": "BETA"
+}

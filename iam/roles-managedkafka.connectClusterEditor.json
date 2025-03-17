@@ -1,0 +1,15 @@
+{
+  "name": "roles/managedkafka.connectClusterEditor",
+  "title": "Managed Kafka Connect Cluster Editor",
+  "description": "Provides read and write access to Kafka Connect clusters. Intended for, e.g., IT Departments that provision Kafka Connect clusters, but need not be able to read or modify connectors.",
+  "included_permissions": [
+    "managedkafka.connectClusters.create",
+    "managedkafka.connectClusters.delete",
+    "managedkafka.connectClusters.get",
+    "managedkafka.connectClusters.list",
+    "managedkafka.connectClusters.update",
+    "managedkafka.connectors.get",
+    "managedkafka.connectors.list"
+  ],
+  "stage": "BETA"
+}

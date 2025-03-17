@@ -1,0 +1,9 @@
+{
+  "name": "roles/apihub.runTimeProjectAttachmentsEditor",
+  "title": "Cloud API hub Runtime Project Attachment Editor",
+  "description": "Access to add/delete project as a runtime project attachment to API hub host project.",
+  "included_permissions": [
+    "apihub.runTimeProjectAttachments.attach"
+  ],
+  "stage": "BETA"
+}
