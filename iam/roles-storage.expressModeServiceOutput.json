@@ -1,0 +1,11 @@
+{
+  "name": "roles/storage.expressModeServiceOutput",
+  "title": "Storage Express Mode Service Output",
+  "description": "Grants permission to EasyGCP service accounts at a managed folder so they can read objects but not write them on output folders.",
+  "included_permissions": [
+    "storage.objects.delete",
+    "storage.objects.get",
+    "storage.objects.list"
+  ],
+  "stage": "BETA"
+}

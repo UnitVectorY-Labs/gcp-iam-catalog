@@ -1,0 +1,10 @@
+{
+  "name": "roles/saasservicemgmt.admin",
+  "title": "SaaS Service Management Admin",
+  "description": "Full access to SaaS Service Management resources.",
+  "included_permissions": [
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": ""
+}

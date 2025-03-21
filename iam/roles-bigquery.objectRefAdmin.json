@@ -1,0 +1,10 @@
+{
+  "name": "roles/bigquery.objectRefAdmin",
+  "title": "BigQuery ObjectRef Admin",
+  "description": "Administer ObjectRef resources that includes read and write permissions",
+  "included_permissions": [
+    "bigquery.objectRefs.read",
+    "bigquery.objectRefs.write"
+  ],
+  "stage": "GA"
+}

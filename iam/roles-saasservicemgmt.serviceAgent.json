@@ -1,0 +1,7 @@
+{
+  "name": "roles/saasservicemgmt.serviceAgent",
+  "title": "SaaS Service Management Service Agent",
+  "description": "Service Agent used by SaaS Service Management.",
+  "included_permissions": null,
+  "stage": ""
+}

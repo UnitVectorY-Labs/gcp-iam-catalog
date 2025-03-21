@@ -1,0 +1,10 @@
+{
+  "name": "roles/storage.bucketViewer",
+  "title": "Storage Bucket Viewer",
+  "description": "Grants permission to view buckets and their metadata, excluding IAM policies.",
+  "included_permissions": [
+    "storage.buckets.get",
+    "storage.buckets.list"
+  ],
+  "stage": "BETA"
+}

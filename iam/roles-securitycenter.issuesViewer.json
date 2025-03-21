@@ -1,0 +1,12 @@
+{
+  "name": "roles/securitycenter.issuesViewer",
+  "title": "Security Center Issues Viewer",
+  "description": "Read access to security center issues",
+  "included_permissions": [
+    "securitycenter.issues.get",
+    "securitycenter.issues.group",
+    "securitycenter.issues.list",
+    "securitycenter.issues.listFilterValues"
+  ],
+  "stage": "BETA"
+}

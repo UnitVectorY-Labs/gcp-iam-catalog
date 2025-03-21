@@ -1,0 +1,16 @@
+{
+  "name": "roles/chronicle.federationAdmin",
+  "title": "Chronicle API Federation Admin",
+  "description": "Full access to Chronicle Federation features.",
+  "included_permissions": [
+    "chronicle.federationGroups.create",
+    "chronicle.federationGroups.delete",
+    "chronicle.federationGroups.get",
+    "chronicle.federationGroups.list",
+    "chronicle.federationGroups.update",
+    "chronicle.instances.permitFederationAccess",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "BETA"
+}

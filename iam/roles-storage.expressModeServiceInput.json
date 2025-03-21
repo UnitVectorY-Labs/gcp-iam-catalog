@@ -1,0 +1,12 @@
+{
+  "name": "roles/storage.expressModeServiceInput",
+  "title": "Storage Express Mode Service Input",
+  "description": "Grants permission to Express Mode service accounts at a managed folder so they can create objects but not read them on input folders.",
+  "included_permissions": [
+    "storage.objects.create",
+    "storage.objects.delete",
+    "storage.objects.list",
+    "storage.objects.update"
+  ],
+  "stage": "BETA"
+}

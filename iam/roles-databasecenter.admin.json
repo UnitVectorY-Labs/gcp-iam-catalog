@@ -4,11 +4,11 @@
   "description": "Admin role for Database Center resource data",
   "included_permissions": [
     "cloudaicompanion.entitlements.get",
+    "databasecenter.databaseGroups.list",
     "databasecenter.fleetHealthStats.list",
     "databasecenter.fleetStats.list",
     "databasecenter.locations.list",
     "databasecenter.products.list",
-    "databasecenter.resourceGroups.list",
     "databasecenter.userLabels.list",
     "databasecenter.userTags.list",
     "databasesconsole.locations.get",

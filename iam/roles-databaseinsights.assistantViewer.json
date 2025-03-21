@@ -1,0 +1,7 @@
+{
+  "name": "roles/databaseinsights.assistantViewer",
+  "title": "Database Insights assistant viewer",
+  "description": "Viewer role for Database Insights assistant data",
+  "included_permissions": null,
+  "stage": ""
+}

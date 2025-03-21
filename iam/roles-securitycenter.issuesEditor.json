@@ -1,0 +1,13 @@
+{
+  "name": "roles/securitycenter.issuesEditor",
+  "title": "Security Center Issues Editor",
+  "description": "Write access to security center issues",
+  "included_permissions": [
+    "securitycenter.issues.get",
+    "securitycenter.issues.group",
+    "securitycenter.issues.list",
+    "securitycenter.issues.listFilterValues",
+    "securitycenter.issues.mute"
+  ],
+  "stage": "BETA"
+}
