@@ -19,6 +19,7 @@
     "resourcemanager.projects.get",
     "resourcemanager.projects.getIamPolicy",
     "serviceusage.services.use",
+    "storage.objects.get",
     "storage.objects.list"
   ],
   "stage": "GA"
