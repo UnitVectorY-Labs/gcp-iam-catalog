@@ -1,0 +1,18 @@
+# .repver
+commands:
+ - name: "goversion"
+   targets:
+   - path: "go.mod"
+     pattern: "^go (?P<version>.*) // GOVERSION$"
+   - path: ".github/workflows/build-go.yml"
+     pattern: "^          go-version: '(?P<version>.*)' # GOVERSION$"
+   git:
+     create_branch: true
+     branch_name : "go-v{{version}}"
+     commit: true
+     commit_message: "Update Go version to {{version}}"
+     push: true
+     remote: "origin"
+     pull_request: "GITHUB_CLI"
+     return_to_original_branch: true
+     delete_branch: true
