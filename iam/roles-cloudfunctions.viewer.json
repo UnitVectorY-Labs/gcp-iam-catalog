@@ -3,6 +3,7 @@
   "title": "Cloud Functions Viewer",
   "description": "Read-only access to functions and locations.",
   "included_permissions": [
+    "cloudasset.assets.searchAllResources",
     "cloudbuild.builds.get",
     "cloudbuild.builds.list",
     "cloudbuild.locations.get",

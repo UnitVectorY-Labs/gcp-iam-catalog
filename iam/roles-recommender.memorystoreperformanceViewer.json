@@ -1,0 +1,18 @@
+{
+  "name": "roles/recommender.memorystoreperformanceViewer",
+  "title": "Memorystore Performance Recommender Viewer",
+  "description": "Viewer of Memorystore Performance Insights and Recommendations.",
+  "included_permissions": [
+    "recommender.locations.get",
+    "recommender.locations.list",
+    "recommender.memorystorePerformanceInsights.get",
+    "recommender.memorystorePerformanceInsights.list",
+    "recommender.memorystorePerformanceRecommendations.get",
+    "recommender.memorystorePerformanceRecommendations.list",
+    "recommender.memorystoreUtilizationInsights.get",
+    "recommender.memorystoreUtilizationInsights.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "BETA"
+}

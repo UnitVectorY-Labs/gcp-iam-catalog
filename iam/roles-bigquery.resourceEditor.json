@@ -20,6 +20,7 @@
     "bigquery.reservations.list",
     "bigquery.reservations.listFailoverDatasets",
     "bigquery.reservations.update",
+    "bigquery.reservations.use",
     "resourcemanager.projects.get",
     "resourcemanager.projects.list"
   ],

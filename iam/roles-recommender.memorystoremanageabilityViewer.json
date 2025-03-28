@@ -1,0 +1,16 @@
+{
+  "name": "roles/recommender.memorystoremanageabilityViewer",
+  "title": "Memorystore Manageability Recommender Viewer",
+  "description": "Viewer of Memorystore Manageability Insights and Recommendations.",
+  "included_permissions": [
+    "recommender.locations.get",
+    "recommender.locations.list",
+    "recommender.memorystoreManageabilityInsights.get",
+    "recommender.memorystoreManageabilityInsights.list",
+    "recommender.memorystoreManageabilityRecommendations.get",
+    "recommender.memorystoreManageabilityRecommendations.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "BETA"
+}

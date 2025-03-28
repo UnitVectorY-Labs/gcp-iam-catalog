@@ -1,0 +1,10 @@
+{
+  "name": "roles/datastore.userCredsViewer",
+  "title": "Cloud Datastore User Creds Viewer",
+  "description": "Read access to user creds in Cloud Datastore.",
+  "included_permissions": [
+    "datastore.userCreds.get",
+    "datastore.userCreds.list"
+  ],
+  "stage": "GA"
+}

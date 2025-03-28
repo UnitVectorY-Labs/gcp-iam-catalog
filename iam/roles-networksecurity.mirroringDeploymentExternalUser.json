@@ -1,0 +1,9 @@
+{
+  "name": "roles/networksecurity.mirroringDeploymentExternalUser",
+  "title": "Mirroring Deployment External User",
+  "description": "Allows an external consumer to a producer's mirroringDeploymentGroup.",
+  "included_permissions": [
+    "networksecurity.mirroringDeploymentGroups.use"
+  ],
+  "stage": "BETA"
+}

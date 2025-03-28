@@ -1,0 +1,16 @@
+{
+  "name": "roles/recommender.memorystorereliabilityViewer",
+  "title": "Memorystore Reliability Recommender Viewer",
+  "description": "Viewer of Memorystore Reliability Insights and Recommendations.",
+  "included_permissions": [
+    "recommender.locations.get",
+    "recommender.locations.list",
+    "recommender.memorystoreReliabilityInsights.get",
+    "recommender.memorystoreReliabilityInsights.list",
+    "recommender.memorystoreReliabilityRecommendations.get",
+    "recommender.memorystoreReliabilityRecommendations.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "BETA"
+}

@@ -3,6 +3,7 @@
   "title": "Kubernetes Engine Cluster Admin",
   "description": "Management of Kubernetes Clusters.",
   "included_permissions": [
+    "container.clusters.connect",
     "container.clusters.create",
     "container.clusters.delete",
     "container.clusters.get",

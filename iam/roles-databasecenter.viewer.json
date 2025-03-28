@@ -1,6 +1,6 @@
 {
   "name": "roles/databasecenter.viewer",
-  "title": "Database Center viewer",
+  "title": "Database Center Viewer",
   "description": "Viewer role for Database Center resource data",
   "included_permissions": [
     "cloudaicompanion.entitlements.get",

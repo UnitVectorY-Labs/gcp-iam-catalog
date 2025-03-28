@@ -3,6 +3,7 @@
   "title": "Kubernetes Engine Cluster Viewer",
   "description": "Get and list access to GKE Clusters.",
   "included_permissions": [
+    "container.clusters.connect",
     "container.clusters.get",
     "container.clusters.list",
     "resourcemanager.projects.get",

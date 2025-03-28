@@ -1,7 +1,7 @@
 {
   "name": "roles/dataproc.serverlessViewer",
-  "title": "Dataproc serverless session view permissions",
-  "description": "Permissions needed to view serverless sessions",
+  "title": "Dataproc Serverless Viewer",
+  "description": "Permissions needed to view serverless sessions and batches",
   "included_permissions": [
     "compute.projects.get",
     "compute.regions.get",

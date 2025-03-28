@@ -1,0 +1,15 @@
+{
+  "name": "roles/datastore.userCredsAdmin",
+  "title": "Cloud Datastore User Creds Admin",
+  "description": "Manage user creds in Cloud Datastore.",
+  "included_permissions": [
+    "datastore.databases.getMetadata",
+    "datastore.databases.list",
+    "datastore.userCreds.create",
+    "datastore.userCreds.delete",
+    "datastore.userCreds.get",
+    "datastore.userCreds.list",
+    "datastore.userCreds.update"
+  ],
+  "stage": "GA"
+}

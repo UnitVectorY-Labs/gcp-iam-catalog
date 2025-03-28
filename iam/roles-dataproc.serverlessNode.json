@@ -1,7 +1,7 @@
 {
   "name": "roles/dataproc.serverlessNode",
   "title": "Dataproc Serverless Node.",
-  "description": "Node access to Dataproc Serverless sessions. Intended for service accounts.",
+  "description": "Node access to Dataproc Serverless sessions and batches. Intended for service accounts.",
   "included_permissions": [
     "dataproc.batches.sparkApplicationWrite",
     "dataproc.sessions.sparkApplicationRead",
@@ -11,7 +11,8 @@
     "dataprocrm.nodePools.deleteNodes",
     "dataprocrm.nodePools.get",
     "dataprocrm.nodePools.list",
-    "dataprocrm.nodePools.resize"
+    "dataprocrm.nodePools.resize",
+    "dataprocrm.nodes.list"
   ],
   "stage": "GA"
 }

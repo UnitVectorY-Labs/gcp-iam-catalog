@@ -1,0 +1,13 @@
+{
+  "name": "roles/modelarmor.calloutUser",
+  "title": "Model Armor Callout User",
+  "description": "Grants access to use Model Armor Callout service. Intended for users \u0026 applications which plan to use Model Armor Callout service.",
+  "included_permissions": [
+    "modelarmor.callouts.invoke",
+    "modelarmor.locations.get",
+    "modelarmor.locations.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "BETA"
+}
