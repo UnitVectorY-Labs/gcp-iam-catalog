@@ -1,0 +1,10 @@
+{
+  "name": "roles/lustre.admin",
+  "title": "Google Cloud Managed Lustre Admin",
+  "description": "Full access to Google Cloud Managed Lustre resources.",
+  "included_permissions": [
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": ""
+}

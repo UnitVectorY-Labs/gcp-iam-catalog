@@ -1,0 +1,23 @@
+{
+  "name": "roles/cloudaicompanion.codeToolsUser",
+  "title": "Code Tools User",
+  "description": "Grants read access to Code Tools resources.",
+  "included_permissions": [
+    "cloudaicompanion.settingBindings.codeToolsSettingsGet",
+    "cloudaicompanion.settingBindings.codeToolsSettingsList",
+    "developerconnect.accountConnectors.get",
+    "developerconnect.accountConnectors.list",
+    "developerconnect.locations.get",
+    "developerconnect.locations.list",
+    "developerconnect.operations.get",
+    "developerconnect.operations.list",
+    "developerconnect.users.deleteSelf",
+    "developerconnect.users.fetchAccessToken",
+    "developerconnect.users.finishOAuth",
+    "developerconnect.users.getSelf",
+    "developerconnect.users.startOAuth",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": ""
+}

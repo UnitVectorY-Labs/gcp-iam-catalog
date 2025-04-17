@@ -1,0 +1,7 @@
+{
+  "name": "roles/gkebackup.crossProjectServiceAgent",
+  "title": "Backup for GKE Cross Project Service Agent",
+  "description": "Grants permissions to execute Backup for GKE resources across projects.",
+  "included_permissions": null,
+  "stage": "GA"
+}
