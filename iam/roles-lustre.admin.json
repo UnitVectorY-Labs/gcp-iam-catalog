@@ -3,8 +3,21 @@
   "title": "Google Cloud Managed Lustre Admin",
   "description": "Full access to Google Cloud Managed Lustre resources.",
   "included_permissions": [
+    "lustre.instances.create",
+    "lustre.instances.delete",
+    "lustre.instances.exportData",
+    "lustre.instances.get",
+    "lustre.instances.importData",
+    "lustre.instances.list",
+    "lustre.instances.update",
+    "lustre.locations.get",
+    "lustre.locations.list",
+    "lustre.operations.cancel",
+    "lustre.operations.delete",
+    "lustre.operations.get",
+    "lustre.operations.list",
     "resourcemanager.projects.get",
     "resourcemanager.projects.list"
   ],
-  "stage": ""
+  "stage": "GA"
 }

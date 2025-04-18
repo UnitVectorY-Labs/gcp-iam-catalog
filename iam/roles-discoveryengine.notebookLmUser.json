@@ -3,6 +3,9 @@
   "title": "Cloud NotebookLM User",
   "description": "Grants user-level access to Cloud NotebookLM resources.",
   "included_permissions": [
+    "discoveryengine.accounts.create",
+    "discoveryengine.notebooks.create",
+    "discoveryengine.notebooks.list",
     "resourcemanager.projects.get",
     "resourcemanager.projects.list"
   ],
