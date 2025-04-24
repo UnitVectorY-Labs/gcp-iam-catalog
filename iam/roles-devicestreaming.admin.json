@@ -1,0 +1,10 @@
+{
+  "name": "roles/devicestreaming.admin",
+  "title": "Device Streaming Admin",
+  "description": "Administrator owning access to Direct Access",
+  "included_permissions": [
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "EAP"
+}

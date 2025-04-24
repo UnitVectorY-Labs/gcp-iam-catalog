@@ -1,0 +1,13 @@
+{
+  "name": "roles/devicestreaming.viewer",
+  "title": "Device Streaming Viewer",
+  "description": "Viewer, able to see what device streaming sessions exist",
+  "included_permissions": [
+    "cloudtestservice.environmentcatalog.get",
+    "devicestreaming.deviceSessions.get",
+    "devicestreaming.deviceSessions.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

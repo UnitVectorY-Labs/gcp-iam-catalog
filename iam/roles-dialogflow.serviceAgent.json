@@ -1,7 +1,7 @@
 {
   "name": "roles/dialogflow.serviceAgent",
   "title": "Dialogflow Service Agent",
-  "description": "Gives Dialogflow Service Account access to resources on behalf of user project for Integrations (Facebook Messenger, Slack, Telephony, etc.), BigQuery, Discovery Engine, Integration Connectors, and Vertex.",
+  "description": "Gives Dialogflow Service Account access to resources on behalf of user project for Integrations (Facebook Messenger, Slack, Telephony, etc.), BigQuery, Discovery Engine, Integration Connectors, Application Integration, and Vertex.",
   "included_permissions": [
     "aiplatform.endpoints.get",
     "aiplatform.endpoints.predict",
@@ -142,6 +142,8 @@
     "dlp.deidentifyTemplates.list",
     "dlp.inspectTemplates.get",
     "dlp.inspectTemplates.list",
+    "integrations.integrationVersions.get",
+    "integrations.integrations.generateOpenApiSpec",
     "logging.logEntries.create",
     "logging.logEntries.route",
     "pubsub.snapshots.seek",
