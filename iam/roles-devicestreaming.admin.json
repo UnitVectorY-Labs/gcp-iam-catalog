@@ -3,8 +3,14 @@
   "title": "Device Streaming Admin",
   "description": "Administrator owning access to Direct Access",
   "included_permissions": [
+    "cloudtestservice.environmentcatalog.get",
+    "devicestreaming.deviceSessions.cancel",
+    "devicestreaming.deviceSessions.create",
+    "devicestreaming.deviceSessions.get",
+    "devicestreaming.deviceSessions.list",
+    "devicestreaming.deviceSessions.update",
     "resourcemanager.projects.get",
     "resourcemanager.projects.list"
   ],
-  "stage": "EAP"
+  "stage": "GA"
 }
