@@ -3,6 +3,7 @@
   "title": "Pub/Sub Viewer",
   "description": "View topics, subscriptions, and snapshots.",
   "included_permissions": [
+    "pubsub.messageTransforms.validate",
     "pubsub.schemas.get",
     "pubsub.schemas.list",
     "pubsub.schemas.listRevisions",

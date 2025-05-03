@@ -1,7 +1,7 @@
 {
   "name": "roles/cloudaicompanion.codeToolsAdmin",
-  "title": "Code Tools Admin",
-  "description": "Grants full access to Code Tools resources.",
+  "title": "Gemini Code Assist Tools Admin",
+  "description": "Grants full access to Gemini Code Assist Tools resources.",
   "included_permissions": [
     "cloudaicompanion.codeToolsSettings.create",
     "cloudaicompanion.codeToolsSettings.delete",

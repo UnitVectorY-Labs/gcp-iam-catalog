@@ -3,6 +3,7 @@
   "title": "Pub/Sub Editor",
   "description": "Modify topics and subscriptions, publish and consume messages.",
   "included_permissions": [
+    "pubsub.messageTransforms.validate",
     "pubsub.schemas.attach",
     "pubsub.schemas.commit",
     "pubsub.schemas.create",
