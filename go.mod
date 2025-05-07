@@ -1,6 +1,6 @@
 module github.com/UnitVectorY-Labs/gcp-iam-catalog
 
-go 1.24.2 // GOVERSION
+go 1.24.3 // GOVERSION
 
 require (
 	github.com/dustin/go-humanize v1.0.1
