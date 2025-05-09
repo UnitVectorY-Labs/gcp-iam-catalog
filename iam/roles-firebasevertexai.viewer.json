@@ -1,0 +1,11 @@
+{
+  "name": "roles/firebasevertexai.viewer",
+  "title": "Firebase Vertex AI Viewer",
+  "description": "Read access to Firebase Vertex AI resources.",
+  "included_permissions": [
+    "firebasevertexai.configs.get",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "BETA"
+}
