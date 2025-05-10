@@ -3,6 +3,8 @@
   "title": "Hub \u0026 Spoke Viewer",
   "description": "Enables read-only access to hub and spoke resources",
   "included_permissions": [
+    "networkconnectivity.gatewayAdvertisedRoutes.get",
+    "networkconnectivity.gatewayAdvertisedRoutes.list",
     "networkconnectivity.groups.get",
     "networkconnectivity.groups.getIamPolicy",
     "networkconnectivity.groups.list",

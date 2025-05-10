@@ -3,7 +3,11 @@
   "title": "Firebase Machine Learning Service Agent",
   "description": "Access to Cloud ML and AI resources used by Firebase ML",
   "included_permissions": [
-    "aiplatform.endpoints.predict"
+    "aiplatform.endpoints.predict",
+    "logging.logEntries.create",
+    "logging.logEntries.route",
+    "telemetry.metrics.write",
+    "telemetry.traces.write"
   ],
   "stage": "GA"
 }
