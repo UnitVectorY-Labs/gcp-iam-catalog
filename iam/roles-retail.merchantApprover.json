@@ -4,6 +4,10 @@
   "description": "Grants access and approval rights to MerchantControls in the merchant console.",
   "included_permissions": [
     "retail.attributesConfigs.get",
+    "retail.controls.get",
+    "retail.controls.list",
+    "retail.merchantConfigs.get",
+    "retail.merchantConfigs.update",
     "retail.merchantControls.approverDelete",
     "retail.merchantControls.approverGet",
     "retail.merchantControls.approverList",
@@ -14,6 +18,7 @@
     "retail.merchantControls.creatorList",
     "retail.merchantControls.creatorSubmit",
     "retail.merchantControls.creatorUpdate",
+    "retail.products.get",
     "retail.servingConfigs.list",
     "retail.servingConfigs.search"
   ],

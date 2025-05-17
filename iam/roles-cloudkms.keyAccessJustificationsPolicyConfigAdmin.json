@@ -1,0 +1,11 @@
+{
+  "name": "roles/cloudkms.keyAccessJustificationsPolicyConfigAdmin",
+  "title": "Key Access Justifications Policy Config Admin",
+  "description": "Grant ability to manage Key Access Justifications Policy at parent resource level.",
+  "included_permissions": [
+    "cloudkms.kajPolicyConfigs.get",
+    "cloudkms.kajPolicyConfigs.update",
+    "cloudkms.projects.showEffectiveKajPolicyConfig"
+  ],
+  "stage": "BETA"
+}

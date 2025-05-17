@@ -1,7 +1,7 @@
 {
   "name": "roles/firebasevertexai.admin",
-  "title": "Firebase Vertex AI Admin",
-  "description": "Full access to Firebase Vertex AI resources.",
+  "title": "Firebase AI Logic Admin",
+  "description": "Full access to Firebase AI Logic resources.",
   "included_permissions": [
     "firebasevertexai.configs.get",
     "firebasevertexai.configs.update",
