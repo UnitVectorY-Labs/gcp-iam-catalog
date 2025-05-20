@@ -1,4 +1,4 @@
-# .repver
+# https://github.com/UnitVectorY-Labs/repver
 commands:
  - name: "goversion"
    targets:
