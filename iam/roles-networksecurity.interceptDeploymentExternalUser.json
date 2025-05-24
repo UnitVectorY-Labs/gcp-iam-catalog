@@ -1,0 +1,9 @@
+{
+  "name": "roles/networksecurity.interceptDeploymentExternalUser",
+  "title": "Intercept Deployment External User",
+  "description": "Allows an external consumer to connect to a producer's interceptDeploymentGroup.",
+  "included_permissions": [
+    "networksecurity.interceptDeploymentGroups.use"
+  ],
+  "stage": "BETA"
+}

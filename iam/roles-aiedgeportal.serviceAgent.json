@@ -1,0 +1,14 @@
+{
+  "name": "roles/aiedgeportal.serviceAgent",
+  "title": "AI Edge Portal Service Agent",
+  "description": "Grants AI Edge Portal Service Agent permissions required to read/write data to GCS buckets",
+  "included_permissions": [
+    "storage.buckets.create",
+    "storage.buckets.get",
+    "storage.buckets.list",
+    "storage.objects.create",
+    "storage.objects.delete",
+    "storage.objects.get"
+  ],
+  "stage": "GA"
+}

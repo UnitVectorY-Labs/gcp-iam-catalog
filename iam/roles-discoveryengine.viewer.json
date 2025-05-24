@@ -4,6 +4,8 @@
   "description": "Grants read access to all discovery engine resources.",
   "included_permissions": [
     "discoveryengine.aclConfigs.get",
+    "discoveryengine.agents.get",
+    "discoveryengine.agents.list",
     "discoveryengine.analytics.acquireDashboardSession",
     "discoveryengine.analytics.refreshDashboardSessionTokens",
     "discoveryengine.answers.get",

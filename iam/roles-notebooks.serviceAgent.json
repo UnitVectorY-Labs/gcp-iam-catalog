@@ -22,6 +22,7 @@
     "backupdr.backupPlanAssociations.createForComputeInstance",
     "backupdr.backupPlanAssociations.deleteForComputeDisk",
     "backupdr.backupPlanAssociations.deleteForComputeInstance",
+    "backupdr.backupPlanAssociations.getForComputeDisk",
     "backupdr.backupPlanAssociations.list",
     "backupdr.backupPlanAssociations.triggerBackupForComputeDisk",
     "backupdr.backupPlanAssociations.triggerBackupForComputeInstance",

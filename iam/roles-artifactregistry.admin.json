@@ -65,7 +65,8 @@
     "cloudkms.keyHandles.get",
     "cloudkms.keyHandles.list",
     "cloudkms.operations.get",
-    "cloudkms.projects.showEffectiveAutokeyConfig"
+    "cloudkms.projects.showEffectiveAutokeyConfig",
+    "resourcemanager.projects.get"
   ],
   "stage": "GA"
 }

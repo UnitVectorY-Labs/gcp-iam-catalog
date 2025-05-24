@@ -32,7 +32,8 @@
     "artifactregistry.tags.get",
     "artifactregistry.tags.list",
     "artifactregistry.versions.get",
-    "artifactregistry.versions.list"
+    "artifactregistry.versions.list",
+    "resourcemanager.projects.get"
   ],
   "stage": "GA"
 }
