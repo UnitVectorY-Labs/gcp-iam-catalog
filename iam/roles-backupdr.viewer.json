@@ -4,7 +4,10 @@
   "description": "Provides read-only access to all Backup and DR resources.",
   "included_permissions": [
     "backupdr.backupPlanAssociations.get",
+    "backupdr.backupPlanAssociations.getForComputeDisk",
     "backupdr.backupPlanAssociations.list",
+    "backupdr.backupPlanRevisions.get",
+    "backupdr.backupPlanRevisions.list",
     "backupdr.backupPlans.get",
     "backupdr.backupPlans.list",
     "backupdr.backupVaults.get",

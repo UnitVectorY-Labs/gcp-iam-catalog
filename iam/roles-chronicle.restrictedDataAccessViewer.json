@@ -37,6 +37,7 @@
     "chronicle.instances.get",
     "chronicle.instances.report",
     "chronicle.legacies.legacyBatchGetCases",
+    "chronicle.legacies.legacyBatchGetCollections",
     "chronicle.legacies.legacyFetchAlertsView",
     "chronicle.legacies.legacyFetchUdmSearchCsv",
     "chronicle.legacies.legacyFetchUdmSearchView",
