@@ -5,6 +5,8 @@
   "included_permissions": [
     "networkservices.authzExtensions.get",
     "networkservices.authzExtensions.list",
+    "networkservices.lbEdgeExtensions.get",
+    "networkservices.lbEdgeExtensions.list",
     "networkservices.lbRouteExtensions.get",
     "networkservices.lbRouteExtensions.list",
     "networkservices.lbTrafficExtensions.get",
