@@ -36,6 +36,7 @@
     "managedkafka.contexts.list",
     "managedkafka.locations.get",
     "managedkafka.locations.list",
+    "managedkafka.mode.delete",
     "managedkafka.mode.get",
     "managedkafka.mode.update",
     "managedkafka.operations.cancel",

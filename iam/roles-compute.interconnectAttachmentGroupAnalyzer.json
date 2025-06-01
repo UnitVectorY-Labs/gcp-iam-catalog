@@ -1,0 +1,18 @@
+{
+  "name": "roles/compute.interconnectAttachmentGroupAnalyzer",
+  "title": "Interconnect Attachment Group Analyzer",
+  "description": "Analyze Interconnect Attachment Groups via their GetOperationalStatus method.",
+  "included_permissions": [
+    "cloudasset.assets.listComputeInterconnect",
+    "cloudasset.assets.listComputeInterconnectAttachment",
+    "cloudasset.assets.listComputeNetworks",
+    "cloudasset.assets.listComputeRouters",
+    "cloudasset.assets.listComputeVpnGateways",
+    "compute.interconnectAttachmentGroups.get",
+    "compute.interconnectAttachmentGroups.list",
+    "compute.interconnectAttachments.get",
+    "compute.interconnectAttachments.list",
+    "compute.routers.get"
+  ],
+  "stage": "GA"
+}
