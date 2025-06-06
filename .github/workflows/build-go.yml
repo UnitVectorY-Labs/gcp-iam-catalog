@@ -35,7 +35,7 @@ jobs:
             ${{ runner.os }}-go-
 
       - name: Install dependencies
-        run: go mod tidy
+        run: go mod download
 
       - name: Build the application
         run: go build -v ./...
