@@ -1,0 +1,14 @@
+{
+  "name": "roles/developerconnect.insightsAdmin",
+  "title": "Developer Connect Insights Admin",
+  "description": "Admin access to Developer Connect Insights resources.",
+  "included_permissions": [
+    "developerconnect.locations.get",
+    "developerconnect.locations.list",
+    "developerconnect.operations.get",
+    "developerconnect.operations.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "BETA"
+}

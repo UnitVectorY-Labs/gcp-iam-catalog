@@ -5,9 +5,7 @@
   "included_permissions": [
     "documentai.dataLabelingJobs.cancel",
     "documentai.dataLabelingJobs.create",
-    "documentai.dataLabelingJobs.delete",
     "documentai.dataLabelingJobs.list",
-    "documentai.dataLabelingJobs.update",
     "documentai.datasetSchemas.get",
     "documentai.datasetSchemas.update",
     "documentai.datasets.createDocuments",
@@ -28,7 +26,6 @@
     "documentai.labelerPools.delete",
     "documentai.labelerPools.get",
     "documentai.labelerPools.list",
-    "documentai.labelerPools.update",
     "documentai.locations.get",
     "documentai.locations.list",
     "documentai.operations.getLegacy",

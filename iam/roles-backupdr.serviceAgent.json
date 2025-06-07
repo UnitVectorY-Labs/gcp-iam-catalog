@@ -3,6 +3,7 @@
   "title": "Backup and DR Service Agent",
   "description": "Grants the Backup and DR Service access to discover and protect GCP resources.",
   "included_permissions": [
+    "alloydb.operations.get",
     "cloudsql.instances.get",
     "compute.addresses.list",
     "compute.addresses.use",

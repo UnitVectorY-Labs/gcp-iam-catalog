@@ -3,6 +3,9 @@
   "title": "Observability Analytics User",
   "description": "Grants permissions to use Cloud Observability Analytics.",
   "included_permissions": [
+    "logging.queries.getShared",
+    "logging.queries.listShared",
+    "logging.queries.usePrivate",
     "observability.analyticsViews.create",
     "observability.analyticsViews.delete",
     "observability.analyticsViews.get",

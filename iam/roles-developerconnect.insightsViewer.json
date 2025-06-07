@@ -1,0 +1,14 @@
+{
+  "name": "roles/developerconnect.insightsViewer",
+  "title": "Developer Connect Insights Viewer",
+  "description": "Readonly access to Developer Connect Insights resources.",
+  "included_permissions": [
+    "developerconnect.locations.get",
+    "developerconnect.locations.list",
+    "developerconnect.operations.get",
+    "developerconnect.operations.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "BETA"
+}
