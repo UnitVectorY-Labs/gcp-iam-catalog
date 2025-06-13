@@ -1,0 +1,10 @@
+{
+  "name": "roles/geminidataanalytics.dataAgentUser",
+  "title": "Gemini Data Analytics Data Agent User",
+  "description": "Chat and View access to Gemini Data Analytics resources.",
+  "included_permissions": [
+    "geminidataanalytics.dataAgents.get",
+    "geminidataanalytics.dataAgents.list"
+  ],
+  "stage": "BETA"
+}

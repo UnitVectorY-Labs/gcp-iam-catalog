@@ -1,0 +1,7 @@
+{
+  "name": "roles/geminidataanalytics.dataAgentEditor",
+  "title": "Gemini Data Analytics Data Agent Editor",
+  "description": "Chat and Edit access to Gemini Data Analytics resources.",
+  "included_permissions": null,
+  "stage": ""
+}

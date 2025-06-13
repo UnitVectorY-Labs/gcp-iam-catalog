@@ -1,0 +1,7 @@
+{
+  "name": "roles/geminidataanalytics.dataAgentStatelessUser",
+  "title": "Gemini Data Analytics Data Agent Stateless User",
+  "description": "Stateless access to Gemini Data Analytics chat.",
+  "included_permissions": null,
+  "stage": "BETA"
+}
