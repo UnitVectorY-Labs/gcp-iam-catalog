@@ -2,6 +2,8 @@
   "name": "roles/geminidataanalytics.dataAgentCreator",
   "title": "Gemini Data Analytics Agent Creator",
   "description": "Create access to Gemini Data Analytics resources.",
-  "included_permissions": null,
-  "stage": ""
+  "included_permissions": [
+    "geminidataanalytics.dataAgents.create"
+  ],
+  "stage": "BETA"
 }

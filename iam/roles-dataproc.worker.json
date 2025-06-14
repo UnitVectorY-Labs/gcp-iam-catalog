@@ -5,6 +5,7 @@
   "included_permissions": [
     "cloudprofiler.profiles.create",
     "cloudprofiler.profiles.update",
+    "datalineage.locations.processOpenLineageMessage",
     "dataproc.agents.create",
     "dataproc.agents.delete",
     "dataproc.agents.get",
