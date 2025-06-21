@@ -8,5 +8,5 @@
     "securitycenter.issues.list",
     "securitycenter.issues.listFilterValues"
   ],
-  "stage": "BETA"
+  "stage": "GA"
 }
