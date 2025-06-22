@@ -3,6 +3,7 @@
   "title": "Storage Transfer Agent",
   "description": "Perform transfers from an agent.",
   "included_permissions": [
+    "logging.logEntries.create",
     "monitoring.timeSeries.create",
     "pubsub.subscriptions.consume",
     "pubsub.subscriptions.create",

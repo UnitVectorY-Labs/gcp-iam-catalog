@@ -3,6 +3,7 @@
   "title": "Network Actions Service Agent",
   "description": "Gives Network Actions service account access to read required resources.",
   "included_permissions": [
+    "artifactregistry.files.download",
     "artifactregistry.repositories.downloadArtifacts"
   ],
   "stage": "GA"
