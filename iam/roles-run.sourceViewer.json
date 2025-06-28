@@ -108,5 +108,5 @@
     "storage.objects.get",
     "storage.objects.list"
   ],
-  "stage": "BETA"
+  "stage": "GA"
 }

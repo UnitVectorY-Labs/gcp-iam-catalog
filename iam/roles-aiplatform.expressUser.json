@@ -3,7 +3,20 @@
   "title": "Vertex AI Platform Express User",
   "description": "Grants user access to Vertex AI Express",
   "included_permissions": [
-    "aiplatform.endpoints.predict"
+    "aiplatform.endpoints.predict",
+    "aiplatform.reasoningEngines.create",
+    "aiplatform.reasoningEngines.delete",
+    "aiplatform.reasoningEngines.get",
+    "aiplatform.reasoningEngines.list",
+    "aiplatform.reasoningEngines.query",
+    "aiplatform.reasoningEngines.update",
+    "aiplatform.sessionEvents.append",
+    "aiplatform.sessionEvents.list",
+    "aiplatform.sessions.create",
+    "aiplatform.sessions.delete",
+    "aiplatform.sessions.get",
+    "aiplatform.sessions.list",
+    "aiplatform.sessions.update"
   ],
   "stage": "BETA"
 }
