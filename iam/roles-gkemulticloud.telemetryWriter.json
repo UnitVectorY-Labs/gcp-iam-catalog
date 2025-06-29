@@ -3,9 +3,6 @@
   "title": "Anthos Multi-cloud Telemetry Writer",
   "description": "Grant access to write cluster telemetry data such as logs, metrics, and resource metadata.",
   "included_permissions": [
-    "kubernetesmetadata.metadata.config",
-    "kubernetesmetadata.metadata.publish",
-    "kubernetesmetadata.metadata.snapshot",
     "logging.logEntries.create",
     "logging.logEntries.route",
     "monitoring.metricDescriptors.create",

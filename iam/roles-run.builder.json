@@ -10,5 +10,5 @@
     "source.repos.get",
     "storage.objects.get"
   ],
-  "stage": "GA"
+  "stage": "BETA"
 }
