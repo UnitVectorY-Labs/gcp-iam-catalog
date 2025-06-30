@@ -1,0 +1,12 @@
+{
+  "name": "roles/edgecontainer.identityProviderViewer",
+  "title": "Identity Provider Viewer",
+  "description": "Read-only access to Identity Providers.",
+  "included_permissions": [
+    "edgecontainer.identityproviders.get",
+    "edgecontainer.identityproviders.list",
+    "edgecontainer.locations.get",
+    "edgecontainer.locations.list"
+  ],
+  "stage": "GA"
+}

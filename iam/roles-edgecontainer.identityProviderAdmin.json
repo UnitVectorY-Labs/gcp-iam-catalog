@@ -1,0 +1,14 @@
+{
+  "name": "roles/edgecontainer.identityProviderAdmin",
+  "title": "Zonal Project Admin",
+  "description": "Access to manage Identity Providers.",
+  "included_permissions": [
+    "edgecontainer.identityproviders.create",
+    "edgecontainer.identityproviders.delete",
+    "edgecontainer.identityproviders.get",
+    "edgecontainer.identityproviders.list",
+    "edgecontainer.locations.get",
+    "edgecontainer.locations.list"
+  ],
+  "stage": "GA"
+}

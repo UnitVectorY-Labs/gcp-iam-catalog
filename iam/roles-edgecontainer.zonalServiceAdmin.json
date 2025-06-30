@@ -1,0 +1,17 @@
+{
+  "name": "roles/edgecontainer.zonalServiceAdmin",
+  "title": "Zonal Service Admin",
+  "description": "Access to mutate zonal service.",
+  "included_permissions": [
+    "edgecontainer.locations.get",
+    "edgecontainer.locations.list",
+    "edgecontainer.operations.cancel",
+    "edgecontainer.operations.delete",
+    "edgecontainer.operations.get",
+    "edgecontainer.operations.list",
+    "edgecontainer.zonalservices.enable",
+    "edgecontainer.zonalservices.get",
+    "edgecontainer.zonalservices.list"
+  ],
+  "stage": "GA"
+}

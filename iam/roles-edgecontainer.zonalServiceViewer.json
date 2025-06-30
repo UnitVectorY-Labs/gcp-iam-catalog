@@ -1,0 +1,14 @@
+{
+  "name": "roles/edgecontainer.zonalServiceViewer",
+  "title": "Zonal Service Viewer",
+  "description": "Read-only access to zonal services.",
+  "included_permissions": [
+    "edgecontainer.locations.get",
+    "edgecontainer.locations.list",
+    "edgecontainer.operations.get",
+    "edgecontainer.operations.list",
+    "edgecontainer.zonalservices.get",
+    "edgecontainer.zonalservices.list"
+  ],
+  "stage": "GA"
+}
