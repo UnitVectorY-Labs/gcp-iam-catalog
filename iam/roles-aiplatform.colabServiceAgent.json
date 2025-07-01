@@ -3,7 +3,6 @@
   "title": "Vertex AI Colab Service Agent",
   "description": "Gives Vertex AI Colab the proper permissions to function.",
   "included_permissions": [
-    "aiplatform.notebookExecutionJobs.create",
     "compute.addresses.get",
     "compute.addresses.list",
     "compute.addresses.use",

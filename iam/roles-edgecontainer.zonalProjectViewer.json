@@ -6,7 +6,11 @@
     "edgecontainer.locations.get",
     "edgecontainer.locations.list",
     "edgecontainer.operations.get",
-    "edgecontainer.operations.list"
+    "edgecontainer.operations.list",
+    "edgecontainer.zonalProjects.get",
+    "edgecontainer.zonalProjects.list",
+    "edgecontainer.zones.get",
+    "edgecontainer.zones.list"
   ],
-  "stage": ""
+  "stage": "GA"
 }

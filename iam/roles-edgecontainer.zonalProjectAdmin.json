@@ -8,7 +8,12 @@
     "edgecontainer.operations.cancel",
     "edgecontainer.operations.delete",
     "edgecontainer.operations.get",
-    "edgecontainer.operations.list"
+    "edgecontainer.operations.list",
+    "edgecontainer.zonalProjects.enable",
+    "edgecontainer.zonalProjects.get",
+    "edgecontainer.zonalProjects.list",
+    "edgecontainer.zones.get",
+    "edgecontainer.zones.list"
   ],
-  "stage": ""
+  "stage": "GA"
 }
