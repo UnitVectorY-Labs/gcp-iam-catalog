@@ -13,6 +13,7 @@ import (
 	"path/filepath"
 	"sort"
 	"strings"
+	"time"
 
 	"github.com/dustin/go-humanize"
 	"google.golang.org/api/iam/v1"
@@ -27,6 +28,7 @@ type Role struct {
 	IncludedPermissions []string `json:"included_permissions"`
 	Stage               string   `json:"stage"`
 	PermissionCount     int      `json:"-"` // Not stored in JSON
+	LastCrawled         string   `json:"-"` // Not stored in JSON
 }
 
 // PermissionIndex maps permissions to roles
@@ -138,6 +140,22 @@ func crawlRoles() error {
 		log.Printf("Successfully saved role %s to %s", detailedRole.Name, filePath)
 	}
 
+	// Create a timestamp file
+	timestamp := struct {
+		LastCrawled string `json:"last_crawled"`
+	}{
+		LastCrawled: time.Now().UTC().Format(time.RFC3339),
+	}
+	timestampData, err := json.MarshalIndent(timestamp, "", "  ")
+	if err != nil {
+		return fmt.Errorf("failed to marshal timestamp: %v", err)
+	}
+	timestampPath := filepath.Join(iamDir, "timestamp.json")
+	err = os.WriteFile(timestampPath, timestampData, 0644)
+	if err != nil {
+		return fmt.Errorf("failed to write timestamp file: %v", err)
+	}
+
 	fmt.Printf("Crawl completed. Check the '%s' directory for detailed JSON files.\n", iamDir)
 	return nil
 }
@@ -174,6 +192,32 @@ func generateHTML() error {
 		return fmt.Errorf("no JSON files found in '%s' directory. Please run -crawl first", iamDir)
 	}
 
+	// Read the timestamp file
+	var lastCrawled string
+	timestampFile := filepath.Join(iamDir, "timestamp.json")
+	data, err := os.ReadFile(timestampFile)
+	if err != nil {
+		log.Printf("Could not read timestamp file: %v", err)
+		lastCrawled = "Not available"
+	} else {
+		var timestamp struct {
+			LastCrawled string `json:"last_crawled"`
+		}
+		err = json.Unmarshal(data, &timestamp)
+		if err != nil {
+			log.Printf("Failed to parse timestamp JSON: %v", err)
+			lastCrawled = "Not available"
+		} else {
+			parsedTime, err := time.Parse(time.RFC3339, timestamp.LastCrawled)
+			if err != nil {
+				log.Printf("Failed to parse timestamp: %v", err)
+				lastCrawled = "Not available"
+			} else {
+				lastCrawled = parsedTime.Format("January 2, 2006 15:04 UTC")
+			}
+		}
+	}
+
 	var roles []Role
 	permissionIndex := make(PermissionIndex)
 
@@ -199,8 +243,11 @@ func generateHTML() error {
 		return fmt.Errorf("failed to parse templates: %v", err)
 	}
 
-	// Parse each role JSON file
+	// Parse each role JSON file, skipping the timestamp file
 	for _, file := range roleFiles {
+		if filepath.Base(file) == "timestamp.json" {
+			continue
+		}
 		log.Printf("Processing file: %s", file)
 		data, err := os.ReadFile(file)
 		if err != nil {
@@ -291,6 +338,7 @@ func generateHTML() error {
 
 		// Set the permission count
 		role.PermissionCount = len(role.IncludedPermissions)
+		role.LastCrawled = lastCrawled
 
 		// Execute the "role.html" template
 		err = tmpl.ExecuteTemplate(f, "role.html", role)
@@ -337,10 +385,12 @@ func generateHTML() error {
 				Name  string
 				Title string
 			}
+			LastCrawled string
 		}{
-			RoleCount:  len(detailedRoles),
-			Permission: perm,
-			Roles:      detailedRoles,
+			RoleCount:   len(detailedRoles),
+			Permission:  perm,
+			Roles:       detailedRoles,
+			LastCrawled: lastCrawled,
 		}
 
 		f, err := os.Create(filePath)
@@ -370,9 +420,11 @@ func generateHTML() error {
 	defer fRolesIndex.Close()
 
 	err = tmpl.ExecuteTemplate(fRolesIndex, "roles.html", struct {
-		Items []Role
+		Items       []Role
+		LastCrawled string
 	}{
-		Items: roles,
+		Items:       roles,
+		LastCrawled: lastCrawled,
 	})
 	if err != nil {
 		return fmt.Errorf("failed to execute roles index template: %v", err)
@@ -405,8 +457,10 @@ func generateHTML() error {
 		Items []struct {
 			Permission string
 		}
+		LastCrawled string
 	}{
-		Items: permissionsList,
+		Items:       permissionsList,
+		LastCrawled: lastCrawled,
 	})
 	if err != nil {
 		return fmt.Errorf("failed to execute permissions index template: %v", err)
@@ -424,9 +478,11 @@ func generateHTML() error {
 	homeData := struct {
 		RoleCount       int
 		PermissionCount int
+		LastCrawled     string
 	}{
 		RoleCount:       len(roles),
 		PermissionCount: len(permissionIndex),
+		LastCrawled:     lastCrawled,
 	}
 
 	// Execute the "index.html" template
@@ -438,7 +494,8 @@ func generateHTML() error {
 
 	// Generate Compare Roles Page
 	type rolesWrapper struct {
-		Roles []Role
+		Roles       []Role
+		LastCrawled string
 	}
 	compareRolesPath := filepath.Join(htmlDir, "compare-roles.html")
 	fCompareRoles, err := os.Create(compareRolesPath)
@@ -447,7 +504,7 @@ func generateHTML() error {
 	}
 	defer fCompareRoles.Close()
 
-	err = tmpl.ExecuteTemplate(fCompareRoles, "compare-roles.html", rolesWrapper{Roles: roles})
+	err = tmpl.ExecuteTemplate(fCompareRoles, "compare-roles.html", rolesWrapper{Roles: roles, LastCrawled: lastCrawled})
 	if err != nil {
 		return fmt.Errorf("failed to execute compare-roles template: %v", err)
 	}
@@ -461,6 +518,7 @@ func generateHTML() error {
 	sort.Strings(allPermissions)
 	type permissionsWrapper struct {
 		Permissions []string
+		LastCrawled string
 	}
 	comparePermsPath := filepath.Join(htmlDir, "compare-permissions.html")
 	fComparePerms, err := os.Create(comparePermsPath)
@@ -469,7 +527,7 @@ func generateHTML() error {
 	}
 	defer fComparePerms.Close()
 
-	err = tmpl.ExecuteTemplate(fComparePerms, "compare-permissions.html", permissionsWrapper{Permissions: allPermissions})
+	err = tmpl.ExecuteTemplate(fComparePerms, "compare-permissions.html", permissionsWrapper{Permissions: allPermissions, LastCrawled: lastCrawled})
 	if err != nil {
 		return fmt.Errorf("failed to execute compare-permissions template: %v", err)
 	}

@@ -172,8 +172,8 @@ ul.item-list li a:hover {
 }
 
 footer {
-    background-color: #2c3e50; 
-    color: #ecf0f1;
+    background-color: #2c3e50;
+    color: #9ca3af;
     font-size: 0.8em;
     padding: 1rem;
     border-top: 1px solid #e5e7eb;
@@ -187,7 +187,7 @@ footer a {
 }
 
 footer a:hover {
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 .compare-container {
