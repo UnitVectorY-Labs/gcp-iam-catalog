@@ -1,0 +1,9 @@
+{
+  "name": "roles/backupdr.cloudSqlOperator",
+  "title": "Backup and DR Cloud SQL Operator",
+  "description": "Allows a Backup and DR service account to discover and backup Cloud SQL instances.",
+  "included_permissions": [
+    "cloudsql.instances.get"
+  ],
+  "stage": ""
+}

@@ -4,6 +4,7 @@
   "description": "Grants the Backup and DR Service access to discover and protect GCP resources.",
   "included_permissions": [
     "alloydb.operations.get",
+    "cloudsql.instances.createBackupDrBackup",
     "cloudsql.instances.get",
     "compute.addresses.list",
     "compute.addresses.use",
