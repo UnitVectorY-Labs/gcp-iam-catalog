@@ -3,11 +3,12 @@
   "title": "Cloud Datastore Clone Admin",
   "description": "Clone Cloud Datastore Databases.",
   "included_permissions": [
+    "datastore.databases.clone",
     "datastore.databases.create",
     "datastore.databases.getMetadata",
     "datastore.databases.list",
     "datastore.operations.get",
     "datastore.operations.list"
   ],
-  "stage": ""
+  "stage": "GA"
 }
