@@ -3,6 +3,7 @@
   "title": "Storage Object User",
   "description": "Access to create, read, update and delete objects and multipart uploads in GCS.",
   "included_permissions": [
+    "monitoring.timeSeries.create",
     "orgpolicy.policy.get",
     "resourcemanager.projects.get",
     "resourcemanager.projects.list",

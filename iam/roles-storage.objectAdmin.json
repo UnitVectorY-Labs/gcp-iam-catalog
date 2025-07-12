@@ -3,6 +3,7 @@
   "title": "Storage Object Admin",
   "description": "Grants full control over objects, including listing, creating, viewing, and deleting objects.",
   "included_permissions": [
+    "monitoring.timeSeries.create",
     "orgpolicy.policy.get",
     "resourcemanager.projects.get",
     "resourcemanager.projects.list",

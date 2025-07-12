@@ -1,7 +1,7 @@
 {
   "name": "roles/saasservicemgmt.viewer",
   "title": "SaaS Service Management Viewer",
-  "description": "Readonly access to SaaS Service Management resources.",
+  "description": "Provides read-only access to SaaS Service Management resources.",
   "included_permissions": [
     "resourcemanager.projects.get",
     "resourcemanager.projects.list",

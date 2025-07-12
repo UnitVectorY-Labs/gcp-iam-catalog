@@ -5,6 +5,7 @@
   "included_permissions": [
     "logging.logEntries.create",
     "logging.logEntries.route",
+    "monitoring.timeSeries.create",
     "orgpolicy.policy.get",
     "resourcemanager.projects.get",
     "resourcemanager.projects.list",
