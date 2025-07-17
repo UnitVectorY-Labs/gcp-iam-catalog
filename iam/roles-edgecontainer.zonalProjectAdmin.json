@@ -1,6 +1,6 @@
 {
   "name": "roles/edgecontainer.zonalProjectAdmin",
-  "title": "Zonal Project Admin",
+  "title": "Edge Container Zonal Project Admin",
   "description": "Access to manage zonal projects.",
   "included_permissions": [
     "edgecontainer.locations.get",
