@@ -1,7 +1,7 @@
 {
   "name": "roles/observability.scopesEditor",
   "title": "Observability Scopes Editor",
-  "description": "Grants permission to view and edit Observability, Logging, Trace, and Monitoring scopes",
+  "description": "Grants permission to view and edit Observability, Logging, and Monitoring scopes",
   "included_permissions": [
     "logging.logScopes.create",
     "logging.logScopes.delete",

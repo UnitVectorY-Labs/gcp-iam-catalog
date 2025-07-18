@@ -1,0 +1,10 @@
+{
+  "name": "roles/cloudsecuritycompliance.viewer",
+  "title": "Cloud Security Compliance Viewer",
+  "description": "Readonly access to Cloud Security Compliance resources.",
+  "included_permissions": [
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": ""
+}

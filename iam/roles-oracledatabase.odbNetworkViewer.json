@@ -1,0 +1,15 @@
+{
+  "name": "roles/oracledatabase.odbNetworkViewer",
+  "title": "Oracle Database@Google ODB Network Viewer",
+  "description": "Grants read access to see all ODB Network resources.",
+  "included_permissions": [
+    "oracledatabase.entitlements.list",
+    "oracledatabase.locations.get",
+    "oracledatabase.locations.list",
+    "oracledatabase.operations.get",
+    "oracledatabase.operations.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": ""
+}

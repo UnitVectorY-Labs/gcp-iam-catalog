@@ -5,6 +5,8 @@
   "included_permissions": [
     "datacatalog.tagTemplates.create",
     "datacatalog.tagTemplates.get",
+    "dataplex.aspectTypes.create",
+    "dataplex.aspectTypes.get",
     "dataplex.projects.search"
   ],
   "stage": "GA"

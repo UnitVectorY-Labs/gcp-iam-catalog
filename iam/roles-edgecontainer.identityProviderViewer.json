@@ -1,6 +1,6 @@
 {
   "name": "roles/edgecontainer.identityProviderViewer",
-  "title": "Identity Provider Viewer",
+  "title": "Edge Container Identity Provider Viewer",
   "description": "Read-only access to Identity Providers.",
   "included_permissions": [
     "edgecontainer.identityproviders.get",

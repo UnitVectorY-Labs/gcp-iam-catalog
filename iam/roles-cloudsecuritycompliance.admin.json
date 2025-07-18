@@ -1,0 +1,10 @@
+{
+  "name": "roles/cloudsecuritycompliance.admin",
+  "title": "Cloud Security Compliance Admin",
+  "description": "Full access to Cloud Security Compliance resources.",
+  "included_permissions": [
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": ""
+}

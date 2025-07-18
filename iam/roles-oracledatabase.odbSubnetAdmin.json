@@ -1,0 +1,22 @@
+{
+  "name": "roles/oracledatabase.odbSubnetAdmin",
+  "title": "Oracle Database@Google ODB Subnet Admin",
+  "description": "Grants full access to manage all ODB Subnet resources.",
+  "included_permissions": [
+    "oracledatabase.entitlements.list",
+    "oracledatabase.locations.get",
+    "oracledatabase.locations.list",
+    "oracledatabase.odbSubnets.create",
+    "oracledatabase.odbSubnets.delete",
+    "oracledatabase.odbSubnets.get",
+    "oracledatabase.odbSubnets.list",
+    "oracledatabase.odbSubnets.use",
+    "oracledatabase.operations.cancel",
+    "oracledatabase.operations.delete",
+    "oracledatabase.operations.get",
+    "oracledatabase.operations.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

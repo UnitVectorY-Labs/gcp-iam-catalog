@@ -3,7 +3,6 @@
   "title": "Privileged Access Manager Service Agent",
   "description": "Gives privileged access manager service account access to modify IAM policies on GCP resources",
   "included_permissions": [
-    "iam.roles.get",
     "resourcemanager.folders.get",
     "resourcemanager.folders.getIamPolicy",
     "resourcemanager.folders.setIamPolicy",
