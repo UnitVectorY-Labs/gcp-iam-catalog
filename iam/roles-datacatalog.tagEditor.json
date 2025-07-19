@@ -10,6 +10,7 @@
     "bigquery.tables.updateTag",
     "datacatalog.entries.updateTag",
     "datacatalog.entryGroups.updateTag",
+    "dataplex.entries.update",
     "pubsub.topics.updateTag"
   ],
   "stage": "GA"

@@ -1,6 +1,6 @@
 {
   "name": "roles/edgecontainer.zonalServiceAdmin",
-  "title": "Zonal Service Admin",
+  "title": "Edge Container Zonal Service Admin",
   "description": "Access to mutate zonal service.",
   "included_permissions": [
     "edgecontainer.locations.get",

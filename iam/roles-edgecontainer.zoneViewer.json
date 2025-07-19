@@ -1,14 +1,12 @@
 {
-  "name": "roles/edgecontainer.zonalProjectViewer",
-  "title": "Edge Container Zonal Project Viewer",
-  "description": "Read-only access to zonal projects.",
+  "name": "roles/edgecontainer.zoneViewer",
+  "title": "Edge Container Zone Viewer",
+  "description": "Read-only access to zones.",
   "included_permissions": [
     "edgecontainer.locations.get",
     "edgecontainer.locations.list",
     "edgecontainer.operations.get",
     "edgecontainer.operations.list",
-    "edgecontainer.zonalProjects.get",
-    "edgecontainer.zonalProjects.list",
     "edgecontainer.zones.get",
     "edgecontainer.zones.list"
   ],

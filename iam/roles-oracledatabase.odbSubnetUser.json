@@ -6,10 +6,13 @@
     "oracledatabase.entitlements.list",
     "oracledatabase.locations.get",
     "oracledatabase.locations.list",
+    "oracledatabase.odbSubnets.get",
+    "oracledatabase.odbSubnets.list",
+    "oracledatabase.odbSubnets.use",
     "oracledatabase.operations.get",
     "oracledatabase.operations.list",
     "resourcemanager.projects.get",
     "resourcemanager.projects.list"
   ],
-  "stage": ""
+  "stage": "GA"
 }

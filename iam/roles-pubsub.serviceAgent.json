@@ -11,7 +11,8 @@
     "iam.serviceAccounts.signBlob",
     "iam.serviceAccounts.signJwt",
     "resourcemanager.projects.get",
-    "resourcemanager.projects.list"
+    "resourcemanager.projects.list",
+    "serviceusage.services.use"
   ],
   "stage": "GA"
 }

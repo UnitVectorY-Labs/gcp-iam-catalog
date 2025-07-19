@@ -1,0 +1,12 @@
+{
+  "name": "roles/edgecontainer.zoneIamAdmin",
+  "title": "Edge Container Zone Iam Policy Admin",
+  "description": "Access to manage Iam Policy in the zone.",
+  "included_permissions": [
+    "edgecontainer.locations.get",
+    "edgecontainer.locations.list",
+    "edgecontainer.zones.getZoneIamPolicy",
+    "edgecontainer.zones.setZoneIamPolicy"
+  ],
+  "stage": "GA"
+}
