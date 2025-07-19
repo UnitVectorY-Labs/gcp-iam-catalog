@@ -4,7 +4,7 @@ go 1.24.5 // GOVERSION
 
 require (
 	github.com/dustin/go-humanize v1.0.1
-	google.golang.org/api v0.241.0
+	google.golang.org/api v0.242.0
 )
 
 require (
