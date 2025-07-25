@@ -1,0 +1,7 @@
+{
+  "name": "roles/discoveryengine.agentAdmin",
+  "title": "Agent Admin",
+  "description": "Grants admin-level access to Agent resources.",
+  "included_permissions": null,
+  "stage": "BETA"
+}

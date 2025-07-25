@@ -4,6 +4,8 @@
   "description": "Read-only access for Firebase App Check.",
   "included_permissions": [
     "firebaseappcheck.appAttestConfig.get",
+    "firebaseappcheck.automations.get",
+    "firebaseappcheck.automations.list",
     "firebaseappcheck.debugTokens.get",
     "firebaseappcheck.deviceCheckConfig.get",
     "firebaseappcheck.playIntegrityConfig.get",
