@@ -1,0 +1,15 @@
+{
+  "name": "roles/networksecurity.dnsThreatDetectorAdmin",
+  "title": "DNS Threat Detector Admin",
+  "description": "Enables full access to DNS Threat Detector resources.",
+  "included_permissions": [
+    "networksecurity.dnsThreatDetectors.create",
+    "networksecurity.dnsThreatDetectors.delete",
+    "networksecurity.dnsThreatDetectors.get",
+    "networksecurity.dnsThreatDetectors.list",
+    "networksecurity.dnsThreatDetectors.update",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "BETA"
+}

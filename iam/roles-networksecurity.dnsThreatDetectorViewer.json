@@ -1,0 +1,12 @@
+{
+  "name": "roles/networksecurity.dnsThreatDetectorViewer",
+  "title": "DNS Threat Detector Viewer",
+  "description": "Enables view access to DNS Threat Detector resources.",
+  "included_permissions": [
+    "networksecurity.dnsThreatDetectors.get",
+    "networksecurity.dnsThreatDetectors.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "BETA"
+}

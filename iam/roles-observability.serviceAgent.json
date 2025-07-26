@@ -1,0 +1,11 @@
+{
+  "name": "roles/observability.serviceAgent",
+  "title": "Observability Service Agent",
+  "description": "Grants Observability service account the ability to list, create and link datasets in the consumer project.",
+  "included_permissions": [
+    "bigquery.datasets.create",
+    "bigquery.datasets.get",
+    "bigquery.datasets.link"
+  ],
+  "stage": "GA"
+}

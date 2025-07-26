@@ -1,0 +1,23 @@
+{
+  "name": "roles/networksecurity.firewallEndpointAdmin",
+  "title": "Firewall Endpoint Admin",
+  "description": "Enables full access to firewall endpoint and firewall endpoint association resources.",
+  "included_permissions": [
+    "networksecurity.firewallEndpointAssociations.create",
+    "networksecurity.firewallEndpointAssociations.delete",
+    "networksecurity.firewallEndpointAssociations.get",
+    "networksecurity.firewallEndpointAssociations.list",
+    "networksecurity.firewallEndpointAssociations.update",
+    "networksecurity.firewallEndpoints.create",
+    "networksecurity.firewallEndpoints.delete",
+    "networksecurity.firewallEndpoints.get",
+    "networksecurity.firewallEndpoints.list",
+    "networksecurity.firewallEndpoints.update",
+    "networksecurity.firewallEndpoints.use",
+    "networksecurity.operations.get",
+    "networksecurity.operations.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "BETA"
+}
