@@ -4,6 +4,7 @@
   "description": "",
   "included_permissions": [
     "compute.acceleratorTypes.list",
+    "compute.advice.calendarMode",
     "compute.futureReservations.create",
     "compute.futureReservations.delete",
     "compute.futureReservations.get",
