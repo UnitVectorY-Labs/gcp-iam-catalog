@@ -1,9 +1,10 @@
 {
   "name": "roles/geminicloudassist.investigationAdmin",
   "title": "Gemini Cloud Assist Investigation Admin",
-  "description": "Grants full administrative access to Gemini Cloud Assist Investigations.",
+  "description": "Grants full administrative access to Gemini Cloud Assist investigations.",
   "included_permissions": [
     "cloudaicompanion.instances.completeTask",
+    "cloudaicompanion.instances.queryEffectiveSetting",
     "cloudasset.assets.analyzeIamPolicy",
     "cloudasset.assets.analyzeMove",
     "cloudasset.assets.analyzeOrgPolicy",

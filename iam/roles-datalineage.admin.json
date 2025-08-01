@@ -3,6 +3,8 @@
   "title": "Data Lineage Administrator",
   "description": "Grants full access to all resources in Data Lineage API",
   "included_permissions": [
+    "datalineage.configs.get",
+    "datalineage.configs.update",
     "datalineage.events.create",
     "datalineage.events.delete",
     "datalineage.events.get",

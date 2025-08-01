@@ -3,6 +3,10 @@
   "title": "Service Extensions Admin",
   "description": "Provides full access to Service Extensions resources.",
   "included_permissions": [
+    "artifactregistry.locations.list",
+    "artifactregistry.packages.list",
+    "artifactregistry.repositories.list",
+    "artifactregistry.versions.list",
     "monitoring.timeSeries.list",
     "networkservices.authzExtensions.create",
     "networkservices.authzExtensions.delete",
