@@ -1,9 +1,10 @@
 {
   "name": "roles/geminicloudassist.investigationOwner",
   "title": "Gemini Cloud Assist Investigation Owner",
-  "description": "Grants full access to configure and run existing Gemini Cloud Assist investigations.",
+  "description": "Grants full administrative access to Gemini Cloud Assist investigations, except the ability to create a new investigation.",
   "included_permissions": [
     "cloudaicompanion.instances.completeTask",
+    "cloudaicompanion.instances.queryEffectiveSetting",
     "cloudasset.assets.analyzeIamPolicy",
     "cloudasset.assets.analyzeMove",
     "cloudasset.assets.analyzeOrgPolicy",

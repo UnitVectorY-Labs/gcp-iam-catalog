@@ -1,0 +1,9 @@
+{
+  "name": "roles/telemetry.serviceLogsWriter",
+  "title": "Integrated Service Telemetry Logs Writer",
+  "description": "Allows an onboarded service to write log data to a destination.",
+  "included_permissions": [
+    "telemetry.consumers.writeLogs"
+  ],
+  "stage": "BETA"
+}

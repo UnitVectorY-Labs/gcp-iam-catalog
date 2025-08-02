@@ -2,6 +2,8 @@
   "name": "roles/observability.viewAccessor",
   "title": "Observability View Accessor",
   "description": "Read only access to data defined by an Observability View.",
-  "included_permissions": null,
+  "included_permissions": [
+    "observability.views.access"
+  ],
   "stage": "BETA"
 }

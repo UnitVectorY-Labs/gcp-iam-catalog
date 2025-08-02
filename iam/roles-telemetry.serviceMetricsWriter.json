@@ -1,0 +1,9 @@
+{
+  "name": "roles/telemetry.serviceMetricsWriter",
+  "title": "Integrated Service Telemetry Metrics Writer",
+  "description": "Allows an onboarded service to write metrics data to a destination.",
+  "included_permissions": [
+    "telemetry.consumers.writeMetrics"
+  ],
+  "stage": "BETA"
+}
