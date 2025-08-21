@@ -1,7 +1,7 @@
 {
   "name": "roles/parametermanager.parameterVersionManager",
   "title": "Parameter Manager Parameter Version Manager",
-  "description": "Grants read \u0026 write access to all Parameter Manager ParameterVersion resources. Intended for users \u0026 applications that need to view Parameters \u0026 perform create/read/update/delete/list operations on ParameterVersions only.",
+  "description": "Grants read \u0026 write access to all Parameter Manager ParameterVersion resources. Intended for users \u0026 applications that need to view Parameters and perform create/read/update/delete/list operations on ParameterVersions only.",
   "included_permissions": [
     "parametermanager.locations.get",
     "parametermanager.locations.list",

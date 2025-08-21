@@ -3,6 +3,8 @@
   "title": "Security Center Issues Editor",
   "description": "Write access to security center issues",
   "included_permissions": [
+    "securitycenter.graphs.get",
+    "securitycenter.graphs.query",
     "securitycenter.issues.get",
     "securitycenter.issues.group",
     "securitycenter.issues.list",
