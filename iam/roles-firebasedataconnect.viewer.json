@@ -1,7 +1,7 @@
 {
   "name": "roles/firebasedataconnect.viewer",
   "title": "Firebase Data Connect API Viewer",
-  "description": "Readonly access to Firebase Data Connect API resources. Role does not grant access to data.",
+  "description": "Readonly access to Firebase Data Connect API resources. Role does not grant any access to data.",
   "included_permissions": [
     "firebasedataconnect.connectorRevisions.get",
     "firebasedataconnect.connectorRevisions.list",

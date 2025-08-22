@@ -11,8 +11,6 @@
     "privilegedaccessmanager.locations.list",
     "privilegedaccessmanager.operations.get",
     "privilegedaccessmanager.operations.list",
-    "privilegedaccessmanager.settings.fetchEffective",
-    "privilegedaccessmanager.settings.get",
     "resourcemanager.projects.get"
   ],
   "stage": "GA"
