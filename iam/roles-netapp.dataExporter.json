@@ -1,0 +1,10 @@
+{
+  "name": "roles/netapp.dataExporter",
+  "title": "Google Cloud NetApp Volumes Data Exporter",
+  "description": "Access to export data from Google Cloud NetApp Volumes.",
+  "included_permissions": [
+    "netapp.operations.get",
+    "netapp.volumes.export"
+  ],
+  "stage": "BETA"
+}

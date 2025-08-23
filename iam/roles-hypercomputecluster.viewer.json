@@ -1,0 +1,18 @@
+{
+  "name": "roles/hypercomputecluster.viewer",
+  "title": "Cluster Director Viewer",
+  "description": "Readonly access to Cluster Director resources.",
+  "included_permissions": [
+    "hypercomputecluster.clusters.get",
+    "hypercomputecluster.clusters.list",
+    "hypercomputecluster.locations.get",
+    "hypercomputecluster.locations.list",
+    "hypercomputecluster.machineLearningRuns.get",
+    "hypercomputecluster.machineLearningRuns.list",
+    "hypercomputecluster.operations.get",
+    "hypercomputecluster.operations.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "BETA"
+}

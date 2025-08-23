@@ -7,5 +7,5 @@
     "iam.principalaccessboundarypolicies.list",
     "iam.principalaccessboundarypolicies.searchPolicyBindings"
   ],
-  "stage": "BETA"
+  "stage": "GA"
 }

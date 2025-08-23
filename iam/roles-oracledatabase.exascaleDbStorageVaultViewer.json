@@ -1,0 +1,20 @@
+{
+  "name": "roles/oracledatabase.exascaleDbStorageVaultViewer",
+  "title": "Oracle Database@Google Cloud Exadata Database Service on Exascale Infrastracture Storage Vault Viewer",
+  "description": "Grants read access to see all Exadata Database Service on Exascale Infrastracture Storage Vault resources.",
+  "included_permissions": [
+    "oracledatabase.dbNodes.list",
+    "oracledatabase.dbSystemShapes.list",
+    "oracledatabase.entitlements.list",
+    "oracledatabase.exascaleDbStorageVaults.get",
+    "oracledatabase.exascaleDbStorageVaults.list",
+    "oracledatabase.giVersions.list",
+    "oracledatabase.locations.get",
+    "oracledatabase.locations.list",
+    "oracledatabase.operations.get",
+    "oracledatabase.operations.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

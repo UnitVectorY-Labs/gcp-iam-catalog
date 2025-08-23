@@ -1,0 +1,14 @@
+{
+  "name": "roles/networkconnectivity.multicloudDataTransferConfigViewer",
+  "title": "Multicloud Data Transfer Config Viewer",
+  "description": "Read-only access to all Multicloud Data Transfer Config resources.",
+  "included_permissions": [
+    "networkconnectivity.multicloudDataTransferConfigs.get",
+    "networkconnectivity.multicloudDataTransferConfigs.list",
+    "networkconnectivity.multicloudDataTransferDestinations.get",
+    "networkconnectivity.multicloudDataTransferDestinations.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

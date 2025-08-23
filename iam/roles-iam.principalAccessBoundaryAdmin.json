@@ -14,5 +14,5 @@
     "iam.principalaccessboundarypolicies.unbind",
     "iam.principalaccessboundarypolicies.update"
   ],
-  "stage": "BETA"
+  "stage": "GA"
 }

@@ -5,5 +5,5 @@
   "included_permissions": [
     "iam.operations.get"
   ],
-  "stage": "BETA"
+  "stage": "GA"
 }

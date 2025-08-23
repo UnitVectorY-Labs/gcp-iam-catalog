@@ -1,0 +1,15 @@
+{
+  "name": "roles/networkconnectivity.multicloudDataTransferDestinationAdmin",
+  "title": "Destination User",
+  "description": "Access to all Destination resources.",
+  "included_permissions": [
+    "networkconnectivity.multicloudDataTransferDestinations.create",
+    "networkconnectivity.multicloudDataTransferDestinations.delete",
+    "networkconnectivity.multicloudDataTransferDestinations.get",
+    "networkconnectivity.multicloudDataTransferDestinations.list",
+    "networkconnectivity.multicloudDataTransferDestinations.update",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

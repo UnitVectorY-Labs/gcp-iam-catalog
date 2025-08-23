@@ -1,0 +1,19 @@
+{
+  "name": "roles/aiplatform.telemetryServiceAgent",
+  "title": "Vertex AI Telemetry Service Agent",
+  "description": "Allows Vertex AI Telemetry Service Agent to access telemetry data.",
+  "included_permissions": [
+    "logging.logEntries.create",
+    "logging.logEntries.list",
+    "logging.logEntries.route",
+    "monitoring.metricDescriptors.create",
+    "monitoring.metricDescriptors.get",
+    "monitoring.metricDescriptors.list",
+    "monitoring.monitoredResourceDescriptors.get",
+    "monitoring.monitoredResourceDescriptors.list",
+    "monitoring.timeSeries.create",
+    "monitoring.timeSeries.list",
+    "servicemanagement.services.report"
+  ],
+  "stage": "GA"
+}

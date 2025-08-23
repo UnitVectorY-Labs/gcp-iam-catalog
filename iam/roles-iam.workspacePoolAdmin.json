@@ -8,5 +8,5 @@
     "iam.googleapis.com/workspacePools.searchPolicyBindings",
     "iam.googleapis.com/workspacePools.updatePolicyBinding"
   ],
-  "stage": "BETA"
+  "stage": "GA"
 }

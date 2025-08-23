@@ -9,7 +9,9 @@
     "monitoring.metricDescriptors.list",
     "monitoring.timeSeries.create",
     "monitoring.timeSeries.list",
-    "serviceusage.services.use"
+    "serviceusage.services.use",
+    "telemetry.metrics.write",
+    "telemetry.traces.write"
   ],
   "stage": "GA"
 }

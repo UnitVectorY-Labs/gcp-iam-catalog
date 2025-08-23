@@ -1,0 +1,12 @@
+{
+  "name": "roles/privilegedaccessmanager.settingsAdmin",
+  "title": "Privileged Access Manager Settings Admin",
+  "description": "Administrator of Privileged Access Manager Settings.",
+  "included_permissions": [
+    "privilegedaccessmanager.operations.get",
+    "privilegedaccessmanager.settings.fetchEffective",
+    "privilegedaccessmanager.settings.get",
+    "privilegedaccessmanager.settings.update"
+  ],
+  "stage": "BETA"
+}

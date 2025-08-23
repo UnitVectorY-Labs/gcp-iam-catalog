@@ -1,0 +1,12 @@
+{
+  "name": "roles/networkconnectivity.multicloudDataTransferDestinationViewer",
+  "title": "Destination Viewer",
+  "description": "Read-only access to all Destination resources.",
+  "included_permissions": [
+    "networkconnectivity.multicloudDataTransferDestinations.get",
+    "networkconnectivity.multicloudDataTransferDestinations.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

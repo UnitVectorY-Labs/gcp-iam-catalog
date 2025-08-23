@@ -1,0 +1,9 @@
+{
+  "name": "roles/eventarc.multiProjectEventCollector",
+  "title": "Eventarc Event Collector",
+  "description": "Can collect events from multiple projects in an org for a source resource.",
+  "included_permissions": [
+    "eventarc.multiProjectSources.collectGoogleApiEvents"
+  ],
+  "stage": "BETA"
+}

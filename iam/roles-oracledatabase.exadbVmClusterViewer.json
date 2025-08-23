@@ -1,0 +1,20 @@
+{
+  "name": "roles/oracledatabase.exadbVmClusterViewer",
+  "title": "Oracle Database@Google Cloud Exadata Database Service on Exascale Infrastracture VM Cluster Viewer",
+  "description": "Grants read access to see all Exadata Database Service on Exascale Infrastracture VM Cluster resources.",
+  "included_permissions": [
+    "oracledatabase.dbNodes.list",
+    "oracledatabase.dbSystemShapes.list",
+    "oracledatabase.entitlements.list",
+    "oracledatabase.exadbVmClusters.get",
+    "oracledatabase.exadbVmClusters.list",
+    "oracledatabase.giVersions.list",
+    "oracledatabase.locations.get",
+    "oracledatabase.locations.list",
+    "oracledatabase.operations.get",
+    "oracledatabase.operations.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

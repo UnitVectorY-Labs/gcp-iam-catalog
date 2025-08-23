@@ -3,6 +3,13 @@
   "title": "SaaS Service Management Service Agent",
   "description": "Service Agent used by SaaS Service Management.",
   "included_permissions": [
+    "artifactregistry.repositories.downloadArtifacts",
+    "config.deployments.create",
+    "config.deployments.delete",
+    "config.deployments.get",
+    "config.deployments.update",
+    "config.operations.get",
+    "config.revisions.get",
     "saasservicemgmt.locations.get",
     "saasservicemgmt.locations.list",
     "saasservicemgmt.operations.get",
@@ -38,7 +45,16 @@
     "saasservicemgmt.units.delete",
     "saasservicemgmt.units.get",
     "saasservicemgmt.units.list",
-    "saasservicemgmt.units.update"
+    "saasservicemgmt.units.update",
+    "storage.buckets.create",
+    "storage.buckets.delete",
+    "storage.buckets.get",
+    "storage.buckets.getIamPolicy",
+    "storage.buckets.setIamPolicy",
+    "storage.objects.create",
+    "storage.objects.delete",
+    "storage.objects.get",
+    "storage.objects.list"
   ],
   "stage": "GA"
 }
