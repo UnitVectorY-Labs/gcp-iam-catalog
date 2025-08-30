@@ -5,8 +5,6 @@
   "included_permissions": [
     "networkconnectivity.multicloudDataTransferDestinations.get",
     "networkconnectivity.multicloudDataTransferDestinations.list",
-    "networkconnectivity.multicloudDataTransferSupportedServices.get",
-    "networkconnectivity.multicloudDataTransferSupportedServices.list",
     "resourcemanager.projects.get",
     "resourcemanager.projects.list"
   ],
