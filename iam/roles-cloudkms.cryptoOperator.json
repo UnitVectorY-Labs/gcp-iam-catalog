@@ -3,6 +3,7 @@
   "title": "Cloud KMS Crypto Operator",
   "description": "Enables all Crypto Operations.",
   "included_permissions": [
+    "cloudkms.cryptoKeyVersions.useToDecapsulate",
     "cloudkms.cryptoKeyVersions.useToDecrypt",
     "cloudkms.cryptoKeyVersions.useToEncrypt",
     "cloudkms.cryptoKeyVersions.useToSign",

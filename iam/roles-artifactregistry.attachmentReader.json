@@ -1,0 +1,11 @@
+{
+  "name": "roles/artifactregistry.attachmentReader",
+  "title": "Artifact Registry Attachment Reader",
+  "description": "Access to read attachments from a repository",
+  "included_permissions": [
+    "artifactregistry.attachments.get",
+    "artifactregistry.attachments.list",
+    "artifactregistry.files.download"
+  ],
+  "stage": "GA"
+}
