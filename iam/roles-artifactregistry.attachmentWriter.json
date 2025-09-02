@@ -10,5 +10,5 @@
     "artifactregistry.files.download",
     "artifactregistry.files.upload"
   ],
-  "stage": ""
+  "stage": "GA"
 }
