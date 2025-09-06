@@ -1,0 +1,10 @@
+{
+  "name": "roles/firebaseapphosting.admin",
+  "title": "Firebase App Hosting Admin",
+  "description": "Full access to Firebase App Hosting API resources.",
+  "included_permissions": [
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": ""
+}

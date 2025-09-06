@@ -4,6 +4,7 @@
   "description": "Grants read access to all resources in Data Lineage API",
   "included_permissions": [
     "datalineage.events.get",
+    "datalineage.events.getFields",
     "datalineage.events.list",
     "datalineage.locations.searchLinks",
     "datalineage.processes.get",

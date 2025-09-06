@@ -1,6 +1,6 @@
 {
   "name": "roles/networkconnectivity.multicloudDataTransferDestinationAdmin",
-  "title": "Destination User",
+  "title": "Destination Admin",
   "description": "Access to all Destination resources.",
   "included_permissions": [
     "networkconnectivity.multicloudDataTransferDestinations.create",

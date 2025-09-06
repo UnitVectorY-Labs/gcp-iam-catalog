@@ -1,0 +1,24 @@
+{
+  "name": "roles/apihub.apiInsightsViewer",
+  "title": "Cloud API hub Insights Viewer",
+  "description": "View API hub insights dashboards.",
+  "included_permissions": [
+    "apigee.projectorganizations.get",
+    "apihub.apiHubInstances.get",
+    "apihub.apiHubInstances.list",
+    "apihub.apis.get",
+    "apihub.apis.list",
+    "apihub.deployments.get",
+    "apihub.deployments.list",
+    "apihub.locations.getApiInsights",
+    "apihub.plugininstances.get",
+    "apihub.plugininstances.list",
+    "monitoring.dashboards.get",
+    "monitoring.dashboards.list",
+    "monitoring.metricDescriptors.get",
+    "monitoring.metricDescriptors.list",
+    "monitoring.monitoredResourceDescriptors.get",
+    "monitoring.monitoredResourceDescriptors.list"
+  ],
+  "stage": "BETA"
+}

@@ -1,0 +1,10 @@
+{
+  "name": "roles/geminicodeassistmanagement.serviceAgent",
+  "title": "Gemini Code Assist Management Service Agent",
+  "description": "Gives Gemini Code Assist Management Service Agent access to Cloud Platform resources.",
+  "included_permissions": [
+    "developerconnect.connections.get",
+    "developerconnect.gitRepositoryLinks.get"
+  ],
+  "stage": ""
+}
