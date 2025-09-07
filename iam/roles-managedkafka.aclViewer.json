@@ -1,0 +1,10 @@
+{
+  "name": "roles/managedkafka.aclViewer",
+  "title": "Managed Kafka ACL Viewer",
+  "description": "Readonly access to Managed Kafka ACL resources.",
+  "included_permissions": [
+    "managedkafka.acls.get",
+    "managedkafka.acls.list"
+  ],
+  "stage": "GA"
+}

@@ -48,6 +48,20 @@
     "developerconnect.connections.get",
     "developerconnect.gitRepositoryLinks.fetchReadToken",
     "developerconnect.gitRepositoryLinks.get",
+    "firebaseapphosting.backends.get",
+    "firebaseapphosting.backends.list",
+    "firebaseapphosting.builds.get",
+    "firebaseapphosting.builds.list",
+    "firebaseapphosting.builds.update",
+    "firebaseapphosting.domains.get",
+    "firebaseapphosting.domains.list",
+    "firebaseapphosting.locations.get",
+    "firebaseapphosting.locations.list",
+    "firebaseapphosting.operations.get",
+    "firebaseapphosting.operations.list",
+    "firebaseapphosting.rollouts.get",
+    "firebaseapphosting.rollouts.list",
+    "firebaseapphosting.traffic.get",
     "logging.logEntries.create",
     "logging.logEntries.route",
     "monitoring.metricDescriptors.create",
@@ -82,5 +96,5 @@
     "storage.objects.update",
     "telemetry.traces.write"
   ],
-  "stage": ""
+  "stage": "BETA"
 }

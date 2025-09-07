@@ -6,5 +6,5 @@
     "developerconnect.connections.get",
     "developerconnect.gitRepositoryLinks.get"
   ],
-  "stage": ""
+  "stage": "GA"
 }

@@ -1051,6 +1051,8 @@
     "monitoring.alertPolicies.list",
     "monitoring.alertPolicies.listEffectiveTags",
     "monitoring.alertPolicies.listTagBindings",
+    "monitoring.alerts.get",
+    "monitoring.alerts.list",
     "monitoring.dashboards.get",
     "monitoring.dashboards.list",
     "monitoring.dashboards.listEffectiveTags",
@@ -1187,5 +1189,5 @@
     "storage.objects.setRetention",
     "storage.objects.update"
   ],
-  "stage": "BETA"
+  "stage": "GA"
 }

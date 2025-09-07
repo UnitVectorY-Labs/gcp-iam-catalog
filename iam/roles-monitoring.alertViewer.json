@@ -1,0 +1,10 @@
+{
+  "name": "roles/monitoring.alertViewer",
+  "title": "Monitoring Alert Viewer",
+  "description": "Read access to alerts.",
+  "included_permissions": [
+    "monitoring.alerts.get",
+    "monitoring.alerts.list"
+  ],
+  "stage": "BETA"
+}

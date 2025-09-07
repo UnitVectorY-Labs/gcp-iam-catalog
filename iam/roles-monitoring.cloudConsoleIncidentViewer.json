@@ -2,6 +2,9 @@
   "name": "roles/monitoring.cloudConsoleIncidentViewer",
   "title": "Monitoring Cloud Console Incident Viewer",
   "description": "Read access to incidents from Cloud Console.",
-  "included_permissions": null,
+  "included_permissions": [
+    "monitoring.alerts.get",
+    "monitoring.alerts.list"
+  ],
   "stage": "BETA"
 }

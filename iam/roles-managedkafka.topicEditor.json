@@ -4,6 +4,8 @@
   "description": "Provides read and write access to topic metadata. Intended for, e.g., developers who configure topics.",
   "included_permissions": [
     "cloudasset.assets.searchAllResources",
+    "managedkafka.acls.get",
+    "managedkafka.acls.list",
     "managedkafka.clusters.get",
     "managedkafka.clusters.list",
     "managedkafka.config.get",
