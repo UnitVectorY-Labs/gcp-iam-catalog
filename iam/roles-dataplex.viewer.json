@@ -1,7 +1,7 @@
 {
   "name": "roles/dataplex.viewer",
   "title": "Dataplex Viewer",
-  "description": "Read access to Dataplex resources.",
+  "description": "Read access to Dataplex Universal Catalog resources, except for catalog resources like entries, entry groups, and glossaries.",
   "included_permissions": [
     "cloudasset.assets.analyzeIamPolicy",
     "dataplex.assetActions.list",

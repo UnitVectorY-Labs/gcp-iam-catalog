@@ -1,7 +1,7 @@
 {
   "name": "roles/dataplex.bindingAdmin",
   "title": "Dataplex Binding Administrator",
-  "description": "Full access on DataAttribute Bindig resources.",
+  "description": "Full access on DataAttribute Binding resources.",
   "included_permissions": [
     "dataplex.dataAttributeBindings.create",
     "dataplex.dataAttributeBindings.delete",

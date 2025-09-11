@@ -1,7 +1,7 @@
 {
   "name": "roles/dataplex.catalogViewer",
   "title": "Dataplex Catalog Viewer",
-  "description": "Has read access to Catalog resources: Entry Groups, Entry Types, Aspect Types, Entry Link Types, Entries and Entry Links. Can view IAM policies on Catalog resources.",
+  "description": "Read access to catalog resources, including entries, entry groups, and glossaries. Can view IAM policies on catalog resources.",
   "included_permissions": [
     "datacatalog.migrationConfig.get",
     "dataplex.aspectTypes.get",

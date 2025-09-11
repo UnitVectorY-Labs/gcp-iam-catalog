@@ -1,7 +1,7 @@
 {
   "name": "roles/dataplex.metadataReader",
   "title": "Dataplex Metadata Reader",
-  "description": "Read only access to metadata.",
+  "description": "Read only access to metadata within table and fileset entities and partitions.",
   "included_permissions": [
     "dataplex.assets.get",
     "dataplex.assets.list",

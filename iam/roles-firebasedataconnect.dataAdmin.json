@@ -3,8 +3,11 @@
   "title": "Firebase Data Connect API Data Admin",
   "description": "Full access to data sources.",
   "included_permissions": [
+    "firebasedataconnect.connectors.impersonateMutation",
+    "firebasedataconnect.connectors.impersonateQuery",
     "firebasedataconnect.services.executeGraphql",
-    "firebasedataconnect.services.executeGraphqlRead"
+    "firebasedataconnect.services.executeGraphqlRead",
+    "firebasedataconnect.services.introspectGraphql"
   ],
   "stage": "BETA"
 }
