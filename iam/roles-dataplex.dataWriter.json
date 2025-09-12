@@ -1,7 +1,7 @@
 {
   "name": "roles/dataplex.dataWriter",
   "title": "Dataplex Data Writer",
-  "description": "Write access to data. To be granted to Dataplex resources Lake, Zone or Asset only.",
+  "description": "Write access to data. To be granted to Dataplex Universal Catalog resources Lake, Zone or Asset only.",
   "included_permissions": [
     "dataplex.assets.writeData"
   ],

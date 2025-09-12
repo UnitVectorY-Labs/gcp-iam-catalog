@@ -1,7 +1,7 @@
 {
   "name": "roles/dataplex.catalogAdmin",
   "title": "Dataplex Catalog Admin",
-  "description": "Has full access to Catalog resources.",
+  "description": "Full access to catalog resources, including entries, entry groups, and glossaries.",
   "included_permissions": [
     "datacatalog.migrationConfig.get",
     "dataplex.aspectTypes.create",

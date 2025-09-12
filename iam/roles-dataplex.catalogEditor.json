@@ -1,7 +1,7 @@
 {
   "name": "roles/dataplex.catalogEditor",
   "title": "Dataplex Catalog Editor",
-  "description": "Has write access to Catalog resources. Cannot set IAM policies on resources",
+  "description": "Write access to catalog resources, including entries, entry groups, and glossaries. Cannot set IAM policies on resources.",
   "included_permissions": [
     "datacatalog.migrationConfig.get",
     "dataplex.aspectTypes.create",

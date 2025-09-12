@@ -1,7 +1,7 @@
 {
   "name": "roles/dataplex.editor",
   "title": "Dataplex Editor",
-  "description": "Write access to Dataplex resources.",
+  "description": "Write access to Dataplex Universal Catalog resources, except for catalog resources like entries, entry groups, and glossaries.",
   "included_permissions": [
     "cloudasset.assets.analyzeIamPolicy",
     "dataplex.assetActions.list",

@@ -1,7 +1,7 @@
 {
   "name": "roles/dataplex.dataScanDataViewer",
   "title": "Dataplex DataScan DataViewer",
-  "description": "Read access to DataScan resources and additional contents.",
+  "description": "Read access to DataScan resources, including the results.",
   "included_permissions": [
     "dataplex.datascans.get",
     "dataplex.datascans.getData",

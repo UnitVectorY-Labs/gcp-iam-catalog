@@ -1,7 +1,7 @@
 {
   "name": "roles/dataplex.encryptionAdmin",
   "title": "Dataplex Encryption Admin",
-  "description": "Gives user permissions to manage encryption config.",
+  "description": "Gives user permissions to manage encryption configurations.",
   "included_permissions": [
     "dataplex.encryptionConfig.create",
     "dataplex.encryptionConfig.delete",
