@@ -1,7 +1,7 @@
 {
   "name": "roles/dataplex.storageDataWriter",
   "title": "Dataplex Storage Data Writer",
-  "description": "Write access to data. Should not be used directly. This role is granted by Dataplex to managed resources like GCS buckets, BigQuery datasets etc.",
+  "description": "Write access to data. Should not be used directly. This role is granted by Dataplex Universal Catalog to managed resources like Cloud Storage buckets, BigQuery datasets etc.",
   "included_permissions": [
     "bigquery.tables.updateData",
     "storage.objects.create",

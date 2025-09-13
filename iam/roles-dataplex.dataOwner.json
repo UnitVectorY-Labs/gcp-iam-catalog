@@ -1,7 +1,7 @@
 {
   "name": "roles/dataplex.dataOwner",
   "title": "Dataplex Data Owner",
-  "description": "Owner access to data. To be granted to Dataplex resources Lake, Zone or Asset only.",
+  "description": "Owner access to data. To be granted to Dataplex Universal Catalog resources Lake, Zone or Asset only.",
   "included_permissions": [
     "dataplex.assets.ownData",
     "dataplex.assets.readData",
