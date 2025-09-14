@@ -66,7 +66,7 @@
                 const link = row.querySelector('a');
                 const name = (link ? (link.textContent || link.innerText) : '').toLowerCase();
                 if (name.includes(filter) || title.includes(filter)) {
-                    row.style.display = '';
+                    row.style.display = "";
                 } else {
                     row.style.display = 'none';
                 }
