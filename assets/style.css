@@ -149,6 +149,71 @@ ul.item-list li a:hover {
     overflow-wrap: break-word;
 }
 
+.role-table {
+    margin-top: 15px;
+}
+
+.role-table-header {
+    display: flex;
+    background-color: #f8f9fa;
+    padding: 12px 0;
+    border-bottom: 2px solid #ddd;
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+.role-name-header {
+    flex: 1;
+    padding-left: 10px;
+}
+
+.role-type-header {
+    width: 150px;
+    text-align: right;
+    padding-right: 10px;
+}
+
+.role-row {
+    display: flex;
+    align-items: center;
+    padding: 8px 0;
+    border-bottom: 1px solid #ddd;
+    transition: background-color 0.2s ease;
+}
+
+.role-row:hover {
+    background-color: #f8f9fa !important;
+}
+
+.role-row:last-child {
+    border-bottom: none;
+}
+
+.role-name-cell {
+    flex: 1;
+    padding-left: 10px;
+}
+
+.role-name-cell a {
+    font-weight: 500;
+    color: #3b82f6;
+    text-decoration: none;
+}
+
+.role-name-cell a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+.role-type-cell {
+    width: 150px;
+    text-align: right;
+    padding-right: 10px;
+    color: #6c757d;
+    font-size: 0.9em;
+    font-weight: 500;
+}
+
 .copy-button {
     background-color: #f4f4f4;
     color: #aaa;

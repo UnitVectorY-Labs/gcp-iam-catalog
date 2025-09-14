@@ -26,20 +26,22 @@
             <p><strong>Title:</strong> {{.Title}}</p>
             <p><strong>Description:</strong> {{.Description}}</p>
             <p><strong>Stage:</strong> {{.Stage}}</p>
-            {{if contains .Name "ServiceAgent" "serviceagent"}}
-            <p><strong>Role Type:</strong> <a href="https://cloud.google.com/iam/docs/service-agents" target="_blank">Service Agent</a></p>
-            {{end}}
+            <p><strong>Role Type:</strong> {{classifyRole .Name}}</p>
             
             <h2>{{.PermissionCount | formatNumber}} Assigned Permissions:</h2>
             <div class="search-container">
                 <input type="text" id="searchInput" onkeyup="filterList()" placeholder="Search permissions...">
                 <span class="search-icon">&#128269;</span>
             </div>
-            <ul id="permissionsList" class="item-list">
+            <div class="role-table">
                 {{range .IncludedPermissions}}
-                    <li><a href="../permissions/{{.}}.html" class="permission-name">{{.}}</a></li>
+                    <div class="role-row" data-title="{{.}}">
+                        <div class="role-name-cell">
+                            <a href="../permissions/{{.}}.html" class="permission-name">{{.}}</a>
+                        </div>
+                    </div>
                 {{end}}
-            </ul>
+            </div>
         </section>
     </main>
 
@@ -57,18 +59,18 @@
         function filterList() {
             const input = document.getElementById('searchInput');
             const filter = input.value.toLowerCase();
-            const list = document.getElementById('permissionsList');
-            const items = list.getElementsByTagName('li');
+            const rows = document.querySelectorAll('.role-table .role-row');
 
-            for (let i = 0; i < items.length; i++) {
-                const a = items[i].getElementsByTagName('a')[0];
-                const txtValue = a.textContent || a.innerText;
-                if (txtValue.toLowerCase().indexOf(filter) > -1) {
-                    items[i].style.display = "";
+            rows.forEach(row => {
+                const title = (row.getAttribute('data-title') || '').toLowerCase();
+                const link = row.querySelector('a');
+                const name = (link ? (link.textContent || link.innerText) : '').toLowerCase();
+                if (name.includes(filter) || title.includes(filter)) {
+                    row.style.display = "";
                 } else {
-                    items[i].style.display = "none";
+                    row.style.display = 'none';
                 }
-            }
+            });
         }
     </script>
 </body>

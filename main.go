@@ -55,6 +55,31 @@ type RobotsTxt struct {
 	Disallow   []string
 }
 
+// classifyRoleType classifies a role into Basic, Service Agent, or Predefined categories
+func classifyRoleType(roleName string) string {
+	// Basic roles
+	basicRoles := []string{
+		"roles/owner",
+		"roles/editor",
+		"roles/viewer",
+		"roles/browser",
+	}
+
+	for _, basicRole := range basicRoles {
+		if roleName == basicRole {
+			return "Basic"
+		}
+	}
+
+	// Service Agent roles - check if name ends with "serviceAgent" (case insensitive)
+	if strings.HasSuffix(strings.ToLower(roleName), "serviceagent") {
+		return "Service Agent"
+	}
+
+	// All others are predefined roles
+	return "Predefined"
+}
+
 func main() {
 	// Define command-line flags
 	crawlFlag := flag.Bool("crawl", false, "Crawl GCP IAM API and save role details to JSON files")
@@ -234,6 +259,9 @@ func generateHTML() error {
 		},
 		"formatNumber": func(n int) string {
 			return humanize.Comma(int64(n))
+		},
+		"classifyRole": func(roleName string) string {
+			return classifyRoleType(roleName)
 		},
 	})
 

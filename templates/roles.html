@@ -10,19 +10,19 @@
         function filterList() {
             const input = document.getElementById('searchInput');
             const filter = input.value.toLowerCase();
-            const list = document.getElementById('rolesList');
-            const items = list.getElementsByTagName('li');
+            const roleTable = document.querySelector('.role-table');
+            const rows = roleTable.querySelectorAll('.role-row');
 
-            for (let i = 0; i < items.length; i++) {
-                const a = items[i].getElementsByTagName('a')[0];
-                const name = (a.textContent || a.innerText).toLowerCase();
-                const title = (a.getAttribute('data-title') || '').toLowerCase();
+            rows.forEach(row => {
+                const roleName = row.querySelector('.role-name');
+                const name = (roleName.textContent || roleName.innerText).toLowerCase();
+                const title = (row.getAttribute('data-title') || '').toLowerCase();
                 if (name.includes(filter) || title.includes(filter)) {
-                    items[i].style.display = "";
+                    row.style.display = "";
                 } else {
-                    items[i].style.display = "none";
+                    row.style.display = "none";
                 }
-            }
+            });
         }
     </script>
 </head>
@@ -43,15 +43,24 @@
                 <input type="text" id="searchInput" onkeyup="filterList()" placeholder="Search for roles or titles...">
                 <span class="search-icon">&#128269;</span>
             </div>
-            <ul id="rolesList" class="item-list">
+            <div class="role-table">
+                <div class="role-table-header">
+                    <div class="role-name-header">Role Name</div>
+                    <div class="role-type-header">Role Type</div>
+                </div>
                 {{range .Items}}
-                    <li>
-                        <a href="{{.Name}}.html" class="role-name" data-title="{{.Title}}">
-                            {{.Name}}
-                        </a>
-                    </li>
+                    <div class="role-row" data-title="{{.Title}}">
+                        <div class="role-name-cell">
+                            <a href="{{.Name}}.html" class="role-name">
+                                {{.Name}}
+                            </a>
+                        </div>
+                        <div class="role-type-cell">
+                            {{classifyRole .Name}}
+                        </div>
+                    </div>
                 {{end}}
-            </ul>
+            </div>
         </section>
     </main>
 
