@@ -18,7 +18,7 @@
                 const name = (roleName.textContent || roleName.innerText).toLowerCase();
                 const title = (row.getAttribute('data-title') || '').toLowerCase();
                 if (name.includes(filter) || title.includes(filter)) {
-                    row.style.display = "flex";
+                    row.style.display = "";
                 } else {
                     row.style.display = "none";
                 }
