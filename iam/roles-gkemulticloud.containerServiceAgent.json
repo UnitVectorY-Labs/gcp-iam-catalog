@@ -51,7 +51,8 @@
     "resourcemanager.projects.list",
     "serviceusage.services.use",
     "stackdriver.projects.get",
-    "stackdriver.resourceMetadata.list"
+    "stackdriver.resourceMetadata.list",
+    "telemetry.metrics.write"
   ],
   "stage": "GA"
 }
