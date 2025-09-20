@@ -957,7 +957,8 @@
     "storage.objects.restore",
     "storage.objects.setIamPolicy",
     "storage.objects.setRetention",
-    "storage.objects.update"
+    "storage.objects.update",
+    "telemetry.metrics.write"
   ],
   "stage": "GA"
 }

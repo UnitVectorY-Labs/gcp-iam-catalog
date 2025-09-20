@@ -1,7 +1,7 @@
 {
-  "name": "roles/discoveryengine.admin",
-  "title": "Discovery Engine Admin",
-  "description": "Grants full access to all discoveryengine resources.",
+  "name": "roles/discoveryengine.agentspaceAdmin",
+  "title": "Agentspace Admin",
+  "description": "Grants admin-level access to Agentspace resources.",
   "included_permissions": [
     "discoveryengine.aclConfigs.get",
     "discoveryengine.aclConfigs.update",
@@ -189,5 +189,5 @@
     "resourcemanager.projects.get",
     "resourcemanager.projects.list"
   ],
-  "stage": "GA"
+  "stage": "BETA"
 }

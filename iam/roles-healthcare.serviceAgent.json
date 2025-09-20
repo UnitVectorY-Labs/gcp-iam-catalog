@@ -43,7 +43,8 @@
     "resourcemanager.projects.get",
     "resourcemanager.projects.list",
     "stackdriver.projects.get",
-    "stackdriver.resourceMetadata.list"
+    "stackdriver.resourceMetadata.list",
+    "telemetry.metrics.write"
   ],
   "stage": "GA"
 }

@@ -1,7 +1,7 @@
 {
-  "name": "roles/discoveryengine.viewer",
-  "title": "Discovery Engine Viewer",
-  "description": "Grants read access to all discovery engine resources.",
+  "name": "roles/discoveryengine.agentspaceViewer",
+  "title": "Agentspace Viewer",
+  "description": "Grants access to view the details of Agentspace resources.",
   "included_permissions": [
     "discoveryengine.aclConfigs.get",
     "discoveryengine.agents.get",
@@ -80,5 +80,5 @@
     "resourcemanager.projects.get",
     "resourcemanager.projects.list"
   ],
-  "stage": "GA"
+  "stage": "BETA"
 }

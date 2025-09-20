@@ -451,6 +451,7 @@
     "resourcemanager.projects.list",
     "serviceusage.services.get",
     "serviceusage.services.use",
+    "telemetry.metrics.write",
     "trafficdirector.networks.getConfigs",
     "trafficdirector.networks.reportMetrics"
   ],

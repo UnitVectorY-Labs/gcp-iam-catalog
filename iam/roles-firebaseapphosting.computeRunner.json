@@ -95,6 +95,7 @@
     "storage.objects.restore",
     "storage.objects.setRetention",
     "storage.objects.update",
+    "telemetry.metrics.write",
     "telemetry.traces.write"
   ],
   "stage": "BETA"

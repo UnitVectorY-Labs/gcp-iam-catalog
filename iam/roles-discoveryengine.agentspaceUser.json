@@ -1,7 +1,7 @@
 {
-  "name": "roles/discoveryengine.podcastApiUser",
-  "title": "Podcast API User",
-  "description": "Grants user-level access to the Podcast resources.",
+  "name": "roles/discoveryengine.agentspaceUser",
+  "title": "Agentspace User",
+  "description": "Grants user-level access to Agentspace resources.",
   "included_permissions": [
     "discoveryengine.accounts.create",
     "discoveryengine.agents.create",
@@ -23,8 +23,6 @@
     "discoveryengine.engines.get",
     "discoveryengine.notebooks.create",
     "discoveryengine.notebooks.list",
-    "discoveryengine.operations.get",
-    "discoveryengine.podcasts.create",
     "discoveryengine.servingConfigs.answer",
     "discoveryengine.servingConfigs.recommend",
     "discoveryengine.servingConfigs.search",

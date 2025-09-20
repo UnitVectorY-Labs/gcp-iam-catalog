@@ -78,6 +78,7 @@
     "monitoring.monitoredResourceDescriptors.get",
     "monitoring.monitoredResourceDescriptors.list",
     "monitoring.timeSeries.create",
+    "telemetry.metrics.write",
     "telemetry.traces.write"
   ],
   "stage": "GA"

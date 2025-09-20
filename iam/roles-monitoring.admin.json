@@ -76,7 +76,8 @@
     "stackdriver.projects.edit",
     "stackdriver.projects.get",
     "stackdriver.resourceMetadata.list",
-    "stackdriver.resourceMetadata.write"
+    "stackdriver.resourceMetadata.write",
+    "telemetry.metrics.write"
   ],
   "stage": "GA"
 }

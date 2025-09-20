@@ -1,0 +1,21 @@
+{
+  "name": "roles/vectorsearch.viewer",
+  "title": "Vector Search Viewer",
+  "description": "Grants read access to all vectorsearch resources.",
+  "included_permissions": [
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list",
+    "vectorsearch.collections.get",
+    "vectorsearch.collections.list",
+    "vectorsearch.dataObjects.get",
+    "vectorsearch.dataObjects.query",
+    "vectorsearch.dataObjects.search",
+    "vectorsearch.indexes.get",
+    "vectorsearch.indexes.list",
+    "vectorsearch.locations.get",
+    "vectorsearch.locations.list",
+    "vectorsearch.operations.get",
+    "vectorsearch.operations.list"
+  ],
+  "stage": "GA"
+}
