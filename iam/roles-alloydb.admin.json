@@ -1,7 +1,7 @@
 {
   "name": "roles/alloydb.admin",
-  "title": "Cloud AlloyDB Admin",
-  "description": "Full access to Cloud AlloyDB all resources.",
+  "title": "AlloyDB Admin",
+  "description": "Full access to AlloyDB all resources.",
   "included_permissions": [
     "alloydb.backups.create",
     "alloydb.backups.createTagBinding",

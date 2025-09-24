@@ -1,7 +1,7 @@
 {
   "name": "roles/alloydb.client",
-  "title": "Cloud AlloyDB Client",
-  "description": "Connectivity access to Cloud AlloyDB instances.",
+  "title": "AlloyDB Client",
+  "description": "Connectivity access to AlloyDB instances.",
   "included_permissions": [
     "alloydb.clusters.generateClientCertificate",
     "alloydb.clusters.get",

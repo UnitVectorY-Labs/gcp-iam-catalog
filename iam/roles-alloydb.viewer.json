@@ -1,7 +1,7 @@
 {
   "name": "roles/alloydb.viewer",
-  "title": "Cloud AlloyDB Viewer",
-  "description": "Read-only access to Cloud AlloyDB all resources.",
+  "title": "AlloyDB Viewer",
+  "description": "Read-only access to AlloyDB all resources.",
   "included_permissions": [
     "alloydb.backups.get",
     "alloydb.backups.list",

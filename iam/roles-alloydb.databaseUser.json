@@ -1,6 +1,6 @@
 {
   "name": "roles/alloydb.databaseUser",
-  "title": "Cloud AlloyDB Database User",
+  "title": "AlloyDB Database User",
   "description": "Role allowing access to login as a database user.",
   "included_permissions": [
     "alloydb.clusters.get",
