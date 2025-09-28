@@ -2,6 +2,12 @@
   "name": "roles/discoveryengine.agentAdmin",
   "title": "Agent Admin",
   "description": "Grants admin-level access to Agent resources.",
-  "included_permissions": null,
+  "included_permissions": [
+    "discoveryengine.agents.create",
+    "discoveryengine.agents.delete",
+    "discoveryengine.agents.get",
+    "discoveryengine.agents.list",
+    "discoveryengine.agents.update"
+  ],
   "stage": "BETA"
 }
