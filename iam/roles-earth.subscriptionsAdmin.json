@@ -1,0 +1,12 @@
+{
+  "name": "roles/earth.subscriptionsAdmin",
+  "title": "Earth Subscriptions Administrator",
+  "description": "Provides access to see and configure Earth subscriptions.",
+  "included_permissions": [
+    "earth.subscriptions.get",
+    "earth.subscriptions.update",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "BETA"
+}

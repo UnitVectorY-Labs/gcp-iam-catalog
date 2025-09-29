@@ -1,7 +1,7 @@
 {
   "name": "roles/accessapproval.configEditor",
   "title": "Access Approval Config Editor",
-  "description": "Ability to update the Access Approval configuration",
+  "description": "Ability to update the Access Approval configuration.",
   "included_permissions": [
     "accessapproval.serviceAccounts.get",
     "accessapproval.settings.delete",
