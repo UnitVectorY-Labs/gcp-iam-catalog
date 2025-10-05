@@ -15,5 +15,5 @@
     "dspm.operations.list",
     "resourcemanager.organizations.get"
   ],
-  "stage": "BETA"
+  "stage": "GA"
 }

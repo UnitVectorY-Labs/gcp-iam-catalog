@@ -4,6 +4,12 @@
   "description": "Provides read/write access to data in a Cloud Datastore database. Intended for application developers and service accounts.",
   "included_permissions": [
     "appengine.applications.get",
+    "databasesconsole.locations.get",
+    "databasesconsole.locations.list",
+    "databasesconsole.studioQueries.create",
+    "databasesconsole.studioQueries.delete",
+    "databasesconsole.studioQueries.search",
+    "databasesconsole.studioQueries.update",
     "datastore.databases.get",
     "datastore.databases.getMetadata",
     "datastore.databases.list",
