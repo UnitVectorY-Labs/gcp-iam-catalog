@@ -1,0 +1,9 @@
+{
+  "name": "roles/securitycenter.riskReportsViewer",
+  "title": "Security Center Risk Reports Viewer",
+  "description": "Read access to security center risk reports",
+  "included_permissions": [
+    "securitycenter.userinterfacemetadata.get"
+  ],
+  "stage": ""
+}

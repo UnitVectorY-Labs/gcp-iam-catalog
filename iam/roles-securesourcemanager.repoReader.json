@@ -24,5 +24,5 @@
     "securesourcemanager.repositories.readIssues",
     "securesourcemanager.repositories.readPullRequests"
   ],
-  "stage": "GA"
+  "stage": "BETA"
 }

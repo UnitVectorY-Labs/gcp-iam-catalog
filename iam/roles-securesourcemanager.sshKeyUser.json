@@ -10,5 +10,5 @@
     "securesourcemanager.sshkeys.get",
     "securesourcemanager.sshkeys.list"
   ],
-  "stage": "BETA"
+  "stage": "GA"
 }

@@ -45,5 +45,5 @@
     "securesourcemanager.repositories.writeIssues",
     "securesourcemanager.repositories.writePullRequests"
   ],
-  "stage": "BETA"
+  "stage": "GA"
 }

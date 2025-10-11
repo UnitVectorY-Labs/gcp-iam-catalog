@@ -4,6 +4,8 @@
   "description": "Gives the Developer Connect API Service Account access to necessary GCP resources.",
   "included_permissions": [
     "apphub.applications.get",
+    "apphub.services.get",
+    "apphub.services.list",
     "apphub.workloads.get",
     "apphub.workloads.list"
   ],

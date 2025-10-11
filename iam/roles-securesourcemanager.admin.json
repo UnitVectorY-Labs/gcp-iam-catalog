@@ -78,5 +78,5 @@
     "securesourcemanager.sshkeys.list",
     "securesourcemanager.sshkeys.listAny"
   ],
-  "stage": "BETA"
+  "stage": "GA"
 }

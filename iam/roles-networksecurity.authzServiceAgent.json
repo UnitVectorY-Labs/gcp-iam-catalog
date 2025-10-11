@@ -1,0 +1,14 @@
+{
+  "name": "roles/networksecurity.authzServiceAgent",
+  "title": "Network Security Authz Service Agent",
+  "description": "Allows the Network Security service to access dependent resources",
+  "included_permissions": [
+    "compute.forwardingRules.list",
+    "compute.forwardingRules.update",
+    "compute.globalForwardingRules.list",
+    "compute.globalForwardingRules.update",
+    "networkservices.authzExtensions.list",
+    "networkservices.authzExtensions.use"
+  ],
+  "stage": ""
+}
