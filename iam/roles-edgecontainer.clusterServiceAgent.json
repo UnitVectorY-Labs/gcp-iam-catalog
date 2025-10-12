@@ -66,6 +66,7 @@
     "opsconfigmonitoring.resourceMetadata.write",
     "resourcemanager.projects.get",
     "resourcemanager.projects.list",
+    "serviceusage.operations.get",
     "serviceusage.quotas.get",
     "serviceusage.services.enable",
     "serviceusage.services.get",

@@ -3,7 +3,9 @@
   "title": "Security Center Risk Reports Viewer",
   "description": "Read access to security center risk reports",
   "included_permissions": [
+    "securitycenter.riskreports.get",
+    "securitycenter.riskreports.list",
     "securitycenter.userinterfacemetadata.get"
   ],
-  "stage": ""
+  "stage": "GA"
 }
