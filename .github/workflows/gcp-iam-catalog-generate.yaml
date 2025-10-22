@@ -1,9 +1,10 @@
 name: Deploy Go Static Site Generator
 
 on:
-  # Additional trigger to ensure this is updated after crawl
-  schedule:
-    - cron: 30 11 * * *
+  # Trigger after the crawl completes
+  workflow_run:
+    workflows: [gcp-iam-catalog crawl]
+    types: [completed]
   # Runs on pushes to the default branch
   push:
     branches: ["main"]
