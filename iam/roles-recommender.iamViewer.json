@@ -15,7 +15,9 @@
     "recommender.locations.get",
     "recommender.locations.list",
     "resourcemanager.projects.get",
-    "resourcemanager.projects.list"
+    "resourcemanager.projects.list",
+    "securitycenter.findings.group",
+    "securitycenter.userinterfacemetadata.get"
   ],
   "stage": "GA"
 }

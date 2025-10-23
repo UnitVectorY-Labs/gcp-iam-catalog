@@ -1,0 +1,15 @@
+{
+  "name": "roles/apptopology.viewer",
+  "title": "App Topology Viewer",
+  "description": "Readonly access to App Topology resources.",
+  "included_permissions": [
+    "apptopology.applicationTopologies.generate",
+    "apptopology.locations.get",
+    "apptopology.locations.list",
+    "apptopology.operations.get",
+    "apptopology.operations.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "BETA"
+}

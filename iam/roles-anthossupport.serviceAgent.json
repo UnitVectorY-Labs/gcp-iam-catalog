@@ -31,7 +31,14 @@
     "gkehub.scopes.listBoundMemberships",
     "resourcemanager.projects.get",
     "resourcemanager.projects.list",
-    "serviceusage.services.get"
+    "serviceusage.consumerpolicy.analyze",
+    "serviceusage.consumerpolicy.get",
+    "serviceusage.effectivepolicy.get",
+    "serviceusage.groups.list",
+    "serviceusage.groups.listExpandedMembers",
+    "serviceusage.groups.listMembers",
+    "serviceusage.services.get",
+    "serviceusage.values.test"
   ],
   "stage": "GA"
 }
