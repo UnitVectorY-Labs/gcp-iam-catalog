@@ -8,5 +8,5 @@
     "storage.objects.get",
     "storage.objects.list"
   ],
-  "stage": ""
+  "stage": "GA"
 }

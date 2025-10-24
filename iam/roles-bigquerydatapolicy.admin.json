@@ -3,6 +3,7 @@
   "title": "BigQuery Data Policy Admin",
   "description": "Role for managing Data Policies in BigQuery",
   "included_permissions": [
+    "bigquery.dataPolicies.attach",
     "bigquery.dataPolicies.create",
     "bigquery.dataPolicies.delete",
     "bigquery.dataPolicies.get",

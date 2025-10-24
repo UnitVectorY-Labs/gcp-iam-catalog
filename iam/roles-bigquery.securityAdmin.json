@@ -3,6 +3,7 @@
   "title": "BigQuery Security Admin",
   "description": "Administer all BigQuery security controls",
   "included_permissions": [
+    "bigquery.dataPolicies.attach",
     "bigquery.dataPolicies.create",
     "bigquery.dataPolicies.delete",
     "bigquery.dataPolicies.get",

@@ -12,5 +12,5 @@
     "eventarc.messageBuses.update",
     "eventarc.messageBuses.use"
   ],
-  "stage": "BETA"
+  "stage": "GA"
 }
