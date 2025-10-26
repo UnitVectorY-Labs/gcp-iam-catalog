@@ -1,6 +1,6 @@
 {
   "name": "roles/capacityplanner.planner",
-  "title": "Capacity Planner",
+  "title": "Capacity Planner Usage Planner",
   "description": "Role that enables capacity planning",
   "included_permissions": [
     "capacityplanner.capacityPlans.get",

@@ -1,7 +1,7 @@
 {
   "name": "roles/discoveryengine.agentspaceViewer",
-  "title": "Agentspace Viewer",
-  "description": "Grants access to view the details of Agentspace resources.",
+  "title": "Gemini Enterprise Viewer",
+  "description": "Grants access to view the details of Gemini Enterprise resources.",
   "included_permissions": [
     "discoveryengine.aclConfigs.get",
     "discoveryengine.agents.get",

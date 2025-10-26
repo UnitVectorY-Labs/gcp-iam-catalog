@@ -1,7 +1,7 @@
 {
   "name": "roles/discoveryengine.agentspaceEditor",
-  "title": "Agentspace Editor",
-  "description": "Grants access to edit Agentspace resources.",
+  "title": "Gemini Enterprise Editor",
+  "description": "Grants access to edit Gemini Enterprise resources.",
   "included_permissions": [
     "discoveryengine.aclConfigs.get",
     "discoveryengine.agents.create",
