@@ -27,5 +27,5 @@
     "storage.objects.list",
     "storage.objects.update"
   ],
-  "stage": "BETA"
+  "stage": "GA"
 }
