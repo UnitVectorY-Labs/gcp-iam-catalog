@@ -1,0 +1,13 @@
+{
+  "name": "roles/apihub.addonsAdmin",
+  "title": "Cloud API hub Addons Admin",
+  "description": "Full access to all Cloud API hub addon's resources.",
+  "included_permissions": [
+    "apihub.addons.get",
+    "apihub.addons.list",
+    "apihub.addons.manage",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "BETA"
+}

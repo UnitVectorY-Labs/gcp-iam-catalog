@@ -1,7 +1,7 @@
 {
   "name": "roles/discoveryengine.agentspaceUser",
-  "title": "Agentspace User",
-  "description": "Grants user-level access to Agentspace resources.",
+  "title": "Gemini Enterprise User",
+  "description": "Grants user-level access to Gemini Enterprise resources.",
   "included_permissions": [
     "discoveryengine.accounts.create",
     "discoveryengine.agents.create",
@@ -40,6 +40,8 @@
     "discoveryengine.sessions.update",
     "discoveryengine.sessions.uploadFile",
     "discoveryengine.userEvents.create",
+    "discoveryengine.users.get",
+    "discoveryengine.users.update",
     "discoveryengine.widgetConfigs.get",
     "resourcemanager.projects.get",
     "resourcemanager.projects.list"

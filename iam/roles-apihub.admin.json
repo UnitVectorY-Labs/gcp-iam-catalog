@@ -4,6 +4,9 @@
   "description": "Full access to all API hub resources.",
   "included_permissions": [
     "apigee.projectorganizations.get",
+    "apihub.addons.get",
+    "apihub.addons.list",
+    "apihub.addons.manage",
     "apihub.apiHubInstances.create",
     "apihub.apiHubInstances.delete",
     "apihub.apiHubInstances.get",

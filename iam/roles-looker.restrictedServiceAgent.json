@@ -1,0 +1,13 @@
+{
+  "name": "roles/looker.restrictedServiceAgent",
+  "title": "Looker Service Agent",
+  "description": "Gives the Looker service account permission to manage customer resources. Does not include permissions to access BigQuery",
+  "included_permissions": [
+    "compute.globalAddresses.get",
+    "looker.backups.create",
+    "looker.instances.get",
+    "resourcemanager.projects.get",
+    "serviceusage.services.use"
+  ],
+  "stage": "GA"
+}

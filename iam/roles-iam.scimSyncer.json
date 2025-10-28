@@ -1,0 +1,7 @@
+{
+  "name": "roles/iam.scimSyncer",
+  "title": "SCIM Data Syncer",
+  "description": "Rights to sync users and groups from external identity providers.",
+  "included_permissions": null,
+  "stage": "GA"
+}

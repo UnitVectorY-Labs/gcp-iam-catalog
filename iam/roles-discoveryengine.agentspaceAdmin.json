@@ -1,7 +1,7 @@
 {
   "name": "roles/discoveryengine.agentspaceAdmin",
-  "title": "Agentspace Admin",
-  "description": "Grants admin-level access to Agentspace resources.",
+  "title": "Gemini Enterprise Admin",
+  "description": "Grants admin-level access to Gemini Enterprise resources.",
   "included_permissions": [
     "discoveryengine.aclConfigs.get",
     "discoveryengine.aclConfigs.update",

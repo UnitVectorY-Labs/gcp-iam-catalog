@@ -3,6 +3,7 @@
   "title": "Colab Enterprise User",
   "description": "User role of using colab enterprise.",
   "included_permissions": [
+    "aiplatform.locations.get",
     "aiplatform.notebookExecutionJobs.create",
     "aiplatform.notebookExecutionJobs.delete",
     "aiplatform.notebookExecutionJobs.get",
