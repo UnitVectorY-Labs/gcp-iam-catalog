@@ -1,7 +1,7 @@
 {
-  "name": "roles/dataform.codeEditor",
-  "title": "Code Editor",
-  "description": "Edit access code resources.",
+  "name": "roles/dataform.teamFolderContributor",
+  "title": "Team Folder Contributor",
+  "description": "Edit access to a team folder and its contents.",
   "included_permissions": [
     "dataform.commentThreads.create",
     "dataform.commentThreads.delete",
@@ -17,14 +17,8 @@
     "dataform.compilationResults.get",
     "dataform.compilationResults.list",
     "dataform.compilationResults.query",
-    "dataform.folders.addContents",
-    "dataform.folders.create",
-    "dataform.folders.get",
-    "dataform.folders.getIamPolicy",
-    "dataform.folders.queryContents",
     "dataform.locations.get",
     "dataform.locations.list",
-    "dataform.operations.get",
     "dataform.repositories.commit",
     "dataform.repositories.computeAccessTokenStatus",
     "dataform.repositories.create",
@@ -60,5 +54,5 @@
     "resourcemanager.projects.get",
     "resourcemanager.projects.list"
   ],
-  "stage": "GA"
+  "stage": ""
 }
