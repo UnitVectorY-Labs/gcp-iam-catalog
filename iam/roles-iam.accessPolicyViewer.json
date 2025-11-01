@@ -1,7 +1,0 @@
-{
-  "name": "roles/iam.accessPolicyViewer",
-  "title": "Access Policy Viewer",
-  "description": "Access Policy Viewer role, with permissions to read  access policies and view associated policy bindings",
-  "included_permissions": null,
-  "stage": ""
-}

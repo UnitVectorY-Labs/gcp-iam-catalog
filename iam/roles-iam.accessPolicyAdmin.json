@@ -1,7 +1,0 @@
-{
-  "name": "roles/iam.accessPolicyAdmin",
-  "title": "Access Policy Admin",
-  "description": "Access Policy admin role, with permissions to read and modify access policies, and to bind and unbind access policies to targets",
-  "included_permissions": null,
-  "stage": ""
-}

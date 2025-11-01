@@ -32,10 +32,6 @@
     "documentai.processors.list",
     "documentai.processors.processBatch",
     "documentai.processors.processOnline",
-    "documentai.rules.get",
-    "documentai.rules.list",
-    "documentai.validators.get",
-    "documentai.validators.list",
     "resourcemanager.projects.get",
     "resourcemanager.projects.list"
   ],
