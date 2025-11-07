@@ -11,7 +11,8 @@
     "storage.multipartUploads.abort",
     "storage.multipartUploads.create",
     "storage.multipartUploads.listParts",
-    "storage.objects.create"
+    "storage.objects.create",
+    "storage.objects.createContext"
   ],
   "stage": "GA"
 }
