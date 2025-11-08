@@ -1,0 +1,22 @@
+{
+  "name": "roles/dataplex.dataProductsEditor",
+  "title": "Dataplex Data Products Editor",
+  "description": "Write access to Data Products.",
+  "included_permissions": [
+    "dataplex.dataAssets.create",
+    "dataplex.dataAssets.delete",
+    "dataplex.dataAssets.get",
+    "dataplex.dataAssets.list",
+    "dataplex.dataAssets.update",
+    "dataplex.dataProducts.create",
+    "dataplex.dataProducts.delete",
+    "dataplex.dataProducts.get",
+    "dataplex.dataProducts.getIamPolicy",
+    "dataplex.dataProducts.list",
+    "dataplex.dataProducts.update",
+    "dataplex.operations.get",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "BETA"
+}

@@ -1,0 +1,13 @@
+{
+  "name": "roles/dataplex.dataProductsConsumer",
+  "title": "Dataplex Data Products Consumer",
+  "description": "Restricted read access, intended for consumers of Data Products.",
+  "included_permissions": [
+    "dataplex.dataAssets.get",
+    "dataplex.dataAssets.list",
+    "dataplex.dataProducts.get",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "BETA"
+}

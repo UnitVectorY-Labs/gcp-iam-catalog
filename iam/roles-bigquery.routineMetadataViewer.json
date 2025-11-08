@@ -1,0 +1,14 @@
+{
+  "name": "roles/bigquery.routineMetadataViewer",
+  "title": "BigQuery Authorized Routine Metadata Viewer",
+  "description": " Role for Authorized Routine to view metadata of supported resources",
+  "included_permissions": [
+    "bigquery.datasets.get",
+    "bigquery.models.getMetadata",
+    "bigquery.routines.get",
+    "bigquery.routines.list",
+    "bigquery.tables.get",
+    "bigquery.tables.list"
+  ],
+  "stage": "BETA"
+}

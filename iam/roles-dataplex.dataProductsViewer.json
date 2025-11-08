@@ -1,0 +1,15 @@
+{
+  "name": "roles/dataplex.dataProductsViewer",
+  "title": "Dataplex Data Products Viewer",
+  "description": "Read access to Data Products.",
+  "included_permissions": [
+    "dataplex.dataAssets.get",
+    "dataplex.dataAssets.list",
+    "dataplex.dataProducts.get",
+    "dataplex.dataProducts.getIamPolicy",
+    "dataplex.dataProducts.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "BETA"
+}

@@ -1,0 +1,21 @@
+{
+  "name": "roles/bigquery.routineAdmin",
+  "title": "BigQuery Authorized Routine Admin",
+  "description": " Role for Authorized Routine to administer supported resources",
+  "included_permissions": [
+    "bigquery.connections.use",
+    "bigquery.datasets.get",
+    "bigquery.models.getData",
+    "bigquery.models.getMetadata",
+    "bigquery.routines.get",
+    "bigquery.routines.list",
+    "bigquery.tables.create",
+    "bigquery.tables.delete",
+    "bigquery.tables.get",
+    "bigquery.tables.getData",
+    "bigquery.tables.list",
+    "bigquery.tables.update",
+    "bigquery.tables.updateData"
+  ],
+  "stage": "BETA"
+}

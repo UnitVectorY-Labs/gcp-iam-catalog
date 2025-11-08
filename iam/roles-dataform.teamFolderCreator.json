@@ -1,0 +1,9 @@
+{
+  "name": "roles/dataform.teamFolderCreator",
+  "title": "Team Folder Creator",
+  "description": "Access to create new team folders.",
+  "included_permissions": [
+    "dataform.teamFolders.create"
+  ],
+  "stage": "BETA"
+}

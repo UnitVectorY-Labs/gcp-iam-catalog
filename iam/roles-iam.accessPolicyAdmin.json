@@ -1,0 +1,16 @@
+{
+  "name": "roles/iam.accessPolicyAdmin",
+  "title": "Access Policy Admin",
+  "description": "Access Policy admin role, with permissions to read and modify access policies, and to bind and unbind access policies to targets",
+  "included_permissions": [
+    "iam.accesspolicies.bind",
+    "iam.accesspolicies.create",
+    "iam.accesspolicies.delete",
+    "iam.accesspolicies.get",
+    "iam.accesspolicies.list",
+    "iam.accesspolicies.searchPolicyBindings",
+    "iam.accesspolicies.unbind",
+    "iam.accesspolicies.update"
+  ],
+  "stage": "BETA"
+}

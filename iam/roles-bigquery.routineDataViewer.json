@@ -1,0 +1,16 @@
+{
+  "name": "roles/bigquery.routineDataViewer",
+  "title": "BigQuery Authorized Routine Data Viewer",
+  "description": " Role for Authorized Routine to view data and contents of supported resources",
+  "included_permissions": [
+    "bigquery.datasets.get",
+    "bigquery.models.getData",
+    "bigquery.models.getMetadata",
+    "bigquery.routines.get",
+    "bigquery.routines.list",
+    "bigquery.tables.get",
+    "bigquery.tables.getData",
+    "bigquery.tables.list"
+  ],
+  "stage": "BETA"
+}

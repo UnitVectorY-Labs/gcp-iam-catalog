@@ -3,6 +3,11 @@
   "title": "Secure Source Manager Instance Owner",
   "description": "Full control over Secure Source Manager instances, including listing, creating, and deleting them. Also enables instance user management.",
   "included_permissions": [
+    "cloudkms.keyHandles.create",
+    "cloudkms.keyHandles.get",
+    "cloudkms.keyHandles.list",
+    "cloudkms.operations.get",
+    "cloudkms.projects.showEffectiveAutokeyConfig",
     "resourcemanager.projects.get",
     "resourcemanager.projects.list",
     "securesourcemanager.instances.access",

@@ -1,0 +1,10 @@
+{
+  "name": "roles/dataform.codeScheduler",
+  "title": "Code Scheduler",
+  "description": "Access for scheduling workflows and releases.",
+  "included_permissions": [
+    "dataform.releaseConfigs.create",
+    "dataform.workflowConfigs.create"
+  ],
+  "stage": "BETA"
+}

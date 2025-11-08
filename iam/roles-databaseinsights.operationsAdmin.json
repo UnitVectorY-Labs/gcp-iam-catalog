@@ -5,5 +5,5 @@
   "included_permissions": [
     "databaseinsights.activeQuery.terminate"
   ],
-  "stage": "BETA"
+  "stage": "GA"
 }

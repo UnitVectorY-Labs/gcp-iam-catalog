@@ -1,0 +1,18 @@
+{
+  "name": "roles/compute.vmExtensionPolicyViewer",
+  "title": "Compute VM extension policy viewer",
+  "description": "View zone/global VM extension policies.",
+  "included_permissions": [
+    "compute.instances.get",
+    "compute.instances.list",
+    "compute.rolloutPlans.get",
+    "compute.rolloutPlans.list",
+    "compute.rollouts.get",
+    "compute.rollouts.list",
+    "compute.vmExtensionPolicies.get",
+    "compute.vmExtensionPolicies.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "BETA"
+}

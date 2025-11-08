@@ -3,12 +3,15 @@
   "title": "Storage Legacy Object Owner",
   "description": "Grants permission to view and edit objects and their metadata, including ACLs.",
   "included_permissions": [
+    "storage.objects.createContext",
+    "storage.objects.deleteContext",
     "storage.objects.get",
     "storage.objects.getIamPolicy",
     "storage.objects.overrideUnlockedRetention",
     "storage.objects.setIamPolicy",
     "storage.objects.setRetention",
-    "storage.objects.update"
+    "storage.objects.update",
+    "storage.objects.updateContext"
   ],
   "stage": "GA"
 }

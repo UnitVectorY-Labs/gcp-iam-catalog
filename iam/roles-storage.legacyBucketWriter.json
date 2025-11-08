@@ -18,6 +18,7 @@
     "storage.multipartUploads.list",
     "storage.multipartUploads.listParts",
     "storage.objects.create",
+    "storage.objects.createContext",
     "storage.objects.delete",
     "storage.objects.list",
     "storage.objects.restore",

@@ -1,0 +1,10 @@
+{
+  "name": "roles/generativelanguage.serviceAgent",
+  "title": "Generative Language Service Agent",
+  "description": "Grants Generative Language Service Agent permissions required to read data from GCS buckets",
+  "included_permissions": [
+    "storage.buckets.get",
+    "storage.objects.get"
+  ],
+  "stage": "GA"
+}
