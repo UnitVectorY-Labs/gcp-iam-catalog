@@ -1,0 +1,12 @@
+{
+  "name": "roles/aiplatform.sessionEditor",
+  "title": "Vertex AI Agent Engine Session Editor Role",
+  "description": "Grants edit access to Session for Agent Engine.",
+  "included_permissions": [
+    "aiplatform.sessionEvents.append",
+    "aiplatform.sessions.create",
+    "aiplatform.sessions.delete",
+    "aiplatform.sessions.update"
+  ],
+  "stage": "BETA"
+}

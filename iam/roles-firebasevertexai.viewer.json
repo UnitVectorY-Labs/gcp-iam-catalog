@@ -4,6 +4,8 @@
   "description": "Read access to Firebase AI Logic resources.",
   "included_permissions": [
     "firebasevertexai.configs.get",
+    "firebasevertexai.promptTemplates.get",
+    "firebasevertexai.promptTemplates.list",
     "resourcemanager.projects.get",
     "resourcemanager.projects.list"
   ],

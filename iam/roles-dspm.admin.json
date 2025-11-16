@@ -4,6 +4,7 @@
   "description": "Full access to Data Security Posture Management resources.",
   "included_permissions": [
     "dspm.locations.computeAggregation",
+    "dspm.locations.fetchDataGovernanceAnalytics",
     "dspm.locations.fetchDspmGovernedProjects",
     "dspm.locations.fetchGovernedResourceMetrics",
     "dspm.locations.fetchLineageConnections",

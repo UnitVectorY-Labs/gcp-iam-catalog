@@ -1,0 +1,15 @@
+{
+  "name": "roles/aiplatform.sessionUser",
+  "title": "Vertex AI Agent Engine Session User Role",
+  "description": "Grants full user access to Session for Agent Engine.",
+  "included_permissions": [
+    "aiplatform.sessionEvents.append",
+    "aiplatform.sessionEvents.list",
+    "aiplatform.sessions.create",
+    "aiplatform.sessions.delete",
+    "aiplatform.sessions.get",
+    "aiplatform.sessions.list",
+    "aiplatform.sessions.update"
+  ],
+  "stage": "BETA"
+}

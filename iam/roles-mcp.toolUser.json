@@ -1,0 +1,10 @@
+{
+  "name": "roles/mcp.toolUser",
+  "title": "MCP tool user",
+  "description": "Role for calling tools on any MCP server enabled by the parent project.",
+  "included_permissions": [
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": ""
+}

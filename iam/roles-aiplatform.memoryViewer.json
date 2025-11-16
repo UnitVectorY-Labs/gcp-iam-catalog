@@ -1,0 +1,11 @@
+{
+  "name": "roles/aiplatform.memoryViewer",
+  "title": "Vertex AI Agent Engine Memory Viewer Role",
+  "description": "Grants viewer access to Memory for Agent Engine.",
+  "included_permissions": [
+    "aiplatform.memories.get",
+    "aiplatform.memories.list",
+    "aiplatform.memories.retrieve"
+  ],
+  "stage": "BETA"
+}

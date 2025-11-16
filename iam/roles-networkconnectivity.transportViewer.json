@@ -1,0 +1,14 @@
+{
+  "name": "roles/networkconnectivity.transportViewer",
+  "title": "Transport Viewer",
+  "description": "Enables view access to Transport resources",
+  "included_permissions": [
+    "networkconnectivity.locations.get",
+    "networkconnectivity.locations.list",
+    "networkconnectivity.operations.get",
+    "networkconnectivity.operations.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": ""
+}

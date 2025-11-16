@@ -1,0 +1,23 @@
+{
+  "name": "roles/networkconnectivity.transportAdmin",
+  "title": "Transport Admin",
+  "description": "Enables full access to Transport resources",
+  "included_permissions": [
+    "networkconnectivity.locations.get",
+    "networkconnectivity.locations.list",
+    "networkconnectivity.operations.cancel",
+    "networkconnectivity.operations.delete",
+    "networkconnectivity.operations.get",
+    "networkconnectivity.operations.list",
+    "networkconnectivity.remoteTransportProfiles.get",
+    "networkconnectivity.remoteTransportProfiles.list",
+    "networkconnectivity.transports.create",
+    "networkconnectivity.transports.delete",
+    "networkconnectivity.transports.get",
+    "networkconnectivity.transports.list",
+    "networkconnectivity.transports.update",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

@@ -1,0 +1,7 @@
+{
+  "name": "roles/developerconnect.connectionHttpProxyWriter",
+  "title": "Developer Connect HTTP Proxy Writer",
+  "description": "Grants read and write access to connections through the HTTP Proxy.",
+  "included_permissions": null,
+  "stage": ""
+}
