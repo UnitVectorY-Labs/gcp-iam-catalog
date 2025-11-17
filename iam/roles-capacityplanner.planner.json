@@ -4,8 +4,7 @@
   "description": "Role that enables capacity planning",
   "included_permissions": [
     "capacityplanner.capacityPlans.get",
-    "capacityplanner.capacityPlans.list",
-    "capacityplanner.planAlertInsights.list"
+    "capacityplanner.capacityPlans.list"
   ],
   "stage": "BETA"
 }

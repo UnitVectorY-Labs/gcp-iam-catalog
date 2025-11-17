@@ -3,6 +3,10 @@
   "title": "Cloud Filestore Viewer",
   "description": "Read-only access to Filestore instances and related resources.",
   "included_permissions": [
+    "backupdr.backupPlanAssociations.fetchForFilestoreInstance",
+    "backupdr.backupPlanAssociations.getForFilestoreInstance",
+    "backupdr.dataSourceReferences.fetchForFilestoreInstance",
+    "backupdr.dataSourceReferences.getForFilestoreInstance",
     "file.backups.get",
     "file.backups.list",
     "file.backups.listEffectiveTags",

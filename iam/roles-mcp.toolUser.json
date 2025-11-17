@@ -3,8 +3,9 @@
   "title": "MCP tool user",
   "description": "Role for calling tools on any MCP server enabled by the parent project.",
   "included_permissions": [
+    "mcp.tools.call",
     "resourcemanager.projects.get",
     "resourcemanager.projects.list"
   ],
-  "stage": ""
+  "stage": "BETA"
 }

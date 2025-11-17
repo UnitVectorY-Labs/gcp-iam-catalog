@@ -22,6 +22,7 @@
     "cloudsql.sslCerts.list",
     "cloudsql.users.get",
     "cloudsql.users.list",
+    "monitoring.timeSeries.list",
     "recommender.cloudsqlIdleInstanceRecommendations.get",
     "recommender.cloudsqlIdleInstanceRecommendations.list",
     "recommender.cloudsqlInstanceActivityInsights.get",

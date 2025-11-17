@@ -7,8 +7,12 @@
     "networkconnectivity.locations.list",
     "networkconnectivity.operations.get",
     "networkconnectivity.operations.list",
+    "networkconnectivity.remoteTransportProfiles.get",
+    "networkconnectivity.remoteTransportProfiles.list",
+    "networkconnectivity.transports.get",
+    "networkconnectivity.transports.list",
     "resourcemanager.projects.get",
     "resourcemanager.projects.list"
   ],
-  "stage": ""
+  "stage": "GA"
 }

@@ -3,8 +3,6 @@
   "title": "Developer Connect Insights Viewer",
   "description": "Readonly access to Developer Connect Insights resources.",
   "included_permissions": [
-    "developerconnect.insightsConfigs.get",
-    "developerconnect.insightsConfigs.list",
     "developerconnect.locations.get",
     "developerconnect.locations.list",
     "developerconnect.operations.get",

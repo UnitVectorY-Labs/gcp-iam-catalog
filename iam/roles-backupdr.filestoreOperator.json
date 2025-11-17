@@ -6,5 +6,5 @@
     "file.backups.create",
     "file.instances.get"
   ],
-  "stage": ""
+  "stage": "BETA"
 }

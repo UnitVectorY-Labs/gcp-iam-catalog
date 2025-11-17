@@ -1,0 +1,10 @@
+{
+  "name": "roles/telemetry.consumerAdmin",
+  "title": "Consumer Admin",
+  "description": "Grants permission management access to consumer resources.",
+  "included_permissions": [
+    "telemetry.consumers.getIamPolicy",
+    "telemetry.consumers.setIamPolicy"
+  ],
+  "stage": "BETA"
+}

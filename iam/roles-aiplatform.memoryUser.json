@@ -11,5 +11,5 @@
     "aiplatform.memories.retrieve",
     "aiplatform.memories.update"
   ],
-  "stage": ""
+  "stage": "BETA"
 }

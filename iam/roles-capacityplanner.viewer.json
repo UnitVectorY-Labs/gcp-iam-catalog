@@ -4,6 +4,7 @@
   "description": "Read-only access to Capacity Planner resources",
   "included_permissions": [
     "capacityplanner.forecasts.list",
+    "capacityplanner.usageAlertInsights.list",
     "capacityplanner.usageHistories.list",
     "capacityplanner.usageHistories.summarize",
     "cloudquotas.quotas.get",

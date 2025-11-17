@@ -3,6 +3,7 @@
   "title": "BigQuery Studio Admin",
   "description": "Combination role of BigQuery Admin, Dataform Admin, Notebook Runtime Admin and Dataproc Serverless Editor.",
   "included_permissions": [
+    "aiplatform.locations.get",
     "aiplatform.notebookRuntimeTemplates.apply",
     "aiplatform.notebookRuntimeTemplates.create",
     "aiplatform.notebookRuntimeTemplates.delete",

@@ -1,0 +1,9 @@
+{
+  "name": "roles/telemetry.logsWriter",
+  "title": "Cloud Telemetry Logs Writer",
+  "description": "Access to write logs.",
+  "included_permissions": [
+    "telemetry.logs.write"
+  ],
+  "stage": "BETA"
+}

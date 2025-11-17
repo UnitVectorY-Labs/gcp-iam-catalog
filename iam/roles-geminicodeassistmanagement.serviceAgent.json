@@ -4,6 +4,8 @@
   "description": "Gives Gemini Code Assist Management Service Agent access to Cloud Platform resources.",
   "included_permissions": [
     "developerconnect.connections.get",
+    "developerconnect.connections.httpProxyRead",
+    "developerconnect.connections.httpProxyWrite",
     "developerconnect.gitRepositoryLinks.get"
   ],
   "stage": "GA"

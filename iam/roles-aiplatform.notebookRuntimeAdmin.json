@@ -3,6 +3,7 @@
   "title": "Notebook Runtime Admin",
   "description": "Grants full access to all runtime templates and runtimes in Notebook Service.",
   "included_permissions": [
+    "aiplatform.locations.get",
     "aiplatform.notebookRuntimeTemplates.apply",
     "aiplatform.notebookRuntimeTemplates.create",
     "aiplatform.notebookRuntimeTemplates.delete",

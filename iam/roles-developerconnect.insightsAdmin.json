@@ -3,6 +3,11 @@
   "title": "Developer Connect Insights Admin",
   "description": "Admin access to Developer Connect Insights resources.",
   "included_permissions": [
+    "developerconnect.insightsConfigs.create",
+    "developerconnect.insightsConfigs.delete",
+    "developerconnect.insightsConfigs.get",
+    "developerconnect.insightsConfigs.list",
+    "developerconnect.insightsConfigs.update",
     "developerconnect.locations.get",
     "developerconnect.locations.list",
     "developerconnect.operations.get",
