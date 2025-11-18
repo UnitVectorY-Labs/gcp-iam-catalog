@@ -3,6 +3,7 @@
   "title": "BigQuery Studio User",
   "description": "Combination role of BigQuery Job User, BigQuery Read Session User, Dataform Code Creator, Notebook Runtime User and Dataproc Serverless Editor.",
   "included_permissions": [
+    "aiplatform.locations.get",
     "aiplatform.notebookRuntimeTemplates.apply",
     "aiplatform.notebookRuntimeTemplates.get",
     "aiplatform.notebookRuntimeTemplates.getIamPolicy",
