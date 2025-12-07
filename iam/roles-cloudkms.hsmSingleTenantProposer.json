@@ -1,0 +1,9 @@
+{
+  "name": "roles/cloudkms.hsmSingleTenantProposer",
+  "title": "Cloud KMS single-tenant HSM Proposer",
+  "description": "Grants ability to create SingleTenantHsmInstances and SingleTenantHsmInstanceProposals.",
+  "included_permissions": [
+    "cloudkms.operations.get"
+  ],
+  "stage": ""
+}

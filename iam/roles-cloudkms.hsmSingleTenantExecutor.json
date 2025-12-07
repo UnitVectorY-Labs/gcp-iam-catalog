@@ -1,0 +1,14 @@
+{
+  "name": "roles/cloudkms.hsmSingleTenantExecutor",
+  "title": "Cloud KMS single-tenant HSM Executor",
+  "description": "Grants ability to execute SingleTenantHsmInstanceProposal resources.",
+  "included_permissions": [
+    "cloudkms.operations.get",
+    "cloudkms.singleTenantHsmInstanceProposals.execute",
+    "cloudkms.singleTenantHsmInstanceProposals.get",
+    "cloudkms.singleTenantHsmInstanceProposals.list",
+    "cloudkms.singleTenantHsmInstances.get",
+    "cloudkms.singleTenantHsmInstances.list"
+  ],
+  "stage": "GA"
+}

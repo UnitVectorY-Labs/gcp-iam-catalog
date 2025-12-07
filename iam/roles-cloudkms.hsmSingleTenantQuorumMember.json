@@ -1,0 +1,9 @@
+{
+  "name": "roles/cloudkms.hsmSingleTenantQuorumMember",
+  "title": "Cloud KMS single-tenant HSM Quorum Member",
+  "description": "Grants ability to approve SingleTenantHsmInstanceProposal resources.",
+  "included_permissions": [
+    "cloudkms.operations.get"
+  ],
+  "stage": ""
+}

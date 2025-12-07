@@ -1,0 +1,9 @@
+{
+  "name": "roles/contactcenteraiplatform.workforceSchedulingShiftGenerator",
+  "title": "Workforce Scheduling Shift Generator",
+  "description": "Access to generating shifts using Workforce Scheduling.",
+  "included_permissions": [
+    "contactcenteraiplatform.locations.generateShifts"
+  ],
+  "stage": "BETA"
+}

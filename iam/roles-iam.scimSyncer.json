@@ -2,6 +2,19 @@
   "name": "roles/iam.scimSyncer",
   "title": "SCIM Data Syncer",
   "description": "Rights to sync users and groups from external identity providers.",
-  "included_permissions": null,
+  "included_permissions": [
+    "iam.googleapis.com/workforcePoolProviderScimGroups.create",
+    "iam.googleapis.com/workforcePoolProviderScimGroups.delete",
+    "iam.googleapis.com/workforcePoolProviderScimGroups.get",
+    "iam.googleapis.com/workforcePoolProviderScimGroups.list",
+    "iam.googleapis.com/workforcePoolProviderScimGroups.patch",
+    "iam.googleapis.com/workforcePoolProviderScimGroups.put",
+    "iam.googleapis.com/workforcePoolProviderScimUsers.create",
+    "iam.googleapis.com/workforcePoolProviderScimUsers.delete",
+    "iam.googleapis.com/workforcePoolProviderScimUsers.get",
+    "iam.googleapis.com/workforcePoolProviderScimUsers.list",
+    "iam.googleapis.com/workforcePoolProviderScimUsers.patch",
+    "iam.googleapis.com/workforcePoolProviderScimUsers.put"
+  ],
   "stage": "GA"
 }

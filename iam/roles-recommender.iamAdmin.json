@@ -22,7 +22,10 @@
     "resourcemanager.projects.get",
     "resourcemanager.projects.list",
     "securitycenter.findings.group",
-    "securitycenter.userinterfacemetadata.get"
+    "securitycenter.userinterfacemetadata.get",
+    "securitycentermanagement.securityCommandCenter.activate",
+    "securitycentermanagement.securityCommandCenter.checkActivationOperation",
+    "securitycentermanagement.securityCommandCenter.checkEligibility"
   ],
   "stage": "GA"
 }
