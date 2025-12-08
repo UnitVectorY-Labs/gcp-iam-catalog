@@ -3,7 +3,12 @@
   "title": "Cloud KMS single-tenant HSM Quorum Member",
   "description": "Grants ability to approve SingleTenantHsmInstanceProposal resources.",
   "included_permissions": [
-    "cloudkms.operations.get"
+    "cloudkms.operations.get",
+    "cloudkms.singleTenantHsmInstanceProposals.approve",
+    "cloudkms.singleTenantHsmInstanceProposals.get",
+    "cloudkms.singleTenantHsmInstanceProposals.list",
+    "cloudkms.singleTenantHsmInstances.get",
+    "cloudkms.singleTenantHsmInstances.list"
   ],
-  "stage": ""
+  "stage": "GA"
 }

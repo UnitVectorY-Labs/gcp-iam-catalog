@@ -3,7 +3,14 @@
   "title": "Cloud KMS single-tenant HSM Proposer",
   "description": "Grants ability to create SingleTenantHsmInstances and SingleTenantHsmInstanceProposals.",
   "included_permissions": [
-    "cloudkms.operations.get"
+    "cloudkms.operations.get",
+    "cloudkms.singleTenantHsmInstanceProposals.create",
+    "cloudkms.singleTenantHsmInstanceProposals.delete",
+    "cloudkms.singleTenantHsmInstanceProposals.get",
+    "cloudkms.singleTenantHsmInstanceProposals.list",
+    "cloudkms.singleTenantHsmInstances.create",
+    "cloudkms.singleTenantHsmInstances.get",
+    "cloudkms.singleTenantHsmInstances.list"
   ],
-  "stage": ""
+  "stage": "GA"
 }

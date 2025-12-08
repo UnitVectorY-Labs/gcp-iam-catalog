@@ -3,6 +3,11 @@
   "title": "Dataproc Editor",
   "description": "Full control of Dataproc resources. Allows viewing all networks.",
   "included_permissions": [
+    "cloudkms.keyHandles.create",
+    "cloudkms.keyHandles.get",
+    "cloudkms.keyHandles.list",
+    "cloudkms.operations.get",
+    "cloudkms.projects.showEffectiveAutokeyConfig",
     "compute.machineTypes.get",
     "compute.machineTypes.list",
     "compute.networks.get",

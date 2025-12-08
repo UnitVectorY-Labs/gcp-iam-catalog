@@ -1,0 +1,11 @@
+{
+  "name": "roles/cloudkms.hsmSingleTenantKeyCreator",
+  "title": "Cloud KMS single-tenant HSM Key Creator",
+  "description": "Grants ability to use single-tenant HSM instances to create keys. This role must be combined with another role that grants the ability to create cryptoKeys.",
+  "included_permissions": [
+    "cloudkms.singleTenantHsmInstances.get",
+    "cloudkms.singleTenantHsmInstances.list",
+    "cloudkms.singleTenantHsmInstances.use"
+  ],
+  "stage": "GA"
+}

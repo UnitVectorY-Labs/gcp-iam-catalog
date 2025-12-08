@@ -1,7 +1,0 @@
-{
-  "name": "roles/beyondcorp.clientConnectorServiceUser",
-  "title": "Cloud BeyondCorp Client Connector Service User",
-  "description": "Access Client Connector Service",
-  "included_permissions": null,
-  "stage": "BETA"
-}

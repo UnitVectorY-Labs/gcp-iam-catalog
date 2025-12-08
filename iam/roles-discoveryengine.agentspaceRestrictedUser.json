@@ -13,5 +13,5 @@
     "discoveryengine.users.get",
     "discoveryengine.users.update"
   ],
-  "stage": ""
+  "stage": "BETA"
 }

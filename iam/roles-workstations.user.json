@@ -4,6 +4,7 @@
   "description": "Grants runtime access to Workstation resources.",
   "included_permissions": [
     "workstations.operations.get",
+    "workstations.operations.list",
     "workstations.workstations.delete",
     "workstations.workstations.get",
     "workstations.workstations.start",
