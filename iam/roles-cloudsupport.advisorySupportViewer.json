@@ -1,0 +1,11 @@
+{
+  "name": "roles/cloudsupport.advisorySupportViewer",
+  "title": "Advisory Support Viewer",
+  "description": "Read-only access to advisory support cases applicable for GCP Customer Care.",
+  "included_permissions": [
+    "cloudsupport.properties.get",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": ""
+}
