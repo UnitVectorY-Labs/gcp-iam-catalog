@@ -1,7 +1,7 @@
 {
   "name": "roles/privilegedaccessmanager.settingsViewer",
   "title": "Privileged Access Manager Settings Viewer",
-  "description": "Readonly access to Privileged Access Manager Settings \u0026  Effective Settings.",
+  "description": "Readonly access to Privileged Access Manager Settings \u0026 Effective Settings.",
   "included_permissions": [
     "privilegedaccessmanager.settings.fetchEffective",
     "privilegedaccessmanager.settings.get"
