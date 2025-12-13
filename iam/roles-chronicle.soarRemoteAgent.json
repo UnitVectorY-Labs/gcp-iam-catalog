@@ -1,0 +1,14 @@
+{
+  "name": "roles/chronicle.soarRemoteAgent",
+  "title": "Chronicle SOAR Remote Agent",
+  "description": "Grants Remote Agent access to Chronicle SOAR.",
+  "included_permissions": [
+    "chronicle.legacyPublisher.get",
+    "chronicle.legacyPublisher.update",
+    "chronicle.legacySdk.get",
+    "chronicle.legacySdk.update",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "BETA"
+}

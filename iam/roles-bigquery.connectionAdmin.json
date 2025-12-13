@@ -1,7 +1,7 @@
 {
   "name": "roles/bigquery.connectionAdmin",
   "title": "BigQuery Connection Admin",
-  "description": "",
+  "description": "Grants full control over BigQuery connections.",
   "included_permissions": [
     "bigquery.connections.create",
     "bigquery.connections.delegate",

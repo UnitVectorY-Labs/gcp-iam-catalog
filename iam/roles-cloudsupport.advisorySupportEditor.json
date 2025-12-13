@@ -1,0 +1,12 @@
+{
+  "name": "roles/cloudsupport.advisorySupportEditor",
+  "title": "Advisory Support Editor",
+  "description": "Full read-write access to advisory support cases applicable for GCP Customer Care.",
+  "included_permissions": [
+    "cloudasset.assets.searchAllResources",
+    "cloudsupport.properties.get",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

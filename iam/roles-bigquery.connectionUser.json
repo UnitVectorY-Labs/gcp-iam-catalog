@@ -1,7 +1,7 @@
 {
   "name": "roles/bigquery.connectionUser",
   "title": "BigQuery Connection User",
-  "description": "",
+  "description": "Allows users to use BigQuery connections.",
   "included_permissions": [
     "bigquery.connections.get",
     "bigquery.connections.getIamPolicy",

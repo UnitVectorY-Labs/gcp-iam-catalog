@@ -1,7 +1,7 @@
 {
   "name": "roles/ces.viewer",
-  "title": "Customer Engagement Suite Viewer",
-  "description": "Read only access to Customer Engagement Suite resources.",
+  "title": "Gemini Enterprise for Customer Engagement Viewer",
+  "description": "Read only access to Gemini Enterprise for Customer Engagement resources.",
   "included_permissions": [
     "ces.agents.get",
     "ces.agents.list",
