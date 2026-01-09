@@ -11,5 +11,5 @@
     "aiplatform.sessions.list",
     "aiplatform.sessions.update"
   ],
-  "stage": "BETA"
+  "stage": "GA"
 }
