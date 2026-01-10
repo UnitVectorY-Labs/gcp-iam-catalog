@@ -4,6 +4,7 @@
   "description": "Grants user access to Vertex AI Express",
   "included_permissions": [
     "aiplatform.endpoints.predict",
+    "aiplatform.locations.evaluateInstances",
     "aiplatform.memories.create",
     "aiplatform.memories.delete",
     "aiplatform.memories.generate",

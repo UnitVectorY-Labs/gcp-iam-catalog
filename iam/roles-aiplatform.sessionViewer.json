@@ -7,5 +7,5 @@
     "aiplatform.sessions.get",
     "aiplatform.sessions.list"
   ],
-  "stage": "BETA"
+  "stage": "GA"
 }
