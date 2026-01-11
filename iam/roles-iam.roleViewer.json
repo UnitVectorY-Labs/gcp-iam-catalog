@@ -5,6 +5,8 @@
   "included_permissions": [
     "iam.roles.get",
     "iam.roles.list",
+    "iam.roles.listEffectiveTags",
+    "iam.roles.listTagBindings",
     "resourcemanager.projects.get",
     "resourcemanager.projects.getIamPolicy"
   ],

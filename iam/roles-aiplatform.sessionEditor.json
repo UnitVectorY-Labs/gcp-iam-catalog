@@ -8,5 +8,5 @@
     "aiplatform.sessions.delete",
     "aiplatform.sessions.update"
   ],
-  "stage": "BETA"
+  "stage": "GA"
 }
