@@ -15,7 +15,7 @@ on:
 jobs:
   zizmor:
     name: zizmor latest via Cargo
-    runs-on: ubuntu-latest
+    runs-on: arc-runner-set
     permissions:
       security-events: write
       # required for workflows in private repositories
@@ -23,12 +23,12 @@ jobs:
       actions: read
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v6
+        uses: actions/checkout@8e8c483db84b4bee98b60c0593521ed34d9990e8 # v6.0.1
         with:
           persist-credentials: false
 
       - name: Install the latest version of uv
-        uses: astral-sh/setup-uv@v7
+        uses: astral-sh/setup-uv@61cb8a9741eeb8a550a1b8544337180c0fc8476b # v7.2.0
 
       - name: Run zizmor 🌈
         run: uvx zizmor --format sarif . > results.sarif 
@@ -36,7 +36,7 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }} 
 
       - name: Upload SARIF file
-        uses: github/codeql-action/upload-sarif@v4
+        uses: github/codeql-action/upload-sarif@cdefb33c0f6224e58673d9004f47f7cb3e328b89 # v4.31.10
         with:
           sarif_file: results.sarif
           category: zizmor
