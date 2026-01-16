@@ -6,5 +6,5 @@
     "cloudsql.instances.createBackupDrBackup",
     "cloudsql.instances.get"
   ],
-  "stage": "BETA"
+  "stage": "GA"
 }
