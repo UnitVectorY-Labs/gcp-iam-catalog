@@ -1,7 +1,7 @@
 {
   "name": "roles/ces.client",
-  "title": "Gemini Enterprise for Customer Engagement Client",
-  "description": "Query access to Gemini Enterprise for Customer Engagement agents.",
+  "title": "Gemini Enterprise for Customer Experience Client",
+  "description": "Query access to Gemini Enterprise for Customer Experience agents.",
   "included_permissions": [
     "ces.sessions.bidiRunSession",
     "ces.sessions.runSession",
