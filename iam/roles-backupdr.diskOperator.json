@@ -17,5 +17,5 @@
     "compute.storagePools.use",
     "compute.zoneOperations.get"
   ],
-  "stage": "BETA"
+  "stage": "GA"
 }

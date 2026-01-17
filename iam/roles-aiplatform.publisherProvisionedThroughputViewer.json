@@ -1,0 +1,7 @@
+{
+  "name": "roles/aiplatform.publisherProvisionedThroughputViewer",
+  "title": "Vertex AI Platform Publisher Provisioned Throughput Viewer",
+  "description": "Grants Publisher access to view all resources related to Vertex AI Provisioned Throughput Orders",
+  "included_permissions": null,
+  "stage": "BETA"
+}
