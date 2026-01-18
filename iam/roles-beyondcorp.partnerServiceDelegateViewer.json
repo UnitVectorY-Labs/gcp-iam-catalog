@@ -5,8 +5,6 @@
   "included_permissions": [
     "beyondcorp.partnerTenants.get",
     "beyondcorp.partnerTenants.list",
-    "beyondcorp.proxyConfigs.get",
-    "beyondcorp.proxyConfigs.list",
     "resourcemanager.organizations.get"
   ],
   "stage": "BETA"

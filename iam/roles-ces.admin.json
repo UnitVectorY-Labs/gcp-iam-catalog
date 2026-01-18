@@ -1,7 +1,7 @@
 {
   "name": "roles/ces.admin",
-  "title": "Gemini Enterprise for Customer Engagement Admin",
-  "description": "Full access to Gemini Enterprise for Customer Engagement resources.",
+  "title": "Gemini Enterprise for Customer Experience Admin",
+  "description": "Full access to Gemini Enterprise for Customer Experience resources.",
   "included_permissions": [
     "ces.agents.create",
     "ces.agents.delete",
