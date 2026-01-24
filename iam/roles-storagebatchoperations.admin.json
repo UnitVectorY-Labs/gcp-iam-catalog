@@ -5,6 +5,8 @@
   "included_permissions": [
     "resourcemanager.projects.get",
     "resourcemanager.projects.list",
+    "storagebatchoperations.bucketOperations.get",
+    "storagebatchoperations.bucketOperations.list",
     "storagebatchoperations.jobs.cancel",
     "storagebatchoperations.jobs.create",
     "storagebatchoperations.jobs.delete",
