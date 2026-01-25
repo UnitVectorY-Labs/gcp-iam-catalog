@@ -1,0 +1,18 @@
+{
+  "name": "roles/edgecontainer.apiKeyAdmin",
+  "title": "Edge Container API Key Admin",
+  "description": "Access to manage API Keys.",
+  "included_permissions": [
+    "edgecontainer.apikeys.create",
+    "edgecontainer.apikeys.delete",
+    "edgecontainer.apikeys.get",
+    "edgecontainer.apikeys.list",
+    "edgecontainer.locations.get",
+    "edgecontainer.locations.list",
+    "edgecontainer.operations.cancel",
+    "edgecontainer.operations.delete",
+    "edgecontainer.operations.get",
+    "edgecontainer.operations.list"
+  ],
+  "stage": "GA"
+}

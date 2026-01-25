@@ -1,0 +1,11 @@
+{
+  "name": "roles/edgecontainer.zoneRolesViewer",
+  "title": "Edge Container Roles Viewer",
+  "description": "Read-only access to Roles in the zone.",
+  "included_permissions": [
+    "edgecontainer.locations.get",
+    "edgecontainer.locations.list",
+    "edgecontainer.zones.listRoles"
+  ],
+  "stage": "GA"
+}
