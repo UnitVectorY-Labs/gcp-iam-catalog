@@ -1,7 +1,7 @@
 {
   "name": "roles/cloudapiregistry.admin",
-  "title": "Cloud API Registry for Consumers Admin",
-  "description": "Read/write access to Cloud API Registry for Consumers resources.",
+  "title": "Cloud API Registry Admin",
+  "description": "Read/write access to Cloud API Registry resources.",
   "included_permissions": [
     "cloudapiregistry.locations.get",
     "cloudapiregistry.locations.list",

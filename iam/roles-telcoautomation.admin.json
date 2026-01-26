@@ -3,6 +3,8 @@
   "title": "Telco Automation Admin",
   "description": "Full access to Telco Automation resources.",
   "included_permissions": [
+    "cloudquotas.quotas.get",
+    "cloudquotas.quotas.update",
     "logging.buckets.get",
     "logging.buckets.list",
     "logging.exclusions.get",

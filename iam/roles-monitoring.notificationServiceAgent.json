@@ -12,6 +12,7 @@
     "monitoring.monitoredResourceDescriptors.get",
     "monitoring.monitoredResourceDescriptors.list",
     "monitoring.timeSeries.list",
+    "observability.links.list",
     "run.routes.invoke",
     "servicedirectory.networks.access",
     "servicedirectory.services.resolve",

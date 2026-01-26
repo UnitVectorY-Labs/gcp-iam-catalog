@@ -3,6 +3,8 @@
   "title": "Edge Container Viewer",
   "description": "Read-only access to Edge Container all resources.",
   "included_permissions": [
+    "edgecontainer.apikeys.get",
+    "edgecontainer.apikeys.list",
     "edgecontainer.clusters.generateAccessToken",
     "edgecontainer.clusters.get",
     "edgecontainer.clusters.getIamPolicy",
@@ -20,9 +22,11 @@
     "edgecontainer.operations.get",
     "edgecontainer.operations.list",
     "edgecontainer.serverconfig.get",
+    "edgecontainer.serviceaccounts.describekey",
     "edgecontainer.serviceaccounts.generatekey",
     "edgecontainer.serviceaccounts.get",
     "edgecontainer.serviceaccounts.list",
+    "edgecontainer.serviceaccounts.listkeys",
     "edgecontainer.vpnConnections.get",
     "edgecontainer.vpnConnections.getIamPolicy",
     "edgecontainer.vpnConnections.list",
@@ -33,6 +37,7 @@
     "edgecontainer.zones.get",
     "edgecontainer.zones.getZoneIamPolicy",
     "edgecontainer.zones.list",
+    "edgecontainer.zones.listRoles",
     "resourcemanager.projects.get",
     "resourcemanager.projects.list"
   ],
