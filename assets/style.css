@@ -773,8 +773,13 @@ ul.item-list li a:hover {
 }
 
 .compare-column-content {
-    max-height: 400px;
-    overflow-y: auto;
+    /* No max-height - let the page expand to show all items */
+}
+
+.compare-header-title {
+    font-weight: 600;
+    font-size: 0.9em;
+    word-break: break-word;
 }
 
 .compare-item {

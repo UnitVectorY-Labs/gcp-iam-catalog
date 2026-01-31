@@ -104,21 +104,21 @@
                     <div class="compare-results" id="compareResults" style="display: none;">
                         <div class="compare-column left">
                             <div class="compare-column-header">
-                                <span>Only grant {{.Permission}}</span>
+                                <span class="compare-header-title">{{.Permission}}</span>
                                 <span class="compare-count" id="leftCount">0</span>
                             </div>
                             <div class="compare-column-content" id="leftList"></div>
                         </div>
                         <div class="compare-column common">
                             <div class="compare-column-header">
-                                <span>Grant Both</span>
+                                <span class="compare-header-title">Both</span>
                                 <span class="compare-count" id="commonCount">0</span>
                             </div>
                             <div class="compare-column-content" id="commonList"></div>
                         </div>
                         <div class="compare-column right">
                             <div class="compare-column-header">
-                                <span id="rightHeader">Only grant other permission</span>
+                                <span class="compare-header-title" id="rightHeader">Other permission</span>
                                 <span class="compare-count" id="rightCount">0</span>
                             </div>
                             <div class="compare-column-content" id="rightList"></div>
@@ -200,9 +200,24 @@
                 return;
             }
             
-            const matches = allPermissions.filter(perm => 
-                perm !== currentPermission && perm.toLowerCase().includes(filter.toLowerCase())
-            ).slice(0, 10);
+            const lowerFilter = filter.toLowerCase();
+            
+            // Get all matches
+            const allMatches = allPermissions.filter(perm => 
+                perm !== currentPermission && perm.toLowerCase().includes(lowerFilter)
+            );
+            
+            // Sort: prioritize permissions that start with the filter
+            allMatches.sort((a, b) => {
+                const aStartsWith = a.toLowerCase().startsWith(lowerFilter);
+                const bStartsWith = b.toLowerCase().startsWith(lowerFilter);
+                
+                if (aStartsWith && !bStartsWith) return -1;
+                if (!aStartsWith && bStartsWith) return 1;
+                return a.localeCompare(b);
+            });
+            
+            const matches = allMatches.slice(0, 50);
             
             if (matches.length === 0) {
                 container.style.display = 'none';
@@ -262,7 +277,7 @@
                 window.history.replaceState({}, '', url);
 
                 // Update header
-                document.getElementById('rightHeader').textContent = 'Only grant ' + otherPermission;
+                document.getElementById('rightHeader').textContent = otherPermission;
 
                 // Populate lists with role links
                 populateCompareList('leftList', onlyLeft, '../', 'role');

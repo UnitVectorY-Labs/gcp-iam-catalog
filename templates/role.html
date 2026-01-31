@@ -121,21 +121,21 @@
                     <div class="compare-results" id="compareResults" style="display: none;">
                         <div class="compare-column left">
                             <div class="compare-column-header">
-                                <span>Only in {{.Name}}</span>
+                                <span class="compare-header-title">{{.Name}}</span>
                                 <span class="compare-count" id="leftCount">0</span>
                             </div>
                             <div class="compare-column-content" id="leftList"></div>
                         </div>
                         <div class="compare-column common">
                             <div class="compare-column-header">
-                                <span>Common</span>
+                                <span class="compare-header-title">Shared</span>
                                 <span class="compare-count" id="commonCount">0</span>
                             </div>
                             <div class="compare-column-content" id="commonList"></div>
                         </div>
                         <div class="compare-column right">
                             <div class="compare-column-header">
-                                <span id="rightHeader">Only in other role</span>
+                                <span class="compare-header-title" id="rightHeader">Other role</span>
                                 <span class="compare-count" id="rightCount">0</span>
                             </div>
                             <div class="compare-column-content" id="rightList"></div>
@@ -217,9 +217,26 @@
                 return;
             }
             
-            const matches = allRoles.filter(role => 
-                role !== currentRole && role.toLowerCase().includes(filter.toLowerCase())
-            ).slice(0, 10);
+            const lowerFilter = filter.toLowerCase();
+            
+            // Get all matches
+            const allMatches = allRoles.filter(role => 
+                role !== currentRole && role.toLowerCase().includes(lowerFilter)
+            );
+            
+            // Sort: prioritize roles where the name after "roles/" starts with the filter
+            allMatches.sort((a, b) => {
+                const aName = a.replace('roles/', '').toLowerCase();
+                const bName = b.replace('roles/', '').toLowerCase();
+                const aStartsWith = aName.startsWith(lowerFilter) || a.toLowerCase().startsWith(lowerFilter);
+                const bStartsWith = bName.startsWith(lowerFilter) || b.toLowerCase().startsWith(lowerFilter);
+                
+                if (aStartsWith && !bStartsWith) return -1;
+                if (!aStartsWith && bStartsWith) return 1;
+                return a.localeCompare(b);
+            });
+            
+            const matches = allMatches.slice(0, 50);
             
             if (matches.length === 0) {
                 container.style.display = 'none';
@@ -279,7 +296,7 @@
                 window.history.replaceState({}, '', url);
 
                 // Update header
-                document.getElementById('rightHeader').textContent = 'Only in ' + otherRole;
+                document.getElementById('rightHeader').textContent = otherRole;
 
                 // Populate lists
                 populateCompareList('leftList', onlyLeft, '../permissions/', 'permission');
