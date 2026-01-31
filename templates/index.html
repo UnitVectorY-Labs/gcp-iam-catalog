@@ -12,46 +12,77 @@
     <div class="navbar">
         <a href="index.html" class="active">gcp-iam-catalog</a>
         <a href="roles.html">Roles</a>
-        <a href="compare-roles.html">Compare Roles</a>
         <a href="permissions.html">Permissions</a>
-        <a href="compare-permissions.html">Compare Permissions</a>
     </div>
 
     <main>
-        <section class="home">
-            <h1>Welcome to gcp-iam-catalog</h1>
-            <p>
-                <strong>gcp-iam-catalog</strong> is an independent tool designed to simplify the exploration of <a href="https://cloud.google.com/">Google Cloud Platform</a> (GCP) <a href="https://cloud.google.com/security/products/iam">Identity and Access Management</a> (IAM) predefined roles and permissions. <span class="muted-text">This tool is not affiliated with or endorsed by Google.</span>
-            </p>
-            
-            <div class="features">
-                <h2>Why gcp-iam-catalog?</h2>
-                <p>
-                    Comparing different predefined IAM roles in GCP can be complex due to the vast number of roles and permissions. <b>gcp-iam-catalog</b> simplifies this process by offering an intuitive interface to explore and compare IAM roles and their associated permissions.
-                </p>
-                <ul>
-                    <li>
-                        <strong>Role-to-Permission Mapping:</strong> Easily view the permissions included in each IAM role across all GCP services. <span class="muted-text">(Google documentation found at <i><a href="https://cloud.google.com/iam/docs/understanding-roles">Understanding Roles</a></i>)</span>.
-                    </li>
-                    <li>
-                        <strong>Permission-to-Role Mapping:</strong> Identify all roles that grant a specific permission. <span class="muted-text">(Google documentation found at <i><a href="https://cloud.google.com/iam/docs/permissions-reference">Permissions Reference</a></i>)</span>.
-                    </li>
-                    <li>
-                        <strong>Dynamic Comparison:</strong> Select two roles or permissions to see what they have in common and what is unique to each.
-                    </li>
-                    <li>
-                        <strong>Updated Daily:</strong> Roles and permissions <a href="https://github.com/UnitVectorY-Labs/gcp-iam-catalog/actions/workflows/gcp-iam-catalog-crawl.yml">automatically</a> updated using GCP IAM API once a day.
-                    </li>
-                </ul>
+        <!-- Hero Section -->
+        <div class="home-hero">
+            <h1>GCP IAM Catalog</h1>
+            <p class="subtitle">Explore and compare Google Cloud Platform IAM roles and permissions</p>
+            <span class="disclaimer">⚠️ This is an independent tool, not affiliated with or endorsed by Google</span>
+        </div>
+
+        <!-- Stats Cards -->
+        <div class="home-stats">
+            <div class="stat-card roles">
+                <div class="stat-number">{{.RoleCount | formatNumber}}</div>
+                <div class="stat-label">IAM Roles</div>
             </div>
-            
-            <div class="getting-started">
-                <h2>Get Started</h2>
-                <p>
-                    Explore the <b>{{.RoleCount | formatNumber}}</b> GCP <a href="roles.html">Roles</a> to see their permissions or browse the <b>{{.PermissionCount | formatNumber}}</b> GCP <a href="permissions.html">Permissions</a> to find roles that include specific permissions.
-                </p>
+            <div class="stat-card permissions">
+                <div class="stat-number">{{.PermissionCount | formatNumber}}</div>
+                <div class="stat-label">Permissions</div>
             </div>
-        </section>
+        </div>
+
+        <!-- Navigation Cards -->
+        <div class="home-nav-cards">
+            <a href="roles.html" class="nav-card role-card">
+                <div class="nav-card-icon">🔐</div>
+                <h3>Browse Roles</h3>
+                <p>Explore all predefined GCP IAM roles and see what permissions each role includes. Search and filter to find the right role.</p>
+            </a>
+            <a href="permissions.html" class="nav-card permission-card">
+                <div class="nav-card-icon">🔑</div>
+                <h3>Browse Permissions</h3>
+                <p>Find which roles grant a specific permission. Understand the relationship between permissions and roles.</p>
+            </a>
+        </div>
+
+        <!-- Features Section -->
+        <div class="home-features">
+            <h2>Why use gcp-iam-catalog?</h2>
+            <div class="feature-grid">
+                <div class="feature-item">
+                    <div class="feature-icon">📋</div>
+                    <div>
+                        <h4>Role-to-Permission Mapping</h4>
+                        <p>View all permissions included in each IAM role across GCP services. <a href="https://cloud.google.com/iam/docs/understanding-roles">Learn more</a></p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">🔍</div>
+                    <div>
+                        <h4>Permission-to-Role Mapping</h4>
+                        <p>Identify which roles grant a specific permission. <a href="https://cloud.google.com/iam/docs/permissions-reference">Learn more</a></p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">⚖️</div>
+                    <div>
+                        <h4>Side-by-Side Comparison</h4>
+                        <p>Compare any two roles or permissions to see what they share and what's unique to each.</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">🔄</div>
+                    <div>
+                        <h4>Updated Daily</h4>
+                        <p>Data is <a href="https://github.com/UnitVectorY-Labs/gcp-iam-catalog/actions/workflows/gcp-iam-catalog-crawl.yml">automatically refreshed</a> from the GCP IAM API every day.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 
     {{template "footer" .}}

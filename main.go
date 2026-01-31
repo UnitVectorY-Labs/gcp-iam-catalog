@@ -520,47 +520,6 @@ func generateHTML() error {
 	}
 	log.Printf("Generated Home Index at %s", homeIndexPath)
 
-	// Generate Compare Roles Page
-	type rolesWrapper struct {
-		Roles       []Role
-		LastCrawled string
-	}
-	compareRolesPath := filepath.Join(htmlDir, "compare-roles.html")
-	fCompareRoles, err := os.Create(compareRolesPath)
-	if err != nil {
-		return fmt.Errorf("failed to create compare-roles.html file: %v", err)
-	}
-	defer fCompareRoles.Close()
-
-	err = tmpl.ExecuteTemplate(fCompareRoles, "compare-roles.html", rolesWrapper{Roles: roles, LastCrawled: lastCrawled})
-	if err != nil {
-		return fmt.Errorf("failed to execute compare-roles template: %v", err)
-	}
-	log.Printf("Generated Compare Roles page at %s", compareRolesPath)
-
-	// NEW: Generate Compare Permissions Page (using a sorted list of all permissions)
-	var allPermissions []string
-	for p := range permissionIndex {
-		allPermissions = append(allPermissions, p)
-	}
-	sort.Strings(allPermissions)
-	type permissionsWrapper struct {
-		Permissions []string
-		LastCrawled string
-	}
-	comparePermsPath := filepath.Join(htmlDir, "compare-permissions.html")
-	fComparePerms, err := os.Create(comparePermsPath)
-	if err != nil {
-		return fmt.Errorf("failed to create compare-permissions.html file: %v", err)
-	}
-	defer fComparePerms.Close()
-
-	err = tmpl.ExecuteTemplate(fComparePerms, "compare-permissions.html", permissionsWrapper{Permissions: allPermissions, LastCrawled: lastCrawled})
-	if err != nil {
-		return fmt.Errorf("failed to execute compare-permissions template: %v", err)
-	}
-	log.Printf("Generated Compare Permissions page at %s", comparePermsPath)
-
 	// Generate sitemap.xml
 	if err := generateSitemap(htmlDir); err != nil {
 		log.Fatalf("Error generating sitemap.xml: %v", err)
