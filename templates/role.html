@@ -161,6 +161,8 @@
                 const response = await fetch('../roles-list.json');
                 if (response.ok) {
                     allRoles = await response.json();
+                } else {
+                    console.error('Failed to load roles list: HTTP', response.status);
                 }
             } catch (err) {
                 console.error('Error loading roles list:', err);

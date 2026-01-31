@@ -144,6 +144,8 @@
                 const response = await fetch('../permissions-list.json');
                 if (response.ok) {
                     allPermissions = await response.json();
+                } else {
+                    console.error('Failed to load permissions list: HTTP', response.status);
                 }
             } catch (err) {
                 console.error('Error loading permissions list:', err);
