@@ -262,13 +262,6 @@
             }
         }
 
-        // Helper to escape HTML special characters
-        function escapeHtml(text) {
-            const div = document.createElement('div');
-            div.textContent = text;
-            return div.innerHTML;
-        }
-
         function populateCompareList(elementId, items, baseUrl) {
             const container = document.getElementById(elementId);
             container.innerHTML = '';

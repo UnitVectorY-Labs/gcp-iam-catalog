@@ -260,8 +260,9 @@
                 const div = document.createElement('div');
                 div.className = 'compare-item';
                 const a = document.createElement('a');
-                const sanitized = item.replace('roles/', '');
-                a.href = baseUrl + encodeURIComponent(sanitized) + '.html';
+                // Remove 'roles/' prefix for the URL path
+                const roleShortName = item.replace('roles/', '');
+                a.href = baseUrl + encodeURIComponent(roleShortName) + '.html';
                 a.textContent = item;
                 div.appendChild(a);
                 container.appendChild(div);
