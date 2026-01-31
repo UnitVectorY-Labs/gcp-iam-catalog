@@ -151,6 +151,12 @@ ul.item-list li a:hover {
     opacity: 0.5;
 }
 
+/* Input error state */
+.input-error {
+    border-color: #ef4444 !important;
+    box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.1) !important;
+}
+
 /* ============================================
    HOME PAGE STYLES
    ============================================ */
@@ -185,6 +191,18 @@ ul.item-list li a:hover {
     display: inline-block;
 }
 
+.home-disclaimer {
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+    color: #666;
+    font-size: 0.9em;
+}
+
+.home-disclaimer p {
+    margin: 0;
+}
+
 .home-stats {
     display: flex;
     justify-content: center;
@@ -200,6 +218,15 @@ ul.item-list li a:hover {
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     min-width: 200px;
+    text-decoration: none;
+    transition: transform 0.2s, box-shadow 0.2s;
+    display: block;
+}
+
+.stat-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+    text-decoration: none;
 }
 
 .stat-card.roles {
@@ -442,6 +469,21 @@ ul.item-list li a:hover {
    DETAIL PAGE STYLES (Role/Permission)
    ============================================ */
 
+/* Colored header bar at top of detail pages */
+.detail-header-bar {
+    height: 6px;
+    margin: -25px -25px 20px -25px;
+    border-radius: 6px 6px 0 0;
+}
+
+.detail-header-bar.role-bar {
+    background: linear-gradient(90deg, var(--role-primary) 0%, var(--role-dark) 100%);
+}
+
+.detail-header-bar.permission-bar {
+    background: linear-gradient(90deg, var(--permission-primary) 0%, var(--permission-dark) 100%);
+}
+
 .detail-header {
     display: flex;
     align-items: center;
@@ -603,6 +645,7 @@ ul.item-list li a:hover {
 
 .compare-selector {
     margin-bottom: 25px;
+    position: relative;
 }
 
 .compare-selector label {
@@ -613,24 +656,66 @@ ul.item-list li a:hover {
 }
 
 .compare-input-wrapper {
-    display: flex;
-    gap: 10px;
-    align-items: center;
+    position: relative;
     max-width: 500px;
 }
 
-.compare-input-wrapper input {
-    flex: 1;
-    padding: 10px 12px;
+.compare-input-wrapper .search-input {
+    width: 100%;
+    padding: 10px 40px 10px 12px;
     border: 1px solid #d1d5db;
     border-radius: 6px;
     font-size: 1em;
 }
 
-.compare-input-wrapper input:focus {
+.compare-input-wrapper .search-input:focus {
     outline: none;
     border-color: var(--role-primary);
     box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.compare-input-wrapper .search-icon {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Suggestions dropdown */
+.suggestions-dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    max-width: 500px;
+    background: white;
+    border: 1px solid #d1d5db;
+    border-top: none;
+    border-radius: 0 0 6px 6px;
+    max-height: 300px;
+    overflow-y: auto;
+    z-index: 100;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.suggestion-item {
+    padding: 10px 15px;
+    cursor: pointer;
+    border-bottom: 1px solid #f3f4f6;
+    font-size: 0.95em;
+}
+
+.suggestion-item:last-child {
+    border-bottom: none;
+}
+
+.suggestion-item:hover {
+    background-color: var(--role-light);
+}
+
+.permission-detail .suggestion-item:hover {
+    background-color: var(--permission-light);
 }
 
 .compare-results {
@@ -696,6 +781,9 @@ ul.item-list li a:hover {
     padding: 8px 15px;
     border-bottom: 1px solid #f3f4f6;
     font-size: 0.9em;
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
 
 .compare-item:last-child {
@@ -703,12 +791,13 @@ ul.item-list li a:hover {
 }
 
 .compare-item a {
-    color: inherit;
+    color: #3b82f6;
     text-decoration: none;
 }
 
 .compare-item a:hover {
     text-decoration: underline;
+    color: #1e40af;
 }
 
 .compare-column.left .compare-item {
@@ -716,7 +805,7 @@ ul.item-list li a:hover {
 }
 
 .compare-column.left .compare-item:hover {
-    background: rgba(59, 130, 246, 0.05);
+    background: rgba(59, 130, 246, 0.08);
 }
 
 .compare-column.right .compare-item {
@@ -724,7 +813,7 @@ ul.item-list li a:hover {
 }
 
 .compare-column.right .compare-item:hover {
-    background: rgba(245, 158, 11, 0.05);
+    background: rgba(245, 158, 11, 0.08);
 }
 
 .compare-column.common .compare-item {
@@ -732,7 +821,7 @@ ul.item-list li a:hover {
 }
 
 .compare-column.common .compare-item:hover {
-    background: rgba(16, 185, 129, 0.05);
+    background: rgba(16, 185, 129, 0.08);
 }
 
 .compare-empty {
@@ -747,17 +836,25 @@ ul.item-list li a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px;
-    margin-bottom: 15px;
-    padding: 10px;
+    gap: 20px;
+    margin-bottom: 20px;
+    padding: 15px;
     background: #f9fafb;
-    border-radius: 6px;
+    border-radius: 8px;
+}
+
+.compare-visual-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
 }
 
 .compare-visual-segment {
-    height: 8px;
-    border-radius: 4px;
+    height: 12px;
+    border-radius: 6px;
     transition: width 0.3s;
+    min-width: 10px;
 }
 
 .compare-visual-segment.left {

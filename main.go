@@ -353,6 +353,38 @@ func generateHTML() error {
 		}
 	}
 
+	// Generate roles-list.json for client-side autocomplete
+	var roleNames []string
+	for _, role := range roles {
+		roleNames = append(roleNames, role.Name)
+	}
+	sort.Strings(roleNames)
+	rolesListPath := filepath.Join(htmlDir, "roles-list.json")
+	rolesListJSON, err := json.Marshal(roleNames)
+	if err != nil {
+		log.Printf("Failed to marshal roles list: %v", err)
+	} else if err := os.WriteFile(rolesListPath, rolesListJSON, 0644); err != nil {
+		log.Printf("Failed to write roles list: %v", err)
+	} else {
+		log.Printf("Generated roles list at %s", rolesListPath)
+	}
+
+	// Generate permissions-list.json for client-side autocomplete
+	var permissionNames []string
+	for perm := range permissionIndex {
+		permissionNames = append(permissionNames, perm)
+	}
+	sort.Strings(permissionNames)
+	permissionsListPath := filepath.Join(htmlDir, "permissions-list.json")
+	permissionsListJSON, err := json.Marshal(permissionNames)
+	if err != nil {
+		log.Printf("Failed to marshal permissions list: %v", err)
+	} else if err := os.WriteFile(permissionsListPath, permissionsListJSON, 0644); err != nil {
+		log.Printf("Failed to write permissions list: %v", err)
+	} else {
+		log.Printf("Generated permissions list at %s", permissionsListPath)
+	}
+
 	// Generate Role Pages
 	for _, role := range roles {
 		filename := strings.ReplaceAll(role.Name, "roles/", "") + ".html"

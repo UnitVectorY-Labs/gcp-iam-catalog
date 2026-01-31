@@ -17,6 +17,9 @@
 
     <main>
         <section class="permission-detail">
+            <!-- Colored header bar for permissions -->
+            <div class="detail-header-bar permission-bar"></div>
+            
             <!-- Header with icon and title -->
             <div class="detail-header">
                 <span class="detail-icon">🔑</span>
@@ -45,9 +48,8 @@
 
                 <!-- Details Tab -->
                 <div id="details-tab" class="tab-content active">
-                    <h2>Roles that grant this permission:</h2>
                     <div class="search-container">
-                        <input type="text" id="searchInput" onkeyup="filterList()" placeholder="Search for roles or titles...">
+                        <input type="text" id="searchInput" class="search-input" onkeyup="filterList()" placeholder="Search for roles...">
                         <span class="search-icon">&#128269;</span>
                     </div>
                     <div class="role-table">
@@ -76,22 +78,23 @@
                     <div class="compare-selector">
                         <label for="comparePermission">Compare with another permission:</label>
                         <div class="compare-input-wrapper">
-                            <input type="text" id="comparePermission" list="permissionsList" placeholder="Search for a permission..." oninput="doCompare()">
+                            <input type="text" id="comparePermission" class="search-input" placeholder="Type to search permissions..." autocomplete="off">
+                            <span class="search-icon">&#128269;</span>
                         </div>
-                        <datalist id="permissionsList"></datalist>
+                        <div id="permissionsSuggestions" class="suggestions-dropdown"></div>
                     </div>
 
                     <!-- Visual comparison bar -->
                     <div id="compareVisual" class="compare-visual" style="display: none;">
-                        <div>
+                        <div class="compare-visual-item">
                             <div class="compare-visual-segment left" id="leftBar"></div>
                             <div class="compare-visual-label" id="leftLabel"></div>
                         </div>
-                        <div>
+                        <div class="compare-visual-item">
                             <div class="compare-visual-segment common" id="commonBar"></div>
                             <div class="compare-visual-label" id="commonLabel"></div>
                         </div>
-                        <div>
+                        <div class="compare-visual-item">
                             <div class="compare-visual-segment right" id="rightBar"></div>
                             <div class="compare-visual-label" id="rightLabel"></div>
                         </div>
@@ -131,7 +134,21 @@
     <script>
         const currentPermission = '{{.Permission}}';
         const currentRoles = [{{range $i, $r := .Roles}}{{if $i}},{{end}}"{{$r.Name}}"{{end}}];
-        const MAX_BAR_WIDTH = 200; // Maximum width for visual comparison bars
+        const MAX_BAR_WIDTH = 200;
+        let allPermissions = [];
+        let selectedPermission = '';
+
+        // Load permissions list on page load
+        async function loadPermissionsList() {
+            try {
+                const response = await fetch('../permissions-list.json');
+                if (response.ok) {
+                    allPermissions = await response.json();
+                }
+            } catch (err) {
+                console.error('Error loading permissions list:', err);
+            }
+        }
 
         function copyPermission() {
             const permission = document.getElementById('permission-id').textContent.trim();
@@ -162,7 +179,6 @@
             if (tab === 'details') {
                 document.querySelector('.tab-button:first-child').classList.add('active');
                 document.getElementById('details-tab').classList.add('active');
-                // Remove compare query param from URL
                 const url = new URL(window.location);
                 url.searchParams.delete('compare');
                 window.history.replaceState({}, '', url);
@@ -172,10 +188,44 @@
             }
         }
 
-        async function doCompare() {
-            const compareInput = document.getElementById('comparePermission');
-            const otherPermission = compareInput.value.trim();
+        // Show suggestions dropdown
+        function showSuggestions(filter) {
+            const container = document.getElementById('permissionsSuggestions');
+            container.innerHTML = '';
             
+            if (!filter || filter.length < 2) {
+                container.style.display = 'none';
+                return;
+            }
+            
+            const matches = allPermissions.filter(perm => 
+                perm !== currentPermission && perm.toLowerCase().includes(filter.toLowerCase())
+            ).slice(0, 10);
+            
+            if (matches.length === 0) {
+                container.style.display = 'none';
+                return;
+            }
+            
+            matches.forEach(perm => {
+                const div = document.createElement('div');
+                div.className = 'suggestion-item';
+                div.textContent = perm;
+                div.onclick = () => selectPermission(perm);
+                container.appendChild(div);
+            });
+            
+            container.style.display = 'block';
+        }
+
+        function selectPermission(perm) {
+            document.getElementById('comparePermission').value = perm;
+            document.getElementById('permissionsSuggestions').style.display = 'none';
+            selectedPermission = perm;
+            doCompare(perm);
+        }
+
+        async function doCompare(otherPermission) {
             if (!otherPermission) {
                 document.getElementById('compareResults').style.display = 'none';
                 document.getElementById('compareVisual').style.display = 'none';
@@ -184,6 +234,8 @@
                 window.history.replaceState({}, '', url);
                 return;
             }
+
+            const compareInput = document.getElementById('comparePermission');
 
             try {
                 const filename = otherPermission.replace(/\//g, '-') + '.json';
@@ -211,9 +263,9 @@
                 document.getElementById('rightHeader').textContent = 'Only grant ' + otherPermission;
 
                 // Populate lists with role links
-                populateCompareList('leftList', onlyLeft, '../');
-                populateCompareList('commonList', common, '../');
-                populateCompareList('rightList', onlyRight, '../');
+                populateCompareList('leftList', onlyLeft, '../', 'role');
+                populateCompareList('commonList', common, '../', 'role');
+                populateCompareList('rightList', onlyRight, '../', 'role');
 
                 // Update counts
                 document.getElementById('leftCount').textContent = onlyLeft.length;
@@ -246,7 +298,7 @@
             }
         }
 
-        function populateCompareList(elementId, items, baseUrl) {
+        function populateCompareList(elementId, items, baseUrl, type) {
             const container = document.getElementById(elementId);
             container.innerHTML = '';
             if (items.length === 0) {
@@ -259,6 +311,9 @@
             items.forEach(item => {
                 const div = document.createElement('div');
                 div.className = 'compare-item';
+                const indicator = document.createElement('span');
+                indicator.className = type === 'role' ? 'role-indicator' : 'permission-indicator';
+                div.appendChild(indicator);
                 const a = document.createElement('a');
                 // Remove 'roles/' prefix for the URL path
                 const roleShortName = item.replace('roles/', '');
@@ -270,15 +325,31 @@
         }
 
         // Handle URL parameters on page load
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', async function() {
+            await loadPermissionsList();
+            
             const params = new URLSearchParams(window.location.search);
             const compareWith = params.get('compare');
             
             if (compareWith) {
                 switchTab('compare');
                 document.getElementById('comparePermission').value = compareWith;
-                doCompare();
+                selectedPermission = compareWith;
+                doCompare(compareWith);
             }
+            
+            // Setup input event for suggestions
+            const compareInput = document.getElementById('comparePermission');
+            compareInput.addEventListener('input', function() {
+                showSuggestions(this.value);
+            });
+            
+            // Hide suggestions when clicking outside
+            document.addEventListener('click', function(e) {
+                if (!e.target.closest('.compare-selector')) {
+                    document.getElementById('permissionsSuggestions').style.display = 'none';
+                }
+            });
         });
     </script>
 </body>

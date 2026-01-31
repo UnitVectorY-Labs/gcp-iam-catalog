@@ -20,19 +20,18 @@
         <div class="home-hero">
             <h1>GCP IAM Catalog</h1>
             <p class="subtitle">Explore and compare Google Cloud Platform IAM roles and permissions</p>
-            <span class="disclaimer">⚠️ This is an independent tool, not affiliated with or endorsed by Google</span>
         </div>
 
         <!-- Stats Cards -->
         <div class="home-stats">
-            <div class="stat-card roles">
+            <a href="roles.html" class="stat-card roles">
                 <div class="stat-number">{{.RoleCount | formatNumber}}</div>
                 <div class="stat-label">IAM Roles</div>
-            </div>
-            <div class="stat-card permissions">
+            </a>
+            <a href="permissions.html" class="stat-card permissions">
                 <div class="stat-number">{{.PermissionCount | formatNumber}}</div>
                 <div class="stat-label">Permissions</div>
-            </div>
+            </a>
         </div>
 
         <!-- Navigation Cards -->
@@ -51,7 +50,7 @@
 
         <!-- Features Section -->
         <div class="home-features">
-            <h2>Why use gcp-iam-catalog?</h2>
+            <h2>What can this site do for you?</h2>
             <div class="feature-grid">
                 <div class="feature-item">
                     <div class="feature-icon">📋</div>
@@ -82,6 +81,11 @@
                     </div>
                 </div>
             </div>
+        </div>
+
+        <!-- Disclaimer -->
+        <div class="home-disclaimer">
+            <p>⚠️ This is an independent tool, not affiliated with or endorsed by Google.</p>
         </div>
     </main>
 
