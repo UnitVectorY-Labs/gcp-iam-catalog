@@ -31,14 +31,16 @@
     <div class="navbar">
         <a href="index.html">gcp-iam-catalog</a>
         <a href="roles.html" class="active">Roles</a>
-        <a href="compare-roles.html">Compare Roles</a>
         <a href="permissions.html">Permissions</a>
-        <a href="compare-permissions.html">Compare Permissions</a>
     </div>
 
     <main>
-        <section class="roles">
-            <h1>GCP Roles</h1>
+        <section class="roles roles-page">
+            <div class="page-header">
+                <span class="page-header-icon">🔐</span>
+                <h1>GCP IAM Roles</h1>
+            </div>
+            <p class="muted-text">Browse all predefined GCP IAM roles. Click on a role to see its permissions and compare with other roles.</p>
             <div class="search-container">
                 <input type="text" id="searchInput" onkeyup="filterList()" placeholder="Search for roles or titles...">
                 <span class="search-icon">&#128269;</span>
@@ -51,6 +53,7 @@
                 {{range .Items}}
                     <div class="role-row" data-title="{{.Title}}">
                         <div class="role-name-cell">
+                            <span class="role-indicator"></span>
                             <a href="{{.Name}}.html" class="role-name">
                                 {{.Name}}
                             </a>
