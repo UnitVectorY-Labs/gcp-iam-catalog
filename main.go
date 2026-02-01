@@ -353,6 +353,38 @@ func generateHTML() error {
 		}
 	}
 
+	// Generate roles-list.json for client-side autocomplete
+	var roleNames []string
+	for _, role := range roles {
+		roleNames = append(roleNames, role.Name)
+	}
+	sort.Strings(roleNames)
+	rolesListPath := filepath.Join(htmlDir, "roles-list.json")
+	rolesListJSON, err := json.Marshal(roleNames)
+	if err != nil {
+		log.Printf("Failed to marshal roles list: %v", err)
+	} else if err := os.WriteFile(rolesListPath, rolesListJSON, 0644); err != nil {
+		log.Printf("Failed to write roles list: %v", err)
+	} else {
+		log.Printf("Generated roles list at %s", rolesListPath)
+	}
+
+	// Generate permissions-list.json for client-side autocomplete
+	var permissionNames []string
+	for perm := range permissionIndex {
+		permissionNames = append(permissionNames, perm)
+	}
+	sort.Strings(permissionNames)
+	permissionsListPath := filepath.Join(htmlDir, "permissions-list.json")
+	permissionsListJSON, err := json.Marshal(permissionNames)
+	if err != nil {
+		log.Printf("Failed to marshal permissions list: %v", err)
+	} else if err := os.WriteFile(permissionsListPath, permissionsListJSON, 0644); err != nil {
+		log.Printf("Failed to write permissions list: %v", err)
+	} else {
+		log.Printf("Generated permissions list at %s", permissionsListPath)
+	}
+
 	// Generate Role Pages
 	for _, role := range roles {
 		filename := strings.ReplaceAll(role.Name, "roles/", "") + ".html"
@@ -519,47 +551,6 @@ func generateHTML() error {
 		return fmt.Errorf("failed to execute home template: %v", err)
 	}
 	log.Printf("Generated Home Index at %s", homeIndexPath)
-
-	// Generate Compare Roles Page
-	type rolesWrapper struct {
-		Roles       []Role
-		LastCrawled string
-	}
-	compareRolesPath := filepath.Join(htmlDir, "compare-roles.html")
-	fCompareRoles, err := os.Create(compareRolesPath)
-	if err != nil {
-		return fmt.Errorf("failed to create compare-roles.html file: %v", err)
-	}
-	defer fCompareRoles.Close()
-
-	err = tmpl.ExecuteTemplate(fCompareRoles, "compare-roles.html", rolesWrapper{Roles: roles, LastCrawled: lastCrawled})
-	if err != nil {
-		return fmt.Errorf("failed to execute compare-roles template: %v", err)
-	}
-	log.Printf("Generated Compare Roles page at %s", compareRolesPath)
-
-	// NEW: Generate Compare Permissions Page (using a sorted list of all permissions)
-	var allPermissions []string
-	for p := range permissionIndex {
-		allPermissions = append(allPermissions, p)
-	}
-	sort.Strings(allPermissions)
-	type permissionsWrapper struct {
-		Permissions []string
-		LastCrawled string
-	}
-	comparePermsPath := filepath.Join(htmlDir, "compare-permissions.html")
-	fComparePerms, err := os.Create(comparePermsPath)
-	if err != nil {
-		return fmt.Errorf("failed to create compare-permissions.html file: %v", err)
-	}
-	defer fComparePerms.Close()
-
-	err = tmpl.ExecuteTemplate(fComparePerms, "compare-permissions.html", permissionsWrapper{Permissions: allPermissions, LastCrawled: lastCrawled})
-	if err != nil {
-		return fmt.Errorf("failed to execute compare-permissions template: %v", err)
-	}
-	log.Printf("Generated Compare Permissions page at %s", comparePermsPath)
 
 	// Generate sitemap.xml
 	if err := generateSitemap(htmlDir); err != nil {

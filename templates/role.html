@@ -12,35 +12,136 @@
     <div class="navbar">
         <a href="../index.html">gcp-iam-catalog</a>
         <a href="../roles.html" class="active">Roles</a>
-        <a href="../compare-roles.html">Compare Roles</a>
         <a href="../permissions.html">Permissions</a>
-        <a href="../compare-permissions.html">Compare Permissions</a>
     </div>
 
     <main>
         <section class="role-detail">
-            <h1 class="role-name">
-                <span id="role-id">{{.Name}}</span>
-                <button class="copy-button" onclick="copyRole()" aria-label="Copy Role">📋 Copy</button>
-            </h1>
-            <p><strong>Title:</strong> {{.Title}}</p>
-            <p><strong>Description:</strong> {{.Description}}</p>
-            <p><strong>Stage:</strong> {{.Stage}}</p>
-            <p><strong>Role Type:</strong> {{classifyRole .Name}}</p>
+            <!-- Colored header bar for roles -->
+            <div class="detail-header-bar role-bar"></div>
             
-            <h2>{{.PermissionCount | formatNumber}} Assigned Permissions:</h2>
-            <div class="search-container">
-                <input type="text" id="searchInput" onkeyup="filterList()" placeholder="Search permissions...">
-                <span class="search-icon">&#128269;</span>
+            <!-- Header with icon and title -->
+            <div class="detail-header">
+                <span class="detail-icon">🔐</span>
+                <div class="detail-title">
+                    <h1>
+                        <span id="role-id">{{.Name}}</span>
+                        <button class="copy-button" onclick="copyRole()" aria-label="Copy Role">📋 Copy</button>
+                    </h1>
+                </div>
             </div>
-            <div class="role-table">
-                {{range .IncludedPermissions}}
-                    <div class="role-row" data-title="{{.}}">
-                        <div class="role-name-cell">
-                            <a href="../permissions/{{.}}.html" class="permission-name">{{.}}</a>
+
+            <!-- Metadata grid -->
+            <div class="detail-meta">
+                <div class="meta-item">
+                    <span class="meta-label">Title</span>
+                    <span class="meta-value">{{.Title}}</span>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-label">Stage</span>
+                    <span class="meta-value">{{.Stage}}</span>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-label">Role Type</span>
+                    <span class="meta-value">
+                        {{$roleType := classifyRole .Name}}
+                        {{if eq $roleType "Basic"}}
+                            <span class="role-type-badge basic">{{$roleType}}</span>
+                        {{else if eq $roleType "Service Agent"}}
+                            <span class="role-type-badge service-agent">{{$roleType}}</span>
+                        {{else}}
+                            <span class="role-type-badge predefined">{{$roleType}}</span>
+                        {{end}}
+                    </span>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-label">Permissions</span>
+                    <span class="meta-value">{{.PermissionCount | formatNumber}}</span>
+                </div>
+            </div>
+
+            <div class="meta-item" style="margin-bottom: 20px;">
+                <span class="meta-label">Description</span>
+                <span class="meta-value">{{.Description}}</span>
+            </div>
+
+            <!-- Tabs -->
+            <div class="tabs-container">
+                <div class="tab-buttons">
+                    <button class="tab-button active" onclick="switchTab('details')">Permissions</button>
+                    <button class="tab-button" onclick="switchTab('compare')">Compare</button>
+                </div>
+
+                <!-- Details Tab -->
+                <div id="details-tab" class="tab-content active">
+                    <div class="search-container">
+                        <input type="text" id="searchInput" class="search-input" onkeyup="filterList()" placeholder="Search permissions...">
+                        <span class="search-icon">&#128269;</span>
+                    </div>
+                    <div class="role-table">
+                        {{range .IncludedPermissions}}
+                            <div class="role-row" data-title="{{.}}">
+                                <div class="role-name-cell">
+                                    <span class="permission-indicator"></span>
+                                    <a href="../permissions/{{.}}.html" class="permission-name">{{.}}</a>
+                                </div>
+                            </div>
+                        {{end}}
+                    </div>
+                </div>
+
+                <!-- Compare Tab -->
+                <div id="compare-tab" class="tab-content">
+                    <div class="compare-selector">
+                        <label for="compareRole">Compare with another role:</label>
+                        <div class="compare-input-wrapper">
+                            <input type="text" id="compareRole" class="search-input" placeholder="Type to search roles..." autocomplete="off">
+                            <span class="search-icon">&#128269;</span>
+                        </div>
+                        <div id="rolesSuggestions" class="suggestions-dropdown"></div>
+                    </div>
+
+                    <!-- Visual comparison bar -->
+                    <div id="compareVisual" class="compare-visual" style="display: none;">
+                        <div class="compare-visual-item">
+                            <div class="compare-visual-segment left" id="leftBar"></div>
+                            <div class="compare-visual-label" id="leftLabel"></div>
+                        </div>
+                        <div class="compare-visual-item">
+                            <div class="compare-visual-segment common" id="commonBar"></div>
+                            <div class="compare-visual-label" id="commonLabel"></div>
+                        </div>
+                        <div class="compare-visual-item">
+                            <div class="compare-visual-segment right" id="rightBar"></div>
+                            <div class="compare-visual-label" id="rightLabel"></div>
                         </div>
                     </div>
-                {{end}}
+
+                    <!-- Comparison results -->
+                    <div class="compare-results" id="compareResults" style="display: none;">
+                        <div class="compare-column left">
+                            <div class="compare-column-header">
+                                <span class="compare-header-title">{{.Name}}</span>
+                                <span class="compare-count" id="leftCount">0</span>
+                            </div>
+                            <div class="compare-column-content" id="leftList"></div>
+                        </div>
+                        <div class="compare-column common">
+                            <div class="compare-column-header">
+                                <span class="compare-header-title">Shared</span>
+                                <span class="compare-count" id="commonCount">0</span>
+                            </div>
+                            <div class="compare-column-content" id="commonList"></div>
+                        </div>
+                        <div class="compare-column right">
+                            <div class="compare-column-header">
+                                <span class="compare-header-title" id="rightHeader">Other role</span>
+                                <span class="compare-count" id="rightCount">0</span>
+                            </div>
+                            <div class="compare-column-content" id="rightList"></div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
@@ -48,18 +149,35 @@
     {{template "footer" .}}
 
     <script>
+        const currentRole = '{{.Name}}';
+        const currentPermissions = [{{range $i, $p := .IncludedPermissions}}{{if $i}},{{end}}"{{$p}}"{{end}}];
+        const MAX_BAR_WIDTH = 200;
+        let allRoles = [];
+        let selectedRole = '';
+
+        // Load roles list on page load
+        async function loadRolesList() {
+            try {
+                const response = await fetch('../roles-list.json');
+                if (response.ok) {
+                    allRoles = await response.json();
+                } else {
+                    console.error('Failed to load roles list: HTTP', response.status);
+                }
+            } catch (err) {
+                console.error('Error loading roles list:', err);
+            }
+        }
+
         function copyRole() {
-            const permission = document.getElementById('role-id').textContent.trim();
-            navigator.clipboard.writeText(permission)
-                .catch(err => {
-                    console.error('Error copying text: ', err);
-                });
+            const role = document.getElementById('role-id').textContent.trim();
+            navigator.clipboard.writeText(role).catch(err => console.error('Error copying text: ', err));
         }
 
         function filterList() {
             const input = document.getElementById('searchInput');
             const filter = input.value.toLowerCase();
-            const rows = document.querySelectorAll('.role-table .role-row');
+            const rows = document.querySelectorAll('#details-tab .role-table .role-row');
 
             rows.forEach(row => {
                 const title = (row.getAttribute('data-title') || '').toLowerCase();
@@ -72,6 +190,201 @@
                 }
             });
         }
+
+        function switchTab(tab) {
+            document.querySelectorAll('.tab-button').forEach(btn => btn.classList.remove('active'));
+            document.querySelectorAll('.tab-content').forEach(content => content.classList.remove('active'));
+            
+            if (tab === 'details') {
+                document.querySelector('.tab-button:first-child').classList.add('active');
+                document.getElementById('details-tab').classList.add('active');
+                const url = new URL(window.location);
+                url.searchParams.delete('compare');
+                window.history.replaceState({}, '', url);
+            } else {
+                document.querySelector('.tab-button:last-child').classList.add('active');
+                document.getElementById('compare-tab').classList.add('active');
+            }
+        }
+
+        // Show suggestions dropdown
+        function showSuggestions(filter) {
+            const container = document.getElementById('rolesSuggestions');
+            container.innerHTML = '';
+            
+            if (!filter || filter.length < 2) {
+                container.style.display = 'none';
+                return;
+            }
+            
+            const lowerFilter = filter.toLowerCase();
+            
+            // Get all matches
+            const allMatches = allRoles.filter(role => 
+                role !== currentRole && role.toLowerCase().includes(lowerFilter)
+            );
+            
+            // Sort: prioritize roles where the name after "roles/" starts with the filter
+            allMatches.sort((a, b) => {
+                const aName = a.replace('roles/', '').toLowerCase();
+                const bName = b.replace('roles/', '').toLowerCase();
+                const aStartsWith = aName.startsWith(lowerFilter) || a.toLowerCase().startsWith(lowerFilter);
+                const bStartsWith = bName.startsWith(lowerFilter) || b.toLowerCase().startsWith(lowerFilter);
+                
+                if (aStartsWith && !bStartsWith) return -1;
+                if (!aStartsWith && bStartsWith) return 1;
+                return a.localeCompare(b);
+            });
+            
+            const matches = allMatches.slice(0, 50);
+            
+            if (matches.length === 0) {
+                container.style.display = 'none';
+                return;
+            }
+            
+            matches.forEach(role => {
+                const div = document.createElement('div');
+                div.className = 'suggestion-item';
+                div.textContent = role;
+                div.onclick = () => selectRole(role);
+                container.appendChild(div);
+            });
+            
+            container.style.display = 'block';
+        }
+
+        function selectRole(role) {
+            document.getElementById('compareRole').value = role;
+            document.getElementById('rolesSuggestions').style.display = 'none';
+            selectedRole = role;
+            doCompare(role);
+        }
+
+        async function doCompare(otherRole) {
+            if (!otherRole) {
+                document.getElementById('compareResults').style.display = 'none';
+                document.getElementById('compareVisual').style.display = 'none';
+                const url = new URL(window.location);
+                url.searchParams.delete('compare');
+                window.history.replaceState({}, '', url);
+                return;
+            }
+
+            const compareInput = document.getElementById('compareRole');
+
+            try {
+                const filename = otherRole.replace(/\//g, '-') + '.json';
+                const response = await fetch('../rolesdata/' + filename);
+                if (!response.ok) {
+                    compareInput.classList.add('input-error');
+                    return;
+                }
+                compareInput.classList.remove('input-error');
+                
+                const otherData = await response.json();
+                const otherPerms = new Set(otherData.included_permissions || []);
+                const currentPerms = new Set(currentPermissions);
+
+                const onlyLeft = currentPermissions.filter(p => !otherPerms.has(p)).sort();
+                const onlyRight = Array.from(otherPerms).filter(p => !currentPerms.has(p)).sort();
+                const common = currentPermissions.filter(p => otherPerms.has(p)).sort();
+
+                // Update URL with compare parameter
+                const url = new URL(window.location);
+                url.searchParams.set('compare', otherRole);
+                window.history.replaceState({}, '', url);
+
+                // Update header
+                document.getElementById('rightHeader').textContent = otherRole;
+
+                // Populate lists
+                populateCompareList('leftList', onlyLeft, '../permissions/', 'permission');
+                populateCompareList('commonList', common, '../permissions/', 'permission');
+                populateCompareList('rightList', onlyRight, '../permissions/', 'permission');
+
+                // Update counts
+                document.getElementById('leftCount').textContent = onlyLeft.length;
+                document.getElementById('commonCount').textContent = common.length;
+                document.getElementById('rightCount').textContent = onlyRight.length;
+
+                // Update visual bar
+                const total = onlyLeft.length + common.length + onlyRight.length;
+                if (total > 0) {
+                    const MIN_BAR_WIDTH = 10;
+                    const leftWidth = Math.max((onlyLeft.length / total) * MAX_BAR_WIDTH, MIN_BAR_WIDTH);
+                    const commonWidth = Math.max((common.length / total) * MAX_BAR_WIDTH, MIN_BAR_WIDTH);
+                    const rightWidth = Math.max((onlyRight.length / total) * MAX_BAR_WIDTH, MIN_BAR_WIDTH);
+                    
+                    document.getElementById('leftBar').style.width = leftWidth + 'px';
+                    document.getElementById('commonBar').style.width = commonWidth + 'px';
+                    document.getElementById('rightBar').style.width = rightWidth + 'px';
+                    
+                    document.getElementById('leftLabel').textContent = onlyLeft.length + ' unique';
+                    document.getElementById('commonLabel').textContent = common.length + ' shared';
+                    document.getElementById('rightLabel').textContent = onlyRight.length + ' unique';
+                    
+                    document.getElementById('compareVisual').style.display = 'flex';
+                }
+
+                document.getElementById('compareResults').style.display = 'grid';
+            } catch (err) {
+                console.error('Error comparing roles:', err);
+                compareInput.classList.add('input-error');
+            }
+        }
+
+        function populateCompareList(elementId, items, baseUrl, type) {
+            const container = document.getElementById(elementId);
+            container.innerHTML = '';
+            if (items.length === 0) {
+                const emptyDiv = document.createElement('div');
+                emptyDiv.className = 'compare-empty';
+                emptyDiv.textContent = 'No items';
+                container.appendChild(emptyDiv);
+                return;
+            }
+            items.forEach(item => {
+                const div = document.createElement('div');
+                div.className = 'compare-item';
+                const indicator = document.createElement('span');
+                indicator.className = type === 'permission' ? 'permission-indicator' : 'role-indicator';
+                div.appendChild(indicator);
+                const a = document.createElement('a');
+                a.href = baseUrl + encodeURIComponent(item) + '.html';
+                a.textContent = item;
+                div.appendChild(a);
+                container.appendChild(div);
+            });
+        }
+
+        // Handle URL parameters on page load
+        document.addEventListener('DOMContentLoaded', async function() {
+            await loadRolesList();
+            
+            const params = new URLSearchParams(window.location.search);
+            const compareWith = params.get('compare');
+            
+            if (compareWith) {
+                switchTab('compare');
+                document.getElementById('compareRole').value = compareWith;
+                selectedRole = compareWith;
+                doCompare(compareWith);
+            }
+            
+            // Setup input event for suggestions
+            const compareInput = document.getElementById('compareRole');
+            compareInput.addEventListener('input', function() {
+                showSuggestions(this.value);
+            });
+            
+            // Hide suggestions when clicking outside
+            document.addEventListener('click', function(e) {
+                if (!e.target.closest('.compare-selector')) {
+                    document.getElementById('rolesSuggestions').style.display = 'none';
+                }
+            });
+        });
     </script>
 </body>
 </html>
