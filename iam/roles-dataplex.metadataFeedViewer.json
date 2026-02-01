@@ -1,0 +1,13 @@
+{
+  "name": "roles/dataplex.metadataFeedViewer",
+  "title": "Dataplex Metadata Feed Viewer",
+  "description": "Read access to Metadata Feed resources.",
+  "included_permissions": [
+    "dataplex.metadataFeeds.get",
+    "dataplex.metadataFeeds.list",
+    "dataplex.operations.get",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

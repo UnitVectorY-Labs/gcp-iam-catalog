@@ -1,0 +1,16 @@
+{
+  "name": "roles/dataplex.metadataFeedOwner",
+  "title": "Dataplex Metadata Feed Owner",
+  "description": "Grants access to creating and managing Metadata Feeds. Does not give the right to create/modify Entry Groups.",
+  "included_permissions": [
+    "dataplex.metadataFeeds.create",
+    "dataplex.metadataFeeds.delete",
+    "dataplex.metadataFeeds.get",
+    "dataplex.metadataFeeds.list",
+    "dataplex.metadataFeeds.update",
+    "dataplex.operations.get",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

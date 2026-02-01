@@ -78,6 +78,7 @@
     "cloudkms.operations.get",
     "cloudkms.projects.showEffectiveAutokeyConfig",
     "composer.environments.get",
+    "compute.images.create",
     "container.apiServices.create",
     "container.apiServices.delete",
     "container.apiServices.get",

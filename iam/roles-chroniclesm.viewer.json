@@ -6,7 +6,8 @@
     "chroniclesm.gcpAssociations.get",
     "chroniclesm.gcpAssociations.list",
     "chroniclesm.gcpLogFlowFilters.get",
-    "chroniclesm.gcpSettings.get"
+    "chroniclesm.gcpSettings.get",
+    "chroniclesm.soarRoleScripts.list"
   ],
   "stage": "GA"
 }
