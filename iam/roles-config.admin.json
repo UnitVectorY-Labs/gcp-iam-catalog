@@ -4,6 +4,8 @@
   "description": "Full access to Cloud Infrastructure Manager resources.",
   "included_permissions": [
     "config.artifacts.import",
+    "config.automigrationconfig.get",
+    "config.automigrationconfig.update",
     "config.deployments.create",
     "config.deployments.delete",
     "config.deployments.deleteState",
