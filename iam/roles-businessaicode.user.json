@@ -1,0 +1,15 @@
+{
+  "name": "roles/businessaicode.user",
+  "title": "User role for Business AI Code API",
+  "description": "A user who can use Business AI Code API",
+  "included_permissions": [
+    "businessaicode.locations.generateContent",
+    "businessaicode.locations.queryConfiguration",
+    "businessaicode.locations.sendTelemetry",
+    "cloudaicompanion.instances.exportMetrics",
+    "cloudaicompanion.instances.queryEffectiveSetting",
+    "cloudaicompanion.instances.queryEffectiveSettingBindings",
+    "cloudaicompanion.licenses.selfAssign"
+  ],
+  "stage": "BETA"
+}

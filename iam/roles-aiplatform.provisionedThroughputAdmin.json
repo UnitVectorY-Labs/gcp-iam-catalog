@@ -9,6 +9,7 @@
     "aiplatform.provisionedThroughputs.create",
     "aiplatform.provisionedThroughputs.get",
     "aiplatform.provisionedThroughputs.list",
+    "aiplatform.provisionedThroughputs.split",
     "aiplatform.provisionedThroughputs.update"
   ],
   "stage": "BETA"

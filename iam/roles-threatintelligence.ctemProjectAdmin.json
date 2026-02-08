@@ -1,0 +1,10 @@
+{
+  "name": "roles/threatintelligence.ctemProjectAdmin",
+  "title": "CTEM Project Admin",
+  "description": "CTEM Project Admin",
+  "included_permissions": [
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": ""
+}

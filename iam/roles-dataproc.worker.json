@@ -26,7 +26,6 @@
     "dataprocrm.nodes.heartbeat",
     "dataprocrm.nodes.list",
     "dataprocrm.nodes.mintOAuthToken",
-    "dataprocrm.operations.get",
     "logging.logEntries.create",
     "logging.logEntries.route",
     "monitoring.metricDescriptors.create",

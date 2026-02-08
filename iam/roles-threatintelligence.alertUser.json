@@ -1,0 +1,10 @@
+{
+  "name": "roles/threatintelligence.alertUser",
+  "title": "GTI Alert User",
+  "description": "This role can view and edit properties of resources, except for editing configurations and exporting alerts.",
+  "included_permissions": [
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": ""
+}

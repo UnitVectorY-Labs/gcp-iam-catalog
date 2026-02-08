@@ -1,0 +1,15 @@
+{
+  "name": "roles/threatintelligence.ctemViewer",
+  "title": "CTEM Viewer",
+  "description": "This role can view all resources.",
+  "included_permissions": [
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list",
+    "threatintelligence.configurations.get",
+    "threatintelligence.configurations.list",
+    "threatintelligence.configurations.listRevisions",
+    "threatintelligence.findings.get",
+    "threatintelligence.findings.list"
+  ],
+  "stage": "BETA"
+}
