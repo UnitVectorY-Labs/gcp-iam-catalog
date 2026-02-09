@@ -12,7 +12,8 @@
     "dataprocrm.nodePools.get",
     "dataprocrm.nodePools.list",
     "dataprocrm.nodePools.resize",
-    "dataprocrm.nodes.list"
+    "dataprocrm.nodes.list",
+    "dataprocrm.operations.get"
   ],
   "stage": "GA"
 }

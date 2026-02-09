@@ -231,5 +231,5 @@
     "networkservices.wasmPlugins.list",
     "serviceusage.services.use"
   ],
-  "stage": ""
+  "stage": "GA"
 }
