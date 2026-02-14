@@ -7,7 +7,8 @@
     "apphub.services.get",
     "apphub.services.list",
     "apphub.workloads.get",
-    "apphub.workloads.list"
+    "apphub.workloads.list",
+    "developerconnect.operations.get"
   ],
   "stage": "GA"
 }
