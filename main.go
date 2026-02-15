@@ -11,6 +11,7 @@ import (
 	"log"
 	"os"
 	"path/filepath"
+	"slices"
 	"sort"
 	"strings"
 	"time"
@@ -65,10 +66,8 @@ func classifyRoleType(roleName string) string {
 		"roles/browser",
 	}
 
-	for _, basicRole := range basicRoles {
-		if roleName == basicRole {
-			return "Basic"
-		}
+	if slices.Contains(basicRoles, roleName) {
+		return "Basic"
 	}
 
 	// Service Agent roles - check if name ends with "serviceAgent" (case insensitive)
