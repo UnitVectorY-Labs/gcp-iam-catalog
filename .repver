@@ -1,9 +1,13 @@
 # https://github.com/UnitVectorY-Labs/repver
 commands:
  - name: "goversion"
+   params:
+   - name: "version"
+     pattern: "^(?P<major>0|[1-9]\\d*)\\.(?P<minor>0|[1-9]\\d*)\\.(?P<patch>0|[1-9]\\d*)$"
    targets:
    - path: "go.mod"
      pattern: "^go (?P<version>.*) // GOVERSION$"
+     transform: "{{major}}.{{minor}}"
    - path: ".github/workflows/build-go.yml"
      pattern: "^          go-version: '(?P<version>.*)' # GOVERSION$"
    - path: ".github/workflows/gcp-iam-catalog-crawl.yml"
@@ -12,7 +16,7 @@ commands:
      pattern: "^          go-version: '(?P<version>.*)' # GOVERSION$"
    git:
      create_branch: true
-     branch_name : "go-v{{version}}"
+     branch_name: "repver/go-v{{version}}"
      commit: true
      commit_message: "Update Go version to {{version}}"
      push: true
