@@ -3,6 +3,13 @@
   "title": "Agent Admin",
   "description": "Grants admin-level access to Agent resources.",
   "included_permissions": [
+    "discoveryengine.agentFiles.delete",
+    "discoveryengine.agentFiles.download",
+    "discoveryengine.agentFiles.import",
+    "discoveryengine.agentFiles.list",
+    "discoveryengine.agentFiles.upload",
+    "discoveryengine.agentIamProposals.get",
+    "discoveryengine.agentIamProposals.list",
     "discoveryengine.agents.create",
     "discoveryengine.agents.delete",
     "discoveryengine.agents.get",
