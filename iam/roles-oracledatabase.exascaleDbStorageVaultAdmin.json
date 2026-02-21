@@ -1,7 +1,7 @@
 {
   "name": "roles/oracledatabase.exascaleDbStorageVaultAdmin",
-  "title": "Oracle Database@Google Cloud Exadata Database Service on Exascale Infrastracture Storage Vault Admin",
-  "description": "Grants full access to manage all Exadata Database Service on Exascale Infrastracture Storage Vault resources.",
+  "title": "Oracle Database@Google Cloud Exadata Database Service on Exascale Infrastructure Storage Vault Admin",
+  "description": "Grants full access to manage all Exadata Database Service on Exascale Infrastructure Storage Vault resources.",
   "included_permissions": [
     "oracledatabase.dbNodes.list",
     "oracledatabase.dbSystemShapes.list",

@@ -1,0 +1,7 @@
+{
+  "name": "roles/agentregistry.editor",
+  "title": "Agent Registry API Editor",
+  "description": "Edit access to Agent Registry API resources.",
+  "included_permissions": null,
+  "stage": ""
+}

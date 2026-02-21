@@ -1,0 +1,14 @@
+{
+  "name": "roles/oracledatabase.goldenGateDeploymentViewer",
+  "title": "Oracle Database@Google Cloud GoldenGate Deployment Viewer",
+  "description": "Grants read access to see all GoldenGate Deployment resources.",
+  "included_permissions": [
+    "oracledatabase.locations.get",
+    "oracledatabase.locations.list",
+    "oracledatabase.operations.get",
+    "oracledatabase.operations.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": ""
+}

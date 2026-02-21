@@ -1,0 +1,14 @@
+{
+  "name": "roles/oracledatabase.goldenGateConnectionsUser",
+  "title": "Oracle Database@Google GoldenGate Connections User",
+  "description": "Grants use access to GoldenGate Connections resources.",
+  "included_permissions": [
+    "oracledatabase.locations.get",
+    "oracledatabase.locations.list",
+    "oracledatabase.operations.get",
+    "oracledatabase.operations.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": ""
+}

@@ -1,0 +1,14 @@
+{
+  "name": "roles/oracledatabase.goldenGateConnectionViewer",
+  "title": "Oracle Database@Google Cloud GoldenGate Connection Viewer",
+  "description": "Grants read access to see all GoldenGate Connection resources.",
+  "included_permissions": [
+    "oracledatabase.locations.get",
+    "oracledatabase.locations.list",
+    "oracledatabase.operations.get",
+    "oracledatabase.operations.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": ""
+}

@@ -5,7 +5,6 @@
   "included_permissions": [
     "iam.googleapis.com/workforcePoolProviderKeys.get",
     "iam.googleapis.com/workforcePoolProviderKeys.list",
-    "iam.googleapis.com/workforcePoolProviders.computeUserAttributes",
     "iam.googleapis.com/workforcePoolProviders.create",
     "iam.googleapis.com/workforcePoolProviders.delete",
     "iam.googleapis.com/workforcePoolProviders.get",

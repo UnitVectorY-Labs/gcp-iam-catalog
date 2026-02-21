@@ -1,0 +1,20 @@
+{
+  "name": "roles/agentregistry.viewer",
+  "title": "Agent Registry API Viewer",
+  "description": "Readonly access to Agent Registry API resources.",
+  "included_permissions": [
+    "agentregistry.agents.get",
+    "agentregistry.agents.list",
+    "agentregistry.endpoints.get",
+    "agentregistry.endpoints.list",
+    "agentregistry.locations.get",
+    "agentregistry.locations.list",
+    "agentregistry.mcpServers.get",
+    "agentregistry.mcpServers.list",
+    "agentregistry.operations.get",
+    "agentregistry.operations.list",
+    "agentregistry.services.get",
+    "agentregistry.services.list"
+  ],
+  "stage": "BETA"
+}

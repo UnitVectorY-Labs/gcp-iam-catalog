@@ -1,0 +1,23 @@
+{
+  "name": "roles/oracledatabase.goldenGateConnectionAdmin",
+  "title": "Oracle Database@Google Cloud GoldenGate Connection Admin",
+  "description": "Grants full access to manage all GoldenGate Connection resources.",
+  "included_permissions": [
+    "oracledatabase.entitlements.list",
+    "oracledatabase.goldenGateConnectionTypes.list",
+    "oracledatabase.goldenGateConnections.create",
+    "oracledatabase.goldenGateConnections.delete",
+    "oracledatabase.goldenGateConnections.get",
+    "oracledatabase.goldenGateConnections.list",
+    "oracledatabase.locations.get",
+    "oracledatabase.locations.list",
+    "oracledatabase.odbSubnets.get",
+    "oracledatabase.odbSubnets.list",
+    "oracledatabase.odbSubnets.use",
+    "oracledatabase.operations.get",
+    "oracledatabase.operations.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}
