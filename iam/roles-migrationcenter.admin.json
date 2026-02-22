@@ -3,7 +3,6 @@
   "title": "Migration Center Admin",
   "description": "Full access to Migration Center all resources.",
   "included_permissions": [
-    "migrationcenter.assets.create",
     "migrationcenter.assets.delete",
     "migrationcenter.assets.get",
     "migrationcenter.assets.list",

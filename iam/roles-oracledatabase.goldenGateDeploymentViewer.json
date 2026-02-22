@@ -3,6 +3,8 @@
   "title": "Oracle Database@Google Cloud GoldenGate Deployment Viewer",
   "description": "Grants read access to see all GoldenGate Deployment resources.",
   "included_permissions": [
+    "oracledatabase.goldenGateDeployments.get",
+    "oracledatabase.goldenGateDeployments.list",
     "oracledatabase.locations.get",
     "oracledatabase.locations.list",
     "oracledatabase.operations.get",
@@ -10,5 +12,5 @@
     "resourcemanager.projects.get",
     "resourcemanager.projects.list"
   ],
-  "stage": ""
+  "stage": "GA"
 }

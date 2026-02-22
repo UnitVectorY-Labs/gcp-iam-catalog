@@ -3,6 +3,9 @@
   "title": "Oracle Database@Google GoldenGate Deployments User",
   "description": "Grants use access to GoldenGate Deployments resources.",
   "included_permissions": [
+    "oracledatabase.goldenGateDeployments.get",
+    "oracledatabase.goldenGateDeployments.list",
+    "oracledatabase.goldenGateDeployments.use",
     "oracledatabase.locations.get",
     "oracledatabase.locations.list",
     "oracledatabase.operations.get",
@@ -10,5 +13,5 @@
     "resourcemanager.projects.get",
     "resourcemanager.projects.list"
   ],
-  "stage": ""
+  "stage": "GA"
 }

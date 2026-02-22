@@ -3,6 +3,7 @@
   "title": "Chronicle Service Viewer",
   "description": "Viewers can see Chronicle service details but not change them.",
   "included_permissions": [
+    "chroniclesm.contracts.get",
     "chroniclesm.gcpAssociations.get",
     "chroniclesm.gcpAssociations.list",
     "chroniclesm.gcpLogFlowFilters.get",

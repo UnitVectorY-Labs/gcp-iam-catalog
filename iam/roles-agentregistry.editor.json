@@ -2,6 +2,24 @@
   "name": "roles/agentregistry.editor",
   "title": "Agent Registry API Editor",
   "description": "Edit access to Agent Registry API resources.",
-  "included_permissions": null,
-  "stage": ""
+  "included_permissions": [
+    "agentregistry.agents.get",
+    "agentregistry.agents.list",
+    "agentregistry.endpoints.get",
+    "agentregistry.endpoints.list",
+    "agentregistry.locations.get",
+    "agentregistry.locations.list",
+    "agentregistry.mcpServers.get",
+    "agentregistry.mcpServers.list",
+    "agentregistry.operations.cancel",
+    "agentregistry.operations.delete",
+    "agentregistry.operations.get",
+    "agentregistry.operations.list",
+    "agentregistry.services.create",
+    "agentregistry.services.delete",
+    "agentregistry.services.get",
+    "agentregistry.services.list",
+    "agentregistry.services.update"
+  ],
+  "stage": "BETA"
 }

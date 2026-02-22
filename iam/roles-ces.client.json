@@ -7,5 +7,5 @@
     "ces.sessions.runSession",
     "ces.tools.execute"
   ],
-  "stage": "BETA"
+  "stage": "GA"
 }
