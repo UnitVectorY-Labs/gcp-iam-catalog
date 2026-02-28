@@ -3,6 +3,8 @@
   "title": "Cloud Dataplex Service Agent",
   "description": "Gives the Dataplex service account access to project resources. This access will be used in data discovery, data management and data workload management.",
   "included_permissions": [
+    "biglake.tables.get",
+    "biglake.tables.getData",
     "bigquery.bireservations.get",
     "bigquery.bireservations.update",
     "bigquery.capacityCommitments.create",

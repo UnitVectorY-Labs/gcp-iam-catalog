@@ -4,6 +4,7 @@
   "description": "Readonly access to Application Design Center resources.",
   "included_permissions": [
     "apphub.serviceProjectAttachments.list",
+    "container.clusters.list",
     "designcenter.applicationTemplateRevisions.delete",
     "designcenter.applicationTemplateRevisions.get",
     "designcenter.applicationTemplateRevisions.list",
@@ -71,5 +72,5 @@
     "storage.objects.update",
     "storage.objects.updateContext"
   ],
-  "stage": "BETA"
+  "stage": "GA"
 }

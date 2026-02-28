@@ -1,9 +1,12 @@
 {
   "name": "roles/capacityplanner.viewer",
-  "title": "Capacity Planner Usage Viewer",
+  "title": "Capacity Planner Viewer",
   "description": "Read-only access to Capacity Planner resources",
   "included_permissions": [
+    "capacityplanner.capacityPlans.get",
+    "capacityplanner.capacityPlans.list",
     "capacityplanner.forecasts.list",
+    "capacityplanner.planAlertInsights.list",
     "capacityplanner.usageAlertInsights.list",
     "capacityplanner.usageHistories.list",
     "capacityplanner.usageHistories.summarize",
