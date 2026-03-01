@@ -6,7 +6,8 @@
     "developerconnect.connections.get",
     "developerconnect.connections.httpProxyRead",
     "developerconnect.connections.httpProxyWrite",
-    "developerconnect.gitRepositoryLinks.get"
+    "developerconnect.gitRepositoryLinks.get",
+    "developerconnect.operations.get"
   ],
   "stage": "GA"
 }

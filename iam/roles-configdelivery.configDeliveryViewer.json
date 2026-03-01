@@ -15,8 +15,10 @@
     "configdelivery.resourceBundles.list",
     "configdelivery.rollouts.get",
     "configdelivery.rollouts.list",
+    "configdelivery.variants.get",
+    "configdelivery.variants.list",
     "resourcemanager.projects.get",
     "resourcemanager.projects.list"
   ],
-  "stage": "BETA"
+  "stage": "GA"
 }

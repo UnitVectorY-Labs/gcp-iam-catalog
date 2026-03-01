@@ -3,6 +3,7 @@
   "title": "Application Design Center Viewer",
   "description": "Readonly access to Application Design Center resources.",
   "included_permissions": [
+    "container.clusters.list",
     "designcenter.applicationTemplateRevisions.get",
     "designcenter.applicationTemplateRevisions.list",
     "designcenter.applicationTemplates.get",
@@ -41,5 +42,5 @@
     "storage.objects.get",
     "storage.objects.list"
   ],
-  "stage": "BETA"
+  "stage": "GA"
 }
