@@ -5,5 +5,5 @@
   "included_permissions": [
     "apihub.runTimeProjectAttachments.attach"
   ],
-  "stage": "BETA"
+  "stage": "GA"
 }

@@ -4,6 +4,10 @@
   "description": "Can create and manage resources to support serverless application to connect to virtual private cloud.",
   "included_permissions": [
     "billing.accounts.get",
+    "compute.addresses.createInternal",
+    "compute.addresses.deleteInternal",
+    "compute.addresses.get",
+    "compute.addresses.list",
     "compute.autoscalers.create",
     "compute.autoscalers.delete",
     "compute.autoscalers.get",

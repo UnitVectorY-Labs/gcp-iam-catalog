@@ -20,5 +20,5 @@
     "monitoring.monitoredResourceDescriptors.get",
     "monitoring.monitoredResourceDescriptors.list"
   ],
-  "stage": "BETA"
+  "stage": "GA"
 }
