@@ -67,6 +67,7 @@
     "compute.zoneOperations.get",
     "compute.zones.list",
     "file.backups.create",
+    "file.instances.createCrossProjectBackup",
     "file.instances.get",
     "iam.serviceAccounts.actAs",
     "iam.serviceAccounts.get",

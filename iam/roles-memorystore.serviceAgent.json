@@ -4,6 +4,8 @@
   "description": "Gives Cloud Memorystore service account access to managed resource",
   "included_permissions": [
     "compute.globalOperations.get",
+    "compute.networkAttachments.get",
+    "compute.networkAttachments.update",
     "compute.networks.addPeering",
     "compute.networks.get",
     "compute.networks.removePeering",
@@ -12,6 +14,7 @@
     "compute.routes.list",
     "compute.subnetworks.get",
     "compute.subnetworks.list",
+    "compute.subnetworks.use",
     "monitoring.metricDescriptors.create",
     "monitoring.metricDescriptors.get",
     "monitoring.metricDescriptors.list",
