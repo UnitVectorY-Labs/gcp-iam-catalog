@@ -4,6 +4,7 @@
   "description": "Grants full access to manage all GoldenGate Deployment resources.",
   "included_permissions": [
     "oracledatabase.entitlements.list",
+    "oracledatabase.goldenGateDeploymentEnvironments.list",
     "oracledatabase.goldenGateDeploymentTypes.list",
     "oracledatabase.goldenGateDeploymentVersions.list",
     "oracledatabase.goldenGateDeployments.create",

@@ -4,6 +4,7 @@
   "description": "Allows a Backup and DR service account to discover and backup Filestore instances.",
   "included_permissions": [
     "file.backups.create",
+    "file.instances.createCrossProjectBackup",
     "file.instances.get"
   ],
   "stage": "BETA"
