@@ -1,31 +1,12 @@
-# Justfile
 
-# Config
-port := "8000"
-site := "http://localhost:" + port
-html_dir := "html"
-
-default: build
-
-# Build
+# Commands for gcp-iam-catalog
+default:
+  @just --list
+# Build gcp-iam-catalog with Go
 build:
-  go build .
+  go build ./...
 
-# Run tests
+# Run tests for gcp-iam-catalog with Go
 test:
+  go clean -testcache
   go test ./...
-
-# Site generation
-gen:
-  WEBSITE="{{site}}" go run . --generate
-
-# Local preview
-serve:
-  python3 -m http.server {{port}} --directory {{html_dir}}
-
-# Open site in browser
-open:
-  open "{{site}}"
-
-# Generate and view the site
-preview: gen open serve

@@ -1,3 +1,4 @@
+# .github/workflows/add-to-project.yml
 name: Add all issues and pull requests to project
 
 on:
@@ -12,6 +13,7 @@ jobs:
   add-to-project:
     name: Add to project
     runs-on: arc-runner-set
+    timeout-minutes: 30
     steps:
       - uses: actions/add-to-project@244f685bbc3b7adfa8466e08b698b5577571133e # v1.0.2
         with:

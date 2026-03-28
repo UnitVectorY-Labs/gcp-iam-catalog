@@ -1,0 +1,58 @@
+# .github/workflows/release.yaml
+name: Build and Release Go App
+
+on:
+  release:
+    types: [created]
+
+permissions:
+    contents: read
+
+jobs:
+  releases-matrix:
+    name: Release Go Binary
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    permissions:
+      contents: write
+      packages: write
+      id-token: write
+      attestations: write
+    
+    strategy:
+      matrix:
+        # build and publish in parallel: linux/386, linux/amd64, linux/arm64, windows/386, windows/amd64, darwin/amd64, darwin/arm64
+        goos: [linux, windows, darwin]
+        goarch: ["386", amd64, arm64]
+        exclude:
+          - goarch: "386"
+            goos: darwin
+          - goarch: arm64
+            goos: windows
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+      with:
+        persist-credentials: false
+
+    - name: Release Go Application
+      uses: wangyoucao577/go-release-action@279495102627de7960cbc33434ab01a12bae144b # v1.55
+      id: go_release
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        goos: ${{ matrix.goos }}
+        goarch: ${{ matrix.goarch }}
+        project_path: "./"
+        binary_name: ${{ github.event.repository.name }}
+        ldflags: "-X 'main.Version=${{ github.ref_name }}'"
+        md5sum: true
+        sha256sum: true
+
+    - name: GitHub Attestation for Artifacts
+      uses: actions/attest@59d89421af93a897026c735860bf21b6eb4f7b26 # v4.1.0
+      with:
+        subject-path: |
+          "${{ steps.go_release.outputs.release_asset_dir }}/*"
+          "${{ github.event.repository.name }}-${{ github.ref_name }}-*.tar.gz"
+          "${{ github.event.repository.name }}-${{ github.ref_name }}-*.zip"

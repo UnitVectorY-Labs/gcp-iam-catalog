@@ -1,5 +1,6 @@
 # https://github.com/UnitVectorY-Labs/repver
 commands:
+
  - name: "goversion"
    params:
    - name: "version"
@@ -18,7 +19,7 @@ commands:
      create_branch: true
      branch_name: "repver/go-v{{version}}"
      commit: true
-     commit_message: "Update Go version to {{version}}"
+     commit_message: "Update Go version to v{{version}}"
      push: true
      remote: "origin"
      pull_request: "GITHUB_CLI"

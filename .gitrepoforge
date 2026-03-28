@@ -1,0 +1,20 @@
+name: gcp-iam-catalog
+default_branch: main
+config:
+  description: "A comprehensive catalog of GCP IAM roles and permissions, designed to easily identify which roles include a specific permission."
+  license: MIT
+  language: go
+  release: release-go
+  justfile: true
+  codecov: false
+  gitignore:
+    - html/
+  repver:
+    goversion:
+      paths:
+        - .github/workflows/gcp-iam-catalog-crawl.yml
+        - .github/workflows/gcp-iam-catalog-generate.yaml
+  clip4llm:
+    exclude:
+      - iam
+      - html
