@@ -1,0 +1,9 @@
+{
+  "name": "roles/iap.egressor",
+  "title": "IAP-secured Egressor",
+  "description": "Egress to resources via Identity-Aware Proxy",
+  "included_permissions": [
+    "iap.webServiceVersions.egressViaIAP"
+  ],
+  "stage": "BETA"
+}

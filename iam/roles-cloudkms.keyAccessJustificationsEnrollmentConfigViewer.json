@@ -5,5 +5,5 @@
   "included_permissions": [
     "cloudkms.projects.showEffectiveKajEnrollmentConfig"
   ],
-  "stage": "BETA"
+  "stage": "GA"
 }

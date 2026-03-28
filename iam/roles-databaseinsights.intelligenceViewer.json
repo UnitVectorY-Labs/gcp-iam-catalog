@@ -1,0 +1,13 @@
+{
+  "name": "roles/databaseinsights.intelligenceViewer",
+  "title": "Database Insights intelligence viewer",
+  "description": "Viewer role for Database Insights intelligence data",
+  "included_permissions": [
+    "databaseinsights.databaseIssues.troubleshoot",
+    "databaseinsights.dbCenter.query",
+    "databaseinsights.dbPerformance.query",
+    "databaseinsights.queryMetrics.fetch",
+    "databaseinsights.systemMetrics.fetch"
+  ],
+  "stage": "BETA"
+}

@@ -1,0 +1,12 @@
+{
+  "name": "roles/roads.roadsSelectionViewer",
+  "title": "Roads Selection Viewer",
+  "description": "Read access to SelectedRoutes",
+  "included_permissions": [
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list",
+    "roads.selectedRoutes.get",
+    "roads.selectedRoutes.list"
+  ],
+  "stage": "GA"
+}

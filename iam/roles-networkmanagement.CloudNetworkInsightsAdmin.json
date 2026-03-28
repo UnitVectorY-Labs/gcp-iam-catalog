@@ -1,0 +1,15 @@
+{
+  "name": "roles/networkmanagement.CloudNetworkInsightsAdmin",
+  "title": "Cloud Network Insights Admin",
+  "description": "Full access to Cloud Network Insights resources.",
+  "included_permissions": [
+    "networkmanagement.locations.get",
+    "networkmanagement.locations.list",
+    "networkmanagement.operations.get",
+    "networkmanagement.operations.list",
+    "resourcemanager.organizations.get",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": ""
+}

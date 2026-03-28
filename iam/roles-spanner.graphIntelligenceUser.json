@@ -1,0 +1,23 @@
+{
+  "name": "roles/spanner.graphIntelligenceUser",
+  "title": "Cloud Spanner Database Graph Intelligence features user",
+  "description": "Access to Graph Intelligence features.",
+  "included_permissions": [
+    "monitoring.timeSeries.create",
+    "spanner.databases.beginReadOnlyTransaction",
+    "spanner.databases.get",
+    "spanner.databases.getDdl",
+    "spanner.databases.partitionQuery",
+    "spanner.databases.partitionRead",
+    "spanner.databases.read",
+    "spanner.databases.select",
+    "spanner.databases.useDataBoost",
+    "spanner.instancePartitions.get",
+    "spanner.instances.get",
+    "spanner.sessions.create",
+    "spanner.sessions.delete",
+    "spanner.sessions.get",
+    "spanner.sessions.list"
+  ],
+  "stage": ""
+}

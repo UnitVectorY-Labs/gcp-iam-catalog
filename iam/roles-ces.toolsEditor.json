@@ -31,6 +31,7 @@
     "ces.locations.list",
     "ces.operations.get",
     "ces.operations.list",
+    "ces.securitySettings.get",
     "ces.sessions.bidiRunSession",
     "ces.sessions.runSession",
     "ces.tools.create",

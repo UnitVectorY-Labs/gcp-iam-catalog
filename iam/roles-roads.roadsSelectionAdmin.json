@@ -1,0 +1,15 @@
+{
+  "name": "roles/roads.roadsSelectionAdmin",
+  "title": "Roads Selection Admin",
+  "description": "Full access to SelectedRoutes",
+  "included_permissions": [
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list",
+    "roads.selectedRoutes.batchCreate",
+    "roads.selectedRoutes.create",
+    "roads.selectedRoutes.delete",
+    "roads.selectedRoutes.get",
+    "roads.selectedRoutes.list"
+  ],
+  "stage": "GA"
+}

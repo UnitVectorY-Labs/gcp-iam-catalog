@@ -1,29 +1,27 @@
 {
-  "name": "roles/networkmanagement.viewer",
-  "title": "Network Management Viewer",
-  "description": "Read-only access to Network Management resources.",
+  "name": "roles/networkmanagement.CloudNetworkInsightsEditor",
+  "title": "Cloud Network Insights Editor",
+  "description": "Editor access to Cloud Network Insights resources.",
   "included_permissions": [
-    "networkmanagement.connectivitytests.get",
-    "networkmanagement.connectivitytests.getIamPolicy",
-    "networkmanagement.connectivitytests.list",
     "networkmanagement.locations.get",
     "networkmanagement.locations.list",
+    "networkmanagement.monitoringpoints.downloadConfig",
     "networkmanagement.monitoringpoints.get",
     "networkmanagement.monitoringpoints.list",
     "networkmanagement.networkpaths.get",
     "networkmanagement.networkpaths.list",
     "networkmanagement.operations.get",
     "networkmanagement.operations.list",
+    "networkmanagement.providers.create",
+    "networkmanagement.providers.delete",
+    "networkmanagement.providers.generateProviderAccessToken",
     "networkmanagement.providers.get",
     "networkmanagement.providers.list",
-    "networkmanagement.topologygraphs.read",
-    "networkmanagement.vpcflowlogsconfigs.get",
-    "networkmanagement.vpcflowlogsconfigs.list",
     "networkmanagement.webpaths.get",
     "networkmanagement.webpaths.list",
     "resourcemanager.organizations.get",
     "resourcemanager.projects.get",
     "resourcemanager.projects.list"
   ],
-  "stage": "GA"
+  "stage": "BETA"
 }

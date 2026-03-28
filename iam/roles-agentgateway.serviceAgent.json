@@ -1,0 +1,9 @@
+{
+  "name": "roles/agentgateway.serviceAgent",
+  "title": "Agent Gateway Service Agent",
+  "description": "Grants Agent Gateway Service Agent permissions required to do DNS peering.",
+  "included_permissions": [
+    "dns.networks.targetWithPeeringZone"
+  ],
+  "stage": "GA"
+}

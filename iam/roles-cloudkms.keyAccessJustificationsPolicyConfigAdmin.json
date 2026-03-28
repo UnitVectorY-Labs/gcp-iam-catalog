@@ -7,5 +7,5 @@
     "cloudkms.kajPolicyConfigs.update",
     "cloudkms.projects.showEffectiveKajPolicyConfig"
   ],
-  "stage": "BETA"
+  "stage": "GA"
 }

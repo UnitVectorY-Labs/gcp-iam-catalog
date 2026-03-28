@@ -1,0 +1,20 @@
+{
+  "name": "roles/networkmanagement.CloudNetworkInsightsViewer",
+  "title": "Cloud Network Insights Viewer",
+  "description": "Read-only access to Cloud Network Insights resources.",
+  "included_permissions": [
+    "networkmanagement.monitoringpoints.get",
+    "networkmanagement.monitoringpoints.list",
+    "networkmanagement.networkpaths.get",
+    "networkmanagement.networkpaths.list",
+    "networkmanagement.providers.generateProviderAccessToken",
+    "networkmanagement.providers.get",
+    "networkmanagement.providers.list",
+    "networkmanagement.webpaths.get",
+    "networkmanagement.webpaths.list",
+    "resourcemanager.organizations.get",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "BETA"
+}

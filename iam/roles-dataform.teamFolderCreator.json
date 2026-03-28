@@ -5,5 +5,5 @@
   "included_permissions": [
     "dataform.teamFolders.create"
   ],
-  "stage": "BETA"
+  "stage": "GA"
 }

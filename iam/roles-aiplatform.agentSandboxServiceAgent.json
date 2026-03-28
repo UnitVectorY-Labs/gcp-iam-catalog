@@ -1,0 +1,16 @@
+{
+  "name": "roles/aiplatform.agentSandboxServiceAgent",
+  "title": "Vertex AI Agent Sandbox Service Agent",
+  "description": "Vertex AI Service Agent used to access Agent Sandbox managed resources in consumer project with restricted permissions.",
+  "included_permissions": [
+    "artifactregistry.repositories.downloadArtifacts",
+    "logging.logEntries.create",
+    "logging.logEntries.route",
+    "serviceusage.services.use",
+    "storage.objects.create",
+    "storage.objects.delete",
+    "storage.objects.get",
+    "storage.objects.list"
+  ],
+  "stage": ""
+}
