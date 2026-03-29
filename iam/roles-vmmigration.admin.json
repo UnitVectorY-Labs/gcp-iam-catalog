@@ -61,5 +61,5 @@
     "vmmigration.utilizationReports.get",
     "vmmigration.utilizationReports.list"
   ],
-  "stage": "BETA"
+  "stage": "GA"
 }

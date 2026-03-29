@@ -10,6 +10,7 @@
     "spanner.databases.partitionQuery",
     "spanner.databases.partitionRead",
     "spanner.databases.read",
+    "spanner.databases.runGraphAlgorithms",
     "spanner.databases.select",
     "spanner.databases.useDataBoost",
     "spanner.instancePartitions.get",
@@ -19,5 +20,5 @@
     "spanner.sessions.get",
     "spanner.sessions.list"
   ],
-  "stage": ""
+  "stage": "GA"
 }

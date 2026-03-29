@@ -1,0 +1,7 @@
+{
+  "name": "roles/geminidataanalytics.queryDataUser",
+  "title": "Gemini Data Analytics Query Data User",
+  "description": "Access to use Gemini Data Analytics query data.",
+  "included_permissions": null,
+  "stage": "BETA"
+}
