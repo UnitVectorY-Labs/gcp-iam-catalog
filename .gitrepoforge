@@ -6,7 +6,8 @@ config:
   language: go
   release: release-go
   justfile: true
-  codecov: false
+  codecov:
+    enabled: false
   gitignore:
     - html/
   repver:
