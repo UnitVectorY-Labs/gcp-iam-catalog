@@ -1,0 +1,12 @@
+{
+  "name": "roles/cloud.viewer",
+  "title": "Cloud Viewer",
+  "description": "Viewer role for cloud",
+  "included_permissions": [
+    "cloud.locations.get",
+    "cloud.locations.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "BETA"
+}

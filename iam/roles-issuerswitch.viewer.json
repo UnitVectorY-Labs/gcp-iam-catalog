@@ -1,0 +1,23 @@
+{
+  "name": "roles/issuerswitch.viewer",
+  "title": "Issuerswitch Viewer",
+  "description": "Viewer role for issuerswitch",
+  "included_permissions": [
+    "issuerswitch.accountManagerTransactions.list",
+    "issuerswitch.complaintTransactions.list",
+    "issuerswitch.financialTransactions.list",
+    "issuerswitch.issuerParticipants.get",
+    "issuerswitch.managedAccounts.get",
+    "issuerswitch.mandateTransactions.list",
+    "issuerswitch.metadataTransactions.list",
+    "issuerswitch.operations.get",
+    "issuerswitch.operations.list",
+    "issuerswitch.operations.wait",
+    "issuerswitch.ruleMetadata.list",
+    "issuerswitch.ruleMetadataValues.list",
+    "issuerswitch.rules.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "BETA"
+}

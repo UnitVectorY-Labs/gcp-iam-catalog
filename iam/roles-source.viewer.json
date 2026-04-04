@@ -1,0 +1,13 @@
+{
+  "name": "roles/source.viewer",
+  "title": "Source Viewer",
+  "description": "Viewer role for source",
+  "included_permissions": [
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list",
+    "source.repos.get",
+    "source.repos.getIamPolicy",
+    "source.repos.list"
+  ],
+  "stage": ""
+}

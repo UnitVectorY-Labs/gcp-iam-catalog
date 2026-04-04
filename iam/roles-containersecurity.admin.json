@@ -1,0 +1,15 @@
+{
+  "name": "roles/containersecurity.admin",
+  "title": "Containersecurity Admin",
+  "description": "Admin role for containersecurity",
+  "included_permissions": [
+    "container.clusters.list",
+    "containersecurity.clusterSummaries.list",
+    "containersecurity.findings.list",
+    "containersecurity.locations.get",
+    "containersecurity.locations.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": ""
+}

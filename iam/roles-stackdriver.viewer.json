@@ -1,0 +1,12 @@
+{
+  "name": "roles/stackdriver.viewer",
+  "title": "Stackdriver Viewer",
+  "description": "Viewer role for stackdriver",
+  "included_permissions": [
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list",
+    "stackdriver.projects.get",
+    "stackdriver.resourceMetadata.list"
+  ],
+  "stage": ""
+}

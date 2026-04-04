@@ -1,0 +1,12 @@
+{
+  "name": "roles/confidentialcomputing.viewer",
+  "title": "Confidentialcomputing Viewer",
+  "description": "Viewer role for confidentialcomputing",
+  "included_permissions": [
+    "confidentialcomputing.locations.get",
+    "confidentialcomputing.locations.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

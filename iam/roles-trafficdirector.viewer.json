@@ -1,0 +1,11 @@
+{
+  "name": "roles/trafficdirector.viewer",
+  "title": "Trafficdirector Viewer",
+  "description": "Viewer role for trafficdirector",
+  "included_permissions": [
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list",
+    "trafficdirector.networks.getConfigs"
+  ],
+  "stage": "BETA"
+}

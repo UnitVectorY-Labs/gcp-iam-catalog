@@ -1,0 +1,24 @@
+{
+  "name": "roles/proximitybeacon.editor",
+  "title": "Proximitybeacon Editor",
+  "description": "Editor role for proximitybeacon",
+  "included_permissions": [
+    "proximitybeacon.attachments.create",
+    "proximitybeacon.attachments.delete",
+    "proximitybeacon.attachments.get",
+    "proximitybeacon.attachments.list",
+    "proximitybeacon.beacons.attach",
+    "proximitybeacon.beacons.create",
+    "proximitybeacon.beacons.get",
+    "proximitybeacon.beacons.list",
+    "proximitybeacon.beacons.update",
+    "proximitybeacon.namespaces.create",
+    "proximitybeacon.namespaces.delete",
+    "proximitybeacon.namespaces.get",
+    "proximitybeacon.namespaces.list",
+    "proximitybeacon.namespaces.update",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

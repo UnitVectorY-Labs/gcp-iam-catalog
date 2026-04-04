@@ -1,0 +1,19 @@
+{
+  "name": "roles/storage.viewer",
+  "title": "Storage Viewer",
+  "description": "Viewer role for storage",
+  "included_permissions": [
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list",
+    "storage.buckets.list",
+    "storage.buckets.listEffectiveTags",
+    "storage.buckets.listTagBindings",
+    "storage.buckets.viewIntelligenceDetails",
+    "storage.folders.get",
+    "storage.folders.list",
+    "storage.hmacKeys.get",
+    "storage.hmacKeys.list",
+    "storage.intelligenceConfigs.get"
+  ],
+  "stage": "GA"
+}

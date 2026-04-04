@@ -1,0 +1,12 @@
+{
+  "name": "roles/trafficdirector.admin",
+  "title": "Trafficdirector Admin",
+  "description": "Admin role for trafficdirector",
+  "included_permissions": [
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list",
+    "trafficdirector.networks.getConfigs",
+    "trafficdirector.networks.reportMetrics"
+  ],
+  "stage": ""
+}

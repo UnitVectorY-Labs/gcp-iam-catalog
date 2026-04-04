@@ -1,0 +1,18 @@
+{
+  "name": "roles/serviceconsumermanagement.admin",
+  "title": "Serviceconsumermanagement Admin",
+  "description": "Admin role for serviceconsumermanagement",
+  "included_permissions": [
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list",
+    "serviceconsumermanagement.consumers.get",
+    "serviceconsumermanagement.quota.get",
+    "serviceconsumermanagement.quota.update",
+    "serviceconsumermanagement.tenancyu.addResource",
+    "serviceconsumermanagement.tenancyu.create",
+    "serviceconsumermanagement.tenancyu.delete",
+    "serviceconsumermanagement.tenancyu.list",
+    "serviceconsumermanagement.tenancyu.removeResource"
+  ],
+  "stage": "BETA"
+}

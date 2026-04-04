@@ -1,0 +1,14 @@
+{
+  "name": "roles/maintenance.admin",
+  "title": "Maintenance Admin",
+  "description": "Admin role for maintenance",
+  "included_permissions": [
+    "maintenance.locations.get",
+    "maintenance.locations.list",
+    "maintenance.resourceMaintenances.get",
+    "maintenance.resourceMaintenances.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

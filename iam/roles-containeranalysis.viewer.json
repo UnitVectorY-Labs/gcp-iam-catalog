@@ -1,0 +1,16 @@
+{
+  "name": "roles/containeranalysis.viewer",
+  "title": "Container Analysis Viewer",
+  "description": "Viewer role for Container Analysis",
+  "included_permissions": [
+    "containeranalysis.notes.get",
+    "containeranalysis.notes.getIamPolicy",
+    "containeranalysis.notes.list",
+    "containeranalysis.occurrences.get",
+    "containeranalysis.occurrences.getIamPolicy",
+    "containeranalysis.occurrences.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": ""
+}

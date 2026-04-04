@@ -1,0 +1,13 @@
+{
+  "name": "roles/serviceconsumermanagement.viewer",
+  "title": "Serviceconsumermanagement Viewer",
+  "description": "Viewer role for serviceconsumermanagement",
+  "included_permissions": [
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list",
+    "serviceconsumermanagement.consumers.get",
+    "serviceconsumermanagement.quota.get",
+    "serviceconsumermanagement.tenancyu.list"
+  ],
+  "stage": ""
+}

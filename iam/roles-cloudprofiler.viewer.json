@@ -1,0 +1,11 @@
+{
+  "name": "roles/cloudprofiler.viewer",
+  "title": "Cloudprofiler Viewer",
+  "description": "Viewer role for cloudprofiler",
+  "included_permissions": [
+    "cloudprofiler.profiles.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": ""
+}

@@ -1,0 +1,12 @@
+{
+  "name": "roles/carestudio.admin",
+  "title": "Carestudio Admin",
+  "description": "Admin role for carestudio",
+  "included_permissions": [
+    "carestudio.patients.get",
+    "carestudio.patients.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": ""
+}

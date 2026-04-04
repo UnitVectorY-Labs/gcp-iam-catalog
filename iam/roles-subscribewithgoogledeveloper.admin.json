@@ -1,0 +1,11 @@
+{
+  "name": "roles/subscribewithgoogledeveloper.admin",
+  "title": "Subscribewithgoogledeveloper Admin",
+  "description": "Admin role for subscribewithgoogledeveloper",
+  "included_permissions": [
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list",
+    "subscribewithgoogledeveloper.tools.get"
+  ],
+  "stage": ""
+}

@@ -1,0 +1,11 @@
+{
+  "name": "roles/chat.viewer",
+  "title": "Chat Viewer",
+  "description": "Viewer role for chat",
+  "included_permissions": [
+    "chat.bots.get",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": ""
+}

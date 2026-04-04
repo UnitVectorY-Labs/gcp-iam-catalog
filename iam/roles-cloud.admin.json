@@ -1,0 +1,12 @@
+{
+  "name": "roles/cloud.admin",
+  "title": "Cloud Admin",
+  "description": "Admin role for cloud",
+  "included_permissions": [
+    "cloud.locations.get",
+    "cloud.locations.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": ""
+}

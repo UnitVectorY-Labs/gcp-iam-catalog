@@ -1,0 +1,13 @@
+{
+  "name": "roles/confidentialcomputing.gkeWorkloadUser",
+  "title": "Confidential GKE Workload User",
+  "description": "Grants the ability to generate a GKE attestation token and run a workload in a GKE cluster.",
+  "included_permissions": [
+    "confidentialcomputing.challenges.create",
+    "confidentialcomputing.challenges.verifygke",
+    "confidentialcomputing.locations.get",
+    "confidentialcomputing.locations.list",
+    "logging.logEntries.create"
+  ],
+  "stage": "GA"
+}

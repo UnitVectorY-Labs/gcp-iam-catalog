@@ -1,0 +1,13 @@
+{
+  "name": "roles/gsuiteaddons.viewer",
+  "title": "Gsuiteaddons Viewer",
+  "description": "Viewer role for gsuiteaddons",
+  "included_permissions": [
+    "gsuiteaddons.authorizations.get",
+    "gsuiteaddons.deployments.get",
+    "gsuiteaddons.deployments.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

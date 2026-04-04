@@ -1,0 +1,16 @@
+{
+  "name": "roles/proximitybeacon.viewer",
+  "title": "Proximitybeacon Viewer",
+  "description": "Viewer role for proximitybeacon",
+  "included_permissions": [
+    "proximitybeacon.attachments.get",
+    "proximitybeacon.attachments.list",
+    "proximitybeacon.beacons.get",
+    "proximitybeacon.beacons.list",
+    "proximitybeacon.namespaces.get",
+    "proximitybeacon.namespaces.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

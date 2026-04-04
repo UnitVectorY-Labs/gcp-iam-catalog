@@ -1,0 +1,14 @@
+{
+  "name": "roles/accessapproval.editor",
+  "title": "Accessapproval Editor",
+  "description": "Editor role for accessapproval",
+  "included_permissions": [
+    "accessapproval.requests.get",
+    "accessapproval.requests.list",
+    "accessapproval.serviceAccounts.get",
+    "accessapproval.settings.get",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

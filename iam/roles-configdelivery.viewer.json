@@ -1,0 +1,24 @@
+{
+  "name": "roles/configdelivery.viewer",
+  "title": "Configdelivery Viewer",
+  "description": "Viewer role for configdelivery",
+  "included_permissions": [
+    "configdelivery.fleetPackages.get",
+    "configdelivery.fleetPackages.list",
+    "configdelivery.locations.get",
+    "configdelivery.locations.list",
+    "configdelivery.operations.get",
+    "configdelivery.operations.list",
+    "configdelivery.releases.get",
+    "configdelivery.releases.list",
+    "configdelivery.resourceBundles.get",
+    "configdelivery.resourceBundles.list",
+    "configdelivery.rollouts.get",
+    "configdelivery.rollouts.list",
+    "configdelivery.variants.get",
+    "configdelivery.variants.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": ""
+}

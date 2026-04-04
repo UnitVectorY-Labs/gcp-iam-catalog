@@ -6,5 +6,5 @@
     "geminidataanalytics.dataAgents.get",
     "geminidataanalytics.dataAgents.list"
   ],
-  "stage": "BETA"
+  "stage": "GA"
 }

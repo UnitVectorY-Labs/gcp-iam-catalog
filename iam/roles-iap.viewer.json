@@ -1,0 +1,17 @@
+{
+  "name": "roles/iap.viewer",
+  "title": "Iap Viewer",
+  "description": "Viewer role for iap",
+  "included_permissions": [
+    "iap.projects.getSettings",
+    "iap.tunnelDestGroups.get",
+    "iap.tunnelDestGroups.list",
+    "iap.web.getSettings",
+    "iap.webServiceVersions.getSettings",
+    "iap.webServices.getSettings",
+    "iap.webTypes.getSettings",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

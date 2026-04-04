@@ -1,0 +1,17 @@
+{
+  "name": "roles/assuredoss.editor",
+  "title": "Assuredoss Editor",
+  "description": "Editor role for assuredoss",
+  "included_permissions": [
+    "assuredoss.config.get",
+    "assuredoss.locations.get",
+    "assuredoss.locations.list",
+    "assuredoss.metadata.get",
+    "assuredoss.metadata.list",
+    "assuredoss.operations.get",
+    "assuredoss.operations.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": ""
+}

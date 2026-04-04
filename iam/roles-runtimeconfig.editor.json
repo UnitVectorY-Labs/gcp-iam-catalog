@@ -1,0 +1,28 @@
+{
+  "name": "roles/runtimeconfig.editor",
+  "title": "Runtimeconfig Editor",
+  "description": "Editor role for runtimeconfig",
+  "included_permissions": [
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list",
+    "runtimeconfig.configs.create",
+    "runtimeconfig.configs.delete",
+    "runtimeconfig.configs.get",
+    "runtimeconfig.configs.list",
+    "runtimeconfig.configs.update",
+    "runtimeconfig.operations.get",
+    "runtimeconfig.operations.list",
+    "runtimeconfig.variables.create",
+    "runtimeconfig.variables.delete",
+    "runtimeconfig.variables.get",
+    "runtimeconfig.variables.list",
+    "runtimeconfig.variables.update",
+    "runtimeconfig.variables.watch",
+    "runtimeconfig.waiters.create",
+    "runtimeconfig.waiters.delete",
+    "runtimeconfig.waiters.get",
+    "runtimeconfig.waiters.list",
+    "runtimeconfig.waiters.update"
+  ],
+  "stage": "GA"
+}

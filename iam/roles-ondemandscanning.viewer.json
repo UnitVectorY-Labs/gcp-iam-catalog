@@ -1,0 +1,14 @@
+{
+  "name": "roles/ondemandscanning.viewer",
+  "title": "On-Demand Scanning Viewer",
+  "description": "Viewer role for On-Demand Scanning",
+  "included_permissions": [
+    "ondemandscanning.operations.get",
+    "ondemandscanning.operations.list",
+    "ondemandscanning.operations.wait",
+    "ondemandscanning.scans.listVulnerabilities",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "BETA"
+}

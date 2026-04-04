@@ -1,0 +1,19 @@
+{
+  "name": "roles/policyremediatormanager.admin",
+  "title": "Policyremediatormanager Admin",
+  "description": "Admin role for policyremediatormanager",
+  "included_permissions": [
+    "policyremediatormanager.locations.get",
+    "policyremediatormanager.locations.list",
+    "policyremediatormanager.operations.cancel",
+    "policyremediatormanager.operations.delete",
+    "policyremediatormanager.operations.get",
+    "policyremediatormanager.operations.list",
+    "policyremediatormanager.remediatorServices.disable",
+    "policyremediatormanager.remediatorServices.enable",
+    "policyremediatormanager.remediatorServices.get",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": ""
+}

@@ -1,0 +1,13 @@
+{
+  "name": "roles/mapsanalytics.admin",
+  "title": "Mapsanalytics Admin",
+  "description": "Admin role for mapsanalytics",
+  "included_permissions": [
+    "mapsanalytics.metricData.query",
+    "mapsanalytics.metricData.queryMobilitySolutionsOverageData",
+    "mapsanalytics.metricMetadata.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "BETA"
+}

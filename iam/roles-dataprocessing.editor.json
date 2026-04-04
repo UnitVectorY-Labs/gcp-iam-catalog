@@ -1,0 +1,16 @@
+{
+  "name": "roles/dataprocessing.editor",
+  "title": "Dataprocessing Editor",
+  "description": "Editor role for dataprocessing",
+  "included_permissions": [
+    "dataprocessing.datasources.get",
+    "dataprocessing.datasources.list",
+    "dataprocessing.datasources.update",
+    "dataprocessing.featurecontrols.list",
+    "dataprocessing.groupcontrols.get",
+    "dataprocessing.groupcontrols.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": ""
+}

@@ -1,0 +1,11 @@
+{
+  "name": "roles/mcp.admin",
+  "title": "MCP Admin",
+  "description": "Full access for interacting with Google-managed MCP servers.",
+  "included_permissions": [
+    "mcp.tools.call",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

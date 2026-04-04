@@ -1,0 +1,14 @@
+{
+  "name": "roles/cloudtestservice.viewer",
+  "title": "Cloud Test Service Viewer",
+  "description": "Viewer role for cloudtestservice",
+  "included_permissions": [
+    "cloudtestservice.devicesession.get",
+    "cloudtestservice.devicesession.list",
+    "cloudtestservice.environmentcatalog.get",
+    "cloudtestservice.matrices.get",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

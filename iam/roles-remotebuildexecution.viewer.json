@@ -1,0 +1,17 @@
+{
+  "name": "roles/remotebuildexecution.viewer",
+  "title": "Remotebuildexecution Viewer",
+  "description": "Viewer role for remotebuildexecution",
+  "included_permissions": [
+    "remotebuildexecution.actions.get",
+    "remotebuildexecution.blobs.get",
+    "remotebuildexecution.instances.get",
+    "remotebuildexecution.instances.list",
+    "remotebuildexecution.logstreams.get",
+    "remotebuildexecution.workerpools.get",
+    "remotebuildexecution.workerpools.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": ""
+}

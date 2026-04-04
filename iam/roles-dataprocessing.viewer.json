@@ -1,0 +1,15 @@
+{
+  "name": "roles/dataprocessing.viewer",
+  "title": "Dataprocessing Viewer",
+  "description": "Viewer role for dataprocessing",
+  "included_permissions": [
+    "dataprocessing.datasources.get",
+    "dataprocessing.datasources.list",
+    "dataprocessing.featurecontrols.list",
+    "dataprocessing.groupcontrols.get",
+    "dataprocessing.groupcontrols.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

@@ -1,0 +1,11 @@
+{
+  "name": "roles/androidmanagement.admin",
+  "title": "Androidmanagement Admin",
+  "description": "Admin role for androidmanagement",
+  "included_permissions": [
+    "androidmanagement.enterprises.manage",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": ""
+}

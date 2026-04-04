@@ -1,0 +1,24 @@
+{
+  "name": "roles/cloudprivatecatalogproducer.viewer",
+  "title": "Cloudprivatecatalogproducer Viewer",
+  "description": "Viewer role for cloudprivatecatalogproducer",
+  "included_permissions": [
+    "cloudprivatecatalogproducer.associations.get",
+    "cloudprivatecatalogproducer.associations.list",
+    "cloudprivatecatalogproducer.catalogAssociations.get",
+    "cloudprivatecatalogproducer.catalogAssociations.list",
+    "cloudprivatecatalogproducer.catalogs.get",
+    "cloudprivatecatalogproducer.catalogs.getIamPolicy",
+    "cloudprivatecatalogproducer.catalogs.list",
+    "cloudprivatecatalogproducer.producerCatalogs.get",
+    "cloudprivatecatalogproducer.producerCatalogs.getIamPolicy",
+    "cloudprivatecatalogproducer.producerCatalogs.list",
+    "cloudprivatecatalogproducer.products.get",
+    "cloudprivatecatalogproducer.products.getIamPolicy",
+    "cloudprivatecatalogproducer.products.list",
+    "cloudprivatecatalogproducer.settings.get",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": ""
+}

@@ -1,0 +1,24 @@
+{
+  "name": "roles/databasesconsole.editor",
+  "title": "Databasesconsole Editor",
+  "description": "Editor role for databasesconsole",
+  "included_permissions": [
+    "databasesconsole.databaseCenterViews.create",
+    "databasesconsole.databaseCenterViews.delete",
+    "databasesconsole.databaseCenterViews.search",
+    "databasesconsole.databaseCenterViews.update",
+    "databasesconsole.locations.get",
+    "databasesconsole.locations.list",
+    "databasesconsole.operations.cancel",
+    "databasesconsole.operations.delete",
+    "databasesconsole.operations.get",
+    "databasesconsole.operations.list",
+    "databasesconsole.studioQueries.create",
+    "databasesconsole.studioQueries.delete",
+    "databasesconsole.studioQueries.search",
+    "databasesconsole.studioQueries.update",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "BETA"
+}

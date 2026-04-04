@@ -1,0 +1,13 @@
+{
+  "name": "roles/routeoptimization.admin",
+  "title": "Routeoptimization Admin",
+  "description": "Admin role for routeoptimization",
+  "included_permissions": [
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list",
+    "routeoptimization.locations.use",
+    "routeoptimization.operations.create",
+    "routeoptimization.operations.get"
+  ],
+  "stage": "GA"
+}

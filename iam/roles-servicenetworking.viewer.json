@@ -1,0 +1,17 @@
+{
+  "name": "roles/servicenetworking.viewer",
+  "title": "Servicenetworking Viewer",
+  "description": "Viewer role for servicenetworking",
+  "included_permissions": [
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list",
+    "servicenetworking.operations.get",
+    "servicenetworking.operations.list",
+    "servicenetworking.services.get",
+    "servicenetworking.services.getConsumerConfig",
+    "servicenetworking.services.getVpcServiceControls",
+    "servicenetworking.services.listPeeredDnsDomains",
+    "servicenetworking.services.use"
+  ],
+  "stage": "BETA"
+}

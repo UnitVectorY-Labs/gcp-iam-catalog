@@ -1,0 +1,14 @@
+{
+  "name": "roles/stackdriver.admin",
+  "title": "Stackdriver Admin",
+  "description": "Admin role for stackdriver",
+  "included_permissions": [
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list",
+    "stackdriver.projects.edit",
+    "stackdriver.projects.get",
+    "stackdriver.resourceMetadata.list",
+    "stackdriver.resourceMetadata.write"
+  ],
+  "stage": "GA"
+}

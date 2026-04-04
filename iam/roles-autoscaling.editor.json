@@ -1,0 +1,14 @@
+{
+  "name": "roles/autoscaling.editor",
+  "title": "Autoscaling Editor",
+  "description": "Editor role for autoscaling",
+  "included_permissions": [
+    "autoscaling.sites.getIamPolicy",
+    "autoscaling.sites.readRecommendations",
+    "autoscaling.sites.writeMetrics",
+    "autoscaling.sites.writeState",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "BETA"
+}

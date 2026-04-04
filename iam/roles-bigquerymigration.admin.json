@@ -1,0 +1,22 @@
+{
+  "name": "roles/bigquerymigration.admin",
+  "title": "Bigquerymigration Admin",
+  "description": "Admin role for bigquerymigration",
+  "included_permissions": [
+    "bigquerymigration.subtasks.get",
+    "bigquerymigration.subtasks.list",
+    "bigquerymigration.translation.translate",
+    "bigquerymigration.workflows.create",
+    "bigquerymigration.workflows.delete",
+    "bigquerymigration.workflows.enableAiOutputTypes",
+    "bigquerymigration.workflows.enableLineageOutputTypes",
+    "bigquerymigration.workflows.enableOutputTypePermissions",
+    "bigquerymigration.workflows.get",
+    "bigquerymigration.workflows.list",
+    "bigquerymigration.workflows.orchestrateTask",
+    "bigquerymigration.workflows.update",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": ""
+}

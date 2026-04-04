@@ -1,0 +1,15 @@
+{
+  "name": "roles/confidentialcomputing.admin",
+  "title": "Confidentialcomputing Admin",
+  "description": "Admin role for confidentialcomputing",
+  "included_permissions": [
+    "confidentialcomputing.challenges.create",
+    "confidentialcomputing.challenges.verify",
+    "confidentialcomputing.challenges.verifygke",
+    "confidentialcomputing.locations.get",
+    "confidentialcomputing.locations.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

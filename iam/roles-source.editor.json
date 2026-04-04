@@ -1,0 +1,14 @@
+{
+  "name": "roles/source.editor",
+  "title": "Source Editor",
+  "description": "Editor role for source",
+  "included_permissions": [
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list",
+    "source.repos.get",
+    "source.repos.getIamPolicy",
+    "source.repos.list",
+    "source.repos.update"
+  ],
+  "stage": ""
+}

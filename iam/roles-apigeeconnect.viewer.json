@@ -1,0 +1,11 @@
+{
+  "name": "roles/apigeeconnect.viewer",
+  "title": "Apigeeconnect Viewer",
+  "description": "Viewer role for apigeeconnect",
+  "included_permissions": [
+    "apigeeconnect.connections.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

@@ -1,0 +1,17 @@
+{
+  "name": "roles/cloudjobdiscovery.viewer",
+  "title": "Cloudjobdiscovery Viewer",
+  "description": "Viewer role for cloudjobdiscovery",
+  "included_permissions": [
+    "cloudjobdiscovery.companies.get",
+    "cloudjobdiscovery.companies.list",
+    "cloudjobdiscovery.jobs.get",
+    "cloudjobdiscovery.jobs.search",
+    "cloudjobdiscovery.profiles.get",
+    "cloudjobdiscovery.profiles.search",
+    "cloudjobdiscovery.tenants.get",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": ""
+}
