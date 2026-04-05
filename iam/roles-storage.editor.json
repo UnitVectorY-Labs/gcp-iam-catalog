@@ -23,5 +23,5 @@
     "storage.hmacKeys.update",
     "storage.intelligenceConfigs.get"
   ],
-  "stage": ""
+  "stage": "GA"
 }

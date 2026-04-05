@@ -8,5 +8,5 @@
     "trafficdirector.networks.getConfigs",
     "trafficdirector.networks.reportMetrics"
   ],
-  "stage": ""
+  "stage": "BETA"
 }

@@ -124,5 +124,5 @@
     "vmwareengine.vmwareEngineNetworks.listTagBindings",
     "vmwareengine.vmwareEngineNetworks.update"
   ],
-  "stage": ""
+  "stage": "GA"
 }

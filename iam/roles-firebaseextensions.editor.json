@@ -1,0 +1,14 @@
+{
+  "name": "roles/firebaseextensions.editor",
+  "title": "Firebaseextensions Editor",
+  "description": "Editor role for firebaseextensions",
+  "included_permissions": [
+    "firebase.clients.get",
+    "firebase.clients.list",
+    "firebase.projects.get",
+    "firebaseextensions.configs.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "BETA"
+}

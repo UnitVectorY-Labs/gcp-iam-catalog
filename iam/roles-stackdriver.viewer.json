@@ -8,5 +8,5 @@
     "stackdriver.projects.get",
     "stackdriver.resourceMetadata.list"
   ],
-  "stage": ""
+  "stage": "GA"
 }

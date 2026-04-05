@@ -9,5 +9,5 @@
     "serviceconsumermanagement.quota.get",
     "serviceconsumermanagement.tenancyu.list"
   ],
-  "stage": ""
+  "stage": "BETA"
 }

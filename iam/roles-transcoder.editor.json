@@ -18,5 +18,5 @@
     "transcoder.jobs.listEffectiveTags",
     "transcoder.jobs.listTagBindings"
   ],
-  "stage": ""
+  "stage": "GA"
 }

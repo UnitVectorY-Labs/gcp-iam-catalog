@@ -4,7 +4,8 @@
   "description": "Create access to Gemini Data Analytics resources.",
   "included_permissions": [
     "geminidataanalytics.dataAgents.create",
+    "geminidataanalytics.locations.suggestContext",
     "geminidataanalytics.operations.get"
   ],
-  "stage": "BETA"
+  "stage": "GA"
 }

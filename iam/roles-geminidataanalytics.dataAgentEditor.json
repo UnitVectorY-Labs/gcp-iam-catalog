@@ -6,7 +6,8 @@
     "geminidataanalytics.dataAgents.get",
     "geminidataanalytics.dataAgents.list",
     "geminidataanalytics.dataAgents.update",
+    "geminidataanalytics.locations.suggestContext",
     "geminidataanalytics.operations.get"
   ],
-  "stage": "BETA"
+  "stage": "GA"
 }

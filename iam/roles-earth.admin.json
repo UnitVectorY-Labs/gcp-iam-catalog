@@ -1,0 +1,12 @@
+{
+  "name": "roles/earth.admin",
+  "title": "Earth Admin",
+  "description": "Admin role for earth",
+  "included_permissions": [
+    "earth.subscriptions.get",
+    "earth.subscriptions.update",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "BETA"
+}

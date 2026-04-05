@@ -9,5 +9,5 @@
     "source.repos.getIamPolicy",
     "source.repos.list"
   ],
-  "stage": ""
+  "stage": "GA"
 }

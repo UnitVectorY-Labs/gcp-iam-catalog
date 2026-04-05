@@ -12,5 +12,5 @@
     "resourcemanager.projects.get",
     "resourcemanager.projects.list"
   ],
-  "stage": ""
+  "stage": "GA"
 }

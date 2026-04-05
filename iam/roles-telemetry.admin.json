@@ -14,5 +14,5 @@
     "telemetry.metrics.write",
     "telemetry.traces.write"
   ],
-  "stage": ""
+  "stage": "GA"
 }

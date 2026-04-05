@@ -15,5 +15,5 @@
     "runtimeconfig.waiters.get",
     "runtimeconfig.waiters.list"
   ],
-  "stage": ""
+  "stage": "GA"
 }
