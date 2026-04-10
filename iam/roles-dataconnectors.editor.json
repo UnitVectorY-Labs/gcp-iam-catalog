@@ -1,7 +1,7 @@
 {
   "name": "roles/dataconnectors.editor",
-  "title": "Dataconnectors Editor",
-  "description": "Editor role for dataconnectors",
+  "title": "Data Connectors Editor",
+  "description": "Editor role for Data Connectors",
   "included_permissions": [
     "dataconnectors.connectors.create",
     "dataconnectors.connectors.delete",

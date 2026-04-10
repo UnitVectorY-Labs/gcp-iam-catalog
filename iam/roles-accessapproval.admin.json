@@ -1,7 +1,7 @@
 {
   "name": "roles/accessapproval.admin",
-  "title": "Accessapproval Admin",
-  "description": "Admin role for accessapproval",
+  "title": "Access Approval Admin",
+  "description": "Admin role for Access Approval",
   "included_permissions": [
     "accessapproval.requests.approve",
     "accessapproval.requests.dismiss",

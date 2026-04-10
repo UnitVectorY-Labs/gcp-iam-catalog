@@ -102,5 +102,5 @@
     "telemetry.metrics.write",
     "telemetry.traces.write"
   ],
-  "stage": "BETA"
+  "stage": "GA"
 }
