@@ -1,7 +1,7 @@
 {
   "name": "roles/datacatalog.editor",
-  "title": "Datacatalog Editor",
-  "description": "Editor role for datacatalog",
+  "title": "Data Catalog Editor",
+  "description": "Editor role for Data Catalog",
   "included_permissions": [
     "bigquery.connections.get",
     "bigquery.datasets.get",
