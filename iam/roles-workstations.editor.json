@@ -1,7 +1,7 @@
 {
   "name": "roles/workstations.editor",
-  "title": "Cloud Workstations Editor",
-  "description": "Editor role for Cloud Workstations",
+  "title": "Workstations Editor",
+  "description": "Editor role for workstations",
   "included_permissions": [
     "resourcemanager.projects.get",
     "resourcemanager.projects.list",

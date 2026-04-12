@@ -1,0 +1,7 @@
+{
+  "name": "roles/appoptimize.viewer",
+  "title": "App Optimize Viewer",
+  "description": "Lets you read App Optimize resources.",
+  "included_permissions": null,
+  "stage": ""
+}

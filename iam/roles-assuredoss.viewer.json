@@ -1,7 +1,7 @@
 {
   "name": "roles/assuredoss.viewer",
-  "title": "Assuredoss Viewer",
-  "description": "Viewer role for assuredoss",
+  "title": "Assured OSS Viewer",
+  "description": "Viewer role for Assured OSS",
   "included_permissions": [
     "assuredoss.config.get",
     "assuredoss.locations.get",

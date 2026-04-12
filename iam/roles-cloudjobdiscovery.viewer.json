@@ -1,7 +1,7 @@
 {
   "name": "roles/cloudjobdiscovery.viewer",
-  "title": "Cloud Talent Solution Viewer",
-  "description": "Viewer role for Cloud Talent Solution.",
+  "title": "Cloudjobdiscovery Viewer",
+  "description": "Viewer role for cloudjobdiscovery",
   "included_permissions": [
     "cloudjobdiscovery.companies.get",
     "cloudjobdiscovery.companies.list",

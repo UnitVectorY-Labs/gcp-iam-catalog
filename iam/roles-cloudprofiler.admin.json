@@ -1,7 +1,7 @@
 {
   "name": "roles/cloudprofiler.admin",
-  "title": "Cloud Profiler Admin",
-  "description": "Admin role for Cloud Profiler",
+  "title": "Cloudprofiler Admin",
+  "description": "Admin role for cloudprofiler",
   "included_permissions": [
     "cloudprofiler.profiles.create",
     "cloudprofiler.profiles.list",

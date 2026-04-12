@@ -1,7 +1,7 @@
 {
   "name": "roles/dataconnectors.admin",
-  "title": "Dataconnectors Admin",
-  "description": "Admin role for dataconnectors",
+  "title": "Data Connectors Admin",
+  "description": "Admin role for Data Connectors",
   "included_permissions": [
     "dataconnectors.connectors.create",
     "dataconnectors.connectors.delete",

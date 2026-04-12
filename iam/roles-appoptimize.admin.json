@@ -1,0 +1,7 @@
+{
+  "name": "roles/appoptimize.admin",
+  "title": "App Optimize Admin",
+  "description": "Lets you create, read, update, and delete App Optimize resources.",
+  "included_permissions": null,
+  "stage": ""
+}

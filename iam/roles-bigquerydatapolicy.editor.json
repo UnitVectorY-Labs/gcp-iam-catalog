@@ -1,7 +1,7 @@
 {
   "name": "roles/bigquerydatapolicy.editor",
-  "title": "BigQuery Data Policy Editor",
-  "description": "Editor role for BigQuery Data Policy",
+  "title": "Bigquerydatapolicy Editor",
+  "description": "Editor role for bigquerydatapolicy",
   "included_permissions": [
     "bigquery.bireservations.get",
     "bigquery.bireservations.update",

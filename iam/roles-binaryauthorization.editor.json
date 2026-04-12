@@ -1,7 +1,7 @@
 {
   "name": "roles/binaryauthorization.editor",
-  "title": "Binary Authorization Editor",
-  "description": "Editor role for Binary Authorization",
+  "title": "Binaryauthorization Editor",
+  "description": "Editor role for binaryauthorization",
   "included_permissions": [
     "binaryauthorization.attestors.create",
     "binaryauthorization.attestors.delete",
