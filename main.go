@@ -449,11 +449,7 @@ func generateHTML() error {
 		// Permissions without "/" are at permissions/foo.html → prefix is "../"
 		// Permissions with "/" like "iam.googleapis.com/bar.html" are at
 		// permissions/iam.googleapis.com/bar.html → prefix is "../../"
-		pathPrefix := "../"
-		slashCount := strings.Count(perm, "/")
-		for i := 0; i < slashCount; i++ {
-			pathPrefix += "../"
-		}
+		pathPrefix := strings.Repeat("../", strings.Count(perm, "/")+1)
 
 		data := struct {
 			RoleCount  int
