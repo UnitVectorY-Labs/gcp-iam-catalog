@@ -413,9 +413,17 @@ func generateHTML() error {
 
 	// Generate Permission Pages
 	for perm, rolesWithPerm := range permissionIndex {
-		// Replace "/" with "-" for filename
-		filename := strings.ReplaceAll(perm, "/", "-") + ".html"
-		filePath := filepath.Join(permissionsHTMLDir, filename)
+		// Use "/" in permission name as directory separator
+		filename := perm + ".html"
+		filePath := filepath.Join(permissionsHTMLDir, filepath.FromSlash(filename))
+
+		// Ensure subdirectories exist for permissions with "/"
+		if dir := filepath.Dir(filePath); dir != permissionsHTMLDir {
+			if err := os.MkdirAll(dir, os.ModePerm); err != nil {
+				log.Printf("Failed to create directory for permission %s: %v", perm, err)
+				continue
+			}
+		}
 
 		// Populate Roles with Name and Title
 		var detailedRoles []struct {
@@ -437,6 +445,12 @@ func generateHTML() error {
 			}
 		}
 
+		// Compute PathPrefix based on the depth of the permission name
+		// Permissions without "/" are at permissions/foo.html → prefix is "../"
+		// Permissions with "/" like "iam.googleapis.com/bar.html" are at
+		// permissions/iam.googleapis.com/bar.html → prefix is "../../"
+		pathPrefix := strings.Repeat("../", strings.Count(perm, "/")+1)
+
 		data := struct {
 			RoleCount  int
 			Permission string
@@ -445,11 +459,13 @@ func generateHTML() error {
 				Title string
 			}
 			LastCrawled string
+			PathPrefix  string
 		}{
 			RoleCount:   len(detailedRoles),
 			Permission:  perm,
 			Roles:       detailedRoles,
 			LastCrawled: lastCrawled,
+			PathPrefix:  pathPrefix,
 		}
 
 		f, err := os.Create(filePath)
