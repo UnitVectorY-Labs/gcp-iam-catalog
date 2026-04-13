@@ -1,7 +1,7 @@
 {
   "name": "roles/dataconnectors.viewer",
-  "title": "Dataconnectors Viewer",
-  "description": "Viewer role for dataconnectors",
+  "title": "Data Connectors Viewer",
+  "description": "Viewer role for Data Connectors",
   "included_permissions": [
     "dataconnectors.connectors.get",
     "dataconnectors.connectors.getIamPolicy",

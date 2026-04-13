@@ -1,7 +1,7 @@
 {
   "name": "roles/privateca.editor",
-  "title": "CA Service Editor",
-  "description": "Editor role for CA Service",
+  "title": "Privateca Editor",
+  "description": "Editor role for privateca",
   "included_permissions": [
     "privateca.caPools.create",
     "privateca.caPools.delete",

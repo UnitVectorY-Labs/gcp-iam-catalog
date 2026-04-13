@@ -1,7 +1,7 @@
 {
   "name": "roles/datastore.admin",
-  "title": "Cloud Datastore Admin",
-  "description": "Admin role for Cloud Datastore",
+  "title": "Datastore Admin",
+  "description": "Admin role for datastore",
   "included_permissions": [
     "appengine.applications.get",
     "databasesconsole.locations.get",

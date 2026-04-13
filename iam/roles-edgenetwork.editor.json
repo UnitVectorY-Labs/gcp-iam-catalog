@@ -1,7 +1,7 @@
 {
   "name": "roles/edgenetwork.editor",
-  "title": "Edge Network Editor",
-  "description": "Editor role for Edge Network",
+  "title": "Edgenetwork Editor",
+  "description": "Editor role for edgenetwork",
   "included_permissions": [
     "edgenetwork.interconnectAttachments.create",
     "edgenetwork.interconnectAttachments.delete",

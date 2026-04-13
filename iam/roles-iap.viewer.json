@@ -1,7 +1,7 @@
 {
   "name": "roles/iap.viewer",
-  "title": "IAP Policy Viewer",
-  "description": "Viewer role for IAP",
+  "title": "Iap Viewer",
+  "description": "Viewer role for iap",
   "included_permissions": [
     "iap.projects.getSettings",
     "iap.tunnelDestGroups.get",

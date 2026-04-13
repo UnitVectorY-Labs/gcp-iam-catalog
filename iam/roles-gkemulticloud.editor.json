@@ -1,7 +1,7 @@
 {
   "name": "roles/gkemulticloud.editor",
-  "title": "Anthos Multi-cloud Editor",
-  "description": "Editor role for Anthos Multi-cloud",
+  "title": "Gkemulticloud Editor",
+  "description": "Editor role for gkemulticloud",
   "included_permissions": [
     "gkemulticloud.attachedClusters.create",
     "gkemulticloud.attachedClusters.delete",

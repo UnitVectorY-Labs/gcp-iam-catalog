@@ -1,7 +1,7 @@
 {
   "name": "roles/iap.editor",
-  "title": "Iap Editor",
-  "description": "Editor role for iap",
+  "title": "IAP Policy Editor",
+  "description": "Editor role for IAP",
   "included_permissions": [
     "iap.projects.getSettings",
     "iap.projects.updateSettings",
