@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <title>GCP IAM Permission: {{.Permission}} - gcp-iam-catalog</title>
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="{{.PathPrefix}}style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="See the roles that grant the {{.Permission}} permission in Google Cloud Platform (GCP) IAM and understand its usage.">
 </head>
 <body>
     <!-- Navigation Bar -->
     <div class="navbar">
-        <a href="../index.html">gcp-iam-catalog</a>
-        <a href="../roles.html">Roles</a>
-        <a href="../permissions.html" class="active">Permissions</a>
+        <a href="{{.PathPrefix}}index.html">gcp-iam-catalog</a>
+        <a href="{{.PathPrefix}}roles.html">Roles</a>
+        <a href="{{.PathPrefix}}permissions.html" class="active">Permissions</a>
     </div>
 
     <main>
@@ -61,7 +61,7 @@
                             <div class="role-row" data-title="{{.Title}}">
                                 <div class="role-name-cell">
                                     <span class="role-indicator"></span>
-                                    <a href="../{{.Name}}.html" class="role-name">
+                                    <a href="{{$.PathPrefix}}{{.Name}}.html" class="role-name">
                                         {{.Name}}
                                     </a>
                                 </div>
@@ -135,13 +135,14 @@
         const currentPermission = '{{.Permission}}';
         const currentRoles = [{{range $i, $r := .Roles}}{{if $i}},{{end}}"{{$r.Name}}"{{end}}];
         const MAX_BAR_WIDTH = 200;
+        const pathPrefix = '{{.PathPrefix}}';
         let allPermissions = [];
         let selectedPermission = '';
 
         // Load permissions list on page load
         async function loadPermissionsList() {
             try {
-                const response = await fetch('../permissions-list.json');
+                const response = await fetch(pathPrefix + 'permissions-list.json');
                 if (response.ok) {
                     allPermissions = await response.json();
                 } else {
@@ -256,7 +257,7 @@
 
             try {
                 const filename = otherPermission.replace(/\//g, '-') + '.json';
-                const response = await fetch('../permissionsdata/' + filename);
+                const response = await fetch(pathPrefix + 'permissionsdata/' + filename);
                 if (!response.ok) {
                     compareInput.classList.add('input-error');
                     return;
@@ -280,9 +281,9 @@
                 document.getElementById('rightHeader').textContent = otherPermission;
 
                 // Populate lists with role links
-                populateCompareList('leftList', onlyLeft, '../', 'role');
-                populateCompareList('commonList', common, '../', 'role');
-                populateCompareList('rightList', onlyRight, '../', 'role');
+                populateCompareList('leftList', onlyLeft, pathPrefix, 'role');
+                populateCompareList('commonList', common, pathPrefix, 'role');
+                populateCompareList('rightList', onlyRight, pathPrefix, 'role');
 
                 // Update counts
                 document.getElementById('leftCount').textContent = onlyLeft.length;
@@ -334,7 +335,7 @@
                 const a = document.createElement('a');
                 // Remove 'roles/' prefix for the URL path
                 const roleShortName = item.replace('roles/', '');
-                a.href = baseUrl + encodeURIComponent(roleShortName) + '.html';
+                a.href = baseUrl + roleShortName.split('/').map(encodeURIComponent).join('/') + '.html';
                 a.textContent = item;
                 div.appendChild(a);
                 container.appendChild(div);

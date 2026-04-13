@@ -351,7 +351,7 @@
                 indicator.className = type === 'permission' ? 'permission-indicator' : 'role-indicator';
                 div.appendChild(indicator);
                 const a = document.createElement('a');
-                a.href = baseUrl + encodeURIComponent(item) + '.html';
+                a.href = baseUrl + item.split('/').map(encodeURIComponent).join('/') + '.html';
                 a.textContent = item;
                 div.appendChild(a);
                 container.appendChild(div);
