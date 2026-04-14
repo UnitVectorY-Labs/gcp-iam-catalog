@@ -1,7 +1,7 @@
 {
   "name": "roles/gsuiteaddons.admin",
-  "title": "Gsuiteaddons Admin",
-  "description": "Admin role for gsuiteaddons",
+  "title": "Google Workspace Add-ons Admin",
+  "description": "Admin role for Google Workspace Add-ons",
   "included_permissions": [
     "gsuiteaddons.authorizations.get",
     "gsuiteaddons.deployments.create",

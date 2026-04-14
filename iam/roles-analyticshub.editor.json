@@ -1,7 +1,7 @@
 {
   "name": "roles/analyticshub.editor",
-  "title": "Analyticshub Editor",
-  "description": "Editor role for analyticshub",
+  "title": "Analytics Hub Editor",
+  "description": "Editor role for Analytics Hub",
   "included_permissions": [
     "analyticshub.dataExchanges.create",
     "analyticshub.dataExchanges.delete",

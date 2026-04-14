@@ -1,7 +1,7 @@
 {
   "name": "roles/cloudbuild.viewer",
-  "title": "Cloud Build Viewer",
-  "description": "Viewer role for Cloud Build",
+  "title": "Cloudbuild Viewer",
+  "description": "Viewer role for cloudbuild",
   "included_permissions": [
     "cloudbuild.builds.get",
     "cloudbuild.builds.list",

@@ -1,7 +1,7 @@
 {
   "name": "roles/metastore.viewer",
-  "title": "Metastore Viewer",
-  "description": "Viewer role for metastore",
+  "title": "Dataproc Metastore Viewer",
+  "description": "Viewer role for Dataproc Metastore",
   "included_permissions": [
     "metastore.backups.get",
     "metastore.backups.getIamPolicy",

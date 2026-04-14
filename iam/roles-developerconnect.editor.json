@@ -1,7 +1,7 @@
 {
   "name": "roles/developerconnect.editor",
-  "title": "Developerconnect Editor",
-  "description": "Editor role for developerconnect",
+  "title": "Developer Connect Editor",
+  "description": "Developer Connect Editor role.",
   "included_permissions": [
     "developerconnect.accountConnectors.create",
     "developerconnect.accountConnectors.delete",
@@ -48,5 +48,5 @@
     "resourcemanager.projects.get",
     "resourcemanager.projects.list"
   ],
-  "stage": "BETA"
+  "stage": ""
 }

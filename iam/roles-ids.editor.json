@@ -1,7 +1,7 @@
 {
   "name": "roles/ids.editor",
-  "title": "Cloud IDS Editor",
-  "description": "Editor role for Cloud IDS",
+  "title": "Ids Editor",
+  "description": "Editor role for ids",
   "included_permissions": [
     "ids.endpoints.create",
     "ids.endpoints.delete",

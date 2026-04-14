@@ -1,7 +1,7 @@
 {
   "name": "roles/managedidentities.editor",
-  "title": "Managedidentities Editor",
-  "description": "Editor role for managedidentities",
+  "title": "Google Cloud Managed Identities Editor",
+  "description": "Editor role for Google Cloud Managed Identities",
   "included_permissions": [
     "managedidentities.backups.create",
     "managedidentities.backups.delete",

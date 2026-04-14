@@ -1,7 +1,7 @@
 {
   "name": "roles/binaryauthorization.viewer",
-  "title": "Binaryauthorization Viewer",
-  "description": "Viewer role for binaryauthorization",
+  "title": "Binary Authorization Viewer",
+  "description": "Viewer role for Binary Authorization",
   "included_permissions": [
     "binaryauthorization.attestors.get",
     "binaryauthorization.attestors.getIamPolicy",
