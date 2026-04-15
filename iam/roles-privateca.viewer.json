@@ -1,7 +1,7 @@
 {
   "name": "roles/privateca.viewer",
-  "title": "Privateca Viewer",
-  "description": "Viewer role for privateca",
+  "title": "CA Service Viewer",
+  "description": "Viewer role for CA Service",
   "included_permissions": [
     "privateca.caPools.get",
     "privateca.caPools.getIamPolicy",

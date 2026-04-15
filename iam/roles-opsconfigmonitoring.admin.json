@@ -1,0 +1,12 @@
+{
+  "name": "roles/opsconfigmonitoring.admin",
+  "title": "Opsconfigmonitoring Admin",
+  "description": "Admin role for opsconfigmonitoring",
+  "included_permissions": [
+    "opsconfigmonitoring.resourceMetadata.list",
+    "opsconfigmonitoring.resourceMetadata.write",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "BETA"
+}

@@ -1,6 +1,6 @@
 {
   "name": "roles/cloudtasks.editor",
-  "title": "Cloudtasks Editor",
+  "title": "Cloud Tasks Editor",
   "description": "Editor role for cloudtasks",
   "included_permissions": [
     "cloudtasks.cmekConfig.get",

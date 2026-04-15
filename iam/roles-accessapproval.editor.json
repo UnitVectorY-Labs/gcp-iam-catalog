@@ -1,7 +1,7 @@
 {
   "name": "roles/accessapproval.editor",
-  "title": "Accessapproval Editor",
-  "description": "Editor role for accessapproval",
+  "title": "Access Approval Editor",
+  "description": "Editor role for Access Approval",
   "included_permissions": [
     "accessapproval.requests.get",
     "accessapproval.requests.list",

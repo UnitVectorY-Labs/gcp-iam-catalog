@@ -3,6 +3,7 @@
   "title": "Chronicle SOAR Threat Manager",
   "description": "Grants threat manager access to Chronicle SOAR.",
   "included_permissions": [
+    "chronicle.instances.generateSoarChatMessage",
     "chronicle.instances.soarThreatManager",
     "cloudasset.assets.exportResource",
     "cloudasset.assets.queryAccessPolicy",

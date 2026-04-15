@@ -1,7 +1,7 @@
 {
   "name": "roles/beyondcorp.editor",
-  "title": "Beyondcorp Editor",
-  "description": "Editor role for beyondcorp",
+  "title": "Cloud BeyondCorp Editor",
+  "description": "Editor role for Cloud BeyondCorp",
   "included_permissions": [
     "beyondcorp.appConnections.create",
     "beyondcorp.appConnections.delete",

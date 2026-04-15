@@ -1,7 +1,7 @@
 {
   "name": "roles/cloudbuild.editor",
-  "title": "Cloudbuild Editor",
-  "description": "Editor role for cloudbuild",
+  "title": "Cloud Build Editor",
+  "description": "Editor role for Cloud Build",
   "included_permissions": [
     "cloudbuild.builds.approve",
     "cloudbuild.builds.create",

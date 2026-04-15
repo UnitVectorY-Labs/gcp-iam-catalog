@@ -1,0 +1,11 @@
+{
+  "name": "roles/publicca.admin",
+  "title": "Publicca Admin",
+  "description": "Admin role for publicca",
+  "included_permissions": [
+    "publicca.externalAccountKeys.create",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "BETA"
+}

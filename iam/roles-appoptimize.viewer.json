@@ -1,0 +1,15 @@
+{
+  "name": "roles/appoptimize.viewer",
+  "title": "App Optimize Viewer",
+  "description": "Lets you read App Optimize resources.",
+  "included_permissions": [
+    "appoptimize.locations.get",
+    "appoptimize.locations.list",
+    "appoptimize.operations.get",
+    "appoptimize.operations.list",
+    "appoptimize.reports.get",
+    "appoptimize.reports.getData",
+    "appoptimize.reports.list"
+  ],
+  "stage": "BETA"
+}

@@ -1,7 +1,7 @@
 {
   "name": "roles/networkconnectivity.editor",
-  "title": "Networkconnectivity Editor",
-  "description": "Editor role for networkconnectivity",
+  "title": "Network Connectivity Editor",
+  "description": "Editor role for Network Connectivity",
   "included_permissions": [
     "networkconnectivity.gatewayAdvertisedRoutes.create",
     "networkconnectivity.gatewayAdvertisedRoutes.delete",
@@ -27,7 +27,9 @@
     "networkconnectivity.hubs.get",
     "networkconnectivity.hubs.getIamPolicy",
     "networkconnectivity.hubs.list",
+    "networkconnectivity.hubs.listEffectiveTags",
     "networkconnectivity.hubs.listSpokes",
+    "networkconnectivity.hubs.listTagBindings",
     "networkconnectivity.hubs.queryStatus",
     "networkconnectivity.hubs.update",
     "networkconnectivity.internalRanges.create",
@@ -86,6 +88,8 @@
     "networkconnectivity.spokes.get",
     "networkconnectivity.spokes.getIamPolicy",
     "networkconnectivity.spokes.list",
+    "networkconnectivity.spokes.listEffectiveTags",
+    "networkconnectivity.spokes.listTagBindings",
     "networkconnectivity.spokes.update",
     "networkconnectivity.transports.create",
     "networkconnectivity.transports.delete",

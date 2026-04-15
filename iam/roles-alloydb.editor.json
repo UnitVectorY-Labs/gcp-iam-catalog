@@ -1,7 +1,7 @@
 {
   "name": "roles/alloydb.editor",
-  "title": "Alloydb Editor",
-  "description": "Editor role for alloydb",
+  "title": "AlloyDB Editor",
+  "description": "Editor role for AlloyDB",
   "included_permissions": [
     "alloydb.backups.create",
     "alloydb.backups.delete",

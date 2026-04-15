@@ -1,7 +1,7 @@
 {
   "name": "roles/assuredoss.editor",
-  "title": "Assuredoss Editor",
-  "description": "Editor role for assuredoss",
+  "title": "Assured OSS Editor",
+  "description": "Editor role for Assured OSS",
   "included_permissions": [
     "assuredoss.config.get",
     "assuredoss.locations.get",

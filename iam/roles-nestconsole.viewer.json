@@ -1,0 +1,12 @@
+{
+  "name": "roles/nestconsole.viewer",
+  "title": "Nestconsole Viewer",
+  "description": "Viewer role for nestconsole",
+  "included_permissions": [
+    "nestconsole.smarthomeProjects.get",
+    "nestconsole.smarthomeVersions.get",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

@@ -31,5 +31,5 @@
     "serviceusage.services.list",
     "serviceusage.values.test"
   ],
-  "stage": ""
+  "stage": "GA"
 }

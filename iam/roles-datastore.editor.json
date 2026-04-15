@@ -1,7 +1,7 @@
 {
   "name": "roles/datastore.editor",
-  "title": "Datastore Editor",
-  "description": "Editor role for datastore",
+  "title": "Cloud Datastore Editor",
+  "description": "Editor role for Cloud Datastore",
   "included_permissions": [
     "appengine.applications.get",
     "databasesconsole.locations.get",

@@ -1,6 +1,6 @@
 {
   "name": "roles/apihub.viewer",
-  "title": "Cloud API hub Viewer",
+  "title": "Cloud API Hub Viewer",
   "description": "View access to all Cloud API hub resources.",
   "included_permissions": [
     "apihub.addons.get",

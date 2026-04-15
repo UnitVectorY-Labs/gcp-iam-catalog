@@ -1,0 +1,15 @@
+{
+  "name": "roles/timeseriesinsights.viewer",
+  "title": "Timeseriesinsights Viewer",
+  "description": "Viewer role for timeseriesinsights",
+  "included_permissions": [
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list",
+    "timeseriesinsights.datasets.evaluate",
+    "timeseriesinsights.datasets.list",
+    "timeseriesinsights.datasets.query",
+    "timeseriesinsights.locations.get",
+    "timeseriesinsights.locations.list"
+  ],
+  "stage": "BETA"
+}

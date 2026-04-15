@@ -1,0 +1,11 @@
+{
+  "name": "roles/health.viewer",
+  "title": "Health Viewer",
+  "description": "Read-only access to Health resources.",
+  "included_permissions": [
+    "health.subscribers.list",
+    "health.subscriptions.get",
+    "health.subscriptions.list"
+  ],
+  "stage": "GA"
+}

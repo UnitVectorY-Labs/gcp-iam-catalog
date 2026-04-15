@@ -1,7 +1,7 @@
 {
   "name": "roles/run.editor",
-  "title": "Run Editor",
-  "description": "Editor role for run",
+  "title": "Cloud Run Editor",
+  "description": "Editor role for Cloud Run",
   "included_permissions": [
     "recommender.locations.get",
     "recommender.locations.list",

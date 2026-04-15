@@ -1,7 +1,7 @@
 {
   "name": "roles/cloudprivatecatalogproducer.editor",
-  "title": "Cloudprivatecatalogproducer Editor",
-  "description": "Editor role for cloudprivatecatalogproducer",
+  "title": "Catalog Editor",
+  "description": "Editor role for Cloud Private Catalog",
   "included_permissions": [
     "cloudprivatecatalogproducer.associations.create",
     "cloudprivatecatalogproducer.associations.delete",

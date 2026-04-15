@@ -1,0 +1,25 @@
+{
+  "name": "roles/runapps.admin",
+  "title": "Runapps Admin",
+  "description": "Admin role for runapps",
+  "included_permissions": [
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list",
+    "runapps.applications.create",
+    "runapps.applications.delete",
+    "runapps.applications.get",
+    "runapps.applications.getStatus",
+    "runapps.applications.list",
+    "runapps.applications.update",
+    "runapps.deployments.create",
+    "runapps.deployments.get",
+    "runapps.deployments.list",
+    "runapps.locations.get",
+    "runapps.locations.list",
+    "runapps.operations.cancel",
+    "runapps.operations.delete",
+    "runapps.operations.get",
+    "runapps.operations.list"
+  ],
+  "stage": "BETA"
+}

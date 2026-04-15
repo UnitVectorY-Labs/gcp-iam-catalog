@@ -1,0 +1,16 @@
+{
+  "name": "roles/parametermanager.viewer",
+  "title": "Parametermanager Viewer",
+  "description": "Viewer role for parametermanager",
+  "included_permissions": [
+    "parametermanager.locations.get",
+    "parametermanager.locations.list",
+    "parametermanager.parameterVersions.get",
+    "parametermanager.parameterVersions.list",
+    "parametermanager.parameters.get",
+    "parametermanager.parameters.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

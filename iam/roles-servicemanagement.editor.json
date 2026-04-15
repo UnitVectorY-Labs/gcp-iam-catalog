@@ -1,0 +1,19 @@
+{
+  "name": "roles/servicemanagement.editor",
+  "title": "Service Management Editor",
+  "description": "Editor role for Service Management.",
+  "included_permissions": [
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list",
+    "servicemanagement.services.bind",
+    "servicemanagement.services.check",
+    "servicemanagement.services.create",
+    "servicemanagement.services.delete",
+    "servicemanagement.services.get",
+    "servicemanagement.services.list",
+    "servicemanagement.services.quota",
+    "servicemanagement.services.report",
+    "servicemanagement.services.update"
+  ],
+  "stage": "GA"
+}

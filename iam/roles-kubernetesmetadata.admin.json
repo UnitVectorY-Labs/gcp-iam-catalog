@@ -1,0 +1,13 @@
+{
+  "name": "roles/kubernetesmetadata.admin",
+  "title": "Kubernetesmetadata Admin",
+  "description": "Admin role for kubernetesmetadata",
+  "included_permissions": [
+    "kubernetesmetadata.metadata.config",
+    "kubernetesmetadata.metadata.publish",
+    "kubernetesmetadata.metadata.snapshot",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

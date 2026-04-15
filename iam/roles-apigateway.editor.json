@@ -1,7 +1,7 @@
 {
   "name": "roles/apigateway.editor",
-  "title": "Apigateway Editor",
-  "description": "Editor role for apigateway",
+  "title": "ApiGateway Editor",
+  "description": "Editor role for ApiGateway",
   "included_permissions": [
     "apigateway.apiconfigs.create",
     "apigateway.apiconfigs.delete",

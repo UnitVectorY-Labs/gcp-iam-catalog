@@ -1,0 +1,19 @@
+{
+  "name": "roles/appoptimize.admin",
+  "title": "App Optimize Admin",
+  "description": "Lets you create, read, update, and delete App Optimize resources.",
+  "included_permissions": [
+    "appoptimize.locations.get",
+    "appoptimize.locations.list",
+    "appoptimize.operations.cancel",
+    "appoptimize.operations.delete",
+    "appoptimize.operations.get",
+    "appoptimize.operations.list",
+    "appoptimize.reports.create",
+    "appoptimize.reports.delete",
+    "appoptimize.reports.get",
+    "appoptimize.reports.getData",
+    "appoptimize.reports.list"
+  ],
+  "stage": "BETA"
+}

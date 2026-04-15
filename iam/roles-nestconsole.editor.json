@@ -1,0 +1,16 @@
+{
+  "name": "roles/nestconsole.editor",
+  "title": "Nestconsole Editor",
+  "description": "Editor role for nestconsole",
+  "included_permissions": [
+    "nestconsole.smarthomePreviews.update",
+    "nestconsole.smarthomeProjects.get",
+    "nestconsole.smarthomeProjects.update",
+    "nestconsole.smarthomeVersions.create",
+    "nestconsole.smarthomeVersions.get",
+    "nestconsole.smarthomeVersions.submit",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "roles/iamconnectors.user",
+  "title": "Connector User",
+  "description": "Grants access to retrieve credentials from connectors.",
+  "included_permissions": [
+    "iamconnectors.connectors.retrieveCredentials"
+  ],
+  "stage": "BETA"
+}

@@ -1,7 +1,7 @@
 {
   "name": "roles/spanner.editor",
-  "title": "Spanner Editor",
-  "description": "Editor role for spanner",
+  "title": "Cloud Spanner Editor",
+  "description": "Editor role for Cloud Spanner",
   "included_permissions": [
     "monitoring.timeSeries.list",
     "resourcemanager.projects.get",

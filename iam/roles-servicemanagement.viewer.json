@@ -1,0 +1,12 @@
+{
+  "name": "roles/servicemanagement.viewer",
+  "title": "Service Management Viewer",
+  "description": "Viewer role for Service Management.",
+  "included_permissions": [
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list",
+    "servicemanagement.services.get",
+    "servicemanagement.services.list"
+  ],
+  "stage": "GA"
+}

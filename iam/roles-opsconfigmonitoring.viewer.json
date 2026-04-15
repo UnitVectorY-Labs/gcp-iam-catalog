@@ -1,0 +1,11 @@
+{
+  "name": "roles/opsconfigmonitoring.viewer",
+  "title": "Opsconfigmonitoring Viewer",
+  "description": "Viewer role for opsconfigmonitoring",
+  "included_permissions": [
+    "opsconfigmonitoring.resourceMetadata.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "BETA"
+}

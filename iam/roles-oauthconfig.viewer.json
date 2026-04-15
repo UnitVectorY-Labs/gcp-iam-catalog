@@ -12,7 +12,9 @@
     "firebaseappcheck.resourcePolicies.get",
     "oauthconfig.clientpolicy.get",
     "oauthconfig.testusers.get",
-    "oauthconfig.verification.get"
+    "oauthconfig.verification.get",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
   ],
   "stage": "BETA"
 }

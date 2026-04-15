@@ -1,0 +1,11 @@
+{
+  "name": "roles/fpnv.admin",
+  "title": "Firebase Phone Number Verification Admin",
+  "description": "Full access to FPNV resources.",
+  "included_permissions": [
+    "fpnv.phoneNumberTokens.fetchDigitalCredentialPayload",
+    "fpnv.phoneNumberTokens.generateTestNumberToken",
+    "fpnv.phoneNumberTokens.mintPhoneNumberToken"
+  ],
+  "stage": "BETA"
+}

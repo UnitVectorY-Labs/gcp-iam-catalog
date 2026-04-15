@@ -1,0 +1,11 @@
+{
+  "name": "roles/kubernetesmetadata.viewer",
+  "title": "Kubernetesmetadata Viewer",
+  "description": "Viewer role for kubernetesmetadata",
+  "included_permissions": [
+    "kubernetesmetadata.metadata.config",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

@@ -1,0 +1,18 @@
+{
+  "name": "roles/timeseriesinsights.admin",
+  "title": "Timeseriesinsights Admin",
+  "description": "Admin role for timeseriesinsights",
+  "included_permissions": [
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list",
+    "timeseriesinsights.datasets.create",
+    "timeseriesinsights.datasets.delete",
+    "timeseriesinsights.datasets.evaluate",
+    "timeseriesinsights.datasets.list",
+    "timeseriesinsights.datasets.query",
+    "timeseriesinsights.datasets.update",
+    "timeseriesinsights.locations.get",
+    "timeseriesinsights.locations.list"
+  ],
+  "stage": "BETA"
+}

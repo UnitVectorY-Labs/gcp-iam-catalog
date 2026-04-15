@@ -1,7 +1,7 @@
 {
   "name": "roles/cloudbuild.admin",
-  "title": "Cloudbuild Admin",
-  "description": "Admin role for cloudbuild",
+  "title": "Cloud Build Admin",
+  "description": "Admin role for Cloud Build",
   "included_permissions": [
     "cloudbuild.builds.approve",
     "cloudbuild.builds.create",

@@ -1,7 +1,7 @@
 {
   "name": "roles/clouddeploy.editor",
-  "title": "Clouddeploy Editor",
-  "description": "Editor role for clouddeploy",
+  "title": "Cloud Deploy Editor",
+  "description": "Editor role for Cloud Deploy",
   "included_permissions": [
     "clouddeploy.automationRuns.cancel",
     "clouddeploy.automationRuns.get",

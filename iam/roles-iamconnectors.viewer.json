@@ -1,0 +1,20 @@
+{
+  "name": "roles/iamconnectors.viewer",
+  "title": "Connector Viewer",
+  "description": "Grants access to view connectors, authorizations, and access events.",
+  "included_permissions": [
+    "iamconnectors.accessEvents.get",
+    "iamconnectors.accessEvents.list",
+    "iamconnectors.authorizations.get",
+    "iamconnectors.authorizations.list",
+    "iamconnectors.connectors.get",
+    "iamconnectors.connectors.getIamPolicy",
+    "iamconnectors.connectors.list",
+    "iamconnectors.connectors.queryWorkloads",
+    "iamconnectors.locations.get",
+    "iamconnectors.locations.list",
+    "iamconnectors.operations.get",
+    "iamconnectors.operations.list"
+  ],
+  "stage": "BETA"
+}
