@@ -3,6 +3,7 @@
   "title": "Gemini Data Analytics Data Agent Owner",
   "description": "Full access to existing Gemini Data Analytics resources.",
   "included_permissions": [
+    "geminidataanalytics.dataAgents.chat",
     "geminidataanalytics.dataAgents.delete",
     "geminidataanalytics.dataAgents.get",
     "geminidataanalytics.dataAgents.getIamPolicy",
@@ -11,7 +12,6 @@
     "geminidataanalytics.dataAgents.update",
     "geminidataanalytics.locations.get",
     "geminidataanalytics.locations.list",
-    "geminidataanalytics.locations.suggestContext",
     "geminidataanalytics.operations.cancel",
     "geminidataanalytics.operations.delete",
     "geminidataanalytics.operations.get",

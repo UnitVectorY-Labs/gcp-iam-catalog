@@ -1,0 +1,15 @@
+{
+  "name": "roles/commerceoffercatalog.admin",
+  "title": "Commerce Offer Catalog Admin",
+  "description": "Admin role for Commerce Offer Catalog",
+  "included_permissions": [
+    "commerceoffercatalog.agreements.get",
+    "commerceoffercatalog.agreements.list",
+    "commerceoffercatalog.documents.get",
+    "commerceoffercatalog.documents.list",
+    "commerceoffercatalog.offers.get",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": ""
+}

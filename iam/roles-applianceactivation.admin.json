@@ -1,0 +1,15 @@
+{
+  "name": "roles/applianceactivation.admin",
+  "title": "Appliance Admin",
+  "description": "Admin role for Appliance",
+  "included_permissions": [
+    "applianceactivation.rttCommands.approve",
+    "applianceactivation.rttCommands.create",
+    "applianceactivation.rttCommands.get",
+    "applianceactivation.rttCommands.list",
+    "applianceactivation.rttCommands.sendResult",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": ""
+}

@@ -3,7 +3,7 @@
   "title": "Cloud Telemetry Metrics Writer",
   "description": "Access to write metrics.",
   "included_permissions": [
-    "telemetry.metrics.write"
+    "monitoring.timeSeries.create"
   ],
   "stage": "GA"
 }

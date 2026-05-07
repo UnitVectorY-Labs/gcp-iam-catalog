@@ -1,0 +1,10 @@
+{
+  "name": "roles/cloudnumberregistry.ipamAdmin",
+  "title": "Cloud Number Registry IPAM Admin",
+  "description": "Full access to Cloud Number Registry resources.",
+  "included_permissions": [
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": ""
+}

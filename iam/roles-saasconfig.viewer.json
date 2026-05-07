@@ -1,0 +1,11 @@
+{
+  "name": "roles/saasconfig.viewer",
+  "title": "SaaS Config Viewer",
+  "description": "Read access to SaaS Config resources.",
+  "included_permissions": [
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list",
+    "saasconfig.featureFlagsConfigs.get"
+  ],
+  "stage": "BETA"
+}

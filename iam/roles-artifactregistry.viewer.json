@@ -1,7 +1,7 @@
 {
-  "name": "roles/artifactregistry.reader",
-  "title": "Artifact Registry Reader",
-  "description": "Access to read repository items.",
+  "name": "roles/artifactregistry.viewer",
+  "title": "Artifactregistry Viewer",
+  "description": "Viewer role for Artifact Registry",
   "included_permissions": [
     "artifactregistry.attachments.get",
     "artifactregistry.attachments.list",
@@ -18,13 +18,13 @@
     "artifactregistry.npmpackages.list",
     "artifactregistry.packages.get",
     "artifactregistry.packages.list",
-    "artifactregistry.projectconfigs.get",
     "artifactregistry.projectsettings.get",
     "artifactregistry.pythonpackages.get",
     "artifactregistry.pythonpackages.list",
     "artifactregistry.repositories.downloadArtifacts",
     "artifactregistry.repositories.exportArtifacts",
     "artifactregistry.repositories.get",
+    "artifactregistry.repositories.getIamPolicy",
     "artifactregistry.repositories.list",
     "artifactregistry.repositories.listEffectiveTags",
     "artifactregistry.repositories.listTagBindings",
@@ -35,7 +35,8 @@
     "artifactregistry.tags.list",
     "artifactregistry.versions.get",
     "artifactregistry.versions.list",
-    "resourcemanager.projects.get"
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
   ],
-  "stage": "GA"
+  "stage": ""
 }

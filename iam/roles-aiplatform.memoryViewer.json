@@ -1,7 +1,7 @@
 {
   "name": "roles/aiplatform.memoryViewer",
-  "title": "Vertex AI Agent Engine Memory Viewer Role",
-  "description": "Grants viewer access to Memory for Agent Engine.",
+  "title": "Agent Platform Memory Bank Viewer Role",
+  "description": "Grants viewer access to Agent Platform Memory Bank.",
   "included_permissions": [
     "aiplatform.memories.get",
     "aiplatform.memories.list",

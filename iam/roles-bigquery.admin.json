@@ -227,6 +227,7 @@
     "dataform.workspaces.searchFiles",
     "dataform.workspaces.setIamPolicy",
     "dataform.workspaces.writeFile",
+    "dataplex.datascans.cancel",
     "dataplex.datascans.create",
     "dataplex.datascans.delete",
     "dataplex.datascans.get",

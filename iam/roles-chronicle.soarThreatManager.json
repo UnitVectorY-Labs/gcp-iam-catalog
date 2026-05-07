@@ -30,5 +30,5 @@
     "securitycenter.userinterfacemetadata.get",
     "securitycenter.valuedresources.list"
   ],
-  "stage": "BETA"
+  "stage": "GA"
 }

@@ -1,6 +1,6 @@
 {
   "name": "roles/aiplatform.entityTypeOwner",
-  "title": "Vertex AI Feature Store EntityType owner",
+  "title": "Agent Platform Feature Store EntityType owner",
   "description": "Provides full access to all permissions for a particular entity type resource.",
   "included_permissions": [
     "aiplatform.entityTypes.delete",

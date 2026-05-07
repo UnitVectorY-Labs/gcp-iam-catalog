@@ -1,0 +1,12 @@
+{
+  "name": "roles/applianceactivation.viewer",
+  "title": "Appliance Viewer",
+  "description": "Viewer role for Appliance",
+  "included_permissions": [
+    "applianceactivation.rttCommands.get",
+    "applianceactivation.rttCommands.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": ""
+}

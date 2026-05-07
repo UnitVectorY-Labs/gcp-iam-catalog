@@ -1,0 +1,24 @@
+{
+  "name": "roles/cloudnumberregistry.ipamViewer",
+  "title": "Cloud Number Registry IPAM Viewer",
+  "description": "Readonly access to Cloud Number Registry resources.",
+  "included_permissions": [
+    "cloudnumberregistry.customRanges.get",
+    "cloudnumberregistry.customRanges.list",
+    "cloudnumberregistry.discoveredRanges.get",
+    "cloudnumberregistry.discoveredRanges.list",
+    "cloudnumberregistry.ipamAdminScopes.get",
+    "cloudnumberregistry.ipamAdminScopes.list",
+    "cloudnumberregistry.locations.get",
+    "cloudnumberregistry.locations.list",
+    "cloudnumberregistry.operations.get",
+    "cloudnumberregistry.operations.list",
+    "cloudnumberregistry.realms.get",
+    "cloudnumberregistry.realms.list",
+    "cloudnumberregistry.registryBooks.get",
+    "cloudnumberregistry.registryBooks.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "BETA"
+}

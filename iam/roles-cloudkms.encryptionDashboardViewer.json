@@ -1,0 +1,9 @@
+{
+  "name": "roles/cloudkms.encryptionDashboardViewer",
+  "title": "Cloud KMS Encryption Dashboard Viewer",
+  "description": "Enables viewing KMS encryption dashboard.",
+  "included_permissions": [
+    "cloudkms.cryptoKeys.list"
+  ],
+  "stage": ""
+}

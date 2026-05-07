@@ -1,0 +1,12 @@
+{
+  "name": "roles/translationhub.viewer",
+  "title": "Translation Hub Viewer",
+  "description": "Viewer role for Translation Hub",
+  "included_permissions": [
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list",
+    "translationhub.portals.get",
+    "translationhub.portals.list"
+  ],
+  "stage": ""
+}
