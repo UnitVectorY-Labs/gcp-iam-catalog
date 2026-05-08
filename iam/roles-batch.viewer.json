@@ -1,7 +1,7 @@
 {
   "name": "roles/batch.viewer",
   "title": "Batch Viewer",
-  "description": "Viewer role for batch",
+  "description": "Viewer role for Batch resources",
   "included_permissions": [
     "batch.jobs.get",
     "batch.jobs.list",
@@ -16,5 +16,5 @@
     "resourcemanager.projects.get",
     "resourcemanager.projects.list"
   ],
-  "stage": ""
+  "stage": "GA"
 }

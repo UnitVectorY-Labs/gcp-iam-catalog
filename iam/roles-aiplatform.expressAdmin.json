@@ -1,7 +1,7 @@
 {
   "name": "roles/aiplatform.expressAdmin",
-  "title": "Vertex AI Platform Express Admin",
-  "description": "Grants admin access to Vertex AI Express",
+  "title": "Agent Platform Express Admin",
+  "description": "Grants admin access to Agent Platform Express.",
   "included_permissions": [
     "aiplatform.batchPredictionJobs.cancel",
     "aiplatform.batchPredictionJobs.create",

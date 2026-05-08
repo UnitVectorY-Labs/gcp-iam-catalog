@@ -1,0 +1,24 @@
+{
+  "name": "roles/modelarmor.editor",
+  "title": "Model Armor Editor",
+  "description": "Editor role for Model Armor resources.",
+  "included_permissions": [
+    "modelarmor.callouts.invoke",
+    "modelarmor.floorSettings.computeEffectiveFloorSetting",
+    "modelarmor.floorSettings.get",
+    "modelarmor.locations.get",
+    "modelarmor.locations.list",
+    "modelarmor.templates.create",
+    "modelarmor.templates.delete",
+    "modelarmor.templates.get",
+    "modelarmor.templates.list",
+    "modelarmor.templates.update",
+    "modelarmor.templates.useToSanitizeInput",
+    "modelarmor.templates.useToSanitizeModelResponse",
+    "modelarmor.templates.useToSanitizeOutput",
+    "modelarmor.templates.useToSanitizeUserPrompt",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

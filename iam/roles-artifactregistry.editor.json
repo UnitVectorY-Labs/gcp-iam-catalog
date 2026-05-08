@@ -27,6 +27,8 @@
     "artifactregistry.packages.get",
     "artifactregistry.packages.list",
     "artifactregistry.packages.update",
+    "artifactregistry.projectconfigs.get",
+    "artifactregistry.projectconfigs.update",
     "artifactregistry.projectsettings.get",
     "artifactregistry.projectsettings.update",
     "artifactregistry.pythonpackages.get",
@@ -63,5 +65,5 @@
     "resourcemanager.projects.get",
     "resourcemanager.projects.list"
   ],
-  "stage": ""
+  "stage": "GA"
 }

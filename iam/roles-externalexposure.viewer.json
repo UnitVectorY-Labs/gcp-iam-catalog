@@ -1,0 +1,15 @@
+{
+  "name": "roles/externalexposure.viewer",
+  "title": "External Exposure Viewer",
+  "description": "Read only access to external exposure resources.",
+  "included_permissions": [
+    "externalexposure.locations.get",
+    "externalexposure.locations.list",
+    "externalexposure.operations.get",
+    "externalexposure.operations.list",
+    "externalexposure.scanMetrics.get",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "BETA"
+}

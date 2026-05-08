@@ -1,6 +1,6 @@
 {
   "name": "roles/aiplatform.featurestoreUser",
-  "title": "Vertex AI Feature Store User",
+  "title": "Agent Platform Feature Store User",
   "description": "Deprecated. Use featurestoreAdmin instead.",
   "included_permissions": [
     "aiplatform.entityTypes.create",

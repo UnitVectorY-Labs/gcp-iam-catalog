@@ -7,5 +7,5 @@
     "backupdr.resourceBackupConfigs.get",
     "backupdr.resourceBackupConfigs.list"
   ],
-  "stage": "BETA"
+  "stage": "GA"
 }

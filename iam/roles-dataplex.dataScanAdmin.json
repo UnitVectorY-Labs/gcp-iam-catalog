@@ -3,6 +3,7 @@
   "title": "Dataplex DataScan Administrator",
   "description": "Full access to DataScan resources.",
   "included_permissions": [
+    "dataplex.datascans.cancel",
     "dataplex.datascans.create",
     "dataplex.datascans.delete",
     "dataplex.datascans.get",

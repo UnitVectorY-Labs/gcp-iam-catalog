@@ -23,5 +23,5 @@
     "resourcemanager.projects.get",
     "resourcemanager.projects.list"
   ],
-  "stage": "BETA"
+  "stage": "GA"
 }

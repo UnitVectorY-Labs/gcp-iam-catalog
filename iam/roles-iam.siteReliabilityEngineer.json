@@ -672,6 +672,7 @@
     "cloudkms.locations.list",
     "cloudkms.operations.get",
     "cloudkms.projects.showEffectiveAutokeyConfig",
+    "cloudkms.protectableResources.list",
     "cloudkms.retiredResources.get",
     "cloudkms.retiredResources.list",
     "cloudkms.singleTenantHsmInstanceProposals.get",
@@ -689,6 +690,7 @@
     "cloudsql.instances.getDiskShrinkConfig",
     "cloudsql.instances.list",
     "cloudsql.instances.listEffectiveTags",
+    "cloudsql.instances.listEntraIdCertificates",
     "cloudsql.instances.listServerCas",
     "cloudsql.instances.listServerCertificates",
     "cloudsql.instances.listTagBindings",
@@ -1693,8 +1695,7 @@
     "stackdriver.projects.edit",
     "stackdriver.projects.get",
     "stackdriver.resourceMetadata.list",
-    "stackdriver.resourceMetadata.write",
-    "telemetry.metrics.write"
+    "stackdriver.resourceMetadata.write"
   ],
   "stage": "GA"
 }

@@ -1,7 +1,7 @@
 {
   "name": "roles/cloudaicompanion.admin",
-  "title": "Cloudaicompanion Admin",
-  "description": "Admin role for cloudaicompanion",
+  "title": "Gemini for Google Cloud Admin",
+  "description": "Admin role for Gemini for Google Cloud",
   "included_permissions": [
     "cloudaicompanion.aiDevToolsSettings.create",
     "cloudaicompanion.aiDevToolsSettings.delete",
@@ -104,5 +104,5 @@
     "resourcemanager.projects.get",
     "resourcemanager.projects.list"
   ],
-  "stage": ""
+  "stage": "GA"
 }

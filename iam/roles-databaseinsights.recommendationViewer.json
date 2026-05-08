@@ -3,6 +3,7 @@
   "title": "Database Insights recommendation viewer",
   "description": "Viewer role for Database Insights recommendation data",
   "included_permissions": [
+    "databaseinsights.indexRecommendations.query",
     "databaseinsights.locations.get",
     "databaseinsights.locations.list",
     "databaseinsights.recommendations.query",

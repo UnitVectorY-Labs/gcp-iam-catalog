@@ -1,6 +1,6 @@
 {
   "name": "roles/aiplatform.featurestoreDataViewer",
-  "title": "Vertex AI Feature Store Data Viewer",
+  "title": "Agent Platform Feature Store Data Viewer",
   "description": "This role provides permissions to read Feature data.",
   "included_permissions": [
     "aiplatform.entityTypes.exportFeatureValues",

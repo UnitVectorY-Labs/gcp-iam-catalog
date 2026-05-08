@@ -5,6 +5,26 @@
   "included_permissions": [
     "resourcemanager.projects.get",
     "resourcemanager.projects.list",
+    "saasservicemgmt.flagAttributes.create",
+    "saasservicemgmt.flagAttributes.delete",
+    "saasservicemgmt.flagAttributes.get",
+    "saasservicemgmt.flagAttributes.list",
+    "saasservicemgmt.flagAttributes.update",
+    "saasservicemgmt.flagReleases.create",
+    "saasservicemgmt.flagReleases.delete",
+    "saasservicemgmt.flagReleases.get",
+    "saasservicemgmt.flagReleases.list",
+    "saasservicemgmt.flagReleases.update",
+    "saasservicemgmt.flagRevisions.create",
+    "saasservicemgmt.flagRevisions.delete",
+    "saasservicemgmt.flagRevisions.get",
+    "saasservicemgmt.flagRevisions.list",
+    "saasservicemgmt.flagRevisions.update",
+    "saasservicemgmt.flags.create",
+    "saasservicemgmt.flags.delete",
+    "saasservicemgmt.flags.get",
+    "saasservicemgmt.flags.list",
+    "saasservicemgmt.flags.update",
     "saasservicemgmt.locations.get",
     "saasservicemgmt.locations.list",
     "saasservicemgmt.operations.cancel",
@@ -52,5 +72,5 @@
     "saasservicemgmt.units.list",
     "saasservicemgmt.units.update"
   ],
-  "stage": "BETA"
+  "stage": "GA"
 }

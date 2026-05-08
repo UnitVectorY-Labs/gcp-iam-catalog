@@ -1,7 +1,7 @@
 {
   "name": "roles/aiplatform.featurestoreAdmin",
-  "title": "Vertex AI Feature Store Admin",
-  "description": "Grants full access to all resources in Vertex AI Feature Store",
+  "title": "Agent Platform Feature Store Admin",
+  "description": "Grants full access to all resources in Agent Platform Feature Store.",
   "included_permissions": [
     "aiplatform.entityTypes.create",
     "aiplatform.entityTypes.delete",

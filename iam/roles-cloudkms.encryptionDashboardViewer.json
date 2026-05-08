@@ -3,7 +3,8 @@
   "title": "Cloud KMS Encryption Dashboard Viewer",
   "description": "Enables viewing KMS encryption dashboard.",
   "included_permissions": [
-    "cloudkms.cryptoKeys.list"
+    "cloudkms.cryptoKeys.list",
+    "cloudkms.protectableResources.list"
   ],
-  "stage": ""
+  "stage": "GA"
 }

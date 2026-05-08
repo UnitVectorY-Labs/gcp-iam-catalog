@@ -5,8 +5,6 @@
   "included_permissions": [
     "resourcemanager.projects.get",
     "resourcemanager.projects.list",
-    "telemetry.logs.write",
-    "telemetry.metrics.write",
     "telemetry.traces.write"
   ],
   "stage": "GA"

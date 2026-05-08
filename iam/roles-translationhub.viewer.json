@@ -8,5 +8,5 @@
     "translationhub.portals.get",
     "translationhub.portals.list"
   ],
-  "stage": ""
+  "stage": "BETA"
 }

@@ -1,7 +1,7 @@
 {
   "name": "roles/aiplatform.memoryEditor",
-  "title": "Vertex AI Agent Engine Memory Editor Role",
-  "description": "Grants edit access to Memory for Agent Engine.",
+  "title": "Agent Platform Memory Bank Editor Role",
+  "description": "Grants edit access to Agent Platform Memory Bank.",
   "included_permissions": [
     "aiplatform.memories.create",
     "aiplatform.memories.delete",

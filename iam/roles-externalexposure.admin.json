@@ -1,0 +1,17 @@
+{
+  "name": "roles/externalexposure.admin",
+  "title": "External Exposure Admin",
+  "description": "Full access to external exposure resources.",
+  "included_permissions": [
+    "externalexposure.locations.get",
+    "externalexposure.locations.list",
+    "externalexposure.operations.cancel",
+    "externalexposure.operations.delete",
+    "externalexposure.operations.get",
+    "externalexposure.operations.list",
+    "externalexposure.scanMetrics.get",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "BETA"
+}

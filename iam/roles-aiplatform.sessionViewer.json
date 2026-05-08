@@ -1,7 +1,7 @@
 {
   "name": "roles/aiplatform.sessionViewer",
-  "title": "Vertex AI Agent Engine Session Viewer Role",
-  "description": "Grants viewer access to Session for Agent Engine.",
+  "title": "Agent Platform Sessions Viewer Role",
+  "description": "Grants viewer access to Agent Platform Sessions",
   "included_permissions": [
     "aiplatform.sessionEvents.list",
     "aiplatform.sessions.get",

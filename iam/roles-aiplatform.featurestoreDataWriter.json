@@ -1,6 +1,6 @@
 {
   "name": "roles/aiplatform.featurestoreDataWriter",
-  "title": "Vertex AI Feature Store Data Writer",
+  "title": "Agent Platform Feature Store Data Writer",
   "description": "This role provides permissions to read and write Feature data.",
   "included_permissions": [
     "aiplatform.entityTypes.deleteFeatureValues",

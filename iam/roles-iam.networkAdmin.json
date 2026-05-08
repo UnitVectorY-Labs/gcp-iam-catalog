@@ -1632,7 +1632,6 @@
     "stackdriver.projects.get",
     "stackdriver.resourceMetadata.list",
     "stackdriver.resourceMetadata.write",
-    "telemetry.metrics.write",
     "trafficdirector.networks.getConfigs",
     "trafficdirector.networks.reportMetrics"
   ],

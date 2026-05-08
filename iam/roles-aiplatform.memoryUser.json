@@ -1,7 +1,7 @@
 {
   "name": "roles/aiplatform.memoryUser",
-  "title": "Vertex AI Agent Engine Memory User Role",
-  "description": "Grants full user access to Memory for Agent Engine.",
+  "title": "Agent Platform Memory Bank User Role",
+  "description": "Grants full user access to Agent Platform Memory Bank.",
   "included_permissions": [
     "aiplatform.memories.create",
     "aiplatform.memories.delete",

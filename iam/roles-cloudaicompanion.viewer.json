@@ -1,7 +1,7 @@
 {
   "name": "roles/cloudaicompanion.viewer",
-  "title": "Cloudaicompanion Viewer",
-  "description": "Viewer role for cloudaicompanion",
+  "title": "Gemini for Google Cloud Viewer",
+  "description": "Viewer role for Gemini for Google Cloud",
   "included_permissions": [
     "cloudaicompanion.aiDevToolsSettings.get",
     "cloudaicompanion.aiDevToolsSettings.list",
@@ -49,5 +49,5 @@
     "resourcemanager.projects.get",
     "resourcemanager.projects.list"
   ],
-  "stage": ""
+  "stage": "GA"
 }

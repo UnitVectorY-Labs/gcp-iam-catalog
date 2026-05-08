@@ -1,0 +1,24 @@
+{
+  "name": "roles/faulttesting.viewer",
+  "title": "Fault Testing Viewer",
+  "description": "Readonly access to Fault Testing resources.",
+  "included_permissions": [
+    "faulttesting.affectedResources.get",
+    "faulttesting.affectedResources.list",
+    "faulttesting.experimentTemplates.get",
+    "faulttesting.experimentTemplates.list",
+    "faulttesting.experiments.get",
+    "faulttesting.experiments.list",
+    "faulttesting.locations.get",
+    "faulttesting.locations.list",
+    "faulttesting.operations.get",
+    "faulttesting.operations.list",
+    "faulttesting.validationResources.get",
+    "faulttesting.validationResources.list",
+    "faulttesting.validations.get",
+    "faulttesting.validations.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "BETA"
+}

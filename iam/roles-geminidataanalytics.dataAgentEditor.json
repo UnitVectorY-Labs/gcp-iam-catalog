@@ -3,10 +3,10 @@
   "title": "Gemini Data Analytics Data Agent Editor",
   "description": "Chat and Edit access to Gemini Data Analytics resources.",
   "included_permissions": [
+    "geminidataanalytics.dataAgents.chat",
     "geminidataanalytics.dataAgents.get",
     "geminidataanalytics.dataAgents.list",
     "geminidataanalytics.dataAgents.update",
-    "geminidataanalytics.locations.suggestContext",
     "geminidataanalytics.operations.get"
   ],
   "stage": "GA"

@@ -61,8 +61,7 @@
     "storage.objects.setIamPolicy",
     "storage.objects.setRetention",
     "storage.objects.update",
-    "storage.objects.updateContext",
-    "telemetry.metrics.write"
+    "storage.objects.updateContext"
   ],
   "stage": "GA"
 }
