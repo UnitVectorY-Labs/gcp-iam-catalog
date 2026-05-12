@@ -54,6 +54,7 @@
     "oracledatabase.exascaleDbStorageVaults.delete",
     "oracledatabase.exascaleDbStorageVaults.get",
     "oracledatabase.exascaleDbStorageVaults.list",
+    "oracledatabase.exascaleDbStorageVaults.use",
     "oracledatabase.giVersions.list",
     "oracledatabase.goldenGateConnectionAssignments.create",
     "oracledatabase.goldenGateConnectionAssignments.delete",
