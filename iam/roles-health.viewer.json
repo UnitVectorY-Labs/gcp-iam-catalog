@@ -1,7 +1,7 @@
 {
   "name": "roles/health.viewer",
-  "title": "Health Viewer",
-  "description": "Read-only access to Health resources.",
+  "title": "Google Health API Viewer",
+  "description": "Read-only access to Google Health API resources.",
   "included_permissions": [
     "health.subscribers.list",
     "health.subscriptions.get",

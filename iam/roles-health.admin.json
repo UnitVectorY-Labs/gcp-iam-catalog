@@ -1,7 +1,7 @@
 {
   "name": "roles/health.admin",
-  "title": "Health Admin",
-  "description": "Admin access to Health resources.",
+  "title": "Google Health API Admin",
+  "description": "Admin access to Google Health API resources.",
   "included_permissions": [
     "health.subscribers.create",
     "health.subscribers.delete",
