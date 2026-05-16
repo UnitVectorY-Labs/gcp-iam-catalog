@@ -1,7 +1,7 @@
 {
   "name": "roles/health.editor",
-  "title": "Health Editor",
-  "description": "Edit access to Health resources.",
+  "title": "Google Health API Editor",
+  "description": "Edit access to Google Health API resources.",
   "included_permissions": [
     "health.subscribers.create",
     "health.subscribers.delete",
