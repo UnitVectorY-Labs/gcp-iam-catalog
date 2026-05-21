@@ -1,0 +1,16 @@
+{
+  "name": "roles/chronicle.orgServiceAgent",
+  "title": "Chronicle Organization Service Agent",
+  "description": "Gives Secops Service Agent access to organization level resources like CAI.",
+  "included_permissions": [
+    "cloudasset.assets.analyzeIamPolicy",
+    "cloudasset.assets.listIamPolicy",
+    "cloudasset.assets.listOSInventories",
+    "cloudasset.assets.listOrgPolicy",
+    "cloudasset.assets.listResource",
+    "cloudasset.assets.searchAllIamPolicies",
+    "cloudasset.assets.searchAllResources",
+    "iam.roles.get"
+  ],
+  "stage": ""
+}
