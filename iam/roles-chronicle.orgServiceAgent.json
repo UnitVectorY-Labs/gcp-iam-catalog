@@ -12,5 +12,5 @@
     "cloudasset.assets.searchAllResources",
     "iam.roles.get"
   ],
-  "stage": ""
+  "stage": "GA"
 }
