@@ -1,0 +1,22 @@
+{
+  "name": "roles/networkservices.GoogleTagGatewayPolicyAdmin",
+  "title": "Google Tag Gateway Admin",
+  "description": "Full access to Google Tag Gateway policy",
+  "included_permissions": [
+    "compute.sslCertificates.get",
+    "compute.sslCertificates.list",
+    "compute.targetHttpsProxies.get",
+    "compute.targetHttpsProxies.list",
+    "compute.urlMaps.get",
+    "compute.urlMaps.list",
+    "networkservices.googleTagGatewayPolicies.create",
+    "networkservices.googleTagGatewayPolicies.delete",
+    "networkservices.googleTagGatewayPolicies.get",
+    "networkservices.googleTagGatewayPolicies.list",
+    "networkservices.googleTagGatewayPolicies.update",
+    "networkservices.operations.get",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "BETA"
+}
