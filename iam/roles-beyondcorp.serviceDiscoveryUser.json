@@ -1,0 +1,7 @@
+{
+  "name": "roles/beyondcorp.serviceDiscoveryUser",
+  "title": "Cloud BeyondCorp SecurityGateway Service Discovery User",
+  "description": "Security Gateway Service Discovery User",
+  "included_permissions": null,
+  "stage": "BETA"
+}

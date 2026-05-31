@@ -3,6 +3,10 @@
   "title": "Cloud Spanner Database Graph Intelligence features user",
   "description": "Access to Graph Intelligence features.",
   "included_permissions": [
+    "dataplex.locations.get",
+    "dataplex.locations.list",
+    "dataplex.operations.get",
+    "dataplex.operations.list",
     "monitoring.timeSeries.create",
     "spanner.databases.beginReadOnlyTransaction",
     "spanner.databases.get",

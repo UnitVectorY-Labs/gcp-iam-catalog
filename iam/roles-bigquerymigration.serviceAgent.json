@@ -1,0 +1,9 @@
+{
+  "name": "roles/bigquerymigration.serviceAgent",
+  "title": "BigQuery Migration Service Agent",
+  "description": "Access required for the BigQuery Migration Service to perform data discovery, metadata registration, and manage data transfers.",
+  "included_permissions": [
+    "resourcemanager.projects.get"
+  ],
+  "stage": ""
+}

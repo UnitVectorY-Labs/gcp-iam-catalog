@@ -1,0 +1,22 @@
+{
+  "name": "roles/fleetengine.viewer",
+  "title": "Fleetengine Viewer",
+  "description": "Viewer role for fleetengine",
+  "included_permissions": [
+    "fleetengine.deliveryvehicles.get",
+    "fleetengine.deliveryvehicles.list",
+    "fleetengine.tasks.get",
+    "fleetengine.tasks.list",
+    "fleetengine.tasks.searchWithTrackingId",
+    "fleetengine.tasktrackinginfo.get",
+    "fleetengine.trips.get",
+    "fleetengine.trips.search",
+    "fleetengine.vehicles.get",
+    "fleetengine.vehicles.list",
+    "fleetengine.vehicles.search",
+    "fleetengine.vehicles.searchFuzzed",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

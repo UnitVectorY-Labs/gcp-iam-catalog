@@ -1,0 +1,20 @@
+{
+  "name": "roles/geminidataanalytics.viewer",
+  "title": "Gemini Data Analytics Viewer",
+  "description": "Viewer role for Gemini Data Analytics",
+  "included_permissions": [
+    "geminidataanalytics.dataAgents.chat",
+    "geminidataanalytics.dataAgents.get",
+    "geminidataanalytics.dataAgents.getIamPolicy",
+    "geminidataanalytics.dataAgents.list",
+    "geminidataanalytics.locations.chat",
+    "geminidataanalytics.locations.get",
+    "geminidataanalytics.locations.list",
+    "geminidataanalytics.locations.useDataEngineeringAgent",
+    "geminidataanalytics.operations.get",
+    "geminidataanalytics.operations.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": ""
+}

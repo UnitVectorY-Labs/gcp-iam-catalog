@@ -1,0 +1,7 @@
+{
+  "name": "roles/beyondcorp.upstreamAccess",
+  "title": "Cloud BeyondCorp SecurityGateway Upstream Access",
+  "description": "Access Security Gateway upstreams",
+  "included_permissions": null,
+  "stage": "BETA"
+}

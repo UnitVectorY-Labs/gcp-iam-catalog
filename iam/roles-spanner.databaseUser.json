@@ -3,6 +3,12 @@
   "title": "Cloud Spanner Database User",
   "description": "Access to read, query, write and view and change the schema of Cloud Spanner databases",
   "included_permissions": [
+    "dataplex.locations.get",
+    "dataplex.locations.list",
+    "dataplex.operations.cancel",
+    "dataplex.operations.delete",
+    "dataplex.operations.get",
+    "dataplex.operations.list",
     "monitoring.timeSeries.create",
     "spanner.databaseOperations.cancel",
     "spanner.databaseOperations.get",
