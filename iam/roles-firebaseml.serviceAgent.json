@@ -1,11 +1,12 @@
 {
   "name": "roles/firebaseml.serviceAgent",
-  "title": "Firebase Machine Learning Service Agent",
-  "description": "Access to Cloud ML and AI resources used by Firebase ML",
+  "title": "Firebase AI Logic Service Agent",
+  "description": "Access to Cloud ML and AI resources used by Firebase AI Logic",
   "included_permissions": [
     "aiplatform.endpoints.predict",
     "logging.logEntries.create",
     "logging.logEntries.route",
+    "serviceusage.services.use",
     "telemetry.traces.write"
   ],
   "stage": "GA"

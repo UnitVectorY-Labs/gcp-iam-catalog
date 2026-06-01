@@ -3,5 +3,5 @@
   "title": "Cloud BeyondCorp SecurityGateway Application resource User",
   "description": "Access SecurityGateway Application resource",
   "included_permissions": null,
-  "stage": ""
+  "stage": "BETA"
 }
