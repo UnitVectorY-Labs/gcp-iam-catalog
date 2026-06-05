@@ -1,0 +1,16 @@
+{
+  "name": "roles/firebasecloudmessaging.viewer",
+  "title": "Firebase Cloud Messaging API Viewer",
+  "description": "Read-only access to Firebase Cloud Messaging API resources.",
+  "included_permissions": [
+    "fcmdata.deliverydata.list",
+    "firebase.clients.get",
+    "firebase.clients.list",
+    "firebase.projects.get",
+    "firebasenotifications.messages.get",
+    "firebasenotifications.messages.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": ""
+}
