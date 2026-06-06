@@ -3,6 +3,11 @@
   "title": "Assured Workloads Reader",
   "description": "Grants read access to all Assured Workloads resources and CRM resources - project/folder",
   "included_permissions": [
+    "assuredworkloads.dbControlComplianceSummaries.list",
+    "assuredworkloads.dbFindingSummaries.list",
+    "assuredworkloads.dbFrameworkComplianceReports.aggregate",
+    "assuredworkloads.dbFrameworkComplianceReports.get",
+    "assuredworkloads.dbFrameworkComplianceSummaries.list",
     "assuredworkloads.operations.get",
     "assuredworkloads.operations.list",
     "assuredworkloads.updates.list",

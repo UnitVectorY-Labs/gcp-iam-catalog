@@ -3,6 +3,11 @@
   "title": "Assuredworkloads Viewer",
   "description": "Viewer role for assuredworkloads",
   "included_permissions": [
+    "assuredworkloads.dbControlComplianceSummaries.list",
+    "assuredworkloads.dbFindingSummaries.list",
+    "assuredworkloads.dbFrameworkComplianceReports.aggregate",
+    "assuredworkloads.dbFrameworkComplianceReports.get",
+    "assuredworkloads.dbFrameworkComplianceSummaries.list",
     "assuredworkloads.operations.get",
     "assuredworkloads.operations.list",
     "assuredworkloads.updates.list",

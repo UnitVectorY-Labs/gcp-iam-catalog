@@ -8,6 +8,9 @@
     "apphub.services.list",
     "apphub.workloads.get",
     "apphub.workloads.list",
+    "developerconnect.connections.httpProxyRead",
+    "developerconnect.connections.httpProxyWrite",
+    "developerconnect.gitRepositoryLinks.get",
     "developerconnect.operations.get"
   ],
   "stage": "GA"

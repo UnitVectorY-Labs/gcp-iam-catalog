@@ -3,7 +3,8 @@
   "title": "Data Studio Service Agent",
   "description": "Grants Data Studio Service Account access to manage resources.",
   "included_permissions": [
-    "bigquery.jobs.create"
+    "bigquery.jobs.create",
+    "serviceusage.services.use"
   ],
   "stage": "GA"
 }
