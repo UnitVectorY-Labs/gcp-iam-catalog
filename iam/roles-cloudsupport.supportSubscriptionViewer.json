@@ -1,0 +1,9 @@
+{
+  "name": "roles/cloudsupport.supportSubscriptionViewer",
+  "title": "Support Subscription Viewer",
+  "description": "Read-only access to support event subscriptions.",
+  "included_permissions": [
+    "resourcemanager.organizations.get"
+  ],
+  "stage": ""
+}

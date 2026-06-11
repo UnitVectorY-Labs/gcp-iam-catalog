@@ -1,0 +1,13 @@
+{
+  "name": "roles/navigationconnect.admin",
+  "title": "Navigation Connect Admin",
+  "description": "Full access to Navigation Connect resources.",
+  "included_permissions": [
+    "navigationconnect.trips.cancel",
+    "navigationconnect.trips.create",
+    "navigationconnect.trips.get",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "BETA"
+}
