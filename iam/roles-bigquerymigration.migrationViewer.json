@@ -1,7 +1,0 @@
-{
-  "name": "roles/bigquerymigration.migrationViewer",
-  "title": "Migration Management Viewer",
-  "description": "Viewer of EDW migrations.",
-  "included_permissions": null,
-  "stage": "EAP"
-}
