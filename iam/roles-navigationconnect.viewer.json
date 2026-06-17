@@ -1,0 +1,11 @@
+{
+  "name": "roles/navigationconnect.viewer",
+  "title": "Navigation Connect Viewer",
+  "description": "Read-only access to Navigation Connect resources.",
+  "included_permissions": [
+    "navigationconnect.trips.get",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "BETA"
+}

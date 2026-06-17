@@ -1,0 +1,11 @@
+{
+  "name": "roles/dataplex.workflowApprover",
+  "title": "Dataplex Workflow Approver",
+  "description": "Access to approve/reject/revoke Change Requests in Approval Workflows.",
+  "included_permissions": [
+    "dataplex.changeRequests.get",
+    "dataplex.changeRequests.list",
+    "dataplex.changeRequests.use"
+  ],
+  "stage": "BETA"
+}

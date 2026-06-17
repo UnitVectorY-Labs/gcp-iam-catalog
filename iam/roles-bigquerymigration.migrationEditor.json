@@ -1,0 +1,7 @@
+{
+  "name": "roles/bigquerymigration.migrationEditor",
+  "title": "Migration Management Editor",
+  "description": "Admin of EDW migrations.",
+  "included_permissions": null,
+  "stage": "BETA"
+}

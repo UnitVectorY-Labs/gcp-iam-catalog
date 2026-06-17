@@ -1,0 +1,11 @@
+{
+  "name": "roles/dataplex.changeRequestOwner",
+  "title": "Dataplex Change Request Owner",
+  "description": "Grants Change Request creator necessary permissions on a created ChangeRequest instance.",
+  "included_permissions": [
+    "dataplex.changeRequests.delete",
+    "dataplex.changeRequests.get",
+    "dataplex.changeRequests.update"
+  ],
+  "stage": "BETA"
+}
