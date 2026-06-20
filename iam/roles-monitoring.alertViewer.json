@@ -6,5 +6,5 @@
     "monitoring.alerts.get",
     "monitoring.alerts.list"
   ],
-  "stage": "BETA"
+  "stage": "GA"
 }

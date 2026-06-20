@@ -1,0 +1,20 @@
+{
+  "name": "roles/firebasetelemetry.serviceAgent",
+  "title": "Firebase Telemetry Service Agent",
+  "description": "Access to Cloud Storage, Monitoring and Logging for Firebase Telemetry",
+  "included_permissions": [
+    "cloudtrace.traces.patch",
+    "logging.logEntries.create",
+    "logging.logEntries.route",
+    "monitoring.metricDescriptors.create",
+    "monitoring.metricDescriptors.get",
+    "monitoring.metricDescriptors.list",
+    "monitoring.monitoredResourceDescriptors.get",
+    "monitoring.monitoredResourceDescriptors.list",
+    "monitoring.timeSeries.create",
+    "storage.buckets.get",
+    "storage.objects.get",
+    "telemetry.traces.write"
+  ],
+  "stage": "GA"
+}
