@@ -8,7 +8,7 @@ commands:
    targets:
    - path: "go.mod"
      pattern: "^go (?P<version>.*) // GOVERSION$"
-     transform: "{{major}}.{{minor}}"
+     transform: "{{major}}.{{minor}}.0"
    - path: ".github/workflows/build-go.yml"
      pattern: "^          go-version: '(?P<version>.*)' # GOVERSION$"
    - path: ".github/workflows/gcp-iam-catalog-crawl.yml"
