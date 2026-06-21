@@ -1,0 +1,12 @@
+{
+  "name": "roles/run.sshRoot",
+  "title": "Cloud Run SSH Root Access",
+  "description": "Can SSH into Cloud Run instances and run commands as root.",
+  "included_permissions": [
+    "run.instances.sshRoot",
+    "run.jobs.sshRoot",
+    "run.services.sshRoot",
+    "run.workerpools.sshRoot"
+  ],
+  "stage": "BETA"
+}

@@ -1,0 +1,12 @@
+{
+  "name": "roles/run.sshReader",
+  "title": "Cloud Run SSH Read Only",
+  "description": "Can SSH into Cloud Run instances and read data.",
+  "included_permissions": [
+    "run.instances.sshRead",
+    "run.jobs.sshRead",
+    "run.services.sshRead",
+    "run.workerpools.sshRead"
+  ],
+  "stage": "BETA"
+}
