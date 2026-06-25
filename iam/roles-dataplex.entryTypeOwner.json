@@ -4,6 +4,7 @@
   "description": "Grants access to creating and managing Entry Types. Does not give the right to create/modify Entries.",
   "included_permissions": [
     "datacatalog.migrationConfig.get",
+    "dataplex.dataDomains.discover",
     "dataplex.entryTypes.create",
     "dataplex.entryTypes.delete",
     "dataplex.entryTypes.get",
