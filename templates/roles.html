@@ -56,7 +56,7 @@
                             <span class="role-indicator"></span>
                             <a href="{{.Name}}.html" class="role-name">
                                 {{.Name}}
-                            </a>
+                            </a>{{if .Deprecated}} ⛔{{end}}
                         </div>
                         <div class="role-type-cell">
                             {{classifyRole .Name}}
