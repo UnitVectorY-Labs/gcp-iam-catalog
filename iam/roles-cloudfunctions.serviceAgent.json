@@ -1,7 +1,7 @@
 {
   "name": "roles/cloudfunctions.serviceAgent",
-  "title": "Cloud Functions Service Agent",
-  "description": "Gives Cloud Functions service account access to managed resources.",
+  "title": "(Deprecated) Cloud Functions Service Agent",
+  "description": "DEPRECATED: This role is deprecated. Please use roles/cloudfunctions.standardServiceAgent for the Cloud Functions service agent.Gives Cloud Functions service account access to managed resources.",
   "included_permissions": [
     "artifactregistry.aptartifacts.create",
     "artifactregistry.attachments.create",

@@ -5,6 +5,7 @@
   "included_permissions": [
     "cloudkms.autokeyConfigs.get",
     "cloudkms.autokeyConfigs.update",
+    "cloudkms.folders.showEffectiveAutokeyConfig",
     "cloudkms.projects.showEffectiveAutokeyConfig"
   ],
   "stage": "GA"

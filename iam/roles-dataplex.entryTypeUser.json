@@ -4,6 +4,7 @@
   "description": "Grants access to use Entry Types to create/modify Entries of those types.",
   "included_permissions": [
     "datacatalog.migrationConfig.get",
+    "dataplex.dataDomains.discover",
     "dataplex.entryTypes.get",
     "dataplex.entryTypes.list",
     "dataplex.entryTypes.use",

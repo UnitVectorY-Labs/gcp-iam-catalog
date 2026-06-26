@@ -119,7 +119,6 @@
     "dataplex.aspectTypes.setIamPolicy",
     "dataplex.aspectTypes.update",
     "dataplex.aspectTypes.use",
-    "dataplex.dataDomains.discover",
     "dataplex.datascans.cancel",
     "dataplex.datascans.create",
     "dataplex.datascans.delete",
