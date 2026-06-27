@@ -1,0 +1,24 @@
+{
+  "name": "roles/dataplex.dataDomainAdmin",
+  "title": "Dataplex Data Domain Admin",
+  "description": "Allows full management of the Data Domain and its bindings.",
+  "included_permissions": [
+    "dataplex.dataDomainBindings.create",
+    "dataplex.dataDomainBindings.delete",
+    "dataplex.dataDomainBindings.get",
+    "dataplex.dataDomainBindings.list",
+    "dataplex.dataDomains.create",
+    "dataplex.dataDomains.delete",
+    "dataplex.dataDomains.discover",
+    "dataplex.dataDomains.get",
+    "dataplex.dataDomains.getIamPolicy",
+    "dataplex.dataDomains.list",
+    "dataplex.dataDomains.lookupEntry",
+    "dataplex.dataDomains.setIamPolicy",
+    "dataplex.dataDomains.update",
+    "dataplex.operations.get",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "BETA"
+}

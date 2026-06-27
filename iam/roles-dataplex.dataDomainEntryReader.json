@@ -1,0 +1,12 @@
+{
+  "name": "roles/dataplex.dataDomainEntryReader",
+  "title": "Dataplex Data Domain Entry Reader",
+  "description": "Allows discovering and viewing the Data Domain, its subdomains, and metadata of all its resources.",
+  "included_permissions": [
+    "dataplex.dataDomains.discover",
+    "dataplex.dataDomains.get",
+    "dataplex.dataDomains.list",
+    "dataplex.dataDomains.lookupEntry"
+  ],
+  "stage": "BETA"
+}

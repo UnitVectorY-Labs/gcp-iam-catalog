@@ -3,6 +3,7 @@
   "title": "Cloud KMS Importer",
   "description": "Enables ImportCryptoKeyVersion, CreateImportJob, ListImportJobs, and GetImportJob operations",
   "included_permissions": [
+    "cloudkms.cryptoKeyVersions.trustedImportExport",
     "cloudkms.importJobs.create",
     "cloudkms.importJobs.get",
     "cloudkms.importJobs.list",

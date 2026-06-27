@@ -1,0 +1,17 @@
+{
+  "name": "roles/dataplex.dataDomainViewer",
+  "title": "Dataplex Data Domain Configuration Viewer",
+  "description": "Allows viewing the configuration of the Data Domain and its bindings.",
+  "included_permissions": [
+    "dataplex.dataDomainBindings.get",
+    "dataplex.dataDomainBindings.list",
+    "dataplex.dataDomains.discover",
+    "dataplex.dataDomains.get",
+    "dataplex.dataDomains.getIamPolicy",
+    "dataplex.dataDomains.list",
+    "dataplex.dataDomains.lookupEntry",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "BETA"
+}

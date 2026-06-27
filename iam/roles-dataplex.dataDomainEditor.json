@@ -1,0 +1,21 @@
+{
+  "name": "roles/dataplex.dataDomainEditor",
+  "title": "Dataplex Data Domain Configuration Editor",
+  "description": "Allows updating the Data Domain as well as full management of its bindings.",
+  "included_permissions": [
+    "dataplex.dataDomainBindings.create",
+    "dataplex.dataDomainBindings.delete",
+    "dataplex.dataDomainBindings.get",
+    "dataplex.dataDomainBindings.list",
+    "dataplex.dataDomains.discover",
+    "dataplex.dataDomains.get",
+    "dataplex.dataDomains.getIamPolicy",
+    "dataplex.dataDomains.list",
+    "dataplex.dataDomains.lookupEntry",
+    "dataplex.dataDomains.update",
+    "dataplex.operations.get",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "BETA"
+}

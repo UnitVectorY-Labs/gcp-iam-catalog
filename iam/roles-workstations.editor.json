@@ -27,8 +27,7 @@
     "workstations.workstations.list",
     "workstations.workstations.start",
     "workstations.workstations.stop",
-    "workstations.workstations.update",
-    "workstations.workstations.use"
+    "workstations.workstations.update"
   ],
   "stage": "GA"
 }

@@ -1,6 +1,6 @@
 {
   "name": "roles/dataconnectors.connectorUser",
-  "title": "Connector User",
+  "title": "Data Connector User",
   "description": "Access to use Data Connectors.",
   "included_permissions": [
     "dataconnectors.connectors.get",

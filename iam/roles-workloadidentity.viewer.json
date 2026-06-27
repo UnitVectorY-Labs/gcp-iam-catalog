@@ -1,0 +1,14 @@
+{
+  "name": "roles/workloadidentity.viewer",
+  "title": "Workload Identity API Viewer",
+  "description": "Readonly access to Workload Identity API resources.",
+  "included_permissions": [
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list",
+    "workloadidentity.locations.get",
+    "workloadidentity.locations.list",
+    "workloadidentity.operations.get",
+    "workloadidentity.operations.list"
+  ],
+  "stage": "GA"
+}
