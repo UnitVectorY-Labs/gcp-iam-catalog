@@ -30,6 +30,7 @@ type Role struct {
 	Stage               string   `json:"stage"`
 	PermissionCount     int      `json:"-"` // Not stored in JSON
 	LastCrawled         string   `json:"-"` // Not stored in JSON
+	Deprecated          bool     `json:"-"` // Computed during generation only
 }
 
 // PermissionIndex maps permissions to roles
@@ -77,6 +78,11 @@ func classifyRoleType(roleName string) string {
 
 	// All others are predefined roles
 	return "Predefined"
+}
+
+func isDeprecatedRole(role Role) bool {
+	return strings.EqualFold(role.Stage, "DEPRECATED") ||
+		strings.Contains(strings.ToLower(role.Description), "deprecated")
 }
 
 func main() {
@@ -262,6 +268,12 @@ func generateHTML() error {
 		"classifyRole": func(roleName string) string {
 			return classifyRoleType(roleName)
 		},
+		"displayRoleName": func(roleName string, deprecated bool) string {
+			if deprecated {
+				return roleName + " ⛔"
+			}
+			return roleName
+		},
 	})
 
 	// Then parse all templates
@@ -291,6 +303,7 @@ func generateHTML() error {
 
 		// Sort IncludedPermissions alphabetically
 		sort.Strings(role.IncludedPermissions)
+		role.Deprecated = isDeprecatedRole(role)
 
 		roles = append(roles, role)
 
@@ -373,6 +386,23 @@ func generateHTML() error {
 	for perm := range permissionIndex {
 		permissionNames = append(permissionNames, perm)
 	}
+
+	type RoleMetadata struct {
+		Deprecated bool `json:"deprecated"`
+	}
+	roleMetadata := make(map[string]RoleMetadata, len(roles))
+	for _, role := range roles {
+		roleMetadata[role.Name] = RoleMetadata{Deprecated: role.Deprecated}
+	}
+	roleMetadataPath := filepath.Join(htmlDir, "roles-metadata.json")
+	roleMetadataJSON, err := json.Marshal(roleMetadata)
+	if err != nil {
+		log.Printf("Failed to marshal roles metadata: %v", err)
+	} else if err := os.WriteFile(roleMetadataPath, roleMetadataJSON, 0644); err != nil {
+		log.Printf("Failed to write roles metadata: %v", err)
+	} else {
+		log.Printf("Generated roles metadata at %s", roleMetadataPath)
+	}
 	sort.Strings(permissionNames)
 	permissionsListPath := filepath.Join(htmlDir, "permissions-list.json")
 	permissionsListJSON, err := json.Marshal(permissionNames)
@@ -427,18 +457,21 @@ func generateHTML() error {
 
 		// Populate Roles with Name and Title
 		var detailedRoles []struct {
-			Name  string
-			Title string
+			Name       string
+			Title      string
+			Deprecated bool
 		}
 		for _, roleName := range rolesWithPerm {
 			for _, role := range roles {
 				if role.Name == roleName {
 					detailedRoles = append(detailedRoles, struct {
-						Name  string
-						Title string
+						Name       string
+						Title      string
+						Deprecated bool
 					}{
-						Name:  role.Name,
-						Title: role.Title,
+						Name:       role.Name,
+						Title:      role.Title,
+						Deprecated: role.Deprecated,
 					})
 					break
 				}
@@ -455,8 +488,9 @@ func generateHTML() error {
 			RoleCount  int
 			Permission string
 			Roles      []struct {
-				Name  string
-				Title string
+				Name       string
+				Title      string
+				Deprecated bool
 			}
 			LastCrawled string
 			PathPrefix  string

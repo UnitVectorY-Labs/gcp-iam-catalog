@@ -63,7 +63,7 @@
                                     <span class="role-indicator"></span>
                                     <a href="{{$.PathPrefix}}{{.Name}}.html" class="role-name">
                                         {{.Name}}
-                                    </a>
+                                    </a>{{if .Deprecated}} ⛔{{end}}
                                 </div>
                                 <div class="role-type-cell">
                                     {{classifyRole .Name}}
@@ -137,6 +137,7 @@
         const MAX_BAR_WIDTH = 200;
         const pathPrefix = '{{.PathPrefix}}';
         let allPermissions = [];
+        let roleMetadata = {};
         let selectedPermission = '';
 
         // Load permissions list on page load
@@ -151,6 +152,27 @@
             } catch (err) {
                 console.error('Error loading permissions list:', err);
             }
+        }
+
+        async function loadRoleMetadata() {
+            try {
+                const response = await fetch(pathPrefix + 'roles-metadata.json');
+                if (response.ok) {
+                    roleMetadata = await response.json();
+                } else {
+                    console.error('Failed to load roles metadata: HTTP', response.status);
+                }
+            } catch (err) {
+                console.error('Error loading roles metadata:', err);
+            }
+        }
+
+        function displayRoleName(role) {
+            return role + (roleMetadata[role] && roleMetadata[role].deprecated ? ' ⛔' : '');
+        }
+
+        function normalizeCompareValue(value) {
+            return value.toLowerCase();
         }
 
         function copyPermission() {
@@ -265,12 +287,13 @@
                 compareInput.classList.remove('input-error');
                 
                 const otherData = await response.json();
-                const otherRoles = new Set(otherData.roles || []);
-                const currentRolesSet = new Set(currentRoles);
+                const otherRoles = otherData.roles || [];
+                const otherRoleKeys = new Set(otherRoles.map(normalizeCompareValue));
+                const currentRoleKeys = new Set(currentRoles.map(normalizeCompareValue));
 
-                const onlyLeft = currentRoles.filter(r => !otherRoles.has(r)).sort();
-                const onlyRight = Array.from(otherRoles).filter(r => !currentRolesSet.has(r)).sort();
-                const common = currentRoles.filter(r => otherRoles.has(r)).sort();
+                const onlyLeft = currentRoles.filter(r => !otherRoleKeys.has(normalizeCompareValue(r))).sort();
+                const onlyRight = otherRoles.filter(r => !currentRoleKeys.has(normalizeCompareValue(r))).sort();
+                const common = currentRoles.filter(r => otherRoleKeys.has(normalizeCompareValue(r))).sort();
 
                 // Update URL with compare parameter
                 const url = new URL(window.location);
@@ -338,13 +361,14 @@
                 a.href = baseUrl + roleShortName.split('/').map(encodeURIComponent).join('/') + '.html';
                 a.textContent = item;
                 div.appendChild(a);
+
                 container.appendChild(div);
             });
         }
 
         // Handle URL parameters on page load
         document.addEventListener('DOMContentLoaded', async function() {
-            await loadPermissionsList();
+            await Promise.all([loadPermissionsList(), loadRoleMetadata()]);
             
             const params = new URLSearchParams(window.location.search);
             const compareWith = params.get('compare');
