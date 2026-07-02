@@ -28,5 +28,5 @@
     "discoveryengine.sources.refresh",
     "discoveryengine.sources.update"
   ],
-  "stage": "BETA"
+  "stage": "GA"
 }

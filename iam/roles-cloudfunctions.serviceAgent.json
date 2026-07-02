@@ -266,8 +266,7 @@
     "storage.objects.delete",
     "storage.objects.get",
     "storage.objects.list",
-    "vpcaccess.connectors.get",
-    "vpcaccess.connectors.use"
+    "vpcaccess.connectors.get"
   ],
   "stage": "GA"
 }
