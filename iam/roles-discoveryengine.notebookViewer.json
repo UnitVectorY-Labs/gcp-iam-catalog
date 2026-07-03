@@ -17,5 +17,5 @@
     "discoveryengine.sources.generateDocumentGuide",
     "discoveryengine.sources.get"
   ],
-  "stage": "BETA"
+  "stage": "GA"
 }

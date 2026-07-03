@@ -1,0 +1,13 @@
+{
+  "name": "roles/securedlandingzone.viewer",
+  "title": "Secured Landing Zone Viewer",
+  "description": "Viewer role for Secured Landing Zone",
+  "included_permissions": [
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list",
+    "securedlandingzone.operations.get",
+    "securedlandingzone.overwatches.get",
+    "securedlandingzone.overwatches.list"
+  ],
+  "stage": "BETA"
+}

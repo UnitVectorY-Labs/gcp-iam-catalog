@@ -1,0 +1,7 @@
+{
+  "name": "roles/agentidentity.viewer",
+  "title": "Agent Identity Viewer",
+  "description": "Grants access to view auth providers, authorizations, and access summaries.",
+  "included_permissions": null,
+  "stage": ""
+}

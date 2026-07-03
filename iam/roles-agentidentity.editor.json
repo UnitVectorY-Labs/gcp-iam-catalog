@@ -1,0 +1,7 @@
+{
+  "name": "roles/agentidentity.editor",
+  "title": "Agent Identity Editor",
+  "description": "Grants access to edit auth providers, authorizations, and access summaries.",
+  "included_permissions": null,
+  "stage": ""
+}

@@ -77,8 +77,7 @@
     "storage.objects.get",
     "storage.objects.list",
     "storage.objects.update",
-    "vpcaccess.connectors.get",
-    "vpcaccess.connectors.use"
+    "vpcaccess.connectors.get"
   ],
   "stage": "GA"
 }
