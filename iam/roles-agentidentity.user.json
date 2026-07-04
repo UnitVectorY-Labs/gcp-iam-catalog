@@ -2,6 +2,8 @@
   "name": "roles/agentidentity.user",
   "title": "Auth Provider User",
   "description": "Grants access to retrieve credentials from auth providers.",
-  "included_permissions": null,
-  "stage": ""
+  "included_permissions": [
+    "agentidentity.authProviders.retrieveCredentials"
+  ],
+  "stage": "BETA"
 }

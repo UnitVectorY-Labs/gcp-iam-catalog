@@ -8,6 +8,7 @@
     "backupdr.backupPlanAssociations.fetchForCloudSqlInstance",
     "backupdr.backupPlanAssociations.getForCloudSqlInstance",
     "backupdr.backupPlanAssociations.triggerBackupForCloudSqlInstance",
+    "backupdr.backupPlanAssociations.updateForCloudSqlInstance",
     "backupdr.backupPlans.get",
     "backupdr.backupPlans.list",
     "backupdr.backupPlans.useForCloudSqlInstance",

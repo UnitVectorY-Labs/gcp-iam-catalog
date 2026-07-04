@@ -3,6 +3,7 @@
   "title": "Dataproc Serverless Node.",
   "description": "Node access to Dataproc Serverless sessions and batches. Intended for service accounts.",
   "included_permissions": [
+    "dataproc.batches.computeTuningConfig",
     "dataproc.batches.sparkApplicationWrite",
     "dataproc.sessions.sparkApplicationRead",
     "dataproc.sessions.sparkApplicationWrite",

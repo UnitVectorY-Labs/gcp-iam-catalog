@@ -3,6 +3,10 @@
   "title": "Service Automation Consumer Network Admin",
   "description": "Service Automation Consumer Network Admin is responsible for setting up ServiceConnectionPolicies.",
   "included_permissions": [
+    "networkconnectivity.operations.cancel",
+    "networkconnectivity.operations.delete",
+    "networkconnectivity.operations.get",
+    "networkconnectivity.operations.list",
     "networkconnectivity.serviceConnectionPolicies.create",
     "networkconnectivity.serviceConnectionPolicies.delete",
     "networkconnectivity.serviceConnectionPolicies.get",

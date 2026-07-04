@@ -5,6 +5,7 @@
   "included_permissions": [
     "businessaicode.locations.generateContent",
     "businessaicode.locations.queryConfiguration",
+    "businessaicode.locations.selfAssignLicense",
     "businessaicode.locations.sendTelemetry",
     "cloudaicompanion.instances.exportMetrics",
     "cloudaicompanion.instances.queryEffectiveSetting",

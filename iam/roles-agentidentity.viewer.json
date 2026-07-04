@@ -2,6 +2,17 @@
   "name": "roles/agentidentity.viewer",
   "title": "Agent Identity Viewer",
   "description": "Grants access to view auth providers, authorizations, and access summaries.",
-  "included_permissions": null,
-  "stage": ""
+  "included_permissions": [
+    "agentidentity.accessSummaries.get",
+    "agentidentity.accessSummaries.list",
+    "agentidentity.authProviders.get",
+    "agentidentity.authProviders.getIamPolicy",
+    "agentidentity.authProviders.list",
+    "agentidentity.authProviders.queryWorkloads",
+    "agentidentity.authorizations.get",
+    "agentidentity.authorizations.list",
+    "agentidentity.locations.get",
+    "agentidentity.locations.list"
+  ],
+  "stage": "BETA"
 }

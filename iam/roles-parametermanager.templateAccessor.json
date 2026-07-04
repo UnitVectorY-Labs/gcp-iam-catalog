@@ -1,0 +1,9 @@
+{
+  "name": "roles/parametermanager.templateAccessor",
+  "title": "Parameter Manager Template Accessor",
+  "description": "Grants read access to ParameterManager TemplateVersion resources. Intended for users \u0026 applications that need to perform read operations on TemplateVersions only.",
+  "included_permissions": [
+    "parametermanager.templateVersions.render"
+  ],
+  "stage": "BETA"
+}
