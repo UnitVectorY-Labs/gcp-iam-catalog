@@ -388,11 +388,17 @@ func generateHTML() error {
 	}
 
 	type RoleMetadata struct {
-		Deprecated bool `json:"deprecated"`
+		Deprecated bool   `json:"deprecated"`
+		Title      string `json:"title"`
+		Type       string `json:"type"`
 	}
 	roleMetadata := make(map[string]RoleMetadata, len(roles))
 	for _, role := range roles {
-		roleMetadata[role.Name] = RoleMetadata{Deprecated: role.Deprecated}
+		roleMetadata[role.Name] = RoleMetadata{
+			Deprecated: role.Deprecated,
+			Title:      role.Title,
+			Type:       classifyRoleType(role.Name),
+		}
 	}
 	roleMetadataPath := filepath.Join(htmlDir, "roles-metadata.json")
 	roleMetadataJSON, err := json.Marshal(roleMetadata)
@@ -575,6 +581,24 @@ func generateHTML() error {
 		return fmt.Errorf("failed to execute permissions index template: %v", err)
 	}
 	log.Printf("Generated Permissions Index at %s", permissionsIndexPath)
+
+	// Generate Search Page
+	searchPath := filepath.Join(htmlDir, "search.html")
+	fSearch, err := os.Create(searchPath)
+	if err != nil {
+		return fmt.Errorf("failed to create search HTML file: %v", err)
+	}
+	defer fSearch.Close()
+
+	err = tmpl.ExecuteTemplate(fSearch, "search.html", struct {
+		LastCrawled string
+	}{
+		LastCrawled: lastCrawled,
+	})
+	if err != nil {
+		return fmt.Errorf("failed to execute search template: %v", err)
+	}
+	log.Printf("Generated Search page at %s", searchPath)
 
 	// Generate Home Index Page
 	homeIndexPath := filepath.Join(htmlDir, "index.html")

@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Find GCP IAM Roles - gcp-iam-catalog</title>
+    <link rel="stylesheet" href="./style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Find GCP IAM roles by permissions they must include and permissions they must exclude.">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <a href="index.html">gcp-iam-catalog</a>
+        <a href="roles.html">Roles</a>
+        <a href="permissions.html">Permissions</a>
+        <a href="search.html" class="active">Search</a>
+    </div>
+
+    <main>
+        <section class="role-search-page">
+            <div class="page-header">
+                <span class="page-header-icon">🧭</span>
+                <h1>Find Matching Roles</h1>
+            </div>
+            <p class="muted-text">Choose permissions a role must include and permissions it must not include. Matches update entirely in your browser.</p>
+
+            <div class="permission-filter-grid">
+                <div class="permission-filter-panel include-panel">
+                    <div class="filter-panel-header">
+                        <h2>Must Include</h2>
+                        <span class="filter-count" id="includeCount">0</span>
+                    </div>
+                    <div class="compare-selector">
+                        <label for="includePermission">Add required permission:</label>
+                        <div class="compare-input-wrapper">
+                            <input type="text" id="includePermission" class="search-input" placeholder="Type to search permissions..." autocomplete="off">
+                            <button type="button" class="add-permission-button" id="addIncludeButton">Add</button>
+                        </div>
+                        <div id="includeSuggestions" class="suggestions-dropdown"></div>
+                    </div>
+                    <div id="includeList" class="selected-permissions-list"></div>
+                </div>
+
+                <div class="permission-filter-panel exclude-panel">
+                    <div class="filter-panel-header">
+                        <h2>Must Exclude</h2>
+                        <span class="filter-count" id="excludeCount">0</span>
+                    </div>
+                    <div class="compare-selector">
+                        <label for="excludePermission">Add excluded permission:</label>
+                        <div class="compare-input-wrapper">
+                            <input type="text" id="excludePermission" class="search-input" placeholder="Type to search permissions..." autocomplete="off">
+                            <button type="button" class="add-permission-button" id="addExcludeButton">Add</button>
+                        </div>
+                        <div id="excludeSuggestions" class="suggestions-dropdown"></div>
+                    </div>
+                    <div id="excludeList" class="selected-permissions-list"></div>
+                </div>
+            </div>
+
+            <div class="match-summary" id="matchSummary">
+                <span id="matchCount">0</span> matching roles
+            </div>
+
+            <div class="role-table" id="matchTable">
+                <div class="role-table-header">
+                    <div class="role-name-header">Role Name</div>
+                    <div class="role-type-header">Role Type</div>
+                </div>
+                <div id="matchRows"></div>
+            </div>
+        </section>
+    </main>
+
+    {{template "footer" .}}
+
+    <script>
+        const STORAGE_KEY = 'gcpIamCatalogRoleSearch';
+        const MAX_SUGGESTIONS = 50;
+        let allPermissions = [];
+        let roleMetadata = {};
+        let permissionRoleCache = {};
+        let state = {
+            include: [],
+            exclude: []
+        };
+
+        async function loadCatalogData() {
+            const [permissionsResponse, metadataResponse] = await Promise.all([
+                fetch('permissions-list.json'),
+                fetch('roles-metadata.json')
+            ]);
+
+            if (!permissionsResponse.ok) {
+                throw new Error('Failed to load permissions list');
+            }
+            if (!metadataResponse.ok) {
+                throw new Error('Failed to load role metadata');
+            }
+
+            allPermissions = await permissionsResponse.json();
+            roleMetadata = await metadataResponse.json();
+        }
+
+        function loadSavedState() {
+            try {
+                const saved = JSON.parse(localStorage.getItem(STORAGE_KEY) || '{}');
+                state.include = Array.isArray(saved.include) ? saved.include : [];
+                state.exclude = Array.isArray(saved.exclude) ? saved.exclude : [];
+            } catch (err) {
+                state = { include: [], exclude: [] };
+            }
+        }
+
+        function saveState() {
+            localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+        }
+
+        function normalizePermission(value) {
+            const trimmed = value.trim();
+            return allPermissions.find(permission => permission.toLowerCase() === trimmed.toLowerCase()) || trimmed;
+        }
+
+        function sortPermissions(items) {
+            return items.sort((a, b) => a.permission.localeCompare(b.permission));
+        }
+
+        function activePermissions(side) {
+            return state[side].filter(item => item.active).map(item => item.permission);
+        }
+
+        function permissionDataPath(permission) {
+            return 'permissionsdata/' + permission.replace(/\//g, '-') + '.json';
+        }
+
+        async function rolesForPermission(permission) {
+            if (permissionRoleCache[permission]) {
+                return permissionRoleCache[permission];
+            }
+
+            const response = await fetch(permissionDataPath(permission));
+            if (!response.ok) {
+                throw new Error('Failed to load permission: ' + permission);
+            }
+            const data = await response.json();
+            permissionRoleCache[permission] = data.roles || [];
+            return permissionRoleCache[permission];
+        }
+
+        function findSuggestions(value, side) {
+            const filter = value.trim().toLowerCase();
+            if (filter.length < 2) {
+                return [];
+            }
+
+            const selected = new Set([
+                ...state.include.map(item => item.permission.toLowerCase()),
+                ...state.exclude.map(item => item.permission.toLowerCase())
+            ]);
+
+            return allPermissions
+                .filter(permission => !selected.has(permission.toLowerCase()) && permission.toLowerCase().includes(filter))
+                .sort((a, b) => {
+                    const aStarts = a.toLowerCase().startsWith(filter);
+                    const bStarts = b.toLowerCase().startsWith(filter);
+                    if (aStarts && !bStarts) return -1;
+                    if (!aStarts && bStarts) return 1;
+                    return a.localeCompare(b);
+                })
+                .slice(0, MAX_SUGGESTIONS);
+        }
+
+        function showSuggestions(side) {
+            const input = document.getElementById(side + 'Permission');
+            const container = document.getElementById(side + 'Suggestions');
+            container.innerHTML = '';
+
+            const matches = findSuggestions(input.value, side);
+            if (matches.length === 0) {
+                container.style.display = 'none';
+                return;
+            }
+
+            matches.forEach(permission => {
+                const item = document.createElement('div');
+                item.className = 'suggestion-item';
+                item.textContent = permission;
+                item.addEventListener('click', () => {
+                    input.value = permission;
+                    container.style.display = 'none';
+                    addPermission(side);
+                });
+                container.appendChild(item);
+            });
+            container.style.display = 'block';
+        }
+
+        function addPermission(side) {
+            const input = document.getElementById(side + 'Permission');
+            const permission = normalizePermission(input.value);
+            const knownPermission = allPermissions.includes(permission);
+
+            input.classList.toggle('input-error', !knownPermission);
+            if (!knownPermission) {
+                return;
+            }
+
+            const duplicate = state.include.concat(state.exclude).some(item => item.permission === permission);
+            if (!duplicate) {
+                state[side].push({ permission: permission, active: true });
+                sortPermissions(state[side]);
+                saveState();
+                renderSelectedPermissions();
+                updateMatches();
+            }
+
+            input.value = '';
+            input.classList.remove('input-error');
+            document.getElementById(side + 'Suggestions').style.display = 'none';
+        }
+
+        function removePermission(side, permission) {
+            state[side] = state[side].filter(item => item.permission !== permission);
+            saveState();
+            renderSelectedPermissions();
+            updateMatches();
+        }
+
+        function togglePermission(side, permission, active) {
+            const item = state[side].find(candidate => candidate.permission === permission);
+            if (item) {
+                item.active = active;
+                saveState();
+                renderSelectedPermissions();
+                updateMatches();
+            }
+        }
+
+        function renderSelectedPermissions() {
+            ['include', 'exclude'].forEach(side => {
+                const container = document.getElementById(side + 'List');
+                container.innerHTML = '';
+
+                if (state[side].length === 0) {
+                    const empty = document.createElement('div');
+                    empty.className = 'selected-permission-empty';
+                    empty.textContent = side === 'include' ? 'No required permissions added' : 'No excluded permissions added';
+                    container.appendChild(empty);
+                }
+
+                state[side].forEach(item => {
+                    const row = document.createElement('div');
+                    row.className = 'selected-permission' + (item.active ? '' : ' inactive');
+
+                    const label = document.createElement('label');
+                    const checkbox = document.createElement('input');
+                    checkbox.type = 'checkbox';
+                    checkbox.checked = item.active;
+                    checkbox.addEventListener('change', () => togglePermission(side, item.permission, checkbox.checked));
+                    label.appendChild(checkbox);
+
+                    const link = document.createElement('a');
+                    link.href = 'permissions/' + item.permission.split('/').map(encodeURIComponent).join('/') + '.html';
+                    link.textContent = item.permission;
+                    label.appendChild(link);
+                    row.appendChild(label);
+
+                    const removeButton = document.createElement('button');
+                    removeButton.type = 'button';
+                    removeButton.className = 'remove-permission-button';
+                    removeButton.textContent = 'Remove';
+                    removeButton.addEventListener('click', () => removePermission(side, item.permission));
+                    row.appendChild(removeButton);
+                    container.appendChild(row);
+                });
+            });
+
+            document.getElementById('includeCount').textContent = activePermissions('include').length;
+            document.getElementById('excludeCount').textContent = activePermissions('exclude').length;
+        }
+
+        function roleSort(a, b) {
+            return a.localeCompare(b);
+        }
+
+        function displayRoleName(role) {
+            return role + (roleMetadata[role] && roleMetadata[role].deprecated ? ' ⛔' : '');
+        }
+
+        function renderMatches(roles) {
+            const rows = document.getElementById('matchRows');
+            rows.innerHTML = '';
+            document.getElementById('matchCount').textContent = roles.length.toLocaleString();
+
+            if (roles.length === 0) {
+                const empty = document.createElement('div');
+                empty.className = 'search-empty-state';
+                empty.textContent = activePermissions('include').length || activePermissions('exclude').length
+                    ? 'No roles match the active filters.'
+                    : 'Add permissions to start finding roles.';
+                rows.appendChild(empty);
+                return;
+            }
+
+            roles.forEach(role => {
+                const row = document.createElement('div');
+                row.className = 'role-row';
+
+                const nameCell = document.createElement('div');
+                nameCell.className = 'role-name-cell';
+                const indicator = document.createElement('span');
+                indicator.className = 'role-indicator';
+                nameCell.appendChild(indicator);
+
+                const link = document.createElement('a');
+                link.href = 'roles/' + encodeURIComponent(role.replace('roles/', '')) + '.html';
+                link.className = 'role-name';
+                link.textContent = displayRoleName(role);
+                nameCell.appendChild(link);
+                row.appendChild(nameCell);
+
+                const typeCell = document.createElement('div');
+                typeCell.className = 'role-type-cell';
+                typeCell.textContent = roleMetadata[role] ? roleMetadata[role].type : '';
+                row.appendChild(typeCell);
+
+                rows.appendChild(row);
+            });
+        }
+
+        async function updateMatches() {
+            const includes = activePermissions('include');
+            const excludes = activePermissions('exclude');
+
+            if (includes.length === 0 && excludes.length === 0) {
+                renderMatches([]);
+                return;
+            }
+
+            try {
+                const includeRoleLists = await Promise.all(includes.map(rolesForPermission));
+                const excludeRoleLists = await Promise.all(excludes.map(rolesForPermission));
+                let candidates;
+
+                if (includeRoleLists.length > 0) {
+                    candidates = includeRoleLists
+                        .map(list => new Set(list))
+                        .reduce((intersection, current) => new Set([...intersection].filter(role => current.has(role))));
+                } else {
+                    candidates = new Set(Object.keys(roleMetadata));
+                }
+
+                const excludedRoles = new Set(excludeRoleLists.flat());
+                const matches = [...candidates].filter(role => !excludedRoles.has(role)).sort(roleSort);
+                renderMatches(matches);
+            } catch (err) {
+                console.error(err);
+                renderMatches([]);
+            }
+        }
+
+        function bindPermissionInput(side) {
+            const input = document.getElementById(side + 'Permission');
+            const addButton = document.getElementById('add' + side.charAt(0).toUpperCase() + side.slice(1) + 'Button');
+
+            input.addEventListener('input', () => {
+                input.classList.remove('input-error');
+                showSuggestions(side);
+            });
+            input.addEventListener('keydown', event => {
+                if (event.key === 'Enter') {
+                    event.preventDefault();
+                    addPermission(side);
+                }
+            });
+            addButton.addEventListener('click', () => addPermission(side));
+        }
+
+        document.addEventListener('DOMContentLoaded', async () => {
+            try {
+                await loadCatalogData();
+                loadSavedState();
+                renderSelectedPermissions();
+                await updateMatches();
+                bindPermissionInput('include');
+                bindPermissionInput('exclude');
+
+                document.addEventListener('click', event => {
+                    if (!event.target.closest('.compare-selector')) {
+                        document.getElementById('includeSuggestions').style.display = 'none';
+                        document.getElementById('excludeSuggestions').style.display = 'none';
+                    }
+                });
+            } catch (err) {
+                console.error(err);
+                document.getElementById('matchRows').innerHTML = '<div class="search-empty-state">Unable to load search data.</div>';
+            }
+        });
+    </script>
+</body>
+</html>
