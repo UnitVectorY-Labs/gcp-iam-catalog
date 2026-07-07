@@ -31,6 +31,9 @@ a:hover {
     --permission-primary: #f59e0b;
     --permission-light: #fef3c7;
     --permission-dark: #b45309;
+    --search-primary: #6366f1;
+    --search-light: #e0e7ff;
+    --search-dark: #4338ca;
     --common-primary: #10b981;
     --common-light: #d1fae5;
     --common-dark: #047857;
@@ -289,6 +292,10 @@ ul.item-list li a:hover {
     border-left-color: var(--permission-primary);
 }
 
+.nav-card.search-card {
+    border-left-color: var(--search-primary);
+}
+
 .nav-card-icon {
     font-size: 2em;
     margin-bottom: 10px;
@@ -373,6 +380,10 @@ ul.item-list li a:hover {
 
 .permissions-page .page-header-icon {
     color: var(--permission-primary);
+}
+
+.role-search-page .page-header-icon {
+    color: var(--search-primary);
 }
 
 .role-name,
@@ -681,6 +692,170 @@ ul.item-list li a:hover {
     transform: translateY(-50%);
 }
 
+/* ============================================
+   ROLE SEARCH PAGE STYLES
+   ============================================ */
+
+.permission-filter-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.permission-filter-panel {
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    background: #fff;
+    overflow: visible;
+}
+
+.permission-filter-panel.include-panel {
+    border-top: 4px solid var(--common-primary);
+}
+
+.permission-filter-panel.exclude-panel {
+    border-top: 4px solid var(--permission-primary);
+}
+
+.filter-panel-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    border-bottom: 1px solid #e5e7eb;
+    background: #f8f9fa;
+}
+
+.filter-panel-header h2 {
+    margin: 0;
+}
+
+.filter-count {
+    min-width: 28px;
+    text-align: center;
+    padding: 2px 8px;
+    border-radius: 12px;
+    background: #e5e7eb;
+    color: #374151;
+    font-size: 0.85em;
+    font-weight: 600;
+}
+
+.permission-filter-panel .compare-selector {
+    margin: 0;
+    padding: 15px;
+    border-bottom: 1px solid #f3f4f6;
+}
+
+.permission-filter-panel .compare-input-wrapper {
+    display: flex;
+    gap: 8px;
+    max-width: none;
+}
+
+.permission-filter-panel .search-input {
+    min-width: 0;
+    padding-right: 12px;
+}
+
+.add-permission-button,
+.remove-permission-button {
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.add-permission-button {
+    flex: 0 0 auto;
+    padding: 0 14px;
+    background: var(--search-primary);
+    color: #fff;
+}
+
+.add-permission-button:hover {
+    background: var(--search-dark);
+}
+
+.selected-permissions-list {
+    min-height: 80px;
+}
+
+.selected-permission {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 10px 15px;
+    border-bottom: 1px solid #f3f4f6;
+}
+
+.selected-permission:last-child {
+    border-bottom: none;
+}
+
+.selected-permission label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    min-width: 0;
+}
+
+.selected-permission input {
+    flex: 0 0 auto;
+}
+
+.selected-permission a {
+    word-break: break-word;
+    overflow-wrap: break-word;
+    font-weight: 500;
+}
+
+.selected-permission.inactive a {
+    color: #9ca3af;
+    text-decoration: line-through;
+}
+
+.remove-permission-button {
+    flex: 0 0 auto;
+    padding: 5px 9px;
+    background: #f3f4f6;
+    color: #6b7280;
+    font-size: 0.85em;
+}
+
+.remove-permission-button:hover {
+    background: #e5e7eb;
+    color: #374151;
+}
+
+.selected-permission-empty,
+.search-empty-state {
+    padding: 20px;
+    color: #9ca3af;
+    font-style: italic;
+    text-align: center;
+}
+
+.match-summary {
+    margin-top: 20px;
+    padding: 12px 15px;
+    background: var(--search-light);
+    color: var(--search-dark);
+    border-radius: 6px;
+    font-weight: 600;
+}
+
+.match-summary span {
+    font-size: 1.1em;
+}
+
+.role-search-page .role-table {
+    margin-top: 15px;
+}
+
 /* Suggestions dropdown */
 .suggestions-dropdown {
     display: none;
@@ -955,5 +1130,21 @@ footer a:hover {
     .compare-input-wrapper {
         flex-direction: column;
         align-items: stretch;
+    }
+
+    .permission-filter-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .permission-filter-panel .compare-input-wrapper {
+        flex-direction: column;
+    }
+
+    .add-permission-button {
+        padding: 10px 14px;
+    }
+
+    .selected-permission {
+        align-items: flex-start;
     }
 }

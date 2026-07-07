@@ -13,6 +13,7 @@
         <a href="index.html" class="active">gcp-iam-catalog</a>
         <a href="roles.html">Roles</a>
         <a href="permissions.html">Permissions</a>
+        <a href="search.html">Search</a>
     </div>
 
     <main>
@@ -46,6 +47,11 @@
                 <h3>Browse Permissions</h3>
                 <p>Find which roles grant a specific permission. Understand the relationship between permissions and roles.</p>
             </a>
+            <a href="search.html" class="nav-card search-card">
+                <div class="nav-card-icon">🧭</div>
+                <h3>Find Matching Roles</h3>
+                <p>Build include and exclude permission filters to identify IAM roles that fit the access profile you need.</p>
+            </a>
         </div>
 
         <!-- Features Section -->
@@ -71,6 +77,13 @@
                     <div>
                         <h4>Side-by-Side Comparison</h4>
                         <p>Compare any two roles or permissions to see what they share and what's unique to each.</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">🎯</div>
+                    <div>
+                        <h4>Least-Privilege Role Discovery</h4>
+                        <p>Narrow candidates by requiring specific permissions and filtering out roles that grant access outside your target scope.</p>
                     </div>
                 </div>
                 <div class="feature-item">
