@@ -1,7 +1,7 @@
 {
   "name": "roles/modelarmor.user",
   "title": "Model Armor User",
-  "description": "Grants access to sanitize APIs for templates. Intended for users \u0026 applications which plan to use a template.",
+  "description": "Grants access to sanitize APIs for templates and to use and test topics. Intended for users \u0026 applications which plan to use a template or topic for sanitization.",
   "included_permissions": [
     "modelarmor.locations.get",
     "modelarmor.locations.list",

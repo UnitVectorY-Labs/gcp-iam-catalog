@@ -3,6 +3,7 @@
   "title": "Datastream Viewer",
   "description": "Read-only access to all Datastream resources.",
   "included_permissions": [
+    "datastream.connectionProfiles.deriveDestinationSchema",
     "datastream.connectionProfiles.destinationTypes",
     "datastream.connectionProfiles.discover",
     "datastream.connectionProfiles.get",

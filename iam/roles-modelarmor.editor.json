@@ -1,7 +1,7 @@
 {
   "name": "roles/modelarmor.editor",
   "title": "Model Armor Editor",
-  "description": "Editor role for Model Armor resources.",
+  "description": "Grants access to create and update all model armor resources. Intended for editors.",
   "included_permissions": [
     "modelarmor.callouts.invoke",
     "modelarmor.floorSettings.computeEffectiveFloorSetting",

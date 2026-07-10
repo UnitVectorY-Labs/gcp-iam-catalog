@@ -1,8 +1,9 @@
 {
   "name": "roles/run.invoker",
   "title": "Cloud Run Invoker",
-  "description": "Can invoke Cloud Run services and execute Cloud Run jobs.",
+  "description": "Can invoke Cloud Run services, instances and execute Cloud Run jobs.",
   "included_permissions": [
+    "run.instances.invoke",
     "run.jobs.run",
     "run.routes.invoke"
   ],
