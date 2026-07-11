@@ -4,7 +4,7 @@ go 1.26.0 // GOVERSION
 
 require (
 	github.com/dustin/go-humanize v1.0.1
-	google.golang.org/api v0.287.0
+	google.golang.org/api v0.287.1
 )
 
 require (
@@ -29,7 +29,7 @@ require (
 	golang.org/x/oauth2 v0.36.0 // indirect
 	golang.org/x/sys v0.46.0 // indirect
 	golang.org/x/text v0.38.0 // indirect
-	google.golang.org/genproto/googleapis/rpc v0.0.0-20260622175928-b703f567277d // indirect
-	google.golang.org/grpc v1.81.1 // indirect
+	google.golang.org/genproto/googleapis/rpc v0.0.0-20260630182238-925bb5da69e7 // indirect
+	google.golang.org/grpc v1.82.0 // indirect
 	google.golang.org/protobuf v1.36.11 // indirect
 )
