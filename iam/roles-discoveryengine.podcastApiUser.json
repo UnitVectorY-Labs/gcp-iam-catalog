@@ -3,6 +3,7 @@
   "title": "Podcast API User",
   "description": "Grants user-level access to the Podcast resources.",
   "included_permissions": [
+    "businessaicode.locations.fetchQuotaStatus",
     "businessaicode.locations.generateContent",
     "businessaicode.locations.queryConfiguration",
     "businessaicode.locations.selfAssignLicense",
