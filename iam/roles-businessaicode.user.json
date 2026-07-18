@@ -3,6 +3,7 @@
   "title": "User role for Business AI Code API",
   "description": "A user who can use Business AI Code API",
   "included_permissions": [
+    "businessaicode.locations.fetchQuotaStatus",
     "businessaicode.locations.generateContent",
     "businessaicode.locations.queryConfiguration",
     "businessaicode.locations.selfAssignLicense",
@@ -12,5 +13,5 @@
     "cloudaicompanion.instances.queryEffectiveSettingBindings",
     "cloudaicompanion.licenses.selfAssign"
   ],
-  "stage": "BETA"
+  "stage": "GA"
 }

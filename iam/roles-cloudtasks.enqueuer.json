@@ -3,6 +3,7 @@
   "title": "Cloud Tasks Enqueuer",
   "description": "Access to create tasks.",
   "included_permissions": [
+    "cloudtasks.operations.get",
     "cloudtasks.tasks.create",
     "cloudtasks.tasks.fullView",
     "resourcemanager.projects.get",

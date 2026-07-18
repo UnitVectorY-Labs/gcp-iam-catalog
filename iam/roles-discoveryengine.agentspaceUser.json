@@ -3,6 +3,7 @@
   "title": "Gemini Enterprise User",
   "description": "Grants user-level access to Gemini Enterprise resources.",
   "included_permissions": [
+    "businessaicode.locations.fetchQuotaStatus",
     "businessaicode.locations.generateContent",
     "businessaicode.locations.queryConfiguration",
     "businessaicode.locations.selfAssignLicense",

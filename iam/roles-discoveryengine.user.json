@@ -3,6 +3,7 @@
   "title": "Discovery Engine User",
   "description": "Grants user-level access to Discovery Engine resources.",
   "included_permissions": [
+    "businessaicode.locations.fetchQuotaStatus",
     "businessaicode.locations.generateContent",
     "businessaicode.locations.queryConfiguration",
     "businessaicode.locations.selfAssignLicense",

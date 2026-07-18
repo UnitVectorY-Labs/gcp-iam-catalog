@@ -1,0 +1,11 @@
+{
+  "name": "roles/businessaicode.serviceAgent",
+  "title": "Business AI Code Service Agent",
+  "description": "Gives Business AI Code Assist the permissions to call Vertex and Discovery Engine Settings API.",
+  "included_permissions": [
+    "aiplatform.endpoints.predict",
+    "discoveryengine.devToolsConfigs.get",
+    "monitoring.timeSeries.list"
+  ],
+  "stage": "GA"
+}

@@ -1,0 +1,12 @@
+{
+  "name": "roles/aisandbox.serviceAgent",
+  "title": "FlowService Service Agent",
+  "description": "Grants FlowService Service Agent permissions to manage resources in the consumer project.",
+  "included_permissions": [
+    "aiplatform.endpoints.predict",
+    "logging.logEntries.create",
+    "logging.logEntries.route",
+    "serviceusage.services.use"
+  ],
+  "stage": "GA"
+}
