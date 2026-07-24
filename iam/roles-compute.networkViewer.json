@@ -43,6 +43,7 @@
     "compute.globalForwardingRules.list",
     "compute.globalForwardingRules.listEffectiveTags",
     "compute.globalForwardingRules.listTagBindings",
+    "compute.globalFrontendSettings.get",
     "compute.healthChecks.get",
     "compute.healthChecks.list",
     "compute.healthChecks.listEffectiveTags",
