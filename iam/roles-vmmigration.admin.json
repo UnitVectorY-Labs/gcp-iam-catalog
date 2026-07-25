@@ -3,6 +3,11 @@
   "title": "VM Migration Administrator",
   "description": "Ability to view and edit all VM Migration objects",
   "included_permissions": [
+    "cloudkms.keyHandles.create",
+    "cloudkms.keyHandles.get",
+    "cloudkms.keyHandles.list",
+    "cloudkms.operations.get",
+    "cloudkms.projects.showEffectiveAutokeyConfig",
     "resourcemanager.projects.get",
     "resourcemanager.projects.list",
     "vmmigration.cloneJobs.create",

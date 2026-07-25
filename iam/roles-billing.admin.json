@@ -35,6 +35,7 @@
     "billing.billingAccountSkuGroups.list",
     "billing.billingAccountSkus.get",
     "billing.billingAccountSkus.list",
+    "billing.budgets.configureSpendCap",
     "billing.budgets.create",
     "billing.budgets.delete",
     "billing.budgets.get",
