@@ -5,6 +5,7 @@
   "included_permissions": [
     "aiplatform.endpoints.predict",
     "discoveryengine.devToolsConfigs.get",
+    "discoveryengine.projectOverageConfigs.get",
     "monitoring.timeSeries.list"
   ],
   "stage": "GA"

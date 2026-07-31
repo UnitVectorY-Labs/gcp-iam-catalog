@@ -1,6 +1,6 @@
 {
   "name": "roles/firebasedataconnect.dataAdmin",
-  "title": "Firebase Data Connect API Data Admin",
+  "title": "Firebase SQL Connect API Data Admin",
   "description": "Full access to data sources.",
   "included_permissions": [
     "firebasedataconnect.connectors.impersonateMutation",

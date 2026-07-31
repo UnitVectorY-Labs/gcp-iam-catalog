@@ -1,6 +1,6 @@
 {
   "name": "roles/firebasedataconnect.dataViewer",
-  "title": "Firebase Data Connect API Data Viewer",
+  "title": "Firebase SQL Connect API Data Viewer",
   "description": "Readonly access to data sources.",
   "included_permissions": [
     "firebasedataconnect.connectors.impersonateQuery",

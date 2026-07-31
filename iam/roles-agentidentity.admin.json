@@ -1,6 +1,6 @@
 {
   "name": "roles/agentidentity.admin",
-  "title": "Auth Provider Admin",
+  "title": "Agent Identity Admin",
   "description": "Grants access to manage auth providers, authorizations, and access summaries.",
   "included_permissions": [
     "agentidentity.accessSummaries.get",
@@ -21,5 +21,5 @@
     "agentidentity.locations.get",
     "agentidentity.locations.list"
   ],
-  "stage": "BETA"
+  "stage": "GA"
 }

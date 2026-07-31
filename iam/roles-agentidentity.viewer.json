@@ -14,5 +14,5 @@
     "agentidentity.locations.get",
     "agentidentity.locations.list"
   ],
-  "stage": "BETA"
+  "stage": "GA"
 }

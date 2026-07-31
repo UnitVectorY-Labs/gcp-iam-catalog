@@ -3,12 +3,6 @@
   "title": "Vertex AI Service Agent",
   "description": "Gives Vertex AI the permissions it needs to function.",
   "included_permissions": [
-    "agentregistry.operations.cancel",
-    "agentregistry.operations.delete",
-    "agentregistry.operations.get",
-    "agentregistry.operations.list",
-    "agentregistry.skills.create",
-    "agentregistry.skills.delete",
     "aiplatform.agentAnomalyDetectionScopes.create",
     "aiplatform.agentAnomalyDetectionScopes.delete",
     "aiplatform.agentAnomalyDetectionScopes.get",
