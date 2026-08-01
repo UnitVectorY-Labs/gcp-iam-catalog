@@ -1,7 +1,7 @@
 {
   "name": "roles/firebasedataconnect.viewer",
-  "title": "Firebase Data Connect API Viewer",
-  "description": "Readonly access to Firebase Data Connect API resources. This role does not grant any access to data.",
+  "title": "Firebase SQL Connect API Viewer",
+  "description": "Readonly access to Firebase SQL Connect API resources. This role does not grant any access to data.",
   "included_permissions": [
     "firebasedataconnect.connectorRevisions.get",
     "firebasedataconnect.connectorRevisions.list",
@@ -15,6 +15,8 @@
     "firebasedataconnect.schemaRevisions.list",
     "firebasedataconnect.schemas.get",
     "firebasedataconnect.schemas.list",
+    "firebasedataconnect.services.generateQuery",
+    "firebasedataconnect.services.generateSchema",
     "firebasedataconnect.services.get",
     "firebasedataconnect.services.introspectGraphql",
     "firebasedataconnect.services.list",

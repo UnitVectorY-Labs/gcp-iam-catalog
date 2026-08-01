@@ -8,6 +8,7 @@
     "cloudkms.keyHandles.list",
     "cloudkms.operations.get",
     "cloudkms.projects.showEffectiveAutokeyConfig",
+    "compute.networkAttachments.use",
     "datastream.connectionProfiles.create",
     "datastream.connectionProfiles.createTagBinding",
     "datastream.connectionProfiles.delete",
