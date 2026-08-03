@@ -1,0 +1,39 @@
+name: Index repository in ChromaDB
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: chromadb-index-${{ github.repository }}
+  cancel-in-progress: true
+
+jobs:
+  index:
+    runs-on: arc-runner-set
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - name: Index repository
+        id: chromadb-index
+        uses: UnitVectorY-Labs/chromadb-repo-indexer@bbdf18095437282e7a3000e89ffa1a85583b7e7f # v1.1.0
+        with:
+          tenant: prd
+          database: chroma-db-indexer
+          collection-name: github
+          server-url: ${{ secrets.CHROMADB_URL }}
+          bearer-token: ${{ secrets.CHROMADB_TOKEN }}
+          embedding-api-url: ${{ secrets.CHROMADB_URL }}
+          embedding-model: ${{ vars.CHROMADB_MODEL }}
+          embedding-api-key: ${{ secrets.CHROMADB_TOKEN }}
+          exclude-paths: |
+            .github/**
+            LICENSE
+            iam/**
