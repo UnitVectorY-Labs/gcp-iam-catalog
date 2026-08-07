@@ -1,0 +1,12 @@
+{
+  "name": "roles/flow.serviceAgent",
+  "title": "Flow Service Agent",
+  "description": "Grants Flow Service Agent permissions to manage resources in the consumer project.",
+  "included_permissions": [
+    "aiplatform.endpoints.predict",
+    "logging.logEntries.create",
+    "logging.logEntries.route",
+    "serviceusage.services.use"
+  ],
+  "stage": ""
+}

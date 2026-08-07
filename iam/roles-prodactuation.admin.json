@@ -1,0 +1,10 @@
+{
+  "name": "roles/prodactuation.admin",
+  "title": "ProdActuation API Admin",
+  "description": "Full access to ProdActuation API resources.",
+  "included_permissions": [
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": ""
+}

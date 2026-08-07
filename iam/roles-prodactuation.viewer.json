@@ -1,0 +1,10 @@
+{
+  "name": "roles/prodactuation.viewer",
+  "title": "ProdActuation API Viewer",
+  "description": "Readonly access to ProdActuation API resources.",
+  "included_permissions": [
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": ""
+}
