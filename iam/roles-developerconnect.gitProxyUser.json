@@ -6,5 +6,5 @@
     "developerconnect.gitRepositoryLinks.gitProxyRead",
     "developerconnect.gitRepositoryLinks.gitProxyWrite"
   ],
-  "stage": "BETA"
+  "stage": "GA"
 }

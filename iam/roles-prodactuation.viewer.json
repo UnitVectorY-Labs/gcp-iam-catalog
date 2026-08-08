@@ -3,8 +3,18 @@
   "title": "ProdActuation API Viewer",
   "description": "Readonly access to ProdActuation API resources.",
   "included_permissions": [
+    "prodactuation.dnsConfigs.get",
+    "prodactuation.dnsConfigs.list",
+    "prodactuation.ganpatiGroups.get",
+    "prodactuation.ganpatiGroups.list",
+    "prodactuation.ganpatiGroups.listMemberships",
+    "prodactuation.ganpatiMemberships.get",
+    "prodactuation.locations.get",
+    "prodactuation.locations.list",
+    "prodactuation.operations.get",
+    "prodactuation.operations.list",
     "resourcemanager.projects.get",
     "resourcemanager.projects.list"
   ],
-  "stage": ""
+  "stage": "BETA"
 }

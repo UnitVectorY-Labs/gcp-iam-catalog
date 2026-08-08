@@ -5,5 +5,5 @@
   "included_permissions": [
     "developerconnect.gitRepositoryLinks.gitProxyRead"
   ],
-  "stage": "BETA"
+  "stage": "GA"
 }

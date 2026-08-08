@@ -8,5 +8,5 @@
     "logging.logEntries.route",
     "serviceusage.services.use"
   ],
-  "stage": ""
+  "stage": "GA"
 }
