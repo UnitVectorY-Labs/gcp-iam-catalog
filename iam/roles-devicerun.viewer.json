@@ -1,0 +1,21 @@
+{
+  "name": "roles/devicerun.viewer",
+  "title": "Device Run Viewer",
+  "description": "Readonly access to Device Run resources.",
+  "included_permissions": [
+    "cloudtestservice.environmentcatalog.get",
+    "devicerun.devices.get",
+    "devicerun.devices.list",
+    "devicerun.locations.get",
+    "devicerun.locations.list",
+    "devicerun.operations.get",
+    "devicerun.operations.list",
+    "devicerun.sessions.get",
+    "devicerun.sessions.list",
+    "devicestreaming.deviceSessions.get",
+    "devicestreaming.deviceSessions.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "BETA"
+}

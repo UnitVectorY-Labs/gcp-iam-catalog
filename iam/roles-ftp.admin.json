@@ -1,0 +1,28 @@
+{
+  "name": "roles/ftp.admin",
+  "title": "Cloud FTP Admin",
+  "description": "Full access to Cloud FTP resources.",
+  "included_permissions": [
+    "ftp.locations.get",
+    "ftp.locations.list",
+    "ftp.operations.cancel",
+    "ftp.operations.delete",
+    "ftp.operations.get",
+    "ftp.operations.list",
+    "ftp.servers.create",
+    "ftp.servers.delete",
+    "ftp.servers.get",
+    "ftp.servers.list",
+    "ftp.servers.start",
+    "ftp.servers.stop",
+    "ftp.servers.update",
+    "ftp.users.create",
+    "ftp.users.delete",
+    "ftp.users.get",
+    "ftp.users.list",
+    "ftp.users.update",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}
