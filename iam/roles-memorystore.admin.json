@@ -3,6 +3,11 @@
   "title": "Memorystore Admin",
   "description": "Full access to Memorystore resources.",
   "included_permissions": [
+    "cloudkms.keyHandles.create",
+    "cloudkms.keyHandles.get",
+    "cloudkms.keyHandles.list",
+    "cloudkms.operations.get",
+    "cloudkms.projects.showEffectiveAutokeyConfig",
     "memorystore.backupCollections.get",
     "memorystore.backupCollections.list",
     "memorystore.backups.delete",
