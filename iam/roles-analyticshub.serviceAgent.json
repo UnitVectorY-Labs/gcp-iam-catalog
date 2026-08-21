@@ -1,0 +1,11 @@
+{
+  "name": "roles/analyticshub.serviceAgent",
+  "title": "Analytics Hub Service Agent",
+  "description": "Grants Analytics Hub Service Agent permissions required to manage resources in the consumer project.",
+  "included_permissions": [
+    "analyticshub.dataExchanges.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}
