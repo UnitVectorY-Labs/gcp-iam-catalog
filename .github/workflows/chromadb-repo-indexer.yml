@@ -25,7 +25,7 @@ jobs:
 
       - name: Index repository
         id: chromadb-index
-        uses: UnitVectorY-Labs/chromadb-repo-indexer@5aa0f8e1c3995f45c693cfca7641edc7e289efd8 # v1.1.1
+        uses: UnitVectorY-Labs/chromadb-repo-indexer@69bfd4086b9251106a5c8b036068e02f2d0731aa # v1.2.0
         with:
           tenant: prd
           database: chroma-db-indexer
