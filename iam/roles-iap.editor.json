@@ -5,6 +5,7 @@
   "included_permissions": [
     "iap.projects.getSettings",
     "iap.projects.updateSettings",
+    "iap.resources.egressViaIAP",
     "iap.tunnelDestGroups.create",
     "iap.tunnelDestGroups.delete",
     "iap.tunnelDestGroups.get",

@@ -4,6 +4,7 @@
   "description": "Viewer role for IAP",
   "included_permissions": [
     "iap.projects.getSettings",
+    "iap.resources.egressViaIAP",
     "iap.tunnelDestGroups.get",
     "iap.tunnelDestGroups.list",
     "iap.web.getSettings",
