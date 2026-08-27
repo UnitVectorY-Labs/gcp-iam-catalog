@@ -4,6 +4,7 @@
   "description": "Enables DevOps users to build and deploy applications, create, manage and perform administrative tasks on associated GCP resources",
   "included_permissions": [
     "apptopology.applicationTopologies.generate",
+    "apptopology.devOpsDomainTopologies.generate",
     "apptopology.discoveredResourcesTopologies.generate",
     "apptopology.domains.get",
     "apptopology.domains.list",
@@ -12,6 +13,8 @@
     "apptopology.operations.get",
     "apptopology.operations.list",
     "apptopology.schemas.get",
+    "apptopology.securityDomainTopologies.generate",
+    "apptopology.sreDomainTopologies.generate",
     "apptopology.topologyViews.get",
     "apptopology.topologyViews.list",
     "artifactregistry.aptartifacts.create",
