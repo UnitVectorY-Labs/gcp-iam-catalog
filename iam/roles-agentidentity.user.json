@@ -1,7 +1,7 @@
 {
   "name": "roles/agentidentity.user",
   "title": "Agent Identity User",
-  "description": "Grants access to retrieve credentials from auth providers.",
+  "description": "Grants access to retrieve and exchange credentials from auth providers and authorizations.",
   "included_permissions": [
     "agentidentity.authProviders.retrieveCredentials"
   ],

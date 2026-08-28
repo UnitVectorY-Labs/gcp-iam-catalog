@@ -1,7 +1,7 @@
 {
-  "name": "roles/apptopology.viewer",
-  "title": "App Topology Viewer",
-  "description": "Readonly access to App Topology resources.",
+  "name": "roles/apptopology.admin",
+  "title": "App Topology Admin",
+  "description": "Full access to App Topology resources.",
   "included_permissions": [
     "apptopology.applicationTopologies.generate",
     "apptopology.devOpsDomainTopologies.generate",
