@@ -5,5 +5,5 @@
   "included_permissions": [
     "logging.logEntries.create"
   ],
-  "stage": "GA"
+  "stage": "BETA"
 }
