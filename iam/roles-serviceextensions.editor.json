@@ -1,0 +1,13 @@
+{
+  "name": "roles/serviceextensions.editor",
+  "title": "Service Extensions Editor",
+  "description": "Grants access to edit Service Extensions resources.",
+  "included_permissions": [
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list",
+    "serviceextensions.callouts.invoke",
+    "serviceextensions.locations.get",
+    "serviceextensions.locations.list"
+  ],
+  "stage": "BETA"
+}

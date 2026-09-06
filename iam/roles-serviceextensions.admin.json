@@ -1,0 +1,13 @@
+{
+  "name": "roles/serviceextensions.admin",
+  "title": "Service Extensions Admin",
+  "description": "Grants full access to Service Extensions resources.",
+  "included_permissions": [
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list",
+    "serviceextensions.callouts.invoke",
+    "serviceextensions.locations.get",
+    "serviceextensions.locations.list"
+  ],
+  "stage": "BETA"
+}

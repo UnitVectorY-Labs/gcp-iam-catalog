@@ -1,0 +1,12 @@
+{
+  "name": "roles/serviceextensions.viewer",
+  "title": "Service Extensions Viewer",
+  "description": "Grants read access to Service Extensions resources.",
+  "included_permissions": [
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list",
+    "serviceextensions.locations.get",
+    "serviceextensions.locations.list"
+  ],
+  "stage": "BETA"
+}
