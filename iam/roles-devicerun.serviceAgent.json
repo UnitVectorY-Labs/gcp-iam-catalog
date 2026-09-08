@@ -1,0 +1,15 @@
+{
+  "name": "roles/devicerun.serviceAgent",
+  "title": "Device Run Service Agent",
+  "description": "Grants Device Run Service Agent permissions required to manage resources in the consumer project.",
+  "included_permissions": [
+    "pubsub.topics.publish",
+    "storage.buckets.create",
+    "storage.buckets.get",
+    "storage.buckets.list",
+    "storage.objects.create",
+    "storage.objects.delete",
+    "storage.objects.get"
+  ],
+  "stage": ""
+}

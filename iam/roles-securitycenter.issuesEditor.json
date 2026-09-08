@@ -9,7 +9,10 @@
     "securitycenter.issues.group",
     "securitycenter.issues.list",
     "securitycenter.issues.listFilterValues",
-    "securitycenter.issues.mute"
+    "securitycenter.issues.mute",
+    "securitycenter.issues.retrieve",
+    "securitycenter.issues.search",
+    "securitycenter.issues.searchImpactedResources"
   ],
   "stage": "GA"
 }
