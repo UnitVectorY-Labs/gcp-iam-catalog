@@ -5,10 +5,6 @@
   "included_permissions": [
     "networkconnectivity.operations.get",
     "networkconnectivity.operations.list",
-    "networkconnectivity.pscAuthorizationPolicies.create",
-    "networkconnectivity.pscAuthorizationPolicies.delete",
-    "networkconnectivity.pscAuthorizationPolicies.get",
-    "networkconnectivity.pscAuthorizationPolicies.list",
     "networkconnectivity.serviceClasses.create",
     "networkconnectivity.serviceClasses.delete",
     "networkconnectivity.serviceClasses.get",

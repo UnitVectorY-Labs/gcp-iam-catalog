@@ -4,6 +4,8 @@
   "description": "Grants Flow Service Agent permissions to manage resources in the consumer project.",
   "included_permissions": [
     "aiplatform.endpoints.predict",
+    "aiplatform.interactions.create",
+    "aiplatform.interactions.get",
     "logging.logEntries.create",
     "logging.logEntries.route",
     "serviceusage.services.use"

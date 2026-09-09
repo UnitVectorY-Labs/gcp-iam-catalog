@@ -6,6 +6,7 @@
     "oracledatabase.databaseCharacterSets.list",
     "oracledatabase.databases.get",
     "oracledatabase.databases.list",
+    "oracledatabase.dbSystemComputePerformances.list",
     "oracledatabase.dbSystemShapes.list",
     "oracledatabase.dbSystems.get",
     "oracledatabase.dbSystems.list",
