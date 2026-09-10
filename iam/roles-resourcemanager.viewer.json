@@ -1,0 +1,24 @@
+{
+  "name": "roles/resourcemanager.viewer",
+  "title": "Resource Manager Viewer",
+  "description": "Access to view Resource Manager resources",
+  "included_permissions": [
+    "resourcemanager.boundaries.get",
+    "resourcemanager.boundaries.list",
+    "resourcemanager.boundaryConfigs.get",
+    "resourcemanager.capabilities.get",
+    "resourcemanager.capabilityConfigs.get",
+    "resourcemanager.capabilityConfigs.list",
+    "resourcemanager.folders.get",
+    "resourcemanager.folders.list",
+    "resourcemanager.organizations.get",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list",
+    "resourcemanager.tagHolds.list",
+    "resourcemanager.tagKeys.get",
+    "resourcemanager.tagKeys.list",
+    "resourcemanager.tagValues.get",
+    "resourcemanager.tagValues.list"
+  ],
+  "stage": "GA"
+}

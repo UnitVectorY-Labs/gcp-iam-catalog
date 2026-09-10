@@ -7,11 +7,12 @@
     "cloudasset.assets.listResource",
     "cloudasset.assets.searchAllResources",
     "cloudasset.feeds.create",
+    "cloudasset.feeds.delete",
     "cloudasset.feeds.get",
     "cloudasset.feeds.update",
     "containeranalysis.occurrences.get",
     "containeranalysis.occurrences.list",
     "logging.logEntries.create"
   ],
-  "stage": "BETA"
+  "stage": "GA"
 }
