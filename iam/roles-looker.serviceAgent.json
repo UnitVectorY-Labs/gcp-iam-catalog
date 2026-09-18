@@ -1,7 +1,7 @@
 {
   "name": "roles/looker.serviceAgent",
-  "title": "(Legacy) Looker Service Agent",
-  "description": "Legacy role that gives the Looker service account permission to manage customer resources, including BigQuery",
+  "title": "Looker Service Agent",
+  "description": "Gives the Looker service account permission to manage customer resources",
   "included_permissions": [
     "bigquery.config.get",
     "bigquery.datasets.get",
