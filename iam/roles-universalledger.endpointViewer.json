@@ -1,0 +1,12 @@
+{
+  "name": "roles/universalledger.endpointViewer",
+  "title": "Universal Ledger Endpoint Viewer",
+  "description": "Grants the ability to read the endpoints for a given project.",
+  "included_permissions": [
+    "universalledger.endpoints.get",
+    "universalledger.endpoints.list",
+    "universalledger.locations.get",
+    "universalledger.locations.list"
+  ],
+  "stage": "BETA"
+}

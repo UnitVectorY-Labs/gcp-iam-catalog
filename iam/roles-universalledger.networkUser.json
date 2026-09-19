@@ -1,0 +1,14 @@
+{
+  "name": "roles/universalledger.networkUser",
+  "title": "Universal Ledger Network User",
+  "description": "Grants full access to the GCUL Network, including the ability to send transactions.",
+  "included_permissions": [
+    "universalledger.endpoints.get",
+    "universalledger.endpoints.list",
+    "universalledger.endpoints.readNetwork",
+    "universalledger.endpoints.submit",
+    "universalledger.locations.get",
+    "universalledger.locations.list"
+  ],
+  "stage": "BETA"
+}

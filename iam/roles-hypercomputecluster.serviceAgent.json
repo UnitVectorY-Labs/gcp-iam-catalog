@@ -3,6 +3,10 @@
   "title": "Cluster Director Service Agent",
   "description": "Grants Cluster Director Service Agent access to necessary GCP resources.",
   "included_permissions": [
+    "aiplatform.endpoints.get",
+    "aiplatform.endpoints.predict",
+    "aiplatform.locations.get",
+    "aiplatform.locations.list",
     "cloudbuild.connections.list",
     "cloudbuild.repositories.accessReadToken",
     "cloudbuild.repositories.list",

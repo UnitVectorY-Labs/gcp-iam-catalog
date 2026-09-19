@@ -1,0 +1,13 @@
+{
+  "name": "roles/universalledger.viewer",
+  "title": "Universal Ledger Viewer",
+  "description": "Grants the ability to view endpoints, and query the network via an endpoint.",
+  "included_permissions": [
+    "universalledger.endpoints.get",
+    "universalledger.endpoints.list",
+    "universalledger.endpoints.readNetwork",
+    "universalledger.locations.get",
+    "universalledger.locations.list"
+  ],
+  "stage": "BETA"
+}
