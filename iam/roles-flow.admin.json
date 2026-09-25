@@ -1,0 +1,10 @@
+{
+  "name": "roles/flow.admin",
+  "title": "Flow Admin",
+  "description": "Full access to all Flow resources. Intended for project administrators.",
+  "included_permissions": [
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "BETA"
+}

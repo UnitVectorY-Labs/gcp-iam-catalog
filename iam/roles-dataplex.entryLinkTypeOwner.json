@@ -1,0 +1,21 @@
+{
+  "name": "roles/dataplex.entryLinkTypeOwner",
+  "title": "Dataplex Entry Link Type Owner",
+  "description": "Grants access to creating and managing Entry Link Types. Does not give the right to create/modify Entry Links.",
+  "included_permissions": [
+    "dataplex.dataDomains.discover",
+    "dataplex.entryLinkTypes.create",
+    "dataplex.entryLinkTypes.delete",
+    "dataplex.entryLinkTypes.get",
+    "dataplex.entryLinkTypes.getIamPolicy",
+    "dataplex.entryLinkTypes.list",
+    "dataplex.entryLinkTypes.setIamPolicy",
+    "dataplex.entryLinkTypes.update",
+    "dataplex.entryLinkTypes.use",
+    "dataplex.operations.get",
+    "dataplex.projects.search",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

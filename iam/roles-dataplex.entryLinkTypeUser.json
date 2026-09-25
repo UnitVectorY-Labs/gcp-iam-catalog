@@ -1,0 +1,15 @@
+{
+  "name": "roles/dataplex.entryLinkTypeUser",
+  "title": "Dataplex Entry Link Type User",
+  "description": "Grants access to use Entry Link Types to create EntryLinks of those types.",
+  "included_permissions": [
+    "dataplex.dataDomains.discover",
+    "dataplex.entryLinkTypes.get",
+    "dataplex.entryLinkTypes.list",
+    "dataplex.entryLinkTypes.use",
+    "dataplex.projects.search",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

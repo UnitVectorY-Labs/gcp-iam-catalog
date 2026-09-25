@@ -3,6 +3,8 @@
   "title": "Google Workspace Add-ons Developer",
   "description": "Full access to Google Workspace Add-ons resources",
   "included_permissions": [
+    "chat.bots.get",
+    "chat.bots.update",
     "gsuiteaddons.authorizations.get",
     "gsuiteaddons.deployments.create",
     "gsuiteaddons.deployments.delete",

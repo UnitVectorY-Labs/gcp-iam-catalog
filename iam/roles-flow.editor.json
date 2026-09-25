@@ -1,0 +1,10 @@
+{
+  "name": "roles/flow.editor",
+  "title": "Flow Editor",
+  "description": "Create and manage Flow generated media. Intended for content creators.",
+  "included_permissions": [
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": ""
+}

@@ -1,7 +1,0 @@
-{
-  "name": "roles/timeseriesinsights.datasetsEditor",
-  "title": "Timeseries Insights DataSet Editor",
-  "description": "Edit access to DataSets.",
-  "included_permissions": null,
-  "stage": "DEPRECATED"
-}
