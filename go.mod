@@ -3,7 +3,7 @@ module github.com/UnitVectorY-Labs/gcp-iam-catalog
 go 1.27.0 // GOVERSION
 
 require (
-	github.com/dustin/go-humanize v1.0.1
+	github.com/dustin/go-humanize v1.1.0
 	google.golang.org/api v0.298.0
 )
 
