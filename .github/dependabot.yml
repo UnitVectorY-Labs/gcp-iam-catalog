@@ -23,6 +23,10 @@ updates:
       day: "saturday"
       time: "06:00"
       timezone: "America/New_York"
+    groups:
+      codeql:
+        patterns:
+          - "github/codeql-action*"
     cooldown:
       default-days: 3
     open-pull-requests-limit: 20
