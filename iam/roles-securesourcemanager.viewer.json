@@ -1,7 +1,7 @@
 {
   "name": "roles/securesourcemanager.viewer",
-  "title": "Securesourcemanager Viewer",
-  "description": "Viewer role for securesourcemanager",
+  "title": "Secure Source Manager Viewer",
+  "description": "Viewer role for Secure Source Manager ",
   "included_permissions": [
     "resourcemanager.projects.get",
     "resourcemanager.projects.list",

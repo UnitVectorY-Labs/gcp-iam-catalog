@@ -1,6 +1,6 @@
 {
   "name": "roles/artifactregistry.editor",
-  "title": "Artifactregistry Editor",
+  "title": "Artifact Registry Editor",
   "description": "Editor role for Artifact Registry",
   "included_permissions": [
     "artifactregistry.aptartifacts.create",

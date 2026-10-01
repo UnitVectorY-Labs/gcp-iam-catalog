@@ -1,7 +1,7 @@
 {
   "name": "roles/recaptchaenterprise.editor",
-  "title": "Recaptchaenterprise Editor",
-  "description": "Editor role for recaptchaenterprise",
+  "title": "reCAPTCHA Enterprise Editor",
+  "description": "Editor role for reCAPTCHA Enterprise",
   "included_permissions": [
     "monitoring.timeSeries.list",
     "recaptchaenterprise.assessments.annotate",

@@ -3,6 +3,7 @@
   "title": "DLP User",
   "description": "Inspect, Redact, and De-identify Content",
   "included_permissions": [
+    "dlp.contentPolicies.apply",
     "dlp.kms.encrypt",
     "dlp.locations.get",
     "dlp.locations.list",

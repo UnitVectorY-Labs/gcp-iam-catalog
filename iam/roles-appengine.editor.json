@@ -1,7 +1,7 @@
 {
   "name": "roles/appengine.editor",
-  "title": "Appengine Editor",
-  "description": "Editor role for appengine",
+  "title": "App Engine Editor",
+  "description": "Editor role for App Engine",
   "included_permissions": [
     "appengine.applications.get",
     "appengine.applications.listRuntimes",
