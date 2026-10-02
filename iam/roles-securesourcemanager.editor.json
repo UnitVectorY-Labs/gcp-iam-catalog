@@ -1,7 +1,7 @@
 {
   "name": "roles/securesourcemanager.editor",
-  "title": "Securesourcemanager Editor",
-  "description": "Editor role for securesourcemanager",
+  "title": "Secure Source Manager Editor",
+  "description": "Editor role for Secure Source Manager",
   "included_permissions": [
     "resourcemanager.projects.get",
     "resourcemanager.projects.list",

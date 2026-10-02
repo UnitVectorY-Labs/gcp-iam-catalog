@@ -1,0 +1,7 @@
+{
+  "name": "roles/dlp.contentPoliciesReader",
+  "title": "DLP Content Policies Reader",
+  "description": "Read DLP content policies.",
+  "included_permissions": null,
+  "stage": ""
+}

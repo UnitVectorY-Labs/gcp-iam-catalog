@@ -1,7 +1,7 @@
 {
   "name": "roles/networksecurity.viewer",
-  "title": "Networksecurity Viewer",
-  "description": "Viewer role for networksecurity",
+  "title": "Network Security Viewer",
+  "description": "Viewer role for Network Security",
   "included_permissions": [
     "networksecurity.addressGroups.get",
     "networksecurity.addressGroups.getIamPolicy",

@@ -1,7 +1,7 @@
 {
   "name": "roles/datamigration.editor",
-  "title": "Datamigration Editor",
-  "description": "Editor role for datamigration",
+  "title": "Database Migration Editor",
+  "description": "Editor role for Database Migration",
   "included_permissions": [
     "cloudaicompanion.entitlements.get",
     "compute.networkAttachments.use",

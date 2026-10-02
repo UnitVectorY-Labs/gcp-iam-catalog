@@ -1,7 +1,7 @@
 {
   "name": "roles/cloudsupport.admin",
-  "title": "Support Account Administrator",
-  "description": "Allows management of a support account without giving access to support cases.",
+  "title": "Support Administrator",
+  "description": "Allows management of a support account and support cases.",
   "included_permissions": [
     "cloudsupport.accounts.create",
     "cloudsupport.accounts.delete",
@@ -15,6 +15,11 @@
     "cloudsupport.accounts.updateUserRoles",
     "cloudsupport.operations.get",
     "cloudsupport.properties.get",
+    "cloudsupport.techCases.create",
+    "cloudsupport.techCases.escalate",
+    "cloudsupport.techCases.get",
+    "cloudsupport.techCases.list",
+    "cloudsupport.techCases.update",
     "resourcemanager.organizations.get"
   ],
   "stage": "GA"

@@ -1,12 +1,16 @@
 {
   "name": "roles/cloudsupport.viewer",
-  "title": "Support Account Viewer",
-  "description": "Read-only access to details of a support account. This does not allow viewing cases.",
+  "title": "Support Viewer",
+  "description": "Read-only access to details of a support account and support cases.",
   "included_permissions": [
     "cloudsupport.accounts.get",
+    "cloudsupport.accounts.getIamPolicy",
     "cloudsupport.accounts.getUserRoles",
     "cloudsupport.accounts.list",
-    "cloudsupport.properties.get"
+    "cloudsupport.operations.get",
+    "cloudsupport.properties.get",
+    "cloudsupport.techCases.get",
+    "cloudsupport.techCases.list"
   ],
   "stage": "GA"
 }

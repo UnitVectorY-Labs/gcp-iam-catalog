@@ -1,7 +1,7 @@
 {
   "name": "roles/serviceconsumermanagement.admin",
-  "title": "Serviceconsumermanagement Admin",
-  "description": "Admin role for serviceconsumermanagement",
+  "title": "Service Consumer Management Admin",
+  "description": "Admin role for Service Consumer Management",
   "included_permissions": [
     "resourcemanager.projects.get",
     "resourcemanager.projects.list",

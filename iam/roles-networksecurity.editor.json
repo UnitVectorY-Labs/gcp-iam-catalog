@@ -1,7 +1,7 @@
 {
   "name": "roles/networksecurity.editor",
-  "title": "Networksecurity Editor",
-  "description": "Editor role for networksecurity",
+  "title": "Network Security Editor",
+  "description": "Editor role for Network Security",
   "included_permissions": [
     "networksecurity.addressGroups.create",
     "networksecurity.addressGroups.delete",

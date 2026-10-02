@@ -1,7 +1,7 @@
 {
   "name": "roles/parametermanager.editor",
-  "title": "Parametermanager Editor",
-  "description": "Editor role for parametermanager",
+  "title": "Parameter Manager Editor",
+  "description": "Editor role for Parameter Manager",
   "included_permissions": [
     "parametermanager.locations.get",
     "parametermanager.locations.list",

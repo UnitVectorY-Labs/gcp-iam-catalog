@@ -11,8 +11,6 @@
     "dlp.connections.get",
     "dlp.connections.list",
     "dlp.connections.search",
-    "dlp.contentPolicies.get",
-    "dlp.contentPolicies.list",
     "dlp.deidentifyTemplates.get",
     "dlp.deidentifyTemplates.list",
     "dlp.estimates.get",

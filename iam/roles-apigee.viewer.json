@@ -1,7 +1,7 @@
 {
   "name": "roles/apigee.viewer",
   "title": "Apigee Viewer",
-  "description": "Viewer role for apigee",
+  "description": "Viewer role for Apigee",
   "included_permissions": [
     "apigee.addonsconfig.get",
     "apigee.apiproductattributes.get",

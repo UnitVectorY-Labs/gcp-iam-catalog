@@ -1,7 +1,7 @@
 {
   "name": "roles/appengine.viewer",
-  "title": "Appengine Viewer",
-  "description": "Viewer role for appengine",
+  "title": "App Engine Viewer",
+  "description": "Viewer role for App Engine",
   "included_permissions": [
     "appengine.applications.get",
     "appengine.applications.listRuntimes",

@@ -1,7 +1,7 @@
 {
   "name": "roles/source.viewer",
-  "title": "Source Viewer",
-  "description": "Viewer role for source",
+  "title": "Source Repository Viewer",
+  "description": "Viewer role for Source Repository",
   "included_permissions": [
     "resourcemanager.projects.get",
     "resourcemanager.projects.list",

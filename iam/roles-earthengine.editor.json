@@ -1,7 +1,7 @@
 {
   "name": "roles/earthengine.editor",
-  "title": "Earth Engine Resource Editor",
-  "description": "Editor role for Earth Engine",
+  "title": "Earthengine Editor",
+  "description": "Editor role for earthengine",
   "included_permissions": [
     "earthengine.assets.create",
     "earthengine.assets.delete",

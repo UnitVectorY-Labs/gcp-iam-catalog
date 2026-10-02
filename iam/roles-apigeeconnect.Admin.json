@@ -3,7 +3,8 @@
   "title": "Apigee Connect Admin",
   "description": "Admin of Apigee Connect",
   "included_permissions": [
-    "apigeeconnect.connections.list"
+    "apigeeconnect.connections.list",
+    "apigeeconnect.endpoints.connect"
   ],
   "stage": "GA"
 }

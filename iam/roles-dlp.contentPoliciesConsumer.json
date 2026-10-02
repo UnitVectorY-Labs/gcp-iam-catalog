@@ -1,0 +1,10 @@
+{
+  "name": "roles/dlp.contentPoliciesConsumer",
+  "title": "DLP Content Policies Consumer",
+  "description": "Apply content policies.",
+  "included_permissions": [
+    "dlp.contentPolicies.apply",
+    "dlp.contentPolicies.get"
+  ],
+  "stage": "GA"
+}

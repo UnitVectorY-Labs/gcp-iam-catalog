@@ -1,6 +1,6 @@
 {
   "name": "roles/artifactregistry.viewer",
-  "title": "Artifactregistry Viewer",
+  "title": "Artifact Registry Viewer",
   "description": "Viewer role for Artifact Registry",
   "included_permissions": [
     "artifactregistry.attachments.get",

@@ -1,7 +1,7 @@
 {
   "name": "roles/proximitybeacon.viewer",
-  "title": "Beacon Viewer",
-  "description": "Viewer role for Proximity Beacon",
+  "title": "Proximitybeacon Viewer",
+  "description": "Viewer role for proximitybeacon",
   "included_permissions": [
     "proximitybeacon.attachments.get",
     "proximitybeacon.attachments.list",

@@ -3,6 +3,7 @@
   "title": "Fleet Admin (formerly GKE Hub Admin)",
   "description": "Full access to Fleet resources.",
   "included_permissions": [
+    "gkehub.endpoints.connect",
     "gkehub.features.create",
     "gkehub.features.delete",
     "gkehub.features.get",

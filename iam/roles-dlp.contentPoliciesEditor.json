@@ -1,0 +1,14 @@
+{
+  "name": "roles/dlp.contentPoliciesEditor",
+  "title": "DLP Content Policies Editor",
+  "description": "Edit DLP content policies.",
+  "included_permissions": [
+    "dlp.contentPolicies.apply",
+    "dlp.contentPolicies.create",
+    "dlp.contentPolicies.delete",
+    "dlp.contentPolicies.get",
+    "dlp.contentPolicies.list",
+    "dlp.contentPolicies.update"
+  ],
+  "stage": "GA"
+}

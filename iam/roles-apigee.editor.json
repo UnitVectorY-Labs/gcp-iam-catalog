@@ -1,7 +1,7 @@
 {
   "name": "roles/apigee.editor",
   "title": "Apigee Editor",
-  "description": "Editor role for Apigee",
+  "description": "Editor role for apigee",
   "included_permissions": [
     "apigee.addonsconfig.get",
     "apigee.addonsconfig.update",

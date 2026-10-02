@@ -1,7 +1,7 @@
 {
   "name": "roles/assuredworkloads.viewer",
-  "title": "Assuredworkloads Viewer",
-  "description": "Viewer role for assuredworkloads",
+  "title": "Assured Workloads Viewer",
+  "description": "Viewer role for Assured Workloads",
   "included_permissions": [
     "assuredworkloads.dbControlComplianceSummaries.list",
     "assuredworkloads.dbFindingSummaries.list",

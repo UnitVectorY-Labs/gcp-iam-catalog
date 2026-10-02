@@ -62,7 +62,9 @@
     "workloadmanager.operations.get",
     "workloadmanager.operations.list",
     "workloadmanager.results.list",
-    "workloadmanager.rules.list"
+    "workloadmanager.rules.list",
+    "workloadmanager.workloads.get",
+    "workloadmanager.workloads.list"
   ],
   "stage": "BETA"
 }
