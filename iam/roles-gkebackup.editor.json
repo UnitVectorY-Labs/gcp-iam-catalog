@@ -1,7 +1,7 @@
 {
   "name": "roles/gkebackup.editor",
-  "title": "Gkebackup Editor",
-  "description": "Editor role for gkebackup",
+  "title": "Backup for GKE Editor",
+  "description": "Editor role for Backup for GKE",
   "included_permissions": [
     "gkebackup.backupChannels.create",
     "gkebackup.backupChannels.delete",

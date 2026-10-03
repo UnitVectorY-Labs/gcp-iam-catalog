@@ -1,7 +1,7 @@
 {
   "name": "roles/certificatemanager.admin",
-  "title": "Certificatemanager Admin",
-  "description": "Admin role for certificatemanager",
+  "title": "Certificate Admin",
+  "description": "Admin role for Certificate Manager",
   "included_permissions": [
     "certificatemanager.certissuanceconfigs.create",
     "certificatemanager.certissuanceconfigs.createTagBinding",

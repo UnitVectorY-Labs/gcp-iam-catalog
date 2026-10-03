@@ -1,7 +1,7 @@
 {
   "name": "roles/cloudprivatecatalog.admin",
-  "title": "Cloudprivatecatalog Admin",
-  "description": "Admin role for cloudprivatecatalog",
+  "title": "Catalog Admin",
+  "description": "Admin role for Cloud Private Catalog",
   "included_permissions": [
     "cloudprivatecatalog.targets.get",
     "resourcemanager.projects.get",

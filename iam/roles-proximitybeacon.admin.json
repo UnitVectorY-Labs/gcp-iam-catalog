@@ -1,7 +1,7 @@
 {
   "name": "roles/proximitybeacon.admin",
-  "title": "Proximitybeacon Admin",
-  "description": "Admin role for proximitybeacon",
+  "title": "Beacon Admin",
+  "description": "Admin role for Proximity Beacon",
   "included_permissions": [
     "proximitybeacon.attachments.create",
     "proximitybeacon.attachments.delete",

@@ -1,7 +1,7 @@
 {
   "name": "roles/servicenetworking.viewer",
-  "title": "Servicenetworking Viewer",
-  "description": "Viewer role for servicenetworking",
+  "title": "Service Networking Viewer",
+  "description": "Viewer role for Service Networking",
   "included_permissions": [
     "resourcemanager.projects.get",
     "resourcemanager.projects.list",

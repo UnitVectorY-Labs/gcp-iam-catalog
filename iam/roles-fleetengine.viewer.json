@@ -1,7 +1,7 @@
 {
   "name": "roles/fleetengine.viewer",
-  "title": "Fleetengine Viewer",
-  "description": "Viewer role for fleetengine",
+  "title": "Fleet Engine Viewer",
+  "description": "Viewer role for Fleet Engine",
   "included_permissions": [
     "fleetengine.deliveryvehicles.get",
     "fleetengine.deliveryvehicles.list",

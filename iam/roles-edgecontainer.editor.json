@@ -1,7 +1,7 @@
 {
   "name": "roles/edgecontainer.editor",
-  "title": "Edgecontainer Editor",
-  "description": "Editor role for edgecontainer",
+  "title": "Edge Container Editor",
+  "description": "Editor role for Edge Container resources.",
   "included_permissions": [
     "edgecontainer.apikeys.create",
     "edgecontainer.apikeys.delete",

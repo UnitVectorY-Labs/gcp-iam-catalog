@@ -1,7 +1,7 @@
 {
   "name": "roles/file.admin",
-  "title": "File Admin",
-  "description": "Admin role for file",
+  "title": "Cloud Filestore Admin",
+  "description": "Admin role for Cloud Filestore",
   "included_permissions": [
     "backupdr.backupPlanAssociations.createForFilestoreInstance",
     "backupdr.backupPlanAssociations.deleteForFilestoreInstance",

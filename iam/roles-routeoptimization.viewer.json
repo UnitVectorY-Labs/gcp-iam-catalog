@@ -5,6 +5,7 @@
   "included_permissions": [
     "resourcemanager.projects.get",
     "resourcemanager.projects.list",
+    "routeoptimization.locations.use",
     "routeoptimization.operations.get"
   ],
   "stage": "GA"

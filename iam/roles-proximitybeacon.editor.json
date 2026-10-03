@@ -1,7 +1,7 @@
 {
   "name": "roles/proximitybeacon.editor",
-  "title": "Proximitybeacon Editor",
-  "description": "Editor role for proximitybeacon",
+  "title": "Beacon Editor",
+  "description": "Editor role for Proximity Beacon",
   "included_permissions": [
     "proximitybeacon.attachments.create",
     "proximitybeacon.attachments.delete",

@@ -4,13 +4,18 @@
   "description": "Read only access to all the SecurityPosture Service resources.",
   "included_permissions": [
     "resourcemanager.organizations.get",
+    "securityposture.locations.get",
+    "securityposture.locations.list",
     "securityposture.operations.get",
+    "securityposture.operations.list",
     "securityposture.postureDeployments.get",
     "securityposture.postureDeployments.list",
     "securityposture.postureTemplates.get",
     "securityposture.postureTemplates.list",
     "securityposture.postures.get",
-    "securityposture.postures.list"
+    "securityposture.postures.list",
+    "securityposture.reports.get",
+    "securityposture.reports.list"
   ],
   "stage": "GA"
 }

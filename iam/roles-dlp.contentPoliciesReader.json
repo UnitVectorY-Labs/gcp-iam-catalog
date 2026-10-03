@@ -2,6 +2,9 @@
   "name": "roles/dlp.contentPoliciesReader",
   "title": "DLP Content Policies Reader",
   "description": "Read DLP content policies.",
-  "included_permissions": null,
-  "stage": ""
+  "included_permissions": [
+    "dlp.contentPolicies.get",
+    "dlp.contentPolicies.list"
+  ],
+  "stage": "GA"
 }

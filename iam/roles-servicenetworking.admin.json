@@ -1,7 +1,7 @@
 {
   "name": "roles/servicenetworking.admin",
-  "title": "Servicenetworking Admin",
-  "description": "Admin role for servicenetworking",
+  "title": "Service Networking Admin",
+  "description": "Admin role for Service Networking",
   "included_permissions": [
     "resourcemanager.projects.get",
     "resourcemanager.projects.list",

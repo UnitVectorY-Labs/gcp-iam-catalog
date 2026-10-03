@@ -1,7 +1,7 @@
 {
   "name": "roles/networkmanagement.editor",
-  "title": "Networkmanagement Editor",
-  "description": "Editor role for networkmanagement",
+  "title": "Network Management Editor",
+  "description": "Editor role for Network Management resources.",
   "included_permissions": [
     "networkmanagement.connectivitytests.create",
     "networkmanagement.connectivitytests.delete",

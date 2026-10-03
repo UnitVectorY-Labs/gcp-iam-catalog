@@ -1,7 +1,7 @@
 {
   "name": "roles/accesscontextmanager.editor",
-  "title": "Accesscontextmanager Editor",
-  "description": "Editor role for accesscontextmanager",
+  "title": "Access Context Manager Editor",
+  "description": "Editor role for Access Context Manager",
   "included_permissions": [
     "accesscontextmanager.accessLevels.create",
     "accesscontextmanager.accessLevels.delete",

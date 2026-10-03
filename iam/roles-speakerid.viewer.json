@@ -5,6 +5,7 @@
   "included_permissions": [
     "speakerid.phrases.get",
     "speakerid.phrases.list",
+    "speakerid.settings.get",
     "speakerid.speakers.get",
     "speakerid.speakers.list"
   ],

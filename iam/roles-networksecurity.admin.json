@@ -1,7 +1,7 @@
 {
   "name": "roles/networksecurity.admin",
-  "title": "Networksecurity Admin",
-  "description": "Admin role for networksecurity",
+  "title": "Network Security Admin",
+  "description": "Admin role for Network Security",
   "included_permissions": [
     "networksecurity.addressGroups.create",
     "networksecurity.addressGroups.delete",
