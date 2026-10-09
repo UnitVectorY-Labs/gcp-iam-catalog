@@ -1,0 +1,10 @@
+{
+  "name": "roles/aiplatform.agentsViewer",
+  "title": "Agent Platform Agents Viewer Role",
+  "description": "Grants read-only access to Agent Platform agents.",
+  "included_permissions": [
+    "aiplatform.agents.get",
+    "aiplatform.agents.list"
+  ],
+  "stage": ""
+}

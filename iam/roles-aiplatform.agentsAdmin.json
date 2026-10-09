@@ -1,0 +1,14 @@
+{
+  "name": "roles/aiplatform.agentsAdmin",
+  "title": "Agent Platform Agents Admin Role",
+  "description": "Grants full administrative access to Agent Platform agents, including reading and managing their memories and their access control policies.",
+  "included_permissions": [
+    "aiplatform.agents.create",
+    "aiplatform.agents.delete",
+    "aiplatform.agents.get",
+    "aiplatform.agents.list",
+    "aiplatform.agents.update",
+    "aiplatform.tasks.delete"
+  ],
+  "stage": ""
+}

@@ -1,0 +1,15 @@
+{
+  "name": "roles/aiplatform.agentsUser",
+  "title": "Agent Platform Agents User Role",
+  "description": "Grants access to view agents and to create, update, and delete their tasks.",
+  "included_permissions": [
+    "aiplatform.agents.get",
+    "aiplatform.agents.list",
+    "aiplatform.tasks.create",
+    "aiplatform.tasks.delete",
+    "aiplatform.tasks.get",
+    "aiplatform.tasks.list",
+    "aiplatform.tasks.update"
+  ],
+  "stage": ""
+}

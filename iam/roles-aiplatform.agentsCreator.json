@@ -1,0 +1,10 @@
+{
+  "name": "roles/aiplatform.agentsCreator",
+  "title": "Agent Platform Agents Creator Role",
+  "description": "Grants access to create and discover Agent Platform agents and their auth providers.",
+  "included_permissions": [
+    "aiplatform.agents.create",
+    "aiplatform.agents.list"
+  ],
+  "stage": ""
+}

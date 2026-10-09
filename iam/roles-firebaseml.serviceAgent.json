@@ -4,6 +4,11 @@
   "description": "Access to Cloud ML and AI resources used by Firebase AI Logic",
   "included_permissions": [
     "aiplatform.endpoints.predict",
+    "aiplatform.interactions.cancel",
+    "aiplatform.interactions.create",
+    "aiplatform.interactions.delete",
+    "aiplatform.interactions.get",
+    "aiplatform.interactions.list",
     "logging.logEntries.create",
     "logging.logEntries.route",
     "serviceusage.services.use",
