@@ -52,6 +52,14 @@ jobs:
           output-format: sarif
           output-file: govulncheck.sarif
 
+      - name: Deduplicate SARIF stacks
+        # Work around https://github.com/golang/go/issues/81953.
+        # SARIF requires unique stacks within each result.
+        run: |
+          jq '(.runs[].results[] | select(has("stacks")) | .stacks) |= unique' \
+            govulncheck.sarif > govulncheck-normalized.sarif
+          mv govulncheck-normalized.sarif govulncheck.sarif
+
       - name: Upload SARIF to GitHub code scanning
         uses: github/codeql-action/upload-sarif@2892aa5e19bbd11bc0cff5427e3b750a04d9e3c2 # v4.38.2
         with:
