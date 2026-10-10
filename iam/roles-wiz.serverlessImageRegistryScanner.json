@@ -1,0 +1,14 @@
+{
+  "name": "roles/wiz.serverlessImageRegistryScanner",
+  "title": "Wiz Serverless \u0026 Container Image Registry Scanner",
+  "description": "Provides read and download access to Artifact Registry repositories, Cloud Storage objects, and Cloud Functions source code to scan serverless and container workloads.",
+  "included_permissions": [
+    "artifactregistry.repositories.downloadArtifacts",
+    "artifactregistry.repositories.get",
+    "cloudfunctions.functions.get",
+    "cloudfunctions.functions.sourceCodeGet",
+    "storage.objects.get",
+    "storage.objects.list"
+  ],
+  "stage": "GA"
+}

@@ -2,6 +2,8 @@
   "name": "roles/databaseinsights.telemetryConfigFetcher",
   "title": "Telemetry Config Fetcher",
   "description": "Role used to fetch telemetry configuration.",
-  "included_permissions": null,
-  "stage": ""
+  "included_permissions": [
+    "databaseinsights.telemetryConfig.fetch"
+  ],
+  "stage": "BETA"
 }

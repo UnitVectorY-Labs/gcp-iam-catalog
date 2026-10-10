@@ -3,12 +3,20 @@
   "title": "Agent Platform Agents Admin Role",
   "description": "Grants full administrative access to Agent Platform agents, including reading and managing their memories and their access control policies.",
   "included_permissions": [
+    "aiplatform.agentMemories.delete",
+    "aiplatform.agentMemories.get",
+    "aiplatform.agentMemories.list",
+    "aiplatform.agentMemories.undelete",
+    "aiplatform.agentMemories.update",
     "aiplatform.agents.create",
     "aiplatform.agents.delete",
     "aiplatform.agents.get",
+    "aiplatform.agents.getIamPolicy",
     "aiplatform.agents.list",
+    "aiplatform.agents.suspend",
+    "aiplatform.agents.unsuspend",
     "aiplatform.agents.update",
     "aiplatform.tasks.delete"
   ],
-  "stage": ""
+  "stage": "BETA"
 }

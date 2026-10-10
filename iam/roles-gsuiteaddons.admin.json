@@ -4,6 +4,7 @@
   "description": "Admin role for Google Workspace Add-ons",
   "included_permissions": [
     "chat.bots.get",
+    "chat.bots.update",
     "gsuiteaddons.authorizations.get",
     "gsuiteaddons.deployments.create",
     "gsuiteaddons.deployments.delete",

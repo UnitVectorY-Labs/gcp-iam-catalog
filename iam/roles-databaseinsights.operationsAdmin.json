@@ -3,7 +3,10 @@
   "title": "Database Insights performing operations",
   "description": "Admin role for performing Database Insights operations",
   "included_permissions": [
-    "databaseinsights.activeQuery.terminate"
+    "databaseinsights.activeQuery.terminate",
+    "databaseinsights.operations.get",
+    "databaseinsights.virtualDbaAgent.disable",
+    "databaseinsights.virtualDbaAgent.enable"
   ],
   "stage": "GA"
 }

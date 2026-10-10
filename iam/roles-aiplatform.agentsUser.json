@@ -11,5 +11,5 @@
     "aiplatform.tasks.list",
     "aiplatform.tasks.update"
   ],
-  "stage": ""
+  "stage": "BETA"
 }

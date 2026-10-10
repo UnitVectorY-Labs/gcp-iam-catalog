@@ -6,5 +6,5 @@
     "aiplatform.agents.get",
     "aiplatform.agents.list"
   ],
-  "stage": ""
+  "stage": "BETA"
 }

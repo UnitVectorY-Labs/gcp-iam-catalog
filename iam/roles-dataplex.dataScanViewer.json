@@ -3,6 +3,9 @@
   "title": "Dataplex DataScan Viewer",
   "description": "Read access to DataScan resources, excluding the results.",
   "included_permissions": [
+    "dataplex.agentTasks.get",
+    "dataplex.agentTasks.getIamPolicy",
+    "dataplex.agentTasks.list",
     "dataplex.datascans.get",
     "dataplex.datascans.getIamPolicy",
     "dataplex.datascans.list"

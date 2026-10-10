@@ -1,0 +1,13 @@
+{
+  "name": "roles/wiz.forensicsResponder",
+  "title": "Wiz Forensics Responder",
+  "description": "Provides administrative capabilities to create, label, analyze, and safely delete Compute Engine snapshots.",
+  "included_permissions": [
+    "compute.disks.createSnapshot",
+    "compute.snapshots.create",
+    "compute.snapshots.delete",
+    "compute.snapshots.setLabels",
+    "compute.snapshots.useReadOnly"
+  ],
+  "stage": "GA"
+}
