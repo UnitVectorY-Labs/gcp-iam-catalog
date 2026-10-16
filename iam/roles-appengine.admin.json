@@ -1,7 +1,7 @@
 {
   "name": "roles/appengine.admin",
-  "title": "App Engine Admin",
-  "description": "Admin role for App Engine",
+  "title": "App Engine Service Admin",
+  "description": "Full access to App Engine resources.",
   "included_permissions": [
     "appengine.applications.create",
     "appengine.applications.get",

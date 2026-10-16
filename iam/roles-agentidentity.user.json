@@ -3,7 +3,10 @@
   "title": "Agent Identity User",
   "description": "Grants access to retrieve and exchange credentials from auth providers and authorizations.",
   "included_permissions": [
-    "agentidentity.authProviders.retrieveCredentials"
+    "agentidentity.authProviders.exchangeCredentials",
+    "agentidentity.authProviders.retrieveCredentials",
+    "agentidentity.authorizations.exchangeCredentials",
+    "agentidentity.authorizations.retrieveCredentials"
   ],
   "stage": "GA"
 }

@@ -5,5 +5,5 @@
   "included_permissions": [
     "observability.views.access"
   ],
-  "stage": "BETA"
+  "stage": "GA"
 }

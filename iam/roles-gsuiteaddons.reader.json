@@ -5,6 +5,7 @@
   "included_permissions": [
     "chat.bots.get",
     "gsuiteaddons.authorizations.get",
+    "gsuiteaddons.chatAppConfigs.get",
     "gsuiteaddons.deployments.get",
     "gsuiteaddons.deployments.list",
     "resourcemanager.projects.get",

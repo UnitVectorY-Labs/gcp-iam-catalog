@@ -34,6 +34,7 @@
     "resourcemanager.projects.get",
     "resourcemanager.projects.getIamPolicy",
     "resourcemanager.projects.list",
+    "serviceusage.catalogs.listMembers",
     "serviceusage.consumerpolicy.analyze",
     "serviceusage.consumerpolicy.get",
     "serviceusage.contentsecuritypolicy.get",
@@ -47,6 +48,8 @@
     "serviceusage.quotas.get",
     "serviceusage.services.get",
     "serviceusage.services.list",
+    "serviceusage.services.listApis",
+    "serviceusage.services.listDependentServices",
     "serviceusage.values.test"
   ],
   "stage": "GA"

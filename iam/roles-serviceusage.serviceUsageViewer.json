@@ -4,6 +4,7 @@
   "description": "Ability to inspect service states and operations for a consumer project.",
   "included_permissions": [
     "monitoring.timeSeries.list",
+    "serviceusage.catalogs.listMembers",
     "serviceusage.consumerpolicy.analyze",
     "serviceusage.consumerpolicy.get",
     "serviceusage.contentsecuritypolicy.get",
@@ -17,6 +18,8 @@
     "serviceusage.quotas.get",
     "serviceusage.services.get",
     "serviceusage.services.list",
+    "serviceusage.services.listApis",
+    "serviceusage.services.listDependentServices",
     "serviceusage.values.test"
   ],
   "stage": "GA"

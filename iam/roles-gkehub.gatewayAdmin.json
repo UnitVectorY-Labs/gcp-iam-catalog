@@ -11,6 +11,7 @@
     "gkehub.gateway.put",
     "gkehub.gateway.stream",
     "gkehub.memberships.get",
+    "serviceusage.catalogs.listMembers",
     "serviceusage.consumerpolicy.analyze",
     "serviceusage.consumerpolicy.get",
     "serviceusage.effectivepolicy.get",
@@ -18,6 +19,8 @@
     "serviceusage.groups.listExpandedMembers",
     "serviceusage.groups.listMembers",
     "serviceusage.services.get",
+    "serviceusage.services.listApis",
+    "serviceusage.services.listDependentServices",
     "serviceusage.values.test"
   ],
   "stage": "GA"

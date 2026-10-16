@@ -28,5 +28,5 @@
     "observability.views.get",
     "observability.views.list"
   ],
-  "stage": "BETA"
+  "stage": "GA"
 }
