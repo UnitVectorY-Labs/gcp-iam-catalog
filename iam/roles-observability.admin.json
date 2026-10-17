@@ -47,5 +47,5 @@
     "observability.views.list",
     "observability.views.update"
   ],
-  "stage": "BETA"
+  "stage": "GA"
 }

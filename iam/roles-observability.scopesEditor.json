@@ -17,5 +17,5 @@
     "observability.traceScopes.list",
     "observability.traceScopes.update"
   ],
-  "stage": "BETA"
+  "stage": "GA"
 }

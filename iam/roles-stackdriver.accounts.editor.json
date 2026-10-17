@@ -5,6 +5,7 @@
   "included_permissions": [
     "resourcemanager.projects.get",
     "resourcemanager.projects.list",
+    "serviceusage.catalogs.listMembers",
     "serviceusage.consumerpolicy.analyze",
     "serviceusage.consumerpolicy.get",
     "serviceusage.consumerpolicy.update",
@@ -14,6 +15,8 @@
     "serviceusage.groups.listMembers",
     "serviceusage.services.enable",
     "serviceusage.services.get",
+    "serviceusage.services.listApis",
+    "serviceusage.services.listDependentServices",
     "serviceusage.values.test",
     "stackdriver.projects.edit",
     "stackdriver.projects.get"

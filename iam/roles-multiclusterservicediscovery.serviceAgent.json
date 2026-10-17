@@ -109,6 +109,7 @@
     "compute.regionTargetTcpProxies.use",
     "compute.regions.get",
     "compute.regions.list",
+    "compute.subnetworks.get",
     "compute.targetHttpProxies.create",
     "compute.targetHttpProxies.createTagBinding",
     "compute.targetHttpProxies.delete",

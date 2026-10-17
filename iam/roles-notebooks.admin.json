@@ -61,6 +61,10 @@
     "compute.firewalls.list",
     "compute.firewalls.listEffectiveTags",
     "compute.firewalls.listTagBindings",
+    "compute.folderRolloutPlans.get",
+    "compute.folderRolloutPlans.list",
+    "compute.folderRollouts.get",
+    "compute.folderRollouts.list",
     "compute.folderVmExtensionPolicies.get",
     "compute.folderVmExtensionPolicies.list",
     "compute.folderVmExtensions.get",
@@ -502,6 +506,7 @@
     "notebooks.schedules.setIamPolicy",
     "resourcemanager.projects.get",
     "resourcemanager.projects.list",
+    "serviceusage.catalogs.listMembers",
     "serviceusage.consumerpolicy.analyze",
     "serviceusage.consumerpolicy.get",
     "serviceusage.effectivepolicy.get",
@@ -511,6 +516,8 @@
     "serviceusage.quotas.get",
     "serviceusage.services.get",
     "serviceusage.services.list",
+    "serviceusage.services.listApis",
+    "serviceusage.services.listDependentServices",
     "serviceusage.values.test"
   ],
   "stage": "GA"
