@@ -1,6 +1,7 @@
 name: gcp-iam-catalog
 default_branch: main
 config:
+  osv: sarif
   description: "A comprehensive catalog of GCP IAM roles and permissions, designed to easily identify which roles include a specific permission."
   license: MIT
   language: go
