@@ -1,7 +1,7 @@
 {
   "name": "roles/iam.viewer",
-  "title": "Iam Viewer",
-  "description": "Viewer role for iam",
+  "title": "IAM Viewer",
+  "description": "Read-only access to all IAM resources",
   "included_permissions": [
     "iam.accesspolicies.get",
     "iam.accesspolicies.list",
