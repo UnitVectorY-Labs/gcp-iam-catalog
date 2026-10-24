@@ -1,0 +1,14 @@
+{
+  "name": "roles/dataplex.contentUser",
+  "title": "Dataplex Content User",
+  "description": "Authorizes consumers, business analysts, and 1P/3P AI agents to read context entries and documentation within specific Context Sets, and to submit feedback or modification proposals.",
+  "included_permissions": [
+    "dataplex.entries.getContext",
+    "dataplex.entries.listContext",
+    "dataplex.entryGroups.getContextSet",
+    "dataplex.entryGroups.requestContextChanges",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

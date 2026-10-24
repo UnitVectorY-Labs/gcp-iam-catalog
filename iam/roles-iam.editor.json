@@ -1,7 +1,7 @@
 {
   "name": "roles/iam.editor",
-  "title": "Iam Editor",
-  "description": "Editor role for iam",
+  "title": "IAM Editor",
+  "description": "Write access to identity resources, with read access to all IAM resources",
   "included_permissions": [
     "iam.accesspolicies.get",
     "iam.accesspolicies.list",

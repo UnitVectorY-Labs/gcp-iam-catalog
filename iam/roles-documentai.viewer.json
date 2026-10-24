@@ -3,7 +3,6 @@
   "title": "Document AI Viewer",
   "description": "Grants access to view all resources and process documents in Document AI",
   "included_permissions": [
-    "documentai.dataLabelingJobs.list",
     "documentai.datasetSchemas.get",
     "documentai.datasets.get",
     "documentai.datasets.getDocuments",

@@ -9,5 +9,5 @@
     "osconfig.policyOrchestrators.get",
     "osconfig.policyOrchestrators.list"
   ],
-  "stage": "BETA"
+  "stage": "GA"
 }

@@ -5,7 +5,9 @@
   "included_permissions": [
     "firebasedataconnect.connectors.impersonateQuery",
     "firebasedataconnect.services.executeGraphqlRead",
-    "firebasedataconnect.services.introspectGraphql"
+    "firebasedataconnect.services.introspectGraphql",
+    "firebasedataconnect.services.postgrestQueryFunction",
+    "firebasedataconnect.services.postgrestSelect"
   ],
   "stage": "BETA"
 }

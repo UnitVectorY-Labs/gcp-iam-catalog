@@ -158,6 +158,8 @@
     "compute.instances.listTagBindings",
     "compute.instances.use",
     "compute.instances.useReadOnly",
+    "compute.managedRulesets.get",
+    "compute.managedRulesets.list",
     "compute.networkEndpointGroups.attachNetworkEndpoints",
     "compute.networkEndpointGroups.create",
     "compute.networkEndpointGroups.createTagBinding",

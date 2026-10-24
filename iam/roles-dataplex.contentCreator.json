@@ -1,0 +1,12 @@
+{
+  "name": "roles/dataplex.contentCreator",
+  "title": "Dataplex Content Creator",
+  "description": "Authorizes users to create new Context Sets within a project.",
+  "included_permissions": [
+    "dataplex.entryGroups.createContextSet",
+    "dataplex.entryGroups.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

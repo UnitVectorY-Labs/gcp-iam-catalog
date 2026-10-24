@@ -1,7 +1,7 @@
 {
   "name": "roles/iam.admin",
-  "title": "Iam Admin",
-  "description": "Admin role for iam",
+  "title": "IAM Admin",
+  "description": "Full administrative access to all IAM resources",
   "included_permissions": [
     "iam.accesspolicies.bind",
     "iam.accesspolicies.create",

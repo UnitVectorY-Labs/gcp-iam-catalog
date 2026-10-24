@@ -1,0 +1,11 @@
+{
+  "name": "roles/dataplex.contentViewer",
+  "title": "Dataplex Content Viewer",
+  "description": "Enables discovery of content containers (Context Sets) within a project or catalog without granting access to the underlying sensitive context entries.",
+  "included_permissions": [
+    "dataplex.entryGroups.getContextSet",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": ""
+}
