@@ -4,9 +4,13 @@
   "description": "Full access to Firebase App Hosting API resources.",
   "included_permissions": [
     "firebaseapphosting.backends.create",
+    "firebaseapphosting.backends.createTagBinding",
     "firebaseapphosting.backends.delete",
+    "firebaseapphosting.backends.deleteTagBinding",
     "firebaseapphosting.backends.get",
     "firebaseapphosting.backends.list",
+    "firebaseapphosting.backends.listEffectiveTags",
+    "firebaseapphosting.backends.listTagBindings",
     "firebaseapphosting.backends.update",
     "firebaseapphosting.builds.create",
     "firebaseapphosting.builds.delete",

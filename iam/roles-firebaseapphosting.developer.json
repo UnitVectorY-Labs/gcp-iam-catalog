@@ -5,6 +5,8 @@
   "included_permissions": [
     "firebaseapphosting.backends.get",
     "firebaseapphosting.backends.list",
+    "firebaseapphosting.backends.listEffectiveTags",
+    "firebaseapphosting.backends.listTagBindings",
     "firebaseapphosting.backends.update",
     "firebaseapphosting.builds.create",
     "firebaseapphosting.builds.delete",
