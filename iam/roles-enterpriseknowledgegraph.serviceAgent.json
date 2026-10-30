@@ -15,7 +15,6 @@
     "bigquery.tables.list",
     "bigquery.tables.update",
     "bigquery.tables.updateData",
-    "cloudaicompanion.operations.get",
     "cloudaicompanion.topics.create",
     "dataform.folders.create",
     "dataform.locations.get",

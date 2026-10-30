@@ -6,7 +6,8 @@
     "databaseinsights.activeQuery.terminate",
     "databaseinsights.operations.get",
     "databaseinsights.virtualDbaAgent.disable",
-    "databaseinsights.virtualDbaAgent.enable"
+    "databaseinsights.virtualDbaAgent.enable",
+    "databaseinsights.virtualDbaAgent.get"
   ],
   "stage": "GA"
 }

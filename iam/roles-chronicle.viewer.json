@@ -4,6 +4,9 @@
   "description": "Readonly access to the Chronicle API resources.",
   "included_permissions": [
     "chronicle.agentSettings.get",
+    "chronicle.agenticCaseReportTemplates.get",
+    "chronicle.agenticCaseReports.get",
+    "chronicle.aiBillingSettings.get",
     "chronicle.ais.createFeedback",
     "chronicle.ais.translateUdmQuery",
     "chronicle.ais.translateYlRule",

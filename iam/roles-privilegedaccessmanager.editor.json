@@ -1,7 +1,7 @@
 {
   "name": "roles/privilegedaccessmanager.editor",
-  "title": "Privilegedaccessmanager Editor",
-  "description": "Editor role for privilegedaccessmanager",
+  "title": "Privileged Access Manager Editor",
+  "description": "Editor access to Privileged Access Manager resources.",
   "included_permissions": [
     "privilegedaccessmanager.entitlements.get",
     "privilegedaccessmanager.entitlements.list",

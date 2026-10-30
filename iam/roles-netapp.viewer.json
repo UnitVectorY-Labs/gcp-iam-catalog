@@ -3,6 +3,11 @@
   "title": "Google Cloud NetApp Volumes Viewer",
   "description": "Readonly access to Google Cloud NetApp Volumes resources.",
   "included_permissions": [
+    "backupdr.backupPlanAssociations.fetchForNetappVolumes",
+    "backupdr.backupPlanAssociations.getForNetappVolumes",
+    "backupdr.bvbackups.fetchForNetappVolumes",
+    "backupdr.dataSourceReferences.fetchForNetappVolumes",
+    "backupdr.dataSourceReferences.getForNetappVolumes",
     "netapp.activeDirectories.get",
     "netapp.activeDirectories.list",
     "netapp.backupPolicies.get",

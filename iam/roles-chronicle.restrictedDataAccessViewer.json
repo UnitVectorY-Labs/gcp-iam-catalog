@@ -4,6 +4,8 @@
   "description": "Grants readonly access to Chronicle API resources without global data access scope.",
   "included_permissions": [
     "chronicle.agentSettings.get",
+    "chronicle.agenticCaseReportTemplates.get",
+    "chronicle.agenticCaseReports.get",
     "chronicle.ais.createFeedback",
     "chronicle.ais.translateUdmQuery",
     "chronicle.ais.translateYlRule",
