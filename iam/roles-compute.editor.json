@@ -3,6 +3,12 @@
   "title": "Compute Editor",
   "description": "Editor role for compute",
   "included_permissions": [
+    "compute.acceleratorInterconnectMemberInstances.list",
+    "compute.acceleratorInterconnects.create",
+    "compute.acceleratorInterconnects.delete",
+    "compute.acceleratorInterconnects.get",
+    "compute.acceleratorInterconnects.list",
+    "compute.acceleratorInterconnects.queryFormability",
     "compute.acceleratorTypes.get",
     "compute.acceleratorTypes.list",
     "compute.addresses.create",

@@ -4,6 +4,7 @@
   "description": "Grants readonly access to Chronicle API resources, excluding Rules and Retrohunts.",
   "included_permissions": [
     "chronicle.agentSettings.get",
+    "chronicle.aiBillingSettings.get",
     "chronicle.analyticValues.list",
     "chronicle.analytics.list",
     "chronicle.cases.countPriorities",
