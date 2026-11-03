@@ -4,6 +4,7 @@
   "description": "Role allowing access to a Cloud SQL instance",
   "included_permissions": [
     "cloudsql.instances.executeSql",
+    "cloudsql.instances.executeSqlReadOnly",
     "cloudsql.instances.get",
     "cloudsql.instances.login"
   ],
