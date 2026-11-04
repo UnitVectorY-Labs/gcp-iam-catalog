@@ -1,0 +1,25 @@
+{
+  "name": "roles/workspacekeyaccess.editor",
+  "title": "Workspace Key Access API Editor",
+  "description": "Editor role for Workspace Key Access.",
+  "included_permissions": [
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list",
+    "workspacekeyaccess.configs.create",
+    "workspacekeyaccess.configs.delete",
+    "workspacekeyaccess.configs.get",
+    "workspacekeyaccess.configs.list",
+    "workspacekeyaccess.configs.update",
+    "workspacekeyaccess.endpoints.create",
+    "workspacekeyaccess.endpoints.get",
+    "workspacekeyaccess.endpoints.list",
+    "workspacekeyaccess.endpoints.update",
+    "workspacekeyaccess.locations.get",
+    "workspacekeyaccess.locations.list",
+    "workspacekeyaccess.operations.cancel",
+    "workspacekeyaccess.operations.delete",
+    "workspacekeyaccess.operations.get",
+    "workspacekeyaccess.operations.list"
+  ],
+  "stage": "BETA"
+}

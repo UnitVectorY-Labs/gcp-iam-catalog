@@ -3,11 +3,6 @@
   "title": "Edge Container Editor",
   "description": "Editor role for Edge Container resources.",
   "included_permissions": [
-    "cloudkms.keyHandles.create",
-    "cloudkms.keyHandles.get",
-    "cloudkms.keyHandles.list",
-    "cloudkms.operations.get",
-    "cloudkms.projects.showEffectiveAutokeyConfig",
     "edgecontainer.apikeys.create",
     "edgecontainer.apikeys.delete",
     "edgecontainer.apikeys.get",

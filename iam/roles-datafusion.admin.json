@@ -3,6 +3,11 @@
   "title": "Cloud Data Fusion Admin",
   "description": "Full access to Cloud Data Fusion Instances, Namespaces and related resources.",
   "included_permissions": [
+    "cloudkms.keyHandles.create",
+    "cloudkms.keyHandles.get",
+    "cloudkms.keyHandles.list",
+    "cloudkms.operations.get",
+    "cloudkms.projects.showEffectiveAutokeyConfig",
     "datafusion.artifacts.create",
     "datafusion.artifacts.delete",
     "datafusion.artifacts.get",
