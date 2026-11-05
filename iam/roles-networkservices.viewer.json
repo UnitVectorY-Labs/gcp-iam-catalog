@@ -3,6 +3,8 @@
   "title": "Network Services Viewer",
   "description": "Viewer role for networkservices",
   "included_permissions": [
+    "networkservices.agentConnectivityTemplates.get",
+    "networkservices.agentConnectivityTemplates.list",
     "networkservices.agentGateways.get",
     "networkservices.agentGateways.list",
     "networkservices.authzExtensions.get",
@@ -17,6 +19,7 @@
     "networkservices.gateways.listTagBindings",
     "networkservices.googleTagGatewayPolicies.get",
     "networkservices.googleTagGatewayPolicies.list",
+    "networkservices.googleapis.com/agentGateways.searchPolicyBindings",
     "networkservices.grpcRoutes.get",
     "networkservices.grpcRoutes.list",
     "networkservices.httpFilters.get",
