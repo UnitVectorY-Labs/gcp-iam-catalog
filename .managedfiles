@@ -5,8 +5,6 @@ managed_files:
       management: file
     - path: .github/dependabot.yml
       management: file
-    - path: .github/workflows/add-to-project.yml
-      management: file
     - path: .github/workflows/build-go.yml
       management: file
     - path: .github/workflows/codeql-go.yml
