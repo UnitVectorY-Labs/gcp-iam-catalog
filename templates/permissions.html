@@ -1,8 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>GCP IAM Permissions - gcp-iam-catalog</title>
+    <script src="./uvy-design/uvy-theme.js"></script>
+    <link rel="stylesheet" href="./uvy-design/uvy-tokens.css">
+    <link rel="stylesheet" href="./uvy-design/uvy-elements.css">
     <link rel="stylesheet" href="./style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Browse and search all GCP IAM permissions. Find which roles grant each permission.">
@@ -27,23 +30,24 @@
 </head>
 <body>
     <!-- Navigation Bar -->
-    <div class="navbar">
+    <nav class="navbar" aria-label="Main">
         <a href="index.html">gcp-iam-catalog</a>
         <a href="roles.html">Roles</a>
         <a href="permissions.html" class="active">Permissions</a>
         <a href="search.html">Search</a>
-    </div>
+        {{template "theme-toggle" .}}
+    </nav>
 
     <main>
         <section class="permissions permissions-page">
             <div class="page-header">
-                <span class="page-header-icon">🔑</span>
+                <span class="page-header-icon">{{template "icon-key"}}</span>
                 <h1>GCP IAM Permissions</h1>
             </div>
             <p class="muted-text">Browse all GCP IAM permissions. Click on a permission to see which roles grant it and compare with other permissions.</p>
             <div class="search-container">
-                <input type="text" id="searchInput" onkeyup="filterList()" placeholder="Search for permissions...">
-                <span class="search-icon">&#128269;</span>
+                <input type="text" id="searchInput" aria-label="Search displayed records" oninput="filterList()" placeholder="Search for permissions...">
+                <span class="search-icon">{{template "icon-search"}}</span>
             </div>
             <div class="role-table">
                 {{range .Items}}

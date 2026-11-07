@@ -1,20 +1,24 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>GCP IAM Role: {{.Name}} - gcp-iam-catalog</title>
+    <script src="../uvy-design/uvy-theme.js"></script>
+    <link rel="stylesheet" href="../uvy-design/uvy-tokens.css">
+    <link rel="stylesheet" href="../uvy-design/uvy-elements.css">
     <link rel="stylesheet" href="../style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="See the permissions assigned to the {{.Name}} role in Google Cloud Platform (GCP) IAM and understand its usage.">
 </head>
 <body>
     <!-- Navigation Bar -->
-    <div class="navbar">
+    <nav class="navbar" aria-label="Main">
         <a href="../index.html">gcp-iam-catalog</a>
         <a href="../roles.html" class="active">Roles</a>
         <a href="../permissions.html">Permissions</a>
         <a href="../search.html">Search</a>
-    </div>
+        {{template "theme-toggle" .}}
+    </nav>
 
     <main>
         <section class="role-detail">
@@ -23,11 +27,11 @@
             
             <!-- Header with icon and title -->
             <div class="detail-header">
-                <span class="detail-icon">🔐</span>
+                <span class="detail-icon">{{template "icon-certificate"}}</span>
                 <div class="detail-title">
                     <h1>
-                        <span id="role-id">{{.Name}}</span>{{if .Deprecated}} ⛔{{end}}
-                        <button class="copy-button" onclick="copyRole()" aria-label="Copy Role">📋 Copy</button>
+                        <span id="role-id">{{.Name}}</span>{{if .Deprecated}} (deprecated){{end}}
+                        <button class="copy-button" onclick="copyRole()" aria-label="Copy Role">{{template "icon-copy"}} Copy</button>
                     </h1>
                 </div>
             </div>
@@ -76,8 +80,8 @@
                 <!-- Details Tab -->
                 <div id="details-tab" class="tab-content active">
                     <div class="search-container">
-                        <input type="text" id="searchInput" class="search-input" onkeyup="filterList()" placeholder="Search permissions...">
-                        <span class="search-icon">&#128269;</span>
+                        <input type="text" id="searchInput" aria-label="Search displayed records" class="search-input" oninput="filterList()" placeholder="Search permissions...">
+                        <span class="search-icon">{{template "icon-search"}}</span>
                     </div>
                     <div class="role-table">
                         {{range .IncludedPermissions}}
@@ -97,7 +101,7 @@
                         <label for="compareRole">Compare with another role:</label>
                         <div class="compare-input-wrapper">
                             <input type="text" id="compareRole" class="search-input" placeholder="Type to search roles..." autocomplete="off">
-                            <span class="search-icon">&#128269;</span>
+                            <span class="search-icon">{{template "icon-search"}}</span>
                         </div>
                         <div id="rolesSuggestions" class="suggestions-dropdown"></div>
                     </div>
@@ -185,7 +189,7 @@
         }
 
         function displayRoleName(role) {
-            return role + (roleMetadata[role] && roleMetadata[role].deprecated ? ' ⛔' : '');
+            return role + (roleMetadata[role] && roleMetadata[role].deprecated ? ' (deprecated)' : '');
         }
 
         function normalizeCompareValue(value) {

@@ -1,25 +1,29 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Find GCP IAM Roles - gcp-iam-catalog</title>
+    <script src="./uvy-design/uvy-theme.js"></script>
+    <link rel="stylesheet" href="./uvy-design/uvy-tokens.css">
+    <link rel="stylesheet" href="./uvy-design/uvy-elements.css">
     <link rel="stylesheet" href="./style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Find GCP IAM roles by permissions they must include and permissions they must exclude.">
 </head>
 <body>
     <!-- Navigation Bar -->
-    <div class="navbar">
+    <nav class="navbar" aria-label="Main">
         <a href="index.html">gcp-iam-catalog</a>
         <a href="roles.html">Roles</a>
         <a href="permissions.html">Permissions</a>
         <a href="search.html" class="active">Search</a>
-    </div>
+        {{template "theme-toggle" .}}
+    </nav>
 
     <main>
         <section class="role-search-page">
             <div class="page-header">
-                <span class="page-header-icon">🧭</span>
+                <span class="page-header-icon">{{template "icon-search"}}</span>
                 <h1>Find Matching Roles</h1>
             </div>
             <p class="muted-text">Choose permissions a role must include and permissions it must not include. Matches update entirely in your browser.</p>
@@ -58,7 +62,7 @@
                 </div>
             </div>
 
-            <div class="match-summary" id="matchSummary">
+            <div class="match-summary" id="matchSummary" role="status" aria-live="polite">
                 <span id="matchCount">0</span> matching roles
             </div>
 
@@ -284,7 +288,7 @@
         }
 
         function displayRoleName(role) {
-            return role + (roleMetadata[role] && roleMetadata[role].deprecated ? ' ⛔' : '');
+            return role + (roleMetadata[role] && roleMetadata[role].deprecated ? ' (deprecated)' : '');
         }
 
         function renderMatches(roles) {

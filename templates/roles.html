@@ -1,8 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>GCP IAM Roles - gcp-iam-catalog</title>
+    <script src="./uvy-design/uvy-theme.js"></script>
+    <link rel="stylesheet" href="./uvy-design/uvy-tokens.css">
+    <link rel="stylesheet" href="./uvy-design/uvy-elements.css">
     <link rel="stylesheet" href="./style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Browse and search all GCP IAM roles. Find detailed information about role permissions, titles, and descriptions.">
@@ -28,23 +31,24 @@
 </head>
 <body>
     <!-- Navigation Bar -->
-    <div class="navbar">
+    <nav class="navbar" aria-label="Main">
         <a href="index.html">gcp-iam-catalog</a>
         <a href="roles.html" class="active">Roles</a>
         <a href="permissions.html">Permissions</a>
         <a href="search.html">Search</a>
-    </div>
+        {{template "theme-toggle" .}}
+    </nav>
 
     <main>
         <section class="roles roles-page">
             <div class="page-header">
-                <span class="page-header-icon">🔐</span>
+                <span class="page-header-icon">{{template "icon-certificate"}}</span>
                 <h1>GCP IAM Roles</h1>
             </div>
             <p class="muted-text">Browse all predefined GCP IAM roles. Click on a role to see its permissions and compare with other roles.</p>
             <div class="search-container">
-                <input type="text" id="searchInput" onkeyup="filterList()" placeholder="Search for roles or titles...">
-                <span class="search-icon">&#128269;</span>
+                <input type="text" id="searchInput" aria-label="Search displayed records" oninput="filterList()" placeholder="Search for roles or titles...">
+                <span class="search-icon">{{template "icon-search"}}</span>
             </div>
             <div class="role-table">
                 <div class="role-table-header">
@@ -57,7 +61,7 @@
                             <span class="role-indicator"></span>
                             <a href="{{.Name}}.html" class="role-name">
                                 {{.Name}}
-                            </a>{{if .Deprecated}} ⛔{{end}}
+                            </a>{{if .Deprecated}} (deprecated){{end}}
                         </div>
                         <div class="role-type-cell">
                             {{classifyRole .Name}}
