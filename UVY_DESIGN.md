@@ -2,9 +2,9 @@
 
 ## Version and scope
 
-- Release: [UVY Design v0.1.0](https://github.com/UnitVectorY-Labs/uvy-design/releases/tag/v0.1.0)
-- Source commit: `396a65021c2bcab8dbcb3d1bb4cb498c807a4396`
-- Guide: [approved style guide](https://github.com/UnitVectorY-Labs/uvy-design/blob/v0.1.0/docs/style-guide.md)
+- Release: [UVY Design v0.1.0](https://github.com/UnitVectorY-Labs/uvy-design/tree/12f8e3d964785d78628346516351fe4dac583cef)
+- Source commit: `12f8e3d964785d78628346516351fe4dac583cef`
+- Guide: [approved style guide](https://github.com/UnitVectorY-Labs/uvy-design/blob/12f8e3d964785d78628346516351fe4dac583cef/docs/style-guide.md)
 - Local runtime: shared token/controller/treatment files under `assets/uvy-design/`, copied into generated `html/uvy-design/`. No new framework or HTMX is introduced.
 - Inline icon source: the release's official Tabler outline SVGs, pinned upstream commit `ed177a085b652fe04ec4f37ced867c94621e7840`; templates are defined in `templates/icons.html`. Both upstream MIT notices are retained alongside the vendored assets.
 
@@ -24,7 +24,7 @@ The top-right theme control uses the shared head script, defaults to the system 
 
 ## Updating
 
-Review a tagged upstream release and its checksums; copy canonical assets verbatim, retaining notices. Keep application-specific rules in the adapter and update this record. Rebuild, run the main workflows and compare the complete major-page screenshot matrix. Do not fetch mutable assets from the design repository or any CDN at runtime.
+Review a new upstream design commit and file hashes; copy canonical assets verbatim, retaining notices. Keep application-specific rules in the adapter and update this record. Rebuild, run the main workflows and compare the complete major-page screenshot matrix. Do not fetch mutable assets from the design repository or any CDN at runtime.
 
 ## Validation and evidence
 
