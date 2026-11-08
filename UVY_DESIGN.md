@@ -1,6 +1,8 @@
 # UVY Design adoption
 
-## Version and scope
+## Guidance and scope
+
+Reviewed against the [current guidance](https://github.com/UnitVectorY-Labs/uvy-design/tree/64017af64fd58e4cf3a2a0e6ed66f6f5d9c0d09a) at `64017af64fd58e4cf3a2a0e6ed66f6f5d9c0d09a`. The guidance is no longer a versioned asset package; the following identifies the historical source of the locally maintained assets.
 
 - Release: [UVY Design v0.1.0](https://github.com/UnitVectorY-Labs/uvy-design/tree/12f8e3d964785d78628346516351fe4dac583cef)
 - Source commit: `12f8e3d964785d78628346516351fe4dac583cef`

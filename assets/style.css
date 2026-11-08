@@ -232,14 +232,6 @@ ul.item-list li a:hover {
     text-decoration: none;
 }
 
-.stat-card.roles {
-    border-top: 4px solid var(--role-primary);
-}
-
-.stat-card.permissions {
-    border-top: 4px solid var(--permission-primary);
-}
-
 .stat-number {
     font-size: 2.5em;
     font-weight: 700;
@@ -493,21 +485,6 @@ ul.item-list li a:hover {
    DETAIL PAGE STYLES (Role/Permission)
    ============================================ */
 
-/* Colored header bar at top of detail pages */
-.detail-header-bar {
-    height: 6px;
-    margin: -25px -25px 20px -25px;
-    border-radius: 6px 6px 0 0;
-}
-
-.detail-header-bar.role-bar {
-    background: linear-gradient(90deg, var(--role-primary) 0%, var(--role-dark) 100%);
-}
-
-.detail-header-bar.permission-bar {
-    background: linear-gradient(90deg, var(--permission-primary) 0%, var(--permission-dark) 100%);
-}
-
 .detail-header {
     display: flex;
     align-items: center;
@@ -721,14 +698,6 @@ ul.item-list li a:hover {
     border-radius: 8px;
     background: var(--uvy-surface);
     overflow: visible;
-}
-
-.permission-filter-panel.include-panel {
-    border-top: 4px solid var(--common-primary);
-}
-
-.permission-filter-panel.exclude-panel {
-    border-top: 4px solid var(--permission-primary);
 }
 
 .filter-panel-header {
@@ -1175,10 +1144,14 @@ main { padding: var(--uvy-section-gap) 20px; }
 section,.stat-card,.nav-card,.home-features { border: 1px solid var(--uvy-divider); border-radius: var(--uvy-radius-panel); box-shadow: var(--uvy-shadow); }
 section { padding: var(--uvy-panel-pad); margin-bottom: var(--uvy-section-gap); }
 h1 { font-size: 28px; line-height: 1.25; font-weight: 700; }
+h1, h2, .home-features h2 { color: var(--uvy-link); }
+h1::after, h2::after { content: ""; display: block; width: 40px; height: 3px; margin-top: 6px; background: var(--uvy-accent-fill); }
+.detail-title h1::after { flex-basis: 40px; }
 h2 { font-size: 18px; line-height: 1.35; font-weight: 650; }
 .muted-text { color: var(--uvy-muted); font-size: 14px; }
-.home-hero { background: var(--uvy-masthead); border-bottom: 4px solid var(--uvy-accent-fill); padding: 32px 20px; }
-.home-hero h1 { color: white; font-size: 32px; }
+.home-hero { background: var(--uvy-surface); color: var(--uvy-text); border: 1px solid var(--uvy-divider); padding: 32px 20px; }
+.home-hero h1 { color: var(--uvy-link); font-size: 32px; }
+.home-hero h1::after, .home-features h2::after { margin-inline: auto; }
 .home-hero .subtitle { font-size: 16px; }
 .home-stats { gap: 24px; margin-block: 24px; }
 .stat-card { padding: 20px 32px; }
@@ -1198,9 +1171,6 @@ h2 { font-size: 18px; line-height: 1.35; font-weight: 650; }
 input::placeholder { color: var(--uvy-muted); opacity: 1; }
 #searchInput:focus,.search-input:focus,.compare-input-wrapper .search-input:focus,.copy-button:focus { outline: 3px solid var(--uvy-focus); outline-offset: 2px; box-shadow: none; }
 .search-icon { opacity: 1; display: inline-flex; }
-.detail-header-bar { margin: calc(-1 * var(--uvy-panel-pad)) calc(-1 * var(--uvy-panel-pad)) 20px; border-radius: 8px 8px 0 0; }
-.detail-header-bar.role-bar { background: var(--uvy-link); }
-.detail-header-bar.permission-bar { background: var(--uvy-accent-fill); }
 .detail-title { min-width: 0; max-width: 100%; }
 .detail-title h1 { overflow-wrap: anywhere; }
 .detail-meta { background: var(--uvy-blue-soft); padding: var(--uvy-panel-pad); gap: 16px; border-radius: 6px; }
@@ -1233,10 +1203,13 @@ footer a:hover { color: var(--uvy-link); }
 footer .uvy-icon { width: 16px; height: 16px; }
 footer .last-updated { margin-top: 6px; }
 @media(max-width:768px) {
- .navbar { gap: 0; padding: 12px 68px 12px 10px; }
+ .navbar { gap: 0; padding: 12px 10px; }
+ .navbar a:first-child { flex-basis: calc(100% - 58px); margin-right: 58px; }
  .navbar a { margin-right: 0; padding: 8px; font-size: 14px; }
  .navbar .uvy-theme-toggle { right: 12px; top: 12px; }
  main { padding: 16px; }
+ .home-hero, .home-features h2 { text-align: left; }
+ .home-hero h1::after, .home-features h2::after { margin-inline: 0; }
  .home-stats { gap: 12px; }
  .stat-card { min-width: 0; flex: 1; padding: 16px 8px; }
  .stat-number { font-size: 28px; }
