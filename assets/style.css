@@ -1,3 +1,103 @@
+:root {
+  color-scheme: light;
+  --uvy-font: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --uvy-mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  --uvy-page: #f3f6fc;
+  --uvy-surface: #ffffff;
+  --uvy-text: #182b49;
+  --uvy-muted: #50617c;
+  --uvy-divider: #cfdaeb;
+  --uvy-control: #7285a1;
+  --uvy-link: #1558ba;
+  --uvy-blue-soft: #e9f1ff;
+  --uvy-masthead: #1558ba;
+  --uvy-on-masthead: #ffffff;
+  --uvy-section: #e3edff;
+  --uvy-accent: #a83e00;
+  --uvy-accent-fill: #ff932e;
+  --uvy-accent-ink: #34200b;
+  --uvy-accent-soft: #fff0df;
+  --uvy-focus: #1558ba;
+  --uvy-success: #166338;
+  --uvy-success-soft: #e6f5ed;
+  --uvy-warning: #805600;
+  --uvy-warning-soft: #fff4cc;
+  --uvy-danger: #a32232;
+  --uvy-danger-soft: #fdecef;
+  --uvy-radius-small: 4px;
+  --uvy-radius-control: 6px;
+  --uvy-radius-panel: 8px;
+  --uvy-shadow: 0 1px 3px rgb(24 43 73 / 8%);
+  --uvy-section-gap: 24px;
+  --uvy-panel-pad: 16px;
+  --uvy-row-y: 12px;
+  --uvy-row-x: 16px;
+  --uvy-field-gap: 12px;
+  --uvy-group-gap: 16px;
+  --uvy-button-x: 16px;
+}
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --uvy-page: #0c1729;
+  --uvy-surface: #14243c;
+  --uvy-text: #edf3ff;
+  --uvy-muted: #b2c2da;
+  --uvy-divider: #354b6b;
+  --uvy-control: #8096b7;
+  --uvy-link: #8dbbff;
+  --uvy-blue-soft: #1b3559;
+  --uvy-masthead: #104ca7;
+  --uvy-section: #203f6a;
+  --uvy-accent: #ffb16d;
+  --uvy-accent-soft: #392719;
+  --uvy-focus: #ffb16d;
+  --uvy-success: #91dfb4;
+  --uvy-success-soft: #193d31;
+  --uvy-warning: #f8d778;
+  --uvy-warning-soft: #3b321b;
+  --uvy-danger: #ffabb5;
+  --uvy-danger-soft: #45212c;
+  --uvy-shadow: 0 1px 3px rgb(0 0 0 / 24%);
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]):not([data-theme="dark"]) {
+    color-scheme: dark;
+    --uvy-page: #0c1729; --uvy-surface: #14243c; --uvy-text: #edf3ff;
+    --uvy-muted: #b2c2da; --uvy-divider: #354b6b; --uvy-control: #8096b7;
+    --uvy-link: #8dbbff; --uvy-blue-soft: #1b3559; --uvy-masthead: #104ca7;
+    --uvy-section: #203f6a; --uvy-accent: #ffb16d; --uvy-accent-soft: #392719;
+    --uvy-focus: #ffb16d; --uvy-success: #91dfb4; --uvy-success-soft: #193d31;
+    --uvy-warning: #f8d778; --uvy-warning-soft: #3b321b;
+    --uvy-danger: #ffabb5; --uvy-danger-soft: #45212c;
+    --uvy-shadow: 0 1px 3px rgb(0 0 0 / 24%);
+  }
+}
+[data-density="compact"] {
+  --uvy-section-gap: 16px; --uvy-panel-pad: 12px; --uvy-row-y: 8px;
+  --uvy-row-x: 12px; --uvy-field-gap: 8px; --uvy-group-gap: 12px; --uvy-button-x: 12px;
+}
+[data-density="spacious"] {
+  --uvy-section-gap: 32px; --uvy-panel-pad: 24px; --uvy-row-y: 16px;
+  --uvy-row-x: 20px; --uvy-field-gap: 16px; --uvy-group-gap: 24px; --uvy-button-x: 20px;
+}
+
+/* Optional, opt-in treatments. No layout/navigation selectors are imposed. */
+.uvy-panel { border: 1px solid var(--uvy-divider); border-radius: var(--uvy-radius-panel); background: var(--uvy-surface); box-shadow: var(--uvy-shadow); padding: var(--uvy-panel-pad); }
+.uvy-button { display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 44px; padding: 8px var(--uvy-button-x); border: 1px solid var(--uvy-control); border-radius: var(--uvy-radius-control); background: var(--uvy-surface); color: var(--uvy-text); font: 600 1rem/1.5 var(--uvy-font); cursor: pointer; }
+.uvy-button-primary { background: var(--uvy-link); border-color: var(--uvy-link); color: var(--uvy-surface); }
+.uvy-button-accent { background: var(--uvy-accent-fill); border-color: var(--uvy-accent-fill); color: var(--uvy-accent-ink); }
+.uvy-button:hover { border-color: var(--uvy-link); }
+.uvy-icon { display: inline-block; width: 20px; height: 20px; flex-shrink: 0; vertical-align: middle; }
+.uvy-theme-toggle { width: 44px; height: 44px; min-height: 44px; padding: 0; display: inline-flex; align-items: center; justify-content: center; border: 1px solid #b6d3ff; border-radius: var(--uvy-radius-control); background: transparent; color: var(--uvy-on-masthead); cursor: pointer; }
+.uvy-theme-toggle:hover { background: rgb(255 255 255 / 12%); border-color: #fff; }
+.uvy-theme-toggle:focus-visible { outline: 3px solid #fff; outline-offset: 3px; }
+.uvy-theme-light-icon, [data-theme="dark"] .uvy-theme-dark-icon { display: none; }
+[data-theme="dark"] .uvy-theme-light-icon { display: inline-flex; }
+.uvy-focus:focus-visible, .uvy-button:focus-visible { outline: 3px solid var(--uvy-focus); outline-offset: 3px; }
+.uvy-footer { padding-block: 20px; border-top: 1px solid var(--uvy-divider); background: var(--uvy-surface); color: var(--uvy-muted); font: 400 13px/1.5 var(--uvy-font); }
+.uvy-footer a { color: var(--uvy-link); text-underline-offset: 3px; }
+@media (prefers-reduced-motion: reduce) { .uvy-button, .uvy-theme-toggle { transition: none; } }
+
 * {
     margin: 0;
     padding: 0;
@@ -1131,7 +1231,7 @@ footer a:hover {
     }
 }
 
-/* UVY Design v0.1.0 adapter: retain the catalog's existing layouts and workflows. */
+/* Catalog layout treatments. */
 body { font-family: var(--uvy-font); line-height: 1.5; }
 a { text-underline-offset: 3px; }
 :focus-visible { outline: 3px solid var(--uvy-focus); outline-offset: 3px; }

@@ -3,9 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <title>GCP IAM Role: {{.Name}} - gcp-iam-catalog</title>
-    <script src="../uvy-design/uvy-theme.js"></script>
-    <link rel="stylesheet" href="../uvy-design/uvy-tokens.css">
-    <link rel="stylesheet" href="../uvy-design/uvy-elements.css">
+    <script>
+(() => {
+  if (window.__uvyThemeInitialized) return;
+  window.__uvyThemeInitialized = true;
+  const root = document.documentElement;
+  const selector = '[data-uvy-theme-toggle], #theme-toggle';
+  const system = matchMedia('(prefers-color-scheme: dark)');
+  let preference = null;
+  try {
+    const cookie = document.cookie.split('; ').find(value => value.startsWith('uvy-theme='));
+    const saved = cookie?.slice('uvy-theme='.length);
+    if (saved === 'light' || saved === 'dark') preference = saved;
+  } catch {}
+  const sync = () => {
+    const dark = preference ? preference === 'dark' : system.matches;
+    root.dataset.theme = dark ? 'dark' : 'light';
+    root.style.colorScheme = dark ? 'dark' : 'light';
+    document.querySelectorAll(selector).forEach(button => {
+      button.hidden = false;
+      button.setAttribute('aria-label', dark ? 'Switch to light mode' : 'Switch to dark mode');
+      button.title = dark ? 'Switch to light mode' : 'Switch to dark mode';
+    });
+  };
+  sync();
+  system.addEventListener('change', () => { if (!preference) sync(); });
+  document.addEventListener('click', event => {
+    if (!(event.target instanceof Element) || !event.target.closest(selector)) return;
+    preference = root.dataset.theme === 'dark' ? 'light' : 'dark';
+    try {
+      document.cookie = `uvy-theme=${preference}; Path=/; Max-Age=31536000; SameSite=Lax${location.protocol === 'https:' ? '; Secure' : ''}`;
+    } catch {}
+    sync();
+  });
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', sync, { once: true });
+  else sync();
+})();
+    </script>
     <link rel="stylesheet" href="../style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="See the permissions assigned to the {{.Name}} role in Google Cloud Platform (GCP) IAM and understand its usage.">
@@ -25,11 +59,11 @@
             
             <!-- Header with icon and title -->
             <div class="detail-header">
-                <span class="detail-icon">{{template "icon-certificate"}}</span>
+                <span class="detail-icon"><svg class="uvy-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="9" r="6"/><path d="m8 14-1 8 5-3 5 3-1-8"/></svg></span>
                 <div class="detail-title">
                     <h1>
                         <span id="role-id">{{.Name}}</span>{{if .Deprecated}} (deprecated){{end}}
-                        <button class="copy-button" onclick="copyRole()" aria-label="Copy Role">{{template "icon-copy"}} Copy</button>
+                        <button class="copy-button" onclick="copyRole()" aria-label="Copy Role"><svg class="uvy-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="8" width="11" height="12" rx="1"/><path d="M16 8V4H4v12h4"/></svg> Copy</button>
                     </h1>
                 </div>
             </div>
@@ -79,7 +113,7 @@
                 <div id="details-tab" class="tab-content active">
                     <div class="search-container">
                         <input type="text" id="searchInput" aria-label="Search displayed records" class="search-input" oninput="filterList()" placeholder="Search permissions...">
-                        <span class="search-icon">{{template "icon-search"}}</span>
+                        <span class="search-icon"><svg class="uvy-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="10" cy="10" r="6"/><path d="m15 15 5 5"/></svg></span>
                     </div>
                     <div class="role-table">
                         {{range .IncludedPermissions}}
@@ -99,7 +133,7 @@
                         <label for="compareRole">Compare with another role:</label>
                         <div class="compare-input-wrapper">
                             <input type="text" id="compareRole" class="search-input" placeholder="Type to search roles..." autocomplete="off">
-                            <span class="search-icon">{{template "icon-search"}}</span>
+                            <span class="search-icon"><svg class="uvy-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="10" cy="10" r="6"/><path d="m15 15 5 5"/></svg></span>
                         </div>
                         <div id="rolesSuggestions" class="suggestions-dropdown"></div>
                     </div>

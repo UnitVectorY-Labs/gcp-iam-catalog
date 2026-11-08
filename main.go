@@ -212,16 +212,6 @@ func generateHTML() error {
 		log.Fatalf("Error copying style.css: %v", err)
 	}
 
-	// Shared design assets are vendored locally and copied into every static build.
-	if err := os.MkdirAll(filepath.Join(htmlDir, "uvy-design"), 0755); err != nil {
-		return err
-	}
-	for _, name := range []string{"uvy-tokens.css", "uvy-theme.js", "uvy-elements.css", "LICENSE", "TABLER-ICONS-LICENSE"} {
-		if err := copyFile(filepath.Join("assets", "uvy-design", name), filepath.Join(htmlDir, "uvy-design", name)); err != nil {
-			return fmt.Errorf("copy shared design asset %s: %w", name, err)
-		}
-	}
-
 	// Read all JSON files from the iam directory
 	roleFiles, err := filepath.Glob(filepath.Join(iamDir, "*.json"))
 	if err != nil {
