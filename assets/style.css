@@ -1338,3 +1338,9 @@ h1 { font-size: 2rem; line-height: 1.2; font-weight: 600; }
 h2 { font-size: 1.5rem; line-height: 1.2; font-weight: 600; }
 code, pre { font-family: var(--uvy-mono); overflow-wrap: anywhere; }
 @media (min-width: 48rem) { main { width: min(100% - 4rem, 75rem); } }
+
+/* Application identity follows the shared blue header pattern. */
+.navbar { border-bottom: 0; }
+.navbar a:first-child { position: relative; font-size: 1.5rem; font-weight: 700; line-height: 1.2; padding-bottom: 14px; overflow-wrap: anywhere; min-width: 0; }
+.navbar a:first-child::after { content: ""; position: absolute; left: 12px; bottom: 5px; width: 3rem; height: 3px; background: var(--uvy-accent-fill); }
+@media (max-width: 768px) { .navbar a:first-child { font-size: 1.25rem; } .navbar a:first-child::after { left: 8px; } }
