@@ -9,10 +9,7 @@ on:
   push:
     branches: ["main"]
 
-permissions:
-  contents: read  # Required to clone the repository
-  pages: write    # Allows publishing to GitHub Pages
-  id-token: write # Required for the `actions/deploy-pages@v4`
+permissions: {}
 
 concurrency:
   group: generate
@@ -21,6 +18,8 @@ concurrency:
 jobs:
   # Build job
   build:
+    permissions:
+      contents: read # Required to clone the repository
     runs-on: arc-runner-set
     env:
       WEBSITE: ${{ secrets.WEBSITE }}
@@ -50,6 +49,9 @@ jobs:
 
   # Deployment job
   deploy:
+    permissions:
+      pages: write    # Allows publishing to GitHub Pages
+      id-token: write # Required for the `actions/deploy-pages@v4`
     environment:
       name: github-pages
       url: gcp-iam-catalog.unitvectorylabs.com
