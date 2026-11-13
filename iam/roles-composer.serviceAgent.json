@@ -161,6 +161,8 @@
     "cloudsql.workloadCaptures.stopReplay",
     "composer.dags.get",
     "composer.environments.get",
+    "compute.acceleratorPodControllers.get",
+    "compute.acceleratorPodControllers.list",
     "compute.acceleratorTypes.get",
     "compute.acceleratorTypes.list",
     "compute.addresses.create",

@@ -1,0 +1,10 @@
+{
+  "name": "roles/apphubendpoint.viewer",
+  "title": "App Hub Endpoint Viewer",
+  "description": "Viewer role for App Hub Endpoint.",
+  "included_permissions": [
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": ""
+}
