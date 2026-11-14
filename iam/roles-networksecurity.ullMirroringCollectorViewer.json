@@ -1,0 +1,14 @@
+{
+  "name": "roles/networksecurity.ullMirroringCollectorViewer",
+  "title": "Ull Mirroring Collector Viewer",
+  "description": "Enables read-only access to Ull Mirroring Collector resources.",
+  "included_permissions": [
+    "networksecurity.ullMirroringCollectorRules.get",
+    "networksecurity.ullMirroringCollectorRules.list",
+    "networksecurity.ullMirroringCollectors.get",
+    "networksecurity.ullMirroringCollectors.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

@@ -3,8 +3,16 @@
   "title": "Firebase Telemetry Admin Viewer",
   "description": "Readonly access to Firebase Telemetry Admin resources.",
   "included_permissions": [
+    "firebasetelemetryadmin.configs.get",
+    "firebasetelemetryadmin.configs.list",
+    "firebasetelemetryadmin.locations.get",
+    "firebasetelemetryadmin.locations.list",
+    "firebasetelemetryadmin.mappingFiles.get",
+    "firebasetelemetryadmin.mappingFiles.list",
+    "firebasetelemetryadmin.operations.get",
+    "firebasetelemetryadmin.operations.list",
     "resourcemanager.projects.get",
     "resourcemanager.projects.list"
   ],
-  "stage": ""
+  "stage": "BETA"
 }

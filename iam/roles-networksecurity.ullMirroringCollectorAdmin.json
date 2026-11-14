@@ -1,0 +1,20 @@
+{
+  "name": "roles/networksecurity.ullMirroringCollectorAdmin",
+  "title": "Ull Mirroring Collector Admin",
+  "description": "Enables full access to Ull Mirroring Collector resources.",
+  "included_permissions": [
+    "networksecurity.ullMirroringCollectorRules.create",
+    "networksecurity.ullMirroringCollectorRules.delete",
+    "networksecurity.ullMirroringCollectorRules.get",
+    "networksecurity.ullMirroringCollectorRules.list",
+    "networksecurity.ullMirroringCollectorRules.update",
+    "networksecurity.ullMirroringCollectors.create",
+    "networksecurity.ullMirroringCollectors.delete",
+    "networksecurity.ullMirroringCollectors.get",
+    "networksecurity.ullMirroringCollectors.list",
+    "networksecurity.ullMirroringCollectors.update",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

@@ -1,0 +1,11 @@
+{
+  "name": "roles/networksecurity.ullMirroringEngineUser",
+  "title": "Ull Mirroring Engine User",
+  "description": "Enables creating a collector for an in-scope engine.",
+  "included_permissions": [
+    "networksecurity.ullMirroringEngines.use",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

@@ -3,8 +3,9 @@
   "title": "App Hub Endpoint Viewer",
   "description": "Viewer role for App Hub Endpoint.",
   "included_permissions": [
+    "apphubendpoint.locations.lookup",
     "resourcemanager.projects.get",
     "resourcemanager.projects.list"
   ],
-  "stage": ""
+  "stage": "BETA"
 }

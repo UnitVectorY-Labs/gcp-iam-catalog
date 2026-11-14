@@ -3,6 +3,11 @@
   "title": "Parameter Manager Admin",
   "description": "Grants full access to all Parameter Manager resources. Intended for project admins \u0026 owners who need to perform all administrative tasks.",
   "included_permissions": [
+    "cloudkms.keyHandles.create",
+    "cloudkms.keyHandles.get",
+    "cloudkms.keyHandles.list",
+    "cloudkms.operations.get",
+    "cloudkms.projects.showEffectiveAutokeyConfig",
     "parametermanager.locations.get",
     "parametermanager.locations.list",
     "parametermanager.parameterVersions.create",
