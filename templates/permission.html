@@ -1,33 +1,69 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>GCP IAM Permission: {{.Permission}} - gcp-iam-catalog</title>
+    <script>
+(() => {
+  if (window.__uvyThemeInitialized) return;
+  window.__uvyThemeInitialized = true;
+  const root = document.documentElement;
+  const selector = '[data-uvy-theme-toggle], #theme-toggle';
+  const system = matchMedia('(prefers-color-scheme: dark)');
+  let preference = null;
+  try {
+    const cookie = document.cookie.split('; ').find(value => value.startsWith('uvy-theme='));
+    const saved = cookie?.slice('uvy-theme='.length);
+    if (saved === 'light' || saved === 'dark') preference = saved;
+  } catch {}
+  const sync = () => {
+    const dark = preference ? preference === 'dark' : system.matches;
+    root.dataset.theme = dark ? 'dark' : 'light';
+    root.style.colorScheme = dark ? 'dark' : 'light';
+    document.querySelectorAll(selector).forEach(button => {
+      button.hidden = false;
+      button.setAttribute('aria-label', dark ? 'Switch to light mode' : 'Switch to dark mode');
+      button.title = dark ? 'Switch to light mode' : 'Switch to dark mode';
+    });
+  };
+  sync();
+  system.addEventListener('change', () => { if (!preference) sync(); });
+  document.addEventListener('click', event => {
+    if (!(event.target instanceof Element) || !event.target.closest(selector)) return;
+    preference = root.dataset.theme === 'dark' ? 'light' : 'dark';
+    try {
+      document.cookie = `uvy-theme=${preference}; Path=/; Max-Age=31536000; SameSite=Lax${location.protocol === 'https:' ? '; Secure' : ''}`;
+    } catch {}
+    sync();
+  });
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', sync, { once: true });
+  else sync();
+})();
+    </script>
     <link rel="stylesheet" href="{{.PathPrefix}}style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="See the roles that grant the {{.Permission}} permission in Google Cloud Platform (GCP) IAM and understand its usage.">
 </head>
 <body>
     <!-- Navigation Bar -->
-    <div class="navbar">
+    <nav class="navbar" aria-label="Main">
         <a href="{{.PathPrefix}}index.html">gcp-iam-catalog</a>
         <a href="{{.PathPrefix}}roles.html">Roles</a>
         <a href="{{.PathPrefix}}permissions.html" class="active">Permissions</a>
         <a href="{{.PathPrefix}}search.html">Search</a>
-    </div>
+        <button class="uvy-theme-toggle" data-uvy-theme-toggle type="button" aria-label="Switch to dark mode" hidden><span class="uvy-theme-dark-icon"><svg class="uvy-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 15A8 8 0 0 1 9 5a8 8 0 1 0 10 10Z"/></svg></span><span class="uvy-theme-light-icon"><svg class="uvy-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l2 2m10 10 2 2M19 5l-2 2M7 17l-2 2"/></svg></span></button>
+    </nav>
 
     <main>
         <section class="permission-detail">
-            <!-- Colored header bar for permissions -->
-            <div class="detail-header-bar permission-bar"></div>
             
             <!-- Header with icon and title -->
             <div class="detail-header">
-                <span class="detail-icon">🔑</span>
+                <span class="detail-icon"><svg class="uvy-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="9" r="4"/><path d="m11 12 9 9m-3-3 2-2m-5-1 2-2"/></svg></span>
                 <div class="detail-title">
                     <h1>
                         <span id="permission-id">{{.Permission}}</span>
-                        <button class="copy-button" onclick="copyPermission()" aria-label="Copy Permission">📋 Copy</button>
+                        <button class="copy-button" onclick="copyPermission()" aria-label="Copy Permission"><svg class="uvy-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="8" width="11" height="12" rx="1"/><path d="M16 8V4H4v12h4"/></svg> Copy</button>
                     </h1>
                 </div>
             </div>
@@ -50,8 +86,8 @@
                 <!-- Details Tab -->
                 <div id="details-tab" class="tab-content active">
                     <div class="search-container">
-                        <input type="text" id="searchInput" class="search-input" onkeyup="filterList()" placeholder="Search for roles...">
-                        <span class="search-icon">&#128269;</span>
+                        <input type="text" id="searchInput" aria-label="Search displayed records" class="search-input" oninput="filterList()" placeholder="Search for roles...">
+                        <span class="search-icon"><svg class="uvy-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="10" cy="10" r="6"/><path d="m15 15 5 5"/></svg></span>
                     </div>
                     <div class="role-table">
                         <div class="role-table-header">
@@ -64,7 +100,7 @@
                                     <span class="role-indicator"></span>
                                     <a href="{{$.PathPrefix}}{{.Name}}.html" class="role-name">
                                         {{.Name}}
-                                    </a>{{if .Deprecated}} ⛔{{end}}
+                                    </a>{{if .Deprecated}} (deprecated){{end}}
                                 </div>
                                 <div class="role-type-cell">
                                     {{classifyRole .Name}}
@@ -80,7 +116,7 @@
                         <label for="comparePermission">Compare with another permission:</label>
                         <div class="compare-input-wrapper">
                             <input type="text" id="comparePermission" class="search-input" placeholder="Type to search permissions..." autocomplete="off">
-                            <span class="search-icon">&#128269;</span>
+                            <span class="search-icon"><svg class="uvy-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="10" cy="10" r="6"/><path d="m15 15 5 5"/></svg></span>
                         </div>
                         <div id="permissionsSuggestions" class="suggestions-dropdown"></div>
                     </div>
@@ -169,7 +205,7 @@
         }
 
         function displayRoleName(role) {
-            return role + (roleMetadata[role] && roleMetadata[role].deprecated ? ' ⛔' : '');
+            return role + (roleMetadata[role] && roleMetadata[role].deprecated ? ' (deprecated)' : '');
         }
 
         function normalizeCompareValue(value) {
