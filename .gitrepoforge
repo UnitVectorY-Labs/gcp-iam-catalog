@@ -21,3 +21,6 @@ config:
     exclude:
       - iam
       - html
+  indexer:
+    exclude:
+      - iam/**
