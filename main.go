@@ -2,7 +2,8 @@ package main
 
 import (
 	"context"
-	"encoding/json"
+	"encoding/json/jsontext"
+	"encoding/json/v2"
 	"encoding/xml"
 	"flag"
 	"fmt"
@@ -154,7 +155,7 @@ func crawlRoles() error {
 		filePath := filepath.Join(iamDir, filename)
 
 		// Marshal role details to JSON
-		jsonData, err := json.MarshalIndent(detailedRole, "", "  ")
+		jsonData, err := json.Marshal(detailedRole, jsontext.WithIndent("  "))
 		if err != nil {
 			log.Printf("Failed to marshal role %s to JSON: %v", detailedRole.Name, err)
 			continue
@@ -176,7 +177,7 @@ func crawlRoles() error {
 	}{
 		LastCrawled: time.Now().UTC().Format(time.RFC3339),
 	}
-	timestampData, err := json.MarshalIndent(timestamp, "", "  ")
+	timestampData, err := json.Marshal(timestamp, jsontext.WithIndent("  "))
 	if err != nil {
 		return fmt.Errorf("failed to marshal timestamp: %v", err)
 	}
@@ -355,7 +356,7 @@ func generateHTML() error {
 			Name:  perm,
 			Roles: rolesWithPerm,
 		}
-		jsonBytes, err := json.MarshalIndent(pData, "", "  ")
+		jsonBytes, err := json.Marshal(pData, jsontext.WithIndent("  "))
 		if err != nil {
 			log.Printf("Failed to marshal permission data for %s: %v", perm, err)
 			continue
@@ -401,7 +402,7 @@ func generateHTML() error {
 		}
 	}
 	roleMetadataPath := filepath.Join(htmlDir, "roles-metadata.json")
-	roleMetadataJSON, err := json.Marshal(roleMetadata)
+	roleMetadataJSON, err := json.Marshal(roleMetadata, json.Deterministic(true))
 	if err != nil {
 		log.Printf("Failed to marshal roles metadata: %v", err)
 	} else if err := os.WriteFile(roleMetadataPath, roleMetadataJSON, 0644); err != nil {

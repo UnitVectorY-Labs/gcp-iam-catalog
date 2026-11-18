@@ -27,6 +27,12 @@ This application is written in Go for both the data collection and site generati
 3. **Hosting:**
     - The website is hosted on GitHub Pages.
 
+### JSON data format
+
+The application uses Go's `encoding/json/v2`. Role and timestamp files are read with case-sensitive field names; duplicate object names and invalid UTF-8 are rejected. Unknown fields are ignored. Role files that cannot be parsed are excluded from generated indexes and pages (an invalid timestamp is reported as unavailable). Role files are also copied unchanged for client-side use.
+
+Nil slices are written as empty arrays, so a role without permissions and empty generated autocomplete lists use `[]` instead of `null`. JSON strings are no longer HTML-escaped by default, and generated metadata object keys are sorted for stable output. The application has no JSON fields using `omitempty`.
+
 ## Features
 
 - **Role-to-Permission Mapping:** Easily view all permissions associated with each IAM role.
