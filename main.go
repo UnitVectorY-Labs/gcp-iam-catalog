@@ -270,7 +270,7 @@ func generateHTML() error {
 		},
 		"displayRoleName": func(roleName string, deprecated bool) string {
 			if deprecated {
-				return roleName + " ⛔"
+				return roleName + " (deprecated)"
 			}
 			return roleName
 		},
