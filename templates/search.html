@@ -1,73 +1,100 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Find GCP IAM Roles - gcp-iam-catalog</title>
-    <link rel="stylesheet" href="./style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find GCP IAM Roles — gcp-iam-catalog</title>
     <meta name="description" content="Find GCP IAM roles by permissions they must include and permissions they must exclude.">
+    {{template "head_assets" .}}
 </head>
 <body>
-    <!-- Navigation Bar -->
-    <div class="navbar">
-        <a href="index.html">gcp-iam-catalog</a>
-        <a href="roles.html">Roles</a>
-        <a href="permissions.html">Permissions</a>
-        <a href="search.html" class="active">Search</a>
-    </div>
+    {{template "header" .}}
 
-    <main>
-        <section class="role-search-page">
-            <div class="page-header">
-                <span class="page-header-icon">🧭</span>
-                <h1>Find Matching Roles</h1>
+    <main class="page" id="main">
+        <div class="uvy-page-header">
+            <div>
+                <h1>Find matching roles</h1>
+                <p class="uvy-lead">Choose permissions a role must include and permissions it must exclude. Matches update directly in your browser.</p>
             </div>
-            <p class="muted-text">Choose permissions a role must include and permissions it must not include. Matches update entirely in your browser.</p>
+        </div>
 
-            <div class="permission-filter-grid">
-                <div class="permission-filter-panel include-panel">
-                    <div class="filter-panel-header">
-                        <h2>Must Include</h2>
-                        <span class="filter-count" id="includeCount">0</span>
-                    </div>
-                    <div class="compare-selector">
-                        <label for="includePermission">Add required permission:</label>
-                        <div class="compare-input-wrapper">
-                            <input type="text" id="includePermission" class="search-input" placeholder="Type to search permissions..." autocomplete="off">
-                            <button type="button" class="add-permission-button" id="addIncludeButton">Add</button>
+        <div class="permission-filter-grid">
+            <section class="uvy-panel permission-filter-panel include-panel" aria-labelledby="include-heading">
+                <div class="uvy-panel__header">
+                    <h2 id="include-heading" class="with-icon">
+                        <svg class="icon icon-small icon-ok" aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#tabler-check"></use></svg>
+                        Must include
+                    </h2>
+                    <span class="uvy-badge" id="includeCount">0</span>
+                </div>
+                <div class="filter-selector">
+                    <div class="uvy-field" style="margin-bottom:0">
+                        <label for="includePermission">Add required permission</label>
+                        <div class="permission-input-row">
+                            <input type="search" id="includePermission" class="uvy-input--mono" placeholder="Type to search permissions..." autocomplete="off" aria-describedby="includeError">
+                            <button type="button" class="uvy-button uvy-button--primary" id="addIncludeButton">Add</button>
                         </div>
-                        <div id="includeSuggestions" class="suggestions-dropdown"></div>
                     </div>
-                    <div id="includeList" class="selected-permissions-list"></div>
+                    <div id="includeSuggestions" class="suggestions-dropdown" role="listbox" aria-label="Required permission suggestions"></div>
+                    <p id="includeError" class="uvy-field-error filter-feedback" hidden>
+                        <svg class="icon icon-small" aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#tabler-alert-circle"></use></svg>
+                        <span>Permission not found. Choose a valid GCP IAM permission from the suggestions.</span>
+                    </p>
                 </div>
+                <div id="includeList" class="selected-permissions-list"></div>
+            </section>
 
-                <div class="permission-filter-panel exclude-panel">
-                    <div class="filter-panel-header">
-                        <h2>Must Exclude</h2>
-                        <span class="filter-count" id="excludeCount">0</span>
-                    </div>
-                    <div class="compare-selector">
-                        <label for="excludePermission">Add excluded permission:</label>
-                        <div class="compare-input-wrapper">
-                            <input type="text" id="excludePermission" class="search-input" placeholder="Type to search permissions..." autocomplete="off">
-                            <button type="button" class="add-permission-button" id="addExcludeButton">Add</button>
+            <section class="uvy-panel permission-filter-panel exclude-panel" aria-labelledby="exclude-heading">
+                <div class="uvy-panel__header">
+                    <h2 id="exclude-heading" class="with-icon">
+                        <svg class="icon icon-small icon-danger" aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#tabler-x"></use></svg>
+                        Must exclude
+                    </h2>
+                    <span class="uvy-badge" id="excludeCount">0</span>
+                </div>
+                <div class="filter-selector">
+                    <div class="uvy-field" style="margin-bottom:0">
+                        <label for="excludePermission">Add excluded permission</label>
+                        <div class="permission-input-row">
+                            <input type="search" id="excludePermission" class="uvy-input--mono" placeholder="Type to search permissions..." autocomplete="off" aria-describedby="excludeError">
+                            <button type="button" class="uvy-button" id="addExcludeButton">Add</button>
                         </div>
-                        <div id="excludeSuggestions" class="suggestions-dropdown"></div>
                     </div>
-                    <div id="excludeList" class="selected-permissions-list"></div>
+                    <div id="excludeSuggestions" class="suggestions-dropdown" role="listbox" aria-label="Excluded permission suggestions"></div>
+                    <p id="excludeError" class="uvy-field-error filter-feedback" hidden>
+                        <svg class="icon icon-small" aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#tabler-alert-circle"></use></svg>
+                        <span>Permission not found. Choose a valid GCP IAM permission from the suggestions.</span>
+                    </p>
+                </div>
+                <div id="excludeList" class="selected-permissions-list"></div>
+            </section>
+        </div>
+
+        <section class="uvy-panel" aria-labelledby="matches-heading">
+            <div class="uvy-panel__header">
+                <h2 id="matches-heading">Matching roles</h2>
+                <div class="uvy-actions">
+                    <span class="uvy-count" id="matchSummary" role="status"><span id="matchCount">0</span> matching roles</span>
+                    <button type="button" class="uvy-button--quiet uvy-button--small" id="clearAllFilters" hidden>Clear all</button>
                 </div>
             </div>
 
-            <div class="match-summary" id="matchSummary">
-                <span id="matchCount">0</span> matching roles
+            <div class="table-wrap" role="region" aria-label="Matching roles" tabindex="0">
+                <table class="uvy-table--interactive uvy-table--compact catalog-table" id="matchTable">
+                    <caption class="sr-only">GCP IAM roles matching the selected permission filters</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Role name</th>
+                            <th scope="col" class="col-type">Role type</th>
+                        </tr>
+                    </thead>
+                    <tbody id="matchRows"></tbody>
+                </table>
             </div>
 
-            <div class="role-table" id="matchTable">
-                <div class="role-table-header">
-                    <div class="role-name-header">Role Name</div>
-                    <div class="role-type-header">Role Type</div>
-                </div>
-                <div id="matchRows"></div>
+            <div id="matchEmpty" class="uvy-empty" style="margin-top:var(--uvy-space-4)">
+                <strong id="matchEmptyTitle">No permissions selected</strong>
+                <p id="matchEmptyDesc">Add required or excluded permissions above to find matching IAM roles.</p>
             </div>
         </section>
     </main>
@@ -113,7 +140,11 @@
         }
 
         function saveState() {
-            localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+            try {
+                localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+            } catch (err) {
+                // Storage may be unavailable in restricted contexts.
+            }
         }
 
         function normalizePermission(value) {
@@ -147,7 +178,7 @@
             return permissionRoleCache[permission];
         }
 
-        function findSuggestions(value, side) {
+        function findSuggestions(value) {
             const filter = value.trim().toLowerCase();
             if (filter.length < 2) {
                 return [];
@@ -175,15 +206,17 @@
             const container = document.getElementById(side + 'Suggestions');
             container.innerHTML = '';
 
-            const matches = findSuggestions(input.value, side);
+            const matches = findSuggestions(input.value);
             if (matches.length === 0) {
                 container.style.display = 'none';
                 return;
             }
 
             matches.forEach(permission => {
-                const item = document.createElement('div');
+                const item = document.createElement('button');
+                item.type = 'button';
                 item.className = 'suggestion-item';
+                item.setAttribute('role', 'option');
                 item.textContent = permission;
                 item.addEventListener('click', () => {
                     input.value = permission;
@@ -195,13 +228,26 @@
             container.style.display = 'block';
         }
 
+        function setInputError(side, invalid) {
+            const input = document.getElementById(side + 'Permission');
+            const errorEl = document.getElementById(side + 'Error');
+            if (invalid) {
+                input.setAttribute('aria-invalid', 'true');
+                errorEl.hidden = false;
+            } else {
+                input.removeAttribute('aria-invalid');
+                errorEl.hidden = true;
+            }
+        }
+
         function addPermission(side) {
             const input = document.getElementById(side + 'Permission');
             const permission = normalizePermission(input.value);
             const knownPermission = allPermissions.includes(permission);
 
-            input.classList.toggle('input-error', !knownPermission);
+            setInputError(side, !knownPermission);
             if (!knownPermission) {
+                input.focus();
                 return;
             }
 
@@ -215,7 +261,7 @@
             }
 
             input.value = '';
-            input.classList.remove('input-error');
+            setInputError(side, false);
             document.getElementById(side + 'Suggestions').style.display = 'none';
         }
 
@@ -244,7 +290,7 @@
                 if (state[side].length === 0) {
                     const empty = document.createElement('div');
                     empty.className = 'selected-permission-empty';
-                    empty.textContent = side === 'include' ? 'No required permissions added' : 'No excluded permissions added';
+                    empty.textContent = side === 'include' ? 'No required permissions added.' : 'No excluded permissions added.';
                     container.appendChild(empty);
                 }
 
@@ -267,7 +313,7 @@
 
                     const removeButton = document.createElement('button');
                     removeButton.type = 'button';
-                    removeButton.className = 'remove-permission-button';
+                    removeButton.className = 'uvy-button--quiet uvy-button--small';
                     removeButton.textContent = 'Remove';
                     removeButton.addEventListener('click', () => removePermission(side, item.permission));
                     row.appendChild(removeButton);
@@ -275,56 +321,80 @@
                 });
             });
 
-            document.getElementById('includeCount').textContent = activePermissions('include').length;
-            document.getElementById('excludeCount').textContent = activePermissions('exclude').length;
+            document.getElementById('includeCount').textContent = activePermissions('include').length.toLocaleString();
+            document.getElementById('excludeCount').textContent = activePermissions('exclude').length.toLocaleString();
+            const hasAny = state.include.length > 0 || state.exclude.length > 0;
+            document.getElementById('clearAllFilters').hidden = !hasAny;
         }
 
         function roleSort(a, b) {
             return a.localeCompare(b);
         }
 
-        function displayRoleName(role) {
-            return role + (roleMetadata[role] && roleMetadata[role].deprecated ? ' ⛔' : '');
-        }
-
         function renderMatches(roles) {
             const rows = document.getElementById('matchRows');
+            const tableWrap = document.getElementById('matchTable').closest('.table-wrap');
+            const emptyBox = document.getElementById('matchEmpty');
+            const emptyTitle = document.getElementById('matchEmptyTitle');
+            const emptyDesc = document.getElementById('matchEmptyDesc');
             rows.innerHTML = '';
+
             document.getElementById('matchCount').textContent = roles.length.toLocaleString();
+            const summaryEl = document.getElementById('matchSummary');
+            summaryEl.innerHTML = '<span id="matchCount">' + roles.length.toLocaleString() + '</span> ' + (roles.length === 1 ? 'matching role' : 'matching roles');
 
             if (roles.length === 0) {
-                const empty = document.createElement('div');
-                empty.className = 'search-empty-state';
-                empty.textContent = activePermissions('include').length || activePermissions('exclude').length
-                    ? 'No roles match the active filters.'
-                    : 'Add permissions to start finding roles.';
-                rows.appendChild(empty);
+                tableWrap.hidden = true;
+                emptyBox.hidden = false;
+                const hasActiveFilters = activePermissions('include').length > 0 || activePermissions('exclude').length > 0;
+                if (hasActiveFilters) {
+                    emptyTitle.textContent = 'No matching roles';
+                    emptyDesc.textContent = 'No roles satisfy all active include and exclude constraints. Uncheck or remove a filter to broaden the results.';
+                } else {
+                    emptyTitle.textContent = 'No permissions selected';
+                    emptyDesc.textContent = 'Add required or excluded permissions above to find matching IAM roles.';
+                }
                 return;
             }
 
-            roles.forEach(role => {
-                const row = document.createElement('div');
-                row.className = 'role-row';
+            tableWrap.hidden = false;
+            emptyBox.hidden = true;
 
-                const nameCell = document.createElement('div');
-                nameCell.className = 'role-name-cell';
-                const indicator = document.createElement('span');
-                indicator.className = 'role-indicator';
-                nameCell.appendChild(indicator);
+            roles.forEach(role => {
+                const tr = document.createElement('tr');
+                tr.className = 'role-row';
+
+                const nameCell = document.createElement('td');
+                const cellWrap = document.createElement('div');
+                cellWrap.className = 'role-cell-wrap';
 
                 const link = document.createElement('a');
                 link.href = 'roles/' + encodeURIComponent(role.replace('roles/', '')) + '.html';
                 link.className = 'role-name';
-                link.textContent = displayRoleName(role);
-                nameCell.appendChild(link);
-                row.appendChild(nameCell);
+                link.textContent = role;
+                cellWrap.appendChild(link);
 
-                const typeCell = document.createElement('div');
-                typeCell.className = 'role-type-cell';
-                typeCell.textContent = roleMetadata[role] ? roleMetadata[role].type : '';
-                row.appendChild(typeCell);
+                if (roleMetadata[role] && roleMetadata[role].deprecated) {
+                    const status = document.createElement('span');
+                    status.className = 'uvy-status uvy-status--warn';
+                    status.textContent = 'Deprecated';
+                    cellWrap.appendChild(status);
+                }
 
-                rows.appendChild(row);
+                nameCell.appendChild(cellWrap);
+                tr.appendChild(nameCell);
+
+                const typeCell = document.createElement('td');
+                typeCell.className = 'col-type';
+                if (roleMetadata[role] && roleMetadata[role].type) {
+                    const badge = document.createElement('span');
+                    badge.className = 'uvy-badge';
+                    badge.textContent = roleMetadata[role].type;
+                    typeCell.appendChild(badge);
+                }
+                tr.appendChild(typeCell);
+
+                rows.appendChild(tr);
             });
         }
 
@@ -364,7 +434,7 @@
             const addButton = document.getElementById('add' + side.charAt(0).toUpperCase() + side.slice(1) + 'Button');
 
             input.addEventListener('input', () => {
-                input.classList.remove('input-error');
+                setInputError(side, false);
                 showSuggestions(side);
             });
             input.addEventListener('keydown', event => {
@@ -385,15 +455,25 @@
                 bindPermissionInput('include');
                 bindPermissionInput('exclude');
 
+                document.getElementById('clearAllFilters').addEventListener('click', () => {
+                    state = { include: [], exclude: [] };
+                    saveState();
+                    renderSelectedPermissions();
+                    updateMatches();
+                });
+
                 document.addEventListener('click', event => {
-                    if (!event.target.closest('.compare-selector')) {
+                    if (!event.target.closest('.filter-selector')) {
                         document.getElementById('includeSuggestions').style.display = 'none';
                         document.getElementById('excludeSuggestions').style.display = 'none';
                     }
                 });
             } catch (err) {
                 console.error(err);
-                document.getElementById('matchRows').innerHTML = '<div class="search-empty-state">Unable to load search data.</div>';
+                document.getElementById('matchTable').closest('.table-wrap').hidden = true;
+                document.getElementById('matchEmpty').hidden = false;
+                document.getElementById('matchEmptyTitle').textContent = 'Unable to load search data';
+                document.getElementById('matchEmptyDesc').textContent = 'Reload the page to retry fetching the permission catalog.';
             }
         });
     </script>

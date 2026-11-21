@@ -1,104 +1,119 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>GCP IAM Role and Permission Catalog - gcp-iam-catalog</title>
-    <link rel="stylesheet" href="./style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GCP IAM Role and Permission Catalog — gcp-iam-catalog</title>
     <meta name="description" content="Browse and search all GCP IAM roles and permissions. Compare roles, find permissions, and explore the complete GCP IAM catalog with detailed descriptions and relationships.">
+    {{template "head_assets" .}}
 </head>
 <body>
-    <!-- Navigation Bar -->
-    <div class="navbar">
-        <a href="index.html" class="active">gcp-iam-catalog</a>
-        <a href="roles.html">Roles</a>
-        <a href="permissions.html">Permissions</a>
-        <a href="search.html">Search</a>
-    </div>
+    {{template "header" .}}
 
-    <main>
-        <!-- Hero Section -->
-        <div class="home-hero">
+    <main class="page" id="main">
+        <section class="hero">
             <h1>GCP IAM Catalog</h1>
-            <p class="subtitle">Explore and compare Google Cloud Platform IAM roles and permissions</p>
-        </div>
-
-        <!-- Stats Cards -->
-        <div class="home-stats">
-            <a href="roles.html" class="stat-card roles">
-                <div class="stat-number">{{.RoleCount | formatNumber}}</div>
-                <div class="stat-label">IAM Roles</div>
-            </a>
-            <a href="permissions.html" class="stat-card permissions">
-                <div class="stat-number">{{.PermissionCount | formatNumber}}</div>
-                <div class="stat-label">Permissions</div>
-            </a>
-        </div>
-
-        <!-- Navigation Cards -->
-        <div class="home-nav-cards">
-            <a href="roles.html" class="nav-card role-card">
-                <div class="nav-card-icon">🔐</div>
-                <h3>Browse Roles</h3>
-                <p>Explore all predefined GCP IAM roles and see what permissions each role includes. Search and filter to find the right role.</p>
-            </a>
-            <a href="permissions.html" class="nav-card permission-card">
-                <div class="nav-card-icon">🔑</div>
-                <h3>Browse Permissions</h3>
-                <p>Find which roles grant a specific permission. Understand the relationship between permissions and roles.</p>
-            </a>
-            <a href="search.html" class="nav-card search-card">
-                <div class="nav-card-icon">🧭</div>
-                <h3>Find Matching Roles</h3>
-                <p>Build include and exclude permission filters to identify IAM roles that fit the access profile you need.</p>
-            </a>
-        </div>
-
-        <!-- Features Section -->
-        <div class="home-features">
-            <h2>What can this site do for you?</h2>
-            <div class="feature-grid">
-                <div class="feature-item">
-                    <div class="feature-icon">📋</div>
-                    <div>
-                        <h4>Role-to-Permission Mapping</h4>
-                        <p>View all permissions included in each IAM role across GCP services. <a href="https://cloud.google.com/iam/docs/understanding-roles">Learn more</a></p>
-                    </div>
-                </div>
-                <div class="feature-item">
-                    <div class="feature-icon">🔍</div>
-                    <div>
-                        <h4>Permission-to-Role Mapping</h4>
-                        <p>Identify which roles grant a specific permission. <a href="https://cloud.google.com/iam/docs/permissions-reference">Learn more</a></p>
-                    </div>
-                </div>
-                <div class="feature-item">
-                    <div class="feature-icon">⚖️</div>
-                    <div>
-                        <h4>Side-by-Side Comparison</h4>
-                        <p>Compare any two roles or permissions to see what they share and what's unique to each.</p>
-                    </div>
-                </div>
-                <div class="feature-item">
-                    <div class="feature-icon">🎯</div>
-                    <div>
-                        <h4>Least-Privilege Role Discovery</h4>
-                        <p>Narrow candidates by requiring specific permissions and filtering out roles that grant access outside your target scope.</p>
-                    </div>
-                </div>
-                <div class="feature-item">
-                    <div class="feature-icon">🔄</div>
-                    <div>
-                        <h4>Updated Daily</h4>
-                        <p>Data is <a href="https://github.com/UnitVectorY-Labs/gcp-iam-catalog/actions/workflows/gcp-iam-catalog-crawl.yml">automatically refreshed</a> from the GCP IAM API every day.</p>
-                    </div>
-                </div>
+            <p class="uvy-lead">Explore, filter, and compare Google Cloud Platform IAM roles and permissions in a fast static catalog refreshed daily from the GCP IAM API.</p>
+            <div class="uvy-actions">
+                <a class="uvy-button uvy-button--primary" href="roles.html">Browse roles</a>
+                <a class="uvy-button" href="permissions.html">Browse permissions</a>
+                <a class="uvy-button" href="search.html">Find matching roles</a>
             </div>
-        </div>
+        </section>
 
-        <!-- Disclaimer -->
-        <div class="home-disclaimer">
-            <p>⚠️ This is an independent tool, not affiliated with or endorsed by Google.</p>
+        <dl class="uvy-stats">
+            <div>
+                <a class="stat-link" href="roles.html">
+                    <dt>IAM roles</dt>
+                    <dd>{{.RoleCount | formatNumber}}</dd>
+                </a>
+            </div>
+            <div>
+                <a class="stat-link" href="permissions.html">
+                    <dt>Permissions</dt>
+                    <dd>{{.PermissionCount | formatNumber}}</dd>
+                </a>
+            </div>
+            <div>
+                <dt>Refresh cadence</dt>
+                <dd>Daily</dd>
+            </div>
+        </dl>
+
+        <ul class="uvy-index">
+            <li>
+                <a href="roles.html">
+                    <strong class="with-icon">
+                        <svg class="icon icon-small icon-accent" aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#tabler-shield-check"></use></svg>
+                        Browse roles
+                    </strong>
+                    <span>Explore all predefined GCP IAM roles, inspect included permissions, and compare two roles side by side.</span>
+                </a>
+            </li>
+            <li>
+                <a href="permissions.html">
+                    <strong class="with-icon">
+                        <svg class="icon icon-small icon-accent" aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#tabler-key"></use></svg>
+                        Browse permissions
+                    </strong>
+                    <span>Find every IAM role that grants a specific permission and compare role coverage across permissions.</span>
+                </a>
+            </li>
+            <li>
+                <a href="search.html">
+                    <strong class="with-icon">
+                        <svg class="icon icon-small icon-accent" aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#tabler-search"></use></svg>
+                        Find matching roles
+                    </strong>
+                    <span>Combine required and excluded permission filters to identify least-privilege IAM roles in your browser.</span>
+                </a>
+            </li>
+        </ul>
+
+        <ul class="uvy-features">
+            <li>
+                <h2 class="with-icon">
+                    <svg class="icon icon-small icon-muted" aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#tabler-shield-check"></use></svg>
+                    Role-to-permission mapping
+                </h2>
+                <p>View the complete, expanded list of permissions included in each IAM role across GCP services.</p>
+                <a href="https://cloud.google.com/iam/docs/understanding-roles">Google Cloud roles documentation</a>
+            </li>
+            <li>
+                <h2 class="with-icon">
+                    <svg class="icon icon-small icon-muted" aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#tabler-key"></use></svg>
+                    Permission-to-role mapping
+                </h2>
+                <p>Identify every predefined, basic, and service agent role that grants a specific permission.</p>
+                <a href="https://cloud.google.com/iam/docs/permissions-reference">Google Cloud permissions reference</a>
+            </li>
+            <li>
+                <h2 class="with-icon">
+                    <svg class="icon icon-small icon-muted" aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#tabler-terminal-2"></use></svg>
+                    Side-by-side comparison
+                </h2>
+                <p>Compare any two roles or any two permissions to inspect shared and unique grants.</p>
+            </li>
+            <li>
+                <h2 class="with-icon">
+                    <svg class="icon icon-small icon-muted" aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#tabler-search"></use></svg>
+                    Least-privilege discovery
+                </h2>
+                <p>Narrow candidate roles by requiring needed permissions and excluding access outside your target scope.</p>
+            </li>
+            <li>
+                <h2 class="with-icon">
+                    <svg class="icon icon-small icon-muted" aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#tabler-refresh"></use></svg>
+                    Updated daily
+                </h2>
+                <p>Catalog data is refreshed automatically from the GCP IAM API every day via GitHub Actions.</p>
+                <a href="https://github.com/UnitVectorY-Labs/gcp-iam-catalog/actions/workflows/gcp-iam-catalog-crawl.yml">View crawl workflow</a>
+            </li>
+        </ul>
+
+        <div class="uvy-alert home-disclaimer">
+            <svg class="icon" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#tabler-info-circle"></use></svg>
+            <div><strong>Independent catalog:</strong> This site is maintained by UnitVectorY-Labs and is not affiliated with or endorsed by Google.</div>
         </div>
     </main>
 

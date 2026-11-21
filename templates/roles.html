@@ -1,73 +1,113 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>GCP IAM Roles - gcp-iam-catalog</title>
-    <link rel="stylesheet" href="./style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GCP IAM Roles — gcp-iam-catalog</title>
     <meta name="description" content="Browse and search all GCP IAM roles. Find detailed information about role permissions, titles, and descriptions.">
-    <script>
-        function filterList() {
-            const input = document.getElementById('searchInput');
-            const filter = input.value.toLowerCase();
-            const roleTable = document.querySelector('.role-table');
-            const rows = roleTable.querySelectorAll('.role-row');
-
-            rows.forEach(row => {
-                const roleName = row.querySelector('.role-name');
-                const name = (roleName.textContent || roleName.innerText).toLowerCase();
-                const title = (row.getAttribute('data-title') || '').toLowerCase();
-                if (name.includes(filter) || title.includes(filter)) {
-                    row.style.display = "";
-                } else {
-                    row.style.display = "none";
-                }
-            });
-        }
-    </script>
+    {{template "head_assets" .}}
 </head>
 <body>
-    <!-- Navigation Bar -->
-    <div class="navbar">
-        <a href="index.html">gcp-iam-catalog</a>
-        <a href="roles.html" class="active">Roles</a>
-        <a href="permissions.html">Permissions</a>
-        <a href="search.html">Search</a>
-    </div>
+    {{template "header" .}}
 
-    <main>
-        <section class="roles roles-page">
-            <div class="page-header">
-                <span class="page-header-icon">🔐</span>
+    <main class="page" id="main">
+        <div class="uvy-page-header">
+            <div>
                 <h1>GCP IAM Roles</h1>
+                <p class="uvy-lead">Browse all predefined GCP IAM roles. Select a role to inspect its permissions and compare it with other roles.</p>
             </div>
-            <p class="muted-text">Browse all predefined GCP IAM roles. Click on a role to see its permissions and compare with other roles.</p>
-            <div class="search-container">
-                <input type="text" id="searchInput" onkeyup="filterList()" placeholder="Search for roles or titles...">
-                <span class="search-icon">&#128269;</span>
+        </div>
+
+        <section class="uvy-panel" aria-labelledby="roles-heading">
+            <div class="uvy-panel__header">
+                <h2 id="roles-heading">Role directory</h2>
+                <span id="rolesCount" class="uvy-count" role="status">{{len .Items | formatNumber}} roles</span>
             </div>
-            <div class="role-table">
-                <div class="role-table-header">
-                    <div class="role-name-header">Role Name</div>
-                    <div class="role-type-header">Role Type</div>
+
+            <div class="uvy-toolbar" style="margin-top:0">
+                <div class="uvy-field">
+                    <label for="searchInput">Filter roles</label>
+                    <input type="search" id="searchInput" class="uvy-input--mono" placeholder="Role name or title (e.g. storage.objectAdmin)" oninput="filterList()" onkeyup="filterList()">
                 </div>
-                {{range .Items}}
-                    <div class="role-row" data-title="{{.Title}}">
-                        <div class="role-name-cell">
-                            <span class="role-indicator"></span>
-                            <a href="{{.Name}}.html" class="role-name">
-                                {{.Name}}
-                            </a>{{if .Deprecated}} ⛔{{end}}
-                        </div>
-                        <div class="role-type-cell">
-                            {{classifyRole .Name}}
-                        </div>
-                    </div>
-                {{end}}
+                <div class="uvy-field uvy-field--fit">
+                    <label for="roleTypeFilter">Role type</label>
+                    <select id="roleTypeFilter" onchange="filterList()">
+                        <option value="">All types</option>
+                        <option value="Predefined">Predefined</option>
+                        <option value="Service Agent">Service Agent</option>
+                        <option value="Basic">Basic</option>
+                    </select>
+                </div>
+                <button type="button" id="clearFilter" onclick="clearFilters()">Clear</button>
+            </div>
+
+            <div class="table-wrap" role="region" aria-label="GCP IAM roles" tabindex="0">
+                <table class="uvy-table--interactive uvy-table--compact catalog-table" id="rolesTable">
+                    <caption class="sr-only">GCP IAM roles and role types</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Role name</th>
+                            <th scope="col" class="col-type">Role type</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {{range .Items}}
+                        {{$roleType := classifyRole .Name}}
+                        <tr class="role-row" data-title="{{.Title}}" data-type="{{$roleType}}">
+                            <td>
+                                <div class="role-cell-wrap">
+                                    <a href="{{.Name}}.html" class="role-name">{{.Name}}</a>{{if .Deprecated}} <span class="uvy-status uvy-status--warn">Deprecated</span>{{end}}
+                                </div>
+                            </td>
+                            <td class="col-type"><span class="uvy-badge">{{$roleType}}</span></td>
+                        </tr>
+                        {{end}}
+                    </tbody>
+                </table>
+            </div>
+
+            <div id="rolesEmpty" class="uvy-empty" style="margin-top:var(--uvy-space-4)" hidden>
+                <strong>No roles match</strong>
+                <p>Adjust your search query or clear the filter to view all roles.</p>
             </div>
         </section>
     </main>
 
     {{template "footer" .}}
+
+    <script>
+        function filterList() {
+            const input = document.getElementById('searchInput');
+            const typeSelect = document.getElementById('roleTypeFilter');
+            const filter = input.value.trim().toLowerCase();
+            const typeFilter = typeSelect ? typeSelect.value : '';
+            const rows = document.querySelectorAll('#rolesTable tbody .role-row');
+            let visible = 0;
+
+            rows.forEach(row => {
+                const roleLink = row.querySelector('.role-name');
+                const name = (roleLink ? roleLink.textContent : '').toLowerCase();
+                const title = (row.getAttribute('data-title') || '').toLowerCase();
+                const roleType = row.getAttribute('data-type') || '';
+                const matchesText = !filter || name.includes(filter) || title.includes(filter);
+                const matchesType = !typeFilter || roleType === typeFilter;
+                const show = matchesText && matchesType;
+                row.hidden = !show;
+                if (show) visible++;
+            });
+
+            document.getElementById('rolesCount').textContent = visible.toLocaleString() + (visible === 1 ? ' role' : ' roles');
+            document.getElementById('rolesEmpty').hidden = visible > 0;
+        }
+
+        function clearFilters() {
+            const input = document.getElementById('searchInput');
+            const typeSelect = document.getElementById('roleTypeFilter');
+            input.value = '';
+            if (typeSelect) typeSelect.value = '';
+            filterList();
+            input.focus();
+        }
+    </script>
 </body>
 </html>
