@@ -30,6 +30,9 @@ type Role struct {
 	Stage               string   `json:"stage"`
 	PermissionCount     int      `json:"-"` // Not stored in JSON
 	LastCrawled         string   `json:"-"` // Not stored in JSON
+	LastCrawledISO      string   `json:"-"` // Not stored in JSON
+	PathPrefix          string   `json:"-"` // Not stored in JSON
+	ActiveNav           string   `json:"-"` // Not stored in JSON
 	Deprecated          bool     `json:"-"` // Computed during generation only
 }
 
@@ -207,9 +210,18 @@ func generateHTML() error {
 		return fmt.Errorf("failed to create permissions HTML directory: %v", err)
 	}
 
-	// Copy style.css to the output directory
-	if err := copyFile("assets/style.css", filepath.Join(htmlDir, "style.css")); err != nil {
-		log.Fatalf("Error copying style.css: %v", err)
+	// Copy static assets to the output directory
+	staticAssets := []string{
+		"uvy.css",
+		"uvy.js",
+		"style.css",
+		"uvy-standalone-mark-light.svg",
+		"uvy-standalone-mark-dark.svg",
+	}
+	for _, asset := range staticAssets {
+		if err := copyFile(filepath.Join("assets", asset), filepath.Join(htmlDir, asset)); err != nil {
+			log.Fatalf("Error copying %s: %v", asset, err)
+		}
 	}
 
 	// Read all JSON files from the iam directory
@@ -224,6 +236,7 @@ func generateHTML() error {
 
 	// Read the timestamp file
 	var lastCrawled string
+	var lastCrawledISO string
 	timestampFile := filepath.Join(iamDir, "timestamp.json")
 	data, err := os.ReadFile(timestampFile)
 	if err != nil {
@@ -243,7 +256,8 @@ func generateHTML() error {
 				log.Printf("Failed to parse timestamp: %v", err)
 				lastCrawled = "Not available"
 			} else {
-				lastCrawled = parsedTime.Format("January 2, 2006 15:04 UTC")
+				lastCrawled = parsedTime.UTC().Format("January 2, 2006 15:04 UTC")
+				lastCrawledISO = parsedTime.UTC().Format(time.RFC3339)
 			}
 		}
 	}
@@ -270,7 +284,7 @@ func generateHTML() error {
 		},
 		"displayRoleName": func(roleName string, deprecated bool) string {
 			if deprecated {
-				return roleName + " ⛔"
+				return roleName + " (Deprecated)"
 			}
 			return roleName
 		},
@@ -431,9 +445,12 @@ func generateHTML() error {
 			continue
 		}
 
-		// Set the permission count
+		// Set the permission count and page metadata
 		role.PermissionCount = len(role.IncludedPermissions)
 		role.LastCrawled = lastCrawled
+		role.LastCrawledISO = lastCrawledISO
+		role.PathPrefix = "../"
+		role.ActiveNav = "roles"
 
 		// Execute the "role.html" template
 		err = tmpl.ExecuteTemplate(f, "role.html", role)
@@ -498,14 +515,18 @@ func generateHTML() error {
 				Title      string
 				Deprecated bool
 			}
-			LastCrawled string
-			PathPrefix  string
+			LastCrawled    string
+			LastCrawledISO string
+			PathPrefix     string
+			ActiveNav      string
 		}{
-			RoleCount:   len(detailedRoles),
-			Permission:  perm,
-			Roles:       detailedRoles,
-			LastCrawled: lastCrawled,
-			PathPrefix:  pathPrefix,
+			RoleCount:      len(detailedRoles),
+			Permission:     perm,
+			Roles:          detailedRoles,
+			LastCrawled:    lastCrawled,
+			LastCrawledISO: lastCrawledISO,
+			PathPrefix:     pathPrefix,
+			ActiveNav:      "permissions",
 		}
 
 		f, err := os.Create(filePath)
@@ -535,11 +556,17 @@ func generateHTML() error {
 	defer fRolesIndex.Close()
 
 	err = tmpl.ExecuteTemplate(fRolesIndex, "roles.html", struct {
-		Items       []Role
-		LastCrawled string
+		Items          []Role
+		LastCrawled    string
+		LastCrawledISO string
+		PathPrefix     string
+		ActiveNav      string
 	}{
-		Items:       roles,
-		LastCrawled: lastCrawled,
+		Items:          roles,
+		LastCrawled:    lastCrawled,
+		LastCrawledISO: lastCrawledISO,
+		PathPrefix:     "",
+		ActiveNav:      "roles",
 	})
 	if err != nil {
 		return fmt.Errorf("failed to execute roles index template: %v", err)
@@ -572,10 +599,16 @@ func generateHTML() error {
 		Items []struct {
 			Permission string
 		}
-		LastCrawled string
+		LastCrawled    string
+		LastCrawledISO string
+		PathPrefix     string
+		ActiveNav      string
 	}{
-		Items:       permissionsList,
-		LastCrawled: lastCrawled,
+		Items:          permissionsList,
+		LastCrawled:    lastCrawled,
+		LastCrawledISO: lastCrawledISO,
+		PathPrefix:     "",
+		ActiveNav:      "permissions",
 	})
 	if err != nil {
 		return fmt.Errorf("failed to execute permissions index template: %v", err)
@@ -591,9 +624,15 @@ func generateHTML() error {
 	defer fSearch.Close()
 
 	err = tmpl.ExecuteTemplate(fSearch, "search.html", struct {
-		LastCrawled string
+		LastCrawled    string
+		LastCrawledISO string
+		PathPrefix     string
+		ActiveNav      string
 	}{
-		LastCrawled: lastCrawled,
+		LastCrawled:    lastCrawled,
+		LastCrawledISO: lastCrawledISO,
+		PathPrefix:     "",
+		ActiveNav:      "search",
 	})
 	if err != nil {
 		return fmt.Errorf("failed to execute search template: %v", err)
@@ -612,10 +651,16 @@ func generateHTML() error {
 		RoleCount       int
 		PermissionCount int
 		LastCrawled     string
+		LastCrawledISO  string
+		PathPrefix      string
+		ActiveNav       string
 	}{
 		RoleCount:       len(roles),
 		PermissionCount: len(permissionIndex),
 		LastCrawled:     lastCrawled,
+		LastCrawledISO:  lastCrawledISO,
+		PathPrefix:      "",
+		ActiveNav:       "home",
 	}
 
 	// Execute the "index.html" template

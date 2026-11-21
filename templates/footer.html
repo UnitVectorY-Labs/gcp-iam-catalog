@@ -1,12 +1,18 @@
 {{define "footer"}}
-<footer>
-    <p>
-        <a href="https://github.com/UnitVectorY-Labs">UnitVectorY Labs</a> | 
-        <a href="https://opensource.org/licenses/MIT">MIT License</a> | 
-        <a href="https://github.com/UnitVectorY-Labs/gcp-iam-catalog"><strong>gcp-iam-catalog</strong> on GitHub</a>
-    </p>
-    {{if .LastCrawled}}
-    <p>Last updated: {{.LastCrawled}}</p>
-    {{end}}
-</footer>
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <p>
+                <a href="https://github.com/UnitVectorY-Labs">UnitVectorY-Labs</a>
+                <span class="footer-sep" aria-hidden="true">|</span>
+                <a href="https://opensource.org/licenses/MIT">MIT License</a>
+                <span class="footer-sep" aria-hidden="true">|</span>
+                <a href="https://github.com/UnitVectorY-Labs/gcp-iam-catalog"><strong>gcp-iam-catalog</strong></a> on GitHub
+            </p>
+            {{if .LastCrawledISO}}
+            <p class="footer-meta">Last updated: <time datetime="{{.LastCrawledISO}}">{{.LastCrawledISO}}</time></p>
+            {{else if .LastCrawled}}
+            <p class="footer-meta">Last updated: {{.LastCrawled}}</p>
+            {{end}}
+        </div>
+    </footer>
 {{end}}

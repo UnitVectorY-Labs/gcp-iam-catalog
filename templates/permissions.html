@@ -1,63 +1,87 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>GCP IAM Permissions - gcp-iam-catalog</title>
-    <link rel="stylesheet" href="./style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GCP IAM Permissions — gcp-iam-catalog</title>
     <meta name="description" content="Browse and search all GCP IAM permissions. Find which roles grant each permission.">
-    <script>
-        function filterList() {
-            const input = document.getElementById('searchInput');
-            const filter = input.value.toLowerCase();
-            const rows = document.querySelectorAll('.role-table .role-row');
-
-            rows.forEach(row => {
-                const link = row.querySelector('a');
-                const name = (link ? (link.textContent || link.innerText) : '').toLowerCase();
-                const title = (row.getAttribute('data-title') || '').toLowerCase();
-                if (name.includes(filter) || title.includes(filter)) {
-                    row.style.display = '';
-                } else {
-                    row.style.display = 'none';
-                }
-            });
-        }
-    </script>
+    {{template "head_assets" .}}
 </head>
 <body>
-    <!-- Navigation Bar -->
-    <div class="navbar">
-        <a href="index.html">gcp-iam-catalog</a>
-        <a href="roles.html">Roles</a>
-        <a href="permissions.html" class="active">Permissions</a>
-        <a href="search.html">Search</a>
-    </div>
+    {{template "header" .}}
 
-    <main>
-        <section class="permissions permissions-page">
-            <div class="page-header">
-                <span class="page-header-icon">🔑</span>
+    <main class="page" id="main">
+        <div class="uvy-page-header">
+            <div>
                 <h1>GCP IAM Permissions</h1>
+                <p class="uvy-lead">Browse all GCP IAM permissions. Select a permission to see which roles grant it and compare it with other permissions.</p>
             </div>
-            <p class="muted-text">Browse all GCP IAM permissions. Click on a permission to see which roles grant it and compare with other permissions.</p>
-            <div class="search-container">
-                <input type="text" id="searchInput" onkeyup="filterList()" placeholder="Search for permissions...">
-                <span class="search-icon">&#128269;</span>
+        </div>
+
+        <section class="uvy-panel" aria-labelledby="permissions-heading">
+            <div class="uvy-panel__header">
+                <h2 id="permissions-heading">Permission directory</h2>
+                <span id="permissionsCount" class="uvy-count" role="status">{{len .Items | formatNumber}} permissions</span>
             </div>
-            <div class="role-table">
-                {{range .Items}}
-                    <div class="role-row" data-title="{{.Permission}}">
-                        <div class="role-name-cell">
-                            <span class="permission-indicator"></span>
-                            <a href="permissions/{{.Permission}}.html" class="permission-name">{{.Permission}}</a>
-                        </div>
-                    </div>
-                {{end}}
+
+            <div class="uvy-toolbar" style="margin-top:0">
+                <div class="uvy-field">
+                    <label for="searchInput">Filter permissions</label>
+                    <input type="search" id="searchInput" class="uvy-input--mono" placeholder="Permission name (e.g. storage.objects.get)" oninput="filterList()" onkeyup="filterList()">
+                </div>
+                <button type="button" id="clearFilter" onclick="clearFilters()">Clear</button>
+            </div>
+
+            <div class="table-wrap" role="region" aria-label="GCP IAM permissions" tabindex="0">
+                <table class="uvy-table--interactive uvy-table--compact permission-list-table" id="permissionsTable">
+                    <caption class="sr-only">GCP IAM permissions</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Permission</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {{range .Items}}
+                        <tr><td><a href="permissions/{{.Permission}}.html">{{.Permission}}</a></td></tr>
+                        {{end}}
+                    </tbody>
+                </table>
+            </div>
+
+            <div id="permissionsEmpty" class="uvy-empty" style="margin-top:var(--uvy-space-4)" hidden>
+                <strong>No permissions match</strong>
+                <p>Adjust your search query or clear the filter to view all permissions.</p>
             </div>
         </section>
     </main>
 
     {{template "footer" .}}
+
+    <script>
+        function filterList() {
+            const input = document.getElementById('searchInput');
+            const filter = input.value.trim().toLowerCase();
+            const rows = document.querySelectorAll('#permissionsTable tbody tr');
+            let visible = 0;
+
+            for (let i = 0; i < rows.length; i++) {
+                const row = rows[i];
+                const text = row.textContent.toLowerCase();
+                const show = !filter || text.includes(filter);
+                row.hidden = !show;
+                if (show) visible++;
+            }
+
+            document.getElementById('permissionsCount').textContent = visible.toLocaleString() + (visible === 1 ? ' permission' : ' permissions');
+            document.getElementById('permissionsEmpty').hidden = visible > 0;
+        }
+
+        function clearFilters() {
+            const input = document.getElementById('searchInput');
+            input.value = '';
+            filterList();
+            input.focus();
+        }
+    </script>
 </body>
 </html>
