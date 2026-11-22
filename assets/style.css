@@ -40,6 +40,13 @@
   overflow-wrap: anywhere;
 }
 
+/* Home hero: the site name lives in the header brand, so the hero has no
+   visible title. Drop the top padding that framed the removed heading so the
+   lead starts at the same offset as a .uvy-page-header on other pages. */
+.hero {
+  padding-block-start: 0;
+}
+
 /* Home page stat links */
 .uvy-stats .stat-link {
   color: inherit;
