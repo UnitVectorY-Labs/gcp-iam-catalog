@@ -14,6 +14,7 @@ updates:
       time: "06:00"
       timezone: "America/New_York"
     cooldown:
+      # nosemgrep: package_managers.dependabot.dependabot-missing-cooldown.dependabot-missing-cooldown
       default-days: 3
     open-pull-requests-limit: 20
   - package-ecosystem: "github-actions"
@@ -28,5 +29,6 @@ updates:
         patterns:
           - "github/codeql-action*"
     cooldown:
+      # nosemgrep: package_managers.dependabot.dependabot-missing-cooldown.dependabot-missing-cooldown
       default-days: 3
     open-pull-requests-limit: 20
