@@ -76,19 +76,25 @@ func TestTemplatesRenderWithDesignSystem(t *testing.T) {
 		{
 			name: "index.html",
 			data: struct {
-				RoleCount       int
-				PermissionCount int
-				LastCrawled     string
-				LastCrawledISO  string
-				PathPrefix      string
-				ActiveNav       string
+				RoleCount             int
+				PermissionCount       int
+				PredefinedRoleCount   int
+				ServiceAgentRoleCount int
+				BasicRoleCount        int
+				LastCrawled           string
+				LastCrawledISO        string
+				PathPrefix            string
+				ActiveNav             string
 			}{
-				RoleCount:       2437,
-				PermissionCount: 14389,
-				LastCrawled:     "November 21, 2026 17:59 UTC",
-				LastCrawledISO:  "2026-11-21T17:59:28Z",
-				PathPrefix:      "",
-				ActiveNav:       "home",
+				RoleCount:             2437,
+				PermissionCount:       14389,
+				PredefinedRoleCount:   2145,
+				ServiceAgentRoleCount: 288,
+				BasicRoleCount:        4,
+				LastCrawled:           "November 21, 2026 17:59 UTC",
+				LastCrawledISO:        "2026-11-21T17:59:28Z",
+				PathPrefix:            "",
+				ActiveNav:             "home",
 			},
 		},
 		{
@@ -207,6 +213,10 @@ func TestTemplatesRenderWithDesignSystem(t *testing.T) {
 			"MIT License",
 			"<strong>gcp-iam-catalog</strong>",
 			`datetime="2026-11-21T17:59:28Z"`,
+			"#tabler-shield-check",
+			"#tabler-key",
+			"#tabler-search",
+			"<span>Role finder</span>",
 		} {
 			if !strings.Contains(html, mustHave) {
 				t.Errorf("%s output missing %q", page.name, mustHave)

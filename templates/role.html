@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GCP IAM Role: {{.Name}} — gcp-iam-catalog</title>
+    <title>{{.Name}} — GCP IAM Catalog</title>
     <meta name="description" content="See the permissions assigned to the {{.Name}} role in Google Cloud Platform (GCP) IAM and understand its usage.">
     {{template "head_assets" .}}
 </head>
@@ -42,7 +42,10 @@
 
         <section class="uvy-panel" aria-labelledby="role-details-heading">
             <div class="uvy-panel__header">
-                <h2 id="role-details-heading">Role details</h2>
+                <h2 id="role-details-heading" class="with-icon">
+                    <svg class="icon icon-small icon-accent" aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#tabler-shield-check"></use></svg>
+                    Role details
+                </h2>
                 <span class="uvy-badge">{{classifyRole .Name}}</span>
             </div>
             <dl class="uvy-kv" style="margin-bottom:0">
@@ -83,7 +86,10 @@
 
             <div class="uvy-tabs" role="tablist" aria-label="Role views">
                 <button id="tab-details" role="tab" type="button" aria-selected="true" aria-controls="details-tab">Permissions ({{.PermissionCount | formatNumber}})</button>
-                <button id="tab-compare" role="tab" type="button" aria-selected="false" aria-controls="compare-tab">Compare</button>
+                <button id="tab-compare" role="tab" type="button" aria-selected="false" aria-controls="compare-tab" class="with-icon">
+                    <svg class="icon icon-small" aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#tabler-arrows-diff"></use></svg>
+                    Compare
+                </button>
             </div>
 
             <div id="details-tab" role="tabpanel" aria-labelledby="tab-details">

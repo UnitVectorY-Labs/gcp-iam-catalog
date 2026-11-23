@@ -647,20 +647,38 @@ func generateHTML() error {
 	}
 	defer fHomeIndex.Close()
 
+	var predefinedRoleCount, serviceAgentRoleCount, basicRoleCount int
+	for _, role := range roles {
+		switch classifyRoleType(role.Name) {
+		case "Basic":
+			basicRoleCount++
+		case "Service Agent":
+			serviceAgentRoleCount++
+		default:
+			predefinedRoleCount++
+		}
+	}
+
 	homeData := struct {
-		RoleCount       int
-		PermissionCount int
-		LastCrawled     string
-		LastCrawledISO  string
-		PathPrefix      string
-		ActiveNav       string
+		RoleCount             int
+		PermissionCount       int
+		PredefinedRoleCount   int
+		ServiceAgentRoleCount int
+		BasicRoleCount        int
+		LastCrawled           string
+		LastCrawledISO        string
+		PathPrefix            string
+		ActiveNav             string
 	}{
-		RoleCount:       len(roles),
-		PermissionCount: len(permissionIndex),
-		LastCrawled:     lastCrawled,
-		LastCrawledISO:  lastCrawledISO,
-		PathPrefix:      "",
-		ActiveNav:       "home",
+		RoleCount:             len(roles),
+		PermissionCount:       len(permissionIndex),
+		PredefinedRoleCount:   predefinedRoleCount,
+		ServiceAgentRoleCount: serviceAgentRoleCount,
+		BasicRoleCount:        basicRoleCount,
+		LastCrawled:           lastCrawled,
+		LastCrawledISO:        lastCrawledISO,
+		PathPrefix:            "",
+		ActiveNav:             "home",
 	}
 
 	// Execute the "index.html" template
