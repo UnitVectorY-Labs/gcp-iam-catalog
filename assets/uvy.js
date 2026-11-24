@@ -45,13 +45,49 @@
     if (saved) root.dataset.theme = saved;
   }
 
-  document.addEventListener("DOMContentLoaded", function () {
-    document.querySelectorAll("[data-enable-with-js]").forEach((control) => {
+  function enhance(scope) {
+    const rootNode = scope && scope.querySelectorAll ? scope : document;
+    rootNode.querySelectorAll("[data-enable-with-js]").forEach((control) => {
       control.disabled = false;
     });
-    document.querySelectorAll("[data-requires-js]").forEach((control) => {
+    rootNode.querySelectorAll("[data-requires-js]").forEach((control) => {
       control.hidden = false;
     });
+    rootNode.querySelectorAll('[role="tablist"]').forEach((tablist) => {
+      tablist.querySelectorAll('[role="tab"]').forEach((tab) => {
+        tab.tabIndex = tab.getAttribute("aria-selected") === "true" ? 0 : -1;
+      });
+    });
+  }
+  window.uvyEnhance = enhance;
+
+  function selectTab(tablist, next, focus) {
+    const tabs = [...tablist.querySelectorAll('[role="tab"]')];
+    tabs.forEach((tab) => {
+      const active = tab === next;
+      tab.setAttribute("aria-selected", String(active));
+      tab.tabIndex = active ? 0 : -1;
+      const panel = document.getElementById(
+        tab.getAttribute("aria-controls") || "",
+      );
+      if (panel) panel.hidden = !active;
+    });
+    if (focus) next.focus();
+  }
+
+  document.addEventListener("DOMContentLoaded", function () {
+    enhance(document);
+
+    // Re-enhance dynamically swapped HTMX fragments (HTMX 2 and HTMX 4).
+    function onSwap(event) {
+      const target =
+        (event.detail && event.detail.ctx && event.detail.ctx.target) ||
+        (event.detail && event.detail.target) ||
+        event.target;
+      enhance(target);
+    }
+    document.addEventListener("htmx:afterSwap", onSwap);
+    document.addEventListener("htmx:after:swap", onSwap);
 
     const system = matchMedia("(prefers-color-scheme: dark)");
     const theme = document.getElementById("theme");
@@ -89,76 +125,67 @@
       });
     }
 
-    // Copy buttons: copy text from [data-copy-target] or [data-copy-text].
-    document
-      .querySelectorAll("[data-copy-target], [data-copy-text]")
-      .forEach((button) => {
-        button.addEventListener("click", async function () {
-          const targetId = button.dataset.copyTarget;
-          const text = targetId
-            ? (document.getElementById(targetId)?.textContent ?? "").trim()
-            : button.dataset.copyText || "";
-          if (!text) return;
-          try {
-            if (navigator.clipboard && navigator.clipboard.writeText) {
-              await navigator.clipboard.writeText(text);
-            } else {
-              const area = document.createElement("textarea");
-              area.value = text;
-              area.setAttribute("readonly", "");
-              area.style.position = "fixed";
-              area.style.opacity = "0";
-              document.body.append(area);
-              area.select();
-              document.execCommand("copy");
-              area.remove();
-            }
-          } catch (_) {}
-          button.classList.add("is-copied");
-          const liveId = button.dataset.copyStatus;
-          if (liveId) {
-            const live = document.getElementById(liveId);
-            if (live) live.textContent = "Copied to clipboard.";
-          }
-          clearTimeout(button._copyTimer);
-          button._copyTimer = setTimeout(() => {
-            button.classList.remove("is-copied");
-          }, 1800);
-        });
-      });
-
-    // Accessible tablists: click and arrow-key navigation.
-    document.querySelectorAll('[role="tablist"]').forEach((tablist) => {
-      const tabs = [...tablist.querySelectorAll('[role="tab"]')];
-      function selectTab(next, focus) {
-        tabs.forEach((tab) => {
-          const active = tab === next;
-          tab.setAttribute("aria-selected", String(active));
-          tab.tabIndex = active ? 0 : -1;
-          const panel = document.getElementById(
-            tab.getAttribute("aria-controls") || "",
-          );
-          if (panel) panel.hidden = !active;
-        });
-        if (focus) next.focus();
+    // Delegated copy actions and tablists work across static and HTMX-swapped DOM.
+    document.addEventListener("click", async function (event) {
+      const tab = event.target.closest('[role="tablist"] [role="tab"]');
+      if (tab) {
+        const tablist = tab.closest('[role="tablist"]');
+        if (tablist) selectTab(tablist, tab, false);
+        return;
       }
-      tabs.forEach((tab, index) => {
-        tab.tabIndex = tab.getAttribute("aria-selected") === "true" ? 0 : -1;
-        tab.addEventListener("click", () => selectTab(tab, false));
-        tab.addEventListener("keydown", (event) => {
-          let target = null;
-          if (event.key === "ArrowRight")
-            target = tabs[(index + 1) % tabs.length];
-          else if (event.key === "ArrowLeft")
-            target = tabs[(index - 1 + tabs.length) % tabs.length];
-          else if (event.key === "Home") target = tabs[0];
-          else if (event.key === "End") target = tabs[tabs.length - 1];
-          if (target) {
-            event.preventDefault();
-            selectTab(target, true);
-          }
-        });
-      });
+      const button = event.target.closest("[data-copy-target], [data-copy-text]");
+      if (!button || button.disabled) return;
+      const targetId = button.dataset.copyTarget;
+      const text = targetId
+        ? (document.getElementById(targetId)?.textContent ?? "").trim()
+        : button.dataset.copyText || "";
+      if (!text) return;
+      try {
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          await navigator.clipboard.writeText(text);
+        } else {
+          const area = document.createElement("textarea");
+          area.value = text;
+          area.setAttribute("readonly", "");
+          area.style.position = "fixed";
+          area.style.opacity = "0";
+          document.body.append(area);
+          area.select();
+          document.execCommand("copy");
+          area.remove();
+        }
+      } catch (_) {}
+      button.classList.add("is-copied");
+      const liveId = button.dataset.copyStatus;
+      if (liveId) {
+        const live = document.getElementById(liveId);
+        if (live) live.textContent = "Copied to clipboard.";
+      }
+      clearTimeout(button._copyTimer);
+      button._copyTimer = setTimeout(() => {
+        button.classList.remove("is-copied");
+      }, 1800);
+    });
+
+    document.addEventListener("keydown", function (event) {
+      const tab = event.target.closest('[role="tablist"] [role="tab"]');
+      if (!tab) return;
+      const tablist = tab.closest('[role="tablist"]');
+      if (!tablist) return;
+      const tabs = [...tablist.querySelectorAll('[role="tab"]')];
+      const index = tabs.indexOf(tab);
+      if (index === -1) return;
+      let target = null;
+      if (event.key === "ArrowRight")
+        target = tabs[(index + 1) % tabs.length];
+      else if (event.key === "ArrowLeft")
+        target = tabs[(index - 1 + tabs.length) % tabs.length];
+      else if (event.key === "Home") target = tabs[0];
+      else if (event.key === "End") target = tabs[tabs.length - 1];
+      if (target) {
+        event.preventDefault();
+        selectTab(tablist, target, true);
+      }
     });
 
     const sidebar = document.getElementById("sidebar");

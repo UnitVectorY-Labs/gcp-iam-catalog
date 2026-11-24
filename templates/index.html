@@ -3,120 +3,343 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GCP IAM Role and Permission Catalog — gcp-iam-catalog</title>
-    <meta name="description" content="Browse and search all GCP IAM roles and permissions. Compare roles, find permissions, and explore the complete GCP IAM catalog with detailed descriptions and relationships.">
+    <title>GCP IAM Catalog — Google Cloud IAM roles and permissions</title>
+    <meta name="description" content="Explore, compare, and search every Google Cloud Platform IAM role and permission. Inspect expanded permission sets, trace granting roles, and discover least-privilege roles.">
     {{template "head_assets" .}}
 </head>
 <body>
     {{template "header" .}}
 
     <main class="page" id="main">
-        <section class="hero">
-            <h1 class="sr-only">GCP IAM Catalog</h1>
-            <p class="uvy-lead">Explore, filter, and compare Google Cloud Platform IAM roles and permissions in a fast static catalog refreshed daily from the GCP IAM API.</p>
-            <div class="uvy-actions">
-                <a class="uvy-button uvy-button--primary" href="roles.html">Browse roles</a>
-                <a class="uvy-button" href="permissions.html">Browse permissions</a>
-                <a class="uvy-button" href="search.html">Find matching roles</a>
+        <section class="home-hero" aria-labelledby="hero-heading">
+            <div class="home-hero__copy">
+                <h1 id="hero-heading">Inspect every Google Cloud IAM role and permission.</h1>
+                <p class="uvy-lead">Map expanded permission sets across GCP services, trace which roles grant sensitive access, compare roles side by side, and narrow down least-privilege candidates.</p>
+
+                <form class="home-lookup" id="homeLookupForm" autocomplete="off" novalidate>
+                    <div class="uvy-field" style="margin-bottom:0">
+                        <label for="homeQuickSearch">Jump to any role or permission</label>
+                        <div class="permission-input-row">
+                            <input type="search" id="homeQuickSearch" class="uvy-input--mono" placeholder="e.g. roles/storage.objectViewer or storage.objects.get" aria-describedby="homeLookupError" aria-expanded="false" aria-controls="homeLookupSuggestions" aria-autocomplete="list">
+                            <button type="submit" class="uvy-button uvy-button--primary">Open</button>
+                        </div>
+                    </div>
+                    <div id="homeLookupSuggestions" class="suggestions-dropdown" role="listbox" aria-label="Matching roles and permissions"></div>
+                    <p id="homeLookupError" class="uvy-field-error filter-feedback" hidden>
+                        <svg class="icon icon-small" aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#tabler-alert-circle"></use></svg>
+                        <span>No matching role or permission found. Choose an entry from the suggestions or browse the full directories below.</span>
+                    </p>
+                </form>
+
+                <p class="home-examples">
+                    <span class="uvy-label">Try:</span>
+                    <a href="roles/storage.objectViewer.html">roles/storage.objectViewer</a>
+                    <span aria-hidden="true">·</span>
+                    <a href="roles/editor.html">roles/editor</a>
+                    <span aria-hidden="true">·</span>
+                    <a href="permissions/storage.objects.get.html">storage.objects.get</a>
+                </p>
+            </div>
+
+            <aside class="uvy-panel home-snapshot" aria-labelledby="snapshot-heading">
+                <div class="uvy-panel__header">
+                    <h2 id="snapshot-heading">Catalog snapshot</h2>
+                    <span class="uvy-status uvy-status--ok">Updated daily</span>
+                </div>
+
+                <div class="home-snapshot__metrics">
+                    <a class="home-snapshot__metric" href="roles.html">
+                        <span class="home-snapshot__label with-icon">
+                            <svg class="icon icon-small icon-accent" aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#tabler-shield-check"></use></svg>
+                            IAM roles
+                        </span>
+                        <span class="home-snapshot__value">{{.RoleCount | formatNumber}}</span>
+                    </a>
+                    <a class="home-snapshot__metric" href="permissions.html">
+                        <span class="home-snapshot__label with-icon">
+                            <svg class="icon icon-small icon-accent" aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#tabler-key"></use></svg>
+                            Permissions
+                        </span>
+                        <span class="home-snapshot__value">{{.PermissionCount | formatNumber}}</span>
+                    </a>
+                </div>
+
+                <dl class="uvy-kv home-snapshot__kv">
+                    <div>
+                        <dt>Predefined roles</dt>
+                        <dd class="num">{{.PredefinedRoleCount | formatNumber}}</dd>
+                    </div>
+                    <div>
+                        <dt>Service agents</dt>
+                        <dd class="num">{{.ServiceAgentRoleCount | formatNumber}}</dd>
+                    </div>
+                    <div>
+                        <dt>Basic roles</dt>
+                        <dd class="num">{{.BasicRoleCount | formatNumber}}</dd>
+                    </div>
+                    <div>
+                        <dt>Data source</dt>
+                        <dd><a href="https://github.com/UnitVectorY-Labs/gcp-iam-catalog/actions/workflows/gcp-iam-catalog-crawl.yml">GCP IAM API crawl</a></dd>
+                    </div>
+                </dl>
+            </aside>
+        </section>
+
+        <section class="home-section" aria-labelledby="workflows-heading">
+            <h2 id="workflows-heading" class="uvy-label home-section__label">Explore the catalog</h2>
+            <div class="home-workflows">
+                <a class="home-workflow" href="roles.html">
+                    <div class="home-workflow__title with-icon">
+                        <svg class="icon icon-accent" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#tabler-shield-check"></use></svg>
+                        <span>Roles</span>
+                    </div>
+                    <p>Filter predefined, basic, and service agent roles by name or type, inspect every included permission, and spot deprecated grants.</p>
+                    <span class="home-workflow__cta with-icon">
+                        <span>Browse {{.RoleCount | formatNumber}} roles</span>
+                        <svg class="icon icon-small" aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#tabler-chevron-right"></use></svg>
+                    </span>
+                </a>
+                <a class="home-workflow" href="permissions.html">
+                    <div class="home-workflow__title with-icon">
+                        <svg class="icon icon-accent" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#tabler-key"></use></svg>
+                        <span>Permissions</span>
+                    </div>
+                    <p>Look up any GCP permission to trace every IAM role that grants it, making it fast to audit blast radius and overly broad bindings.</p>
+                    <span class="home-workflow__cta with-icon">
+                        <span>Browse {{.PermissionCount | formatNumber}} permissions</span>
+                        <svg class="icon icon-small" aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#tabler-chevron-right"></use></svg>
+                    </span>
+                </a>
+                <a class="home-workflow" href="search.html">
+                    <div class="home-workflow__title with-icon">
+                        <svg class="icon icon-accent" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#tabler-search"></use></svg>
+                        <span>Role finder</span>
+                    </div>
+                    <p>Combine permissions a role must include with permissions it must exclude to pinpoint least-privilege roles directly in your browser.</p>
+                    <span class="home-workflow__cta with-icon">
+                        <span>Open role finder</span>
+                        <svg class="icon icon-small" aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#tabler-chevron-right"></use></svg>
+                    </span>
+                </a>
             </div>
         </section>
 
-        <dl class="uvy-stats">
-            <div>
-                <a class="stat-link" href="roles.html">
-                    <dt>IAM roles</dt>
-                    <dd>{{.RoleCount | formatNumber}}</dd>
-                </a>
-            </div>
-            <div>
-                <a class="stat-link" href="permissions.html">
-                    <dt>Permissions</dt>
-                    <dd>{{.PermissionCount | formatNumber}}</dd>
-                </a>
-            </div>
-            <div>
-                <dt>Refresh cadence</dt>
-                <dd>Daily</dd>
-            </div>
-        </dl>
-
-        <ul class="uvy-index">
-            <li>
-                <a href="roles.html">
-                    <strong class="with-icon">
-                        <svg class="icon icon-small icon-accent" aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#tabler-shield-check"></use></svg>
-                        Browse roles
-                    </strong>
-                    <span>Explore all predefined GCP IAM roles, inspect included permissions, and compare two roles side by side.</span>
-                </a>
-            </li>
-            <li>
-                <a href="permissions.html">
-                    <strong class="with-icon">
-                        <svg class="icon icon-small icon-accent" aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#tabler-key"></use></svg>
-                        Browse permissions
-                    </strong>
-                    <span>Find every IAM role that grants a specific permission and compare role coverage across permissions.</span>
-                </a>
-            </li>
-            <li>
-                <a href="search.html">
-                    <strong class="with-icon">
-                        <svg class="icon icon-small icon-accent" aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#tabler-search"></use></svg>
-                        Find matching roles
-                    </strong>
-                    <span>Combine required and excluded permission filters to identify least-privilege IAM roles in your browser.</span>
-                </a>
-            </li>
-        </ul>
-
-        <ul class="uvy-features">
-            <li>
+        <section class="home-highlights" aria-label="Additional capabilities and documentation">
+            <div class="home-highlight">
                 <h2 class="with-icon">
-                    <svg class="icon icon-small icon-muted" aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#tabler-shield-check"></use></svg>
-                    Role-to-permission mapping
-                </h2>
-                <p>View the complete, expanded list of permissions included in each IAM role across GCP services.</p>
-                <a href="https://cloud.google.com/iam/docs/understanding-roles">Google Cloud roles documentation</a>
-            </li>
-            <li>
-                <h2 class="with-icon">
-                    <svg class="icon icon-small icon-muted" aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#tabler-key"></use></svg>
-                    Permission-to-role mapping
-                </h2>
-                <p>Identify every predefined, basic, and service agent role that grants a specific permission.</p>
-                <a href="https://cloud.google.com/iam/docs/permissions-reference">Google Cloud permissions reference</a>
-            </li>
-            <li>
-                <h2 class="with-icon">
-                    <svg class="icon icon-small icon-muted" aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#tabler-terminal-2"></use></svg>
+                    <svg class="icon icon-small icon-accent" aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#tabler-arrows-diff"></use></svg>
                     Side-by-side comparison
                 </h2>
-                <p>Compare any two roles or any two permissions to inspect shared and unique grants.</p>
-            </li>
-            <li>
+                <p>Open the Compare tab on any role or permission page to inspect shared grants alongside permissions unique to each side.</p>
+                <p class="home-highlight__links">
+                    <a href="roles/storage.objectViewer.html?compare=roles/storage.objectAdmin">Compare <code>roles/storage.objectViewer</code> vs. <code>roles/storage.objectAdmin</code></a>
+                </p>
+            </div>
+            <div class="home-highlight">
                 <h2 class="with-icon">
-                    <svg class="icon icon-small icon-muted" aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#tabler-search"></use></svg>
-                    Least-privilege discovery
+                    <svg class="icon icon-small icon-muted" aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#tabler-external-link"></use></svg>
+                    Google Cloud IAM references
                 </h2>
-                <p>Narrow candidate roles by requiring needed permissions and excluding access outside your target scope.</p>
-            </li>
-            <li>
-                <h2 class="with-icon">
-                    <svg class="icon icon-small icon-muted" aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#tabler-refresh"></use></svg>
-                    Updated daily
-                </h2>
-                <p>Catalog data is refreshed automatically from the GCP IAM API every day via GitHub Actions.</p>
-                <a href="https://github.com/UnitVectorY-Labs/gcp-iam-catalog/actions/workflows/gcp-iam-catalog-crawl.yml">View crawl workflow</a>
-            </li>
-        </ul>
+                <p>Cross-check catalog entries against Google Cloud's official IAM guides for role concepts and permission definitions.</p>
+                <p class="home-highlight__links">
+                    <a href="https://cloud.google.com/iam/docs/understanding-roles">Understanding IAM roles</a>
+                    <span aria-hidden="true">·</span>
+                    <a href="https://cloud.google.com/iam/docs/permissions-reference">Permissions reference</a>
+                </p>
+            </div>
+        </section>
 
         <div class="uvy-alert home-disclaimer">
             <svg class="icon" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#tabler-info-circle"></use></svg>
-            <div><strong>Independent catalog:</strong> This site is maintained by UnitVectorY-Labs and is not affiliated with or endorsed by Google.</div>
+            <div><strong>Independent catalog:</strong> Maintained by UnitVectorY-Labs and not affiliated with or endorsed by Google.</div>
         </div>
     </main>
 
     {{template "footer" .}}
+
+    <script>
+        (function () {
+            const MAX_RESULTS = 20;
+            let rolesList = [];
+            let permissionsList = [];
+            let catalogLoaded = false;
+            let activeIndex = -1;
+            let currentMatches = [];
+
+            const form = document.getElementById('homeLookupForm');
+            const input = document.getElementById('homeQuickSearch');
+            const dropdown = document.getElementById('homeLookupSuggestions');
+            const errorEl = document.getElementById('homeLookupError');
+
+            function roleHref(name) {
+                return 'roles/' + name.replace(/^roles\//, '') + '.html';
+            }
+
+            function permissionHref(name) {
+                return 'permissions/' + name.split('/').map(encodeURIComponent).join('/') + '.html';
+            }
+
+            async function ensureCatalogLoaded() {
+                if (catalogLoaded) return;
+                catalogLoaded = true;
+                try {
+                    const [rolesRes, permsRes] = await Promise.all([
+                        fetch('roles-list.json'),
+                        fetch('permissions-list.json')
+                    ]);
+                    if (rolesRes.ok) rolesList = await rolesRes.json();
+                    if (permsRes.ok) permissionsList = await permsRes.json();
+                } catch (_) {
+                    catalogLoaded = false;
+                }
+            }
+
+            function setError(show) {
+                if (show) {
+                    input.setAttribute('aria-invalid', 'true');
+                    errorEl.hidden = false;
+                } else {
+                    input.removeAttribute('aria-invalid');
+                    errorEl.hidden = true;
+                }
+            }
+
+            function hideDropdown() {
+                dropdown.style.display = 'none';
+                input.setAttribute('aria-expanded', 'false');
+                activeIndex = -1;
+            }
+
+            function findMatches(rawQuery) {
+                const q = rawQuery.trim().toLowerCase();
+                if (!q) return [];
+
+                const exact = [];
+                const prefix = [];
+                const substr = [];
+
+                for (let i = 0; i < rolesList.length; i++) {
+                    const name = rolesList[i];
+                    const lower = name.toLowerCase();
+                    const shortLower = lower.replace(/^roles\//, '');
+                    if (lower === q || shortLower === q) {
+                        exact.push({ type: 'Role', name: name, href: roleHref(name) });
+                    } else if (lower.startsWith(q) || shortLower.startsWith(q)) {
+                        prefix.push({ type: 'Role', name: name, href: roleHref(name) });
+                    } else if (lower.includes(q)) {
+                        substr.push({ type: 'Role', name: name, href: roleHref(name) });
+                    }
+                }
+
+                for (let i = 0; i < permissionsList.length; i++) {
+                    const name = permissionsList[i];
+                    const lower = name.toLowerCase();
+                    if (lower === q) {
+                        exact.push({ type: 'Permission', name: name, href: permissionHref(name) });
+                    } else if (lower.startsWith(q)) {
+                        prefix.push({ type: 'Permission', name: name, href: permissionHref(name) });
+                    } else if (lower.includes(q)) {
+                        substr.push({ type: 'Permission', name: name, href: permissionHref(name) });
+                    }
+                }
+
+                return exact.concat(prefix, substr).slice(0, MAX_RESULTS);
+            }
+
+            function renderSuggestions(matches) {
+                currentMatches = matches;
+                activeIndex = -1;
+                dropdown.innerHTML = '';
+
+                if (matches.length === 0) {
+                    hideDropdown();
+                    return;
+                }
+
+                matches.forEach(function (item, idx) {
+                    const option = document.createElement('a');
+                    option.className = 'suggestion-item lookup-suggestion';
+                    option.href = item.href;
+                    option.setAttribute('role', 'option');
+                    option.setAttribute('aria-selected', 'false');
+                    option.dataset.index = String(idx);
+
+                    const nameSpan = document.createElement('span');
+                    nameSpan.className = 'lookup-suggestion__name';
+                    nameSpan.textContent = item.name;
+
+                    const badge = document.createElement('span');
+                    badge.className = 'uvy-badge';
+                    badge.textContent = item.type;
+
+                    option.appendChild(nameSpan);
+                    option.appendChild(badge);
+                    dropdown.appendChild(option);
+                });
+
+                dropdown.style.display = 'block';
+                input.setAttribute('aria-expanded', 'true');
+            }
+
+            function highlightIndex(nextIndex) {
+                const items = dropdown.querySelectorAll('.lookup-suggestion');
+                if (items.length === 0) return;
+                if (nextIndex < 0) nextIndex = items.length - 1;
+                if (nextIndex >= items.length) nextIndex = 0;
+                activeIndex = nextIndex;
+                items.forEach(function (el, idx) {
+                    const isActive = idx === activeIndex;
+                    el.setAttribute('aria-selected', String(isActive));
+                    el.classList.toggle('is-active', isActive);
+                    if (isActive) el.scrollIntoView({ block: 'nearest' });
+                });
+            }
+
+            input.addEventListener('focus', function () {
+                ensureCatalogLoaded();
+            });
+
+            input.addEventListener('input', async function () {
+                setError(false);
+                await ensureCatalogLoaded();
+                renderSuggestions(findMatches(input.value));
+            });
+
+            input.addEventListener('keydown', function (e) {
+                if (dropdown.style.display === 'block' && currentMatches.length > 0) {
+                    if (e.key === 'ArrowDown') {
+                        e.preventDefault();
+                        highlightIndex(activeIndex + 1);
+                    } else if (e.key === 'ArrowUp') {
+                        e.preventDefault();
+                        highlightIndex(activeIndex - 1);
+                    } else if (e.key === 'Escape') {
+                        hideDropdown();
+                    }
+                }
+            });
+
+            form.addEventListener('submit', async function (e) {
+                e.preventDefault();
+                await ensureCatalogLoaded();
+                const matches = currentMatches.length > 0 ? currentMatches : findMatches(input.value);
+                if (matches.length === 0) {
+                    setError(true);
+                    input.focus();
+                    return;
+                }
+                const target = activeIndex >= 0 && matches[activeIndex] ? matches[activeIndex] : matches[0];
+                window.location.href = target.href;
+            });
+
+            document.addEventListener('click', function (e) {
+                if (!e.target.closest('.home-lookup')) {
+                    hideDropdown();
+                }
+            });
+
+            document.addEventListener('DOMContentLoaded', ensureCatalogLoaded);
+        })();
+    </script>
 </body>
 </html>

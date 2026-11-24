@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Find GCP IAM Roles — gcp-iam-catalog</title>
+    <title>Role finder — GCP IAM Catalog</title>
     <meta name="description" content="Find GCP IAM roles by permissions they must include and permissions they must exclude.">
     {{template "head_assets" .}}
 </head>
@@ -13,8 +13,11 @@
     <main class="page" id="main">
         <div class="uvy-page-header">
             <div>
-                <h1>Find matching roles</h1>
-                <p class="uvy-lead">Choose permissions a role must include and permissions it must exclude. Matches update directly in your browser.</p>
+                <h1 class="page-title-with-icon">
+                    <svg class="icon icon-large icon-accent" aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#tabler-search"></use></svg>
+                    <span>Role finder</span>
+                </h1>
+                <p class="uvy-lead">Choose permissions a role must include and permissions it must exclude to identify least-privilege matches directly in your browser.</p>
             </div>
         </div>
 

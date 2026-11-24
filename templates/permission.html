@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GCP IAM Permission: {{.Permission}} — gcp-iam-catalog</title>
+    <title>{{.Permission}} — GCP IAM Catalog</title>
     <meta name="description" content="See the roles that grant the {{.Permission}} permission in Google Cloud Platform (GCP) IAM and understand its usage.">
     {{template "head_assets" .}}
 </head>
@@ -41,7 +41,10 @@
 
         <section class="uvy-panel" aria-labelledby="perm-details-heading">
             <div class="uvy-panel__header">
-                <h2 id="perm-details-heading">Permission details</h2>
+                <h2 id="perm-details-heading" class="with-icon">
+                    <svg class="icon icon-small icon-accent" aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#tabler-key"></use></svg>
+                    Permission details
+                </h2>
                 <span class="uvy-count">{{.RoleCount | formatNumber}} {{if eq .RoleCount 1}}role{{else}}roles{{end}}</span>
             </div>
             <dl class="uvy-kv" style="margin-bottom:0">
@@ -64,7 +67,10 @@
 
             <div class="uvy-tabs" role="tablist" aria-label="Permission views">
                 <button id="tab-details" role="tab" type="button" aria-selected="true" aria-controls="details-tab">Roles ({{.RoleCount | formatNumber}})</button>
-                <button id="tab-compare" role="tab" type="button" aria-selected="false" aria-controls="compare-tab">Compare</button>
+                <button id="tab-compare" role="tab" type="button" aria-selected="false" aria-controls="compare-tab" class="with-icon">
+                    <svg class="icon icon-small" aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#tabler-arrows-diff"></use></svg>
+                    Compare
+                </button>
             </div>
 
             <div id="details-tab" role="tabpanel" aria-labelledby="tab-details">

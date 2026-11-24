@@ -38,7 +38,7 @@
   /* Signal orange: primary actions, 3px active rules, logo top face and focus */
   --uvy-accent: light-dark(#f25c05, #ff7a1a);
   --uvy-accent-hover: light-dark(#db4f00, #ff9140);
-  --uvy-on-accent: light-dark(#111622, #0b0f19);
+  --uvy-on-accent: light-dark(#0b0f19, #0b0f19);
   --uvy-accent-subtle: light-dark(#fff0e6, #2e1a0c);
   --uvy-link: light-dark(#b84200, #ff9a4d);
   --uvy-focus: light-dark(#d94e00, #ff8a33);
@@ -484,6 +484,18 @@ time,
   min-width: 0;
   padding-block: var(--uvy-space-2);
 }
+.header-identity h1 {
+  margin: 0;
+}
+.header-identity > h1:not(.brand) {
+  display: flex;
+  align-items: center;
+  min-width: 0;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
+}
 .brand {
   display: inline-flex;
   align-items: center;
@@ -613,7 +625,7 @@ time,
 .sidebar {
   position: sticky;
   top: 0;
-  max-height: calc(100dvh - 3.5rem);
+  max-height: calc(100dvh - 4.25rem);
   padding: var(--uvy-space-6) var(--uvy-space-3) var(--uvy-space-6) 0;
   border-right: 1px solid var(--uvy-border);
   overflow-y: auto;
@@ -654,6 +666,7 @@ time,
 }
 .sidebar nav {
   display: grid;
+  grid-template-columns: minmax(0, 1fr);
   gap: 2px;
 }
 .sidebar nav a {
@@ -1039,6 +1052,9 @@ input[type="search"]::-webkit-search-cancel-button {
 .uvy-copy.is-copied {
   color: var(--uvy-ok);
 }
+.uvy-button--primary.uvy-copy.is-copied {
+  color: var(--uvy-on-accent);
+}
 
 /* 8. Panels --------------------------------------------------------------- */
 
@@ -1074,32 +1090,43 @@ input[type="search"]::-webkit-search-cancel-button {
 .uvy-panel__header p {
   margin: var(--uvy-space-1) 0 0;
 }
-/* Tables bleed edge-to-edge inside a panel. */
-.uvy-panel > .table-wrap {
+/* Tables bleed edge-to-edge inside a panel (and inside tabpanels). */
+.uvy-panel > .table-wrap,
+.uvy-panel > [role="tabpanel"] > .table-wrap {
   width: calc(100% + 2 * var(--uvy-space-5));
   max-width: calc(100% + 2 * var(--uvy-space-5));
   margin-inline: calc(-1 * var(--uvy-space-5));
 }
-.uvy-panel > .table-wrap:first-child {
+.uvy-panel > .table-wrap:first-child,
+.uvy-panel > .uvy-panel__header + .table-wrap {
   margin-top: calc(-1 * var(--uvy-space-5));
 }
 .uvy-panel > .table-wrap:last-child,
-.uvy-panel > .table-wrap:has(+ .uvy-empty[hidden]:last-child) {
+.uvy-panel > .table-wrap:has(+ .uvy-empty[hidden]:last-child),
+.uvy-panel > [role="tabpanel"]:last-child > .table-wrap:last-child,
+.uvy-panel > [role="tabpanel"]:last-child > .table-wrap:has(+ .uvy-empty[hidden]:last-child) {
   margin-bottom: calc(-1 * var(--uvy-space-5));
 }
 .uvy-panel > .table-wrap:last-child tr:last-child > *,
-.uvy-panel > .table-wrap:has(+ .uvy-empty[hidden]:last-child) tr:last-child > * {
+.uvy-panel > .table-wrap:has(+ .uvy-empty[hidden]:last-child) tr:last-child > *,
+.uvy-panel > [role="tabpanel"]:last-child > .table-wrap:last-child tr:last-child > *,
+.uvy-panel > [role="tabpanel"]:last-child > .table-wrap:has(+ .uvy-empty[hidden]:last-child) tr:last-child > * {
   border-bottom: 0;
 }
 .uvy-panel > .table-wrap th:first-child,
-.uvy-panel > .table-wrap td:first-child {
+.uvy-panel > .table-wrap td:first-child,
+.uvy-panel > [role="tabpanel"] > .table-wrap th:first-child,
+.uvy-panel > [role="tabpanel"] > .table-wrap td:first-child {
   padding-left: var(--uvy-space-5);
 }
 .uvy-panel > .table-wrap th:last-child,
-.uvy-panel > .table-wrap td:last-child {
+.uvy-panel > .table-wrap td:last-child,
+.uvy-panel > [role="tabpanel"] > .table-wrap th:last-child,
+.uvy-panel > [role="tabpanel"] > .table-wrap td:last-child {
   padding-right: var(--uvy-space-5);
 }
-.uvy-panel > .table-wrap caption:not(.sr-only) {
+.uvy-panel > .table-wrap caption:not(.sr-only),
+.uvy-panel > [role="tabpanel"] > .table-wrap caption:not(.sr-only) {
   padding-inline: var(--uvy-space-5);
 }
 /* Structured item rows inside a panel: hairline divided, never nested boxes. */
@@ -1287,7 +1314,7 @@ td.num {
   min-width: 0;
   overflow-wrap: anywhere;
 }
-.uvy-kv dd code {
+:where(.uvy-kv dd) code {
   padding: 0;
   border: 0;
   background: none;
@@ -1836,7 +1863,7 @@ dialog::backdrop {
   padding-bottom: var(--uvy-space-5);
   border-bottom: 1px solid var(--uvy-border);
 }
-.uvy-page-header > div {
+.uvy-page-header > div:not(.uvy-actions) {
   min-width: 0;
   flex: 1 1 30rem;
 }
@@ -2009,27 +2036,36 @@ dialog::backdrop {
       calc(-1 * var(--uvy-space-4));
     padding-inline: var(--uvy-space-4);
   }
-  .uvy-panel > .table-wrap {
+  .uvy-panel > .table-wrap,
+  .uvy-panel > [role="tabpanel"] > .table-wrap {
     width: calc(100% + 2 * var(--uvy-space-4));
     max-width: calc(100% + 2 * var(--uvy-space-4));
     margin-inline: calc(-1 * var(--uvy-space-4));
   }
-  .uvy-panel > .table-wrap:first-child {
+  .uvy-panel > .table-wrap:first-child,
+  .uvy-panel > .uvy-panel__header + .table-wrap {
     margin-top: calc(-1 * var(--uvy-space-4));
   }
   .uvy-panel > .table-wrap:last-child,
-  .uvy-panel > .table-wrap:has(+ .uvy-empty[hidden]:last-child) {
+  .uvy-panel > .table-wrap:has(+ .uvy-empty[hidden]:last-child),
+  .uvy-panel > [role="tabpanel"]:last-child > .table-wrap:last-child,
+  .uvy-panel > [role="tabpanel"]:last-child > .table-wrap:has(+ .uvy-empty[hidden]:last-child) {
     margin-bottom: calc(-1 * var(--uvy-space-4));
   }
   .uvy-panel > .table-wrap th:first-child,
-  .uvy-panel > .table-wrap td:first-child {
+  .uvy-panel > .table-wrap td:first-child,
+  .uvy-panel > [role="tabpanel"] > .table-wrap th:first-child,
+  .uvy-panel > [role="tabpanel"] > .table-wrap td:first-child {
     padding-left: var(--uvy-space-4);
   }
   .uvy-panel > .table-wrap th:last-child,
-  .uvy-panel > .table-wrap td:last-child {
+  .uvy-panel > .table-wrap td:last-child,
+  .uvy-panel > [role="tabpanel"] > .table-wrap th:last-child,
+  .uvy-panel > [role="tabpanel"] > .table-wrap td:last-child {
     padding-right: var(--uvy-space-4);
   }
-  .uvy-panel > .table-wrap caption:not(.sr-only) {
+  .uvy-panel > .table-wrap caption:not(.sr-only),
+  .uvy-panel > [role="tabpanel"] > .table-wrap caption:not(.sr-only) {
     padding-inline: var(--uvy-space-4);
   }
   .uvy-panel:has(.record-table) {
